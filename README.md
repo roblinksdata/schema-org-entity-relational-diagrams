@@ -8,7 +8,7 @@ Use these at your own risk as the accuracy of the information is not guaranteed.
 ## Known issues
 
 - `3DModel` is missing.
-- Predicates which have a range of more than one class aren't serialised properly - they get listed as a `stringlist` and the related classes don't show up on the diagram.
+- Predicates which have a range of more than one class aren't serialised properly - they get listed as a `stringlist` and the related classes don't show up on the diagram. See https://github.com/linkml/linkml/issues/2527.
 
 ## License
 
