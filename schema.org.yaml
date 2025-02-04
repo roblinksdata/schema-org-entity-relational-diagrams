@@ -6537,7 +6537,6 @@ classes:
   '63653004':
     class_uri: http://purl.bioontology.org/ontology/SNOMEDCT/63653004
   Dataset:
-    tree_root: True
     comments:
     - A body of structured information describing some topic(s) of interest.
     is_a: CreativeWork
