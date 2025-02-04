@@ -1,0 +1,35 @@
+erDiagram
+Artery {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Artery ||--}o AnatomicalStructure : "arterialBranch"
+Artery ||--}o AnatomicalStructure : "supplyTo"
+Artery ||--}o Text : "associatedPathophysiology"
+Artery ||--}o Text : "bodyLocation"
+Artery ||--}o AnatomicalStructure : "connectedTo"
+Artery ||--}o ImageObject : "diagram"
+Artery ||--}o AnatomicalSystem : "partOfSystem"
+Artery ||--}o MedicalCondition : "relatedCondition"
+Artery ||--}o MedicalTherapy : "relatedTherapy"
+Artery ||--}o AnatomicalStructure : "subStructure"
+Artery ||--}o MedicalCode : "code"
+Artery ||--}o Grant : "funding"
+Artery ||--}o MedicalGuideline : "guideline"
+Artery ||--}o MedicineSystem : "medicineSystem"
+Artery ||--}o Organization : "recognizingAuthority"
+Artery ||--}o MedicalSpecialty : "relevantSpecialty"
+Artery ||--}o MedicalStudy : "study"
+Artery ||--}o Text : "alternateName"
+Artery ||--}o Text : "disambiguatingDescription"
+Artery ||--}o Text : "name"
+Artery ||--}o URL : "sameAs"
+Artery ||--}o Action : "potentialAction"
+Artery ||--}o URL : "url"
+

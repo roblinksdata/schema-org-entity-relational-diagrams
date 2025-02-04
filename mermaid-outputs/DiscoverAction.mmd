@@ -1,0 +1,30 @@
+erDiagram
+DiscoverAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DiscoverAction ||--}o Thing : "instrument"
+DiscoverAction ||--}o Thing : "object"
+DiscoverAction ||--}o Thing : "result"
+DiscoverAction ||--}o HowTo : "actionProcess"
+DiscoverAction ||--}o ActionStatusType : "actionStatus"
+DiscoverAction ||--}o Thing : "error"
+DiscoverAction ||--}o Text : "alternateName"
+DiscoverAction ||--}o Text : "disambiguatingDescription"
+DiscoverAction ||--}o Text : "name"
+DiscoverAction ||--}o URL : "sameAs"
+DiscoverAction ||--}o Action : "potentialAction"
+DiscoverAction ||--}o URL : "url"
+

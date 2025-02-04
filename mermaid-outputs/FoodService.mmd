@@ -1,0 +1,42 @@
+erDiagram
+FoodService {
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+FoodService ||--}o AggregateRating : "aggregateRating"
+FoodService ||--}o Audience : "audience"
+FoodService ||--}o ServiceChannel : "availableChannel"
+FoodService ||--}o Text : "award"
+FoodService ||--}o Certification : "hasCertification"
+FoodService ||--}o OfferCatalog : "hasOfferCatalog"
+FoodService ||--}o OpeningHoursSpecification : "hoursAvailable"
+FoodService ||--}o Thing : "produces"
+FoodService ||--}o Text : "providerMobility"
+FoodService ||--}o Review : "review"
+FoodService ||--}o Audience : "serviceAudience"
+FoodService ||--}o Thing : "serviceOutput"
+FoodService ||--}o Text : "slogan"
+FoodService ||--}o Text : "alternateName"
+FoodService ||--}o Text : "disambiguatingDescription"
+FoodService ||--}o Text : "name"
+FoodService ||--}o URL : "sameAs"
+FoodService ||--}o Action : "potentialAction"
+FoodService ||--}o URL : "url"
+

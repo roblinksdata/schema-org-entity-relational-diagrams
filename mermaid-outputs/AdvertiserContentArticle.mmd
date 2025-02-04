@@ -1,0 +1,139 @@
+erDiagram
+AdvertiserContentArticle {
+    stringList backstory  
+    stringList pageEnd  
+    stringList pageStart  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+AdvertiserContentArticle ||--}o Text : "articleBody"
+AdvertiserContentArticle ||--}o Text : "articleSection"
+AdvertiserContentArticle ||--}o Text : "pagination"
+AdvertiserContentArticle ||--}o Integer : "wordCount"
+AdvertiserContentArticle ||--}o Thing : "about"
+AdvertiserContentArticle ||--}o Place : "contentLocation"
+AdvertiserContentArticle ||--}o CreativeWork : "hasPart"
+AdvertiserContentArticle ||--}o Claim : "interpretedAsClaim"
+AdvertiserContentArticle ||--}o Thing : "mainEntity"
+AdvertiserContentArticle ||--}o Place : "spatialCoverage"
+AdvertiserContentArticle ||--}o CreativeWork : "workExample"
+AdvertiserContentArticle ||--}o Text : "abstract"
+AdvertiserContentArticle ||--}o Text : "accessMode"
+AdvertiserContentArticle ||--}o ItemList : "accessModeSufficient"
+AdvertiserContentArticle ||--}o Text : "accessibilityAPI"
+AdvertiserContentArticle ||--}o Text : "accessibilityControl"
+AdvertiserContentArticle ||--}o Text : "accessibilityFeature"
+AdvertiserContentArticle ||--}o Text : "accessibilityHazard"
+AdvertiserContentArticle ||--}o Text : "accessibilitySummary"
+AdvertiserContentArticle ||--}o Person : "accountablePerson"
+AdvertiserContentArticle ||--}o AggregateRating : "aggregateRating"
+AdvertiserContentArticle ||--}o Text : "alternativeHeadline"
+AdvertiserContentArticle ||--}o MediaObject : "associatedMedia"
+AdvertiserContentArticle ||--}o Audience : "audience"
+AdvertiserContentArticle ||--}o Text : "award"
+AdvertiserContentArticle ||--}o Text : "awards"
+AdvertiserContentArticle ||--}o Person : "character"
+AdvertiserContentArticle ||--}o Comment : "comment"
+AdvertiserContentArticle ||--}o Integer : "commentCount"
+AdvertiserContentArticle ||--}o Text : "conditionsOfAccess"
+AdvertiserContentArticle ||--}o DateTime : "contentReferenceTime"
+AdvertiserContentArticle ||--}o Text : "copyrightNotice"
+AdvertiserContentArticle ||--}o Number : "copyrightYear"
+AdvertiserContentArticle ||--}o Country : "countryOfOrigin"
+AdvertiserContentArticle ||--}o Text : "creditText"
+AdvertiserContentArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+AdvertiserContentArticle ||--}o URL : "discussionUrl"
+AdvertiserContentArticle ||--}o Person : "editor"
+AdvertiserContentArticle ||--}o AlignmentObject : "educationalAlignment"
+AdvertiserContentArticle ||--}o MediaObject : "encoding"
+AdvertiserContentArticle ||--}o MediaObject : "encodings"
+AdvertiserContentArticle ||--}o CreativeWork : "exampleOfWork"
+AdvertiserContentArticle ||--}o Grant : "funding"
+AdvertiserContentArticle ||--}o Text : "headline"
+AdvertiserContentArticle ||--}o InteractionCounter : "interactionStatistic"
+AdvertiserContentArticle ||--}o Text : "interactivityType"
+AdvertiserContentArticle ||--}o Boolean : "isAccessibleForFree"
+AdvertiserContentArticle ||--}o Boolean : "isFamilyFriendly"
+AdvertiserContentArticle ||--}o Place : "locationCreated"
+AdvertiserContentArticle ||--}o Thing : "mentions"
+AdvertiserContentArticle ||--}o PublicationEvent : "publication"
+AdvertiserContentArticle ||--}o Organization : "publisherImprint"
+AdvertiserContentArticle ||--}o Event : "recordedAt"
+AdvertiserContentArticle ||--}o PublicationEvent : "releasedEvent"
+AdvertiserContentArticle ||--}o Review : "review"
+AdvertiserContentArticle ||--}o Review : "reviews"
+AdvertiserContentArticle ||--}o Date : "sdDatePublished"
+AdvertiserContentArticle ||--}o Organization : "sourceOrganization"
+AdvertiserContentArticle ||--}o Place : "spatial"
+AdvertiserContentArticle ||--}o Text : "text"
+AdvertiserContentArticle ||--}o ImageObject : "thumbnail"
+AdvertiserContentArticle ||--}o URL : "thumbnailUrl"
+AdvertiserContentArticle ||--}o Duration : "timeRequired"
+AdvertiserContentArticle ||--}o CreativeWork : "translationOfWork"
+AdvertiserContentArticle ||--}o Text : "typicalAgeRange"
+AdvertiserContentArticle ||--}o CreativeWork : "workTranslation"
+AdvertiserContentArticle ||--}o Text : "alternateName"
+AdvertiserContentArticle ||--}o Text : "disambiguatingDescription"
+AdvertiserContentArticle ||--}o Text : "name"
+AdvertiserContentArticle ||--}o URL : "sameAs"
+AdvertiserContentArticle ||--}o Action : "potentialAction"
+AdvertiserContentArticle ||--}o URL : "url"
+

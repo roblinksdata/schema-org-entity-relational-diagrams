@@ -1,0 +1,61 @@
+erDiagram
+ScreeningEvent {
+    stringList subtitleLanguage  
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ScreeningEvent ||--}o Movie : "workPresented"
+ScreeningEvent ||--}o Text : "videoFormat"
+ScreeningEvent ||--}o Thing : "about"
+ScreeningEvent ||--}o Duration : "duration"
+ScreeningEvent ||--}o CreativeWork : "workFeatured"
+ScreeningEvent ||--}o CreativeWork : "workPerformed"
+ScreeningEvent ||--}o AggregateRating : "aggregateRating"
+ScreeningEvent ||--}o Audience : "audience"
+ScreeningEvent ||--}o Person : "director"
+ScreeningEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+ScreeningEvent ||--}o Schedule : "eventSchedule"
+ScreeningEvent ||--}o EventStatusType : "eventStatus"
+ScreeningEvent ||--}o Grant : "funding"
+ScreeningEvent ||--}o Boolean : "isAccessibleForFree"
+ScreeningEvent ||--}o Integer : "maximumAttendeeCapacity"
+ScreeningEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+ScreeningEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+ScreeningEvent ||--}o Date : "previousStartDate"
+ScreeningEvent ||--}o CreativeWork : "recordedIn"
+ScreeningEvent ||--}o Integer : "remainingAttendeeCapacity"
+ScreeningEvent ||--}o Review : "review"
+ScreeningEvent ||--}o Event : "subEvent"
+ScreeningEvent ||--}o Event : "subEvents"
+ScreeningEvent ||--}o Event : "superEvent"
+ScreeningEvent ||--}o Text : "typicalAgeRange"
+ScreeningEvent ||--}o Text : "alternateName"
+ScreeningEvent ||--}o Text : "disambiguatingDescription"
+ScreeningEvent ||--}o Text : "name"
+ScreeningEvent ||--}o URL : "sameAs"
+ScreeningEvent ||--}o Action : "potentialAction"
+ScreeningEvent ||--}o URL : "url"
+

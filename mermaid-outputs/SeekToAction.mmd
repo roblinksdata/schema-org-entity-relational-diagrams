@@ -1,0 +1,31 @@
+erDiagram
+SeekToAction {
+    stringList startOffset  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SeekToAction ||--}o Thing : "instrument"
+SeekToAction ||--}o Thing : "object"
+SeekToAction ||--}o Thing : "result"
+SeekToAction ||--}o HowTo : "actionProcess"
+SeekToAction ||--}o ActionStatusType : "actionStatus"
+SeekToAction ||--}o Thing : "error"
+SeekToAction ||--}o Text : "alternateName"
+SeekToAction ||--}o Text : "disambiguatingDescription"
+SeekToAction ||--}o Text : "name"
+SeekToAction ||--}o URL : "sameAs"
+SeekToAction ||--}o Action : "potentialAction"
+SeekToAction ||--}o URL : "url"
+

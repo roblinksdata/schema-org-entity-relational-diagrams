@@ -1,0 +1,83 @@
+erDiagram
+Person {
+    stringList funder  
+    stringList homeLocation  
+    stringList memberOf  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList workLocation  
+    stringList address  
+    stringList alumniOf  
+    stringList brand  
+    stringList colleague  
+    stringList gender  
+    stringList height  
+    stringList jobTitle  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList netWorth  
+    stringList owns  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Person ||--}o Text : "additionalName"
+Person ||--}o Organization : "affiliation"
+Person ||--}o Text : "callSign"
+Person ||--}o Text : "duns"
+Person ||--}o Text : "globalLocationNumber"
+Person ||--}o Text : "taxID"
+Person ||--}o InteractionCounter : "agentInteractionStatistic"
+Person ||--}o Text : "award"
+Person ||--}o Text : "awards"
+Person ||--}o Date : "birthDate"
+Person ||--}o Place : "birthPlace"
+Person ||--}o Person : "children"
+Person ||--}o Person : "colleagues"
+Person ||--}o ContactPoint : "contactPoint"
+Person ||--}o ContactPoint : "contactPoints"
+Person ||--}o Date : "deathDate"
+Person ||--}o Place : "deathPlace"
+Person ||--}o Text : "email"
+Person ||--}o Text : "familyName"
+Person ||--}o Text : "faxNumber"
+Person ||--}o Person : "follows"
+Person ||--}o Grant : "funding"
+Person ||--}o Text : "givenName"
+Person ||--}o Certification : "hasCertification"
+Person ||--}o EducationalOccupationalCredential : "hasCredential"
+Person ||--}o Occupation : "hasOccupation"
+Person ||--}o OfferCatalog : "hasOfferCatalog"
+Person ||--}o Place : "hasPOS"
+Person ||--}o Text : "honorificPrefix"
+Person ||--}o Text : "honorificSuffix"
+Person ||--}o InteractionCounter : "interactionStatistic"
+Person ||--}o Text : "isicV4"
+Person ||--}o Person : "knows"
+Person ||--}o Offer : "makesOffer"
+Person ||--}o Text : "naics"
+Person ||--}o Country : "nationality"
+Person ||--}o Person : "parent"
+Person ||--}o Person : "parents"
+Person ||--}o Event : "performerIn"
+Person ||--}o Person : "relatedTo"
+Person ||--}o Demand : "seeks"
+Person ||--}o Person : "sibling"
+Person ||--}o Person : "siblings"
+Person ||--}o Person : "spouse"
+Person ||--}o Text : "telephone"
+Person ||--}o Text : "vatID"
+Person ||--}o QuantitativeValue : "weight"
+Person ||--}o Organization : "worksFor"
+Person ||--}o Text : "alternateName"
+Person ||--}o Text : "disambiguatingDescription"
+Person ||--}o Text : "name"
+Person ||--}o URL : "sameAs"
+Person ||--}o Action : "potentialAction"
+Person ||--}o URL : "url"
+

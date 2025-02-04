@@ -1,0 +1,122 @@
+erDiagram
+CollegeOrUniversity {
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList logo  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList address  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList keywords  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+    stringList photo  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+}
+
+CollegeOrUniversity ||--}o Person : "alumni"
+CollegeOrUniversity ||--}o Text : "openingHours"
+CollegeOrUniversity ||--}o Text : "duns"
+CollegeOrUniversity ||--}o Text : "globalLocationNumber"
+CollegeOrUniversity ||--}o URL : "hasGS1DigitalLink"
+CollegeOrUniversity ||--}o Text : "leiCode"
+CollegeOrUniversity ||--}o Text : "taxID"
+CollegeOrUniversity ||--}o InteractionCounter : "agentInteractionStatistic"
+CollegeOrUniversity ||--}o AggregateRating : "aggregateRating"
+CollegeOrUniversity ||--}o Text : "award"
+CollegeOrUniversity ||--}o Text : "awards"
+CollegeOrUniversity ||--}o ContactPoint : "contactPoint"
+CollegeOrUniversity ||--}o ContactPoint : "contactPoints"
+CollegeOrUniversity ||--}o Organization : "department"
+CollegeOrUniversity ||--}o Date : "dissolutionDate"
+CollegeOrUniversity ||--}o Text : "email"
+CollegeOrUniversity ||--}o Person : "employee"
+CollegeOrUniversity ||--}o Person : "employees"
+CollegeOrUniversity ||--}o Event : "event"
+CollegeOrUniversity ||--}o Event : "events"
+CollegeOrUniversity ||--}o Text : "faxNumber"
+CollegeOrUniversity ||--}o Person : "founders"
+CollegeOrUniversity ||--}o Date : "foundingDate"
+CollegeOrUniversity ||--}o Place : "foundingLocation"
+CollegeOrUniversity ||--}o Grant : "funding"
+CollegeOrUniversity ||--}o Certification : "hasCertification"
+CollegeOrUniversity ||--}o EducationalOccupationalCredential : "hasCredential"
+CollegeOrUniversity ||--}o MemberProgram : "hasMemberProgram"
+CollegeOrUniversity ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+CollegeOrUniversity ||--}o OfferCatalog : "hasOfferCatalog"
+CollegeOrUniversity ||--}o Place : "hasPOS"
+CollegeOrUniversity ||--}o InteractionCounter : "interactionStatistic"
+CollegeOrUniversity ||--}o Text : "isicV4"
+CollegeOrUniversity ||--}o Text : "iso6523Code"
+CollegeOrUniversity ||--}o Text : "legalName"
+CollegeOrUniversity ||--}o Offer : "makesOffer"
+CollegeOrUniversity ||--}o Text : "naics"
+CollegeOrUniversity ||--}o NonprofitType : "nonprofitStatus"
+CollegeOrUniversity ||--}o QuantitativeValue : "numberOfEmployees"
+CollegeOrUniversity ||--}o Organization : "parentOrganization"
+CollegeOrUniversity ||--}o Review : "review"
+CollegeOrUniversity ||--}o Review : "reviews"
+CollegeOrUniversity ||--}o Demand : "seeks"
+CollegeOrUniversity ||--}o Text : "slogan"
+CollegeOrUniversity ||--}o Organization : "subOrganization"
+CollegeOrUniversity ||--}o Text : "telephone"
+CollegeOrUniversity ||--}o Text : "vatID"
+CollegeOrUniversity ||--}o Text : "alternateName"
+CollegeOrUniversity ||--}o Text : "disambiguatingDescription"
+CollegeOrUniversity ||--}o Text : "name"
+CollegeOrUniversity ||--}o URL : "sameAs"
+CollegeOrUniversity ||--}o Action : "potentialAction"
+CollegeOrUniversity ||--}o URL : "url"
+CollegeOrUniversity ||--}o PropertyValue : "additionalProperty"
+CollegeOrUniversity ||--}o LocationFeatureSpecification : "amenityFeature"
+CollegeOrUniversity ||--}o Text : "branchCode"
+CollegeOrUniversity ||--}o Place : "containedIn"
+CollegeOrUniversity ||--}o Place : "containedInPlace"
+CollegeOrUniversity ||--}o Place : "containsPlace"
+CollegeOrUniversity ||--}o Boolean : "hasDriveThroughService"
+CollegeOrUniversity ||--}o Boolean : "isAccessibleForFree"
+CollegeOrUniversity ||--}o URL : "map"
+CollegeOrUniversity ||--}o URL : "maps"
+CollegeOrUniversity ||--}o Integer : "maximumAttendeeCapacity"
+CollegeOrUniversity ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+CollegeOrUniversity ||--}o Boolean : "publicAccess"
+CollegeOrUniversity ||--}o Boolean : "smokingAllowed"
+CollegeOrUniversity ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+CollegeOrUniversity ||--}o URL : "tourBookingPage"
+

@@ -1,0 +1,25 @@
+erDiagram
+MedicalEntity {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalEntity ||--}o MedicalCode : "code"
+MedicalEntity ||--}o Grant : "funding"
+MedicalEntity ||--}o MedicalGuideline : "guideline"
+MedicalEntity ||--}o MedicineSystem : "medicineSystem"
+MedicalEntity ||--}o Organization : "recognizingAuthority"
+MedicalEntity ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalEntity ||--}o MedicalStudy : "study"
+MedicalEntity ||--}o Text : "alternateName"
+MedicalEntity ||--}o Text : "disambiguatingDescription"
+MedicalEntity ||--}o Text : "name"
+MedicalEntity ||--}o URL : "sameAs"
+MedicalEntity ||--}o Action : "potentialAction"
+MedicalEntity ||--}o URL : "url"
+

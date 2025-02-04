@@ -1,0 +1,131 @@
+erDiagram
+SheetMusic {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SheetMusic ||--}o Thing : "about"
+SheetMusic ||--}o Place : "contentLocation"
+SheetMusic ||--}o CreativeWork : "hasPart"
+SheetMusic ||--}o Claim : "interpretedAsClaim"
+SheetMusic ||--}o Thing : "mainEntity"
+SheetMusic ||--}o Place : "spatialCoverage"
+SheetMusic ||--}o CreativeWork : "workExample"
+SheetMusic ||--}o Text : "abstract"
+SheetMusic ||--}o Text : "accessMode"
+SheetMusic ||--}o ItemList : "accessModeSufficient"
+SheetMusic ||--}o Text : "accessibilityAPI"
+SheetMusic ||--}o Text : "accessibilityControl"
+SheetMusic ||--}o Text : "accessibilityFeature"
+SheetMusic ||--}o Text : "accessibilityHazard"
+SheetMusic ||--}o Text : "accessibilitySummary"
+SheetMusic ||--}o Person : "accountablePerson"
+SheetMusic ||--}o AggregateRating : "aggregateRating"
+SheetMusic ||--}o Text : "alternativeHeadline"
+SheetMusic ||--}o MediaObject : "associatedMedia"
+SheetMusic ||--}o Audience : "audience"
+SheetMusic ||--}o Text : "award"
+SheetMusic ||--}o Text : "awards"
+SheetMusic ||--}o Person : "character"
+SheetMusic ||--}o Comment : "comment"
+SheetMusic ||--}o Integer : "commentCount"
+SheetMusic ||--}o Text : "conditionsOfAccess"
+SheetMusic ||--}o DateTime : "contentReferenceTime"
+SheetMusic ||--}o Text : "copyrightNotice"
+SheetMusic ||--}o Number : "copyrightYear"
+SheetMusic ||--}o Country : "countryOfOrigin"
+SheetMusic ||--}o Text : "creditText"
+SheetMusic ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+SheetMusic ||--}o URL : "discussionUrl"
+SheetMusic ||--}o Person : "editor"
+SheetMusic ||--}o AlignmentObject : "educationalAlignment"
+SheetMusic ||--}o MediaObject : "encoding"
+SheetMusic ||--}o MediaObject : "encodings"
+SheetMusic ||--}o CreativeWork : "exampleOfWork"
+SheetMusic ||--}o Grant : "funding"
+SheetMusic ||--}o Text : "headline"
+SheetMusic ||--}o InteractionCounter : "interactionStatistic"
+SheetMusic ||--}o Text : "interactivityType"
+SheetMusic ||--}o Boolean : "isAccessibleForFree"
+SheetMusic ||--}o Boolean : "isFamilyFriendly"
+SheetMusic ||--}o Place : "locationCreated"
+SheetMusic ||--}o Thing : "mentions"
+SheetMusic ||--}o PublicationEvent : "publication"
+SheetMusic ||--}o Organization : "publisherImprint"
+SheetMusic ||--}o Event : "recordedAt"
+SheetMusic ||--}o PublicationEvent : "releasedEvent"
+SheetMusic ||--}o Review : "review"
+SheetMusic ||--}o Review : "reviews"
+SheetMusic ||--}o Date : "sdDatePublished"
+SheetMusic ||--}o Organization : "sourceOrganization"
+SheetMusic ||--}o Place : "spatial"
+SheetMusic ||--}o Text : "text"
+SheetMusic ||--}o ImageObject : "thumbnail"
+SheetMusic ||--}o URL : "thumbnailUrl"
+SheetMusic ||--}o Duration : "timeRequired"
+SheetMusic ||--}o CreativeWork : "translationOfWork"
+SheetMusic ||--}o Text : "typicalAgeRange"
+SheetMusic ||--}o CreativeWork : "workTranslation"
+SheetMusic ||--}o Text : "alternateName"
+SheetMusic ||--}o Text : "disambiguatingDescription"
+SheetMusic ||--}o Text : "name"
+SheetMusic ||--}o URL : "sameAs"
+SheetMusic ||--}o Action : "potentialAction"
+SheetMusic ||--}o URL : "url"
+

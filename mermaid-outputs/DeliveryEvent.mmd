@@ -1,0 +1,62 @@
+erDiagram
+DeliveryEvent {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DeliveryEvent ||--}o Text : "accessCode"
+DeliveryEvent ||--}o DateTime : "availableFrom"
+DeliveryEvent ||--}o DateTime : "availableThrough"
+DeliveryEvent ||--}o DeliveryMethod : "hasDeliveryMethod"
+DeliveryEvent ||--}o Thing : "about"
+DeliveryEvent ||--}o Duration : "duration"
+DeliveryEvent ||--}o CreativeWork : "workFeatured"
+DeliveryEvent ||--}o CreativeWork : "workPerformed"
+DeliveryEvent ||--}o AggregateRating : "aggregateRating"
+DeliveryEvent ||--}o Audience : "audience"
+DeliveryEvent ||--}o Person : "director"
+DeliveryEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+DeliveryEvent ||--}o Schedule : "eventSchedule"
+DeliveryEvent ||--}o EventStatusType : "eventStatus"
+DeliveryEvent ||--}o Grant : "funding"
+DeliveryEvent ||--}o Boolean : "isAccessibleForFree"
+DeliveryEvent ||--}o Integer : "maximumAttendeeCapacity"
+DeliveryEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+DeliveryEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+DeliveryEvent ||--}o Date : "previousStartDate"
+DeliveryEvent ||--}o CreativeWork : "recordedIn"
+DeliveryEvent ||--}o Integer : "remainingAttendeeCapacity"
+DeliveryEvent ||--}o Review : "review"
+DeliveryEvent ||--}o Event : "subEvent"
+DeliveryEvent ||--}o Event : "subEvents"
+DeliveryEvent ||--}o Event : "superEvent"
+DeliveryEvent ||--}o Text : "typicalAgeRange"
+DeliveryEvent ||--}o Text : "alternateName"
+DeliveryEvent ||--}o Text : "disambiguatingDescription"
+DeliveryEvent ||--}o Text : "name"
+DeliveryEvent ||--}o URL : "sameAs"
+DeliveryEvent ||--}o Action : "potentialAction"
+DeliveryEvent ||--}o URL : "url"
+

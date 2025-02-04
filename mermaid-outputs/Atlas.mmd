@@ -1,0 +1,131 @@
+erDiagram
+Atlas {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Atlas ||--}o Thing : "about"
+Atlas ||--}o Place : "contentLocation"
+Atlas ||--}o CreativeWork : "hasPart"
+Atlas ||--}o Claim : "interpretedAsClaim"
+Atlas ||--}o Thing : "mainEntity"
+Atlas ||--}o Place : "spatialCoverage"
+Atlas ||--}o CreativeWork : "workExample"
+Atlas ||--}o Text : "abstract"
+Atlas ||--}o Text : "accessMode"
+Atlas ||--}o ItemList : "accessModeSufficient"
+Atlas ||--}o Text : "accessibilityAPI"
+Atlas ||--}o Text : "accessibilityControl"
+Atlas ||--}o Text : "accessibilityFeature"
+Atlas ||--}o Text : "accessibilityHazard"
+Atlas ||--}o Text : "accessibilitySummary"
+Atlas ||--}o Person : "accountablePerson"
+Atlas ||--}o AggregateRating : "aggregateRating"
+Atlas ||--}o Text : "alternativeHeadline"
+Atlas ||--}o MediaObject : "associatedMedia"
+Atlas ||--}o Audience : "audience"
+Atlas ||--}o Text : "award"
+Atlas ||--}o Text : "awards"
+Atlas ||--}o Person : "character"
+Atlas ||--}o Comment : "comment"
+Atlas ||--}o Integer : "commentCount"
+Atlas ||--}o Text : "conditionsOfAccess"
+Atlas ||--}o DateTime : "contentReferenceTime"
+Atlas ||--}o Text : "copyrightNotice"
+Atlas ||--}o Number : "copyrightYear"
+Atlas ||--}o Country : "countryOfOrigin"
+Atlas ||--}o Text : "creditText"
+Atlas ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Atlas ||--}o URL : "discussionUrl"
+Atlas ||--}o Person : "editor"
+Atlas ||--}o AlignmentObject : "educationalAlignment"
+Atlas ||--}o MediaObject : "encoding"
+Atlas ||--}o MediaObject : "encodings"
+Atlas ||--}o CreativeWork : "exampleOfWork"
+Atlas ||--}o Grant : "funding"
+Atlas ||--}o Text : "headline"
+Atlas ||--}o InteractionCounter : "interactionStatistic"
+Atlas ||--}o Text : "interactivityType"
+Atlas ||--}o Boolean : "isAccessibleForFree"
+Atlas ||--}o Boolean : "isFamilyFriendly"
+Atlas ||--}o Place : "locationCreated"
+Atlas ||--}o Thing : "mentions"
+Atlas ||--}o PublicationEvent : "publication"
+Atlas ||--}o Organization : "publisherImprint"
+Atlas ||--}o Event : "recordedAt"
+Atlas ||--}o PublicationEvent : "releasedEvent"
+Atlas ||--}o Review : "review"
+Atlas ||--}o Review : "reviews"
+Atlas ||--}o Date : "sdDatePublished"
+Atlas ||--}o Organization : "sourceOrganization"
+Atlas ||--}o Place : "spatial"
+Atlas ||--}o Text : "text"
+Atlas ||--}o ImageObject : "thumbnail"
+Atlas ||--}o URL : "thumbnailUrl"
+Atlas ||--}o Duration : "timeRequired"
+Atlas ||--}o CreativeWork : "translationOfWork"
+Atlas ||--}o Text : "typicalAgeRange"
+Atlas ||--}o CreativeWork : "workTranslation"
+Atlas ||--}o Text : "alternateName"
+Atlas ||--}o Text : "disambiguatingDescription"
+Atlas ||--}o Text : "name"
+Atlas ||--}o URL : "sameAs"
+Atlas ||--}o Action : "potentialAction"
+Atlas ||--}o URL : "url"
+

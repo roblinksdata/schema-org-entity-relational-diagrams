@@ -1,0 +1,131 @@
+erDiagram
+Painting {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Painting ||--}o Thing : "about"
+Painting ||--}o Place : "contentLocation"
+Painting ||--}o CreativeWork : "hasPart"
+Painting ||--}o Claim : "interpretedAsClaim"
+Painting ||--}o Thing : "mainEntity"
+Painting ||--}o Place : "spatialCoverage"
+Painting ||--}o CreativeWork : "workExample"
+Painting ||--}o Text : "abstract"
+Painting ||--}o Text : "accessMode"
+Painting ||--}o ItemList : "accessModeSufficient"
+Painting ||--}o Text : "accessibilityAPI"
+Painting ||--}o Text : "accessibilityControl"
+Painting ||--}o Text : "accessibilityFeature"
+Painting ||--}o Text : "accessibilityHazard"
+Painting ||--}o Text : "accessibilitySummary"
+Painting ||--}o Person : "accountablePerson"
+Painting ||--}o AggregateRating : "aggregateRating"
+Painting ||--}o Text : "alternativeHeadline"
+Painting ||--}o MediaObject : "associatedMedia"
+Painting ||--}o Audience : "audience"
+Painting ||--}o Text : "award"
+Painting ||--}o Text : "awards"
+Painting ||--}o Person : "character"
+Painting ||--}o Comment : "comment"
+Painting ||--}o Integer : "commentCount"
+Painting ||--}o Text : "conditionsOfAccess"
+Painting ||--}o DateTime : "contentReferenceTime"
+Painting ||--}o Text : "copyrightNotice"
+Painting ||--}o Number : "copyrightYear"
+Painting ||--}o Country : "countryOfOrigin"
+Painting ||--}o Text : "creditText"
+Painting ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Painting ||--}o URL : "discussionUrl"
+Painting ||--}o Person : "editor"
+Painting ||--}o AlignmentObject : "educationalAlignment"
+Painting ||--}o MediaObject : "encoding"
+Painting ||--}o MediaObject : "encodings"
+Painting ||--}o CreativeWork : "exampleOfWork"
+Painting ||--}o Grant : "funding"
+Painting ||--}o Text : "headline"
+Painting ||--}o InteractionCounter : "interactionStatistic"
+Painting ||--}o Text : "interactivityType"
+Painting ||--}o Boolean : "isAccessibleForFree"
+Painting ||--}o Boolean : "isFamilyFriendly"
+Painting ||--}o Place : "locationCreated"
+Painting ||--}o Thing : "mentions"
+Painting ||--}o PublicationEvent : "publication"
+Painting ||--}o Organization : "publisherImprint"
+Painting ||--}o Event : "recordedAt"
+Painting ||--}o PublicationEvent : "releasedEvent"
+Painting ||--}o Review : "review"
+Painting ||--}o Review : "reviews"
+Painting ||--}o Date : "sdDatePublished"
+Painting ||--}o Organization : "sourceOrganization"
+Painting ||--}o Place : "spatial"
+Painting ||--}o Text : "text"
+Painting ||--}o ImageObject : "thumbnail"
+Painting ||--}o URL : "thumbnailUrl"
+Painting ||--}o Duration : "timeRequired"
+Painting ||--}o CreativeWork : "translationOfWork"
+Painting ||--}o Text : "typicalAgeRange"
+Painting ||--}o CreativeWork : "workTranslation"
+Painting ||--}o Text : "alternateName"
+Painting ||--}o Text : "disambiguatingDescription"
+Painting ||--}o Text : "name"
+Painting ||--}o URL : "sameAs"
+Painting ||--}o Action : "potentialAction"
+Painting ||--}o URL : "url"
+

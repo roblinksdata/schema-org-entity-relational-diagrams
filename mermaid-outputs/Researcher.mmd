@@ -1,0 +1,19 @@
+erDiagram
+Researcher {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Researcher ||--}o Text : "audienceType"
+Researcher ||--}o AdministrativeArea : "geographicArea"
+Researcher ||--}o Text : "alternateName"
+Researcher ||--}o Text : "disambiguatingDescription"
+Researcher ||--}o Text : "name"
+Researcher ||--}o URL : "sameAs"
+Researcher ||--}o Action : "potentialAction"
+Researcher ||--}o URL : "url"
+

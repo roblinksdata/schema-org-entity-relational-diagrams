@@ -1,0 +1,23 @@
+erDiagram
+RadioChannel {
+    stringList genre  
+    stringList broadcastFrequency  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RadioChannel ||--}o Text : "broadcastChannelId"
+RadioChannel ||--}o Text : "broadcastServiceTier"
+RadioChannel ||--}o CableOrSatelliteService : "inBroadcastLineup"
+RadioChannel ||--}o BroadcastService : "providesBroadcastService"
+RadioChannel ||--}o Text : "alternateName"
+RadioChannel ||--}o Text : "disambiguatingDescription"
+RadioChannel ||--}o Text : "name"
+RadioChannel ||--}o URL : "sameAs"
+RadioChannel ||--}o Action : "potentialAction"
+RadioChannel ||--}o URL : "url"
+

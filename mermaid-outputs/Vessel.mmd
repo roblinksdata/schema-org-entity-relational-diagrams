@@ -1,0 +1,33 @@
+erDiagram
+Vessel {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Vessel ||--}o Text : "associatedPathophysiology"
+Vessel ||--}o Text : "bodyLocation"
+Vessel ||--}o AnatomicalStructure : "connectedTo"
+Vessel ||--}o ImageObject : "diagram"
+Vessel ||--}o AnatomicalSystem : "partOfSystem"
+Vessel ||--}o MedicalCondition : "relatedCondition"
+Vessel ||--}o MedicalTherapy : "relatedTherapy"
+Vessel ||--}o AnatomicalStructure : "subStructure"
+Vessel ||--}o MedicalCode : "code"
+Vessel ||--}o Grant : "funding"
+Vessel ||--}o MedicalGuideline : "guideline"
+Vessel ||--}o MedicineSystem : "medicineSystem"
+Vessel ||--}o Organization : "recognizingAuthority"
+Vessel ||--}o MedicalSpecialty : "relevantSpecialty"
+Vessel ||--}o MedicalStudy : "study"
+Vessel ||--}o Text : "alternateName"
+Vessel ||--}o Text : "disambiguatingDescription"
+Vessel ||--}o Text : "name"
+Vessel ||--}o URL : "sameAs"
+Vessel ||--}o Action : "potentialAction"
+Vessel ||--}o URL : "url"
+

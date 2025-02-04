@@ -1,0 +1,33 @@
+erDiagram
+Bone {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Bone ||--}o Text : "associatedPathophysiology"
+Bone ||--}o Text : "bodyLocation"
+Bone ||--}o AnatomicalStructure : "connectedTo"
+Bone ||--}o ImageObject : "diagram"
+Bone ||--}o AnatomicalSystem : "partOfSystem"
+Bone ||--}o MedicalCondition : "relatedCondition"
+Bone ||--}o MedicalTherapy : "relatedTherapy"
+Bone ||--}o AnatomicalStructure : "subStructure"
+Bone ||--}o MedicalCode : "code"
+Bone ||--}o Grant : "funding"
+Bone ||--}o MedicalGuideline : "guideline"
+Bone ||--}o MedicineSystem : "medicineSystem"
+Bone ||--}o Organization : "recognizingAuthority"
+Bone ||--}o MedicalSpecialty : "relevantSpecialty"
+Bone ||--}o MedicalStudy : "study"
+Bone ||--}o Text : "alternateName"
+Bone ||--}o Text : "disambiguatingDescription"
+Bone ||--}o Text : "name"
+Bone ||--}o URL : "sameAs"
+Bone ||--}o Action : "potentialAction"
+Bone ||--}o URL : "url"
+

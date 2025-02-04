@@ -1,0 +1,29 @@
+erDiagram
+MedicalGuideline {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalGuideline ||--}o MedicalEvidenceLevel : "evidenceLevel"
+MedicalGuideline ||--}o Text : "evidenceOrigin"
+MedicalGuideline ||--}o Date : "guidelineDate"
+MedicalGuideline ||--}o MedicalEntity : "guidelineSubject"
+MedicalGuideline ||--}o MedicalCode : "code"
+MedicalGuideline ||--}o Grant : "funding"
+MedicalGuideline ||--}o MedicalGuideline : "guideline"
+MedicalGuideline ||--}o MedicineSystem : "medicineSystem"
+MedicalGuideline ||--}o Organization : "recognizingAuthority"
+MedicalGuideline ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalGuideline ||--}o MedicalStudy : "study"
+MedicalGuideline ||--}o Text : "alternateName"
+MedicalGuideline ||--}o Text : "disambiguatingDescription"
+MedicalGuideline ||--}o Text : "name"
+MedicalGuideline ||--}o URL : "sameAs"
+MedicalGuideline ||--}o Action : "potentialAction"
+MedicalGuideline ||--}o URL : "url"
+

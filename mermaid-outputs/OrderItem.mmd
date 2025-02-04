@@ -1,0 +1,22 @@
+erDiagram
+OrderItem {
+    stringList orderQuantity  
+    stringList orderedItem  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OrderItem ||--}o ParcelDelivery : "orderDelivery"
+OrderItem ||--}o Text : "orderItemNumber"
+OrderItem ||--}o OrderStatus : "orderItemStatus"
+OrderItem ||--}o Text : "alternateName"
+OrderItem ||--}o Text : "disambiguatingDescription"
+OrderItem ||--}o Text : "name"
+OrderItem ||--}o URL : "sameAs"
+OrderItem ||--}o Action : "potentialAction"
+OrderItem ||--}o URL : "url"
+

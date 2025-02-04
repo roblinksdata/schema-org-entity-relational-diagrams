@@ -1,0 +1,31 @@
+erDiagram
+PlanAction {
+    stringList scheduledTime  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PlanAction ||--}o Thing : "instrument"
+PlanAction ||--}o Thing : "object"
+PlanAction ||--}o Thing : "result"
+PlanAction ||--}o HowTo : "actionProcess"
+PlanAction ||--}o ActionStatusType : "actionStatus"
+PlanAction ||--}o Thing : "error"
+PlanAction ||--}o Text : "alternateName"
+PlanAction ||--}o Text : "disambiguatingDescription"
+PlanAction ||--}o Text : "name"
+PlanAction ||--}o URL : "sameAs"
+PlanAction ||--}o Action : "potentialAction"
+PlanAction ||--}o URL : "url"
+

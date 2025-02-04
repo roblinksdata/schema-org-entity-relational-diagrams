@@ -1,0 +1,65 @@
+erDiagram
+Crematorium {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Crematorium ||--}o Text : "openingHours"
+Crematorium ||--}o Text : "globalLocationNumber"
+Crematorium ||--}o URL : "hasGS1DigitalLink"
+Crematorium ||--}o PropertyValue : "additionalProperty"
+Crematorium ||--}o AggregateRating : "aggregateRating"
+Crematorium ||--}o LocationFeatureSpecification : "amenityFeature"
+Crematorium ||--}o Text : "branchCode"
+Crematorium ||--}o Place : "containedIn"
+Crematorium ||--}o Place : "containedInPlace"
+Crematorium ||--}o Place : "containsPlace"
+Crematorium ||--}o Event : "event"
+Crematorium ||--}o Event : "events"
+Crematorium ||--}o Text : "faxNumber"
+Crematorium ||--}o Certification : "hasCertification"
+Crematorium ||--}o Boolean : "hasDriveThroughService"
+Crematorium ||--}o Boolean : "isAccessibleForFree"
+Crematorium ||--}o Text : "isicV4"
+Crematorium ||--}o URL : "map"
+Crematorium ||--}o URL : "maps"
+Crematorium ||--}o Integer : "maximumAttendeeCapacity"
+Crematorium ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Crematorium ||--}o Boolean : "publicAccess"
+Crematorium ||--}o Review : "review"
+Crematorium ||--}o Review : "reviews"
+Crematorium ||--}o Text : "slogan"
+Crematorium ||--}o Boolean : "smokingAllowed"
+Crematorium ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Crematorium ||--}o Text : "telephone"
+Crematorium ||--}o URL : "tourBookingPage"
+Crematorium ||--}o Text : "alternateName"
+Crematorium ||--}o Text : "disambiguatingDescription"
+Crematorium ||--}o Text : "name"
+Crematorium ||--}o URL : "sameAs"
+Crematorium ||--}o Action : "potentialAction"
+Crematorium ||--}o URL : "url"
+

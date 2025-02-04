@@ -1,0 +1,89 @@
+erDiagram
+SearchRescueOrganization {
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList logo  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList address  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList keywords  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SearchRescueOrganization ||--}o Text : "duns"
+SearchRescueOrganization ||--}o Text : "globalLocationNumber"
+SearchRescueOrganization ||--}o URL : "hasGS1DigitalLink"
+SearchRescueOrganization ||--}o Text : "leiCode"
+SearchRescueOrganization ||--}o Text : "taxID"
+SearchRescueOrganization ||--}o InteractionCounter : "agentInteractionStatistic"
+SearchRescueOrganization ||--}o AggregateRating : "aggregateRating"
+SearchRescueOrganization ||--}o Person : "alumni"
+SearchRescueOrganization ||--}o Text : "award"
+SearchRescueOrganization ||--}o Text : "awards"
+SearchRescueOrganization ||--}o ContactPoint : "contactPoint"
+SearchRescueOrganization ||--}o ContactPoint : "contactPoints"
+SearchRescueOrganization ||--}o Organization : "department"
+SearchRescueOrganization ||--}o Date : "dissolutionDate"
+SearchRescueOrganization ||--}o Text : "email"
+SearchRescueOrganization ||--}o Person : "employee"
+SearchRescueOrganization ||--}o Person : "employees"
+SearchRescueOrganization ||--}o Event : "event"
+SearchRescueOrganization ||--}o Event : "events"
+SearchRescueOrganization ||--}o Text : "faxNumber"
+SearchRescueOrganization ||--}o Person : "founders"
+SearchRescueOrganization ||--}o Date : "foundingDate"
+SearchRescueOrganization ||--}o Place : "foundingLocation"
+SearchRescueOrganization ||--}o Grant : "funding"
+SearchRescueOrganization ||--}o Certification : "hasCertification"
+SearchRescueOrganization ||--}o EducationalOccupationalCredential : "hasCredential"
+SearchRescueOrganization ||--}o MemberProgram : "hasMemberProgram"
+SearchRescueOrganization ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+SearchRescueOrganization ||--}o OfferCatalog : "hasOfferCatalog"
+SearchRescueOrganization ||--}o Place : "hasPOS"
+SearchRescueOrganization ||--}o InteractionCounter : "interactionStatistic"
+SearchRescueOrganization ||--}o Text : "isicV4"
+SearchRescueOrganization ||--}o Text : "iso6523Code"
+SearchRescueOrganization ||--}o Text : "legalName"
+SearchRescueOrganization ||--}o Offer : "makesOffer"
+SearchRescueOrganization ||--}o Text : "naics"
+SearchRescueOrganization ||--}o NonprofitType : "nonprofitStatus"
+SearchRescueOrganization ||--}o QuantitativeValue : "numberOfEmployees"
+SearchRescueOrganization ||--}o Organization : "parentOrganization"
+SearchRescueOrganization ||--}o Review : "review"
+SearchRescueOrganization ||--}o Review : "reviews"
+SearchRescueOrganization ||--}o Demand : "seeks"
+SearchRescueOrganization ||--}o Text : "slogan"
+SearchRescueOrganization ||--}o Organization : "subOrganization"
+SearchRescueOrganization ||--}o Text : "telephone"
+SearchRescueOrganization ||--}o Text : "vatID"
+SearchRescueOrganization ||--}o Text : "alternateName"
+SearchRescueOrganization ||--}o Text : "disambiguatingDescription"
+SearchRescueOrganization ||--}o Text : "name"
+SearchRescueOrganization ||--}o URL : "sameAs"
+SearchRescueOrganization ||--}o Action : "potentialAction"
+SearchRescueOrganization ||--}o URL : "url"
+

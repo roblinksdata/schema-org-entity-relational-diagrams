@@ -1,0 +1,23 @@
+erDiagram
+FMRadioChannel {
+    stringList genre  
+    stringList broadcastFrequency  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+FMRadioChannel ||--}o Text : "broadcastChannelId"
+FMRadioChannel ||--}o Text : "broadcastServiceTier"
+FMRadioChannel ||--}o CableOrSatelliteService : "inBroadcastLineup"
+FMRadioChannel ||--}o BroadcastService : "providesBroadcastService"
+FMRadioChannel ||--}o Text : "alternateName"
+FMRadioChannel ||--}o Text : "disambiguatingDescription"
+FMRadioChannel ||--}o Text : "name"
+FMRadioChannel ||--}o URL : "sameAs"
+FMRadioChannel ||--}o Action : "potentialAction"
+FMRadioChannel ||--}o URL : "url"
+

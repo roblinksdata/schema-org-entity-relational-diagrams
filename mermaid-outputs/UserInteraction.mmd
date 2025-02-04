@@ -1,0 +1,58 @@
+erDiagram
+UserInteraction {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UserInteraction ||--}o Thing : "about"
+UserInteraction ||--}o Duration : "duration"
+UserInteraction ||--}o CreativeWork : "workFeatured"
+UserInteraction ||--}o CreativeWork : "workPerformed"
+UserInteraction ||--}o AggregateRating : "aggregateRating"
+UserInteraction ||--}o Audience : "audience"
+UserInteraction ||--}o Person : "director"
+UserInteraction ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+UserInteraction ||--}o Schedule : "eventSchedule"
+UserInteraction ||--}o EventStatusType : "eventStatus"
+UserInteraction ||--}o Grant : "funding"
+UserInteraction ||--}o Boolean : "isAccessibleForFree"
+UserInteraction ||--}o Integer : "maximumAttendeeCapacity"
+UserInteraction ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+UserInteraction ||--}o Integer : "maximumVirtualAttendeeCapacity"
+UserInteraction ||--}o Date : "previousStartDate"
+UserInteraction ||--}o CreativeWork : "recordedIn"
+UserInteraction ||--}o Integer : "remainingAttendeeCapacity"
+UserInteraction ||--}o Review : "review"
+UserInteraction ||--}o Event : "subEvent"
+UserInteraction ||--}o Event : "subEvents"
+UserInteraction ||--}o Event : "superEvent"
+UserInteraction ||--}o Text : "typicalAgeRange"
+UserInteraction ||--}o Text : "alternateName"
+UserInteraction ||--}o Text : "disambiguatingDescription"
+UserInteraction ||--}o Text : "name"
+UserInteraction ||--}o URL : "sameAs"
+UserInteraction ||--}o Action : "potentialAction"
+UserInteraction ||--}o URL : "url"
+

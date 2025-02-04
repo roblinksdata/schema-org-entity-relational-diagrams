@@ -1,0 +1,26 @@
+erDiagram
+PropertyValue {
+    stringList measurementMethod  
+    stringList measurementTechnique  
+    stringList propertyID  
+    stringList unitCode  
+    stringList value  
+    stringList valueReference  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PropertyValue ||--}o Number : "maxValue"
+PropertyValue ||--}o Number : "minValue"
+PropertyValue ||--}o Text : "unitText"
+PropertyValue ||--}o Text : "alternateName"
+PropertyValue ||--}o Text : "disambiguatingDescription"
+PropertyValue ||--}o Text : "name"
+PropertyValue ||--}o URL : "sameAs"
+PropertyValue ||--}o Action : "potentialAction"
+PropertyValue ||--}o URL : "url"
+

@@ -1,0 +1,58 @@
+erDiagram
+TheaterEvent {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TheaterEvent ||--}o Thing : "about"
+TheaterEvent ||--}o Duration : "duration"
+TheaterEvent ||--}o CreativeWork : "workFeatured"
+TheaterEvent ||--}o CreativeWork : "workPerformed"
+TheaterEvent ||--}o AggregateRating : "aggregateRating"
+TheaterEvent ||--}o Audience : "audience"
+TheaterEvent ||--}o Person : "director"
+TheaterEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+TheaterEvent ||--}o Schedule : "eventSchedule"
+TheaterEvent ||--}o EventStatusType : "eventStatus"
+TheaterEvent ||--}o Grant : "funding"
+TheaterEvent ||--}o Boolean : "isAccessibleForFree"
+TheaterEvent ||--}o Integer : "maximumAttendeeCapacity"
+TheaterEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+TheaterEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+TheaterEvent ||--}o Date : "previousStartDate"
+TheaterEvent ||--}o CreativeWork : "recordedIn"
+TheaterEvent ||--}o Integer : "remainingAttendeeCapacity"
+TheaterEvent ||--}o Review : "review"
+TheaterEvent ||--}o Event : "subEvent"
+TheaterEvent ||--}o Event : "subEvents"
+TheaterEvent ||--}o Event : "superEvent"
+TheaterEvent ||--}o Text : "typicalAgeRange"
+TheaterEvent ||--}o Text : "alternateName"
+TheaterEvent ||--}o Text : "disambiguatingDescription"
+TheaterEvent ||--}o Text : "name"
+TheaterEvent ||--}o URL : "sameAs"
+TheaterEvent ||--}o Action : "potentialAction"
+TheaterEvent ||--}o URL : "url"
+

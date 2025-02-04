@@ -1,0 +1,65 @@
+erDiagram
+LegislativeBuilding {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LegislativeBuilding ||--}o Text : "openingHours"
+LegislativeBuilding ||--}o Text : "globalLocationNumber"
+LegislativeBuilding ||--}o URL : "hasGS1DigitalLink"
+LegislativeBuilding ||--}o PropertyValue : "additionalProperty"
+LegislativeBuilding ||--}o AggregateRating : "aggregateRating"
+LegislativeBuilding ||--}o LocationFeatureSpecification : "amenityFeature"
+LegislativeBuilding ||--}o Text : "branchCode"
+LegislativeBuilding ||--}o Place : "containedIn"
+LegislativeBuilding ||--}o Place : "containedInPlace"
+LegislativeBuilding ||--}o Place : "containsPlace"
+LegislativeBuilding ||--}o Event : "event"
+LegislativeBuilding ||--}o Event : "events"
+LegislativeBuilding ||--}o Text : "faxNumber"
+LegislativeBuilding ||--}o Certification : "hasCertification"
+LegislativeBuilding ||--}o Boolean : "hasDriveThroughService"
+LegislativeBuilding ||--}o Boolean : "isAccessibleForFree"
+LegislativeBuilding ||--}o Text : "isicV4"
+LegislativeBuilding ||--}o URL : "map"
+LegislativeBuilding ||--}o URL : "maps"
+LegislativeBuilding ||--}o Integer : "maximumAttendeeCapacity"
+LegislativeBuilding ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+LegislativeBuilding ||--}o Boolean : "publicAccess"
+LegislativeBuilding ||--}o Review : "review"
+LegislativeBuilding ||--}o Review : "reviews"
+LegislativeBuilding ||--}o Text : "slogan"
+LegislativeBuilding ||--}o Boolean : "smokingAllowed"
+LegislativeBuilding ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+LegislativeBuilding ||--}o Text : "telephone"
+LegislativeBuilding ||--}o URL : "tourBookingPage"
+LegislativeBuilding ||--}o Text : "alternateName"
+LegislativeBuilding ||--}o Text : "disambiguatingDescription"
+LegislativeBuilding ||--}o Text : "name"
+LegislativeBuilding ||--}o URL : "sameAs"
+LegislativeBuilding ||--}o Action : "potentialAction"
+LegislativeBuilding ||--}o URL : "url"
+

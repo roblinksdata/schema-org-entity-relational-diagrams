@@ -1,0 +1,18 @@
+erDiagram
+DrugPregnancyCategory {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DrugPregnancyCategory ||--}o Text : "alternateName"
+DrugPregnancyCategory ||--}o Text : "disambiguatingDescription"
+DrugPregnancyCategory ||--}o Text : "name"
+DrugPregnancyCategory ||--}o URL : "sameAs"
+DrugPregnancyCategory ||--}o Action : "potentialAction"
+DrugPregnancyCategory ||--}o URL : "url"
+

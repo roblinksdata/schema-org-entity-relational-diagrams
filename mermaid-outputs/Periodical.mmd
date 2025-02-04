@@ -1,0 +1,134 @@
+erDiagram
+Periodical {
+    stringList endDate  
+    stringList startDate  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Periodical ||--}o Text : "issn"
+Periodical ||--}o Thing : "about"
+Periodical ||--}o Place : "contentLocation"
+Periodical ||--}o CreativeWork : "hasPart"
+Periodical ||--}o Claim : "interpretedAsClaim"
+Periodical ||--}o Thing : "mainEntity"
+Periodical ||--}o Place : "spatialCoverage"
+Periodical ||--}o CreativeWork : "workExample"
+Periodical ||--}o Text : "abstract"
+Periodical ||--}o Text : "accessMode"
+Periodical ||--}o ItemList : "accessModeSufficient"
+Periodical ||--}o Text : "accessibilityAPI"
+Periodical ||--}o Text : "accessibilityControl"
+Periodical ||--}o Text : "accessibilityFeature"
+Periodical ||--}o Text : "accessibilityHazard"
+Periodical ||--}o Text : "accessibilitySummary"
+Periodical ||--}o Person : "accountablePerson"
+Periodical ||--}o AggregateRating : "aggregateRating"
+Periodical ||--}o Text : "alternativeHeadline"
+Periodical ||--}o MediaObject : "associatedMedia"
+Periodical ||--}o Audience : "audience"
+Periodical ||--}o Text : "award"
+Periodical ||--}o Text : "awards"
+Periodical ||--}o Person : "character"
+Periodical ||--}o Comment : "comment"
+Periodical ||--}o Integer : "commentCount"
+Periodical ||--}o Text : "conditionsOfAccess"
+Periodical ||--}o DateTime : "contentReferenceTime"
+Periodical ||--}o Text : "copyrightNotice"
+Periodical ||--}o Number : "copyrightYear"
+Periodical ||--}o Country : "countryOfOrigin"
+Periodical ||--}o Text : "creditText"
+Periodical ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Periodical ||--}o URL : "discussionUrl"
+Periodical ||--}o Person : "editor"
+Periodical ||--}o AlignmentObject : "educationalAlignment"
+Periodical ||--}o MediaObject : "encoding"
+Periodical ||--}o MediaObject : "encodings"
+Periodical ||--}o CreativeWork : "exampleOfWork"
+Periodical ||--}o Grant : "funding"
+Periodical ||--}o Text : "headline"
+Periodical ||--}o InteractionCounter : "interactionStatistic"
+Periodical ||--}o Text : "interactivityType"
+Periodical ||--}o Boolean : "isAccessibleForFree"
+Periodical ||--}o Boolean : "isFamilyFriendly"
+Periodical ||--}o Place : "locationCreated"
+Periodical ||--}o Thing : "mentions"
+Periodical ||--}o PublicationEvent : "publication"
+Periodical ||--}o Organization : "publisherImprint"
+Periodical ||--}o Event : "recordedAt"
+Periodical ||--}o PublicationEvent : "releasedEvent"
+Periodical ||--}o Review : "review"
+Periodical ||--}o Review : "reviews"
+Periodical ||--}o Date : "sdDatePublished"
+Periodical ||--}o Organization : "sourceOrganization"
+Periodical ||--}o Place : "spatial"
+Periodical ||--}o Text : "text"
+Periodical ||--}o ImageObject : "thumbnail"
+Periodical ||--}o URL : "thumbnailUrl"
+Periodical ||--}o Duration : "timeRequired"
+Periodical ||--}o CreativeWork : "translationOfWork"
+Periodical ||--}o Text : "typicalAgeRange"
+Periodical ||--}o CreativeWork : "workTranslation"
+Periodical ||--}o Text : "alternateName"
+Periodical ||--}o Text : "disambiguatingDescription"
+Periodical ||--}o Text : "name"
+Periodical ||--}o URL : "sameAs"
+Periodical ||--}o Action : "potentialAction"
+Periodical ||--}o URL : "url"
+

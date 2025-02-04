@@ -1,0 +1,90 @@
+erDiagram
+SportsOrganization {
+    stringList sport  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList logo  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList address  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList keywords  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SportsOrganization ||--}o Text : "duns"
+SportsOrganization ||--}o Text : "globalLocationNumber"
+SportsOrganization ||--}o URL : "hasGS1DigitalLink"
+SportsOrganization ||--}o Text : "leiCode"
+SportsOrganization ||--}o Text : "taxID"
+SportsOrganization ||--}o InteractionCounter : "agentInteractionStatistic"
+SportsOrganization ||--}o AggregateRating : "aggregateRating"
+SportsOrganization ||--}o Person : "alumni"
+SportsOrganization ||--}o Text : "award"
+SportsOrganization ||--}o Text : "awards"
+SportsOrganization ||--}o ContactPoint : "contactPoint"
+SportsOrganization ||--}o ContactPoint : "contactPoints"
+SportsOrganization ||--}o Organization : "department"
+SportsOrganization ||--}o Date : "dissolutionDate"
+SportsOrganization ||--}o Text : "email"
+SportsOrganization ||--}o Person : "employee"
+SportsOrganization ||--}o Person : "employees"
+SportsOrganization ||--}o Event : "event"
+SportsOrganization ||--}o Event : "events"
+SportsOrganization ||--}o Text : "faxNumber"
+SportsOrganization ||--}o Person : "founders"
+SportsOrganization ||--}o Date : "foundingDate"
+SportsOrganization ||--}o Place : "foundingLocation"
+SportsOrganization ||--}o Grant : "funding"
+SportsOrganization ||--}o Certification : "hasCertification"
+SportsOrganization ||--}o EducationalOccupationalCredential : "hasCredential"
+SportsOrganization ||--}o MemberProgram : "hasMemberProgram"
+SportsOrganization ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+SportsOrganization ||--}o OfferCatalog : "hasOfferCatalog"
+SportsOrganization ||--}o Place : "hasPOS"
+SportsOrganization ||--}o InteractionCounter : "interactionStatistic"
+SportsOrganization ||--}o Text : "isicV4"
+SportsOrganization ||--}o Text : "iso6523Code"
+SportsOrganization ||--}o Text : "legalName"
+SportsOrganization ||--}o Offer : "makesOffer"
+SportsOrganization ||--}o Text : "naics"
+SportsOrganization ||--}o NonprofitType : "nonprofitStatus"
+SportsOrganization ||--}o QuantitativeValue : "numberOfEmployees"
+SportsOrganization ||--}o Organization : "parentOrganization"
+SportsOrganization ||--}o Review : "review"
+SportsOrganization ||--}o Review : "reviews"
+SportsOrganization ||--}o Demand : "seeks"
+SportsOrganization ||--}o Text : "slogan"
+SportsOrganization ||--}o Organization : "subOrganization"
+SportsOrganization ||--}o Text : "telephone"
+SportsOrganization ||--}o Text : "vatID"
+SportsOrganization ||--}o Text : "alternateName"
+SportsOrganization ||--}o Text : "disambiguatingDescription"
+SportsOrganization ||--}o Text : "name"
+SportsOrganization ||--}o URL : "sameAs"
+SportsOrganization ||--}o Action : "potentialAction"
+SportsOrganization ||--}o URL : "url"
+

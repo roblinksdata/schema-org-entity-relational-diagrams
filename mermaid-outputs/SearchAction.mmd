@@ -1,0 +1,31 @@
+erDiagram
+SearchAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SearchAction ||--}o Text : "query"
+SearchAction ||--}o Thing : "instrument"
+SearchAction ||--}o Thing : "object"
+SearchAction ||--}o Thing : "result"
+SearchAction ||--}o HowTo : "actionProcess"
+SearchAction ||--}o ActionStatusType : "actionStatus"
+SearchAction ||--}o Thing : "error"
+SearchAction ||--}o Text : "alternateName"
+SearchAction ||--}o Text : "disambiguatingDescription"
+SearchAction ||--}o Text : "name"
+SearchAction ||--}o URL : "sameAs"
+SearchAction ||--}o Action : "potentialAction"
+SearchAction ||--}o URL : "url"
+

@@ -1,0 +1,30 @@
+erDiagram
+Schedule {
+    stringList byDay  
+    stringList endDate  
+    stringList endTime  
+    stringList exceptDate  
+    stringList startDate  
+    stringList startTime  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Schedule ||--}o Duration : "duration"
+Schedule ||--}o Text : "repeatFrequency"
+Schedule ||--}o Integer : "byMonth"
+Schedule ||--}o Integer : "byMonthDay"
+Schedule ||--}o Integer : "byMonthWeek"
+Schedule ||--}o Integer : "repeatCount"
+Schedule ||--}o Text : "scheduleTimezone"
+Schedule ||--}o Text : "alternateName"
+Schedule ||--}o Text : "disambiguatingDescription"
+Schedule ||--}o Text : "name"
+Schedule ||--}o URL : "sameAs"
+Schedule ||--}o Action : "potentialAction"
+Schedule ||--}o URL : "url"
+

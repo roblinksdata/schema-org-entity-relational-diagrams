@@ -1,0 +1,31 @@
+erDiagram
+PathologyTest {
+    stringList normalRange  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PathologyTest ||--}o Text : "tissueSample"
+PathologyTest ||--}o Drug : "affectedBy"
+PathologyTest ||--}o MedicalSign : "signDetected"
+PathologyTest ||--}o MedicalCondition : "usedToDiagnose"
+PathologyTest ||--}o MedicalDevice : "usesDevice"
+PathologyTest ||--}o MedicalCode : "code"
+PathologyTest ||--}o Grant : "funding"
+PathologyTest ||--}o MedicalGuideline : "guideline"
+PathologyTest ||--}o MedicineSystem : "medicineSystem"
+PathologyTest ||--}o Organization : "recognizingAuthority"
+PathologyTest ||--}o MedicalSpecialty : "relevantSpecialty"
+PathologyTest ||--}o MedicalStudy : "study"
+PathologyTest ||--}o Text : "alternateName"
+PathologyTest ||--}o Text : "disambiguatingDescription"
+PathologyTest ||--}o Text : "name"
+PathologyTest ||--}o URL : "sameAs"
+PathologyTest ||--}o Action : "potentialAction"
+PathologyTest ||--}o URL : "url"
+

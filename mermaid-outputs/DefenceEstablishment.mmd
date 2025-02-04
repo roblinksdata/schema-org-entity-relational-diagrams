@@ -1,0 +1,65 @@
+erDiagram
+DefenceEstablishment {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DefenceEstablishment ||--}o Text : "openingHours"
+DefenceEstablishment ||--}o Text : "globalLocationNumber"
+DefenceEstablishment ||--}o URL : "hasGS1DigitalLink"
+DefenceEstablishment ||--}o PropertyValue : "additionalProperty"
+DefenceEstablishment ||--}o AggregateRating : "aggregateRating"
+DefenceEstablishment ||--}o LocationFeatureSpecification : "amenityFeature"
+DefenceEstablishment ||--}o Text : "branchCode"
+DefenceEstablishment ||--}o Place : "containedIn"
+DefenceEstablishment ||--}o Place : "containedInPlace"
+DefenceEstablishment ||--}o Place : "containsPlace"
+DefenceEstablishment ||--}o Event : "event"
+DefenceEstablishment ||--}o Event : "events"
+DefenceEstablishment ||--}o Text : "faxNumber"
+DefenceEstablishment ||--}o Certification : "hasCertification"
+DefenceEstablishment ||--}o Boolean : "hasDriveThroughService"
+DefenceEstablishment ||--}o Boolean : "isAccessibleForFree"
+DefenceEstablishment ||--}o Text : "isicV4"
+DefenceEstablishment ||--}o URL : "map"
+DefenceEstablishment ||--}o URL : "maps"
+DefenceEstablishment ||--}o Integer : "maximumAttendeeCapacity"
+DefenceEstablishment ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+DefenceEstablishment ||--}o Boolean : "publicAccess"
+DefenceEstablishment ||--}o Review : "review"
+DefenceEstablishment ||--}o Review : "reviews"
+DefenceEstablishment ||--}o Text : "slogan"
+DefenceEstablishment ||--}o Boolean : "smokingAllowed"
+DefenceEstablishment ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+DefenceEstablishment ||--}o Text : "telephone"
+DefenceEstablishment ||--}o URL : "tourBookingPage"
+DefenceEstablishment ||--}o Text : "alternateName"
+DefenceEstablishment ||--}o Text : "disambiguatingDescription"
+DefenceEstablishment ||--}o Text : "name"
+DefenceEstablishment ||--}o URL : "sameAs"
+DefenceEstablishment ||--}o Action : "potentialAction"
+DefenceEstablishment ||--}o URL : "url"
+

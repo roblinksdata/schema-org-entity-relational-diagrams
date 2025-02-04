@@ -1,0 +1,131 @@
+erDiagram
+FoodEstablishment {
+    stringList acceptsReservations  
+    stringList hasMenu  
+    stringList menu  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+FoodEstablishment ||--}o Text : "servesCuisine"
+FoodEstablishment ||--}o Rating : "starRating"
+FoodEstablishment ||--}o Organization : "branchOf"
+FoodEstablishment ||--}o Text : "currenciesAccepted"
+FoodEstablishment ||--}o Text : "openingHours"
+FoodEstablishment ||--}o Text : "paymentAccepted"
+FoodEstablishment ||--}o Text : "priceRange"
+FoodEstablishment ||--}o Text : "globalLocationNumber"
+FoodEstablishment ||--}o URL : "hasGS1DigitalLink"
+FoodEstablishment ||--}o PropertyValue : "additionalProperty"
+FoodEstablishment ||--}o AggregateRating : "aggregateRating"
+FoodEstablishment ||--}o LocationFeatureSpecification : "amenityFeature"
+FoodEstablishment ||--}o Text : "branchCode"
+FoodEstablishment ||--}o Place : "containedIn"
+FoodEstablishment ||--}o Place : "containedInPlace"
+FoodEstablishment ||--}o Place : "containsPlace"
+FoodEstablishment ||--}o Event : "event"
+FoodEstablishment ||--}o Event : "events"
+FoodEstablishment ||--}o Text : "faxNumber"
+FoodEstablishment ||--}o Certification : "hasCertification"
+FoodEstablishment ||--}o Boolean : "hasDriveThroughService"
+FoodEstablishment ||--}o Boolean : "isAccessibleForFree"
+FoodEstablishment ||--}o Text : "isicV4"
+FoodEstablishment ||--}o URL : "map"
+FoodEstablishment ||--}o URL : "maps"
+FoodEstablishment ||--}o Integer : "maximumAttendeeCapacity"
+FoodEstablishment ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+FoodEstablishment ||--}o Boolean : "publicAccess"
+FoodEstablishment ||--}o Review : "review"
+FoodEstablishment ||--}o Review : "reviews"
+FoodEstablishment ||--}o Text : "slogan"
+FoodEstablishment ||--}o Boolean : "smokingAllowed"
+FoodEstablishment ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+FoodEstablishment ||--}o Text : "telephone"
+FoodEstablishment ||--}o URL : "tourBookingPage"
+FoodEstablishment ||--}o Text : "duns"
+FoodEstablishment ||--}o Text : "leiCode"
+FoodEstablishment ||--}o Text : "taxID"
+FoodEstablishment ||--}o InteractionCounter : "agentInteractionStatistic"
+FoodEstablishment ||--}o Person : "alumni"
+FoodEstablishment ||--}o Text : "award"
+FoodEstablishment ||--}o Text : "awards"
+FoodEstablishment ||--}o ContactPoint : "contactPoint"
+FoodEstablishment ||--}o ContactPoint : "contactPoints"
+FoodEstablishment ||--}o Organization : "department"
+FoodEstablishment ||--}o Date : "dissolutionDate"
+FoodEstablishment ||--}o Text : "email"
+FoodEstablishment ||--}o Person : "employee"
+FoodEstablishment ||--}o Person : "employees"
+FoodEstablishment ||--}o Person : "founders"
+FoodEstablishment ||--}o Date : "foundingDate"
+FoodEstablishment ||--}o Place : "foundingLocation"
+FoodEstablishment ||--}o Grant : "funding"
+FoodEstablishment ||--}o EducationalOccupationalCredential : "hasCredential"
+FoodEstablishment ||--}o MemberProgram : "hasMemberProgram"
+FoodEstablishment ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+FoodEstablishment ||--}o OfferCatalog : "hasOfferCatalog"
+FoodEstablishment ||--}o Place : "hasPOS"
+FoodEstablishment ||--}o InteractionCounter : "interactionStatistic"
+FoodEstablishment ||--}o Text : "iso6523Code"
+FoodEstablishment ||--}o Text : "legalName"
+FoodEstablishment ||--}o Offer : "makesOffer"
+FoodEstablishment ||--}o Text : "naics"
+FoodEstablishment ||--}o NonprofitType : "nonprofitStatus"
+FoodEstablishment ||--}o QuantitativeValue : "numberOfEmployees"
+FoodEstablishment ||--}o Organization : "parentOrganization"
+FoodEstablishment ||--}o Demand : "seeks"
+FoodEstablishment ||--}o Organization : "subOrganization"
+FoodEstablishment ||--}o Text : "vatID"
+FoodEstablishment ||--}o Text : "alternateName"
+FoodEstablishment ||--}o Text : "disambiguatingDescription"
+FoodEstablishment ||--}o Text : "name"
+FoodEstablishment ||--}o URL : "sameAs"
+FoodEstablishment ||--}o Action : "potentialAction"
+FoodEstablishment ||--}o URL : "url"
+

@@ -1,0 +1,126 @@
+erDiagram
+RealEstateAgent {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RealEstateAgent ||--}o Organization : "branchOf"
+RealEstateAgent ||--}o Text : "currenciesAccepted"
+RealEstateAgent ||--}o Text : "openingHours"
+RealEstateAgent ||--}o Text : "paymentAccepted"
+RealEstateAgent ||--}o Text : "priceRange"
+RealEstateAgent ||--}o Text : "globalLocationNumber"
+RealEstateAgent ||--}o URL : "hasGS1DigitalLink"
+RealEstateAgent ||--}o PropertyValue : "additionalProperty"
+RealEstateAgent ||--}o AggregateRating : "aggregateRating"
+RealEstateAgent ||--}o LocationFeatureSpecification : "amenityFeature"
+RealEstateAgent ||--}o Text : "branchCode"
+RealEstateAgent ||--}o Place : "containedIn"
+RealEstateAgent ||--}o Place : "containedInPlace"
+RealEstateAgent ||--}o Place : "containsPlace"
+RealEstateAgent ||--}o Event : "event"
+RealEstateAgent ||--}o Event : "events"
+RealEstateAgent ||--}o Text : "faxNumber"
+RealEstateAgent ||--}o Certification : "hasCertification"
+RealEstateAgent ||--}o Boolean : "hasDriveThroughService"
+RealEstateAgent ||--}o Boolean : "isAccessibleForFree"
+RealEstateAgent ||--}o Text : "isicV4"
+RealEstateAgent ||--}o URL : "map"
+RealEstateAgent ||--}o URL : "maps"
+RealEstateAgent ||--}o Integer : "maximumAttendeeCapacity"
+RealEstateAgent ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+RealEstateAgent ||--}o Boolean : "publicAccess"
+RealEstateAgent ||--}o Review : "review"
+RealEstateAgent ||--}o Review : "reviews"
+RealEstateAgent ||--}o Text : "slogan"
+RealEstateAgent ||--}o Boolean : "smokingAllowed"
+RealEstateAgent ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+RealEstateAgent ||--}o Text : "telephone"
+RealEstateAgent ||--}o URL : "tourBookingPage"
+RealEstateAgent ||--}o Text : "duns"
+RealEstateAgent ||--}o Text : "leiCode"
+RealEstateAgent ||--}o Text : "taxID"
+RealEstateAgent ||--}o InteractionCounter : "agentInteractionStatistic"
+RealEstateAgent ||--}o Person : "alumni"
+RealEstateAgent ||--}o Text : "award"
+RealEstateAgent ||--}o Text : "awards"
+RealEstateAgent ||--}o ContactPoint : "contactPoint"
+RealEstateAgent ||--}o ContactPoint : "contactPoints"
+RealEstateAgent ||--}o Organization : "department"
+RealEstateAgent ||--}o Date : "dissolutionDate"
+RealEstateAgent ||--}o Text : "email"
+RealEstateAgent ||--}o Person : "employee"
+RealEstateAgent ||--}o Person : "employees"
+RealEstateAgent ||--}o Person : "founders"
+RealEstateAgent ||--}o Date : "foundingDate"
+RealEstateAgent ||--}o Place : "foundingLocation"
+RealEstateAgent ||--}o Grant : "funding"
+RealEstateAgent ||--}o EducationalOccupationalCredential : "hasCredential"
+RealEstateAgent ||--}o MemberProgram : "hasMemberProgram"
+RealEstateAgent ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+RealEstateAgent ||--}o OfferCatalog : "hasOfferCatalog"
+RealEstateAgent ||--}o Place : "hasPOS"
+RealEstateAgent ||--}o InteractionCounter : "interactionStatistic"
+RealEstateAgent ||--}o Text : "iso6523Code"
+RealEstateAgent ||--}o Text : "legalName"
+RealEstateAgent ||--}o Offer : "makesOffer"
+RealEstateAgent ||--}o Text : "naics"
+RealEstateAgent ||--}o NonprofitType : "nonprofitStatus"
+RealEstateAgent ||--}o QuantitativeValue : "numberOfEmployees"
+RealEstateAgent ||--}o Organization : "parentOrganization"
+RealEstateAgent ||--}o Demand : "seeks"
+RealEstateAgent ||--}o Organization : "subOrganization"
+RealEstateAgent ||--}o Text : "vatID"
+RealEstateAgent ||--}o Text : "alternateName"
+RealEstateAgent ||--}o Text : "disambiguatingDescription"
+RealEstateAgent ||--}o Text : "name"
+RealEstateAgent ||--}o URL : "sameAs"
+RealEstateAgent ||--}o Action : "potentialAction"
+RealEstateAgent ||--}o URL : "url"
+

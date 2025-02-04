@@ -1,0 +1,39 @@
+erDiagram
+MerchantReturnPolicy {
+    stringList applicableCountry  
+    stringList merchantReturnDays  
+    stringList restockingFee  
+    stringList returnPolicyCountry  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MerchantReturnPolicy ||--}o PropertyValue : "additionalProperty"
+MerchantReturnPolicy ||--}o ReturnFeesEnumeration : "customerRemorseReturnFees"
+MerchantReturnPolicy ||--}o ReturnLabelSourceEnumeration : "customerRemorseReturnLabelSource"
+MerchantReturnPolicy ||--}o MonetaryAmount : "customerRemorseReturnShippingFeesAmount"
+MerchantReturnPolicy ||--}o Boolean : "inStoreReturnsOffered"
+MerchantReturnPolicy ||--}o OfferItemCondition : "itemCondition"
+MerchantReturnPolicy ||--}o ReturnFeesEnumeration : "itemDefectReturnFees"
+MerchantReturnPolicy ||--}o ReturnLabelSourceEnumeration : "itemDefectReturnLabelSource"
+MerchantReturnPolicy ||--}o MonetaryAmount : "itemDefectReturnShippingFeesAmount"
+MerchantReturnPolicy ||--}o URL : "merchantReturnLink"
+MerchantReturnPolicy ||--}o RefundTypeEnumeration : "refundType"
+MerchantReturnPolicy ||--}o ReturnFeesEnumeration : "returnFees"
+MerchantReturnPolicy ||--}o ReturnLabelSourceEnumeration : "returnLabelSource"
+MerchantReturnPolicy ||--}o ReturnMethodEnumeration : "returnMethod"
+MerchantReturnPolicy ||--}o MerchantReturnEnumeration : "returnPolicyCategory"
+MerchantReturnPolicy ||--}o MerchantReturnPolicySeasonalOverride : "returnPolicySeasonalOverride"
+MerchantReturnPolicy ||--}o MonetaryAmount : "returnShippingFeesAmount"
+MerchantReturnPolicy ||--}o MemberProgramTier : "validForMemberTier"
+MerchantReturnPolicy ||--}o Text : "alternateName"
+MerchantReturnPolicy ||--}o Text : "disambiguatingDescription"
+MerchantReturnPolicy ||--}o Text : "name"
+MerchantReturnPolicy ||--}o URL : "sameAs"
+MerchantReturnPolicy ||--}o Action : "potentialAction"
+MerchantReturnPolicy ||--}o URL : "url"
+

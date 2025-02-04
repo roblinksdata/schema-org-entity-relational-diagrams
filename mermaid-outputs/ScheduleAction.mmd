@@ -1,0 +1,31 @@
+erDiagram
+ScheduleAction {
+    stringList scheduledTime  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ScheduleAction ||--}o Thing : "instrument"
+ScheduleAction ||--}o Thing : "object"
+ScheduleAction ||--}o Thing : "result"
+ScheduleAction ||--}o HowTo : "actionProcess"
+ScheduleAction ||--}o ActionStatusType : "actionStatus"
+ScheduleAction ||--}o Thing : "error"
+ScheduleAction ||--}o Text : "alternateName"
+ScheduleAction ||--}o Text : "disambiguatingDescription"
+ScheduleAction ||--}o Text : "name"
+ScheduleAction ||--}o URL : "sameAs"
+ScheduleAction ||--}o Action : "potentialAction"
+ScheduleAction ||--}o URL : "url"
+

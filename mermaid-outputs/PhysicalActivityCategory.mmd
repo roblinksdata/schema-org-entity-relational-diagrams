@@ -1,0 +1,18 @@
+erDiagram
+PhysicalActivityCategory {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PhysicalActivityCategory ||--}o Text : "alternateName"
+PhysicalActivityCategory ||--}o Text : "disambiguatingDescription"
+PhysicalActivityCategory ||--}o Text : "name"
+PhysicalActivityCategory ||--}o URL : "sameAs"
+PhysicalActivityCategory ||--}o Action : "potentialAction"
+PhysicalActivityCategory ||--}o URL : "url"
+

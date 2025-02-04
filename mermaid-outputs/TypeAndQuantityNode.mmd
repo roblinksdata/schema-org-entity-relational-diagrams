@@ -1,0 +1,22 @@
+erDiagram
+TypeAndQuantityNode {
+    stringList typeOfGood  
+    stringList unitCode  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TypeAndQuantityNode ||--}o Number : "amountOfThisGood"
+TypeAndQuantityNode ||--}o BusinessFunction : "businessFunction"
+TypeAndQuantityNode ||--}o Text : "unitText"
+TypeAndQuantityNode ||--}o Text : "alternateName"
+TypeAndQuantityNode ||--}o Text : "disambiguatingDescription"
+TypeAndQuantityNode ||--}o Text : "name"
+TypeAndQuantityNode ||--}o URL : "sameAs"
+TypeAndQuantityNode ||--}o Action : "potentialAction"
+TypeAndQuantityNode ||--}o URL : "url"
+

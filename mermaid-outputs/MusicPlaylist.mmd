@@ -1,0 +1,134 @@
+erDiagram
+MusicPlaylist {
+    stringList track  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MusicPlaylist ||--}o Integer : "numTracks"
+MusicPlaylist ||--}o MusicRecording : "tracks"
+MusicPlaylist ||--}o Thing : "about"
+MusicPlaylist ||--}o Place : "contentLocation"
+MusicPlaylist ||--}o CreativeWork : "hasPart"
+MusicPlaylist ||--}o Claim : "interpretedAsClaim"
+MusicPlaylist ||--}o Thing : "mainEntity"
+MusicPlaylist ||--}o Place : "spatialCoverage"
+MusicPlaylist ||--}o CreativeWork : "workExample"
+MusicPlaylist ||--}o Text : "abstract"
+MusicPlaylist ||--}o Text : "accessMode"
+MusicPlaylist ||--}o ItemList : "accessModeSufficient"
+MusicPlaylist ||--}o Text : "accessibilityAPI"
+MusicPlaylist ||--}o Text : "accessibilityControl"
+MusicPlaylist ||--}o Text : "accessibilityFeature"
+MusicPlaylist ||--}o Text : "accessibilityHazard"
+MusicPlaylist ||--}o Text : "accessibilitySummary"
+MusicPlaylist ||--}o Person : "accountablePerson"
+MusicPlaylist ||--}o AggregateRating : "aggregateRating"
+MusicPlaylist ||--}o Text : "alternativeHeadline"
+MusicPlaylist ||--}o MediaObject : "associatedMedia"
+MusicPlaylist ||--}o Audience : "audience"
+MusicPlaylist ||--}o Text : "award"
+MusicPlaylist ||--}o Text : "awards"
+MusicPlaylist ||--}o Person : "character"
+MusicPlaylist ||--}o Comment : "comment"
+MusicPlaylist ||--}o Integer : "commentCount"
+MusicPlaylist ||--}o Text : "conditionsOfAccess"
+MusicPlaylist ||--}o DateTime : "contentReferenceTime"
+MusicPlaylist ||--}o Text : "copyrightNotice"
+MusicPlaylist ||--}o Number : "copyrightYear"
+MusicPlaylist ||--}o Country : "countryOfOrigin"
+MusicPlaylist ||--}o Text : "creditText"
+MusicPlaylist ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+MusicPlaylist ||--}o URL : "discussionUrl"
+MusicPlaylist ||--}o Person : "editor"
+MusicPlaylist ||--}o AlignmentObject : "educationalAlignment"
+MusicPlaylist ||--}o MediaObject : "encoding"
+MusicPlaylist ||--}o MediaObject : "encodings"
+MusicPlaylist ||--}o CreativeWork : "exampleOfWork"
+MusicPlaylist ||--}o Grant : "funding"
+MusicPlaylist ||--}o Text : "headline"
+MusicPlaylist ||--}o InteractionCounter : "interactionStatistic"
+MusicPlaylist ||--}o Text : "interactivityType"
+MusicPlaylist ||--}o Boolean : "isAccessibleForFree"
+MusicPlaylist ||--}o Boolean : "isFamilyFriendly"
+MusicPlaylist ||--}o Place : "locationCreated"
+MusicPlaylist ||--}o Thing : "mentions"
+MusicPlaylist ||--}o PublicationEvent : "publication"
+MusicPlaylist ||--}o Organization : "publisherImprint"
+MusicPlaylist ||--}o Event : "recordedAt"
+MusicPlaylist ||--}o PublicationEvent : "releasedEvent"
+MusicPlaylist ||--}o Review : "review"
+MusicPlaylist ||--}o Review : "reviews"
+MusicPlaylist ||--}o Date : "sdDatePublished"
+MusicPlaylist ||--}o Organization : "sourceOrganization"
+MusicPlaylist ||--}o Place : "spatial"
+MusicPlaylist ||--}o Text : "text"
+MusicPlaylist ||--}o ImageObject : "thumbnail"
+MusicPlaylist ||--}o URL : "thumbnailUrl"
+MusicPlaylist ||--}o Duration : "timeRequired"
+MusicPlaylist ||--}o CreativeWork : "translationOfWork"
+MusicPlaylist ||--}o Text : "typicalAgeRange"
+MusicPlaylist ||--}o CreativeWork : "workTranslation"
+MusicPlaylist ||--}o Text : "alternateName"
+MusicPlaylist ||--}o Text : "disambiguatingDescription"
+MusicPlaylist ||--}o Text : "name"
+MusicPlaylist ||--}o URL : "sameAs"
+MusicPlaylist ||--}o Action : "potentialAction"
+MusicPlaylist ||--}o URL : "url"
+

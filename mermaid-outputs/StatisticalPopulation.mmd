@@ -1,0 +1,18 @@
+erDiagram
+StatisticalPopulation {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+StatisticalPopulation ||--}o Class : "populationType"
+StatisticalPopulation ||--}o Text : "alternateName"
+StatisticalPopulation ||--}o Text : "disambiguatingDescription"
+StatisticalPopulation ||--}o Text : "name"
+StatisticalPopulation ||--}o URL : "sameAs"
+StatisticalPopulation ||--}o Action : "potentialAction"
+StatisticalPopulation ||--}o URL : "url"
+

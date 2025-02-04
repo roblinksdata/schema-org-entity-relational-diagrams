@@ -1,0 +1,25 @@
+erDiagram
+MedicalIntangible {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalIntangible ||--}o MedicalCode : "code"
+MedicalIntangible ||--}o Grant : "funding"
+MedicalIntangible ||--}o MedicalGuideline : "guideline"
+MedicalIntangible ||--}o MedicineSystem : "medicineSystem"
+MedicalIntangible ||--}o Organization : "recognizingAuthority"
+MedicalIntangible ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalIntangible ||--}o MedicalStudy : "study"
+MedicalIntangible ||--}o Text : "alternateName"
+MedicalIntangible ||--}o Text : "disambiguatingDescription"
+MedicalIntangible ||--}o Text : "name"
+MedicalIntangible ||--}o URL : "sameAs"
+MedicalIntangible ||--}o Action : "potentialAction"
+MedicalIntangible ||--}o URL : "url"
+

@@ -1,0 +1,134 @@
+erDiagram
+Blog {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Blog ||--}o Text : "issn"
+Blog ||--}o BlogPosting : "blogPost"
+Blog ||--}o BlogPosting : "blogPosts"
+Blog ||--}o Thing : "about"
+Blog ||--}o Place : "contentLocation"
+Blog ||--}o CreativeWork : "hasPart"
+Blog ||--}o Claim : "interpretedAsClaim"
+Blog ||--}o Thing : "mainEntity"
+Blog ||--}o Place : "spatialCoverage"
+Blog ||--}o CreativeWork : "workExample"
+Blog ||--}o Text : "abstract"
+Blog ||--}o Text : "accessMode"
+Blog ||--}o ItemList : "accessModeSufficient"
+Blog ||--}o Text : "accessibilityAPI"
+Blog ||--}o Text : "accessibilityControl"
+Blog ||--}o Text : "accessibilityFeature"
+Blog ||--}o Text : "accessibilityHazard"
+Blog ||--}o Text : "accessibilitySummary"
+Blog ||--}o Person : "accountablePerson"
+Blog ||--}o AggregateRating : "aggregateRating"
+Blog ||--}o Text : "alternativeHeadline"
+Blog ||--}o MediaObject : "associatedMedia"
+Blog ||--}o Audience : "audience"
+Blog ||--}o Text : "award"
+Blog ||--}o Text : "awards"
+Blog ||--}o Person : "character"
+Blog ||--}o Comment : "comment"
+Blog ||--}o Integer : "commentCount"
+Blog ||--}o Text : "conditionsOfAccess"
+Blog ||--}o DateTime : "contentReferenceTime"
+Blog ||--}o Text : "copyrightNotice"
+Blog ||--}o Number : "copyrightYear"
+Blog ||--}o Country : "countryOfOrigin"
+Blog ||--}o Text : "creditText"
+Blog ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Blog ||--}o URL : "discussionUrl"
+Blog ||--}o Person : "editor"
+Blog ||--}o AlignmentObject : "educationalAlignment"
+Blog ||--}o MediaObject : "encoding"
+Blog ||--}o MediaObject : "encodings"
+Blog ||--}o CreativeWork : "exampleOfWork"
+Blog ||--}o Grant : "funding"
+Blog ||--}o Text : "headline"
+Blog ||--}o InteractionCounter : "interactionStatistic"
+Blog ||--}o Text : "interactivityType"
+Blog ||--}o Boolean : "isAccessibleForFree"
+Blog ||--}o Boolean : "isFamilyFriendly"
+Blog ||--}o Place : "locationCreated"
+Blog ||--}o Thing : "mentions"
+Blog ||--}o PublicationEvent : "publication"
+Blog ||--}o Organization : "publisherImprint"
+Blog ||--}o Event : "recordedAt"
+Blog ||--}o PublicationEvent : "releasedEvent"
+Blog ||--}o Review : "review"
+Blog ||--}o Review : "reviews"
+Blog ||--}o Date : "sdDatePublished"
+Blog ||--}o Organization : "sourceOrganization"
+Blog ||--}o Place : "spatial"
+Blog ||--}o Text : "text"
+Blog ||--}o ImageObject : "thumbnail"
+Blog ||--}o URL : "thumbnailUrl"
+Blog ||--}o Duration : "timeRequired"
+Blog ||--}o CreativeWork : "translationOfWork"
+Blog ||--}o Text : "typicalAgeRange"
+Blog ||--}o CreativeWork : "workTranslation"
+Blog ||--}o Text : "alternateName"
+Blog ||--}o Text : "disambiguatingDescription"
+Blog ||--}o Text : "name"
+Blog ||--}o URL : "sameAs"
+Blog ||--}o Action : "potentialAction"
+Blog ||--}o URL : "url"
+

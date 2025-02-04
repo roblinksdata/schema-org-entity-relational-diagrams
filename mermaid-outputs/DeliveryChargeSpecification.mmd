@@ -1,0 +1,32 @@
+erDiagram
+DeliveryChargeSpecification {
+    stringList areaServed  
+    stringList eligibleRegion  
+    stringList ineligibleRegion  
+    stringList membershipPointsEarned  
+    stringList price  
+    stringList validFrom  
+    stringList validThrough  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DeliveryChargeSpecification ||--}o DeliveryMethod : "appliesToDeliveryMethod"
+DeliveryChargeSpecification ||--}o QuantitativeValue : "eligibleQuantity"
+DeliveryChargeSpecification ||--}o PriceSpecification : "eligibleTransactionVolume"
+DeliveryChargeSpecification ||--}o Number : "maxPrice"
+DeliveryChargeSpecification ||--}o Number : "minPrice"
+DeliveryChargeSpecification ||--}o Text : "priceCurrency"
+DeliveryChargeSpecification ||--}o MemberProgramTier : "validForMemberTier"
+DeliveryChargeSpecification ||--}o Boolean : "valueAddedTaxIncluded"
+DeliveryChargeSpecification ||--}o Text : "alternateName"
+DeliveryChargeSpecification ||--}o Text : "disambiguatingDescription"
+DeliveryChargeSpecification ||--}o Text : "name"
+DeliveryChargeSpecification ||--}o URL : "sameAs"
+DeliveryChargeSpecification ||--}o Action : "potentialAction"
+DeliveryChargeSpecification ||--}o URL : "url"
+

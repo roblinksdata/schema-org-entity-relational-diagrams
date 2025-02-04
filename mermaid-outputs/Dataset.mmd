@@ -1,0 +1,140 @@
+erDiagram
+Dataset {
+    stringList measurementMethod  
+    stringList measurementTechnique  
+    stringList variableMeasured  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Dataset ||--}o Text : "issn"
+Dataset ||--}o DataCatalog : "catalog"
+Dataset ||--}o DateTime : "datasetTimeInterval"
+Dataset ||--}o DataDownload : "distribution"
+Dataset ||--}o DataCatalog : "includedDataCatalog"
+Dataset ||--}o DataCatalog : "includedInDataCatalog"
+Dataset ||--}o Thing : "about"
+Dataset ||--}o Place : "contentLocation"
+Dataset ||--}o CreativeWork : "hasPart"
+Dataset ||--}o Claim : "interpretedAsClaim"
+Dataset ||--}o Thing : "mainEntity"
+Dataset ||--}o Place : "spatialCoverage"
+Dataset ||--}o CreativeWork : "workExample"
+Dataset ||--}o Text : "abstract"
+Dataset ||--}o Text : "accessMode"
+Dataset ||--}o ItemList : "accessModeSufficient"
+Dataset ||--}o Text : "accessibilityAPI"
+Dataset ||--}o Text : "accessibilityControl"
+Dataset ||--}o Text : "accessibilityFeature"
+Dataset ||--}o Text : "accessibilityHazard"
+Dataset ||--}o Text : "accessibilitySummary"
+Dataset ||--}o Person : "accountablePerson"
+Dataset ||--}o AggregateRating : "aggregateRating"
+Dataset ||--}o Text : "alternativeHeadline"
+Dataset ||--}o MediaObject : "associatedMedia"
+Dataset ||--}o Audience : "audience"
+Dataset ||--}o Text : "award"
+Dataset ||--}o Text : "awards"
+Dataset ||--}o Person : "character"
+Dataset ||--}o Comment : "comment"
+Dataset ||--}o Integer : "commentCount"
+Dataset ||--}o Text : "conditionsOfAccess"
+Dataset ||--}o DateTime : "contentReferenceTime"
+Dataset ||--}o Text : "copyrightNotice"
+Dataset ||--}o Number : "copyrightYear"
+Dataset ||--}o Country : "countryOfOrigin"
+Dataset ||--}o Text : "creditText"
+Dataset ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Dataset ||--}o URL : "discussionUrl"
+Dataset ||--}o Person : "editor"
+Dataset ||--}o AlignmentObject : "educationalAlignment"
+Dataset ||--}o MediaObject : "encoding"
+Dataset ||--}o MediaObject : "encodings"
+Dataset ||--}o CreativeWork : "exampleOfWork"
+Dataset ||--}o Grant : "funding"
+Dataset ||--}o Text : "headline"
+Dataset ||--}o InteractionCounter : "interactionStatistic"
+Dataset ||--}o Text : "interactivityType"
+Dataset ||--}o Boolean : "isAccessibleForFree"
+Dataset ||--}o Boolean : "isFamilyFriendly"
+Dataset ||--}o Place : "locationCreated"
+Dataset ||--}o Thing : "mentions"
+Dataset ||--}o PublicationEvent : "publication"
+Dataset ||--}o Organization : "publisherImprint"
+Dataset ||--}o Event : "recordedAt"
+Dataset ||--}o PublicationEvent : "releasedEvent"
+Dataset ||--}o Review : "review"
+Dataset ||--}o Review : "reviews"
+Dataset ||--}o Date : "sdDatePublished"
+Dataset ||--}o Organization : "sourceOrganization"
+Dataset ||--}o Place : "spatial"
+Dataset ||--}o Text : "text"
+Dataset ||--}o ImageObject : "thumbnail"
+Dataset ||--}o URL : "thumbnailUrl"
+Dataset ||--}o Duration : "timeRequired"
+Dataset ||--}o CreativeWork : "translationOfWork"
+Dataset ||--}o Text : "typicalAgeRange"
+Dataset ||--}o CreativeWork : "workTranslation"
+Dataset ||--}o Text : "alternateName"
+Dataset ||--}o Text : "disambiguatingDescription"
+Dataset ||--}o Text : "name"
+Dataset ||--}o URL : "sameAs"
+Dataset ||--}o Action : "potentialAction"
+Dataset ||--}o URL : "url"
+

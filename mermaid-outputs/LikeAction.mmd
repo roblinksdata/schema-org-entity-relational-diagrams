@@ -1,0 +1,30 @@
+erDiagram
+LikeAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LikeAction ||--}o Thing : "instrument"
+LikeAction ||--}o Thing : "object"
+LikeAction ||--}o Thing : "result"
+LikeAction ||--}o HowTo : "actionProcess"
+LikeAction ||--}o ActionStatusType : "actionStatus"
+LikeAction ||--}o Thing : "error"
+LikeAction ||--}o Text : "alternateName"
+LikeAction ||--}o Text : "disambiguatingDescription"
+LikeAction ||--}o Text : "name"
+LikeAction ||--}o URL : "sameAs"
+LikeAction ||--}o Action : "potentialAction"
+LikeAction ||--}o URL : "url"
+

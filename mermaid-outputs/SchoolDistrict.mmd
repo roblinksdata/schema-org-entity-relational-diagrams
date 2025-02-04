@@ -1,0 +1,64 @@
+erDiagram
+SchoolDistrict {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SchoolDistrict ||--}o Text : "globalLocationNumber"
+SchoolDistrict ||--}o URL : "hasGS1DigitalLink"
+SchoolDistrict ||--}o PropertyValue : "additionalProperty"
+SchoolDistrict ||--}o AggregateRating : "aggregateRating"
+SchoolDistrict ||--}o LocationFeatureSpecification : "amenityFeature"
+SchoolDistrict ||--}o Text : "branchCode"
+SchoolDistrict ||--}o Place : "containedIn"
+SchoolDistrict ||--}o Place : "containedInPlace"
+SchoolDistrict ||--}o Place : "containsPlace"
+SchoolDistrict ||--}o Event : "event"
+SchoolDistrict ||--}o Event : "events"
+SchoolDistrict ||--}o Text : "faxNumber"
+SchoolDistrict ||--}o Certification : "hasCertification"
+SchoolDistrict ||--}o Boolean : "hasDriveThroughService"
+SchoolDistrict ||--}o Boolean : "isAccessibleForFree"
+SchoolDistrict ||--}o Text : "isicV4"
+SchoolDistrict ||--}o URL : "map"
+SchoolDistrict ||--}o URL : "maps"
+SchoolDistrict ||--}o Integer : "maximumAttendeeCapacity"
+SchoolDistrict ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+SchoolDistrict ||--}o Boolean : "publicAccess"
+SchoolDistrict ||--}o Review : "review"
+SchoolDistrict ||--}o Review : "reviews"
+SchoolDistrict ||--}o Text : "slogan"
+SchoolDistrict ||--}o Boolean : "smokingAllowed"
+SchoolDistrict ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+SchoolDistrict ||--}o Text : "telephone"
+SchoolDistrict ||--}o URL : "tourBookingPage"
+SchoolDistrict ||--}o Text : "alternateName"
+SchoolDistrict ||--}o Text : "disambiguatingDescription"
+SchoolDistrict ||--}o Text : "name"
+SchoolDistrict ||--}o URL : "sameAs"
+SchoolDistrict ||--}o Action : "potentialAction"
+SchoolDistrict ||--}o URL : "url"
+

@@ -1,0 +1,142 @@
+erDiagram
+RadioEpisode {
+    stringList actor  
+    stringList episodeNumber  
+    stringList musicBy  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RadioEpisode ||--}o Duration : "duration"
+RadioEpisode ||--}o CreativeWorkSeason : "partOfSeason"
+RadioEpisode ||--}o CreativeWorkSeries : "partOfSeries"
+RadioEpisode ||--}o Person : "actors"
+RadioEpisode ||--}o Person : "director"
+RadioEpisode ||--}o Person : "directors"
+RadioEpisode ||--}o Organization : "productionCompany"
+RadioEpisode ||--}o VideoObject : "trailer"
+RadioEpisode ||--}o Thing : "about"
+RadioEpisode ||--}o Place : "contentLocation"
+RadioEpisode ||--}o CreativeWork : "hasPart"
+RadioEpisode ||--}o Claim : "interpretedAsClaim"
+RadioEpisode ||--}o Thing : "mainEntity"
+RadioEpisode ||--}o Place : "spatialCoverage"
+RadioEpisode ||--}o CreativeWork : "workExample"
+RadioEpisode ||--}o Text : "abstract"
+RadioEpisode ||--}o Text : "accessMode"
+RadioEpisode ||--}o ItemList : "accessModeSufficient"
+RadioEpisode ||--}o Text : "accessibilityAPI"
+RadioEpisode ||--}o Text : "accessibilityControl"
+RadioEpisode ||--}o Text : "accessibilityFeature"
+RadioEpisode ||--}o Text : "accessibilityHazard"
+RadioEpisode ||--}o Text : "accessibilitySummary"
+RadioEpisode ||--}o Person : "accountablePerson"
+RadioEpisode ||--}o AggregateRating : "aggregateRating"
+RadioEpisode ||--}o Text : "alternativeHeadline"
+RadioEpisode ||--}o MediaObject : "associatedMedia"
+RadioEpisode ||--}o Audience : "audience"
+RadioEpisode ||--}o Text : "award"
+RadioEpisode ||--}o Text : "awards"
+RadioEpisode ||--}o Person : "character"
+RadioEpisode ||--}o Comment : "comment"
+RadioEpisode ||--}o Integer : "commentCount"
+RadioEpisode ||--}o Text : "conditionsOfAccess"
+RadioEpisode ||--}o DateTime : "contentReferenceTime"
+RadioEpisode ||--}o Text : "copyrightNotice"
+RadioEpisode ||--}o Number : "copyrightYear"
+RadioEpisode ||--}o Country : "countryOfOrigin"
+RadioEpisode ||--}o Text : "creditText"
+RadioEpisode ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+RadioEpisode ||--}o URL : "discussionUrl"
+RadioEpisode ||--}o Person : "editor"
+RadioEpisode ||--}o AlignmentObject : "educationalAlignment"
+RadioEpisode ||--}o MediaObject : "encoding"
+RadioEpisode ||--}o MediaObject : "encodings"
+RadioEpisode ||--}o CreativeWork : "exampleOfWork"
+RadioEpisode ||--}o Grant : "funding"
+RadioEpisode ||--}o Text : "headline"
+RadioEpisode ||--}o InteractionCounter : "interactionStatistic"
+RadioEpisode ||--}o Text : "interactivityType"
+RadioEpisode ||--}o Boolean : "isAccessibleForFree"
+RadioEpisode ||--}o Boolean : "isFamilyFriendly"
+RadioEpisode ||--}o Place : "locationCreated"
+RadioEpisode ||--}o Thing : "mentions"
+RadioEpisode ||--}o PublicationEvent : "publication"
+RadioEpisode ||--}o Organization : "publisherImprint"
+RadioEpisode ||--}o Event : "recordedAt"
+RadioEpisode ||--}o PublicationEvent : "releasedEvent"
+RadioEpisode ||--}o Review : "review"
+RadioEpisode ||--}o Review : "reviews"
+RadioEpisode ||--}o Date : "sdDatePublished"
+RadioEpisode ||--}o Organization : "sourceOrganization"
+RadioEpisode ||--}o Place : "spatial"
+RadioEpisode ||--}o Text : "text"
+RadioEpisode ||--}o ImageObject : "thumbnail"
+RadioEpisode ||--}o URL : "thumbnailUrl"
+RadioEpisode ||--}o Duration : "timeRequired"
+RadioEpisode ||--}o CreativeWork : "translationOfWork"
+RadioEpisode ||--}o Text : "typicalAgeRange"
+RadioEpisode ||--}o CreativeWork : "workTranslation"
+RadioEpisode ||--}o Text : "alternateName"
+RadioEpisode ||--}o Text : "disambiguatingDescription"
+RadioEpisode ||--}o Text : "name"
+RadioEpisode ||--}o URL : "sameAs"
+RadioEpisode ||--}o Action : "potentialAction"
+RadioEpisode ||--}o URL : "url"
+

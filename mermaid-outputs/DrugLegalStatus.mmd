@@ -1,0 +1,26 @@
+erDiagram
+DrugLegalStatus {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DrugLegalStatus ||--}o AdministrativeArea : "applicableLocation"
+DrugLegalStatus ||--}o MedicalCode : "code"
+DrugLegalStatus ||--}o Grant : "funding"
+DrugLegalStatus ||--}o MedicalGuideline : "guideline"
+DrugLegalStatus ||--}o MedicineSystem : "medicineSystem"
+DrugLegalStatus ||--}o Organization : "recognizingAuthority"
+DrugLegalStatus ||--}o MedicalSpecialty : "relevantSpecialty"
+DrugLegalStatus ||--}o MedicalStudy : "study"
+DrugLegalStatus ||--}o Text : "alternateName"
+DrugLegalStatus ||--}o Text : "disambiguatingDescription"
+DrugLegalStatus ||--}o Text : "name"
+DrugLegalStatus ||--}o URL : "sameAs"
+DrugLegalStatus ||--}o Action : "potentialAction"
+DrugLegalStatus ||--}o URL : "url"
+

@@ -1,0 +1,79 @@
+erDiagram
+Suite {
+    stringList bed  
+    stringList numberOfRooms  
+    stringList leaseLength  
+    stringList numberOfBedrooms  
+    stringList petsAllowed  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Suite ||--}o QuantitativeValue : "occupancy"
+Suite ||--}o Text : "accommodationCategory"
+Suite ||--}o FloorPlan : "accommodationFloorPlan"
+Suite ||--}o LocationFeatureSpecification : "amenityFeature"
+Suite ||--}o Text : "floorLevel"
+Suite ||--}o QuantitativeValue : "floorSize"
+Suite ||--}o Integer : "numberOfBathroomsTotal"
+Suite ||--}o Number : "numberOfFullBathrooms"
+Suite ||--}o Number : "numberOfPartialBathrooms"
+Suite ||--}o Text : "permittedUsage"
+Suite ||--}o URL : "tourBookingPage"
+Suite ||--}o Number : "yearBuilt"
+Suite ||--}o Text : "globalLocationNumber"
+Suite ||--}o URL : "hasGS1DigitalLink"
+Suite ||--}o PropertyValue : "additionalProperty"
+Suite ||--}o AggregateRating : "aggregateRating"
+Suite ||--}o Text : "branchCode"
+Suite ||--}o Place : "containedIn"
+Suite ||--}o Place : "containedInPlace"
+Suite ||--}o Place : "containsPlace"
+Suite ||--}o Event : "event"
+Suite ||--}o Event : "events"
+Suite ||--}o Text : "faxNumber"
+Suite ||--}o Certification : "hasCertification"
+Suite ||--}o Boolean : "hasDriveThroughService"
+Suite ||--}o Boolean : "isAccessibleForFree"
+Suite ||--}o Text : "isicV4"
+Suite ||--}o URL : "map"
+Suite ||--}o URL : "maps"
+Suite ||--}o Integer : "maximumAttendeeCapacity"
+Suite ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Suite ||--}o Boolean : "publicAccess"
+Suite ||--}o Review : "review"
+Suite ||--}o Review : "reviews"
+Suite ||--}o Text : "slogan"
+Suite ||--}o Boolean : "smokingAllowed"
+Suite ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Suite ||--}o Text : "telephone"
+Suite ||--}o Text : "alternateName"
+Suite ||--}o Text : "disambiguatingDescription"
+Suite ||--}o Text : "name"
+Suite ||--}o URL : "sameAs"
+Suite ||--}o Action : "potentialAction"
+Suite ||--}o URL : "url"
+

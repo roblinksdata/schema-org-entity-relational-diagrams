@@ -1,0 +1,21 @@
+erDiagram
+ListItem {
+    stringList position  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ListItem ||--}o Thing : "item"
+ListItem ||--}o ListItem : "nextItem"
+ListItem ||--}o ListItem : "previousItem"
+ListItem ||--}o Text : "alternateName"
+ListItem ||--}o Text : "disambiguatingDescription"
+ListItem ||--}o Text : "name"
+ListItem ||--}o URL : "sameAs"
+ListItem ||--}o Action : "potentialAction"
+ListItem ||--}o URL : "url"
+

@@ -1,0 +1,26 @@
+erDiagram
+HealthInsurancePlan {
+    stringList usesHealthPlanIdStandard  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+HealthInsurancePlan ||--}o URL : "benefitsSummaryUrl"
+HealthInsurancePlan ||--}o ContactPoint : "contactPoint"
+HealthInsurancePlan ||--}o Text : "healthPlanDrugOption"
+HealthInsurancePlan ||--}o Text : "healthPlanDrugTier"
+HealthInsurancePlan ||--}o Text : "healthPlanId"
+HealthInsurancePlan ||--}o URL : "healthPlanMarketingUrl"
+HealthInsurancePlan ||--}o HealthPlanFormulary : "includesHealthPlanFormulary"
+HealthInsurancePlan ||--}o HealthPlanNetwork : "includesHealthPlanNetwork"
+HealthInsurancePlan ||--}o Text : "alternateName"
+HealthInsurancePlan ||--}o Text : "disambiguatingDescription"
+HealthInsurancePlan ||--}o Text : "name"
+HealthInsurancePlan ||--}o URL : "sameAs"
+HealthInsurancePlan ||--}o Action : "potentialAction"
+HealthInsurancePlan ||--}o URL : "url"
+

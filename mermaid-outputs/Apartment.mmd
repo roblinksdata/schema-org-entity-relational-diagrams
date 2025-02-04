@@ -1,0 +1,79 @@
+erDiagram
+Apartment {
+    stringList numberOfRooms  
+    stringList bed  
+    stringList leaseLength  
+    stringList numberOfBedrooms  
+    stringList petsAllowed  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Apartment ||--}o QuantitativeValue : "occupancy"
+Apartment ||--}o Text : "accommodationCategory"
+Apartment ||--}o FloorPlan : "accommodationFloorPlan"
+Apartment ||--}o LocationFeatureSpecification : "amenityFeature"
+Apartment ||--}o Text : "floorLevel"
+Apartment ||--}o QuantitativeValue : "floorSize"
+Apartment ||--}o Integer : "numberOfBathroomsTotal"
+Apartment ||--}o Number : "numberOfFullBathrooms"
+Apartment ||--}o Number : "numberOfPartialBathrooms"
+Apartment ||--}o Text : "permittedUsage"
+Apartment ||--}o URL : "tourBookingPage"
+Apartment ||--}o Number : "yearBuilt"
+Apartment ||--}o Text : "globalLocationNumber"
+Apartment ||--}o URL : "hasGS1DigitalLink"
+Apartment ||--}o PropertyValue : "additionalProperty"
+Apartment ||--}o AggregateRating : "aggregateRating"
+Apartment ||--}o Text : "branchCode"
+Apartment ||--}o Place : "containedIn"
+Apartment ||--}o Place : "containedInPlace"
+Apartment ||--}o Place : "containsPlace"
+Apartment ||--}o Event : "event"
+Apartment ||--}o Event : "events"
+Apartment ||--}o Text : "faxNumber"
+Apartment ||--}o Certification : "hasCertification"
+Apartment ||--}o Boolean : "hasDriveThroughService"
+Apartment ||--}o Boolean : "isAccessibleForFree"
+Apartment ||--}o Text : "isicV4"
+Apartment ||--}o URL : "map"
+Apartment ||--}o URL : "maps"
+Apartment ||--}o Integer : "maximumAttendeeCapacity"
+Apartment ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Apartment ||--}o Boolean : "publicAccess"
+Apartment ||--}o Review : "review"
+Apartment ||--}o Review : "reviews"
+Apartment ||--}o Text : "slogan"
+Apartment ||--}o Boolean : "smokingAllowed"
+Apartment ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Apartment ||--}o Text : "telephone"
+Apartment ||--}o Text : "alternateName"
+Apartment ||--}o Text : "disambiguatingDescription"
+Apartment ||--}o Text : "name"
+Apartment ||--}o URL : "sameAs"
+Apartment ||--}o Action : "potentialAction"
+Apartment ||--}o URL : "url"
+

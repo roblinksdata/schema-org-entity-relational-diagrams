@@ -1,0 +1,29 @@
+erDiagram
+NutritionInformation {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+NutritionInformation ||--}o Energy : "calories"
+NutritionInformation ||--}o Mass : "carbohydrateContent"
+NutritionInformation ||--}o Mass : "cholesterolContent"
+NutritionInformation ||--}o Mass : "fatContent"
+NutritionInformation ||--}o Mass : "fiberContent"
+NutritionInformation ||--}o Mass : "proteinContent"
+NutritionInformation ||--}o Mass : "saturatedFatContent"
+NutritionInformation ||--}o Text : "servingSize"
+NutritionInformation ||--}o Mass : "sodiumContent"
+NutritionInformation ||--}o Mass : "sugarContent"
+NutritionInformation ||--}o Mass : "transFatContent"
+NutritionInformation ||--}o Mass : "unsaturatedFatContent"
+NutritionInformation ||--}o Text : "alternateName"
+NutritionInformation ||--}o Text : "disambiguatingDescription"
+NutritionInformation ||--}o Text : "name"
+NutritionInformation ||--}o URL : "sameAs"
+NutritionInformation ||--}o Action : "potentialAction"
+NutritionInformation ||--}o URL : "url"
+

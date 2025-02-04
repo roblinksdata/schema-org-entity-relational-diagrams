@@ -1,0 +1,131 @@
+erDiagram
+Photograph {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Photograph ||--}o Thing : "about"
+Photograph ||--}o Place : "contentLocation"
+Photograph ||--}o CreativeWork : "hasPart"
+Photograph ||--}o Claim : "interpretedAsClaim"
+Photograph ||--}o Thing : "mainEntity"
+Photograph ||--}o Place : "spatialCoverage"
+Photograph ||--}o CreativeWork : "workExample"
+Photograph ||--}o Text : "abstract"
+Photograph ||--}o Text : "accessMode"
+Photograph ||--}o ItemList : "accessModeSufficient"
+Photograph ||--}o Text : "accessibilityAPI"
+Photograph ||--}o Text : "accessibilityControl"
+Photograph ||--}o Text : "accessibilityFeature"
+Photograph ||--}o Text : "accessibilityHazard"
+Photograph ||--}o Text : "accessibilitySummary"
+Photograph ||--}o Person : "accountablePerson"
+Photograph ||--}o AggregateRating : "aggregateRating"
+Photograph ||--}o Text : "alternativeHeadline"
+Photograph ||--}o MediaObject : "associatedMedia"
+Photograph ||--}o Audience : "audience"
+Photograph ||--}o Text : "award"
+Photograph ||--}o Text : "awards"
+Photograph ||--}o Person : "character"
+Photograph ||--}o Comment : "comment"
+Photograph ||--}o Integer : "commentCount"
+Photograph ||--}o Text : "conditionsOfAccess"
+Photograph ||--}o DateTime : "contentReferenceTime"
+Photograph ||--}o Text : "copyrightNotice"
+Photograph ||--}o Number : "copyrightYear"
+Photograph ||--}o Country : "countryOfOrigin"
+Photograph ||--}o Text : "creditText"
+Photograph ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Photograph ||--}o URL : "discussionUrl"
+Photograph ||--}o Person : "editor"
+Photograph ||--}o AlignmentObject : "educationalAlignment"
+Photograph ||--}o MediaObject : "encoding"
+Photograph ||--}o MediaObject : "encodings"
+Photograph ||--}o CreativeWork : "exampleOfWork"
+Photograph ||--}o Grant : "funding"
+Photograph ||--}o Text : "headline"
+Photograph ||--}o InteractionCounter : "interactionStatistic"
+Photograph ||--}o Text : "interactivityType"
+Photograph ||--}o Boolean : "isAccessibleForFree"
+Photograph ||--}o Boolean : "isFamilyFriendly"
+Photograph ||--}o Place : "locationCreated"
+Photograph ||--}o Thing : "mentions"
+Photograph ||--}o PublicationEvent : "publication"
+Photograph ||--}o Organization : "publisherImprint"
+Photograph ||--}o Event : "recordedAt"
+Photograph ||--}o PublicationEvent : "releasedEvent"
+Photograph ||--}o Review : "review"
+Photograph ||--}o Review : "reviews"
+Photograph ||--}o Date : "sdDatePublished"
+Photograph ||--}o Organization : "sourceOrganization"
+Photograph ||--}o Place : "spatial"
+Photograph ||--}o Text : "text"
+Photograph ||--}o ImageObject : "thumbnail"
+Photograph ||--}o URL : "thumbnailUrl"
+Photograph ||--}o Duration : "timeRequired"
+Photograph ||--}o CreativeWork : "translationOfWork"
+Photograph ||--}o Text : "typicalAgeRange"
+Photograph ||--}o CreativeWork : "workTranslation"
+Photograph ||--}o Text : "alternateName"
+Photograph ||--}o Text : "disambiguatingDescription"
+Photograph ||--}o Text : "name"
+Photograph ||--}o URL : "sameAs"
+Photograph ||--}o Action : "potentialAction"
+Photograph ||--}o URL : "url"
+

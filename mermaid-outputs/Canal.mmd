@@ -1,0 +1,64 @@
+erDiagram
+Canal {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Canal ||--}o Text : "globalLocationNumber"
+Canal ||--}o URL : "hasGS1DigitalLink"
+Canal ||--}o PropertyValue : "additionalProperty"
+Canal ||--}o AggregateRating : "aggregateRating"
+Canal ||--}o LocationFeatureSpecification : "amenityFeature"
+Canal ||--}o Text : "branchCode"
+Canal ||--}o Place : "containedIn"
+Canal ||--}o Place : "containedInPlace"
+Canal ||--}o Place : "containsPlace"
+Canal ||--}o Event : "event"
+Canal ||--}o Event : "events"
+Canal ||--}o Text : "faxNumber"
+Canal ||--}o Certification : "hasCertification"
+Canal ||--}o Boolean : "hasDriveThroughService"
+Canal ||--}o Boolean : "isAccessibleForFree"
+Canal ||--}o Text : "isicV4"
+Canal ||--}o URL : "map"
+Canal ||--}o URL : "maps"
+Canal ||--}o Integer : "maximumAttendeeCapacity"
+Canal ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Canal ||--}o Boolean : "publicAccess"
+Canal ||--}o Review : "review"
+Canal ||--}o Review : "reviews"
+Canal ||--}o Text : "slogan"
+Canal ||--}o Boolean : "smokingAllowed"
+Canal ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Canal ||--}o Text : "telephone"
+Canal ||--}o URL : "tourBookingPage"
+Canal ||--}o Text : "alternateName"
+Canal ||--}o Text : "disambiguatingDescription"
+Canal ||--}o Text : "name"
+Canal ||--}o URL : "sameAs"
+Canal ||--}o Action : "potentialAction"
+Canal ||--}o URL : "url"
+

@@ -1,0 +1,140 @@
+erDiagram
+BlogPosting {
+    stringList backstory  
+    stringList pageEnd  
+    stringList pageStart  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BlogPosting ||--}o CreativeWork : "sharedContent"
+BlogPosting ||--}o Text : "articleBody"
+BlogPosting ||--}o Text : "articleSection"
+BlogPosting ||--}o Text : "pagination"
+BlogPosting ||--}o Integer : "wordCount"
+BlogPosting ||--}o Thing : "about"
+BlogPosting ||--}o Place : "contentLocation"
+BlogPosting ||--}o CreativeWork : "hasPart"
+BlogPosting ||--}o Claim : "interpretedAsClaim"
+BlogPosting ||--}o Thing : "mainEntity"
+BlogPosting ||--}o Place : "spatialCoverage"
+BlogPosting ||--}o CreativeWork : "workExample"
+BlogPosting ||--}o Text : "abstract"
+BlogPosting ||--}o Text : "accessMode"
+BlogPosting ||--}o ItemList : "accessModeSufficient"
+BlogPosting ||--}o Text : "accessibilityAPI"
+BlogPosting ||--}o Text : "accessibilityControl"
+BlogPosting ||--}o Text : "accessibilityFeature"
+BlogPosting ||--}o Text : "accessibilityHazard"
+BlogPosting ||--}o Text : "accessibilitySummary"
+BlogPosting ||--}o Person : "accountablePerson"
+BlogPosting ||--}o AggregateRating : "aggregateRating"
+BlogPosting ||--}o Text : "alternativeHeadline"
+BlogPosting ||--}o MediaObject : "associatedMedia"
+BlogPosting ||--}o Audience : "audience"
+BlogPosting ||--}o Text : "award"
+BlogPosting ||--}o Text : "awards"
+BlogPosting ||--}o Person : "character"
+BlogPosting ||--}o Comment : "comment"
+BlogPosting ||--}o Integer : "commentCount"
+BlogPosting ||--}o Text : "conditionsOfAccess"
+BlogPosting ||--}o DateTime : "contentReferenceTime"
+BlogPosting ||--}o Text : "copyrightNotice"
+BlogPosting ||--}o Number : "copyrightYear"
+BlogPosting ||--}o Country : "countryOfOrigin"
+BlogPosting ||--}o Text : "creditText"
+BlogPosting ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+BlogPosting ||--}o URL : "discussionUrl"
+BlogPosting ||--}o Person : "editor"
+BlogPosting ||--}o AlignmentObject : "educationalAlignment"
+BlogPosting ||--}o MediaObject : "encoding"
+BlogPosting ||--}o MediaObject : "encodings"
+BlogPosting ||--}o CreativeWork : "exampleOfWork"
+BlogPosting ||--}o Grant : "funding"
+BlogPosting ||--}o Text : "headline"
+BlogPosting ||--}o InteractionCounter : "interactionStatistic"
+BlogPosting ||--}o Text : "interactivityType"
+BlogPosting ||--}o Boolean : "isAccessibleForFree"
+BlogPosting ||--}o Boolean : "isFamilyFriendly"
+BlogPosting ||--}o Place : "locationCreated"
+BlogPosting ||--}o Thing : "mentions"
+BlogPosting ||--}o PublicationEvent : "publication"
+BlogPosting ||--}o Organization : "publisherImprint"
+BlogPosting ||--}o Event : "recordedAt"
+BlogPosting ||--}o PublicationEvent : "releasedEvent"
+BlogPosting ||--}o Review : "review"
+BlogPosting ||--}o Review : "reviews"
+BlogPosting ||--}o Date : "sdDatePublished"
+BlogPosting ||--}o Organization : "sourceOrganization"
+BlogPosting ||--}o Place : "spatial"
+BlogPosting ||--}o Text : "text"
+BlogPosting ||--}o ImageObject : "thumbnail"
+BlogPosting ||--}o URL : "thumbnailUrl"
+BlogPosting ||--}o Duration : "timeRequired"
+BlogPosting ||--}o CreativeWork : "translationOfWork"
+BlogPosting ||--}o Text : "typicalAgeRange"
+BlogPosting ||--}o CreativeWork : "workTranslation"
+BlogPosting ||--}o Text : "alternateName"
+BlogPosting ||--}o Text : "disambiguatingDescription"
+BlogPosting ||--}o Text : "name"
+BlogPosting ||--}o URL : "sameAs"
+BlogPosting ||--}o Action : "potentialAction"
+BlogPosting ||--}o URL : "url"
+

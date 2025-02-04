@@ -1,0 +1,25 @@
+erDiagram
+Ticket {
+    stringList dateIssued  
+    stringList ticketToken  
+    stringList totalPrice  
+    stringList underName  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Ticket ||--}o Organization : "issuedBy"
+Ticket ||--}o Text : "priceCurrency"
+Ticket ||--}o Text : "ticketNumber"
+Ticket ||--}o Seat : "ticketedSeat"
+Ticket ||--}o Text : "alternateName"
+Ticket ||--}o Text : "disambiguatingDescription"
+Ticket ||--}o Text : "name"
+Ticket ||--}o URL : "sameAs"
+Ticket ||--}o Action : "potentialAction"
+Ticket ||--}o URL : "url"
+

@@ -1,0 +1,18 @@
+erDiagram
+RsvpResponseType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RsvpResponseType ||--}o Text : "alternateName"
+RsvpResponseType ||--}o Text : "disambiguatingDescription"
+RsvpResponseType ||--}o Text : "name"
+RsvpResponseType ||--}o URL : "sameAs"
+RsvpResponseType ||--}o Action : "potentialAction"
+RsvpResponseType ||--}o URL : "url"
+

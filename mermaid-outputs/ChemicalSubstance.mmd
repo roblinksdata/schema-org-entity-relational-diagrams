@@ -1,0 +1,33 @@
+erDiagram
+ChemicalSubstance {
+    stringList hasRepresentation  
+    stringList associatedDisease  
+    stringList hasMolecularFunction  
+    stringList isInvolvedInBiologicalProcess  
+    stringList isLocatedInSubcellularLocation  
+    stringList taxonomicRange  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ChemicalSubstance ||--}o Text : "chemicalComposition"
+ChemicalSubstance ||--}o DefinedTerm : "chemicalRole"
+ChemicalSubstance ||--}o DefinedTerm : "potentialUse"
+ChemicalSubstance ||--}o BioChemEntity : "bioChemInteraction"
+ChemicalSubstance ||--}o BioChemEntity : "bioChemSimilarity"
+ChemicalSubstance ||--}o DefinedTerm : "biologicalRole"
+ChemicalSubstance ||--}o Grant : "funding"
+ChemicalSubstance ||--}o BioChemEntity : "hasBioChemEntityPart"
+ChemicalSubstance ||--}o Gene : "isEncodedByBioChemEntity"
+ChemicalSubstance ||--}o BioChemEntity : "isPartOfBioChemEntity"
+ChemicalSubstance ||--}o Text : "alternateName"
+ChemicalSubstance ||--}o Text : "disambiguatingDescription"
+ChemicalSubstance ||--}o Text : "name"
+ChemicalSubstance ||--}o URL : "sameAs"
+ChemicalSubstance ||--}o Action : "potentialAction"
+ChemicalSubstance ||--}o URL : "url"
+

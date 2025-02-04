@@ -1,0 +1,62 @@
+erDiagram
+SportsEvent {
+    stringList awayTeam  
+    stringList competitor  
+    stringList homeTeam  
+    stringList sport  
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SportsEvent ||--}o Thing : "about"
+SportsEvent ||--}o Duration : "duration"
+SportsEvent ||--}o CreativeWork : "workFeatured"
+SportsEvent ||--}o CreativeWork : "workPerformed"
+SportsEvent ||--}o AggregateRating : "aggregateRating"
+SportsEvent ||--}o Audience : "audience"
+SportsEvent ||--}o Person : "director"
+SportsEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+SportsEvent ||--}o Schedule : "eventSchedule"
+SportsEvent ||--}o EventStatusType : "eventStatus"
+SportsEvent ||--}o Grant : "funding"
+SportsEvent ||--}o Boolean : "isAccessibleForFree"
+SportsEvent ||--}o Integer : "maximumAttendeeCapacity"
+SportsEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+SportsEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+SportsEvent ||--}o Date : "previousStartDate"
+SportsEvent ||--}o CreativeWork : "recordedIn"
+SportsEvent ||--}o Integer : "remainingAttendeeCapacity"
+SportsEvent ||--}o Review : "review"
+SportsEvent ||--}o Event : "subEvent"
+SportsEvent ||--}o Event : "subEvents"
+SportsEvent ||--}o Event : "superEvent"
+SportsEvent ||--}o Text : "typicalAgeRange"
+SportsEvent ||--}o Text : "alternateName"
+SportsEvent ||--}o Text : "disambiguatingDescription"
+SportsEvent ||--}o Text : "name"
+SportsEvent ||--}o URL : "sameAs"
+SportsEvent ||--}o Action : "potentialAction"
+SportsEvent ||--}o URL : "url"
+

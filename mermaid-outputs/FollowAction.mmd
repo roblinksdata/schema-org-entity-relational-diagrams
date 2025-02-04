@@ -1,0 +1,31 @@
+erDiagram
+FollowAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+FollowAction ||--}o Thing : "followee"
+FollowAction ||--}o Thing : "instrument"
+FollowAction ||--}o Thing : "object"
+FollowAction ||--}o Thing : "result"
+FollowAction ||--}o HowTo : "actionProcess"
+FollowAction ||--}o ActionStatusType : "actionStatus"
+FollowAction ||--}o Thing : "error"
+FollowAction ||--}o Text : "alternateName"
+FollowAction ||--}o Text : "disambiguatingDescription"
+FollowAction ||--}o Text : "name"
+FollowAction ||--}o URL : "sameAs"
+FollowAction ||--}o Action : "potentialAction"
+FollowAction ||--}o URL : "url"
+

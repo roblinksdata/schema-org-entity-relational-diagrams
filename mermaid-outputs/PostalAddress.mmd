@@ -1,0 +1,33 @@
+erDiagram
+PostalAddress {
+    stringList addressCountry  
+    stringList areaServed  
+    stringList availableLanguage  
+    stringList productSupported  
+    stringList serviceArea  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PostalAddress ||--}o Text : "addressLocality"
+PostalAddress ||--}o Text : "addressRegion"
+PostalAddress ||--}o Text : "postOfficeBoxNumber"
+PostalAddress ||--}o Text : "postalCode"
+PostalAddress ||--}o Text : "streetAddress"
+PostalAddress ||--}o ContactPointOption : "contactOption"
+PostalAddress ||--}o Text : "contactType"
+PostalAddress ||--}o Text : "email"
+PostalAddress ||--}o Text : "faxNumber"
+PostalAddress ||--}o OpeningHoursSpecification : "hoursAvailable"
+PostalAddress ||--}o Text : "telephone"
+PostalAddress ||--}o Text : "alternateName"
+PostalAddress ||--}o Text : "disambiguatingDescription"
+PostalAddress ||--}o Text : "name"
+PostalAddress ||--}o URL : "sameAs"
+PostalAddress ||--}o Action : "potentialAction"
+PostalAddress ||--}o URL : "url"
+

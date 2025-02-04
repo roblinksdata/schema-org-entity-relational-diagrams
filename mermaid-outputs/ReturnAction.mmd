@@ -1,0 +1,33 @@
+erDiagram
+ReturnAction {
+    stringList recipient  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ReturnAction ||--}o Place : "fromLocation"
+ReturnAction ||--}o Place : "toLocation"
+ReturnAction ||--}o Thing : "instrument"
+ReturnAction ||--}o Thing : "object"
+ReturnAction ||--}o Thing : "result"
+ReturnAction ||--}o HowTo : "actionProcess"
+ReturnAction ||--}o ActionStatusType : "actionStatus"
+ReturnAction ||--}o Thing : "error"
+ReturnAction ||--}o Text : "alternateName"
+ReturnAction ||--}o Text : "disambiguatingDescription"
+ReturnAction ||--}o Text : "name"
+ReturnAction ||--}o URL : "sameAs"
+ReturnAction ||--}o Action : "potentialAction"
+ReturnAction ||--}o URL : "url"
+

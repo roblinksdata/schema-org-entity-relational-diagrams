@@ -1,0 +1,34 @@
+erDiagram
+TherapeuticProcedure {
+    stringList preparation  
+    stringList status  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TherapeuticProcedure ||--}o MedicalEntity : "adverseOutcome"
+TherapeuticProcedure ||--}o DoseSchedule : "doseSchedule"
+TherapeuticProcedure ||--}o Drug : "drug"
+TherapeuticProcedure ||--}o Text : "bodyLocation"
+TherapeuticProcedure ||--}o Text : "followup"
+TherapeuticProcedure ||--}o Text : "howPerformed"
+TherapeuticProcedure ||--}o MedicalProcedureType : "procedureType"
+TherapeuticProcedure ||--}o MedicalCode : "code"
+TherapeuticProcedure ||--}o Grant : "funding"
+TherapeuticProcedure ||--}o MedicalGuideline : "guideline"
+TherapeuticProcedure ||--}o MedicineSystem : "medicineSystem"
+TherapeuticProcedure ||--}o Organization : "recognizingAuthority"
+TherapeuticProcedure ||--}o MedicalSpecialty : "relevantSpecialty"
+TherapeuticProcedure ||--}o MedicalStudy : "study"
+TherapeuticProcedure ||--}o Text : "alternateName"
+TherapeuticProcedure ||--}o Text : "disambiguatingDescription"
+TherapeuticProcedure ||--}o Text : "name"
+TherapeuticProcedure ||--}o URL : "sameAs"
+TherapeuticProcedure ||--}o Action : "potentialAction"
+TherapeuticProcedure ||--}o URL : "url"
+

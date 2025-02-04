@@ -1,0 +1,21 @@
+erDiagram
+Taxon {
+    stringList childTaxon  
+    stringList parentTaxon  
+    stringList taxonRank  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Taxon ||--}o DefinedTerm : "hasDefinedTerm"
+Taxon ||--}o Text : "alternateName"
+Taxon ||--}o Text : "disambiguatingDescription"
+Taxon ||--}o Text : "name"
+Taxon ||--}o URL : "sameAs"
+Taxon ||--}o Action : "potentialAction"
+Taxon ||--}o URL : "url"
+

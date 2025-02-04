@@ -1,0 +1,25 @@
+erDiagram
+PreventionIndication {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PreventionIndication ||--}o MedicalCode : "code"
+PreventionIndication ||--}o Grant : "funding"
+PreventionIndication ||--}o MedicalGuideline : "guideline"
+PreventionIndication ||--}o MedicineSystem : "medicineSystem"
+PreventionIndication ||--}o Organization : "recognizingAuthority"
+PreventionIndication ||--}o MedicalSpecialty : "relevantSpecialty"
+PreventionIndication ||--}o MedicalStudy : "study"
+PreventionIndication ||--}o Text : "alternateName"
+PreventionIndication ||--}o Text : "disambiguatingDescription"
+PreventionIndication ||--}o Text : "name"
+PreventionIndication ||--}o URL : "sameAs"
+PreventionIndication ||--}o Action : "potentialAction"
+PreventionIndication ||--}o URL : "url"
+

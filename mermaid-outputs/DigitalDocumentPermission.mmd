@@ -1,0 +1,19 @@
+erDiagram
+DigitalDocumentPermission {
+    stringList grantee  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DigitalDocumentPermission ||--}o DigitalDocumentPermissionType : "permissionType"
+DigitalDocumentPermission ||--}o Text : "alternateName"
+DigitalDocumentPermission ||--}o Text : "disambiguatingDescription"
+DigitalDocumentPermission ||--}o Text : "name"
+DigitalDocumentPermission ||--}o URL : "sameAs"
+DigitalDocumentPermission ||--}o Action : "potentialAction"
+DigitalDocumentPermission ||--}o URL : "url"
+

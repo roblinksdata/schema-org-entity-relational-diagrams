@@ -1,0 +1,53 @@
+erDiagram
+RadioBroadcastService {
+    stringList broadcastFrequency  
+    stringList inLanguage  
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RadioBroadcastService ||--}o Text : "callSign"
+RadioBroadcastService ||--}o Place : "area"
+RadioBroadcastService ||--}o Organization : "broadcastAffiliateOf"
+RadioBroadcastService ||--}o Text : "broadcastDisplayName"
+RadioBroadcastService ||--}o Text : "broadcastTimezone"
+RadioBroadcastService ||--}o Organization : "broadcaster"
+RadioBroadcastService ||--}o BroadcastChannel : "hasBroadcastChannel"
+RadioBroadcastService ||--}o BroadcastService : "parentService"
+RadioBroadcastService ||--}o Text : "videoFormat"
+RadioBroadcastService ||--}o AggregateRating : "aggregateRating"
+RadioBroadcastService ||--}o Audience : "audience"
+RadioBroadcastService ||--}o ServiceChannel : "availableChannel"
+RadioBroadcastService ||--}o Text : "award"
+RadioBroadcastService ||--}o Certification : "hasCertification"
+RadioBroadcastService ||--}o OfferCatalog : "hasOfferCatalog"
+RadioBroadcastService ||--}o OpeningHoursSpecification : "hoursAvailable"
+RadioBroadcastService ||--}o Thing : "produces"
+RadioBroadcastService ||--}o Text : "providerMobility"
+RadioBroadcastService ||--}o Review : "review"
+RadioBroadcastService ||--}o Audience : "serviceAudience"
+RadioBroadcastService ||--}o Thing : "serviceOutput"
+RadioBroadcastService ||--}o Text : "slogan"
+RadioBroadcastService ||--}o Text : "alternateName"
+RadioBroadcastService ||--}o Text : "disambiguatingDescription"
+RadioBroadcastService ||--}o Text : "name"
+RadioBroadcastService ||--}o URL : "sameAs"
+RadioBroadcastService ||--}o Action : "potentialAction"
+RadioBroadcastService ||--}o URL : "url"
+

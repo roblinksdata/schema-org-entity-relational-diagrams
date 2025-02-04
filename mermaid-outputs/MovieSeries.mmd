@@ -1,0 +1,141 @@
+erDiagram
+MovieSeries {
+    stringList actor  
+    stringList musicBy  
+    stringList endDate  
+    stringList startDate  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MovieSeries ||--}o Person : "actors"
+MovieSeries ||--}o Person : "director"
+MovieSeries ||--}o Person : "directors"
+MovieSeries ||--}o Organization : "productionCompany"
+MovieSeries ||--}o VideoObject : "trailer"
+MovieSeries ||--}o Text : "issn"
+MovieSeries ||--}o Thing : "about"
+MovieSeries ||--}o Place : "contentLocation"
+MovieSeries ||--}o CreativeWork : "hasPart"
+MovieSeries ||--}o Claim : "interpretedAsClaim"
+MovieSeries ||--}o Thing : "mainEntity"
+MovieSeries ||--}o Place : "spatialCoverage"
+MovieSeries ||--}o CreativeWork : "workExample"
+MovieSeries ||--}o Text : "abstract"
+MovieSeries ||--}o Text : "accessMode"
+MovieSeries ||--}o ItemList : "accessModeSufficient"
+MovieSeries ||--}o Text : "accessibilityAPI"
+MovieSeries ||--}o Text : "accessibilityControl"
+MovieSeries ||--}o Text : "accessibilityFeature"
+MovieSeries ||--}o Text : "accessibilityHazard"
+MovieSeries ||--}o Text : "accessibilitySummary"
+MovieSeries ||--}o Person : "accountablePerson"
+MovieSeries ||--}o AggregateRating : "aggregateRating"
+MovieSeries ||--}o Text : "alternativeHeadline"
+MovieSeries ||--}o MediaObject : "associatedMedia"
+MovieSeries ||--}o Audience : "audience"
+MovieSeries ||--}o Text : "award"
+MovieSeries ||--}o Text : "awards"
+MovieSeries ||--}o Person : "character"
+MovieSeries ||--}o Comment : "comment"
+MovieSeries ||--}o Integer : "commentCount"
+MovieSeries ||--}o Text : "conditionsOfAccess"
+MovieSeries ||--}o DateTime : "contentReferenceTime"
+MovieSeries ||--}o Text : "copyrightNotice"
+MovieSeries ||--}o Number : "copyrightYear"
+MovieSeries ||--}o Country : "countryOfOrigin"
+MovieSeries ||--}o Text : "creditText"
+MovieSeries ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+MovieSeries ||--}o URL : "discussionUrl"
+MovieSeries ||--}o Person : "editor"
+MovieSeries ||--}o AlignmentObject : "educationalAlignment"
+MovieSeries ||--}o MediaObject : "encoding"
+MovieSeries ||--}o MediaObject : "encodings"
+MovieSeries ||--}o CreativeWork : "exampleOfWork"
+MovieSeries ||--}o Grant : "funding"
+MovieSeries ||--}o Text : "headline"
+MovieSeries ||--}o InteractionCounter : "interactionStatistic"
+MovieSeries ||--}o Text : "interactivityType"
+MovieSeries ||--}o Boolean : "isAccessibleForFree"
+MovieSeries ||--}o Boolean : "isFamilyFriendly"
+MovieSeries ||--}o Place : "locationCreated"
+MovieSeries ||--}o Thing : "mentions"
+MovieSeries ||--}o PublicationEvent : "publication"
+MovieSeries ||--}o Organization : "publisherImprint"
+MovieSeries ||--}o Event : "recordedAt"
+MovieSeries ||--}o PublicationEvent : "releasedEvent"
+MovieSeries ||--}o Review : "review"
+MovieSeries ||--}o Review : "reviews"
+MovieSeries ||--}o Date : "sdDatePublished"
+MovieSeries ||--}o Organization : "sourceOrganization"
+MovieSeries ||--}o Place : "spatial"
+MovieSeries ||--}o Text : "text"
+MovieSeries ||--}o ImageObject : "thumbnail"
+MovieSeries ||--}o URL : "thumbnailUrl"
+MovieSeries ||--}o Duration : "timeRequired"
+MovieSeries ||--}o CreativeWork : "translationOfWork"
+MovieSeries ||--}o Text : "typicalAgeRange"
+MovieSeries ||--}o CreativeWork : "workTranslation"
+MovieSeries ||--}o Text : "alternateName"
+MovieSeries ||--}o Text : "disambiguatingDescription"
+MovieSeries ||--}o Text : "name"
+MovieSeries ||--}o URL : "sameAs"
+MovieSeries ||--}o Action : "potentialAction"
+MovieSeries ||--}o URL : "url"
+

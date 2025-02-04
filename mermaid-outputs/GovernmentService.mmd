@@ -1,0 +1,44 @@
+erDiagram
+GovernmentService {
+    stringList jurisdiction  
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GovernmentService ||--}o Organization : "serviceOperator"
+GovernmentService ||--}o AggregateRating : "aggregateRating"
+GovernmentService ||--}o Audience : "audience"
+GovernmentService ||--}o ServiceChannel : "availableChannel"
+GovernmentService ||--}o Text : "award"
+GovernmentService ||--}o Certification : "hasCertification"
+GovernmentService ||--}o OfferCatalog : "hasOfferCatalog"
+GovernmentService ||--}o OpeningHoursSpecification : "hoursAvailable"
+GovernmentService ||--}o Thing : "produces"
+GovernmentService ||--}o Text : "providerMobility"
+GovernmentService ||--}o Review : "review"
+GovernmentService ||--}o Audience : "serviceAudience"
+GovernmentService ||--}o Thing : "serviceOutput"
+GovernmentService ||--}o Text : "slogan"
+GovernmentService ||--}o Text : "alternateName"
+GovernmentService ||--}o Text : "disambiguatingDescription"
+GovernmentService ||--}o Text : "name"
+GovernmentService ||--}o URL : "sameAs"
+GovernmentService ||--}o Action : "potentialAction"
+GovernmentService ||--}o URL : "url"
+

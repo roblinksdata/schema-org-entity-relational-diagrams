@@ -1,0 +1,30 @@
+erDiagram
+TieAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TieAction ||--}o Thing : "instrument"
+TieAction ||--}o Thing : "object"
+TieAction ||--}o Thing : "result"
+TieAction ||--}o HowTo : "actionProcess"
+TieAction ||--}o ActionStatusType : "actionStatus"
+TieAction ||--}o Thing : "error"
+TieAction ||--}o Text : "alternateName"
+TieAction ||--}o Text : "disambiguatingDescription"
+TieAction ||--}o Text : "name"
+TieAction ||--}o URL : "sameAs"
+TieAction ||--}o Action : "potentialAction"
+TieAction ||--}o URL : "url"
+

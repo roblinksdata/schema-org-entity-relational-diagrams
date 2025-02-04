@@ -1,0 +1,28 @@
+erDiagram
+PriceSpecification {
+    stringList membershipPointsEarned  
+    stringList price  
+    stringList validFrom  
+    stringList validThrough  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PriceSpecification ||--}o QuantitativeValue : "eligibleQuantity"
+PriceSpecification ||--}o PriceSpecification : "eligibleTransactionVolume"
+PriceSpecification ||--}o Number : "maxPrice"
+PriceSpecification ||--}o Number : "minPrice"
+PriceSpecification ||--}o Text : "priceCurrency"
+PriceSpecification ||--}o MemberProgramTier : "validForMemberTier"
+PriceSpecification ||--}o Boolean : "valueAddedTaxIncluded"
+PriceSpecification ||--}o Text : "alternateName"
+PriceSpecification ||--}o Text : "disambiguatingDescription"
+PriceSpecification ||--}o Text : "name"
+PriceSpecification ||--}o URL : "sameAs"
+PriceSpecification ||--}o Action : "potentialAction"
+PriceSpecification ||--}o URL : "url"
+

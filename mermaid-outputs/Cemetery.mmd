@@ -1,0 +1,65 @@
+erDiagram
+Cemetery {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Cemetery ||--}o Text : "openingHours"
+Cemetery ||--}o Text : "globalLocationNumber"
+Cemetery ||--}o URL : "hasGS1DigitalLink"
+Cemetery ||--}o PropertyValue : "additionalProperty"
+Cemetery ||--}o AggregateRating : "aggregateRating"
+Cemetery ||--}o LocationFeatureSpecification : "amenityFeature"
+Cemetery ||--}o Text : "branchCode"
+Cemetery ||--}o Place : "containedIn"
+Cemetery ||--}o Place : "containedInPlace"
+Cemetery ||--}o Place : "containsPlace"
+Cemetery ||--}o Event : "event"
+Cemetery ||--}o Event : "events"
+Cemetery ||--}o Text : "faxNumber"
+Cemetery ||--}o Certification : "hasCertification"
+Cemetery ||--}o Boolean : "hasDriveThroughService"
+Cemetery ||--}o Boolean : "isAccessibleForFree"
+Cemetery ||--}o Text : "isicV4"
+Cemetery ||--}o URL : "map"
+Cemetery ||--}o URL : "maps"
+Cemetery ||--}o Integer : "maximumAttendeeCapacity"
+Cemetery ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Cemetery ||--}o Boolean : "publicAccess"
+Cemetery ||--}o Review : "review"
+Cemetery ||--}o Review : "reviews"
+Cemetery ||--}o Text : "slogan"
+Cemetery ||--}o Boolean : "smokingAllowed"
+Cemetery ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Cemetery ||--}o Text : "telephone"
+Cemetery ||--}o URL : "tourBookingPage"
+Cemetery ||--}o Text : "alternateName"
+Cemetery ||--}o Text : "disambiguatingDescription"
+Cemetery ||--}o Text : "name"
+Cemetery ||--}o URL : "sameAs"
+Cemetery ||--}o Action : "potentialAction"
+Cemetery ||--}o URL : "url"
+

@@ -1,0 +1,79 @@
+erDiagram
+Accommodation {
+    stringList bed  
+    stringList leaseLength  
+    stringList numberOfBedrooms  
+    stringList numberOfRooms  
+    stringList petsAllowed  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Accommodation ||--}o Text : "accommodationCategory"
+Accommodation ||--}o FloorPlan : "accommodationFloorPlan"
+Accommodation ||--}o LocationFeatureSpecification : "amenityFeature"
+Accommodation ||--}o Text : "floorLevel"
+Accommodation ||--}o QuantitativeValue : "floorSize"
+Accommodation ||--}o Integer : "numberOfBathroomsTotal"
+Accommodation ||--}o Number : "numberOfFullBathrooms"
+Accommodation ||--}o Number : "numberOfPartialBathrooms"
+Accommodation ||--}o QuantitativeValue : "occupancy"
+Accommodation ||--}o Text : "permittedUsage"
+Accommodation ||--}o URL : "tourBookingPage"
+Accommodation ||--}o Number : "yearBuilt"
+Accommodation ||--}o Text : "globalLocationNumber"
+Accommodation ||--}o URL : "hasGS1DigitalLink"
+Accommodation ||--}o PropertyValue : "additionalProperty"
+Accommodation ||--}o AggregateRating : "aggregateRating"
+Accommodation ||--}o Text : "branchCode"
+Accommodation ||--}o Place : "containedIn"
+Accommodation ||--}o Place : "containedInPlace"
+Accommodation ||--}o Place : "containsPlace"
+Accommodation ||--}o Event : "event"
+Accommodation ||--}o Event : "events"
+Accommodation ||--}o Text : "faxNumber"
+Accommodation ||--}o Certification : "hasCertification"
+Accommodation ||--}o Boolean : "hasDriveThroughService"
+Accommodation ||--}o Boolean : "isAccessibleForFree"
+Accommodation ||--}o Text : "isicV4"
+Accommodation ||--}o URL : "map"
+Accommodation ||--}o URL : "maps"
+Accommodation ||--}o Integer : "maximumAttendeeCapacity"
+Accommodation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Accommodation ||--}o Boolean : "publicAccess"
+Accommodation ||--}o Review : "review"
+Accommodation ||--}o Review : "reviews"
+Accommodation ||--}o Text : "slogan"
+Accommodation ||--}o Boolean : "smokingAllowed"
+Accommodation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Accommodation ||--}o Text : "telephone"
+Accommodation ||--}o Text : "alternateName"
+Accommodation ||--}o Text : "disambiguatingDescription"
+Accommodation ||--}o Text : "name"
+Accommodation ||--}o URL : "sameAs"
+Accommodation ||--}o Action : "potentialAction"
+Accommodation ||--}o URL : "url"
+

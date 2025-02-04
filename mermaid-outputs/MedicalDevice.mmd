@@ -1,0 +1,31 @@
+erDiagram
+MedicalDevice {
+    stringList contraindication  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalDevice ||--}o MedicalEntity : "adverseOutcome"
+MedicalDevice ||--}o Text : "postOp"
+MedicalDevice ||--}o Text : "preOp"
+MedicalDevice ||--}o Text : "procedure"
+MedicalDevice ||--}o MedicalEntity : "seriousAdverseOutcome"
+MedicalDevice ||--}o MedicalCode : "code"
+MedicalDevice ||--}o Grant : "funding"
+MedicalDevice ||--}o MedicalGuideline : "guideline"
+MedicalDevice ||--}o MedicineSystem : "medicineSystem"
+MedicalDevice ||--}o Organization : "recognizingAuthority"
+MedicalDevice ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalDevice ||--}o MedicalStudy : "study"
+MedicalDevice ||--}o Text : "alternateName"
+MedicalDevice ||--}o Text : "disambiguatingDescription"
+MedicalDevice ||--}o Text : "name"
+MedicalDevice ||--}o URL : "sameAs"
+MedicalDevice ||--}o Action : "potentialAction"
+MedicalDevice ||--}o URL : "url"
+

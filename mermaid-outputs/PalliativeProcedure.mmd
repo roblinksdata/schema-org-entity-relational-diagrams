@@ -1,0 +1,37 @@
+erDiagram
+PalliativeProcedure {
+    stringList contraindication  
+    stringList preparation  
+    stringList status  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PalliativeProcedure ||--}o MedicalTherapy : "duplicateTherapy"
+PalliativeProcedure ||--}o MedicalEntity : "seriousAdverseOutcome"
+PalliativeProcedure ||--}o Text : "bodyLocation"
+PalliativeProcedure ||--}o Text : "followup"
+PalliativeProcedure ||--}o Text : "howPerformed"
+PalliativeProcedure ||--}o MedicalProcedureType : "procedureType"
+PalliativeProcedure ||--}o MedicalCode : "code"
+PalliativeProcedure ||--}o Grant : "funding"
+PalliativeProcedure ||--}o MedicalGuideline : "guideline"
+PalliativeProcedure ||--}o MedicineSystem : "medicineSystem"
+PalliativeProcedure ||--}o Organization : "recognizingAuthority"
+PalliativeProcedure ||--}o MedicalSpecialty : "relevantSpecialty"
+PalliativeProcedure ||--}o MedicalStudy : "study"
+PalliativeProcedure ||--}o Text : "alternateName"
+PalliativeProcedure ||--}o Text : "disambiguatingDescription"
+PalliativeProcedure ||--}o Text : "name"
+PalliativeProcedure ||--}o URL : "sameAs"
+PalliativeProcedure ||--}o Action : "potentialAction"
+PalliativeProcedure ||--}o URL : "url"
+PalliativeProcedure ||--}o MedicalEntity : "adverseOutcome"
+PalliativeProcedure ||--}o DoseSchedule : "doseSchedule"
+PalliativeProcedure ||--}o Drug : "drug"
+

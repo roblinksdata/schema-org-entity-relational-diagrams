@@ -1,0 +1,18 @@
+erDiagram
+ContactPointOption {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ContactPointOption ||--}o Text : "alternateName"
+ContactPointOption ||--}o Text : "disambiguatingDescription"
+ContactPointOption ||--}o Text : "name"
+ContactPointOption ||--}o URL : "sameAs"
+ContactPointOption ||--}o Action : "potentialAction"
+ContactPointOption ||--}o URL : "url"
+

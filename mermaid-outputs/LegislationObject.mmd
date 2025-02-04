@@ -1,0 +1,163 @@
+erDiagram
+LegislationObject {
+    stringList jurisdiction  
+    stringList legislationIdentifier  
+    stringList legislationPassedBy  
+    stringList legislationType  
+    stringList legislationResponsible  
+    stringList encodingFormat  
+    stringList endTime  
+    stringList height  
+    stringList ineligibleRegion  
+    stringList requiresSubscription  
+    stringList startTime  
+    stringList uploadDate  
+    stringList width  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LegislationObject ||--}o LegalValueLevel : "legislationLegalValue"
+LegislationObject ||--}o Legislation : "legislationApplies"
+LegislationObject ||--}o Date : "legislationDate"
+LegislationObject ||--}o Place : "legislationJurisdiction"
+LegislationObject ||--}o Legislation : "legislationTransposes"
+LegislationObject ||--}o Legislation : "legislationChanges"
+LegislationObject ||--}o Legislation : "legislationConsolidates"
+LegislationObject ||--}o Date : "legislationDateVersion"
+LegislationObject ||--}o LegalForceStatus : "legislationLegalForce"
+LegislationObject ||--}o Duration : "duration"
+LegislationObject ||--}o Claim : "interpretedAsClaim"
+LegislationObject ||--}o Text : "sha256"
+LegislationObject ||--}o NewsArticle : "associatedArticle"
+LegislationObject ||--}o Text : "bitrate"
+LegislationObject ||--}o Text : "contentSize"
+LegislationObject ||--}o URL : "contentUrl"
+LegislationObject ||--}o URL : "embedUrl"
+LegislationObject ||--}o CreativeWork : "encodesCreativeWork"
+LegislationObject ||--}o Text : "playerType"
+LegislationObject ||--}o Organization : "productionCompany"
+LegislationObject ||--}o Place : "regionsAllowed"
+LegislationObject ||--}o Thing : "about"
+LegislationObject ||--}o Place : "contentLocation"
+LegislationObject ||--}o CreativeWork : "hasPart"
+LegislationObject ||--}o Thing : "mainEntity"
+LegislationObject ||--}o Place : "spatialCoverage"
+LegislationObject ||--}o CreativeWork : "workExample"
+LegislationObject ||--}o Text : "abstract"
+LegislationObject ||--}o Text : "accessMode"
+LegislationObject ||--}o ItemList : "accessModeSufficient"
+LegislationObject ||--}o Text : "accessibilityAPI"
+LegislationObject ||--}o Text : "accessibilityControl"
+LegislationObject ||--}o Text : "accessibilityFeature"
+LegislationObject ||--}o Text : "accessibilityHazard"
+LegislationObject ||--}o Text : "accessibilitySummary"
+LegislationObject ||--}o Person : "accountablePerson"
+LegislationObject ||--}o AggregateRating : "aggregateRating"
+LegislationObject ||--}o Text : "alternativeHeadline"
+LegislationObject ||--}o MediaObject : "associatedMedia"
+LegislationObject ||--}o Audience : "audience"
+LegislationObject ||--}o Text : "award"
+LegislationObject ||--}o Text : "awards"
+LegislationObject ||--}o Person : "character"
+LegislationObject ||--}o Comment : "comment"
+LegislationObject ||--}o Integer : "commentCount"
+LegislationObject ||--}o Text : "conditionsOfAccess"
+LegislationObject ||--}o DateTime : "contentReferenceTime"
+LegislationObject ||--}o Text : "copyrightNotice"
+LegislationObject ||--}o Number : "copyrightYear"
+LegislationObject ||--}o Country : "countryOfOrigin"
+LegislationObject ||--}o Text : "creditText"
+LegislationObject ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+LegislationObject ||--}o URL : "discussionUrl"
+LegislationObject ||--}o Person : "editor"
+LegislationObject ||--}o AlignmentObject : "educationalAlignment"
+LegislationObject ||--}o MediaObject : "encoding"
+LegislationObject ||--}o MediaObject : "encodings"
+LegislationObject ||--}o CreativeWork : "exampleOfWork"
+LegislationObject ||--}o Grant : "funding"
+LegislationObject ||--}o Text : "headline"
+LegislationObject ||--}o InteractionCounter : "interactionStatistic"
+LegislationObject ||--}o Text : "interactivityType"
+LegislationObject ||--}o Boolean : "isAccessibleForFree"
+LegislationObject ||--}o Boolean : "isFamilyFriendly"
+LegislationObject ||--}o Place : "locationCreated"
+LegislationObject ||--}o Thing : "mentions"
+LegislationObject ||--}o PublicationEvent : "publication"
+LegislationObject ||--}o Organization : "publisherImprint"
+LegislationObject ||--}o Event : "recordedAt"
+LegislationObject ||--}o PublicationEvent : "releasedEvent"
+LegislationObject ||--}o Review : "review"
+LegislationObject ||--}o Review : "reviews"
+LegislationObject ||--}o Date : "sdDatePublished"
+LegislationObject ||--}o Organization : "sourceOrganization"
+LegislationObject ||--}o Place : "spatial"
+LegislationObject ||--}o Text : "text"
+LegislationObject ||--}o ImageObject : "thumbnail"
+LegislationObject ||--}o URL : "thumbnailUrl"
+LegislationObject ||--}o Duration : "timeRequired"
+LegislationObject ||--}o CreativeWork : "translationOfWork"
+LegislationObject ||--}o Text : "typicalAgeRange"
+LegislationObject ||--}o CreativeWork : "workTranslation"
+LegislationObject ||--}o Text : "alternateName"
+LegislationObject ||--}o Text : "disambiguatingDescription"
+LegislationObject ||--}o Text : "name"
+LegislationObject ||--}o URL : "sameAs"
+LegislationObject ||--}o Action : "potentialAction"
+LegislationObject ||--}o URL : "url"
+

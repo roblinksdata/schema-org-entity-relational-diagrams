@@ -1,0 +1,18 @@
+erDiagram
+DayOfWeek {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DayOfWeek ||--}o Text : "alternateName"
+DayOfWeek ||--}o Text : "disambiguatingDescription"
+DayOfWeek ||--}o Text : "name"
+DayOfWeek ||--}o URL : "sameAs"
+DayOfWeek ||--}o Action : "potentialAction"
+DayOfWeek ||--}o URL : "url"
+

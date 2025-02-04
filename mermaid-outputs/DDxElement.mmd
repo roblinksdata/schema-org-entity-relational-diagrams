@@ -1,0 +1,27 @@
+erDiagram
+DDxElement {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DDxElement ||--}o MedicalCondition : "diagnosis"
+DDxElement ||--}o MedicalSignOrSymptom : "distinguishingSign"
+DDxElement ||--}o MedicalCode : "code"
+DDxElement ||--}o Grant : "funding"
+DDxElement ||--}o MedicalGuideline : "guideline"
+DDxElement ||--}o MedicineSystem : "medicineSystem"
+DDxElement ||--}o Organization : "recognizingAuthority"
+DDxElement ||--}o MedicalSpecialty : "relevantSpecialty"
+DDxElement ||--}o MedicalStudy : "study"
+DDxElement ||--}o Text : "alternateName"
+DDxElement ||--}o Text : "disambiguatingDescription"
+DDxElement ||--}o Text : "name"
+DDxElement ||--}o URL : "sameAs"
+DDxElement ||--}o Action : "potentialAction"
+DDxElement ||--}o URL : "url"
+

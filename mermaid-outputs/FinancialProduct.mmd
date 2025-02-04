@@ -1,0 +1,45 @@
+erDiagram
+FinancialProduct {
+    stringList annualPercentageRate  
+    stringList feesAndCommissionsSpecification  
+    stringList interestRate  
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+FinancialProduct ||--}o AggregateRating : "aggregateRating"
+FinancialProduct ||--}o Audience : "audience"
+FinancialProduct ||--}o ServiceChannel : "availableChannel"
+FinancialProduct ||--}o Text : "award"
+FinancialProduct ||--}o Certification : "hasCertification"
+FinancialProduct ||--}o OfferCatalog : "hasOfferCatalog"
+FinancialProduct ||--}o OpeningHoursSpecification : "hoursAvailable"
+FinancialProduct ||--}o Thing : "produces"
+FinancialProduct ||--}o Text : "providerMobility"
+FinancialProduct ||--}o Review : "review"
+FinancialProduct ||--}o Audience : "serviceAudience"
+FinancialProduct ||--}o Thing : "serviceOutput"
+FinancialProduct ||--}o Text : "slogan"
+FinancialProduct ||--}o Text : "alternateName"
+FinancialProduct ||--}o Text : "disambiguatingDescription"
+FinancialProduct ||--}o Text : "name"
+FinancialProduct ||--}o URL : "sameAs"
+FinancialProduct ||--}o Action : "potentialAction"
+FinancialProduct ||--}o URL : "url"
+

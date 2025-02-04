@@ -1,0 +1,20 @@
+erDiagram
+OfferCatalog {
+    stringList itemListElement  
+    stringList itemListOrder  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OfferCatalog ||--}o Integer : "numberOfItems"
+OfferCatalog ||--}o Text : "alternateName"
+OfferCatalog ||--}o Text : "disambiguatingDescription"
+OfferCatalog ||--}o Text : "name"
+OfferCatalog ||--}o URL : "sameAs"
+OfferCatalog ||--}o Action : "potentialAction"
+OfferCatalog ||--}o URL : "url"
+

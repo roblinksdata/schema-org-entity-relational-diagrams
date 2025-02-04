@@ -1,0 +1,64 @@
+erDiagram
+State {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+State ||--}o Text : "globalLocationNumber"
+State ||--}o URL : "hasGS1DigitalLink"
+State ||--}o PropertyValue : "additionalProperty"
+State ||--}o AggregateRating : "aggregateRating"
+State ||--}o LocationFeatureSpecification : "amenityFeature"
+State ||--}o Text : "branchCode"
+State ||--}o Place : "containedIn"
+State ||--}o Place : "containedInPlace"
+State ||--}o Place : "containsPlace"
+State ||--}o Event : "event"
+State ||--}o Event : "events"
+State ||--}o Text : "faxNumber"
+State ||--}o Certification : "hasCertification"
+State ||--}o Boolean : "hasDriveThroughService"
+State ||--}o Boolean : "isAccessibleForFree"
+State ||--}o Text : "isicV4"
+State ||--}o URL : "map"
+State ||--}o URL : "maps"
+State ||--}o Integer : "maximumAttendeeCapacity"
+State ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+State ||--}o Boolean : "publicAccess"
+State ||--}o Review : "review"
+State ||--}o Review : "reviews"
+State ||--}o Text : "slogan"
+State ||--}o Boolean : "smokingAllowed"
+State ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+State ||--}o Text : "telephone"
+State ||--}o URL : "tourBookingPage"
+State ||--}o Text : "alternateName"
+State ||--}o Text : "disambiguatingDescription"
+State ||--}o Text : "name"
+State ||--}o URL : "sameAs"
+State ||--}o Action : "potentialAction"
+State ||--}o URL : "url"
+

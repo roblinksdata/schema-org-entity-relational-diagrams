@@ -1,0 +1,65 @@
+erDiagram
+ParkingFacility {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ParkingFacility ||--}o Text : "openingHours"
+ParkingFacility ||--}o Text : "globalLocationNumber"
+ParkingFacility ||--}o URL : "hasGS1DigitalLink"
+ParkingFacility ||--}o PropertyValue : "additionalProperty"
+ParkingFacility ||--}o AggregateRating : "aggregateRating"
+ParkingFacility ||--}o LocationFeatureSpecification : "amenityFeature"
+ParkingFacility ||--}o Text : "branchCode"
+ParkingFacility ||--}o Place : "containedIn"
+ParkingFacility ||--}o Place : "containedInPlace"
+ParkingFacility ||--}o Place : "containsPlace"
+ParkingFacility ||--}o Event : "event"
+ParkingFacility ||--}o Event : "events"
+ParkingFacility ||--}o Text : "faxNumber"
+ParkingFacility ||--}o Certification : "hasCertification"
+ParkingFacility ||--}o Boolean : "hasDriveThroughService"
+ParkingFacility ||--}o Boolean : "isAccessibleForFree"
+ParkingFacility ||--}o Text : "isicV4"
+ParkingFacility ||--}o URL : "map"
+ParkingFacility ||--}o URL : "maps"
+ParkingFacility ||--}o Integer : "maximumAttendeeCapacity"
+ParkingFacility ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+ParkingFacility ||--}o Boolean : "publicAccess"
+ParkingFacility ||--}o Review : "review"
+ParkingFacility ||--}o Review : "reviews"
+ParkingFacility ||--}o Text : "slogan"
+ParkingFacility ||--}o Boolean : "smokingAllowed"
+ParkingFacility ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+ParkingFacility ||--}o Text : "telephone"
+ParkingFacility ||--}o URL : "tourBookingPage"
+ParkingFacility ||--}o Text : "alternateName"
+ParkingFacility ||--}o Text : "disambiguatingDescription"
+ParkingFacility ||--}o Text : "name"
+ParkingFacility ||--}o URL : "sameAs"
+ParkingFacility ||--}o Action : "potentialAction"
+ParkingFacility ||--}o URL : "url"
+

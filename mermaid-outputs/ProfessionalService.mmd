@@ -1,0 +1,126 @@
+erDiagram
+ProfessionalService {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ProfessionalService ||--}o Organization : "branchOf"
+ProfessionalService ||--}o Text : "currenciesAccepted"
+ProfessionalService ||--}o Text : "openingHours"
+ProfessionalService ||--}o Text : "paymentAccepted"
+ProfessionalService ||--}o Text : "priceRange"
+ProfessionalService ||--}o Text : "globalLocationNumber"
+ProfessionalService ||--}o URL : "hasGS1DigitalLink"
+ProfessionalService ||--}o PropertyValue : "additionalProperty"
+ProfessionalService ||--}o AggregateRating : "aggregateRating"
+ProfessionalService ||--}o LocationFeatureSpecification : "amenityFeature"
+ProfessionalService ||--}o Text : "branchCode"
+ProfessionalService ||--}o Place : "containedIn"
+ProfessionalService ||--}o Place : "containedInPlace"
+ProfessionalService ||--}o Place : "containsPlace"
+ProfessionalService ||--}o Event : "event"
+ProfessionalService ||--}o Event : "events"
+ProfessionalService ||--}o Text : "faxNumber"
+ProfessionalService ||--}o Certification : "hasCertification"
+ProfessionalService ||--}o Boolean : "hasDriveThroughService"
+ProfessionalService ||--}o Boolean : "isAccessibleForFree"
+ProfessionalService ||--}o Text : "isicV4"
+ProfessionalService ||--}o URL : "map"
+ProfessionalService ||--}o URL : "maps"
+ProfessionalService ||--}o Integer : "maximumAttendeeCapacity"
+ProfessionalService ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+ProfessionalService ||--}o Boolean : "publicAccess"
+ProfessionalService ||--}o Review : "review"
+ProfessionalService ||--}o Review : "reviews"
+ProfessionalService ||--}o Text : "slogan"
+ProfessionalService ||--}o Boolean : "smokingAllowed"
+ProfessionalService ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+ProfessionalService ||--}o Text : "telephone"
+ProfessionalService ||--}o URL : "tourBookingPage"
+ProfessionalService ||--}o Text : "duns"
+ProfessionalService ||--}o Text : "leiCode"
+ProfessionalService ||--}o Text : "taxID"
+ProfessionalService ||--}o InteractionCounter : "agentInteractionStatistic"
+ProfessionalService ||--}o Person : "alumni"
+ProfessionalService ||--}o Text : "award"
+ProfessionalService ||--}o Text : "awards"
+ProfessionalService ||--}o ContactPoint : "contactPoint"
+ProfessionalService ||--}o ContactPoint : "contactPoints"
+ProfessionalService ||--}o Organization : "department"
+ProfessionalService ||--}o Date : "dissolutionDate"
+ProfessionalService ||--}o Text : "email"
+ProfessionalService ||--}o Person : "employee"
+ProfessionalService ||--}o Person : "employees"
+ProfessionalService ||--}o Person : "founders"
+ProfessionalService ||--}o Date : "foundingDate"
+ProfessionalService ||--}o Place : "foundingLocation"
+ProfessionalService ||--}o Grant : "funding"
+ProfessionalService ||--}o EducationalOccupationalCredential : "hasCredential"
+ProfessionalService ||--}o MemberProgram : "hasMemberProgram"
+ProfessionalService ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+ProfessionalService ||--}o OfferCatalog : "hasOfferCatalog"
+ProfessionalService ||--}o Place : "hasPOS"
+ProfessionalService ||--}o InteractionCounter : "interactionStatistic"
+ProfessionalService ||--}o Text : "iso6523Code"
+ProfessionalService ||--}o Text : "legalName"
+ProfessionalService ||--}o Offer : "makesOffer"
+ProfessionalService ||--}o Text : "naics"
+ProfessionalService ||--}o NonprofitType : "nonprofitStatus"
+ProfessionalService ||--}o QuantitativeValue : "numberOfEmployees"
+ProfessionalService ||--}o Organization : "parentOrganization"
+ProfessionalService ||--}o Demand : "seeks"
+ProfessionalService ||--}o Organization : "subOrganization"
+ProfessionalService ||--}o Text : "vatID"
+ProfessionalService ||--}o Text : "alternateName"
+ProfessionalService ||--}o Text : "disambiguatingDescription"
+ProfessionalService ||--}o Text : "name"
+ProfessionalService ||--}o URL : "sameAs"
+ProfessionalService ||--}o Action : "potentialAction"
+ProfessionalService ||--}o URL : "url"
+

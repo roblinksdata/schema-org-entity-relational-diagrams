@@ -1,0 +1,133 @@
+erDiagram
+Physician {
+    stringList availableService  
+    stringList occupationalCategory  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Physician ||--}o Text : "usNPI"
+Physician ||--}o Hospital : "hospitalAffiliation"
+Physician ||--}o MedicalSpecialty : "medicalSpecialty"
+Physician ||--}o Text : "healthPlanNetworkId"
+Physician ||--}o Boolean : "isAcceptingNewPatients"
+Physician ||--}o Organization : "branchOf"
+Physician ||--}o Text : "currenciesAccepted"
+Physician ||--}o Text : "openingHours"
+Physician ||--}o Text : "paymentAccepted"
+Physician ||--}o Text : "priceRange"
+Physician ||--}o Text : "globalLocationNumber"
+Physician ||--}o URL : "hasGS1DigitalLink"
+Physician ||--}o PropertyValue : "additionalProperty"
+Physician ||--}o AggregateRating : "aggregateRating"
+Physician ||--}o LocationFeatureSpecification : "amenityFeature"
+Physician ||--}o Text : "branchCode"
+Physician ||--}o Place : "containedIn"
+Physician ||--}o Place : "containedInPlace"
+Physician ||--}o Place : "containsPlace"
+Physician ||--}o Event : "event"
+Physician ||--}o Event : "events"
+Physician ||--}o Text : "faxNumber"
+Physician ||--}o Certification : "hasCertification"
+Physician ||--}o Boolean : "hasDriveThroughService"
+Physician ||--}o Boolean : "isAccessibleForFree"
+Physician ||--}o Text : "isicV4"
+Physician ||--}o URL : "map"
+Physician ||--}o URL : "maps"
+Physician ||--}o Integer : "maximumAttendeeCapacity"
+Physician ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Physician ||--}o Boolean : "publicAccess"
+Physician ||--}o Review : "review"
+Physician ||--}o Review : "reviews"
+Physician ||--}o Text : "slogan"
+Physician ||--}o Boolean : "smokingAllowed"
+Physician ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Physician ||--}o Text : "telephone"
+Physician ||--}o URL : "tourBookingPage"
+Physician ||--}o Text : "duns"
+Physician ||--}o Text : "leiCode"
+Physician ||--}o Text : "taxID"
+Physician ||--}o InteractionCounter : "agentInteractionStatistic"
+Physician ||--}o Person : "alumni"
+Physician ||--}o Text : "award"
+Physician ||--}o Text : "awards"
+Physician ||--}o ContactPoint : "contactPoint"
+Physician ||--}o ContactPoint : "contactPoints"
+Physician ||--}o Organization : "department"
+Physician ||--}o Date : "dissolutionDate"
+Physician ||--}o Text : "email"
+Physician ||--}o Person : "employee"
+Physician ||--}o Person : "employees"
+Physician ||--}o Person : "founders"
+Physician ||--}o Date : "foundingDate"
+Physician ||--}o Place : "foundingLocation"
+Physician ||--}o Grant : "funding"
+Physician ||--}o EducationalOccupationalCredential : "hasCredential"
+Physician ||--}o MemberProgram : "hasMemberProgram"
+Physician ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+Physician ||--}o OfferCatalog : "hasOfferCatalog"
+Physician ||--}o Place : "hasPOS"
+Physician ||--}o InteractionCounter : "interactionStatistic"
+Physician ||--}o Text : "iso6523Code"
+Physician ||--}o Text : "legalName"
+Physician ||--}o Offer : "makesOffer"
+Physician ||--}o Text : "naics"
+Physician ||--}o NonprofitType : "nonprofitStatus"
+Physician ||--}o QuantitativeValue : "numberOfEmployees"
+Physician ||--}o Organization : "parentOrganization"
+Physician ||--}o Demand : "seeks"
+Physician ||--}o Organization : "subOrganization"
+Physician ||--}o Text : "vatID"
+Physician ||--}o Text : "alternateName"
+Physician ||--}o Text : "disambiguatingDescription"
+Physician ||--}o Text : "name"
+Physician ||--}o URL : "sameAs"
+Physician ||--}o Action : "potentialAction"
+Physician ||--}o URL : "url"
+

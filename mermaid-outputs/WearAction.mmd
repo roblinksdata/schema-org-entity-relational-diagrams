@@ -1,0 +1,32 @@
+erDiagram
+WearAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+WearAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
+WearAction ||--}o Offer : "expectsAcceptanceOf"
+WearAction ||--}o Thing : "instrument"
+WearAction ||--}o Thing : "object"
+WearAction ||--}o Thing : "result"
+WearAction ||--}o HowTo : "actionProcess"
+WearAction ||--}o ActionStatusType : "actionStatus"
+WearAction ||--}o Thing : "error"
+WearAction ||--}o Text : "alternateName"
+WearAction ||--}o Text : "disambiguatingDescription"
+WearAction ||--}o Text : "name"
+WearAction ||--}o URL : "sameAs"
+WearAction ||--}o Action : "potentialAction"
+WearAction ||--}o URL : "url"
+

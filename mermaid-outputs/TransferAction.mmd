@@ -1,0 +1,32 @@
+erDiagram
+TransferAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TransferAction ||--}o Place : "fromLocation"
+TransferAction ||--}o Place : "toLocation"
+TransferAction ||--}o Thing : "instrument"
+TransferAction ||--}o Thing : "object"
+TransferAction ||--}o Thing : "result"
+TransferAction ||--}o HowTo : "actionProcess"
+TransferAction ||--}o ActionStatusType : "actionStatus"
+TransferAction ||--}o Thing : "error"
+TransferAction ||--}o Text : "alternateName"
+TransferAction ||--}o Text : "disambiguatingDescription"
+TransferAction ||--}o Text : "name"
+TransferAction ||--}o URL : "sameAs"
+TransferAction ||--}o Action : "potentialAction"
+TransferAction ||--}o URL : "url"
+

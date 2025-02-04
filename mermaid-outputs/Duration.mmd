@@ -1,0 +1,17 @@
+erDiagram
+Duration {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Duration ||--}o Text : "alternateName"
+Duration ||--}o Text : "disambiguatingDescription"
+Duration ||--}o Text : "name"
+Duration ||--}o URL : "sameAs"
+Duration ||--}o Action : "potentialAction"
+Duration ||--}o URL : "url"
+

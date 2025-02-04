@@ -1,0 +1,33 @@
+erDiagram
+LendAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LendAction ||--}o Person : "borrower"
+LendAction ||--}o Place : "fromLocation"
+LendAction ||--}o Place : "toLocation"
+LendAction ||--}o Thing : "instrument"
+LendAction ||--}o Thing : "object"
+LendAction ||--}o Thing : "result"
+LendAction ||--}o HowTo : "actionProcess"
+LendAction ||--}o ActionStatusType : "actionStatus"
+LendAction ||--}o Thing : "error"
+LendAction ||--}o Text : "alternateName"
+LendAction ||--}o Text : "disambiguatingDescription"
+LendAction ||--}o Text : "name"
+LendAction ||--}o URL : "sameAs"
+LendAction ||--}o Action : "potentialAction"
+LendAction ||--}o URL : "url"
+

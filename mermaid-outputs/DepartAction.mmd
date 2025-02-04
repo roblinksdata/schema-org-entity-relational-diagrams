@@ -1,0 +1,32 @@
+erDiagram
+DepartAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DepartAction ||--}o Place : "fromLocation"
+DepartAction ||--}o Place : "toLocation"
+DepartAction ||--}o Thing : "instrument"
+DepartAction ||--}o Thing : "object"
+DepartAction ||--}o Thing : "result"
+DepartAction ||--}o HowTo : "actionProcess"
+DepartAction ||--}o ActionStatusType : "actionStatus"
+DepartAction ||--}o Thing : "error"
+DepartAction ||--}o Text : "alternateName"
+DepartAction ||--}o Text : "disambiguatingDescription"
+DepartAction ||--}o Text : "name"
+DepartAction ||--}o URL : "sameAs"
+DepartAction ||--}o Action : "potentialAction"
+DepartAction ||--}o URL : "url"
+

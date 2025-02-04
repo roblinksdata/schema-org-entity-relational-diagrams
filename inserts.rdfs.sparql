@@ -1,0 +1,17 @@
+# sparql --data schema.org.rdfs.ttl --query inserts.rdfs.sparql > schema.org.rdfs.entailed.ttl
+# robot convert -i schema.org.rdfs.entailed.ttl -o schemaorg.ofn
+# schemauto import-owl --output schema.org.yaml schemaorg.ofn
+# needed a manual step to define the `label` (rdfs:label) slot which doesn't exist.
+
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+INSERT {
+    ?prop rdfs:range ?range;
+          rdfs:domain ?domain.
+}
+WHERE {
+    ?prop a rdfs:Property;
+          schema:rangeIncludes ?range;
+          schema:domainIncludes ?domain.
+}

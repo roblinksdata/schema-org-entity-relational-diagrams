@@ -1,0 +1,58 @@
+erDiagram
+DanceEvent {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DanceEvent ||--}o Thing : "about"
+DanceEvent ||--}o Duration : "duration"
+DanceEvent ||--}o CreativeWork : "workFeatured"
+DanceEvent ||--}o CreativeWork : "workPerformed"
+DanceEvent ||--}o AggregateRating : "aggregateRating"
+DanceEvent ||--}o Audience : "audience"
+DanceEvent ||--}o Person : "director"
+DanceEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+DanceEvent ||--}o Schedule : "eventSchedule"
+DanceEvent ||--}o EventStatusType : "eventStatus"
+DanceEvent ||--}o Grant : "funding"
+DanceEvent ||--}o Boolean : "isAccessibleForFree"
+DanceEvent ||--}o Integer : "maximumAttendeeCapacity"
+DanceEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+DanceEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+DanceEvent ||--}o Date : "previousStartDate"
+DanceEvent ||--}o CreativeWork : "recordedIn"
+DanceEvent ||--}o Integer : "remainingAttendeeCapacity"
+DanceEvent ||--}o Review : "review"
+DanceEvent ||--}o Event : "subEvent"
+DanceEvent ||--}o Event : "subEvents"
+DanceEvent ||--}o Event : "superEvent"
+DanceEvent ||--}o Text : "typicalAgeRange"
+DanceEvent ||--}o Text : "alternateName"
+DanceEvent ||--}o Text : "disambiguatingDescription"
+DanceEvent ||--}o Text : "name"
+DanceEvent ||--}o URL : "sameAs"
+DanceEvent ||--}o Action : "potentialAction"
+DanceEvent ||--}o URL : "url"
+

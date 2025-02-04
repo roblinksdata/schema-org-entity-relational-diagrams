@@ -1,0 +1,21 @@
+erDiagram
+Seat {
+    stringList seatingType  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Seat ||--}o Text : "seatNumber"
+Seat ||--}o Text : "seatRow"
+Seat ||--}o Text : "seatSection"
+Seat ||--}o Text : "alternateName"
+Seat ||--}o Text : "disambiguatingDescription"
+Seat ||--}o Text : "name"
+Seat ||--}o URL : "sameAs"
+Seat ||--}o Action : "potentialAction"
+Seat ||--}o URL : "url"
+

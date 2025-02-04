@@ -1,0 +1,23 @@
+erDiagram
+LinkRole {
+    stringList inLanguage  
+    stringList endDate  
+    stringList namedPosition  
+    stringList roleName  
+    stringList startDate  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LinkRole ||--}o Text : "linkRelationship"
+LinkRole ||--}o Text : "alternateName"
+LinkRole ||--}o Text : "disambiguatingDescription"
+LinkRole ||--}o Text : "name"
+LinkRole ||--}o URL : "sameAs"
+LinkRole ||--}o Action : "potentialAction"
+LinkRole ||--}o URL : "url"
+

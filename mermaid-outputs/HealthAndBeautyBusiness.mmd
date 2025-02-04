@@ -1,0 +1,126 @@
+erDiagram
+HealthAndBeautyBusiness {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+HealthAndBeautyBusiness ||--}o Organization : "branchOf"
+HealthAndBeautyBusiness ||--}o Text : "currenciesAccepted"
+HealthAndBeautyBusiness ||--}o Text : "openingHours"
+HealthAndBeautyBusiness ||--}o Text : "paymentAccepted"
+HealthAndBeautyBusiness ||--}o Text : "priceRange"
+HealthAndBeautyBusiness ||--}o Text : "globalLocationNumber"
+HealthAndBeautyBusiness ||--}o URL : "hasGS1DigitalLink"
+HealthAndBeautyBusiness ||--}o PropertyValue : "additionalProperty"
+HealthAndBeautyBusiness ||--}o AggregateRating : "aggregateRating"
+HealthAndBeautyBusiness ||--}o LocationFeatureSpecification : "amenityFeature"
+HealthAndBeautyBusiness ||--}o Text : "branchCode"
+HealthAndBeautyBusiness ||--}o Place : "containedIn"
+HealthAndBeautyBusiness ||--}o Place : "containedInPlace"
+HealthAndBeautyBusiness ||--}o Place : "containsPlace"
+HealthAndBeautyBusiness ||--}o Event : "event"
+HealthAndBeautyBusiness ||--}o Event : "events"
+HealthAndBeautyBusiness ||--}o Text : "faxNumber"
+HealthAndBeautyBusiness ||--}o Certification : "hasCertification"
+HealthAndBeautyBusiness ||--}o Boolean : "hasDriveThroughService"
+HealthAndBeautyBusiness ||--}o Boolean : "isAccessibleForFree"
+HealthAndBeautyBusiness ||--}o Text : "isicV4"
+HealthAndBeautyBusiness ||--}o URL : "map"
+HealthAndBeautyBusiness ||--}o URL : "maps"
+HealthAndBeautyBusiness ||--}o Integer : "maximumAttendeeCapacity"
+HealthAndBeautyBusiness ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+HealthAndBeautyBusiness ||--}o Boolean : "publicAccess"
+HealthAndBeautyBusiness ||--}o Review : "review"
+HealthAndBeautyBusiness ||--}o Review : "reviews"
+HealthAndBeautyBusiness ||--}o Text : "slogan"
+HealthAndBeautyBusiness ||--}o Boolean : "smokingAllowed"
+HealthAndBeautyBusiness ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+HealthAndBeautyBusiness ||--}o Text : "telephone"
+HealthAndBeautyBusiness ||--}o URL : "tourBookingPage"
+HealthAndBeautyBusiness ||--}o Text : "duns"
+HealthAndBeautyBusiness ||--}o Text : "leiCode"
+HealthAndBeautyBusiness ||--}o Text : "taxID"
+HealthAndBeautyBusiness ||--}o InteractionCounter : "agentInteractionStatistic"
+HealthAndBeautyBusiness ||--}o Person : "alumni"
+HealthAndBeautyBusiness ||--}o Text : "award"
+HealthAndBeautyBusiness ||--}o Text : "awards"
+HealthAndBeautyBusiness ||--}o ContactPoint : "contactPoint"
+HealthAndBeautyBusiness ||--}o ContactPoint : "contactPoints"
+HealthAndBeautyBusiness ||--}o Organization : "department"
+HealthAndBeautyBusiness ||--}o Date : "dissolutionDate"
+HealthAndBeautyBusiness ||--}o Text : "email"
+HealthAndBeautyBusiness ||--}o Person : "employee"
+HealthAndBeautyBusiness ||--}o Person : "employees"
+HealthAndBeautyBusiness ||--}o Person : "founders"
+HealthAndBeautyBusiness ||--}o Date : "foundingDate"
+HealthAndBeautyBusiness ||--}o Place : "foundingLocation"
+HealthAndBeautyBusiness ||--}o Grant : "funding"
+HealthAndBeautyBusiness ||--}o EducationalOccupationalCredential : "hasCredential"
+HealthAndBeautyBusiness ||--}o MemberProgram : "hasMemberProgram"
+HealthAndBeautyBusiness ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+HealthAndBeautyBusiness ||--}o OfferCatalog : "hasOfferCatalog"
+HealthAndBeautyBusiness ||--}o Place : "hasPOS"
+HealthAndBeautyBusiness ||--}o InteractionCounter : "interactionStatistic"
+HealthAndBeautyBusiness ||--}o Text : "iso6523Code"
+HealthAndBeautyBusiness ||--}o Text : "legalName"
+HealthAndBeautyBusiness ||--}o Offer : "makesOffer"
+HealthAndBeautyBusiness ||--}o Text : "naics"
+HealthAndBeautyBusiness ||--}o NonprofitType : "nonprofitStatus"
+HealthAndBeautyBusiness ||--}o QuantitativeValue : "numberOfEmployees"
+HealthAndBeautyBusiness ||--}o Organization : "parentOrganization"
+HealthAndBeautyBusiness ||--}o Demand : "seeks"
+HealthAndBeautyBusiness ||--}o Organization : "subOrganization"
+HealthAndBeautyBusiness ||--}o Text : "vatID"
+HealthAndBeautyBusiness ||--}o Text : "alternateName"
+HealthAndBeautyBusiness ||--}o Text : "disambiguatingDescription"
+HealthAndBeautyBusiness ||--}o Text : "name"
+HealthAndBeautyBusiness ||--}o URL : "sameAs"
+HealthAndBeautyBusiness ||--}o Action : "potentialAction"
+HealthAndBeautyBusiness ||--}o URL : "url"
+

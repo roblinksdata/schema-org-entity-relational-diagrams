@@ -1,0 +1,25 @@
+erDiagram
+LifestyleModification {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LifestyleModification ||--}o MedicalCode : "code"
+LifestyleModification ||--}o Grant : "funding"
+LifestyleModification ||--}o MedicalGuideline : "guideline"
+LifestyleModification ||--}o MedicineSystem : "medicineSystem"
+LifestyleModification ||--}o Organization : "recognizingAuthority"
+LifestyleModification ||--}o MedicalSpecialty : "relevantSpecialty"
+LifestyleModification ||--}o MedicalStudy : "study"
+LifestyleModification ||--}o Text : "alternateName"
+LifestyleModification ||--}o Text : "disambiguatingDescription"
+LifestyleModification ||--}o Text : "name"
+LifestyleModification ||--}o URL : "sameAs"
+LifestyleModification ||--}o Action : "potentialAction"
+LifestyleModification ||--}o URL : "url"
+

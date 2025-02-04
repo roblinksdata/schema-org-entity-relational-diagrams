@@ -1,0 +1,144 @@
+erDiagram
+OpinionNewsArticle {
+    stringList backstory  
+    stringList pageEnd  
+    stringList pageStart  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OpinionNewsArticle ||--}o Text : "dateline"
+OpinionNewsArticle ||--}o Text : "printColumn"
+OpinionNewsArticle ||--}o Text : "printEdition"
+OpinionNewsArticle ||--}o Text : "printPage"
+OpinionNewsArticle ||--}o Text : "printSection"
+OpinionNewsArticle ||--}o Text : "articleBody"
+OpinionNewsArticle ||--}o Text : "articleSection"
+OpinionNewsArticle ||--}o Text : "pagination"
+OpinionNewsArticle ||--}o Integer : "wordCount"
+OpinionNewsArticle ||--}o Thing : "about"
+OpinionNewsArticle ||--}o Place : "contentLocation"
+OpinionNewsArticle ||--}o CreativeWork : "hasPart"
+OpinionNewsArticle ||--}o Claim : "interpretedAsClaim"
+OpinionNewsArticle ||--}o Thing : "mainEntity"
+OpinionNewsArticle ||--}o Place : "spatialCoverage"
+OpinionNewsArticle ||--}o CreativeWork : "workExample"
+OpinionNewsArticle ||--}o Text : "abstract"
+OpinionNewsArticle ||--}o Text : "accessMode"
+OpinionNewsArticle ||--}o ItemList : "accessModeSufficient"
+OpinionNewsArticle ||--}o Text : "accessibilityAPI"
+OpinionNewsArticle ||--}o Text : "accessibilityControl"
+OpinionNewsArticle ||--}o Text : "accessibilityFeature"
+OpinionNewsArticle ||--}o Text : "accessibilityHazard"
+OpinionNewsArticle ||--}o Text : "accessibilitySummary"
+OpinionNewsArticle ||--}o Person : "accountablePerson"
+OpinionNewsArticle ||--}o AggregateRating : "aggregateRating"
+OpinionNewsArticle ||--}o Text : "alternativeHeadline"
+OpinionNewsArticle ||--}o MediaObject : "associatedMedia"
+OpinionNewsArticle ||--}o Audience : "audience"
+OpinionNewsArticle ||--}o Text : "award"
+OpinionNewsArticle ||--}o Text : "awards"
+OpinionNewsArticle ||--}o Person : "character"
+OpinionNewsArticle ||--}o Comment : "comment"
+OpinionNewsArticle ||--}o Integer : "commentCount"
+OpinionNewsArticle ||--}o Text : "conditionsOfAccess"
+OpinionNewsArticle ||--}o DateTime : "contentReferenceTime"
+OpinionNewsArticle ||--}o Text : "copyrightNotice"
+OpinionNewsArticle ||--}o Number : "copyrightYear"
+OpinionNewsArticle ||--}o Country : "countryOfOrigin"
+OpinionNewsArticle ||--}o Text : "creditText"
+OpinionNewsArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+OpinionNewsArticle ||--}o URL : "discussionUrl"
+OpinionNewsArticle ||--}o Person : "editor"
+OpinionNewsArticle ||--}o AlignmentObject : "educationalAlignment"
+OpinionNewsArticle ||--}o MediaObject : "encoding"
+OpinionNewsArticle ||--}o MediaObject : "encodings"
+OpinionNewsArticle ||--}o CreativeWork : "exampleOfWork"
+OpinionNewsArticle ||--}o Grant : "funding"
+OpinionNewsArticle ||--}o Text : "headline"
+OpinionNewsArticle ||--}o InteractionCounter : "interactionStatistic"
+OpinionNewsArticle ||--}o Text : "interactivityType"
+OpinionNewsArticle ||--}o Boolean : "isAccessibleForFree"
+OpinionNewsArticle ||--}o Boolean : "isFamilyFriendly"
+OpinionNewsArticle ||--}o Place : "locationCreated"
+OpinionNewsArticle ||--}o Thing : "mentions"
+OpinionNewsArticle ||--}o PublicationEvent : "publication"
+OpinionNewsArticle ||--}o Organization : "publisherImprint"
+OpinionNewsArticle ||--}o Event : "recordedAt"
+OpinionNewsArticle ||--}o PublicationEvent : "releasedEvent"
+OpinionNewsArticle ||--}o Review : "review"
+OpinionNewsArticle ||--}o Review : "reviews"
+OpinionNewsArticle ||--}o Date : "sdDatePublished"
+OpinionNewsArticle ||--}o Organization : "sourceOrganization"
+OpinionNewsArticle ||--}o Place : "spatial"
+OpinionNewsArticle ||--}o Text : "text"
+OpinionNewsArticle ||--}o ImageObject : "thumbnail"
+OpinionNewsArticle ||--}o URL : "thumbnailUrl"
+OpinionNewsArticle ||--}o Duration : "timeRequired"
+OpinionNewsArticle ||--}o CreativeWork : "translationOfWork"
+OpinionNewsArticle ||--}o Text : "typicalAgeRange"
+OpinionNewsArticle ||--}o CreativeWork : "workTranslation"
+OpinionNewsArticle ||--}o Text : "alternateName"
+OpinionNewsArticle ||--}o Text : "disambiguatingDescription"
+OpinionNewsArticle ||--}o Text : "name"
+OpinionNewsArticle ||--}o URL : "sameAs"
+OpinionNewsArticle ||--}o Action : "potentialAction"
+OpinionNewsArticle ||--}o URL : "url"
+

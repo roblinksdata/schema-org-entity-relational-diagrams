@@ -1,0 +1,21 @@
+erDiagram
+MemberProgramTier {
+    stringList hasTierRequirement  
+    stringList membershipPointsEarned  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MemberProgramTier ||--}o TierBenefitEnumeration : "hasTierBenefit"
+MemberProgramTier ||--}o MemberProgram : "isTierOf"
+MemberProgramTier ||--}o Text : "alternateName"
+MemberProgramTier ||--}o Text : "disambiguatingDescription"
+MemberProgramTier ||--}o Text : "name"
+MemberProgramTier ||--}o URL : "sameAs"
+MemberProgramTier ||--}o Action : "potentialAction"
+MemberProgramTier ||--}o URL : "url"
+

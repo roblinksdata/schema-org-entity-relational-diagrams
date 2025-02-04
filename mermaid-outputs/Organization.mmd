@@ -1,0 +1,89 @@
+erDiagram
+Organization {
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList logo  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList address  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList keywords  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Organization ||--}o Text : "duns"
+Organization ||--}o Text : "globalLocationNumber"
+Organization ||--}o URL : "hasGS1DigitalLink"
+Organization ||--}o Text : "leiCode"
+Organization ||--}o Text : "taxID"
+Organization ||--}o InteractionCounter : "agentInteractionStatistic"
+Organization ||--}o AggregateRating : "aggregateRating"
+Organization ||--}o Person : "alumni"
+Organization ||--}o Text : "award"
+Organization ||--}o Text : "awards"
+Organization ||--}o ContactPoint : "contactPoint"
+Organization ||--}o ContactPoint : "contactPoints"
+Organization ||--}o Organization : "department"
+Organization ||--}o Date : "dissolutionDate"
+Organization ||--}o Text : "email"
+Organization ||--}o Person : "employee"
+Organization ||--}o Person : "employees"
+Organization ||--}o Event : "event"
+Organization ||--}o Event : "events"
+Organization ||--}o Text : "faxNumber"
+Organization ||--}o Person : "founders"
+Organization ||--}o Date : "foundingDate"
+Organization ||--}o Place : "foundingLocation"
+Organization ||--}o Grant : "funding"
+Organization ||--}o Certification : "hasCertification"
+Organization ||--}o EducationalOccupationalCredential : "hasCredential"
+Organization ||--}o MemberProgram : "hasMemberProgram"
+Organization ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+Organization ||--}o OfferCatalog : "hasOfferCatalog"
+Organization ||--}o Place : "hasPOS"
+Organization ||--}o InteractionCounter : "interactionStatistic"
+Organization ||--}o Text : "isicV4"
+Organization ||--}o Text : "iso6523Code"
+Organization ||--}o Text : "legalName"
+Organization ||--}o Offer : "makesOffer"
+Organization ||--}o Text : "naics"
+Organization ||--}o NonprofitType : "nonprofitStatus"
+Organization ||--}o QuantitativeValue : "numberOfEmployees"
+Organization ||--}o Organization : "parentOrganization"
+Organization ||--}o Review : "review"
+Organization ||--}o Review : "reviews"
+Organization ||--}o Demand : "seeks"
+Organization ||--}o Text : "slogan"
+Organization ||--}o Organization : "subOrganization"
+Organization ||--}o Text : "telephone"
+Organization ||--}o Text : "vatID"
+Organization ||--}o Text : "alternateName"
+Organization ||--}o Text : "disambiguatingDescription"
+Organization ||--}o Text : "name"
+Organization ||--}o URL : "sameAs"
+Organization ||--}o Action : "potentialAction"
+Organization ||--}o URL : "url"
+

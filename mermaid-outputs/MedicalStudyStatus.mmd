@@ -1,0 +1,18 @@
+erDiagram
+MedicalStudyStatus {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalStudyStatus ||--}o Text : "alternateName"
+MedicalStudyStatus ||--}o Text : "disambiguatingDescription"
+MedicalStudyStatus ||--}o Text : "name"
+MedicalStudyStatus ||--}o URL : "sameAs"
+MedicalStudyStatus ||--}o Action : "potentialAction"
+MedicalStudyStatus ||--}o URL : "url"
+

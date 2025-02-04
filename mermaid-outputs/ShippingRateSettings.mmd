@@ -1,0 +1,23 @@
+erDiagram
+ShippingRateSettings {
+    stringList freeShippingThreshold  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ShippingRateSettings ||--}o Boolean : "doesNotShip"
+ShippingRateSettings ||--}o Boolean : "isUnlabelledFallback"
+ShippingRateSettings ||--}o DefinedRegion : "shippingDestination"
+ShippingRateSettings ||--}o Text : "shippingLabel"
+ShippingRateSettings ||--}o MonetaryAmount : "shippingRate"
+ShippingRateSettings ||--}o Text : "alternateName"
+ShippingRateSettings ||--}o Text : "disambiguatingDescription"
+ShippingRateSettings ||--}o Text : "name"
+ShippingRateSettings ||--}o URL : "sameAs"
+ShippingRateSettings ||--}o Action : "potentialAction"
+ShippingRateSettings ||--}o URL : "url"
+

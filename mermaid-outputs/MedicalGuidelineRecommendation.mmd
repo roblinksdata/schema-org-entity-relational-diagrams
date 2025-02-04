@@ -1,0 +1,30 @@
+erDiagram
+MedicalGuidelineRecommendation {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalGuidelineRecommendation ||--}o Text : "recommendationStrength"
+MedicalGuidelineRecommendation ||--}o MedicalEvidenceLevel : "evidenceLevel"
+MedicalGuidelineRecommendation ||--}o Text : "evidenceOrigin"
+MedicalGuidelineRecommendation ||--}o Date : "guidelineDate"
+MedicalGuidelineRecommendation ||--}o MedicalEntity : "guidelineSubject"
+MedicalGuidelineRecommendation ||--}o MedicalCode : "code"
+MedicalGuidelineRecommendation ||--}o Grant : "funding"
+MedicalGuidelineRecommendation ||--}o MedicalGuideline : "guideline"
+MedicalGuidelineRecommendation ||--}o MedicineSystem : "medicineSystem"
+MedicalGuidelineRecommendation ||--}o Organization : "recognizingAuthority"
+MedicalGuidelineRecommendation ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalGuidelineRecommendation ||--}o MedicalStudy : "study"
+MedicalGuidelineRecommendation ||--}o Text : "alternateName"
+MedicalGuidelineRecommendation ||--}o Text : "disambiguatingDescription"
+MedicalGuidelineRecommendation ||--}o Text : "name"
+MedicalGuidelineRecommendation ||--}o URL : "sameAs"
+MedicalGuidelineRecommendation ||--}o Action : "potentialAction"
+MedicalGuidelineRecommendation ||--}o URL : "url"
+

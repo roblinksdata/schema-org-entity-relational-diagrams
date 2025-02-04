@@ -1,0 +1,26 @@
+erDiagram
+MerchantReturnPolicySeasonalOverride {
+    stringList endDate  
+    stringList merchantReturnDays  
+    stringList restockingFee  
+    stringList startDate  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MerchantReturnPolicySeasonalOverride ||--}o RefundTypeEnumeration : "refundType"
+MerchantReturnPolicySeasonalOverride ||--}o ReturnFeesEnumeration : "returnFees"
+MerchantReturnPolicySeasonalOverride ||--}o ReturnMethodEnumeration : "returnMethod"
+MerchantReturnPolicySeasonalOverride ||--}o MerchantReturnEnumeration : "returnPolicyCategory"
+MerchantReturnPolicySeasonalOverride ||--}o MonetaryAmount : "returnShippingFeesAmount"
+MerchantReturnPolicySeasonalOverride ||--}o Text : "alternateName"
+MerchantReturnPolicySeasonalOverride ||--}o Text : "disambiguatingDescription"
+MerchantReturnPolicySeasonalOverride ||--}o Text : "name"
+MerchantReturnPolicySeasonalOverride ||--}o URL : "sameAs"
+MerchantReturnPolicySeasonalOverride ||--}o Action : "potentialAction"
+MerchantReturnPolicySeasonalOverride ||--}o URL : "url"
+

@@ -1,0 +1,25 @@
+erDiagram
+GeoShape {
+    stringList address  
+    stringList addressCountry  
+    stringList elevation  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GeoShape ||--}o Text : "box"
+GeoShape ||--}o Text : "circle"
+GeoShape ||--}o Text : "line"
+GeoShape ||--}o Text : "polygon"
+GeoShape ||--}o Text : "postalCode"
+GeoShape ||--}o Text : "alternateName"
+GeoShape ||--}o Text : "disambiguatingDescription"
+GeoShape ||--}o Text : "name"
+GeoShape ||--}o URL : "sameAs"
+GeoShape ||--}o Action : "potentialAction"
+GeoShape ||--}o URL : "url"
+

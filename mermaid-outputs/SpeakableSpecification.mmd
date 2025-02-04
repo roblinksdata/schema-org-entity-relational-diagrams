@@ -1,0 +1,19 @@
+erDiagram
+SpeakableSpecification {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SpeakableSpecification ||--}o CssSelectorType : "cssSelector"
+SpeakableSpecification ||--}o XPathType : "xpath"
+SpeakableSpecification ||--}o Text : "alternateName"
+SpeakableSpecification ||--}o Text : "disambiguatingDescription"
+SpeakableSpecification ||--}o Text : "name"
+SpeakableSpecification ||--}o URL : "sameAs"
+SpeakableSpecification ||--}o Action : "potentialAction"
+SpeakableSpecification ||--}o URL : "url"
+

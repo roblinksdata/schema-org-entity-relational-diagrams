@@ -1,0 +1,18 @@
+erDiagram
+GamePlayMode {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GamePlayMode ||--}o Text : "alternateName"
+GamePlayMode ||--}o Text : "disambiguatingDescription"
+GamePlayMode ||--}o Text : "name"
+GamePlayMode ||--}o URL : "sameAs"
+GamePlayMode ||--}o Action : "potentialAction"
+GamePlayMode ||--}o URL : "url"
+

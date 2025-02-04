@@ -1,0 +1,35 @@
+erDiagram
+InformAction {
+    stringList recipient  
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+InformAction ||--}o Event : "event"
+InformAction ||--}o Thing : "about"
+InformAction ||--}o Language : "language"
+InformAction ||--}o Thing : "instrument"
+InformAction ||--}o Thing : "object"
+InformAction ||--}o Thing : "result"
+InformAction ||--}o HowTo : "actionProcess"
+InformAction ||--}o ActionStatusType : "actionStatus"
+InformAction ||--}o Thing : "error"
+InformAction ||--}o Text : "alternateName"
+InformAction ||--}o Text : "disambiguatingDescription"
+InformAction ||--}o Text : "name"
+InformAction ||--}o URL : "sameAs"
+InformAction ||--}o Action : "potentialAction"
+InformAction ||--}o URL : "url"
+

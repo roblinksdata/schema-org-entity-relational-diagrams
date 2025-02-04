@@ -1,0 +1,22 @@
+erDiagram
+HowToTool {
+    stringList requiredQuantity  
+    stringList position  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+HowToTool ||--}o Thing : "item"
+HowToTool ||--}o ListItem : "nextItem"
+HowToTool ||--}o ListItem : "previousItem"
+HowToTool ||--}o Text : "alternateName"
+HowToTool ||--}o Text : "disambiguatingDescription"
+HowToTool ||--}o Text : "name"
+HowToTool ||--}o URL : "sameAs"
+HowToTool ||--}o Action : "potentialAction"
+HowToTool ||--}o URL : "url"
+

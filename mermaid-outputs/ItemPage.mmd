@@ -1,0 +1,141 @@
+erDiagram
+ItemPage {
+    stringList breadcrumb  
+    stringList reviewedBy  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ItemPage ||--}o Date : "lastReviewed"
+ItemPage ||--}o WebPageElement : "mainContentOfPage"
+ItemPage ||--}o ImageObject : "primaryImageOfPage"
+ItemPage ||--}o URL : "relatedLink"
+ItemPage ||--}o URL : "significantLink"
+ItemPage ||--}o URL : "significantLinks"
+ItemPage ||--}o Specialty : "specialty"
+ItemPage ||--}o Thing : "about"
+ItemPage ||--}o Place : "contentLocation"
+ItemPage ||--}o CreativeWork : "hasPart"
+ItemPage ||--}o Claim : "interpretedAsClaim"
+ItemPage ||--}o Thing : "mainEntity"
+ItemPage ||--}o Place : "spatialCoverage"
+ItemPage ||--}o CreativeWork : "workExample"
+ItemPage ||--}o Text : "abstract"
+ItemPage ||--}o Text : "accessMode"
+ItemPage ||--}o ItemList : "accessModeSufficient"
+ItemPage ||--}o Text : "accessibilityAPI"
+ItemPage ||--}o Text : "accessibilityControl"
+ItemPage ||--}o Text : "accessibilityFeature"
+ItemPage ||--}o Text : "accessibilityHazard"
+ItemPage ||--}o Text : "accessibilitySummary"
+ItemPage ||--}o Person : "accountablePerson"
+ItemPage ||--}o AggregateRating : "aggregateRating"
+ItemPage ||--}o Text : "alternativeHeadline"
+ItemPage ||--}o MediaObject : "associatedMedia"
+ItemPage ||--}o Audience : "audience"
+ItemPage ||--}o Text : "award"
+ItemPage ||--}o Text : "awards"
+ItemPage ||--}o Person : "character"
+ItemPage ||--}o Comment : "comment"
+ItemPage ||--}o Integer : "commentCount"
+ItemPage ||--}o Text : "conditionsOfAccess"
+ItemPage ||--}o DateTime : "contentReferenceTime"
+ItemPage ||--}o Text : "copyrightNotice"
+ItemPage ||--}o Number : "copyrightYear"
+ItemPage ||--}o Country : "countryOfOrigin"
+ItemPage ||--}o Text : "creditText"
+ItemPage ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+ItemPage ||--}o URL : "discussionUrl"
+ItemPage ||--}o Person : "editor"
+ItemPage ||--}o AlignmentObject : "educationalAlignment"
+ItemPage ||--}o MediaObject : "encoding"
+ItemPage ||--}o MediaObject : "encodings"
+ItemPage ||--}o CreativeWork : "exampleOfWork"
+ItemPage ||--}o Grant : "funding"
+ItemPage ||--}o Text : "headline"
+ItemPage ||--}o InteractionCounter : "interactionStatistic"
+ItemPage ||--}o Text : "interactivityType"
+ItemPage ||--}o Boolean : "isAccessibleForFree"
+ItemPage ||--}o Boolean : "isFamilyFriendly"
+ItemPage ||--}o Place : "locationCreated"
+ItemPage ||--}o Thing : "mentions"
+ItemPage ||--}o PublicationEvent : "publication"
+ItemPage ||--}o Organization : "publisherImprint"
+ItemPage ||--}o Event : "recordedAt"
+ItemPage ||--}o PublicationEvent : "releasedEvent"
+ItemPage ||--}o Review : "review"
+ItemPage ||--}o Review : "reviews"
+ItemPage ||--}o Date : "sdDatePublished"
+ItemPage ||--}o Organization : "sourceOrganization"
+ItemPage ||--}o Place : "spatial"
+ItemPage ||--}o Text : "text"
+ItemPage ||--}o ImageObject : "thumbnail"
+ItemPage ||--}o URL : "thumbnailUrl"
+ItemPage ||--}o Duration : "timeRequired"
+ItemPage ||--}o CreativeWork : "translationOfWork"
+ItemPage ||--}o Text : "typicalAgeRange"
+ItemPage ||--}o CreativeWork : "workTranslation"
+ItemPage ||--}o Text : "alternateName"
+ItemPage ||--}o Text : "disambiguatingDescription"
+ItemPage ||--}o Text : "name"
+ItemPage ||--}o URL : "sameAs"
+ItemPage ||--}o Action : "potentialAction"
+ItemPage ||--}o URL : "url"
+

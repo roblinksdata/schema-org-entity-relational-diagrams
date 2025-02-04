@@ -1,0 +1,17 @@
+erDiagram
+Series {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Series ||--}o Text : "alternateName"
+Series ||--}o Text : "disambiguatingDescription"
+Series ||--}o Text : "name"
+Series ||--}o URL : "sameAs"
+Series ||--}o Action : "potentialAction"
+Series ||--}o URL : "url"
+

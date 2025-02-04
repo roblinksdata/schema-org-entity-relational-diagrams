@@ -1,0 +1,33 @@
+erDiagram
+Invoice {
+    stringList category  
+    stringList broker  
+    stringList customer  
+    stringList minimumPaymentDue  
+    stringList paymentDueDate  
+    stringList paymentMethod  
+    stringList paymentStatus  
+    stringList provider  
+    stringList totalPaymentDue  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Invoice ||--}o Text : "accountId"
+Invoice ||--}o Text : "confirmationNumber"
+Invoice ||--}o Duration : "billingPeriod"
+Invoice ||--}o DateTime : "paymentDue"
+Invoice ||--}o Text : "paymentMethodId"
+Invoice ||--}o Order : "referencesOrder"
+Invoice ||--}o Date : "scheduledPaymentDate"
+Invoice ||--}o Text : "alternateName"
+Invoice ||--}o Text : "disambiguatingDescription"
+Invoice ||--}o Text : "name"
+Invoice ||--}o URL : "sameAs"
+Invoice ||--}o Action : "potentialAction"
+Invoice ||--}o URL : "url"
+

@@ -1,0 +1,31 @@
+erDiagram
+EndorseAction {
+    stringList endorsee  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EndorseAction ||--}o Thing : "instrument"
+EndorseAction ||--}o Thing : "object"
+EndorseAction ||--}o Thing : "result"
+EndorseAction ||--}o HowTo : "actionProcess"
+EndorseAction ||--}o ActionStatusType : "actionStatus"
+EndorseAction ||--}o Thing : "error"
+EndorseAction ||--}o Text : "alternateName"
+EndorseAction ||--}o Text : "disambiguatingDescription"
+EndorseAction ||--}o Text : "name"
+EndorseAction ||--}o URL : "sameAs"
+EndorseAction ||--}o Action : "potentialAction"
+EndorseAction ||--}o URL : "url"
+

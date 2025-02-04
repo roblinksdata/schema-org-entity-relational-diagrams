@@ -1,0 +1,18 @@
+erDiagram
+MedicalEvidenceLevel {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalEvidenceLevel ||--}o Text : "alternateName"
+MedicalEvidenceLevel ||--}o Text : "disambiguatingDescription"
+MedicalEvidenceLevel ||--}o Text : "name"
+MedicalEvidenceLevel ||--}o URL : "sameAs"
+MedicalEvidenceLevel ||--}o Action : "potentialAction"
+MedicalEvidenceLevel ||--}o URL : "url"
+

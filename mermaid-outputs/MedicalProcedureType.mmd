@@ -1,0 +1,18 @@
+erDiagram
+MedicalProcedureType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalProcedureType ||--}o Text : "alternateName"
+MedicalProcedureType ||--}o Text : "disambiguatingDescription"
+MedicalProcedureType ||--}o Text : "name"
+MedicalProcedureType ||--}o URL : "sameAs"
+MedicalProcedureType ||--}o Action : "potentialAction"
+MedicalProcedureType ||--}o URL : "url"
+

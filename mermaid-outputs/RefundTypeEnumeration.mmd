@@ -1,0 +1,18 @@
+erDiagram
+RefundTypeEnumeration {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RefundTypeEnumeration ||--}o Text : "alternateName"
+RefundTypeEnumeration ||--}o Text : "disambiguatingDescription"
+RefundTypeEnumeration ||--}o Text : "name"
+RefundTypeEnumeration ||--}o URL : "sameAs"
+RefundTypeEnumeration ||--}o Action : "potentialAction"
+RefundTypeEnumeration ||--}o URL : "url"
+

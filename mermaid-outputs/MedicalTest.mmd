@@ -1,0 +1,30 @@
+erDiagram
+MedicalTest {
+    stringList normalRange  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalTest ||--}o Drug : "affectedBy"
+MedicalTest ||--}o MedicalSign : "signDetected"
+MedicalTest ||--}o MedicalCondition : "usedToDiagnose"
+MedicalTest ||--}o MedicalDevice : "usesDevice"
+MedicalTest ||--}o MedicalCode : "code"
+MedicalTest ||--}o Grant : "funding"
+MedicalTest ||--}o MedicalGuideline : "guideline"
+MedicalTest ||--}o MedicineSystem : "medicineSystem"
+MedicalTest ||--}o Organization : "recognizingAuthority"
+MedicalTest ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalTest ||--}o MedicalStudy : "study"
+MedicalTest ||--}o Text : "alternateName"
+MedicalTest ||--}o Text : "disambiguatingDescription"
+MedicalTest ||--}o Text : "name"
+MedicalTest ||--}o URL : "sameAs"
+MedicalTest ||--}o Action : "potentialAction"
+MedicalTest ||--}o URL : "url"
+

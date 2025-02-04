@@ -1,0 +1,23 @@
+erDiagram
+InteractionCounter {
+    stringList location  
+    stringList endTime  
+    stringList interactionService  
+    stringList startTime  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+InteractionCounter ||--}o Action : "interactionType"
+InteractionCounter ||--}o Integer : "userInteractionCount"
+InteractionCounter ||--}o Text : "alternateName"
+InteractionCounter ||--}o Text : "disambiguatingDescription"
+InteractionCounter ||--}o Text : "name"
+InteractionCounter ||--}o URL : "sameAs"
+InteractionCounter ||--}o Action : "potentialAction"
+InteractionCounter ||--}o URL : "url"
+

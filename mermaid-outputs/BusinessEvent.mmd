@@ -1,0 +1,58 @@
+erDiagram
+BusinessEvent {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BusinessEvent ||--}o Thing : "about"
+BusinessEvent ||--}o Duration : "duration"
+BusinessEvent ||--}o CreativeWork : "workFeatured"
+BusinessEvent ||--}o CreativeWork : "workPerformed"
+BusinessEvent ||--}o AggregateRating : "aggregateRating"
+BusinessEvent ||--}o Audience : "audience"
+BusinessEvent ||--}o Person : "director"
+BusinessEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+BusinessEvent ||--}o Schedule : "eventSchedule"
+BusinessEvent ||--}o EventStatusType : "eventStatus"
+BusinessEvent ||--}o Grant : "funding"
+BusinessEvent ||--}o Boolean : "isAccessibleForFree"
+BusinessEvent ||--}o Integer : "maximumAttendeeCapacity"
+BusinessEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+BusinessEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+BusinessEvent ||--}o Date : "previousStartDate"
+BusinessEvent ||--}o CreativeWork : "recordedIn"
+BusinessEvent ||--}o Integer : "remainingAttendeeCapacity"
+BusinessEvent ||--}o Review : "review"
+BusinessEvent ||--}o Event : "subEvent"
+BusinessEvent ||--}o Event : "subEvents"
+BusinessEvent ||--}o Event : "superEvent"
+BusinessEvent ||--}o Text : "typicalAgeRange"
+BusinessEvent ||--}o Text : "alternateName"
+BusinessEvent ||--}o Text : "disambiguatingDescription"
+BusinessEvent ||--}o Text : "name"
+BusinessEvent ||--}o URL : "sameAs"
+BusinessEvent ||--}o Action : "potentialAction"
+BusinessEvent ||--}o URL : "url"
+

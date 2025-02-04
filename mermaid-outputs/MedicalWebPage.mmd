@@ -1,0 +1,143 @@
+erDiagram
+MedicalWebPage {
+    stringList medicalAudience  
+    stringList breadcrumb  
+    stringList reviewedBy  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalWebPage ||--}o Text : "aspect"
+MedicalWebPage ||--}o Date : "lastReviewed"
+MedicalWebPage ||--}o WebPageElement : "mainContentOfPage"
+MedicalWebPage ||--}o ImageObject : "primaryImageOfPage"
+MedicalWebPage ||--}o URL : "relatedLink"
+MedicalWebPage ||--}o URL : "significantLink"
+MedicalWebPage ||--}o URL : "significantLinks"
+MedicalWebPage ||--}o Specialty : "specialty"
+MedicalWebPage ||--}o Thing : "about"
+MedicalWebPage ||--}o Place : "contentLocation"
+MedicalWebPage ||--}o CreativeWork : "hasPart"
+MedicalWebPage ||--}o Claim : "interpretedAsClaim"
+MedicalWebPage ||--}o Thing : "mainEntity"
+MedicalWebPage ||--}o Place : "spatialCoverage"
+MedicalWebPage ||--}o CreativeWork : "workExample"
+MedicalWebPage ||--}o Text : "abstract"
+MedicalWebPage ||--}o Text : "accessMode"
+MedicalWebPage ||--}o ItemList : "accessModeSufficient"
+MedicalWebPage ||--}o Text : "accessibilityAPI"
+MedicalWebPage ||--}o Text : "accessibilityControl"
+MedicalWebPage ||--}o Text : "accessibilityFeature"
+MedicalWebPage ||--}o Text : "accessibilityHazard"
+MedicalWebPage ||--}o Text : "accessibilitySummary"
+MedicalWebPage ||--}o Person : "accountablePerson"
+MedicalWebPage ||--}o AggregateRating : "aggregateRating"
+MedicalWebPage ||--}o Text : "alternativeHeadline"
+MedicalWebPage ||--}o MediaObject : "associatedMedia"
+MedicalWebPage ||--}o Audience : "audience"
+MedicalWebPage ||--}o Text : "award"
+MedicalWebPage ||--}o Text : "awards"
+MedicalWebPage ||--}o Person : "character"
+MedicalWebPage ||--}o Comment : "comment"
+MedicalWebPage ||--}o Integer : "commentCount"
+MedicalWebPage ||--}o Text : "conditionsOfAccess"
+MedicalWebPage ||--}o DateTime : "contentReferenceTime"
+MedicalWebPage ||--}o Text : "copyrightNotice"
+MedicalWebPage ||--}o Number : "copyrightYear"
+MedicalWebPage ||--}o Country : "countryOfOrigin"
+MedicalWebPage ||--}o Text : "creditText"
+MedicalWebPage ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+MedicalWebPage ||--}o URL : "discussionUrl"
+MedicalWebPage ||--}o Person : "editor"
+MedicalWebPage ||--}o AlignmentObject : "educationalAlignment"
+MedicalWebPage ||--}o MediaObject : "encoding"
+MedicalWebPage ||--}o MediaObject : "encodings"
+MedicalWebPage ||--}o CreativeWork : "exampleOfWork"
+MedicalWebPage ||--}o Grant : "funding"
+MedicalWebPage ||--}o Text : "headline"
+MedicalWebPage ||--}o InteractionCounter : "interactionStatistic"
+MedicalWebPage ||--}o Text : "interactivityType"
+MedicalWebPage ||--}o Boolean : "isAccessibleForFree"
+MedicalWebPage ||--}o Boolean : "isFamilyFriendly"
+MedicalWebPage ||--}o Place : "locationCreated"
+MedicalWebPage ||--}o Thing : "mentions"
+MedicalWebPage ||--}o PublicationEvent : "publication"
+MedicalWebPage ||--}o Organization : "publisherImprint"
+MedicalWebPage ||--}o Event : "recordedAt"
+MedicalWebPage ||--}o PublicationEvent : "releasedEvent"
+MedicalWebPage ||--}o Review : "review"
+MedicalWebPage ||--}o Review : "reviews"
+MedicalWebPage ||--}o Date : "sdDatePublished"
+MedicalWebPage ||--}o Organization : "sourceOrganization"
+MedicalWebPage ||--}o Place : "spatial"
+MedicalWebPage ||--}o Text : "text"
+MedicalWebPage ||--}o ImageObject : "thumbnail"
+MedicalWebPage ||--}o URL : "thumbnailUrl"
+MedicalWebPage ||--}o Duration : "timeRequired"
+MedicalWebPage ||--}o CreativeWork : "translationOfWork"
+MedicalWebPage ||--}o Text : "typicalAgeRange"
+MedicalWebPage ||--}o CreativeWork : "workTranslation"
+MedicalWebPage ||--}o Text : "alternateName"
+MedicalWebPage ||--}o Text : "disambiguatingDescription"
+MedicalWebPage ||--}o Text : "name"
+MedicalWebPage ||--}o URL : "sameAs"
+MedicalWebPage ||--}o Action : "potentialAction"
+MedicalWebPage ||--}o URL : "url"
+

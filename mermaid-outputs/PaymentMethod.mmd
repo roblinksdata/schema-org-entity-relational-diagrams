@@ -1,0 +1,18 @@
+erDiagram
+PaymentMethod {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PaymentMethod ||--}o PaymentMethodType : "paymentMethodType"
+PaymentMethod ||--}o Text : "alternateName"
+PaymentMethod ||--}o Text : "disambiguatingDescription"
+PaymentMethod ||--}o Text : "name"
+PaymentMethod ||--}o URL : "sameAs"
+PaymentMethod ||--}o Action : "potentialAction"
+PaymentMethod ||--}o URL : "url"
+

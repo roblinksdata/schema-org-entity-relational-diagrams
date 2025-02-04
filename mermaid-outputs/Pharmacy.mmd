@@ -1,0 +1,129 @@
+erDiagram
+Pharmacy {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Pharmacy ||--}o Text : "healthPlanNetworkId"
+Pharmacy ||--}o Boolean : "isAcceptingNewPatients"
+Pharmacy ||--}o MedicalSpecialty : "medicalSpecialty"
+Pharmacy ||--}o Organization : "branchOf"
+Pharmacy ||--}o Text : "currenciesAccepted"
+Pharmacy ||--}o Text : "openingHours"
+Pharmacy ||--}o Text : "paymentAccepted"
+Pharmacy ||--}o Text : "priceRange"
+Pharmacy ||--}o Text : "globalLocationNumber"
+Pharmacy ||--}o URL : "hasGS1DigitalLink"
+Pharmacy ||--}o PropertyValue : "additionalProperty"
+Pharmacy ||--}o AggregateRating : "aggregateRating"
+Pharmacy ||--}o LocationFeatureSpecification : "amenityFeature"
+Pharmacy ||--}o Text : "branchCode"
+Pharmacy ||--}o Place : "containedIn"
+Pharmacy ||--}o Place : "containedInPlace"
+Pharmacy ||--}o Place : "containsPlace"
+Pharmacy ||--}o Event : "event"
+Pharmacy ||--}o Event : "events"
+Pharmacy ||--}o Text : "faxNumber"
+Pharmacy ||--}o Certification : "hasCertification"
+Pharmacy ||--}o Boolean : "hasDriveThroughService"
+Pharmacy ||--}o Boolean : "isAccessibleForFree"
+Pharmacy ||--}o Text : "isicV4"
+Pharmacy ||--}o URL : "map"
+Pharmacy ||--}o URL : "maps"
+Pharmacy ||--}o Integer : "maximumAttendeeCapacity"
+Pharmacy ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Pharmacy ||--}o Boolean : "publicAccess"
+Pharmacy ||--}o Review : "review"
+Pharmacy ||--}o Review : "reviews"
+Pharmacy ||--}o Text : "slogan"
+Pharmacy ||--}o Boolean : "smokingAllowed"
+Pharmacy ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Pharmacy ||--}o Text : "telephone"
+Pharmacy ||--}o URL : "tourBookingPage"
+Pharmacy ||--}o Text : "duns"
+Pharmacy ||--}o Text : "leiCode"
+Pharmacy ||--}o Text : "taxID"
+Pharmacy ||--}o InteractionCounter : "agentInteractionStatistic"
+Pharmacy ||--}o Person : "alumni"
+Pharmacy ||--}o Text : "award"
+Pharmacy ||--}o Text : "awards"
+Pharmacy ||--}o ContactPoint : "contactPoint"
+Pharmacy ||--}o ContactPoint : "contactPoints"
+Pharmacy ||--}o Organization : "department"
+Pharmacy ||--}o Date : "dissolutionDate"
+Pharmacy ||--}o Text : "email"
+Pharmacy ||--}o Person : "employee"
+Pharmacy ||--}o Person : "employees"
+Pharmacy ||--}o Person : "founders"
+Pharmacy ||--}o Date : "foundingDate"
+Pharmacy ||--}o Place : "foundingLocation"
+Pharmacy ||--}o Grant : "funding"
+Pharmacy ||--}o EducationalOccupationalCredential : "hasCredential"
+Pharmacy ||--}o MemberProgram : "hasMemberProgram"
+Pharmacy ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+Pharmacy ||--}o OfferCatalog : "hasOfferCatalog"
+Pharmacy ||--}o Place : "hasPOS"
+Pharmacy ||--}o InteractionCounter : "interactionStatistic"
+Pharmacy ||--}o Text : "iso6523Code"
+Pharmacy ||--}o Text : "legalName"
+Pharmacy ||--}o Offer : "makesOffer"
+Pharmacy ||--}o Text : "naics"
+Pharmacy ||--}o NonprofitType : "nonprofitStatus"
+Pharmacy ||--}o QuantitativeValue : "numberOfEmployees"
+Pharmacy ||--}o Organization : "parentOrganization"
+Pharmacy ||--}o Demand : "seeks"
+Pharmacy ||--}o Organization : "subOrganization"
+Pharmacy ||--}o Text : "vatID"
+Pharmacy ||--}o Text : "alternateName"
+Pharmacy ||--}o Text : "disambiguatingDescription"
+Pharmacy ||--}o Text : "name"
+Pharmacy ||--}o URL : "sameAs"
+Pharmacy ||--}o Action : "potentialAction"
+Pharmacy ||--}o URL : "url"
+

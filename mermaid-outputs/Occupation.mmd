@@ -1,0 +1,25 @@
+erDiagram
+Occupation {
+    stringList educationRequirements  
+    stringList estimatedSalary  
+    stringList experienceRequirements  
+    stringList occupationalCategory  
+    stringList qualifications  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Occupation ||--}o AdministrativeArea : "occupationLocation"
+Occupation ||--}o Text : "responsibilities"
+Occupation ||--}o Text : "alternateName"
+Occupation ||--}o Text : "disambiguatingDescription"
+Occupation ||--}o Text : "name"
+Occupation ||--}o URL : "sameAs"
+Occupation ||--}o Action : "potentialAction"
+Occupation ||--}o URL : "url"
+

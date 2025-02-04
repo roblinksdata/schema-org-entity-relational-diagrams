@@ -1,0 +1,18 @@
+erDiagram
+MediaEnumeration {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MediaEnumeration ||--}o Text : "alternateName"
+MediaEnumeration ||--}o Text : "disambiguatingDescription"
+MediaEnumeration ||--}o Text : "name"
+MediaEnumeration ||--}o URL : "sameAs"
+MediaEnumeration ||--}o Action : "potentialAction"
+MediaEnumeration ||--}o URL : "url"
+

@@ -1,0 +1,26 @@
+erDiagram
+MedicalCause {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalCause ||--}o MedicalEntity : "causeOf"
+MedicalCause ||--}o MedicalCode : "code"
+MedicalCause ||--}o Grant : "funding"
+MedicalCause ||--}o MedicalGuideline : "guideline"
+MedicalCause ||--}o MedicineSystem : "medicineSystem"
+MedicalCause ||--}o Organization : "recognizingAuthority"
+MedicalCause ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalCause ||--}o MedicalStudy : "study"
+MedicalCause ||--}o Text : "alternateName"
+MedicalCause ||--}o Text : "disambiguatingDescription"
+MedicalCause ||--}o Text : "name"
+MedicalCause ||--}o URL : "sameAs"
+MedicalCause ||--}o Action : "potentialAction"
+MedicalCause ||--}o URL : "url"
+

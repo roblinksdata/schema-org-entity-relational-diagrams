@@ -1,0 +1,33 @@
+erDiagram
+BrainStructure {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BrainStructure ||--}o Text : "associatedPathophysiology"
+BrainStructure ||--}o Text : "bodyLocation"
+BrainStructure ||--}o AnatomicalStructure : "connectedTo"
+BrainStructure ||--}o ImageObject : "diagram"
+BrainStructure ||--}o AnatomicalSystem : "partOfSystem"
+BrainStructure ||--}o MedicalCondition : "relatedCondition"
+BrainStructure ||--}o MedicalTherapy : "relatedTherapy"
+BrainStructure ||--}o AnatomicalStructure : "subStructure"
+BrainStructure ||--}o MedicalCode : "code"
+BrainStructure ||--}o Grant : "funding"
+BrainStructure ||--}o MedicalGuideline : "guideline"
+BrainStructure ||--}o MedicineSystem : "medicineSystem"
+BrainStructure ||--}o Organization : "recognizingAuthority"
+BrainStructure ||--}o MedicalSpecialty : "relevantSpecialty"
+BrainStructure ||--}o MedicalStudy : "study"
+BrainStructure ||--}o Text : "alternateName"
+BrainStructure ||--}o Text : "disambiguatingDescription"
+BrainStructure ||--}o Text : "name"
+BrainStructure ||--}o URL : "sameAs"
+BrainStructure ||--}o Action : "potentialAction"
+BrainStructure ||--}o URL : "url"
+

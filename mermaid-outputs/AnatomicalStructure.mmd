@@ -1,0 +1,33 @@
+erDiagram
+AnatomicalStructure {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+AnatomicalStructure ||--}o Text : "associatedPathophysiology"
+AnatomicalStructure ||--}o Text : "bodyLocation"
+AnatomicalStructure ||--}o AnatomicalStructure : "connectedTo"
+AnatomicalStructure ||--}o ImageObject : "diagram"
+AnatomicalStructure ||--}o AnatomicalSystem : "partOfSystem"
+AnatomicalStructure ||--}o MedicalCondition : "relatedCondition"
+AnatomicalStructure ||--}o MedicalTherapy : "relatedTherapy"
+AnatomicalStructure ||--}o AnatomicalStructure : "subStructure"
+AnatomicalStructure ||--}o MedicalCode : "code"
+AnatomicalStructure ||--}o Grant : "funding"
+AnatomicalStructure ||--}o MedicalGuideline : "guideline"
+AnatomicalStructure ||--}o MedicineSystem : "medicineSystem"
+AnatomicalStructure ||--}o Organization : "recognizingAuthority"
+AnatomicalStructure ||--}o MedicalSpecialty : "relevantSpecialty"
+AnatomicalStructure ||--}o MedicalStudy : "study"
+AnatomicalStructure ||--}o Text : "alternateName"
+AnatomicalStructure ||--}o Text : "disambiguatingDescription"
+AnatomicalStructure ||--}o Text : "name"
+AnatomicalStructure ||--}o URL : "sameAs"
+AnatomicalStructure ||--}o Action : "potentialAction"
+AnatomicalStructure ||--}o URL : "url"
+

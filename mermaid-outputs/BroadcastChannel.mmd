@@ -1,0 +1,23 @@
+erDiagram
+BroadcastChannel {
+    stringList genre  
+    stringList broadcastFrequency  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BroadcastChannel ||--}o Text : "broadcastChannelId"
+BroadcastChannel ||--}o Text : "broadcastServiceTier"
+BroadcastChannel ||--}o CableOrSatelliteService : "inBroadcastLineup"
+BroadcastChannel ||--}o BroadcastService : "providesBroadcastService"
+BroadcastChannel ||--}o Text : "alternateName"
+BroadcastChannel ||--}o Text : "disambiguatingDescription"
+BroadcastChannel ||--}o Text : "name"
+BroadcastChannel ||--}o URL : "sameAs"
+BroadcastChannel ||--}o Action : "potentialAction"
+BroadcastChannel ||--}o URL : "url"
+

@@ -1,0 +1,18 @@
+erDiagram
+RestrictedDiet {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RestrictedDiet ||--}o Text : "alternateName"
+RestrictedDiet ||--}o Text : "disambiguatingDescription"
+RestrictedDiet ||--}o Text : "name"
+RestrictedDiet ||--}o URL : "sameAs"
+RestrictedDiet ||--}o Action : "potentialAction"
+RestrictedDiet ||--}o URL : "url"
+

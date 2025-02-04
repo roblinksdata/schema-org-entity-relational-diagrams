@@ -1,0 +1,33 @@
+erDiagram
+PerformAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PerformAction ||--}o EntertainmentBusiness : "entertainmentBusiness"
+PerformAction ||--}o Audience : "audience"
+PerformAction ||--}o Event : "event"
+PerformAction ||--}o Thing : "instrument"
+PerformAction ||--}o Thing : "object"
+PerformAction ||--}o Thing : "result"
+PerformAction ||--}o HowTo : "actionProcess"
+PerformAction ||--}o ActionStatusType : "actionStatus"
+PerformAction ||--}o Thing : "error"
+PerformAction ||--}o Text : "alternateName"
+PerformAction ||--}o Text : "disambiguatingDescription"
+PerformAction ||--}o Text : "name"
+PerformAction ||--}o URL : "sameAs"
+PerformAction ||--}o Action : "potentialAction"
+PerformAction ||--}o URL : "url"
+

@@ -1,0 +1,141 @@
+erDiagram
+Recommendation {
+    stringList category  
+    stringList negativeNotes  
+    stringList positiveNotes  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Recommendation ||--}o Review : "associatedClaimReview"
+Recommendation ||--}o Review : "associatedMediaReview"
+Recommendation ||--}o Review : "associatedReview"
+Recommendation ||--}o Thing : "itemReviewed"
+Recommendation ||--}o Text : "reviewAspect"
+Recommendation ||--}o Text : "reviewBody"
+Recommendation ||--}o Rating : "reviewRating"
+Recommendation ||--}o Thing : "about"
+Recommendation ||--}o Place : "contentLocation"
+Recommendation ||--}o CreativeWork : "hasPart"
+Recommendation ||--}o Claim : "interpretedAsClaim"
+Recommendation ||--}o Thing : "mainEntity"
+Recommendation ||--}o Place : "spatialCoverage"
+Recommendation ||--}o CreativeWork : "workExample"
+Recommendation ||--}o Text : "abstract"
+Recommendation ||--}o Text : "accessMode"
+Recommendation ||--}o ItemList : "accessModeSufficient"
+Recommendation ||--}o Text : "accessibilityAPI"
+Recommendation ||--}o Text : "accessibilityControl"
+Recommendation ||--}o Text : "accessibilityFeature"
+Recommendation ||--}o Text : "accessibilityHazard"
+Recommendation ||--}o Text : "accessibilitySummary"
+Recommendation ||--}o Person : "accountablePerson"
+Recommendation ||--}o AggregateRating : "aggregateRating"
+Recommendation ||--}o Text : "alternativeHeadline"
+Recommendation ||--}o MediaObject : "associatedMedia"
+Recommendation ||--}o Audience : "audience"
+Recommendation ||--}o Text : "award"
+Recommendation ||--}o Text : "awards"
+Recommendation ||--}o Person : "character"
+Recommendation ||--}o Comment : "comment"
+Recommendation ||--}o Integer : "commentCount"
+Recommendation ||--}o Text : "conditionsOfAccess"
+Recommendation ||--}o DateTime : "contentReferenceTime"
+Recommendation ||--}o Text : "copyrightNotice"
+Recommendation ||--}o Number : "copyrightYear"
+Recommendation ||--}o Country : "countryOfOrigin"
+Recommendation ||--}o Text : "creditText"
+Recommendation ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Recommendation ||--}o URL : "discussionUrl"
+Recommendation ||--}o Person : "editor"
+Recommendation ||--}o AlignmentObject : "educationalAlignment"
+Recommendation ||--}o MediaObject : "encoding"
+Recommendation ||--}o MediaObject : "encodings"
+Recommendation ||--}o CreativeWork : "exampleOfWork"
+Recommendation ||--}o Grant : "funding"
+Recommendation ||--}o Text : "headline"
+Recommendation ||--}o InteractionCounter : "interactionStatistic"
+Recommendation ||--}o Text : "interactivityType"
+Recommendation ||--}o Boolean : "isAccessibleForFree"
+Recommendation ||--}o Boolean : "isFamilyFriendly"
+Recommendation ||--}o Place : "locationCreated"
+Recommendation ||--}o Thing : "mentions"
+Recommendation ||--}o PublicationEvent : "publication"
+Recommendation ||--}o Organization : "publisherImprint"
+Recommendation ||--}o Event : "recordedAt"
+Recommendation ||--}o PublicationEvent : "releasedEvent"
+Recommendation ||--}o Review : "review"
+Recommendation ||--}o Review : "reviews"
+Recommendation ||--}o Date : "sdDatePublished"
+Recommendation ||--}o Organization : "sourceOrganization"
+Recommendation ||--}o Place : "spatial"
+Recommendation ||--}o Text : "text"
+Recommendation ||--}o ImageObject : "thumbnail"
+Recommendation ||--}o URL : "thumbnailUrl"
+Recommendation ||--}o Duration : "timeRequired"
+Recommendation ||--}o CreativeWork : "translationOfWork"
+Recommendation ||--}o Text : "typicalAgeRange"
+Recommendation ||--}o CreativeWork : "workTranslation"
+Recommendation ||--}o Text : "alternateName"
+Recommendation ||--}o Text : "disambiguatingDescription"
+Recommendation ||--}o Text : "name"
+Recommendation ||--}o URL : "sameAs"
+Recommendation ||--}o Action : "potentialAction"
+Recommendation ||--}o URL : "url"
+

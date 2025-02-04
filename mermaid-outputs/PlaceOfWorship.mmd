@@ -1,0 +1,65 @@
+erDiagram
+PlaceOfWorship {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PlaceOfWorship ||--}o Text : "openingHours"
+PlaceOfWorship ||--}o Text : "globalLocationNumber"
+PlaceOfWorship ||--}o URL : "hasGS1DigitalLink"
+PlaceOfWorship ||--}o PropertyValue : "additionalProperty"
+PlaceOfWorship ||--}o AggregateRating : "aggregateRating"
+PlaceOfWorship ||--}o LocationFeatureSpecification : "amenityFeature"
+PlaceOfWorship ||--}o Text : "branchCode"
+PlaceOfWorship ||--}o Place : "containedIn"
+PlaceOfWorship ||--}o Place : "containedInPlace"
+PlaceOfWorship ||--}o Place : "containsPlace"
+PlaceOfWorship ||--}o Event : "event"
+PlaceOfWorship ||--}o Event : "events"
+PlaceOfWorship ||--}o Text : "faxNumber"
+PlaceOfWorship ||--}o Certification : "hasCertification"
+PlaceOfWorship ||--}o Boolean : "hasDriveThroughService"
+PlaceOfWorship ||--}o Boolean : "isAccessibleForFree"
+PlaceOfWorship ||--}o Text : "isicV4"
+PlaceOfWorship ||--}o URL : "map"
+PlaceOfWorship ||--}o URL : "maps"
+PlaceOfWorship ||--}o Integer : "maximumAttendeeCapacity"
+PlaceOfWorship ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+PlaceOfWorship ||--}o Boolean : "publicAccess"
+PlaceOfWorship ||--}o Review : "review"
+PlaceOfWorship ||--}o Review : "reviews"
+PlaceOfWorship ||--}o Text : "slogan"
+PlaceOfWorship ||--}o Boolean : "smokingAllowed"
+PlaceOfWorship ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+PlaceOfWorship ||--}o Text : "telephone"
+PlaceOfWorship ||--}o URL : "tourBookingPage"
+PlaceOfWorship ||--}o Text : "alternateName"
+PlaceOfWorship ||--}o Text : "disambiguatingDescription"
+PlaceOfWorship ||--}o Text : "name"
+PlaceOfWorship ||--}o URL : "sameAs"
+PlaceOfWorship ||--}o Action : "potentialAction"
+PlaceOfWorship ||--}o URL : "url"
+

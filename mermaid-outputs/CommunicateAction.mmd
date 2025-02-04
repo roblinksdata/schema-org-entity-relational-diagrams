@@ -1,0 +1,34 @@
+erDiagram
+CommunicateAction {
+    stringList recipient  
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CommunicateAction ||--}o Thing : "about"
+CommunicateAction ||--}o Language : "language"
+CommunicateAction ||--}o Thing : "instrument"
+CommunicateAction ||--}o Thing : "object"
+CommunicateAction ||--}o Thing : "result"
+CommunicateAction ||--}o HowTo : "actionProcess"
+CommunicateAction ||--}o ActionStatusType : "actionStatus"
+CommunicateAction ||--}o Thing : "error"
+CommunicateAction ||--}o Text : "alternateName"
+CommunicateAction ||--}o Text : "disambiguatingDescription"
+CommunicateAction ||--}o Text : "name"
+CommunicateAction ||--}o URL : "sameAs"
+CommunicateAction ||--}o Action : "potentialAction"
+CommunicateAction ||--}o URL : "url"
+

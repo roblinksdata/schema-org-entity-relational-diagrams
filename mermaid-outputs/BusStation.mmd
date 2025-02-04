@@ -1,0 +1,65 @@
+erDiagram
+BusStation {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BusStation ||--}o Text : "openingHours"
+BusStation ||--}o Text : "globalLocationNumber"
+BusStation ||--}o URL : "hasGS1DigitalLink"
+BusStation ||--}o PropertyValue : "additionalProperty"
+BusStation ||--}o AggregateRating : "aggregateRating"
+BusStation ||--}o LocationFeatureSpecification : "amenityFeature"
+BusStation ||--}o Text : "branchCode"
+BusStation ||--}o Place : "containedIn"
+BusStation ||--}o Place : "containedInPlace"
+BusStation ||--}o Place : "containsPlace"
+BusStation ||--}o Event : "event"
+BusStation ||--}o Event : "events"
+BusStation ||--}o Text : "faxNumber"
+BusStation ||--}o Certification : "hasCertification"
+BusStation ||--}o Boolean : "hasDriveThroughService"
+BusStation ||--}o Boolean : "isAccessibleForFree"
+BusStation ||--}o Text : "isicV4"
+BusStation ||--}o URL : "map"
+BusStation ||--}o URL : "maps"
+BusStation ||--}o Integer : "maximumAttendeeCapacity"
+BusStation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+BusStation ||--}o Boolean : "publicAccess"
+BusStation ||--}o Review : "review"
+BusStation ||--}o Review : "reviews"
+BusStation ||--}o Text : "slogan"
+BusStation ||--}o Boolean : "smokingAllowed"
+BusStation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+BusStation ||--}o Text : "telephone"
+BusStation ||--}o URL : "tourBookingPage"
+BusStation ||--}o Text : "alternateName"
+BusStation ||--}o Text : "disambiguatingDescription"
+BusStation ||--}o Text : "name"
+BusStation ||--}o URL : "sameAs"
+BusStation ||--}o Action : "potentialAction"
+BusStation ||--}o URL : "url"
+

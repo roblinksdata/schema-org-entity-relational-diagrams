@@ -1,0 +1,142 @@
+erDiagram
+PodcastEpisode {
+    stringList actor  
+    stringList episodeNumber  
+    stringList musicBy  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PodcastEpisode ||--}o Duration : "duration"
+PodcastEpisode ||--}o CreativeWorkSeason : "partOfSeason"
+PodcastEpisode ||--}o CreativeWorkSeries : "partOfSeries"
+PodcastEpisode ||--}o Person : "actors"
+PodcastEpisode ||--}o Person : "director"
+PodcastEpisode ||--}o Person : "directors"
+PodcastEpisode ||--}o Organization : "productionCompany"
+PodcastEpisode ||--}o VideoObject : "trailer"
+PodcastEpisode ||--}o Thing : "about"
+PodcastEpisode ||--}o Place : "contentLocation"
+PodcastEpisode ||--}o CreativeWork : "hasPart"
+PodcastEpisode ||--}o Claim : "interpretedAsClaim"
+PodcastEpisode ||--}o Thing : "mainEntity"
+PodcastEpisode ||--}o Place : "spatialCoverage"
+PodcastEpisode ||--}o CreativeWork : "workExample"
+PodcastEpisode ||--}o Text : "abstract"
+PodcastEpisode ||--}o Text : "accessMode"
+PodcastEpisode ||--}o ItemList : "accessModeSufficient"
+PodcastEpisode ||--}o Text : "accessibilityAPI"
+PodcastEpisode ||--}o Text : "accessibilityControl"
+PodcastEpisode ||--}o Text : "accessibilityFeature"
+PodcastEpisode ||--}o Text : "accessibilityHazard"
+PodcastEpisode ||--}o Text : "accessibilitySummary"
+PodcastEpisode ||--}o Person : "accountablePerson"
+PodcastEpisode ||--}o AggregateRating : "aggregateRating"
+PodcastEpisode ||--}o Text : "alternativeHeadline"
+PodcastEpisode ||--}o MediaObject : "associatedMedia"
+PodcastEpisode ||--}o Audience : "audience"
+PodcastEpisode ||--}o Text : "award"
+PodcastEpisode ||--}o Text : "awards"
+PodcastEpisode ||--}o Person : "character"
+PodcastEpisode ||--}o Comment : "comment"
+PodcastEpisode ||--}o Integer : "commentCount"
+PodcastEpisode ||--}o Text : "conditionsOfAccess"
+PodcastEpisode ||--}o DateTime : "contentReferenceTime"
+PodcastEpisode ||--}o Text : "copyrightNotice"
+PodcastEpisode ||--}o Number : "copyrightYear"
+PodcastEpisode ||--}o Country : "countryOfOrigin"
+PodcastEpisode ||--}o Text : "creditText"
+PodcastEpisode ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+PodcastEpisode ||--}o URL : "discussionUrl"
+PodcastEpisode ||--}o Person : "editor"
+PodcastEpisode ||--}o AlignmentObject : "educationalAlignment"
+PodcastEpisode ||--}o MediaObject : "encoding"
+PodcastEpisode ||--}o MediaObject : "encodings"
+PodcastEpisode ||--}o CreativeWork : "exampleOfWork"
+PodcastEpisode ||--}o Grant : "funding"
+PodcastEpisode ||--}o Text : "headline"
+PodcastEpisode ||--}o InteractionCounter : "interactionStatistic"
+PodcastEpisode ||--}o Text : "interactivityType"
+PodcastEpisode ||--}o Boolean : "isAccessibleForFree"
+PodcastEpisode ||--}o Boolean : "isFamilyFriendly"
+PodcastEpisode ||--}o Place : "locationCreated"
+PodcastEpisode ||--}o Thing : "mentions"
+PodcastEpisode ||--}o PublicationEvent : "publication"
+PodcastEpisode ||--}o Organization : "publisherImprint"
+PodcastEpisode ||--}o Event : "recordedAt"
+PodcastEpisode ||--}o PublicationEvent : "releasedEvent"
+PodcastEpisode ||--}o Review : "review"
+PodcastEpisode ||--}o Review : "reviews"
+PodcastEpisode ||--}o Date : "sdDatePublished"
+PodcastEpisode ||--}o Organization : "sourceOrganization"
+PodcastEpisode ||--}o Place : "spatial"
+PodcastEpisode ||--}o Text : "text"
+PodcastEpisode ||--}o ImageObject : "thumbnail"
+PodcastEpisode ||--}o URL : "thumbnailUrl"
+PodcastEpisode ||--}o Duration : "timeRequired"
+PodcastEpisode ||--}o CreativeWork : "translationOfWork"
+PodcastEpisode ||--}o Text : "typicalAgeRange"
+PodcastEpisode ||--}o CreativeWork : "workTranslation"
+PodcastEpisode ||--}o Text : "alternateName"
+PodcastEpisode ||--}o Text : "disambiguatingDescription"
+PodcastEpisode ||--}o Text : "name"
+PodcastEpisode ||--}o URL : "sameAs"
+PodcastEpisode ||--}o Action : "potentialAction"
+PodcastEpisode ||--}o URL : "url"
+

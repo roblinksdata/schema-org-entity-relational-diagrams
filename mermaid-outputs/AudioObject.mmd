@@ -1,0 +1,152 @@
+erDiagram
+AudioObject {
+    stringList caption  
+    stringList encodingFormat  
+    stringList endTime  
+    stringList height  
+    stringList ineligibleRegion  
+    stringList requiresSubscription  
+    stringList startTime  
+    stringList uploadDate  
+    stringList width  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+AudioObject ||--}o Text : "embeddedTextCaption"
+AudioObject ||--}o Text : "transcript"
+AudioObject ||--}o Duration : "duration"
+AudioObject ||--}o Claim : "interpretedAsClaim"
+AudioObject ||--}o Text : "sha256"
+AudioObject ||--}o NewsArticle : "associatedArticle"
+AudioObject ||--}o Text : "bitrate"
+AudioObject ||--}o Text : "contentSize"
+AudioObject ||--}o URL : "contentUrl"
+AudioObject ||--}o URL : "embedUrl"
+AudioObject ||--}o CreativeWork : "encodesCreativeWork"
+AudioObject ||--}o Text : "playerType"
+AudioObject ||--}o Organization : "productionCompany"
+AudioObject ||--}o Place : "regionsAllowed"
+AudioObject ||--}o Thing : "about"
+AudioObject ||--}o Place : "contentLocation"
+AudioObject ||--}o CreativeWork : "hasPart"
+AudioObject ||--}o Thing : "mainEntity"
+AudioObject ||--}o Place : "spatialCoverage"
+AudioObject ||--}o CreativeWork : "workExample"
+AudioObject ||--}o Text : "abstract"
+AudioObject ||--}o Text : "accessMode"
+AudioObject ||--}o ItemList : "accessModeSufficient"
+AudioObject ||--}o Text : "accessibilityAPI"
+AudioObject ||--}o Text : "accessibilityControl"
+AudioObject ||--}o Text : "accessibilityFeature"
+AudioObject ||--}o Text : "accessibilityHazard"
+AudioObject ||--}o Text : "accessibilitySummary"
+AudioObject ||--}o Person : "accountablePerson"
+AudioObject ||--}o AggregateRating : "aggregateRating"
+AudioObject ||--}o Text : "alternativeHeadline"
+AudioObject ||--}o MediaObject : "associatedMedia"
+AudioObject ||--}o Audience : "audience"
+AudioObject ||--}o Text : "award"
+AudioObject ||--}o Text : "awards"
+AudioObject ||--}o Person : "character"
+AudioObject ||--}o Comment : "comment"
+AudioObject ||--}o Integer : "commentCount"
+AudioObject ||--}o Text : "conditionsOfAccess"
+AudioObject ||--}o DateTime : "contentReferenceTime"
+AudioObject ||--}o Text : "copyrightNotice"
+AudioObject ||--}o Number : "copyrightYear"
+AudioObject ||--}o Country : "countryOfOrigin"
+AudioObject ||--}o Text : "creditText"
+AudioObject ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+AudioObject ||--}o URL : "discussionUrl"
+AudioObject ||--}o Person : "editor"
+AudioObject ||--}o AlignmentObject : "educationalAlignment"
+AudioObject ||--}o MediaObject : "encoding"
+AudioObject ||--}o MediaObject : "encodings"
+AudioObject ||--}o CreativeWork : "exampleOfWork"
+AudioObject ||--}o Grant : "funding"
+AudioObject ||--}o Text : "headline"
+AudioObject ||--}o InteractionCounter : "interactionStatistic"
+AudioObject ||--}o Text : "interactivityType"
+AudioObject ||--}o Boolean : "isAccessibleForFree"
+AudioObject ||--}o Boolean : "isFamilyFriendly"
+AudioObject ||--}o Place : "locationCreated"
+AudioObject ||--}o Thing : "mentions"
+AudioObject ||--}o PublicationEvent : "publication"
+AudioObject ||--}o Organization : "publisherImprint"
+AudioObject ||--}o Event : "recordedAt"
+AudioObject ||--}o PublicationEvent : "releasedEvent"
+AudioObject ||--}o Review : "review"
+AudioObject ||--}o Review : "reviews"
+AudioObject ||--}o Date : "sdDatePublished"
+AudioObject ||--}o Organization : "sourceOrganization"
+AudioObject ||--}o Place : "spatial"
+AudioObject ||--}o Text : "text"
+AudioObject ||--}o ImageObject : "thumbnail"
+AudioObject ||--}o URL : "thumbnailUrl"
+AudioObject ||--}o Duration : "timeRequired"
+AudioObject ||--}o CreativeWork : "translationOfWork"
+AudioObject ||--}o Text : "typicalAgeRange"
+AudioObject ||--}o CreativeWork : "workTranslation"
+AudioObject ||--}o Text : "alternateName"
+AudioObject ||--}o Text : "disambiguatingDescription"
+AudioObject ||--}o Text : "name"
+AudioObject ||--}o URL : "sameAs"
+AudioObject ||--}o Action : "potentialAction"
+AudioObject ||--}o URL : "url"
+

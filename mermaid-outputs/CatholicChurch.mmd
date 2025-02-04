@@ -1,0 +1,65 @@
+erDiagram
+CatholicChurch {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CatholicChurch ||--}o Text : "openingHours"
+CatholicChurch ||--}o Text : "globalLocationNumber"
+CatholicChurch ||--}o URL : "hasGS1DigitalLink"
+CatholicChurch ||--}o PropertyValue : "additionalProperty"
+CatholicChurch ||--}o AggregateRating : "aggregateRating"
+CatholicChurch ||--}o LocationFeatureSpecification : "amenityFeature"
+CatholicChurch ||--}o Text : "branchCode"
+CatholicChurch ||--}o Place : "containedIn"
+CatholicChurch ||--}o Place : "containedInPlace"
+CatholicChurch ||--}o Place : "containsPlace"
+CatholicChurch ||--}o Event : "event"
+CatholicChurch ||--}o Event : "events"
+CatholicChurch ||--}o Text : "faxNumber"
+CatholicChurch ||--}o Certification : "hasCertification"
+CatholicChurch ||--}o Boolean : "hasDriveThroughService"
+CatholicChurch ||--}o Boolean : "isAccessibleForFree"
+CatholicChurch ||--}o Text : "isicV4"
+CatholicChurch ||--}o URL : "map"
+CatholicChurch ||--}o URL : "maps"
+CatholicChurch ||--}o Integer : "maximumAttendeeCapacity"
+CatholicChurch ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+CatholicChurch ||--}o Boolean : "publicAccess"
+CatholicChurch ||--}o Review : "review"
+CatholicChurch ||--}o Review : "reviews"
+CatholicChurch ||--}o Text : "slogan"
+CatholicChurch ||--}o Boolean : "smokingAllowed"
+CatholicChurch ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+CatholicChurch ||--}o Text : "telephone"
+CatholicChurch ||--}o URL : "tourBookingPage"
+CatholicChurch ||--}o Text : "alternateName"
+CatholicChurch ||--}o Text : "disambiguatingDescription"
+CatholicChurch ||--}o Text : "name"
+CatholicChurch ||--}o URL : "sameAs"
+CatholicChurch ||--}o Action : "potentialAction"
+CatholicChurch ||--}o URL : "url"
+

@@ -1,0 +1,58 @@
+erDiagram
+ExhibitionEvent {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ExhibitionEvent ||--}o Thing : "about"
+ExhibitionEvent ||--}o Duration : "duration"
+ExhibitionEvent ||--}o CreativeWork : "workFeatured"
+ExhibitionEvent ||--}o CreativeWork : "workPerformed"
+ExhibitionEvent ||--}o AggregateRating : "aggregateRating"
+ExhibitionEvent ||--}o Audience : "audience"
+ExhibitionEvent ||--}o Person : "director"
+ExhibitionEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+ExhibitionEvent ||--}o Schedule : "eventSchedule"
+ExhibitionEvent ||--}o EventStatusType : "eventStatus"
+ExhibitionEvent ||--}o Grant : "funding"
+ExhibitionEvent ||--}o Boolean : "isAccessibleForFree"
+ExhibitionEvent ||--}o Integer : "maximumAttendeeCapacity"
+ExhibitionEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+ExhibitionEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+ExhibitionEvent ||--}o Date : "previousStartDate"
+ExhibitionEvent ||--}o CreativeWork : "recordedIn"
+ExhibitionEvent ||--}o Integer : "remainingAttendeeCapacity"
+ExhibitionEvent ||--}o Review : "review"
+ExhibitionEvent ||--}o Event : "subEvent"
+ExhibitionEvent ||--}o Event : "subEvents"
+ExhibitionEvent ||--}o Event : "superEvent"
+ExhibitionEvent ||--}o Text : "typicalAgeRange"
+ExhibitionEvent ||--}o Text : "alternateName"
+ExhibitionEvent ||--}o Text : "disambiguatingDescription"
+ExhibitionEvent ||--}o Text : "name"
+ExhibitionEvent ||--}o URL : "sameAs"
+ExhibitionEvent ||--}o Action : "potentialAction"
+ExhibitionEvent ||--}o URL : "url"
+

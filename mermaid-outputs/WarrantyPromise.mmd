@@ -1,0 +1,19 @@
+erDiagram
+WarrantyPromise {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+WarrantyPromise ||--}o QuantitativeValue : "durationOfWarranty"
+WarrantyPromise ||--}o WarrantyScope : "warrantyScope"
+WarrantyPromise ||--}o Text : "alternateName"
+WarrantyPromise ||--}o Text : "disambiguatingDescription"
+WarrantyPromise ||--}o Text : "name"
+WarrantyPromise ||--}o URL : "sameAs"
+WarrantyPromise ||--}o Action : "potentialAction"
+WarrantyPromise ||--}o URL : "url"
+

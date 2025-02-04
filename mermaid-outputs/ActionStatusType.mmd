@@ -1,0 +1,18 @@
+erDiagram
+ActionStatusType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ActionStatusType ||--}o Text : "alternateName"
+ActionStatusType ||--}o Text : "disambiguatingDescription"
+ActionStatusType ||--}o Text : "name"
+ActionStatusType ||--}o URL : "sameAs"
+ActionStatusType ||--}o Action : "potentialAction"
+ActionStatusType ||--}o URL : "url"
+

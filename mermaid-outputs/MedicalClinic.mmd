@@ -1,0 +1,130 @@
+erDiagram
+MedicalClinic {
+    stringList availableService  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalClinic ||--}o MedicalSpecialty : "medicalSpecialty"
+MedicalClinic ||--}o Text : "healthPlanNetworkId"
+MedicalClinic ||--}o Boolean : "isAcceptingNewPatients"
+MedicalClinic ||--}o Organization : "branchOf"
+MedicalClinic ||--}o Text : "currenciesAccepted"
+MedicalClinic ||--}o Text : "openingHours"
+MedicalClinic ||--}o Text : "paymentAccepted"
+MedicalClinic ||--}o Text : "priceRange"
+MedicalClinic ||--}o Text : "globalLocationNumber"
+MedicalClinic ||--}o URL : "hasGS1DigitalLink"
+MedicalClinic ||--}o PropertyValue : "additionalProperty"
+MedicalClinic ||--}o AggregateRating : "aggregateRating"
+MedicalClinic ||--}o LocationFeatureSpecification : "amenityFeature"
+MedicalClinic ||--}o Text : "branchCode"
+MedicalClinic ||--}o Place : "containedIn"
+MedicalClinic ||--}o Place : "containedInPlace"
+MedicalClinic ||--}o Place : "containsPlace"
+MedicalClinic ||--}o Event : "event"
+MedicalClinic ||--}o Event : "events"
+MedicalClinic ||--}o Text : "faxNumber"
+MedicalClinic ||--}o Certification : "hasCertification"
+MedicalClinic ||--}o Boolean : "hasDriveThroughService"
+MedicalClinic ||--}o Boolean : "isAccessibleForFree"
+MedicalClinic ||--}o Text : "isicV4"
+MedicalClinic ||--}o URL : "map"
+MedicalClinic ||--}o URL : "maps"
+MedicalClinic ||--}o Integer : "maximumAttendeeCapacity"
+MedicalClinic ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+MedicalClinic ||--}o Boolean : "publicAccess"
+MedicalClinic ||--}o Review : "review"
+MedicalClinic ||--}o Review : "reviews"
+MedicalClinic ||--}o Text : "slogan"
+MedicalClinic ||--}o Boolean : "smokingAllowed"
+MedicalClinic ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+MedicalClinic ||--}o Text : "telephone"
+MedicalClinic ||--}o URL : "tourBookingPage"
+MedicalClinic ||--}o Text : "duns"
+MedicalClinic ||--}o Text : "leiCode"
+MedicalClinic ||--}o Text : "taxID"
+MedicalClinic ||--}o InteractionCounter : "agentInteractionStatistic"
+MedicalClinic ||--}o Person : "alumni"
+MedicalClinic ||--}o Text : "award"
+MedicalClinic ||--}o Text : "awards"
+MedicalClinic ||--}o ContactPoint : "contactPoint"
+MedicalClinic ||--}o ContactPoint : "contactPoints"
+MedicalClinic ||--}o Organization : "department"
+MedicalClinic ||--}o Date : "dissolutionDate"
+MedicalClinic ||--}o Text : "email"
+MedicalClinic ||--}o Person : "employee"
+MedicalClinic ||--}o Person : "employees"
+MedicalClinic ||--}o Person : "founders"
+MedicalClinic ||--}o Date : "foundingDate"
+MedicalClinic ||--}o Place : "foundingLocation"
+MedicalClinic ||--}o Grant : "funding"
+MedicalClinic ||--}o EducationalOccupationalCredential : "hasCredential"
+MedicalClinic ||--}o MemberProgram : "hasMemberProgram"
+MedicalClinic ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+MedicalClinic ||--}o OfferCatalog : "hasOfferCatalog"
+MedicalClinic ||--}o Place : "hasPOS"
+MedicalClinic ||--}o InteractionCounter : "interactionStatistic"
+MedicalClinic ||--}o Text : "iso6523Code"
+MedicalClinic ||--}o Text : "legalName"
+MedicalClinic ||--}o Offer : "makesOffer"
+MedicalClinic ||--}o Text : "naics"
+MedicalClinic ||--}o NonprofitType : "nonprofitStatus"
+MedicalClinic ||--}o QuantitativeValue : "numberOfEmployees"
+MedicalClinic ||--}o Organization : "parentOrganization"
+MedicalClinic ||--}o Demand : "seeks"
+MedicalClinic ||--}o Organization : "subOrganization"
+MedicalClinic ||--}o Text : "vatID"
+MedicalClinic ||--}o Text : "alternateName"
+MedicalClinic ||--}o Text : "disambiguatingDescription"
+MedicalClinic ||--}o Text : "name"
+MedicalClinic ||--}o URL : "sameAs"
+MedicalClinic ||--}o Action : "potentialAction"
+MedicalClinic ||--}o URL : "url"
+

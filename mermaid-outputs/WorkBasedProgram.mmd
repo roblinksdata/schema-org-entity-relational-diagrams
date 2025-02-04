@@ -1,0 +1,41 @@
+erDiagram
+WorkBasedProgram {
+    stringList occupationalCategory  
+    stringList applicationDeadline  
+    stringList educationalCredentialAwarded  
+    stringList educationalProgramMode  
+    stringList endDate  
+    stringList financialAidEligible  
+    stringList numberOfCredits  
+    stringList occupationalCredentialAwarded  
+    stringList offers  
+    stringList programPrerequisites  
+    stringList programType  
+    stringList provider  
+    stringList startDate  
+    stringList typicalCreditsPerTerm  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+WorkBasedProgram ||--}o MonetaryAmountDistribution : "trainingSalary"
+WorkBasedProgram ||--}o Date : "applicationStartDate"
+WorkBasedProgram ||--}o DayOfWeek : "dayOfWeek"
+WorkBasedProgram ||--}o Course : "hasCourse"
+WorkBasedProgram ||--}o Integer : "maximumEnrollment"
+WorkBasedProgram ||--}o MonetaryAmountDistribution : "salaryUponCompletion"
+WorkBasedProgram ||--}o Duration : "termDuration"
+WorkBasedProgram ||--}o Number : "termsPerYear"
+WorkBasedProgram ||--}o Text : "timeOfDay"
+WorkBasedProgram ||--}o Duration : "timeToComplete"
+WorkBasedProgram ||--}o Text : "alternateName"
+WorkBasedProgram ||--}o Text : "disambiguatingDescription"
+WorkBasedProgram ||--}o Text : "name"
+WorkBasedProgram ||--}o URL : "sameAs"
+WorkBasedProgram ||--}o Action : "potentialAction"
+WorkBasedProgram ||--}o URL : "url"
+

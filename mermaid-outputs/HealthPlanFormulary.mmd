@@ -1,0 +1,20 @@
+erDiagram
+HealthPlanFormulary {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+HealthPlanFormulary ||--}o Boolean : "healthPlanCostSharing"
+HealthPlanFormulary ||--}o Text : "healthPlanDrugTier"
+HealthPlanFormulary ||--}o Boolean : "offersPrescriptionByMail"
+HealthPlanFormulary ||--}o Text : "alternateName"
+HealthPlanFormulary ||--}o Text : "disambiguatingDescription"
+HealthPlanFormulary ||--}o Text : "name"
+HealthPlanFormulary ||--}o URL : "sameAs"
+HealthPlanFormulary ||--}o Action : "potentialAction"
+HealthPlanFormulary ||--}o URL : "url"
+

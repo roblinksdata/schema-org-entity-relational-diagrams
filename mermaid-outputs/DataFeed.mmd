@@ -1,0 +1,141 @@
+erDiagram
+DataFeed {
+    stringList dataFeedElement  
+    stringList measurementMethod  
+    stringList measurementTechnique  
+    stringList variableMeasured  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DataFeed ||--}o Text : "issn"
+DataFeed ||--}o DataCatalog : "catalog"
+DataFeed ||--}o DateTime : "datasetTimeInterval"
+DataFeed ||--}o DataDownload : "distribution"
+DataFeed ||--}o DataCatalog : "includedDataCatalog"
+DataFeed ||--}o DataCatalog : "includedInDataCatalog"
+DataFeed ||--}o Thing : "about"
+DataFeed ||--}o Place : "contentLocation"
+DataFeed ||--}o CreativeWork : "hasPart"
+DataFeed ||--}o Claim : "interpretedAsClaim"
+DataFeed ||--}o Thing : "mainEntity"
+DataFeed ||--}o Place : "spatialCoverage"
+DataFeed ||--}o CreativeWork : "workExample"
+DataFeed ||--}o Text : "abstract"
+DataFeed ||--}o Text : "accessMode"
+DataFeed ||--}o ItemList : "accessModeSufficient"
+DataFeed ||--}o Text : "accessibilityAPI"
+DataFeed ||--}o Text : "accessibilityControl"
+DataFeed ||--}o Text : "accessibilityFeature"
+DataFeed ||--}o Text : "accessibilityHazard"
+DataFeed ||--}o Text : "accessibilitySummary"
+DataFeed ||--}o Person : "accountablePerson"
+DataFeed ||--}o AggregateRating : "aggregateRating"
+DataFeed ||--}o Text : "alternativeHeadline"
+DataFeed ||--}o MediaObject : "associatedMedia"
+DataFeed ||--}o Audience : "audience"
+DataFeed ||--}o Text : "award"
+DataFeed ||--}o Text : "awards"
+DataFeed ||--}o Person : "character"
+DataFeed ||--}o Comment : "comment"
+DataFeed ||--}o Integer : "commentCount"
+DataFeed ||--}o Text : "conditionsOfAccess"
+DataFeed ||--}o DateTime : "contentReferenceTime"
+DataFeed ||--}o Text : "copyrightNotice"
+DataFeed ||--}o Number : "copyrightYear"
+DataFeed ||--}o Country : "countryOfOrigin"
+DataFeed ||--}o Text : "creditText"
+DataFeed ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+DataFeed ||--}o URL : "discussionUrl"
+DataFeed ||--}o Person : "editor"
+DataFeed ||--}o AlignmentObject : "educationalAlignment"
+DataFeed ||--}o MediaObject : "encoding"
+DataFeed ||--}o MediaObject : "encodings"
+DataFeed ||--}o CreativeWork : "exampleOfWork"
+DataFeed ||--}o Grant : "funding"
+DataFeed ||--}o Text : "headline"
+DataFeed ||--}o InteractionCounter : "interactionStatistic"
+DataFeed ||--}o Text : "interactivityType"
+DataFeed ||--}o Boolean : "isAccessibleForFree"
+DataFeed ||--}o Boolean : "isFamilyFriendly"
+DataFeed ||--}o Place : "locationCreated"
+DataFeed ||--}o Thing : "mentions"
+DataFeed ||--}o PublicationEvent : "publication"
+DataFeed ||--}o Organization : "publisherImprint"
+DataFeed ||--}o Event : "recordedAt"
+DataFeed ||--}o PublicationEvent : "releasedEvent"
+DataFeed ||--}o Review : "review"
+DataFeed ||--}o Review : "reviews"
+DataFeed ||--}o Date : "sdDatePublished"
+DataFeed ||--}o Organization : "sourceOrganization"
+DataFeed ||--}o Place : "spatial"
+DataFeed ||--}o Text : "text"
+DataFeed ||--}o ImageObject : "thumbnail"
+DataFeed ||--}o URL : "thumbnailUrl"
+DataFeed ||--}o Duration : "timeRequired"
+DataFeed ||--}o CreativeWork : "translationOfWork"
+DataFeed ||--}o Text : "typicalAgeRange"
+DataFeed ||--}o CreativeWork : "workTranslation"
+DataFeed ||--}o Text : "alternateName"
+DataFeed ||--}o Text : "disambiguatingDescription"
+DataFeed ||--}o Text : "name"
+DataFeed ||--}o URL : "sameAs"
+DataFeed ||--}o Action : "potentialAction"
+DataFeed ||--}o URL : "url"
+

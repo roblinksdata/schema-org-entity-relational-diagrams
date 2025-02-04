@@ -1,0 +1,93 @@
+erDiagram
+SportsTeam {
+    stringList gender  
+    stringList sport  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList logo  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList address  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList keywords  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SportsTeam ||--}o Person : "athlete"
+SportsTeam ||--}o Person : "coach"
+SportsTeam ||--}o Text : "duns"
+SportsTeam ||--}o Text : "globalLocationNumber"
+SportsTeam ||--}o URL : "hasGS1DigitalLink"
+SportsTeam ||--}o Text : "leiCode"
+SportsTeam ||--}o Text : "taxID"
+SportsTeam ||--}o InteractionCounter : "agentInteractionStatistic"
+SportsTeam ||--}o AggregateRating : "aggregateRating"
+SportsTeam ||--}o Person : "alumni"
+SportsTeam ||--}o Text : "award"
+SportsTeam ||--}o Text : "awards"
+SportsTeam ||--}o ContactPoint : "contactPoint"
+SportsTeam ||--}o ContactPoint : "contactPoints"
+SportsTeam ||--}o Organization : "department"
+SportsTeam ||--}o Date : "dissolutionDate"
+SportsTeam ||--}o Text : "email"
+SportsTeam ||--}o Person : "employee"
+SportsTeam ||--}o Person : "employees"
+SportsTeam ||--}o Event : "event"
+SportsTeam ||--}o Event : "events"
+SportsTeam ||--}o Text : "faxNumber"
+SportsTeam ||--}o Person : "founders"
+SportsTeam ||--}o Date : "foundingDate"
+SportsTeam ||--}o Place : "foundingLocation"
+SportsTeam ||--}o Grant : "funding"
+SportsTeam ||--}o Certification : "hasCertification"
+SportsTeam ||--}o EducationalOccupationalCredential : "hasCredential"
+SportsTeam ||--}o MemberProgram : "hasMemberProgram"
+SportsTeam ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+SportsTeam ||--}o OfferCatalog : "hasOfferCatalog"
+SportsTeam ||--}o Place : "hasPOS"
+SportsTeam ||--}o InteractionCounter : "interactionStatistic"
+SportsTeam ||--}o Text : "isicV4"
+SportsTeam ||--}o Text : "iso6523Code"
+SportsTeam ||--}o Text : "legalName"
+SportsTeam ||--}o Offer : "makesOffer"
+SportsTeam ||--}o Text : "naics"
+SportsTeam ||--}o NonprofitType : "nonprofitStatus"
+SportsTeam ||--}o QuantitativeValue : "numberOfEmployees"
+SportsTeam ||--}o Organization : "parentOrganization"
+SportsTeam ||--}o Review : "review"
+SportsTeam ||--}o Review : "reviews"
+SportsTeam ||--}o Demand : "seeks"
+SportsTeam ||--}o Text : "slogan"
+SportsTeam ||--}o Organization : "subOrganization"
+SportsTeam ||--}o Text : "telephone"
+SportsTeam ||--}o Text : "vatID"
+SportsTeam ||--}o Text : "alternateName"
+SportsTeam ||--}o Text : "disambiguatingDescription"
+SportsTeam ||--}o Text : "name"
+SportsTeam ||--}o URL : "sameAs"
+SportsTeam ||--}o Action : "potentialAction"
+SportsTeam ||--}o URL : "url"
+

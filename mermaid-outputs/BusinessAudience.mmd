@@ -1,0 +1,22 @@
+erDiagram
+BusinessAudience {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BusinessAudience ||--}o QuantitativeValue : "numberOfEmployees"
+BusinessAudience ||--}o QuantitativeValue : "yearlyRevenue"
+BusinessAudience ||--}o QuantitativeValue : "yearsInOperation"
+BusinessAudience ||--}o Text : "audienceType"
+BusinessAudience ||--}o AdministrativeArea : "geographicArea"
+BusinessAudience ||--}o Text : "alternateName"
+BusinessAudience ||--}o Text : "disambiguatingDescription"
+BusinessAudience ||--}o Text : "name"
+BusinessAudience ||--}o URL : "sameAs"
+BusinessAudience ||--}o Action : "potentialAction"
+BusinessAudience ||--}o URL : "url"
+

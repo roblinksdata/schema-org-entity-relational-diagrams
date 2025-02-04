@@ -1,0 +1,36 @@
+erDiagram
+UnitPriceSpecification {
+    stringList billingDuration  
+    stringList priceType  
+    stringList unitCode  
+    stringList membershipPointsEarned  
+    stringList price  
+    stringList validFrom  
+    stringList validThrough  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UnitPriceSpecification ||--}o Number : "billingIncrement"
+UnitPriceSpecification ||--}o Number : "billingStart"
+UnitPriceSpecification ||--}o PriceComponentTypeEnumeration : "priceComponentType"
+UnitPriceSpecification ||--}o QuantitativeValue : "referenceQuantity"
+UnitPriceSpecification ||--}o Text : "unitText"
+UnitPriceSpecification ||--}o QuantitativeValue : "eligibleQuantity"
+UnitPriceSpecification ||--}o PriceSpecification : "eligibleTransactionVolume"
+UnitPriceSpecification ||--}o Number : "maxPrice"
+UnitPriceSpecification ||--}o Number : "minPrice"
+UnitPriceSpecification ||--}o Text : "priceCurrency"
+UnitPriceSpecification ||--}o MemberProgramTier : "validForMemberTier"
+UnitPriceSpecification ||--}o Boolean : "valueAddedTaxIncluded"
+UnitPriceSpecification ||--}o Text : "alternateName"
+UnitPriceSpecification ||--}o Text : "disambiguatingDescription"
+UnitPriceSpecification ||--}o Text : "name"
+UnitPriceSpecification ||--}o URL : "sameAs"
+UnitPriceSpecification ||--}o Action : "potentialAction"
+UnitPriceSpecification ||--}o URL : "url"
+

@@ -1,0 +1,18 @@
+erDiagram
+TierBenefitEnumeration {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TierBenefitEnumeration ||--}o Text : "alternateName"
+TierBenefitEnumeration ||--}o Text : "disambiguatingDescription"
+TierBenefitEnumeration ||--}o Text : "name"
+TierBenefitEnumeration ||--}o URL : "sameAs"
+TierBenefitEnumeration ||--}o Action : "potentialAction"
+TierBenefitEnumeration ||--}o URL : "url"
+

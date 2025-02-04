@@ -1,0 +1,65 @@
+erDiagram
+MusicVenue {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MusicVenue ||--}o Text : "openingHours"
+MusicVenue ||--}o Text : "globalLocationNumber"
+MusicVenue ||--}o URL : "hasGS1DigitalLink"
+MusicVenue ||--}o PropertyValue : "additionalProperty"
+MusicVenue ||--}o AggregateRating : "aggregateRating"
+MusicVenue ||--}o LocationFeatureSpecification : "amenityFeature"
+MusicVenue ||--}o Text : "branchCode"
+MusicVenue ||--}o Place : "containedIn"
+MusicVenue ||--}o Place : "containedInPlace"
+MusicVenue ||--}o Place : "containsPlace"
+MusicVenue ||--}o Event : "event"
+MusicVenue ||--}o Event : "events"
+MusicVenue ||--}o Text : "faxNumber"
+MusicVenue ||--}o Certification : "hasCertification"
+MusicVenue ||--}o Boolean : "hasDriveThroughService"
+MusicVenue ||--}o Boolean : "isAccessibleForFree"
+MusicVenue ||--}o Text : "isicV4"
+MusicVenue ||--}o URL : "map"
+MusicVenue ||--}o URL : "maps"
+MusicVenue ||--}o Integer : "maximumAttendeeCapacity"
+MusicVenue ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+MusicVenue ||--}o Boolean : "publicAccess"
+MusicVenue ||--}o Review : "review"
+MusicVenue ||--}o Review : "reviews"
+MusicVenue ||--}o Text : "slogan"
+MusicVenue ||--}o Boolean : "smokingAllowed"
+MusicVenue ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+MusicVenue ||--}o Text : "telephone"
+MusicVenue ||--}o URL : "tourBookingPage"
+MusicVenue ||--}o Text : "alternateName"
+MusicVenue ||--}o Text : "disambiguatingDescription"
+MusicVenue ||--}o Text : "name"
+MusicVenue ||--}o URL : "sameAs"
+MusicVenue ||--}o Action : "potentialAction"
+MusicVenue ||--}o URL : "url"
+

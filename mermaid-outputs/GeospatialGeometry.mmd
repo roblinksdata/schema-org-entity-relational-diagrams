@@ -1,0 +1,27 @@
+erDiagram
+GeospatialGeometry {
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GeospatialGeometry ||--}o Text : "alternateName"
+GeospatialGeometry ||--}o Text : "disambiguatingDescription"
+GeospatialGeometry ||--}o Text : "name"
+GeospatialGeometry ||--}o URL : "sameAs"
+GeospatialGeometry ||--}o Action : "potentialAction"
+GeospatialGeometry ||--}o URL : "url"
+

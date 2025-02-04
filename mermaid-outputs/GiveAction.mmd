@@ -1,0 +1,33 @@
+erDiagram
+GiveAction {
+    stringList recipient  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GiveAction ||--}o Place : "fromLocation"
+GiveAction ||--}o Place : "toLocation"
+GiveAction ||--}o Thing : "instrument"
+GiveAction ||--}o Thing : "object"
+GiveAction ||--}o Thing : "result"
+GiveAction ||--}o HowTo : "actionProcess"
+GiveAction ||--}o ActionStatusType : "actionStatus"
+GiveAction ||--}o Thing : "error"
+GiveAction ||--}o Text : "alternateName"
+GiveAction ||--}o Text : "disambiguatingDescription"
+GiveAction ||--}o Text : "name"
+GiveAction ||--}o URL : "sameAs"
+GiveAction ||--}o Action : "potentialAction"
+GiveAction ||--}o URL : "url"
+

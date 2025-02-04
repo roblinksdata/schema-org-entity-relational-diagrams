@@ -1,0 +1,18 @@
+erDiagram
+MeasurementTypeEnumeration {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MeasurementTypeEnumeration ||--}o Text : "alternateName"
+MeasurementTypeEnumeration ||--}o Text : "disambiguatingDescription"
+MeasurementTypeEnumeration ||--}o Text : "name"
+MeasurementTypeEnumeration ||--}o URL : "sameAs"
+MeasurementTypeEnumeration ||--}o Action : "potentialAction"
+MeasurementTypeEnumeration ||--}o URL : "url"
+

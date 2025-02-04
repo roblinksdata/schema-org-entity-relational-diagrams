@@ -1,0 +1,142 @@
+erDiagram
+VideoGameClip {
+    stringList actor  
+    stringList clipNumber  
+    stringList endOffset  
+    stringList musicBy  
+    stringList startOffset  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+VideoGameClip ||--}o Episode : "partOfEpisode"
+VideoGameClip ||--}o CreativeWorkSeason : "partOfSeason"
+VideoGameClip ||--}o CreativeWorkSeries : "partOfSeries"
+VideoGameClip ||--}o Person : "actors"
+VideoGameClip ||--}o Person : "director"
+VideoGameClip ||--}o Person : "directors"
+VideoGameClip ||--}o Thing : "about"
+VideoGameClip ||--}o Place : "contentLocation"
+VideoGameClip ||--}o CreativeWork : "hasPart"
+VideoGameClip ||--}o Claim : "interpretedAsClaim"
+VideoGameClip ||--}o Thing : "mainEntity"
+VideoGameClip ||--}o Place : "spatialCoverage"
+VideoGameClip ||--}o CreativeWork : "workExample"
+VideoGameClip ||--}o Text : "abstract"
+VideoGameClip ||--}o Text : "accessMode"
+VideoGameClip ||--}o ItemList : "accessModeSufficient"
+VideoGameClip ||--}o Text : "accessibilityAPI"
+VideoGameClip ||--}o Text : "accessibilityControl"
+VideoGameClip ||--}o Text : "accessibilityFeature"
+VideoGameClip ||--}o Text : "accessibilityHazard"
+VideoGameClip ||--}o Text : "accessibilitySummary"
+VideoGameClip ||--}o Person : "accountablePerson"
+VideoGameClip ||--}o AggregateRating : "aggregateRating"
+VideoGameClip ||--}o Text : "alternativeHeadline"
+VideoGameClip ||--}o MediaObject : "associatedMedia"
+VideoGameClip ||--}o Audience : "audience"
+VideoGameClip ||--}o Text : "award"
+VideoGameClip ||--}o Text : "awards"
+VideoGameClip ||--}o Person : "character"
+VideoGameClip ||--}o Comment : "comment"
+VideoGameClip ||--}o Integer : "commentCount"
+VideoGameClip ||--}o Text : "conditionsOfAccess"
+VideoGameClip ||--}o DateTime : "contentReferenceTime"
+VideoGameClip ||--}o Text : "copyrightNotice"
+VideoGameClip ||--}o Number : "copyrightYear"
+VideoGameClip ||--}o Country : "countryOfOrigin"
+VideoGameClip ||--}o Text : "creditText"
+VideoGameClip ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+VideoGameClip ||--}o URL : "discussionUrl"
+VideoGameClip ||--}o Person : "editor"
+VideoGameClip ||--}o AlignmentObject : "educationalAlignment"
+VideoGameClip ||--}o MediaObject : "encoding"
+VideoGameClip ||--}o MediaObject : "encodings"
+VideoGameClip ||--}o CreativeWork : "exampleOfWork"
+VideoGameClip ||--}o Grant : "funding"
+VideoGameClip ||--}o Text : "headline"
+VideoGameClip ||--}o InteractionCounter : "interactionStatistic"
+VideoGameClip ||--}o Text : "interactivityType"
+VideoGameClip ||--}o Boolean : "isAccessibleForFree"
+VideoGameClip ||--}o Boolean : "isFamilyFriendly"
+VideoGameClip ||--}o Place : "locationCreated"
+VideoGameClip ||--}o Thing : "mentions"
+VideoGameClip ||--}o PublicationEvent : "publication"
+VideoGameClip ||--}o Organization : "publisherImprint"
+VideoGameClip ||--}o Event : "recordedAt"
+VideoGameClip ||--}o PublicationEvent : "releasedEvent"
+VideoGameClip ||--}o Review : "review"
+VideoGameClip ||--}o Review : "reviews"
+VideoGameClip ||--}o Date : "sdDatePublished"
+VideoGameClip ||--}o Organization : "sourceOrganization"
+VideoGameClip ||--}o Place : "spatial"
+VideoGameClip ||--}o Text : "text"
+VideoGameClip ||--}o ImageObject : "thumbnail"
+VideoGameClip ||--}o URL : "thumbnailUrl"
+VideoGameClip ||--}o Duration : "timeRequired"
+VideoGameClip ||--}o CreativeWork : "translationOfWork"
+VideoGameClip ||--}o Text : "typicalAgeRange"
+VideoGameClip ||--}o CreativeWork : "workTranslation"
+VideoGameClip ||--}o Text : "alternateName"
+VideoGameClip ||--}o Text : "disambiguatingDescription"
+VideoGameClip ||--}o Text : "name"
+VideoGameClip ||--}o URL : "sameAs"
+VideoGameClip ||--}o Action : "potentialAction"
+VideoGameClip ||--}o URL : "url"
+

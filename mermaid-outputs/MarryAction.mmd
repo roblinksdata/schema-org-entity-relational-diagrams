@@ -1,0 +1,30 @@
+erDiagram
+MarryAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MarryAction ||--}o Thing : "instrument"
+MarryAction ||--}o Thing : "object"
+MarryAction ||--}o Thing : "result"
+MarryAction ||--}o HowTo : "actionProcess"
+MarryAction ||--}o ActionStatusType : "actionStatus"
+MarryAction ||--}o Thing : "error"
+MarryAction ||--}o Text : "alternateName"
+MarryAction ||--}o Text : "disambiguatingDescription"
+MarryAction ||--}o Text : "name"
+MarryAction ||--}o URL : "sameAs"
+MarryAction ||--}o Action : "potentialAction"
+MarryAction ||--}o URL : "url"
+

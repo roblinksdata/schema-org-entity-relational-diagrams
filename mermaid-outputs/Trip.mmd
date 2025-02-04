@@ -1,0 +1,25 @@
+erDiagram
+Trip {
+    stringList arrivalTime  
+    stringList departureTime  
+    stringList itinerary  
+    stringList offers  
+    stringList provider  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Trip ||--}o Trip : "partOfTrip"
+Trip ||--}o Trip : "subTrip"
+Trip ||--}o Place : "tripOrigin"
+Trip ||--}o Text : "alternateName"
+Trip ||--}o Text : "disambiguatingDescription"
+Trip ||--}o Text : "name"
+Trip ||--}o URL : "sameAs"
+Trip ||--}o Action : "potentialAction"
+Trip ||--}o URL : "url"
+

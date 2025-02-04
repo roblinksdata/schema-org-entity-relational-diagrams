@@ -1,0 +1,24 @@
+erDiagram
+MonetaryAmountDistribution {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MonetaryAmountDistribution ||--}o Text : "currency"
+MonetaryAmountDistribution ||--}o Duration : "duration"
+MonetaryAmountDistribution ||--}o Number : "median"
+MonetaryAmountDistribution ||--}o Number : "percentile10"
+MonetaryAmountDistribution ||--}o Number : "percentile25"
+MonetaryAmountDistribution ||--}o Number : "percentile75"
+MonetaryAmountDistribution ||--}o Number : "percentile90"
+MonetaryAmountDistribution ||--}o Text : "alternateName"
+MonetaryAmountDistribution ||--}o Text : "disambiguatingDescription"
+MonetaryAmountDistribution ||--}o Text : "name"
+MonetaryAmountDistribution ||--}o URL : "sameAs"
+MonetaryAmountDistribution ||--}o Action : "potentialAction"
+MonetaryAmountDistribution ||--}o URL : "url"
+

@@ -1,0 +1,20 @@
+erDiagram
+BreadcrumbList {
+    stringList itemListElement  
+    stringList itemListOrder  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BreadcrumbList ||--}o Integer : "numberOfItems"
+BreadcrumbList ||--}o Text : "alternateName"
+BreadcrumbList ||--}o Text : "disambiguatingDescription"
+BreadcrumbList ||--}o Text : "name"
+BreadcrumbList ||--}o URL : "sameAs"
+BreadcrumbList ||--}o Action : "potentialAction"
+BreadcrumbList ||--}o URL : "url"
+

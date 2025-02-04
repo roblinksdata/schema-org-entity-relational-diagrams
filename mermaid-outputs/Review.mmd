@@ -1,0 +1,140 @@
+erDiagram
+Review {
+    stringList negativeNotes  
+    stringList positiveNotes  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Review ||--}o Review : "associatedClaimReview"
+Review ||--}o Review : "associatedMediaReview"
+Review ||--}o Review : "associatedReview"
+Review ||--}o Thing : "itemReviewed"
+Review ||--}o Text : "reviewAspect"
+Review ||--}o Text : "reviewBody"
+Review ||--}o Rating : "reviewRating"
+Review ||--}o Thing : "about"
+Review ||--}o Place : "contentLocation"
+Review ||--}o CreativeWork : "hasPart"
+Review ||--}o Claim : "interpretedAsClaim"
+Review ||--}o Thing : "mainEntity"
+Review ||--}o Place : "spatialCoverage"
+Review ||--}o CreativeWork : "workExample"
+Review ||--}o Text : "abstract"
+Review ||--}o Text : "accessMode"
+Review ||--}o ItemList : "accessModeSufficient"
+Review ||--}o Text : "accessibilityAPI"
+Review ||--}o Text : "accessibilityControl"
+Review ||--}o Text : "accessibilityFeature"
+Review ||--}o Text : "accessibilityHazard"
+Review ||--}o Text : "accessibilitySummary"
+Review ||--}o Person : "accountablePerson"
+Review ||--}o AggregateRating : "aggregateRating"
+Review ||--}o Text : "alternativeHeadline"
+Review ||--}o MediaObject : "associatedMedia"
+Review ||--}o Audience : "audience"
+Review ||--}o Text : "award"
+Review ||--}o Text : "awards"
+Review ||--}o Person : "character"
+Review ||--}o Comment : "comment"
+Review ||--}o Integer : "commentCount"
+Review ||--}o Text : "conditionsOfAccess"
+Review ||--}o DateTime : "contentReferenceTime"
+Review ||--}o Text : "copyrightNotice"
+Review ||--}o Number : "copyrightYear"
+Review ||--}o Country : "countryOfOrigin"
+Review ||--}o Text : "creditText"
+Review ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Review ||--}o URL : "discussionUrl"
+Review ||--}o Person : "editor"
+Review ||--}o AlignmentObject : "educationalAlignment"
+Review ||--}o MediaObject : "encoding"
+Review ||--}o MediaObject : "encodings"
+Review ||--}o CreativeWork : "exampleOfWork"
+Review ||--}o Grant : "funding"
+Review ||--}o Text : "headline"
+Review ||--}o InteractionCounter : "interactionStatistic"
+Review ||--}o Text : "interactivityType"
+Review ||--}o Boolean : "isAccessibleForFree"
+Review ||--}o Boolean : "isFamilyFriendly"
+Review ||--}o Place : "locationCreated"
+Review ||--}o Thing : "mentions"
+Review ||--}o PublicationEvent : "publication"
+Review ||--}o Organization : "publisherImprint"
+Review ||--}o Event : "recordedAt"
+Review ||--}o PublicationEvent : "releasedEvent"
+Review ||--}o Review : "review"
+Review ||--}o Review : "reviews"
+Review ||--}o Date : "sdDatePublished"
+Review ||--}o Organization : "sourceOrganization"
+Review ||--}o Place : "spatial"
+Review ||--}o Text : "text"
+Review ||--}o ImageObject : "thumbnail"
+Review ||--}o URL : "thumbnailUrl"
+Review ||--}o Duration : "timeRequired"
+Review ||--}o CreativeWork : "translationOfWork"
+Review ||--}o Text : "typicalAgeRange"
+Review ||--}o CreativeWork : "workTranslation"
+Review ||--}o Text : "alternateName"
+Review ||--}o Text : "disambiguatingDescription"
+Review ||--}o Text : "name"
+Review ||--}o URL : "sameAs"
+Review ||--}o Action : "potentialAction"
+Review ||--}o URL : "url"
+

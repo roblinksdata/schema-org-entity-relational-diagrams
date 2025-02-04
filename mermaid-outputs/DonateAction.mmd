@@ -1,0 +1,36 @@
+erDiagram
+DonateAction {
+    stringList recipient  
+    stringList price  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DonateAction ||--}o Text : "priceCurrency"
+DonateAction ||--}o PriceSpecification : "priceSpecification"
+DonateAction ||--}o Place : "fromLocation"
+DonateAction ||--}o Place : "toLocation"
+DonateAction ||--}o Thing : "instrument"
+DonateAction ||--}o Thing : "object"
+DonateAction ||--}o Thing : "result"
+DonateAction ||--}o HowTo : "actionProcess"
+DonateAction ||--}o ActionStatusType : "actionStatus"
+DonateAction ||--}o Thing : "error"
+DonateAction ||--}o Text : "alternateName"
+DonateAction ||--}o Text : "disambiguatingDescription"
+DonateAction ||--}o Text : "name"
+DonateAction ||--}o URL : "sameAs"
+DonateAction ||--}o Action : "potentialAction"
+DonateAction ||--}o URL : "url"
+

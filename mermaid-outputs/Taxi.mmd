@@ -1,0 +1,42 @@
+erDiagram
+Taxi {
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Taxi ||--}o AggregateRating : "aggregateRating"
+Taxi ||--}o Audience : "audience"
+Taxi ||--}o ServiceChannel : "availableChannel"
+Taxi ||--}o Text : "award"
+Taxi ||--}o Certification : "hasCertification"
+Taxi ||--}o OfferCatalog : "hasOfferCatalog"
+Taxi ||--}o OpeningHoursSpecification : "hoursAvailable"
+Taxi ||--}o Thing : "produces"
+Taxi ||--}o Text : "providerMobility"
+Taxi ||--}o Review : "review"
+Taxi ||--}o Audience : "serviceAudience"
+Taxi ||--}o Thing : "serviceOutput"
+Taxi ||--}o Text : "slogan"
+Taxi ||--}o Text : "alternateName"
+Taxi ||--}o Text : "disambiguatingDescription"
+Taxi ||--}o Text : "name"
+Taxi ||--}o URL : "sameAs"
+Taxi ||--}o Action : "potentialAction"
+Taxi ||--}o URL : "url"
+

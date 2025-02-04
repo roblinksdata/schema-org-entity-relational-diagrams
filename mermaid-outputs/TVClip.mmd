@@ -1,0 +1,143 @@
+erDiagram
+TVClip {
+    stringList actor  
+    stringList clipNumber  
+    stringList endOffset  
+    stringList musicBy  
+    stringList startOffset  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TVClip ||--}o TVSeries : "partOfTVSeries"
+TVClip ||--}o Episode : "partOfEpisode"
+TVClip ||--}o CreativeWorkSeason : "partOfSeason"
+TVClip ||--}o CreativeWorkSeries : "partOfSeries"
+TVClip ||--}o Person : "actors"
+TVClip ||--}o Person : "director"
+TVClip ||--}o Person : "directors"
+TVClip ||--}o Thing : "about"
+TVClip ||--}o Place : "contentLocation"
+TVClip ||--}o CreativeWork : "hasPart"
+TVClip ||--}o Claim : "interpretedAsClaim"
+TVClip ||--}o Thing : "mainEntity"
+TVClip ||--}o Place : "spatialCoverage"
+TVClip ||--}o CreativeWork : "workExample"
+TVClip ||--}o Text : "abstract"
+TVClip ||--}o Text : "accessMode"
+TVClip ||--}o ItemList : "accessModeSufficient"
+TVClip ||--}o Text : "accessibilityAPI"
+TVClip ||--}o Text : "accessibilityControl"
+TVClip ||--}o Text : "accessibilityFeature"
+TVClip ||--}o Text : "accessibilityHazard"
+TVClip ||--}o Text : "accessibilitySummary"
+TVClip ||--}o Person : "accountablePerson"
+TVClip ||--}o AggregateRating : "aggregateRating"
+TVClip ||--}o Text : "alternativeHeadline"
+TVClip ||--}o MediaObject : "associatedMedia"
+TVClip ||--}o Audience : "audience"
+TVClip ||--}o Text : "award"
+TVClip ||--}o Text : "awards"
+TVClip ||--}o Person : "character"
+TVClip ||--}o Comment : "comment"
+TVClip ||--}o Integer : "commentCount"
+TVClip ||--}o Text : "conditionsOfAccess"
+TVClip ||--}o DateTime : "contentReferenceTime"
+TVClip ||--}o Text : "copyrightNotice"
+TVClip ||--}o Number : "copyrightYear"
+TVClip ||--}o Country : "countryOfOrigin"
+TVClip ||--}o Text : "creditText"
+TVClip ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+TVClip ||--}o URL : "discussionUrl"
+TVClip ||--}o Person : "editor"
+TVClip ||--}o AlignmentObject : "educationalAlignment"
+TVClip ||--}o MediaObject : "encoding"
+TVClip ||--}o MediaObject : "encodings"
+TVClip ||--}o CreativeWork : "exampleOfWork"
+TVClip ||--}o Grant : "funding"
+TVClip ||--}o Text : "headline"
+TVClip ||--}o InteractionCounter : "interactionStatistic"
+TVClip ||--}o Text : "interactivityType"
+TVClip ||--}o Boolean : "isAccessibleForFree"
+TVClip ||--}o Boolean : "isFamilyFriendly"
+TVClip ||--}o Place : "locationCreated"
+TVClip ||--}o Thing : "mentions"
+TVClip ||--}o PublicationEvent : "publication"
+TVClip ||--}o Organization : "publisherImprint"
+TVClip ||--}o Event : "recordedAt"
+TVClip ||--}o PublicationEvent : "releasedEvent"
+TVClip ||--}o Review : "review"
+TVClip ||--}o Review : "reviews"
+TVClip ||--}o Date : "sdDatePublished"
+TVClip ||--}o Organization : "sourceOrganization"
+TVClip ||--}o Place : "spatial"
+TVClip ||--}o Text : "text"
+TVClip ||--}o ImageObject : "thumbnail"
+TVClip ||--}o URL : "thumbnailUrl"
+TVClip ||--}o Duration : "timeRequired"
+TVClip ||--}o CreativeWork : "translationOfWork"
+TVClip ||--}o Text : "typicalAgeRange"
+TVClip ||--}o CreativeWork : "workTranslation"
+TVClip ||--}o Text : "alternateName"
+TVClip ||--}o Text : "disambiguatingDescription"
+TVClip ||--}o Text : "name"
+TVClip ||--}o URL : "sameAs"
+TVClip ||--}o Action : "potentialAction"
+TVClip ||--}o URL : "url"
+

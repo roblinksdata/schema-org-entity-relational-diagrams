@@ -1,0 +1,65 @@
+erDiagram
+Embassy {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Embassy ||--}o Text : "openingHours"
+Embassy ||--}o Text : "globalLocationNumber"
+Embassy ||--}o URL : "hasGS1DigitalLink"
+Embassy ||--}o PropertyValue : "additionalProperty"
+Embassy ||--}o AggregateRating : "aggregateRating"
+Embassy ||--}o LocationFeatureSpecification : "amenityFeature"
+Embassy ||--}o Text : "branchCode"
+Embassy ||--}o Place : "containedIn"
+Embassy ||--}o Place : "containedInPlace"
+Embassy ||--}o Place : "containsPlace"
+Embassy ||--}o Event : "event"
+Embassy ||--}o Event : "events"
+Embassy ||--}o Text : "faxNumber"
+Embassy ||--}o Certification : "hasCertification"
+Embassy ||--}o Boolean : "hasDriveThroughService"
+Embassy ||--}o Boolean : "isAccessibleForFree"
+Embassy ||--}o Text : "isicV4"
+Embassy ||--}o URL : "map"
+Embassy ||--}o URL : "maps"
+Embassy ||--}o Integer : "maximumAttendeeCapacity"
+Embassy ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Embassy ||--}o Boolean : "publicAccess"
+Embassy ||--}o Review : "review"
+Embassy ||--}o Review : "reviews"
+Embassy ||--}o Text : "slogan"
+Embassy ||--}o Boolean : "smokingAllowed"
+Embassy ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Embassy ||--}o Text : "telephone"
+Embassy ||--}o URL : "tourBookingPage"
+Embassy ||--}o Text : "alternateName"
+Embassy ||--}o Text : "disambiguatingDescription"
+Embassy ||--}o Text : "name"
+Embassy ||--}o URL : "sameAs"
+Embassy ||--}o Action : "potentialAction"
+Embassy ||--}o URL : "url"
+

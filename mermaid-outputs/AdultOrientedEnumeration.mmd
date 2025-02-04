@@ -1,0 +1,18 @@
+erDiagram
+AdultOrientedEnumeration {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+AdultOrientedEnumeration ||--}o Text : "alternateName"
+AdultOrientedEnumeration ||--}o Text : "disambiguatingDescription"
+AdultOrientedEnumeration ||--}o Text : "name"
+AdultOrientedEnumeration ||--}o URL : "sameAs"
+AdultOrientedEnumeration ||--}o Action : "potentialAction"
+AdultOrientedEnumeration ||--}o URL : "url"
+

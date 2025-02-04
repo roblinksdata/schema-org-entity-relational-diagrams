@@ -1,0 +1,61 @@
+erDiagram
+OnDemandEvent {
+    stringList publishedBy  
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OnDemandEvent ||--}o Boolean : "free"
+OnDemandEvent ||--}o BroadcastService : "publishedOn"
+OnDemandEvent ||--}o Thing : "about"
+OnDemandEvent ||--}o Duration : "duration"
+OnDemandEvent ||--}o CreativeWork : "workFeatured"
+OnDemandEvent ||--}o CreativeWork : "workPerformed"
+OnDemandEvent ||--}o AggregateRating : "aggregateRating"
+OnDemandEvent ||--}o Audience : "audience"
+OnDemandEvent ||--}o Person : "director"
+OnDemandEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+OnDemandEvent ||--}o Schedule : "eventSchedule"
+OnDemandEvent ||--}o EventStatusType : "eventStatus"
+OnDemandEvent ||--}o Grant : "funding"
+OnDemandEvent ||--}o Boolean : "isAccessibleForFree"
+OnDemandEvent ||--}o Integer : "maximumAttendeeCapacity"
+OnDemandEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+OnDemandEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+OnDemandEvent ||--}o Date : "previousStartDate"
+OnDemandEvent ||--}o CreativeWork : "recordedIn"
+OnDemandEvent ||--}o Integer : "remainingAttendeeCapacity"
+OnDemandEvent ||--}o Review : "review"
+OnDemandEvent ||--}o Event : "subEvent"
+OnDemandEvent ||--}o Event : "subEvents"
+OnDemandEvent ||--}o Event : "superEvent"
+OnDemandEvent ||--}o Text : "typicalAgeRange"
+OnDemandEvent ||--}o Text : "alternateName"
+OnDemandEvent ||--}o Text : "disambiguatingDescription"
+OnDemandEvent ||--}o Text : "name"
+OnDemandEvent ||--}o URL : "sameAs"
+OnDemandEvent ||--}o Action : "potentialAction"
+OnDemandEvent ||--}o URL : "url"
+

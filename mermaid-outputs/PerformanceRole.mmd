@@ -1,0 +1,22 @@
+erDiagram
+PerformanceRole {
+    stringList endDate  
+    stringList namedPosition  
+    stringList roleName  
+    stringList startDate  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PerformanceRole ||--}o Text : "characterName"
+PerformanceRole ||--}o Text : "alternateName"
+PerformanceRole ||--}o Text : "disambiguatingDescription"
+PerformanceRole ||--}o Text : "name"
+PerformanceRole ||--}o URL : "sameAs"
+PerformanceRole ||--}o Action : "potentialAction"
+PerformanceRole ||--}o URL : "url"
+

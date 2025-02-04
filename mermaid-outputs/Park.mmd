@@ -1,0 +1,65 @@
+erDiagram
+Park {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Park ||--}o Text : "openingHours"
+Park ||--}o Text : "globalLocationNumber"
+Park ||--}o URL : "hasGS1DigitalLink"
+Park ||--}o PropertyValue : "additionalProperty"
+Park ||--}o AggregateRating : "aggregateRating"
+Park ||--}o LocationFeatureSpecification : "amenityFeature"
+Park ||--}o Text : "branchCode"
+Park ||--}o Place : "containedIn"
+Park ||--}o Place : "containedInPlace"
+Park ||--}o Place : "containsPlace"
+Park ||--}o Event : "event"
+Park ||--}o Event : "events"
+Park ||--}o Text : "faxNumber"
+Park ||--}o Certification : "hasCertification"
+Park ||--}o Boolean : "hasDriveThroughService"
+Park ||--}o Boolean : "isAccessibleForFree"
+Park ||--}o Text : "isicV4"
+Park ||--}o URL : "map"
+Park ||--}o URL : "maps"
+Park ||--}o Integer : "maximumAttendeeCapacity"
+Park ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Park ||--}o Boolean : "publicAccess"
+Park ||--}o Review : "review"
+Park ||--}o Review : "reviews"
+Park ||--}o Text : "slogan"
+Park ||--}o Boolean : "smokingAllowed"
+Park ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Park ||--}o Text : "telephone"
+Park ||--}o URL : "tourBookingPage"
+Park ||--}o Text : "alternateName"
+Park ||--}o Text : "disambiguatingDescription"
+Park ||--}o Text : "name"
+Park ||--}o URL : "sameAs"
+Park ||--}o Action : "potentialAction"
+Park ||--}o URL : "url"
+

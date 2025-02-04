@@ -1,0 +1,141 @@
+erDiagram
+QAPage {
+    stringList breadcrumb  
+    stringList reviewedBy  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+QAPage ||--}o Date : "lastReviewed"
+QAPage ||--}o WebPageElement : "mainContentOfPage"
+QAPage ||--}o ImageObject : "primaryImageOfPage"
+QAPage ||--}o URL : "relatedLink"
+QAPage ||--}o URL : "significantLink"
+QAPage ||--}o URL : "significantLinks"
+QAPage ||--}o Specialty : "specialty"
+QAPage ||--}o Thing : "about"
+QAPage ||--}o Place : "contentLocation"
+QAPage ||--}o CreativeWork : "hasPart"
+QAPage ||--}o Claim : "interpretedAsClaim"
+QAPage ||--}o Thing : "mainEntity"
+QAPage ||--}o Place : "spatialCoverage"
+QAPage ||--}o CreativeWork : "workExample"
+QAPage ||--}o Text : "abstract"
+QAPage ||--}o Text : "accessMode"
+QAPage ||--}o ItemList : "accessModeSufficient"
+QAPage ||--}o Text : "accessibilityAPI"
+QAPage ||--}o Text : "accessibilityControl"
+QAPage ||--}o Text : "accessibilityFeature"
+QAPage ||--}o Text : "accessibilityHazard"
+QAPage ||--}o Text : "accessibilitySummary"
+QAPage ||--}o Person : "accountablePerson"
+QAPage ||--}o AggregateRating : "aggregateRating"
+QAPage ||--}o Text : "alternativeHeadline"
+QAPage ||--}o MediaObject : "associatedMedia"
+QAPage ||--}o Audience : "audience"
+QAPage ||--}o Text : "award"
+QAPage ||--}o Text : "awards"
+QAPage ||--}o Person : "character"
+QAPage ||--}o Comment : "comment"
+QAPage ||--}o Integer : "commentCount"
+QAPage ||--}o Text : "conditionsOfAccess"
+QAPage ||--}o DateTime : "contentReferenceTime"
+QAPage ||--}o Text : "copyrightNotice"
+QAPage ||--}o Number : "copyrightYear"
+QAPage ||--}o Country : "countryOfOrigin"
+QAPage ||--}o Text : "creditText"
+QAPage ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+QAPage ||--}o URL : "discussionUrl"
+QAPage ||--}o Person : "editor"
+QAPage ||--}o AlignmentObject : "educationalAlignment"
+QAPage ||--}o MediaObject : "encoding"
+QAPage ||--}o MediaObject : "encodings"
+QAPage ||--}o CreativeWork : "exampleOfWork"
+QAPage ||--}o Grant : "funding"
+QAPage ||--}o Text : "headline"
+QAPage ||--}o InteractionCounter : "interactionStatistic"
+QAPage ||--}o Text : "interactivityType"
+QAPage ||--}o Boolean : "isAccessibleForFree"
+QAPage ||--}o Boolean : "isFamilyFriendly"
+QAPage ||--}o Place : "locationCreated"
+QAPage ||--}o Thing : "mentions"
+QAPage ||--}o PublicationEvent : "publication"
+QAPage ||--}o Organization : "publisherImprint"
+QAPage ||--}o Event : "recordedAt"
+QAPage ||--}o PublicationEvent : "releasedEvent"
+QAPage ||--}o Review : "review"
+QAPage ||--}o Review : "reviews"
+QAPage ||--}o Date : "sdDatePublished"
+QAPage ||--}o Organization : "sourceOrganization"
+QAPage ||--}o Place : "spatial"
+QAPage ||--}o Text : "text"
+QAPage ||--}o ImageObject : "thumbnail"
+QAPage ||--}o URL : "thumbnailUrl"
+QAPage ||--}o Duration : "timeRequired"
+QAPage ||--}o CreativeWork : "translationOfWork"
+QAPage ||--}o Text : "typicalAgeRange"
+QAPage ||--}o CreativeWork : "workTranslation"
+QAPage ||--}o Text : "alternateName"
+QAPage ||--}o Text : "disambiguatingDescription"
+QAPage ||--}o Text : "name"
+QAPage ||--}o URL : "sameAs"
+QAPage ||--}o Action : "potentialAction"
+QAPage ||--}o URL : "url"
+

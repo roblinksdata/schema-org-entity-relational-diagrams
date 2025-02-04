@@ -1,0 +1,32 @@
+erDiagram
+InstallAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+InstallAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
+InstallAction ||--}o Offer : "expectsAcceptanceOf"
+InstallAction ||--}o Thing : "instrument"
+InstallAction ||--}o Thing : "object"
+InstallAction ||--}o Thing : "result"
+InstallAction ||--}o HowTo : "actionProcess"
+InstallAction ||--}o ActionStatusType : "actionStatus"
+InstallAction ||--}o Thing : "error"
+InstallAction ||--}o Text : "alternateName"
+InstallAction ||--}o Text : "disambiguatingDescription"
+InstallAction ||--}o Text : "name"
+InstallAction ||--}o URL : "sameAs"
+InstallAction ||--}o Action : "potentialAction"
+InstallAction ||--}o URL : "url"
+

@@ -1,0 +1,46 @@
+erDiagram
+InvestmentFund {
+    stringList amount  
+    stringList annualPercentageRate  
+    stringList feesAndCommissionsSpecification  
+    stringList interestRate  
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+InvestmentFund ||--}o AggregateRating : "aggregateRating"
+InvestmentFund ||--}o Audience : "audience"
+InvestmentFund ||--}o ServiceChannel : "availableChannel"
+InvestmentFund ||--}o Text : "award"
+InvestmentFund ||--}o Certification : "hasCertification"
+InvestmentFund ||--}o OfferCatalog : "hasOfferCatalog"
+InvestmentFund ||--}o OpeningHoursSpecification : "hoursAvailable"
+InvestmentFund ||--}o Thing : "produces"
+InvestmentFund ||--}o Text : "providerMobility"
+InvestmentFund ||--}o Review : "review"
+InvestmentFund ||--}o Audience : "serviceAudience"
+InvestmentFund ||--}o Thing : "serviceOutput"
+InvestmentFund ||--}o Text : "slogan"
+InvestmentFund ||--}o Text : "alternateName"
+InvestmentFund ||--}o Text : "disambiguatingDescription"
+InvestmentFund ||--}o Text : "name"
+InvestmentFund ||--}o URL : "sameAs"
+InvestmentFund ||--}o Action : "potentialAction"
+InvestmentFund ||--}o URL : "url"
+

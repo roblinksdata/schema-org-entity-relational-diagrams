@@ -1,0 +1,111 @@
+erDiagram
+Drug {
+    stringList legalStatus  
+    stringList prescriptionStatus  
+    stringList warning  
+    stringList asin  
+    stringList category  
+    stringList colorSwatch  
+    stringList gtin  
+    stringList logo  
+    stringList material  
+    stringList brand  
+    stringList depth  
+    stringList height  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList isVariantOf  
+    stringList keywords  
+    stringList model  
+    stringList negativeNotes  
+    stringList offers  
+    stringList pattern  
+    stringList positiveNotes  
+    stringList size  
+    stringList width  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Drug ||--}o Text : "activeIngredient"
+Drug ||--}o Text : "administrationRoute"
+Drug ||--}o Text : "alcoholWarning"
+Drug ||--}o DrugStrength : "availableStrength"
+Drug ||--}o Text : "breastfeedingWarning"
+Drug ||--}o Text : "clincalPharmacology"
+Drug ||--}o Text : "clinicalPharmacology"
+Drug ||--}o Text : "dosageForm"
+Drug ||--}o DoseSchedule : "doseSchedule"
+Drug ||--}o DrugClass : "drugClass"
+Drug ||--}o Text : "drugUnit"
+Drug ||--}o Text : "foodWarning"
+Drug ||--}o HealthInsurancePlan : "includedInHealthInsurancePlan"
+Drug ||--}o Drug : "interactingDrug"
+Drug ||--}o Boolean : "isAvailableGenerically"
+Drug ||--}o Boolean : "isProprietary"
+Drug ||--}o URL : "labelDetails"
+Drug ||--}o MaximumDoseSchedule : "maximumIntake"
+Drug ||--}o Text : "mechanismOfAction"
+Drug ||--}o Text : "nonProprietaryName"
+Drug ||--}o Text : "overdosage"
+Drug ||--}o DrugPregnancyCategory : "pregnancyCategory"
+Drug ||--}o Text : "pregnancyWarning"
+Drug ||--}o URL : "prescribingInfo"
+Drug ||--}o Text : "proprietaryName"
+Drug ||--}o Drug : "relatedDrug"
+Drug ||--}o Text : "rxcui"
+Drug ||--}o Text : "gtin12"
+Drug ||--}o Text : "gtin13"
+Drug ||--}o Text : "gtin14"
+Drug ||--}o Text : "gtin8"
+Drug ||--}o URL : "hasGS1DigitalLink"
+Drug ||--}o Text : "nsn"
+Drug ||--}o Text : "productID"
+Drug ||--}o Text : "sku"
+Drug ||--}o PropertyValue : "additionalProperty"
+Drug ||--}o AggregateRating : "aggregateRating"
+Drug ||--}o Audience : "audience"
+Drug ||--}o Text : "award"
+Drug ||--}o Text : "awards"
+Drug ||--}o Text : "color"
+Drug ||--}o Text : "countryOfAssembly"
+Drug ||--}o Text : "countryOfLastProcessing"
+Drug ||--}o Country : "countryOfOrigin"
+Drug ||--}o Grant : "funding"
+Drug ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
+Drug ||--}o Certification : "hasCertification"
+Drug ||--}o EnergyConsumptionDetails : "hasEnergyConsumptionDetails"
+Drug ||--}o QuantitativeValue : "hasMeasurement"
+Drug ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+Drug ||--}o Text : "inProductGroupWithID"
+Drug ||--}o Product : "isAccessoryOrSparePartFor"
+Drug ||--}o Product : "isConsumableFor"
+Drug ||--}o Boolean : "isFamilyFriendly"
+Drug ||--}o OfferItemCondition : "itemCondition"
+Drug ||--}o Organization : "manufacturer"
+Drug ||--}o Text : "mobileUrl"
+Drug ||--}o Text : "mpn"
+Drug ||--}o Date : "productionDate"
+Drug ||--}o Date : "purchaseDate"
+Drug ||--}o Date : "releaseDate"
+Drug ||--}o Review : "review"
+Drug ||--}o Review : "reviews"
+Drug ||--}o Text : "slogan"
+Drug ||--}o QuantitativeValue : "weight"
+Drug ||--}o Text : "alternateName"
+Drug ||--}o Text : "disambiguatingDescription"
+Drug ||--}o Text : "name"
+Drug ||--}o URL : "sameAs"
+Drug ||--}o Action : "potentialAction"
+Drug ||--}o URL : "url"
+Drug ||--}o MedicalCode : "code"
+Drug ||--}o MedicalGuideline : "guideline"
+Drug ||--}o MedicineSystem : "medicineSystem"
+Drug ||--}o Organization : "recognizingAuthority"
+Drug ||--}o MedicalSpecialty : "relevantSpecialty"
+Drug ||--}o MedicalStudy : "study"
+

@@ -1,0 +1,34 @@
+erDiagram
+MoneyTransfer {
+    stringList amount  
+    stringList beneficiaryBank  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MoneyTransfer ||--}o Place : "fromLocation"
+MoneyTransfer ||--}o Place : "toLocation"
+MoneyTransfer ||--}o Thing : "instrument"
+MoneyTransfer ||--}o Thing : "object"
+MoneyTransfer ||--}o Thing : "result"
+MoneyTransfer ||--}o HowTo : "actionProcess"
+MoneyTransfer ||--}o ActionStatusType : "actionStatus"
+MoneyTransfer ||--}o Thing : "error"
+MoneyTransfer ||--}o Text : "alternateName"
+MoneyTransfer ||--}o Text : "disambiguatingDescription"
+MoneyTransfer ||--}o Text : "name"
+MoneyTransfer ||--}o URL : "sameAs"
+MoneyTransfer ||--}o Action : "potentialAction"
+MoneyTransfer ||--}o URL : "url"
+

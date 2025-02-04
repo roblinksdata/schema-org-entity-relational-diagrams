@@ -1,0 +1,18 @@
+erDiagram
+BusinessEntityType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BusinessEntityType ||--}o Text : "alternateName"
+BusinessEntityType ||--}o Text : "disambiguatingDescription"
+BusinessEntityType ||--}o Text : "name"
+BusinessEntityType ||--}o URL : "sameAs"
+BusinessEntityType ||--}o Action : "potentialAction"
+BusinessEntityType ||--}o URL : "url"
+

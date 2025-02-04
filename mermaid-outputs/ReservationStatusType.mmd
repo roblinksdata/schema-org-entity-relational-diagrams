@@ -1,0 +1,18 @@
+erDiagram
+ReservationStatusType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ReservationStatusType ||--}o Text : "alternateName"
+ReservationStatusType ||--}o Text : "disambiguatingDescription"
+ReservationStatusType ||--}o Text : "name"
+ReservationStatusType ||--}o URL : "sameAs"
+ReservationStatusType ||--}o Action : "potentialAction"
+ReservationStatusType ||--}o URL : "url"
+

@@ -1,0 +1,31 @@
+erDiagram
+ImagingTest {
+    stringList normalRange  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ImagingTest ||--}o MedicalImagingTechnique : "imagingTechnique"
+ImagingTest ||--}o Drug : "affectedBy"
+ImagingTest ||--}o MedicalSign : "signDetected"
+ImagingTest ||--}o MedicalCondition : "usedToDiagnose"
+ImagingTest ||--}o MedicalDevice : "usesDevice"
+ImagingTest ||--}o MedicalCode : "code"
+ImagingTest ||--}o Grant : "funding"
+ImagingTest ||--}o MedicalGuideline : "guideline"
+ImagingTest ||--}o MedicineSystem : "medicineSystem"
+ImagingTest ||--}o Organization : "recognizingAuthority"
+ImagingTest ||--}o MedicalSpecialty : "relevantSpecialty"
+ImagingTest ||--}o MedicalStudy : "study"
+ImagingTest ||--}o Text : "alternateName"
+ImagingTest ||--}o Text : "disambiguatingDescription"
+ImagingTest ||--}o Text : "name"
+ImagingTest ||--}o URL : "sameAs"
+ImagingTest ||--}o Action : "potentialAction"
+ImagingTest ||--}o URL : "url"
+

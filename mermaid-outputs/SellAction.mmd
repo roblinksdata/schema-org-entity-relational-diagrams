@@ -1,0 +1,35 @@
+erDiagram
+SellAction {
+    stringList buyer  
+    stringList price  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SellAction ||--}o WarrantyPromise : "warrantyPromise"
+SellAction ||--}o Text : "priceCurrency"
+SellAction ||--}o PriceSpecification : "priceSpecification"
+SellAction ||--}o Thing : "instrument"
+SellAction ||--}o Thing : "object"
+SellAction ||--}o Thing : "result"
+SellAction ||--}o HowTo : "actionProcess"
+SellAction ||--}o ActionStatusType : "actionStatus"
+SellAction ||--}o Thing : "error"
+SellAction ||--}o Text : "alternateName"
+SellAction ||--}o Text : "disambiguatingDescription"
+SellAction ||--}o Text : "name"
+SellAction ||--}o URL : "sameAs"
+SellAction ||--}o Action : "potentialAction"
+SellAction ||--}o URL : "url"
+

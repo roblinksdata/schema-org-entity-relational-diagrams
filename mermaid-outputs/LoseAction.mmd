@@ -1,0 +1,31 @@
+erDiagram
+LoseAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LoseAction ||--}o Person : "winner"
+LoseAction ||--}o Thing : "instrument"
+LoseAction ||--}o Thing : "object"
+LoseAction ||--}o Thing : "result"
+LoseAction ||--}o HowTo : "actionProcess"
+LoseAction ||--}o ActionStatusType : "actionStatus"
+LoseAction ||--}o Thing : "error"
+LoseAction ||--}o Text : "alternateName"
+LoseAction ||--}o Text : "disambiguatingDescription"
+LoseAction ||--}o Text : "name"
+LoseAction ||--}o URL : "sameAs"
+LoseAction ||--}o Action : "potentialAction"
+LoseAction ||--}o URL : "url"
+

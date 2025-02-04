@@ -1,0 +1,136 @@
+erDiagram
+Game {
+    stringList gameLocation  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Game ||--}o Thing : "characterAttribute"
+Game ||--}o Thing : "gameItem"
+Game ||--}o QuantitativeValue : "numberOfPlayers"
+Game ||--}o Thing : "quest"
+Game ||--}o Thing : "about"
+Game ||--}o Place : "contentLocation"
+Game ||--}o CreativeWork : "hasPart"
+Game ||--}o Claim : "interpretedAsClaim"
+Game ||--}o Thing : "mainEntity"
+Game ||--}o Place : "spatialCoverage"
+Game ||--}o CreativeWork : "workExample"
+Game ||--}o Text : "abstract"
+Game ||--}o Text : "accessMode"
+Game ||--}o ItemList : "accessModeSufficient"
+Game ||--}o Text : "accessibilityAPI"
+Game ||--}o Text : "accessibilityControl"
+Game ||--}o Text : "accessibilityFeature"
+Game ||--}o Text : "accessibilityHazard"
+Game ||--}o Text : "accessibilitySummary"
+Game ||--}o Person : "accountablePerson"
+Game ||--}o AggregateRating : "aggregateRating"
+Game ||--}o Text : "alternativeHeadline"
+Game ||--}o MediaObject : "associatedMedia"
+Game ||--}o Audience : "audience"
+Game ||--}o Text : "award"
+Game ||--}o Text : "awards"
+Game ||--}o Person : "character"
+Game ||--}o Comment : "comment"
+Game ||--}o Integer : "commentCount"
+Game ||--}o Text : "conditionsOfAccess"
+Game ||--}o DateTime : "contentReferenceTime"
+Game ||--}o Text : "copyrightNotice"
+Game ||--}o Number : "copyrightYear"
+Game ||--}o Country : "countryOfOrigin"
+Game ||--}o Text : "creditText"
+Game ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Game ||--}o URL : "discussionUrl"
+Game ||--}o Person : "editor"
+Game ||--}o AlignmentObject : "educationalAlignment"
+Game ||--}o MediaObject : "encoding"
+Game ||--}o MediaObject : "encodings"
+Game ||--}o CreativeWork : "exampleOfWork"
+Game ||--}o Grant : "funding"
+Game ||--}o Text : "headline"
+Game ||--}o InteractionCounter : "interactionStatistic"
+Game ||--}o Text : "interactivityType"
+Game ||--}o Boolean : "isAccessibleForFree"
+Game ||--}o Boolean : "isFamilyFriendly"
+Game ||--}o Place : "locationCreated"
+Game ||--}o Thing : "mentions"
+Game ||--}o PublicationEvent : "publication"
+Game ||--}o Organization : "publisherImprint"
+Game ||--}o Event : "recordedAt"
+Game ||--}o PublicationEvent : "releasedEvent"
+Game ||--}o Review : "review"
+Game ||--}o Review : "reviews"
+Game ||--}o Date : "sdDatePublished"
+Game ||--}o Organization : "sourceOrganization"
+Game ||--}o Place : "spatial"
+Game ||--}o Text : "text"
+Game ||--}o ImageObject : "thumbnail"
+Game ||--}o URL : "thumbnailUrl"
+Game ||--}o Duration : "timeRequired"
+Game ||--}o CreativeWork : "translationOfWork"
+Game ||--}o Text : "typicalAgeRange"
+Game ||--}o CreativeWork : "workTranslation"
+Game ||--}o Text : "alternateName"
+Game ||--}o Text : "disambiguatingDescription"
+Game ||--}o Text : "name"
+Game ||--}o URL : "sameAs"
+Game ||--}o Action : "potentialAction"
+Game ||--}o URL : "url"
+

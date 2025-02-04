@@ -1,0 +1,127 @@
+erDiagram
+BankOrCreditUnion {
+    stringList feesAndCommissionsSpecification  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BankOrCreditUnion ||--}o Organization : "branchOf"
+BankOrCreditUnion ||--}o Text : "currenciesAccepted"
+BankOrCreditUnion ||--}o Text : "openingHours"
+BankOrCreditUnion ||--}o Text : "paymentAccepted"
+BankOrCreditUnion ||--}o Text : "priceRange"
+BankOrCreditUnion ||--}o Text : "globalLocationNumber"
+BankOrCreditUnion ||--}o URL : "hasGS1DigitalLink"
+BankOrCreditUnion ||--}o PropertyValue : "additionalProperty"
+BankOrCreditUnion ||--}o AggregateRating : "aggregateRating"
+BankOrCreditUnion ||--}o LocationFeatureSpecification : "amenityFeature"
+BankOrCreditUnion ||--}o Text : "branchCode"
+BankOrCreditUnion ||--}o Place : "containedIn"
+BankOrCreditUnion ||--}o Place : "containedInPlace"
+BankOrCreditUnion ||--}o Place : "containsPlace"
+BankOrCreditUnion ||--}o Event : "event"
+BankOrCreditUnion ||--}o Event : "events"
+BankOrCreditUnion ||--}o Text : "faxNumber"
+BankOrCreditUnion ||--}o Certification : "hasCertification"
+BankOrCreditUnion ||--}o Boolean : "hasDriveThroughService"
+BankOrCreditUnion ||--}o Boolean : "isAccessibleForFree"
+BankOrCreditUnion ||--}o Text : "isicV4"
+BankOrCreditUnion ||--}o URL : "map"
+BankOrCreditUnion ||--}o URL : "maps"
+BankOrCreditUnion ||--}o Integer : "maximumAttendeeCapacity"
+BankOrCreditUnion ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+BankOrCreditUnion ||--}o Boolean : "publicAccess"
+BankOrCreditUnion ||--}o Review : "review"
+BankOrCreditUnion ||--}o Review : "reviews"
+BankOrCreditUnion ||--}o Text : "slogan"
+BankOrCreditUnion ||--}o Boolean : "smokingAllowed"
+BankOrCreditUnion ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+BankOrCreditUnion ||--}o Text : "telephone"
+BankOrCreditUnion ||--}o URL : "tourBookingPage"
+BankOrCreditUnion ||--}o Text : "duns"
+BankOrCreditUnion ||--}o Text : "leiCode"
+BankOrCreditUnion ||--}o Text : "taxID"
+BankOrCreditUnion ||--}o InteractionCounter : "agentInteractionStatistic"
+BankOrCreditUnion ||--}o Person : "alumni"
+BankOrCreditUnion ||--}o Text : "award"
+BankOrCreditUnion ||--}o Text : "awards"
+BankOrCreditUnion ||--}o ContactPoint : "contactPoint"
+BankOrCreditUnion ||--}o ContactPoint : "contactPoints"
+BankOrCreditUnion ||--}o Organization : "department"
+BankOrCreditUnion ||--}o Date : "dissolutionDate"
+BankOrCreditUnion ||--}o Text : "email"
+BankOrCreditUnion ||--}o Person : "employee"
+BankOrCreditUnion ||--}o Person : "employees"
+BankOrCreditUnion ||--}o Person : "founders"
+BankOrCreditUnion ||--}o Date : "foundingDate"
+BankOrCreditUnion ||--}o Place : "foundingLocation"
+BankOrCreditUnion ||--}o Grant : "funding"
+BankOrCreditUnion ||--}o EducationalOccupationalCredential : "hasCredential"
+BankOrCreditUnion ||--}o MemberProgram : "hasMemberProgram"
+BankOrCreditUnion ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+BankOrCreditUnion ||--}o OfferCatalog : "hasOfferCatalog"
+BankOrCreditUnion ||--}o Place : "hasPOS"
+BankOrCreditUnion ||--}o InteractionCounter : "interactionStatistic"
+BankOrCreditUnion ||--}o Text : "iso6523Code"
+BankOrCreditUnion ||--}o Text : "legalName"
+BankOrCreditUnion ||--}o Offer : "makesOffer"
+BankOrCreditUnion ||--}o Text : "naics"
+BankOrCreditUnion ||--}o NonprofitType : "nonprofitStatus"
+BankOrCreditUnion ||--}o QuantitativeValue : "numberOfEmployees"
+BankOrCreditUnion ||--}o Organization : "parentOrganization"
+BankOrCreditUnion ||--}o Demand : "seeks"
+BankOrCreditUnion ||--}o Organization : "subOrganization"
+BankOrCreditUnion ||--}o Text : "vatID"
+BankOrCreditUnion ||--}o Text : "alternateName"
+BankOrCreditUnion ||--}o Text : "disambiguatingDescription"
+BankOrCreditUnion ||--}o Text : "name"
+BankOrCreditUnion ||--}o URL : "sameAs"
+BankOrCreditUnion ||--}o Action : "potentialAction"
+BankOrCreditUnion ||--}o URL : "url"
+

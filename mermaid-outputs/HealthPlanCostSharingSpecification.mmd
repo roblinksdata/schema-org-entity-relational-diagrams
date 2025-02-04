@@ -1,0 +1,22 @@
+erDiagram
+HealthPlanCostSharingSpecification {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+HealthPlanCostSharingSpecification ||--}o Text : "healthPlanCoinsuranceOption"
+HealthPlanCostSharingSpecification ||--}o Number : "healthPlanCoinsuranceRate"
+HealthPlanCostSharingSpecification ||--}o PriceSpecification : "healthPlanCopay"
+HealthPlanCostSharingSpecification ||--}o Text : "healthPlanCopayOption"
+HealthPlanCostSharingSpecification ||--}o Text : "healthPlanPharmacyCategory"
+HealthPlanCostSharingSpecification ||--}o Text : "alternateName"
+HealthPlanCostSharingSpecification ||--}o Text : "disambiguatingDescription"
+HealthPlanCostSharingSpecification ||--}o Text : "name"
+HealthPlanCostSharingSpecification ||--}o URL : "sameAs"
+HealthPlanCostSharingSpecification ||--}o Action : "potentialAction"
+HealthPlanCostSharingSpecification ||--}o URL : "url"
+

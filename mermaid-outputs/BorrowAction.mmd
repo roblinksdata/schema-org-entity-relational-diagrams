@@ -1,0 +1,33 @@
+erDiagram
+BorrowAction {
+    stringList lender  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BorrowAction ||--}o Place : "fromLocation"
+BorrowAction ||--}o Place : "toLocation"
+BorrowAction ||--}o Thing : "instrument"
+BorrowAction ||--}o Thing : "object"
+BorrowAction ||--}o Thing : "result"
+BorrowAction ||--}o HowTo : "actionProcess"
+BorrowAction ||--}o ActionStatusType : "actionStatus"
+BorrowAction ||--}o Thing : "error"
+BorrowAction ||--}o Text : "alternateName"
+BorrowAction ||--}o Text : "disambiguatingDescription"
+BorrowAction ||--}o Text : "name"
+BorrowAction ||--}o URL : "sameAs"
+BorrowAction ||--}o Action : "potentialAction"
+BorrowAction ||--}o URL : "url"
+

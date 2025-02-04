@@ -1,0 +1,29 @@
+erDiagram
+BusTrip {
+    stringList arrivalBusStop  
+    stringList departureBusStop  
+    stringList arrivalTime  
+    stringList departureTime  
+    stringList itinerary  
+    stringList offers  
+    stringList provider  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BusTrip ||--}o Text : "busName"
+BusTrip ||--}o Text : "busNumber"
+BusTrip ||--}o Trip : "partOfTrip"
+BusTrip ||--}o Trip : "subTrip"
+BusTrip ||--}o Place : "tripOrigin"
+BusTrip ||--}o Text : "alternateName"
+BusTrip ||--}o Text : "disambiguatingDescription"
+BusTrip ||--}o Text : "name"
+BusTrip ||--}o URL : "sameAs"
+BusTrip ||--}o Action : "potentialAction"
+BusTrip ||--}o URL : "url"
+

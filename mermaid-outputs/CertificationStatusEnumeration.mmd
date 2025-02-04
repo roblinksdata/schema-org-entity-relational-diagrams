@@ -1,0 +1,18 @@
+erDiagram
+CertificationStatusEnumeration {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CertificationStatusEnumeration ||--}o Text : "alternateName"
+CertificationStatusEnumeration ||--}o Text : "disambiguatingDescription"
+CertificationStatusEnumeration ||--}o Text : "name"
+CertificationStatusEnumeration ||--}o URL : "sameAs"
+CertificationStatusEnumeration ||--}o Action : "potentialAction"
+CertificationStatusEnumeration ||--}o URL : "url"
+

@@ -1,0 +1,140 @@
+erDiagram
+SocialMediaPosting {
+    stringList backstory  
+    stringList pageEnd  
+    stringList pageStart  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SocialMediaPosting ||--}o CreativeWork : "sharedContent"
+SocialMediaPosting ||--}o Text : "articleBody"
+SocialMediaPosting ||--}o Text : "articleSection"
+SocialMediaPosting ||--}o Text : "pagination"
+SocialMediaPosting ||--}o Integer : "wordCount"
+SocialMediaPosting ||--}o Thing : "about"
+SocialMediaPosting ||--}o Place : "contentLocation"
+SocialMediaPosting ||--}o CreativeWork : "hasPart"
+SocialMediaPosting ||--}o Claim : "interpretedAsClaim"
+SocialMediaPosting ||--}o Thing : "mainEntity"
+SocialMediaPosting ||--}o Place : "spatialCoverage"
+SocialMediaPosting ||--}o CreativeWork : "workExample"
+SocialMediaPosting ||--}o Text : "abstract"
+SocialMediaPosting ||--}o Text : "accessMode"
+SocialMediaPosting ||--}o ItemList : "accessModeSufficient"
+SocialMediaPosting ||--}o Text : "accessibilityAPI"
+SocialMediaPosting ||--}o Text : "accessibilityControl"
+SocialMediaPosting ||--}o Text : "accessibilityFeature"
+SocialMediaPosting ||--}o Text : "accessibilityHazard"
+SocialMediaPosting ||--}o Text : "accessibilitySummary"
+SocialMediaPosting ||--}o Person : "accountablePerson"
+SocialMediaPosting ||--}o AggregateRating : "aggregateRating"
+SocialMediaPosting ||--}o Text : "alternativeHeadline"
+SocialMediaPosting ||--}o MediaObject : "associatedMedia"
+SocialMediaPosting ||--}o Audience : "audience"
+SocialMediaPosting ||--}o Text : "award"
+SocialMediaPosting ||--}o Text : "awards"
+SocialMediaPosting ||--}o Person : "character"
+SocialMediaPosting ||--}o Comment : "comment"
+SocialMediaPosting ||--}o Integer : "commentCount"
+SocialMediaPosting ||--}o Text : "conditionsOfAccess"
+SocialMediaPosting ||--}o DateTime : "contentReferenceTime"
+SocialMediaPosting ||--}o Text : "copyrightNotice"
+SocialMediaPosting ||--}o Number : "copyrightYear"
+SocialMediaPosting ||--}o Country : "countryOfOrigin"
+SocialMediaPosting ||--}o Text : "creditText"
+SocialMediaPosting ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+SocialMediaPosting ||--}o URL : "discussionUrl"
+SocialMediaPosting ||--}o Person : "editor"
+SocialMediaPosting ||--}o AlignmentObject : "educationalAlignment"
+SocialMediaPosting ||--}o MediaObject : "encoding"
+SocialMediaPosting ||--}o MediaObject : "encodings"
+SocialMediaPosting ||--}o CreativeWork : "exampleOfWork"
+SocialMediaPosting ||--}o Grant : "funding"
+SocialMediaPosting ||--}o Text : "headline"
+SocialMediaPosting ||--}o InteractionCounter : "interactionStatistic"
+SocialMediaPosting ||--}o Text : "interactivityType"
+SocialMediaPosting ||--}o Boolean : "isAccessibleForFree"
+SocialMediaPosting ||--}o Boolean : "isFamilyFriendly"
+SocialMediaPosting ||--}o Place : "locationCreated"
+SocialMediaPosting ||--}o Thing : "mentions"
+SocialMediaPosting ||--}o PublicationEvent : "publication"
+SocialMediaPosting ||--}o Organization : "publisherImprint"
+SocialMediaPosting ||--}o Event : "recordedAt"
+SocialMediaPosting ||--}o PublicationEvent : "releasedEvent"
+SocialMediaPosting ||--}o Review : "review"
+SocialMediaPosting ||--}o Review : "reviews"
+SocialMediaPosting ||--}o Date : "sdDatePublished"
+SocialMediaPosting ||--}o Organization : "sourceOrganization"
+SocialMediaPosting ||--}o Place : "spatial"
+SocialMediaPosting ||--}o Text : "text"
+SocialMediaPosting ||--}o ImageObject : "thumbnail"
+SocialMediaPosting ||--}o URL : "thumbnailUrl"
+SocialMediaPosting ||--}o Duration : "timeRequired"
+SocialMediaPosting ||--}o CreativeWork : "translationOfWork"
+SocialMediaPosting ||--}o Text : "typicalAgeRange"
+SocialMediaPosting ||--}o CreativeWork : "workTranslation"
+SocialMediaPosting ||--}o Text : "alternateName"
+SocialMediaPosting ||--}o Text : "disambiguatingDescription"
+SocialMediaPosting ||--}o Text : "name"
+SocialMediaPosting ||--}o URL : "sameAs"
+SocialMediaPosting ||--}o Action : "potentialAction"
+SocialMediaPosting ||--}o URL : "url"
+

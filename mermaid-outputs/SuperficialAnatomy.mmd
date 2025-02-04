@@ -1,0 +1,30 @@
+erDiagram
+SuperficialAnatomy {
+    stringList relatedAnatomy  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SuperficialAnatomy ||--}o Text : "associatedPathophysiology"
+SuperficialAnatomy ||--}o MedicalCondition : "relatedCondition"
+SuperficialAnatomy ||--}o MedicalTherapy : "relatedTherapy"
+SuperficialAnatomy ||--}o Text : "significance"
+SuperficialAnatomy ||--}o MedicalCode : "code"
+SuperficialAnatomy ||--}o Grant : "funding"
+SuperficialAnatomy ||--}o MedicalGuideline : "guideline"
+SuperficialAnatomy ||--}o MedicineSystem : "medicineSystem"
+SuperficialAnatomy ||--}o Organization : "recognizingAuthority"
+SuperficialAnatomy ||--}o MedicalSpecialty : "relevantSpecialty"
+SuperficialAnatomy ||--}o MedicalStudy : "study"
+SuperficialAnatomy ||--}o Text : "alternateName"
+SuperficialAnatomy ||--}o Text : "disambiguatingDescription"
+SuperficialAnatomy ||--}o Text : "name"
+SuperficialAnatomy ||--}o URL : "sameAs"
+SuperficialAnatomy ||--}o Action : "potentialAction"
+SuperficialAnatomy ||--}o URL : "url"
+

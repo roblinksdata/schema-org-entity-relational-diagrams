@@ -1,0 +1,27 @@
+erDiagram
+GeoCircle {
+    stringList geoRadius  
+    stringList address  
+    stringList addressCountry  
+    stringList elevation  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GeoCircle ||--}o GeoCoordinates : "geoMidpoint"
+GeoCircle ||--}o Text : "box"
+GeoCircle ||--}o Text : "circle"
+GeoCircle ||--}o Text : "line"
+GeoCircle ||--}o Text : "polygon"
+GeoCircle ||--}o Text : "postalCode"
+GeoCircle ||--}o Text : "alternateName"
+GeoCircle ||--}o Text : "disambiguatingDescription"
+GeoCircle ||--}o Text : "name"
+GeoCircle ||--}o URL : "sameAs"
+GeoCircle ||--}o Action : "potentialAction"
+GeoCircle ||--}o URL : "url"
+

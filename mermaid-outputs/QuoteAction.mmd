@@ -1,0 +1,33 @@
+erDiagram
+QuoteAction {
+    stringList price  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+QuoteAction ||--}o Text : "priceCurrency"
+QuoteAction ||--}o PriceSpecification : "priceSpecification"
+QuoteAction ||--}o Thing : "instrument"
+QuoteAction ||--}o Thing : "object"
+QuoteAction ||--}o Thing : "result"
+QuoteAction ||--}o HowTo : "actionProcess"
+QuoteAction ||--}o ActionStatusType : "actionStatus"
+QuoteAction ||--}o Thing : "error"
+QuoteAction ||--}o Text : "alternateName"
+QuoteAction ||--}o Text : "disambiguatingDescription"
+QuoteAction ||--}o Text : "name"
+QuoteAction ||--}o URL : "sameAs"
+QuoteAction ||--}o Action : "potentialAction"
+QuoteAction ||--}o URL : "url"
+

@@ -1,0 +1,30 @@
+erDiagram
+DislikeAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DislikeAction ||--}o Thing : "instrument"
+DislikeAction ||--}o Thing : "object"
+DislikeAction ||--}o Thing : "result"
+DislikeAction ||--}o HowTo : "actionProcess"
+DislikeAction ||--}o ActionStatusType : "actionStatus"
+DislikeAction ||--}o Thing : "error"
+DislikeAction ||--}o Text : "alternateName"
+DislikeAction ||--}o Text : "disambiguatingDescription"
+DislikeAction ||--}o Text : "name"
+DislikeAction ||--}o URL : "sameAs"
+DislikeAction ||--}o Action : "potentialAction"
+DislikeAction ||--}o URL : "url"
+

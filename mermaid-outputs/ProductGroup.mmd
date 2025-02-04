@@ -1,0 +1,78 @@
+erDiagram
+ProductGroup {
+    stringList variesBy  
+    stringList asin  
+    stringList category  
+    stringList colorSwatch  
+    stringList gtin  
+    stringList logo  
+    stringList material  
+    stringList brand  
+    stringList depth  
+    stringList height  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList isVariantOf  
+    stringList keywords  
+    stringList model  
+    stringList negativeNotes  
+    stringList offers  
+    stringList pattern  
+    stringList positiveNotes  
+    stringList size  
+    stringList width  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ProductGroup ||--}o Product : "hasVariant"
+ProductGroup ||--}o Text : "productGroupID"
+ProductGroup ||--}o Text : "gtin12"
+ProductGroup ||--}o Text : "gtin13"
+ProductGroup ||--}o Text : "gtin14"
+ProductGroup ||--}o Text : "gtin8"
+ProductGroup ||--}o URL : "hasGS1DigitalLink"
+ProductGroup ||--}o Text : "nsn"
+ProductGroup ||--}o Text : "productID"
+ProductGroup ||--}o Text : "sku"
+ProductGroup ||--}o PropertyValue : "additionalProperty"
+ProductGroup ||--}o AggregateRating : "aggregateRating"
+ProductGroup ||--}o Audience : "audience"
+ProductGroup ||--}o Text : "award"
+ProductGroup ||--}o Text : "awards"
+ProductGroup ||--}o Text : "color"
+ProductGroup ||--}o Text : "countryOfAssembly"
+ProductGroup ||--}o Text : "countryOfLastProcessing"
+ProductGroup ||--}o Country : "countryOfOrigin"
+ProductGroup ||--}o Grant : "funding"
+ProductGroup ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
+ProductGroup ||--}o Certification : "hasCertification"
+ProductGroup ||--}o EnergyConsumptionDetails : "hasEnergyConsumptionDetails"
+ProductGroup ||--}o QuantitativeValue : "hasMeasurement"
+ProductGroup ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+ProductGroup ||--}o Text : "inProductGroupWithID"
+ProductGroup ||--}o Product : "isAccessoryOrSparePartFor"
+ProductGroup ||--}o Product : "isConsumableFor"
+ProductGroup ||--}o Boolean : "isFamilyFriendly"
+ProductGroup ||--}o OfferItemCondition : "itemCondition"
+ProductGroup ||--}o Organization : "manufacturer"
+ProductGroup ||--}o Text : "mobileUrl"
+ProductGroup ||--}o Text : "mpn"
+ProductGroup ||--}o Date : "productionDate"
+ProductGroup ||--}o Date : "purchaseDate"
+ProductGroup ||--}o Date : "releaseDate"
+ProductGroup ||--}o Review : "review"
+ProductGroup ||--}o Review : "reviews"
+ProductGroup ||--}o Text : "slogan"
+ProductGroup ||--}o QuantitativeValue : "weight"
+ProductGroup ||--}o Text : "alternateName"
+ProductGroup ||--}o Text : "disambiguatingDescription"
+ProductGroup ||--}o Text : "name"
+ProductGroup ||--}o URL : "sameAs"
+ProductGroup ||--}o Action : "potentialAction"
+ProductGroup ||--}o URL : "url"
+

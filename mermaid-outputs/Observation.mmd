@@ -1,0 +1,34 @@
+erDiagram
+Observation {
+    stringList measurementMethod  
+    stringList measurementTechnique  
+    stringList observationAbout  
+    stringList variableMeasured  
+    stringList unitCode  
+    stringList value  
+    stringList valueReference  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Observation ||--}o QuantitativeValue : "marginOfError"
+Observation ||--}o Property : "measuredProperty"
+Observation ||--}o StatisticalVariable : "measurementDenominator"
+Observation ||--}o Enumeration : "measurementQualifier"
+Observation ||--}o DateTime : "observationDate"
+Observation ||--}o Text : "observationPeriod"
+Observation ||--}o PropertyValue : "additionalProperty"
+Observation ||--}o Number : "maxValue"
+Observation ||--}o Number : "minValue"
+Observation ||--}o Text : "unitText"
+Observation ||--}o Text : "alternateName"
+Observation ||--}o Text : "disambiguatingDescription"
+Observation ||--}o Text : "name"
+Observation ||--}o URL : "sameAs"
+Observation ||--}o Action : "potentialAction"
+Observation ||--}o URL : "url"
+

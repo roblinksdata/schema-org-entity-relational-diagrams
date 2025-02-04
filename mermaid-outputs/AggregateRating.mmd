@@ -1,0 +1,26 @@
+erDiagram
+AggregateRating {
+    stringList author  
+    stringList bestRating  
+    stringList ratingValue  
+    stringList worstRating  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+AggregateRating ||--}o Thing : "itemReviewed"
+AggregateRating ||--}o Integer : "ratingCount"
+AggregateRating ||--}o Integer : "reviewCount"
+AggregateRating ||--}o Text : "ratingExplanation"
+AggregateRating ||--}o Text : "reviewAspect"
+AggregateRating ||--}o Text : "alternateName"
+AggregateRating ||--}o Text : "disambiguatingDescription"
+AggregateRating ||--}o Text : "name"
+AggregateRating ||--}o URL : "sameAs"
+AggregateRating ||--}o Action : "potentialAction"
+AggregateRating ||--}o URL : "url"
+

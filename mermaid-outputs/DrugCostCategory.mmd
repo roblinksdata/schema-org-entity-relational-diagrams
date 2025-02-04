@@ -1,0 +1,18 @@
+erDiagram
+DrugCostCategory {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DrugCostCategory ||--}o Text : "alternateName"
+DrugCostCategory ||--}o Text : "disambiguatingDescription"
+DrugCostCategory ||--}o Text : "name"
+DrugCostCategory ||--}o URL : "sameAs"
+DrugCostCategory ||--}o Action : "potentialAction"
+DrugCostCategory ||--}o URL : "url"
+

@@ -1,0 +1,35 @@
+erDiagram
+ReplyAction {
+    stringList recipient  
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ReplyAction ||--}o Comment : "resultComment"
+ReplyAction ||--}o Thing : "about"
+ReplyAction ||--}o Language : "language"
+ReplyAction ||--}o Thing : "instrument"
+ReplyAction ||--}o Thing : "object"
+ReplyAction ||--}o Thing : "result"
+ReplyAction ||--}o HowTo : "actionProcess"
+ReplyAction ||--}o ActionStatusType : "actionStatus"
+ReplyAction ||--}o Thing : "error"
+ReplyAction ||--}o Text : "alternateName"
+ReplyAction ||--}o Text : "disambiguatingDescription"
+ReplyAction ||--}o Text : "name"
+ReplyAction ||--}o URL : "sameAs"
+ReplyAction ||--}o Action : "potentialAction"
+ReplyAction ||--}o URL : "url"
+

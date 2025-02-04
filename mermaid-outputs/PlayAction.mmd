@@ -1,0 +1,32 @@
+erDiagram
+PlayAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PlayAction ||--}o Audience : "audience"
+PlayAction ||--}o Event : "event"
+PlayAction ||--}o Thing : "instrument"
+PlayAction ||--}o Thing : "object"
+PlayAction ||--}o Thing : "result"
+PlayAction ||--}o HowTo : "actionProcess"
+PlayAction ||--}o ActionStatusType : "actionStatus"
+PlayAction ||--}o Thing : "error"
+PlayAction ||--}o Text : "alternateName"
+PlayAction ||--}o Text : "disambiguatingDescription"
+PlayAction ||--}o Text : "name"
+PlayAction ||--}o URL : "sameAs"
+PlayAction ||--}o Action : "potentialAction"
+PlayAction ||--}o URL : "url"
+

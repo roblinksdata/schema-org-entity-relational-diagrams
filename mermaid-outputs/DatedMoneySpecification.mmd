@@ -1,0 +1,21 @@
+erDiagram
+DatedMoneySpecification {
+    stringList amount  
+    stringList endDate  
+    stringList startDate  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DatedMoneySpecification ||--}o Text : "currency"
+DatedMoneySpecification ||--}o Text : "alternateName"
+DatedMoneySpecification ||--}o Text : "disambiguatingDescription"
+DatedMoneySpecification ||--}o Text : "name"
+DatedMoneySpecification ||--}o URL : "sameAs"
+DatedMoneySpecification ||--}o Action : "potentialAction"
+DatedMoneySpecification ||--}o URL : "url"
+

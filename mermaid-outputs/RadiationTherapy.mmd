@@ -1,0 +1,37 @@
+erDiagram
+RadiationTherapy {
+    stringList contraindication  
+    stringList preparation  
+    stringList status  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RadiationTherapy ||--}o MedicalTherapy : "duplicateTherapy"
+RadiationTherapy ||--}o MedicalEntity : "seriousAdverseOutcome"
+RadiationTherapy ||--}o MedicalEntity : "adverseOutcome"
+RadiationTherapy ||--}o DoseSchedule : "doseSchedule"
+RadiationTherapy ||--}o Drug : "drug"
+RadiationTherapy ||--}o Text : "bodyLocation"
+RadiationTherapy ||--}o Text : "followup"
+RadiationTherapy ||--}o Text : "howPerformed"
+RadiationTherapy ||--}o MedicalProcedureType : "procedureType"
+RadiationTherapy ||--}o MedicalCode : "code"
+RadiationTherapy ||--}o Grant : "funding"
+RadiationTherapy ||--}o MedicalGuideline : "guideline"
+RadiationTherapy ||--}o MedicineSystem : "medicineSystem"
+RadiationTherapy ||--}o Organization : "recognizingAuthority"
+RadiationTherapy ||--}o MedicalSpecialty : "relevantSpecialty"
+RadiationTherapy ||--}o MedicalStudy : "study"
+RadiationTherapy ||--}o Text : "alternateName"
+RadiationTherapy ||--}o Text : "disambiguatingDescription"
+RadiationTherapy ||--}o Text : "name"
+RadiationTherapy ||--}o URL : "sameAs"
+RadiationTherapy ||--}o Action : "potentialAction"
+RadiationTherapy ||--}o URL : "url"
+

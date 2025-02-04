@@ -1,0 +1,21 @@
+erDiagram
+CategoryCode {
+    stringList inCodeSet  
+    stringList inDefinedTermSet  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CategoryCode ||--}o Text : "codeValue"
+CategoryCode ||--}o Text : "termCode"
+CategoryCode ||--}o Text : "alternateName"
+CategoryCode ||--}o Text : "disambiguatingDescription"
+CategoryCode ||--}o Text : "name"
+CategoryCode ||--}o URL : "sameAs"
+CategoryCode ||--}o Action : "potentialAction"
+CategoryCode ||--}o URL : "url"
+

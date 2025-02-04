@@ -1,0 +1,142 @@
+erDiagram
+RadioClip {
+    stringList actor  
+    stringList clipNumber  
+    stringList endOffset  
+    stringList musicBy  
+    stringList startOffset  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RadioClip ||--}o Episode : "partOfEpisode"
+RadioClip ||--}o CreativeWorkSeason : "partOfSeason"
+RadioClip ||--}o CreativeWorkSeries : "partOfSeries"
+RadioClip ||--}o Person : "actors"
+RadioClip ||--}o Person : "director"
+RadioClip ||--}o Person : "directors"
+RadioClip ||--}o Thing : "about"
+RadioClip ||--}o Place : "contentLocation"
+RadioClip ||--}o CreativeWork : "hasPart"
+RadioClip ||--}o Claim : "interpretedAsClaim"
+RadioClip ||--}o Thing : "mainEntity"
+RadioClip ||--}o Place : "spatialCoverage"
+RadioClip ||--}o CreativeWork : "workExample"
+RadioClip ||--}o Text : "abstract"
+RadioClip ||--}o Text : "accessMode"
+RadioClip ||--}o ItemList : "accessModeSufficient"
+RadioClip ||--}o Text : "accessibilityAPI"
+RadioClip ||--}o Text : "accessibilityControl"
+RadioClip ||--}o Text : "accessibilityFeature"
+RadioClip ||--}o Text : "accessibilityHazard"
+RadioClip ||--}o Text : "accessibilitySummary"
+RadioClip ||--}o Person : "accountablePerson"
+RadioClip ||--}o AggregateRating : "aggregateRating"
+RadioClip ||--}o Text : "alternativeHeadline"
+RadioClip ||--}o MediaObject : "associatedMedia"
+RadioClip ||--}o Audience : "audience"
+RadioClip ||--}o Text : "award"
+RadioClip ||--}o Text : "awards"
+RadioClip ||--}o Person : "character"
+RadioClip ||--}o Comment : "comment"
+RadioClip ||--}o Integer : "commentCount"
+RadioClip ||--}o Text : "conditionsOfAccess"
+RadioClip ||--}o DateTime : "contentReferenceTime"
+RadioClip ||--}o Text : "copyrightNotice"
+RadioClip ||--}o Number : "copyrightYear"
+RadioClip ||--}o Country : "countryOfOrigin"
+RadioClip ||--}o Text : "creditText"
+RadioClip ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+RadioClip ||--}o URL : "discussionUrl"
+RadioClip ||--}o Person : "editor"
+RadioClip ||--}o AlignmentObject : "educationalAlignment"
+RadioClip ||--}o MediaObject : "encoding"
+RadioClip ||--}o MediaObject : "encodings"
+RadioClip ||--}o CreativeWork : "exampleOfWork"
+RadioClip ||--}o Grant : "funding"
+RadioClip ||--}o Text : "headline"
+RadioClip ||--}o InteractionCounter : "interactionStatistic"
+RadioClip ||--}o Text : "interactivityType"
+RadioClip ||--}o Boolean : "isAccessibleForFree"
+RadioClip ||--}o Boolean : "isFamilyFriendly"
+RadioClip ||--}o Place : "locationCreated"
+RadioClip ||--}o Thing : "mentions"
+RadioClip ||--}o PublicationEvent : "publication"
+RadioClip ||--}o Organization : "publisherImprint"
+RadioClip ||--}o Event : "recordedAt"
+RadioClip ||--}o PublicationEvent : "releasedEvent"
+RadioClip ||--}o Review : "review"
+RadioClip ||--}o Review : "reviews"
+RadioClip ||--}o Date : "sdDatePublished"
+RadioClip ||--}o Organization : "sourceOrganization"
+RadioClip ||--}o Place : "spatial"
+RadioClip ||--}o Text : "text"
+RadioClip ||--}o ImageObject : "thumbnail"
+RadioClip ||--}o URL : "thumbnailUrl"
+RadioClip ||--}o Duration : "timeRequired"
+RadioClip ||--}o CreativeWork : "translationOfWork"
+RadioClip ||--}o Text : "typicalAgeRange"
+RadioClip ||--}o CreativeWork : "workTranslation"
+RadioClip ||--}o Text : "alternateName"
+RadioClip ||--}o Text : "disambiguatingDescription"
+RadioClip ||--}o Text : "name"
+RadioClip ||--}o URL : "sameAs"
+RadioClip ||--}o Action : "potentialAction"
+RadioClip ||--}o URL : "url"
+

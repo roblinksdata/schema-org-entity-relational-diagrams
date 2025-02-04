@@ -1,0 +1,26 @@
+erDiagram
+BedType {
+    stringList valueReference  
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BedType ||--}o PropertyValue : "additionalProperty"
+BedType ||--}o QualitativeValue : "equal"
+BedType ||--}o QualitativeValue : "greater"
+BedType ||--}o QualitativeValue : "greaterOrEqual"
+BedType ||--}o QualitativeValue : "lesser"
+BedType ||--}o QualitativeValue : "lesserOrEqual"
+BedType ||--}o QualitativeValue : "nonEqual"
+BedType ||--}o Text : "alternateName"
+BedType ||--}o Text : "disambiguatingDescription"
+BedType ||--}o Text : "name"
+BedType ||--}o URL : "sameAs"
+BedType ||--}o Action : "potentialAction"
+BedType ||--}o URL : "url"
+

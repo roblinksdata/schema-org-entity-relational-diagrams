@@ -1,0 +1,31 @@
+erDiagram
+TrainTrip {
+    stringList arrivalTime  
+    stringList departureTime  
+    stringList itinerary  
+    stringList offers  
+    stringList provider  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TrainTrip ||--}o Text : "arrivalPlatform"
+TrainTrip ||--}o TrainStation : "arrivalStation"
+TrainTrip ||--}o Text : "departurePlatform"
+TrainTrip ||--}o TrainStation : "departureStation"
+TrainTrip ||--}o Text : "trainName"
+TrainTrip ||--}o Text : "trainNumber"
+TrainTrip ||--}o Trip : "partOfTrip"
+TrainTrip ||--}o Trip : "subTrip"
+TrainTrip ||--}o Place : "tripOrigin"
+TrainTrip ||--}o Text : "alternateName"
+TrainTrip ||--}o Text : "disambiguatingDescription"
+TrainTrip ||--}o Text : "name"
+TrainTrip ||--}o URL : "sameAs"
+TrainTrip ||--}o Action : "potentialAction"
+TrainTrip ||--}o URL : "url"
+

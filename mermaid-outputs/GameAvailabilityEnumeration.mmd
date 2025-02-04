@@ -1,0 +1,18 @@
+erDiagram
+GameAvailabilityEnumeration {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GameAvailabilityEnumeration ||--}o Text : "alternateName"
+GameAvailabilityEnumeration ||--}o Text : "disambiguatingDescription"
+GameAvailabilityEnumeration ||--}o Text : "name"
+GameAvailabilityEnumeration ||--}o URL : "sameAs"
+GameAvailabilityEnumeration ||--}o Action : "potentialAction"
+GameAvailabilityEnumeration ||--}o URL : "url"
+

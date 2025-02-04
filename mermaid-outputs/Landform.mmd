@@ -1,0 +1,64 @@
+erDiagram
+Landform {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Landform ||--}o Text : "globalLocationNumber"
+Landform ||--}o URL : "hasGS1DigitalLink"
+Landform ||--}o PropertyValue : "additionalProperty"
+Landform ||--}o AggregateRating : "aggregateRating"
+Landform ||--}o LocationFeatureSpecification : "amenityFeature"
+Landform ||--}o Text : "branchCode"
+Landform ||--}o Place : "containedIn"
+Landform ||--}o Place : "containedInPlace"
+Landform ||--}o Place : "containsPlace"
+Landform ||--}o Event : "event"
+Landform ||--}o Event : "events"
+Landform ||--}o Text : "faxNumber"
+Landform ||--}o Certification : "hasCertification"
+Landform ||--}o Boolean : "hasDriveThroughService"
+Landform ||--}o Boolean : "isAccessibleForFree"
+Landform ||--}o Text : "isicV4"
+Landform ||--}o URL : "map"
+Landform ||--}o URL : "maps"
+Landform ||--}o Integer : "maximumAttendeeCapacity"
+Landform ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Landform ||--}o Boolean : "publicAccess"
+Landform ||--}o Review : "review"
+Landform ||--}o Review : "reviews"
+Landform ||--}o Text : "slogan"
+Landform ||--}o Boolean : "smokingAllowed"
+Landform ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Landform ||--}o Text : "telephone"
+Landform ||--}o URL : "tourBookingPage"
+Landform ||--}o Text : "alternateName"
+Landform ||--}o Text : "disambiguatingDescription"
+Landform ||--}o Text : "name"
+Landform ||--}o URL : "sameAs"
+Landform ||--}o Action : "potentialAction"
+Landform ||--}o URL : "url"
+

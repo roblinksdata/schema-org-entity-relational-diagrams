@@ -1,0 +1,31 @@
+erDiagram
+MedicalTestPanel {
+    stringList normalRange  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalTestPanel ||--}o MedicalTest : "subTest"
+MedicalTestPanel ||--}o Drug : "affectedBy"
+MedicalTestPanel ||--}o MedicalSign : "signDetected"
+MedicalTestPanel ||--}o MedicalCondition : "usedToDiagnose"
+MedicalTestPanel ||--}o MedicalDevice : "usesDevice"
+MedicalTestPanel ||--}o MedicalCode : "code"
+MedicalTestPanel ||--}o Grant : "funding"
+MedicalTestPanel ||--}o MedicalGuideline : "guideline"
+MedicalTestPanel ||--}o MedicineSystem : "medicineSystem"
+MedicalTestPanel ||--}o Organization : "recognizingAuthority"
+MedicalTestPanel ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalTestPanel ||--}o MedicalStudy : "study"
+MedicalTestPanel ||--}o Text : "alternateName"
+MedicalTestPanel ||--}o Text : "disambiguatingDescription"
+MedicalTestPanel ||--}o Text : "name"
+MedicalTestPanel ||--}o URL : "sameAs"
+MedicalTestPanel ||--}o Action : "potentialAction"
+MedicalTestPanel ||--}o URL : "url"
+

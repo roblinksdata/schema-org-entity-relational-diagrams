@@ -1,0 +1,18 @@
+erDiagram
+PriceComponentTypeEnumeration {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PriceComponentTypeEnumeration ||--}o Text : "alternateName"
+PriceComponentTypeEnumeration ||--}o Text : "disambiguatingDescription"
+PriceComponentTypeEnumeration ||--}o Text : "name"
+PriceComponentTypeEnumeration ||--}o URL : "sameAs"
+PriceComponentTypeEnumeration ||--}o Action : "potentialAction"
+PriceComponentTypeEnumeration ||--}o URL : "url"
+

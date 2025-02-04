@@ -1,0 +1,23 @@
+erDiagram
+QuantitativeValueDistribution {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+QuantitativeValueDistribution ||--}o Duration : "duration"
+QuantitativeValueDistribution ||--}o Number : "median"
+QuantitativeValueDistribution ||--}o Number : "percentile10"
+QuantitativeValueDistribution ||--}o Number : "percentile25"
+QuantitativeValueDistribution ||--}o Number : "percentile75"
+QuantitativeValueDistribution ||--}o Number : "percentile90"
+QuantitativeValueDistribution ||--}o Text : "alternateName"
+QuantitativeValueDistribution ||--}o Text : "disambiguatingDescription"
+QuantitativeValueDistribution ||--}o Text : "name"
+QuantitativeValueDistribution ||--}o URL : "sameAs"
+QuantitativeValueDistribution ||--}o Action : "potentialAction"
+QuantitativeValueDistribution ||--}o URL : "url"
+

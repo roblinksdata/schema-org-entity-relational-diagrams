@@ -1,0 +1,71 @@
+erDiagram
+OfferForPurchase {
+    stringList areaServed  
+    stringList asin  
+    stringList category  
+    stringList eligibleRegion  
+    stringList gtin  
+    stringList seller  
+    stringList acceptedPaymentMethod  
+    stringList availabilityEnds  
+    stringList availabilityStarts  
+    stringList ineligibleRegion  
+    stringList itemOffered  
+    stringList leaseLength  
+    stringList offeredBy  
+    stringList price  
+    stringList validFrom  
+    stringList validThrough  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OfferForPurchase ||--}o Place : "availableAtOrFrom"
+OfferForPurchase ||--}o Text : "gtin12"
+OfferForPurchase ||--}o Text : "gtin13"
+OfferForPurchase ||--}o Text : "gtin14"
+OfferForPurchase ||--}o Text : "gtin8"
+OfferForPurchase ||--}o URL : "hasGS1DigitalLink"
+OfferForPurchase ||--}o Text : "serialNumber"
+OfferForPurchase ||--}o Text : "sku"
+OfferForPurchase ||--}o Offer : "addOn"
+OfferForPurchase ||--}o PropertyValue : "additionalProperty"
+OfferForPurchase ||--}o QuantitativeValue : "advanceBookingRequirement"
+OfferForPurchase ||--}o AggregateRating : "aggregateRating"
+OfferForPurchase ||--}o ItemAvailability : "availability"
+OfferForPurchase ||--}o DeliveryMethod : "availableDeliveryMethod"
+OfferForPurchase ||--}o BusinessFunction : "businessFunction"
+OfferForPurchase ||--}o Text : "checkoutPageURLTemplate"
+OfferForPurchase ||--}o QuantitativeValue : "deliveryLeadTime"
+OfferForPurchase ||--}o BusinessEntityType : "eligibleCustomerType"
+OfferForPurchase ||--}o QuantitativeValue : "eligibleDuration"
+OfferForPurchase ||--}o QuantitativeValue : "eligibleQuantity"
+OfferForPurchase ||--}o PriceSpecification : "eligibleTransactionVolume"
+OfferForPurchase ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
+OfferForPurchase ||--}o QuantitativeValue : "hasMeasurement"
+OfferForPurchase ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+OfferForPurchase ||--}o TypeAndQuantityNode : "includesObject"
+OfferForPurchase ||--}o QuantitativeValue : "inventoryLevel"
+OfferForPurchase ||--}o Boolean : "isFamilyFriendly"
+OfferForPurchase ||--}o OfferItemCondition : "itemCondition"
+OfferForPurchase ||--}o Text : "mobileUrl"
+OfferForPurchase ||--}o Text : "mpn"
+OfferForPurchase ||--}o Text : "priceCurrency"
+OfferForPurchase ||--}o PriceSpecification : "priceSpecification"
+OfferForPurchase ||--}o Date : "priceValidUntil"
+OfferForPurchase ||--}o Review : "review"
+OfferForPurchase ||--}o Review : "reviews"
+OfferForPurchase ||--}o OfferShippingDetails : "shippingDetails"
+OfferForPurchase ||--}o MemberProgramTier : "validForMemberTier"
+OfferForPurchase ||--}o WarrantyPromise : "warranty"
+OfferForPurchase ||--}o Text : "alternateName"
+OfferForPurchase ||--}o Text : "disambiguatingDescription"
+OfferForPurchase ||--}o Text : "name"
+OfferForPurchase ||--}o URL : "sameAs"
+OfferForPurchase ||--}o Action : "potentialAction"
+OfferForPurchase ||--}o URL : "url"
+

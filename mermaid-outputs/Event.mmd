@@ -1,0 +1,58 @@
+erDiagram
+Event {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Event ||--}o Thing : "about"
+Event ||--}o Duration : "duration"
+Event ||--}o CreativeWork : "workFeatured"
+Event ||--}o CreativeWork : "workPerformed"
+Event ||--}o AggregateRating : "aggregateRating"
+Event ||--}o Audience : "audience"
+Event ||--}o Person : "director"
+Event ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+Event ||--}o Schedule : "eventSchedule"
+Event ||--}o EventStatusType : "eventStatus"
+Event ||--}o Grant : "funding"
+Event ||--}o Boolean : "isAccessibleForFree"
+Event ||--}o Integer : "maximumAttendeeCapacity"
+Event ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+Event ||--}o Integer : "maximumVirtualAttendeeCapacity"
+Event ||--}o Date : "previousStartDate"
+Event ||--}o CreativeWork : "recordedIn"
+Event ||--}o Integer : "remainingAttendeeCapacity"
+Event ||--}o Review : "review"
+Event ||--}o Event : "subEvent"
+Event ||--}o Event : "subEvents"
+Event ||--}o Event : "superEvent"
+Event ||--}o Text : "typicalAgeRange"
+Event ||--}o Text : "alternateName"
+Event ||--}o Text : "disambiguatingDescription"
+Event ||--}o Text : "name"
+Event ||--}o URL : "sameAs"
+Event ||--}o Action : "potentialAction"
+Event ||--}o URL : "url"
+

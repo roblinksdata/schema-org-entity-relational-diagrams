@@ -1,0 +1,17 @@
+erDiagram
+Intangible {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Intangible ||--}o Text : "alternateName"
+Intangible ||--}o Text : "disambiguatingDescription"
+Intangible ||--}o Text : "name"
+Intangible ||--}o URL : "sameAs"
+Intangible ||--}o Action : "potentialAction"
+Intangible ||--}o URL : "url"
+

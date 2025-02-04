@@ -1,0 +1,18 @@
+erDiagram
+MedicalAudienceType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalAudienceType ||--}o Text : "alternateName"
+MedicalAudienceType ||--}o Text : "disambiguatingDescription"
+MedicalAudienceType ||--}o Text : "name"
+MedicalAudienceType ||--}o URL : "sameAs"
+MedicalAudienceType ||--}o Action : "potentialAction"
+MedicalAudienceType ||--}o URL : "url"
+

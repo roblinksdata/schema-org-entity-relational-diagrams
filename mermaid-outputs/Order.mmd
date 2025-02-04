@@ -1,0 +1,39 @@
+erDiagram
+Order {
+    stringList seller  
+    stringList broker  
+    stringList customer  
+    stringList discount  
+    stringList merchant  
+    stringList orderDate  
+    stringList orderedItem  
+    stringList paymentDueDate  
+    stringList paymentMethod  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Order ||--}o Text : "confirmationNumber"
+Order ||--}o Text : "orderNumber"
+Order ||--}o Offer : "acceptedOffer"
+Order ||--}o PostalAddress : "billingAddress"
+Order ||--}o Text : "discountCode"
+Order ||--}o Text : "discountCurrency"
+Order ||--}o Boolean : "isGift"
+Order ||--}o ParcelDelivery : "orderDelivery"
+Order ||--}o OrderStatus : "orderStatus"
+Order ||--}o Invoice : "partOfInvoice"
+Order ||--}o DateTime : "paymentDue"
+Order ||--}o Text : "paymentMethodId"
+Order ||--}o URL : "paymentUrl"
+Order ||--}o Text : "alternateName"
+Order ||--}o Text : "disambiguatingDescription"
+Order ||--}o Text : "name"
+Order ||--}o URL : "sameAs"
+Order ||--}o Action : "potentialAction"
+Order ||--}o URL : "url"
+

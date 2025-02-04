@@ -1,0 +1,33 @@
+erDiagram
+PrependAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PrependAction ||--}o Place : "toLocation"
+PrependAction ||--}o Thing : "collection"
+PrependAction ||--}o Thing : "targetCollection"
+PrependAction ||--}o Thing : "instrument"
+PrependAction ||--}o Thing : "object"
+PrependAction ||--}o Thing : "result"
+PrependAction ||--}o HowTo : "actionProcess"
+PrependAction ||--}o ActionStatusType : "actionStatus"
+PrependAction ||--}o Thing : "error"
+PrependAction ||--}o Text : "alternateName"
+PrependAction ||--}o Text : "disambiguatingDescription"
+PrependAction ||--}o Text : "name"
+PrependAction ||--}o URL : "sameAs"
+PrependAction ||--}o Action : "potentialAction"
+PrependAction ||--}o URL : "url"
+

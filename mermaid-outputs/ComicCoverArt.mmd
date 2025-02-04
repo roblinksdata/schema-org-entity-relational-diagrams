@@ -1,0 +1,145 @@
+erDiagram
+ComicCoverArt {
+    stringList artMedium  
+    stringList surface  
+    stringList artEdition  
+    stringList artform  
+    stringList artworkSurface  
+    stringList depth  
+    stringList height  
+    stringList width  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ComicCoverArt ||--}o Person : "artist"
+ComicCoverArt ||--}o Person : "colorist"
+ComicCoverArt ||--}o Person : "inker"
+ComicCoverArt ||--}o Person : "letterer"
+ComicCoverArt ||--}o Person : "penciler"
+ComicCoverArt ||--}o QuantitativeValue : "weight"
+ComicCoverArt ||--}o Thing : "about"
+ComicCoverArt ||--}o Place : "contentLocation"
+ComicCoverArt ||--}o CreativeWork : "hasPart"
+ComicCoverArt ||--}o Claim : "interpretedAsClaim"
+ComicCoverArt ||--}o Thing : "mainEntity"
+ComicCoverArt ||--}o Place : "spatialCoverage"
+ComicCoverArt ||--}o CreativeWork : "workExample"
+ComicCoverArt ||--}o Text : "abstract"
+ComicCoverArt ||--}o Text : "accessMode"
+ComicCoverArt ||--}o ItemList : "accessModeSufficient"
+ComicCoverArt ||--}o Text : "accessibilityAPI"
+ComicCoverArt ||--}o Text : "accessibilityControl"
+ComicCoverArt ||--}o Text : "accessibilityFeature"
+ComicCoverArt ||--}o Text : "accessibilityHazard"
+ComicCoverArt ||--}o Text : "accessibilitySummary"
+ComicCoverArt ||--}o Person : "accountablePerson"
+ComicCoverArt ||--}o AggregateRating : "aggregateRating"
+ComicCoverArt ||--}o Text : "alternativeHeadline"
+ComicCoverArt ||--}o MediaObject : "associatedMedia"
+ComicCoverArt ||--}o Audience : "audience"
+ComicCoverArt ||--}o Text : "award"
+ComicCoverArt ||--}o Text : "awards"
+ComicCoverArt ||--}o Person : "character"
+ComicCoverArt ||--}o Comment : "comment"
+ComicCoverArt ||--}o Integer : "commentCount"
+ComicCoverArt ||--}o Text : "conditionsOfAccess"
+ComicCoverArt ||--}o DateTime : "contentReferenceTime"
+ComicCoverArt ||--}o Text : "copyrightNotice"
+ComicCoverArt ||--}o Number : "copyrightYear"
+ComicCoverArt ||--}o Country : "countryOfOrigin"
+ComicCoverArt ||--}o Text : "creditText"
+ComicCoverArt ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+ComicCoverArt ||--}o URL : "discussionUrl"
+ComicCoverArt ||--}o Person : "editor"
+ComicCoverArt ||--}o AlignmentObject : "educationalAlignment"
+ComicCoverArt ||--}o MediaObject : "encoding"
+ComicCoverArt ||--}o MediaObject : "encodings"
+ComicCoverArt ||--}o CreativeWork : "exampleOfWork"
+ComicCoverArt ||--}o Grant : "funding"
+ComicCoverArt ||--}o Text : "headline"
+ComicCoverArt ||--}o InteractionCounter : "interactionStatistic"
+ComicCoverArt ||--}o Text : "interactivityType"
+ComicCoverArt ||--}o Boolean : "isAccessibleForFree"
+ComicCoverArt ||--}o Boolean : "isFamilyFriendly"
+ComicCoverArt ||--}o Place : "locationCreated"
+ComicCoverArt ||--}o Thing : "mentions"
+ComicCoverArt ||--}o PublicationEvent : "publication"
+ComicCoverArt ||--}o Organization : "publisherImprint"
+ComicCoverArt ||--}o Event : "recordedAt"
+ComicCoverArt ||--}o PublicationEvent : "releasedEvent"
+ComicCoverArt ||--}o Review : "review"
+ComicCoverArt ||--}o Review : "reviews"
+ComicCoverArt ||--}o Date : "sdDatePublished"
+ComicCoverArt ||--}o Organization : "sourceOrganization"
+ComicCoverArt ||--}o Place : "spatial"
+ComicCoverArt ||--}o Text : "text"
+ComicCoverArt ||--}o ImageObject : "thumbnail"
+ComicCoverArt ||--}o URL : "thumbnailUrl"
+ComicCoverArt ||--}o Duration : "timeRequired"
+ComicCoverArt ||--}o CreativeWork : "translationOfWork"
+ComicCoverArt ||--}o Text : "typicalAgeRange"
+ComicCoverArt ||--}o CreativeWork : "workTranslation"
+ComicCoverArt ||--}o Text : "alternateName"
+ComicCoverArt ||--}o Text : "disambiguatingDescription"
+ComicCoverArt ||--}o Text : "name"
+ComicCoverArt ||--}o URL : "sameAs"
+ComicCoverArt ||--}o Action : "potentialAction"
+ComicCoverArt ||--}o URL : "url"
+

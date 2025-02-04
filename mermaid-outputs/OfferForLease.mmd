@@ -1,0 +1,71 @@
+erDiagram
+OfferForLease {
+    stringList areaServed  
+    stringList asin  
+    stringList category  
+    stringList eligibleRegion  
+    stringList gtin  
+    stringList seller  
+    stringList acceptedPaymentMethod  
+    stringList availabilityEnds  
+    stringList availabilityStarts  
+    stringList ineligibleRegion  
+    stringList itemOffered  
+    stringList leaseLength  
+    stringList offeredBy  
+    stringList price  
+    stringList validFrom  
+    stringList validThrough  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OfferForLease ||--}o Place : "availableAtOrFrom"
+OfferForLease ||--}o Text : "gtin12"
+OfferForLease ||--}o Text : "gtin13"
+OfferForLease ||--}o Text : "gtin14"
+OfferForLease ||--}o Text : "gtin8"
+OfferForLease ||--}o URL : "hasGS1DigitalLink"
+OfferForLease ||--}o Text : "serialNumber"
+OfferForLease ||--}o Text : "sku"
+OfferForLease ||--}o Offer : "addOn"
+OfferForLease ||--}o PropertyValue : "additionalProperty"
+OfferForLease ||--}o QuantitativeValue : "advanceBookingRequirement"
+OfferForLease ||--}o AggregateRating : "aggregateRating"
+OfferForLease ||--}o ItemAvailability : "availability"
+OfferForLease ||--}o DeliveryMethod : "availableDeliveryMethod"
+OfferForLease ||--}o BusinessFunction : "businessFunction"
+OfferForLease ||--}o Text : "checkoutPageURLTemplate"
+OfferForLease ||--}o QuantitativeValue : "deliveryLeadTime"
+OfferForLease ||--}o BusinessEntityType : "eligibleCustomerType"
+OfferForLease ||--}o QuantitativeValue : "eligibleDuration"
+OfferForLease ||--}o QuantitativeValue : "eligibleQuantity"
+OfferForLease ||--}o PriceSpecification : "eligibleTransactionVolume"
+OfferForLease ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
+OfferForLease ||--}o QuantitativeValue : "hasMeasurement"
+OfferForLease ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+OfferForLease ||--}o TypeAndQuantityNode : "includesObject"
+OfferForLease ||--}o QuantitativeValue : "inventoryLevel"
+OfferForLease ||--}o Boolean : "isFamilyFriendly"
+OfferForLease ||--}o OfferItemCondition : "itemCondition"
+OfferForLease ||--}o Text : "mobileUrl"
+OfferForLease ||--}o Text : "mpn"
+OfferForLease ||--}o Text : "priceCurrency"
+OfferForLease ||--}o PriceSpecification : "priceSpecification"
+OfferForLease ||--}o Date : "priceValidUntil"
+OfferForLease ||--}o Review : "review"
+OfferForLease ||--}o Review : "reviews"
+OfferForLease ||--}o OfferShippingDetails : "shippingDetails"
+OfferForLease ||--}o MemberProgramTier : "validForMemberTier"
+OfferForLease ||--}o WarrantyPromise : "warranty"
+OfferForLease ||--}o Text : "alternateName"
+OfferForLease ||--}o Text : "disambiguatingDescription"
+OfferForLease ||--}o Text : "name"
+OfferForLease ||--}o URL : "sameAs"
+OfferForLease ||--}o Action : "potentialAction"
+OfferForLease ||--}o URL : "url"
+

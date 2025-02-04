@@ -1,0 +1,23 @@
+erDiagram
+AMRadioChannel {
+    stringList genre  
+    stringList broadcastFrequency  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+AMRadioChannel ||--}o Text : "broadcastChannelId"
+AMRadioChannel ||--}o Text : "broadcastServiceTier"
+AMRadioChannel ||--}o CableOrSatelliteService : "inBroadcastLineup"
+AMRadioChannel ||--}o BroadcastService : "providesBroadcastService"
+AMRadioChannel ||--}o Text : "alternateName"
+AMRadioChannel ||--}o Text : "disambiguatingDescription"
+AMRadioChannel ||--}o Text : "name"
+AMRadioChannel ||--}o URL : "sameAs"
+AMRadioChannel ||--}o Action : "potentialAction"
+AMRadioChannel ||--}o URL : "url"
+

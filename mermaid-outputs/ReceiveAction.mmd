@@ -1,0 +1,34 @@
+erDiagram
+ReceiveAction {
+    stringList sender  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ReceiveAction ||--}o DeliveryMethod : "deliveryMethod"
+ReceiveAction ||--}o Place : "fromLocation"
+ReceiveAction ||--}o Place : "toLocation"
+ReceiveAction ||--}o Thing : "instrument"
+ReceiveAction ||--}o Thing : "object"
+ReceiveAction ||--}o Thing : "result"
+ReceiveAction ||--}o HowTo : "actionProcess"
+ReceiveAction ||--}o ActionStatusType : "actionStatus"
+ReceiveAction ||--}o Thing : "error"
+ReceiveAction ||--}o Text : "alternateName"
+ReceiveAction ||--}o Text : "disambiguatingDescription"
+ReceiveAction ||--}o Text : "name"
+ReceiveAction ||--}o URL : "sameAs"
+ReceiveAction ||--}o Action : "potentialAction"
+ReceiveAction ||--}o URL : "url"
+

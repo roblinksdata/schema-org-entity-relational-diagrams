@@ -1,0 +1,18 @@
+erDiagram
+DeliveryMethod {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DeliveryMethod ||--}o Text : "alternateName"
+DeliveryMethod ||--}o Text : "disambiguatingDescription"
+DeliveryMethod ||--}o Text : "name"
+DeliveryMethod ||--}o URL : "sameAs"
+DeliveryMethod ||--}o Action : "potentialAction"
+DeliveryMethod ||--}o URL : "url"
+

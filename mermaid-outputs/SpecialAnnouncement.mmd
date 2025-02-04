@@ -1,0 +1,144 @@
+erDiagram
+SpecialAnnouncement {
+    stringList category  
+    stringList datePosted  
+    stringList diseasePreventionInfo  
+    stringList diseaseSpreadStatistics  
+    stringList gettingTestedInfo  
+    stringList newsUpdatesAndGuidelines  
+    stringList publicTransportClosuresInfo  
+    stringList quarantineGuidelines  
+    stringList schoolClosuresInfo  
+    stringList travelBans  
+    stringList webFeed  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SpecialAnnouncement ||--}o Place : "announcementLocation"
+SpecialAnnouncement ||--}o GovernmentService : "governmentBenefitsInfo"
+SpecialAnnouncement ||--}o Thing : "about"
+SpecialAnnouncement ||--}o Place : "contentLocation"
+SpecialAnnouncement ||--}o CreativeWork : "hasPart"
+SpecialAnnouncement ||--}o Claim : "interpretedAsClaim"
+SpecialAnnouncement ||--}o Thing : "mainEntity"
+SpecialAnnouncement ||--}o Place : "spatialCoverage"
+SpecialAnnouncement ||--}o CreativeWork : "workExample"
+SpecialAnnouncement ||--}o Text : "abstract"
+SpecialAnnouncement ||--}o Text : "accessMode"
+SpecialAnnouncement ||--}o ItemList : "accessModeSufficient"
+SpecialAnnouncement ||--}o Text : "accessibilityAPI"
+SpecialAnnouncement ||--}o Text : "accessibilityControl"
+SpecialAnnouncement ||--}o Text : "accessibilityFeature"
+SpecialAnnouncement ||--}o Text : "accessibilityHazard"
+SpecialAnnouncement ||--}o Text : "accessibilitySummary"
+SpecialAnnouncement ||--}o Person : "accountablePerson"
+SpecialAnnouncement ||--}o AggregateRating : "aggregateRating"
+SpecialAnnouncement ||--}o Text : "alternativeHeadline"
+SpecialAnnouncement ||--}o MediaObject : "associatedMedia"
+SpecialAnnouncement ||--}o Audience : "audience"
+SpecialAnnouncement ||--}o Text : "award"
+SpecialAnnouncement ||--}o Text : "awards"
+SpecialAnnouncement ||--}o Person : "character"
+SpecialAnnouncement ||--}o Comment : "comment"
+SpecialAnnouncement ||--}o Integer : "commentCount"
+SpecialAnnouncement ||--}o Text : "conditionsOfAccess"
+SpecialAnnouncement ||--}o DateTime : "contentReferenceTime"
+SpecialAnnouncement ||--}o Text : "copyrightNotice"
+SpecialAnnouncement ||--}o Number : "copyrightYear"
+SpecialAnnouncement ||--}o Country : "countryOfOrigin"
+SpecialAnnouncement ||--}o Text : "creditText"
+SpecialAnnouncement ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+SpecialAnnouncement ||--}o URL : "discussionUrl"
+SpecialAnnouncement ||--}o Person : "editor"
+SpecialAnnouncement ||--}o AlignmentObject : "educationalAlignment"
+SpecialAnnouncement ||--}o MediaObject : "encoding"
+SpecialAnnouncement ||--}o MediaObject : "encodings"
+SpecialAnnouncement ||--}o CreativeWork : "exampleOfWork"
+SpecialAnnouncement ||--}o Grant : "funding"
+SpecialAnnouncement ||--}o Text : "headline"
+SpecialAnnouncement ||--}o InteractionCounter : "interactionStatistic"
+SpecialAnnouncement ||--}o Text : "interactivityType"
+SpecialAnnouncement ||--}o Boolean : "isAccessibleForFree"
+SpecialAnnouncement ||--}o Boolean : "isFamilyFriendly"
+SpecialAnnouncement ||--}o Place : "locationCreated"
+SpecialAnnouncement ||--}o Thing : "mentions"
+SpecialAnnouncement ||--}o PublicationEvent : "publication"
+SpecialAnnouncement ||--}o Organization : "publisherImprint"
+SpecialAnnouncement ||--}o Event : "recordedAt"
+SpecialAnnouncement ||--}o PublicationEvent : "releasedEvent"
+SpecialAnnouncement ||--}o Review : "review"
+SpecialAnnouncement ||--}o Review : "reviews"
+SpecialAnnouncement ||--}o Date : "sdDatePublished"
+SpecialAnnouncement ||--}o Organization : "sourceOrganization"
+SpecialAnnouncement ||--}o Place : "spatial"
+SpecialAnnouncement ||--}o Text : "text"
+SpecialAnnouncement ||--}o ImageObject : "thumbnail"
+SpecialAnnouncement ||--}o URL : "thumbnailUrl"
+SpecialAnnouncement ||--}o Duration : "timeRequired"
+SpecialAnnouncement ||--}o CreativeWork : "translationOfWork"
+SpecialAnnouncement ||--}o Text : "typicalAgeRange"
+SpecialAnnouncement ||--}o CreativeWork : "workTranslation"
+SpecialAnnouncement ||--}o Text : "alternateName"
+SpecialAnnouncement ||--}o Text : "disambiguatingDescription"
+SpecialAnnouncement ||--}o Text : "name"
+SpecialAnnouncement ||--}o URL : "sameAs"
+SpecialAnnouncement ||--}o Action : "potentialAction"
+SpecialAnnouncement ||--}o URL : "url"
+

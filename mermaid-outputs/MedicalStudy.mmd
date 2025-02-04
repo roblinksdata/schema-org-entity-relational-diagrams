@@ -1,0 +1,30 @@
+erDiagram
+MedicalStudy {
+    stringList sponsor  
+    stringList status  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalStudy ||--}o MedicalCondition : "healthCondition"
+MedicalStudy ||--}o AdministrativeArea : "studyLocation"
+MedicalStudy ||--}o MedicalEntity : "studySubject"
+MedicalStudy ||--}o MedicalCode : "code"
+MedicalStudy ||--}o Grant : "funding"
+MedicalStudy ||--}o MedicalGuideline : "guideline"
+MedicalStudy ||--}o MedicineSystem : "medicineSystem"
+MedicalStudy ||--}o Organization : "recognizingAuthority"
+MedicalStudy ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalStudy ||--}o MedicalStudy : "study"
+MedicalStudy ||--}o Text : "alternateName"
+MedicalStudy ||--}o Text : "disambiguatingDescription"
+MedicalStudy ||--}o Text : "name"
+MedicalStudy ||--}o URL : "sameAs"
+MedicalStudy ||--}o Action : "potentialAction"
+MedicalStudy ||--}o URL : "url"
+

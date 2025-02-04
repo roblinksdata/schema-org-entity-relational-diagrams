@@ -1,0 +1,64 @@
+erDiagram
+Place {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Place ||--}o Text : "globalLocationNumber"
+Place ||--}o URL : "hasGS1DigitalLink"
+Place ||--}o PropertyValue : "additionalProperty"
+Place ||--}o AggregateRating : "aggregateRating"
+Place ||--}o LocationFeatureSpecification : "amenityFeature"
+Place ||--}o Text : "branchCode"
+Place ||--}o Place : "containedIn"
+Place ||--}o Place : "containedInPlace"
+Place ||--}o Place : "containsPlace"
+Place ||--}o Event : "event"
+Place ||--}o Event : "events"
+Place ||--}o Text : "faxNumber"
+Place ||--}o Certification : "hasCertification"
+Place ||--}o Boolean : "hasDriveThroughService"
+Place ||--}o Boolean : "isAccessibleForFree"
+Place ||--}o Text : "isicV4"
+Place ||--}o URL : "map"
+Place ||--}o URL : "maps"
+Place ||--}o Integer : "maximumAttendeeCapacity"
+Place ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Place ||--}o Boolean : "publicAccess"
+Place ||--}o Review : "review"
+Place ||--}o Review : "reviews"
+Place ||--}o Text : "slogan"
+Place ||--}o Boolean : "smokingAllowed"
+Place ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Place ||--}o Text : "telephone"
+Place ||--}o URL : "tourBookingPage"
+Place ||--}o Text : "alternateName"
+Place ||--}o Text : "disambiguatingDescription"
+Place ||--}o Text : "name"
+Place ||--}o URL : "sameAs"
+Place ||--}o Action : "potentialAction"
+Place ||--}o URL : "url"
+

@@ -1,0 +1,58 @@
+erDiagram
+UserLikes {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UserLikes ||--}o Thing : "about"
+UserLikes ||--}o Duration : "duration"
+UserLikes ||--}o CreativeWork : "workFeatured"
+UserLikes ||--}o CreativeWork : "workPerformed"
+UserLikes ||--}o AggregateRating : "aggregateRating"
+UserLikes ||--}o Audience : "audience"
+UserLikes ||--}o Person : "director"
+UserLikes ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+UserLikes ||--}o Schedule : "eventSchedule"
+UserLikes ||--}o EventStatusType : "eventStatus"
+UserLikes ||--}o Grant : "funding"
+UserLikes ||--}o Boolean : "isAccessibleForFree"
+UserLikes ||--}o Integer : "maximumAttendeeCapacity"
+UserLikes ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+UserLikes ||--}o Integer : "maximumVirtualAttendeeCapacity"
+UserLikes ||--}o Date : "previousStartDate"
+UserLikes ||--}o CreativeWork : "recordedIn"
+UserLikes ||--}o Integer : "remainingAttendeeCapacity"
+UserLikes ||--}o Review : "review"
+UserLikes ||--}o Event : "subEvent"
+UserLikes ||--}o Event : "subEvents"
+UserLikes ||--}o Event : "superEvent"
+UserLikes ||--}o Text : "typicalAgeRange"
+UserLikes ||--}o Text : "alternateName"
+UserLikes ||--}o Text : "disambiguatingDescription"
+UserLikes ||--}o Text : "name"
+UserLikes ||--}o URL : "sameAs"
+UserLikes ||--}o Action : "potentialAction"
+UserLikes ||--}o URL : "url"
+

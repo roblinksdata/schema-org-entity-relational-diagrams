@@ -1,0 +1,18 @@
+erDiagram
+MedicalDevicePurpose {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalDevicePurpose ||--}o Text : "alternateName"
+MedicalDevicePurpose ||--}o Text : "disambiguatingDescription"
+MedicalDevicePurpose ||--}o Text : "name"
+MedicalDevicePurpose ||--}o URL : "sameAs"
+MedicalDevicePurpose ||--}o Action : "potentialAction"
+MedicalDevicePurpose ||--}o URL : "url"
+

@@ -1,0 +1,32 @@
+erDiagram
+TakeAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TakeAction ||--}o Place : "fromLocation"
+TakeAction ||--}o Place : "toLocation"
+TakeAction ||--}o Thing : "instrument"
+TakeAction ||--}o Thing : "object"
+TakeAction ||--}o Thing : "result"
+TakeAction ||--}o HowTo : "actionProcess"
+TakeAction ||--}o ActionStatusType : "actionStatus"
+TakeAction ||--}o Thing : "error"
+TakeAction ||--}o Text : "alternateName"
+TakeAction ||--}o Text : "disambiguatingDescription"
+TakeAction ||--}o Text : "name"
+TakeAction ||--}o URL : "sameAs"
+TakeAction ||--}o Action : "potentialAction"
+TakeAction ||--}o URL : "url"
+

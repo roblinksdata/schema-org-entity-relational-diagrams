@@ -1,0 +1,45 @@
+erDiagram
+ExerciseAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ExerciseAction ||--}o Place : "course"
+ExerciseAction ||--}o Diet : "diet"
+ExerciseAction ||--}o Place : "exerciseCourse"
+ExerciseAction ||--}o ExercisePlan : "exercisePlan"
+ExerciseAction ||--}o Diet : "exerciseRelatedDiet"
+ExerciseAction ||--}o Place : "fromLocation"
+ExerciseAction ||--}o Person : "opponent"
+ExerciseAction ||--}o SportsActivityLocation : "sportsActivityLocation"
+ExerciseAction ||--}o SportsEvent : "sportsEvent"
+ExerciseAction ||--}o SportsTeam : "sportsTeam"
+ExerciseAction ||--}o Place : "toLocation"
+ExerciseAction ||--}o Distance : "distance"
+ExerciseAction ||--}o Text : "exerciseType"
+ExerciseAction ||--}o Audience : "audience"
+ExerciseAction ||--}o Event : "event"
+ExerciseAction ||--}o Thing : "instrument"
+ExerciseAction ||--}o Thing : "object"
+ExerciseAction ||--}o Thing : "result"
+ExerciseAction ||--}o HowTo : "actionProcess"
+ExerciseAction ||--}o ActionStatusType : "actionStatus"
+ExerciseAction ||--}o Thing : "error"
+ExerciseAction ||--}o Text : "alternateName"
+ExerciseAction ||--}o Text : "disambiguatingDescription"
+ExerciseAction ||--}o Text : "name"
+ExerciseAction ||--}o URL : "sameAs"
+ExerciseAction ||--}o Action : "potentialAction"
+ExerciseAction ||--}o URL : "url"
+

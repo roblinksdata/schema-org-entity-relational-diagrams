@@ -1,0 +1,32 @@
+erDiagram
+ArriveAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ArriveAction ||--}o Place : "fromLocation"
+ArriveAction ||--}o Place : "toLocation"
+ArriveAction ||--}o Thing : "instrument"
+ArriveAction ||--}o Thing : "object"
+ArriveAction ||--}o Thing : "result"
+ArriveAction ||--}o HowTo : "actionProcess"
+ArriveAction ||--}o ActionStatusType : "actionStatus"
+ArriveAction ||--}o Thing : "error"
+ArriveAction ||--}o Text : "alternateName"
+ArriveAction ||--}o Text : "disambiguatingDescription"
+ArriveAction ||--}o Text : "name"
+ArriveAction ||--}o URL : "sameAs"
+ArriveAction ||--}o Action : "potentialAction"
+ArriveAction ||--}o URL : "url"
+

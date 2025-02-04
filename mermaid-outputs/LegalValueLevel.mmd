@@ -1,0 +1,18 @@
+erDiagram
+LegalValueLevel {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LegalValueLevel ||--}o Text : "alternateName"
+LegalValueLevel ||--}o Text : "disambiguatingDescription"
+LegalValueLevel ||--}o Text : "name"
+LegalValueLevel ||--}o URL : "sameAs"
+LegalValueLevel ||--}o Action : "potentialAction"
+LegalValueLevel ||--}o URL : "url"
+

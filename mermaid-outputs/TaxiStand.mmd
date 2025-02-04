@@ -1,0 +1,65 @@
+erDiagram
+TaxiStand {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TaxiStand ||--}o Text : "openingHours"
+TaxiStand ||--}o Text : "globalLocationNumber"
+TaxiStand ||--}o URL : "hasGS1DigitalLink"
+TaxiStand ||--}o PropertyValue : "additionalProperty"
+TaxiStand ||--}o AggregateRating : "aggregateRating"
+TaxiStand ||--}o LocationFeatureSpecification : "amenityFeature"
+TaxiStand ||--}o Text : "branchCode"
+TaxiStand ||--}o Place : "containedIn"
+TaxiStand ||--}o Place : "containedInPlace"
+TaxiStand ||--}o Place : "containsPlace"
+TaxiStand ||--}o Event : "event"
+TaxiStand ||--}o Event : "events"
+TaxiStand ||--}o Text : "faxNumber"
+TaxiStand ||--}o Certification : "hasCertification"
+TaxiStand ||--}o Boolean : "hasDriveThroughService"
+TaxiStand ||--}o Boolean : "isAccessibleForFree"
+TaxiStand ||--}o Text : "isicV4"
+TaxiStand ||--}o URL : "map"
+TaxiStand ||--}o URL : "maps"
+TaxiStand ||--}o Integer : "maximumAttendeeCapacity"
+TaxiStand ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+TaxiStand ||--}o Boolean : "publicAccess"
+TaxiStand ||--}o Review : "review"
+TaxiStand ||--}o Review : "reviews"
+TaxiStand ||--}o Text : "slogan"
+TaxiStand ||--}o Boolean : "smokingAllowed"
+TaxiStand ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+TaxiStand ||--}o Text : "telephone"
+TaxiStand ||--}o URL : "tourBookingPage"
+TaxiStand ||--}o Text : "alternateName"
+TaxiStand ||--}o Text : "disambiguatingDescription"
+TaxiStand ||--}o Text : "name"
+TaxiStand ||--}o URL : "sameAs"
+TaxiStand ||--}o Action : "potentialAction"
+TaxiStand ||--}o URL : "url"
+

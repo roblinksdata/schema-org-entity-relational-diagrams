@@ -1,0 +1,43 @@
+erDiagram
+VitalSign {
+    stringList associatedAnatomy  
+    stringList status  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+VitalSign ||--}o PhysicalExam : "identifyingExam"
+VitalSign ||--}o MedicalTest : "identifyingTest"
+VitalSign ||--}o MedicalTherapy : "possibleTreatment"
+VitalSign ||--}o DDxElement : "differentialDiagnosis"
+VitalSign ||--}o Drug : "drug"
+VitalSign ||--}o Text : "epidemiology"
+VitalSign ||--}o Text : "expectedPrognosis"
+VitalSign ||--}o Text : "naturalProgression"
+VitalSign ||--}o Text : "pathophysiology"
+VitalSign ||--}o Text : "possibleComplication"
+VitalSign ||--}o MedicalTherapy : "primaryPrevention"
+VitalSign ||--}o MedicalRiskFactor : "riskFactor"
+VitalSign ||--}o MedicalTherapy : "secondaryPrevention"
+VitalSign ||--}o MedicalSignOrSymptom : "signOrSymptom"
+VitalSign ||--}o MedicalConditionStage : "stage"
+VitalSign ||--}o MedicalTest : "typicalTest"
+VitalSign ||--}o MedicalCode : "code"
+VitalSign ||--}o Grant : "funding"
+VitalSign ||--}o MedicalGuideline : "guideline"
+VitalSign ||--}o MedicineSystem : "medicineSystem"
+VitalSign ||--}o Organization : "recognizingAuthority"
+VitalSign ||--}o MedicalSpecialty : "relevantSpecialty"
+VitalSign ||--}o MedicalStudy : "study"
+VitalSign ||--}o Text : "alternateName"
+VitalSign ||--}o Text : "disambiguatingDescription"
+VitalSign ||--}o Text : "name"
+VitalSign ||--}o URL : "sameAs"
+VitalSign ||--}o Action : "potentialAction"
+VitalSign ||--}o URL : "url"
+

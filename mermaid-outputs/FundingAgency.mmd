@@ -1,0 +1,89 @@
+erDiagram
+FundingAgency {
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList logo  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList address  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList keywords  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+FundingAgency ||--}o Text : "duns"
+FundingAgency ||--}o Text : "globalLocationNumber"
+FundingAgency ||--}o URL : "hasGS1DigitalLink"
+FundingAgency ||--}o Text : "leiCode"
+FundingAgency ||--}o Text : "taxID"
+FundingAgency ||--}o InteractionCounter : "agentInteractionStatistic"
+FundingAgency ||--}o AggregateRating : "aggregateRating"
+FundingAgency ||--}o Person : "alumni"
+FundingAgency ||--}o Text : "award"
+FundingAgency ||--}o Text : "awards"
+FundingAgency ||--}o ContactPoint : "contactPoint"
+FundingAgency ||--}o ContactPoint : "contactPoints"
+FundingAgency ||--}o Organization : "department"
+FundingAgency ||--}o Date : "dissolutionDate"
+FundingAgency ||--}o Text : "email"
+FundingAgency ||--}o Person : "employee"
+FundingAgency ||--}o Person : "employees"
+FundingAgency ||--}o Event : "event"
+FundingAgency ||--}o Event : "events"
+FundingAgency ||--}o Text : "faxNumber"
+FundingAgency ||--}o Person : "founders"
+FundingAgency ||--}o Date : "foundingDate"
+FundingAgency ||--}o Place : "foundingLocation"
+FundingAgency ||--}o Grant : "funding"
+FundingAgency ||--}o Certification : "hasCertification"
+FundingAgency ||--}o EducationalOccupationalCredential : "hasCredential"
+FundingAgency ||--}o MemberProgram : "hasMemberProgram"
+FundingAgency ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+FundingAgency ||--}o OfferCatalog : "hasOfferCatalog"
+FundingAgency ||--}o Place : "hasPOS"
+FundingAgency ||--}o InteractionCounter : "interactionStatistic"
+FundingAgency ||--}o Text : "isicV4"
+FundingAgency ||--}o Text : "iso6523Code"
+FundingAgency ||--}o Text : "legalName"
+FundingAgency ||--}o Offer : "makesOffer"
+FundingAgency ||--}o Text : "naics"
+FundingAgency ||--}o NonprofitType : "nonprofitStatus"
+FundingAgency ||--}o QuantitativeValue : "numberOfEmployees"
+FundingAgency ||--}o Organization : "parentOrganization"
+FundingAgency ||--}o Review : "review"
+FundingAgency ||--}o Review : "reviews"
+FundingAgency ||--}o Demand : "seeks"
+FundingAgency ||--}o Text : "slogan"
+FundingAgency ||--}o Organization : "subOrganization"
+FundingAgency ||--}o Text : "telephone"
+FundingAgency ||--}o Text : "vatID"
+FundingAgency ||--}o Text : "alternateName"
+FundingAgency ||--}o Text : "disambiguatingDescription"
+FundingAgency ||--}o Text : "name"
+FundingAgency ||--}o URL : "sameAs"
+FundingAgency ||--}o Action : "potentialAction"
+FundingAgency ||--}o URL : "url"
+

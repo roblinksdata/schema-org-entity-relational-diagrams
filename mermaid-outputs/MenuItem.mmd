@@ -1,0 +1,21 @@
+erDiagram
+MenuItem {
+    stringList menuAddOn  
+    stringList offers  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MenuItem ||--}o NutritionInformation : "nutrition"
+MenuItem ||--}o RestrictedDiet : "suitableForDiet"
+MenuItem ||--}o Text : "alternateName"
+MenuItem ||--}o Text : "disambiguatingDescription"
+MenuItem ||--}o Text : "name"
+MenuItem ||--}o URL : "sameAs"
+MenuItem ||--}o Action : "potentialAction"
+MenuItem ||--}o URL : "url"
+

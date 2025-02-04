@@ -1,0 +1,132 @@
+erDiagram
+Collection {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Collection ||--}o Integer : "collectionSize"
+Collection ||--}o Thing : "about"
+Collection ||--}o Place : "contentLocation"
+Collection ||--}o CreativeWork : "hasPart"
+Collection ||--}o Claim : "interpretedAsClaim"
+Collection ||--}o Thing : "mainEntity"
+Collection ||--}o Place : "spatialCoverage"
+Collection ||--}o CreativeWork : "workExample"
+Collection ||--}o Text : "abstract"
+Collection ||--}o Text : "accessMode"
+Collection ||--}o ItemList : "accessModeSufficient"
+Collection ||--}o Text : "accessibilityAPI"
+Collection ||--}o Text : "accessibilityControl"
+Collection ||--}o Text : "accessibilityFeature"
+Collection ||--}o Text : "accessibilityHazard"
+Collection ||--}o Text : "accessibilitySummary"
+Collection ||--}o Person : "accountablePerson"
+Collection ||--}o AggregateRating : "aggregateRating"
+Collection ||--}o Text : "alternativeHeadline"
+Collection ||--}o MediaObject : "associatedMedia"
+Collection ||--}o Audience : "audience"
+Collection ||--}o Text : "award"
+Collection ||--}o Text : "awards"
+Collection ||--}o Person : "character"
+Collection ||--}o Comment : "comment"
+Collection ||--}o Integer : "commentCount"
+Collection ||--}o Text : "conditionsOfAccess"
+Collection ||--}o DateTime : "contentReferenceTime"
+Collection ||--}o Text : "copyrightNotice"
+Collection ||--}o Number : "copyrightYear"
+Collection ||--}o Country : "countryOfOrigin"
+Collection ||--}o Text : "creditText"
+Collection ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Collection ||--}o URL : "discussionUrl"
+Collection ||--}o Person : "editor"
+Collection ||--}o AlignmentObject : "educationalAlignment"
+Collection ||--}o MediaObject : "encoding"
+Collection ||--}o MediaObject : "encodings"
+Collection ||--}o CreativeWork : "exampleOfWork"
+Collection ||--}o Grant : "funding"
+Collection ||--}o Text : "headline"
+Collection ||--}o InteractionCounter : "interactionStatistic"
+Collection ||--}o Text : "interactivityType"
+Collection ||--}o Boolean : "isAccessibleForFree"
+Collection ||--}o Boolean : "isFamilyFriendly"
+Collection ||--}o Place : "locationCreated"
+Collection ||--}o Thing : "mentions"
+Collection ||--}o PublicationEvent : "publication"
+Collection ||--}o Organization : "publisherImprint"
+Collection ||--}o Event : "recordedAt"
+Collection ||--}o PublicationEvent : "releasedEvent"
+Collection ||--}o Review : "review"
+Collection ||--}o Review : "reviews"
+Collection ||--}o Date : "sdDatePublished"
+Collection ||--}o Organization : "sourceOrganization"
+Collection ||--}o Place : "spatial"
+Collection ||--}o Text : "text"
+Collection ||--}o ImageObject : "thumbnail"
+Collection ||--}o URL : "thumbnailUrl"
+Collection ||--}o Duration : "timeRequired"
+Collection ||--}o CreativeWork : "translationOfWork"
+Collection ||--}o Text : "typicalAgeRange"
+Collection ||--}o CreativeWork : "workTranslation"
+Collection ||--}o Text : "alternateName"
+Collection ||--}o Text : "disambiguatingDescription"
+Collection ||--}o Text : "name"
+Collection ||--}o URL : "sameAs"
+Collection ||--}o Action : "potentialAction"
+Collection ||--}o URL : "url"
+

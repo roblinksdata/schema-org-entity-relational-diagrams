@@ -1,0 +1,65 @@
+erDiagram
+TrainStation {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TrainStation ||--}o Text : "openingHours"
+TrainStation ||--}o Text : "globalLocationNumber"
+TrainStation ||--}o URL : "hasGS1DigitalLink"
+TrainStation ||--}o PropertyValue : "additionalProperty"
+TrainStation ||--}o AggregateRating : "aggregateRating"
+TrainStation ||--}o LocationFeatureSpecification : "amenityFeature"
+TrainStation ||--}o Text : "branchCode"
+TrainStation ||--}o Place : "containedIn"
+TrainStation ||--}o Place : "containedInPlace"
+TrainStation ||--}o Place : "containsPlace"
+TrainStation ||--}o Event : "event"
+TrainStation ||--}o Event : "events"
+TrainStation ||--}o Text : "faxNumber"
+TrainStation ||--}o Certification : "hasCertification"
+TrainStation ||--}o Boolean : "hasDriveThroughService"
+TrainStation ||--}o Boolean : "isAccessibleForFree"
+TrainStation ||--}o Text : "isicV4"
+TrainStation ||--}o URL : "map"
+TrainStation ||--}o URL : "maps"
+TrainStation ||--}o Integer : "maximumAttendeeCapacity"
+TrainStation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+TrainStation ||--}o Boolean : "publicAccess"
+TrainStation ||--}o Review : "review"
+TrainStation ||--}o Review : "reviews"
+TrainStation ||--}o Text : "slogan"
+TrainStation ||--}o Boolean : "smokingAllowed"
+TrainStation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+TrainStation ||--}o Text : "telephone"
+TrainStation ||--}o URL : "tourBookingPage"
+TrainStation ||--}o Text : "alternateName"
+TrainStation ||--}o Text : "disambiguatingDescription"
+TrainStation ||--}o Text : "name"
+TrainStation ||--}o URL : "sameAs"
+TrainStation ||--}o Action : "potentialAction"
+TrainStation ||--}o URL : "url"
+

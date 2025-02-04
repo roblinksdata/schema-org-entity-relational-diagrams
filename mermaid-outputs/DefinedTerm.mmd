@@ -1,0 +1,19 @@
+erDiagram
+DefinedTerm {
+    stringList inDefinedTermSet  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DefinedTerm ||--}o Text : "termCode"
+DefinedTerm ||--}o Text : "alternateName"
+DefinedTerm ||--}o Text : "disambiguatingDescription"
+DefinedTerm ||--}o Text : "name"
+DefinedTerm ||--}o URL : "sameAs"
+DefinedTerm ||--}o Action : "potentialAction"
+DefinedTerm ||--}o URL : "url"
+

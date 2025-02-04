@@ -1,0 +1,20 @@
+erDiagram
+HealthPlanNetwork {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+HealthPlanNetwork ||--}o Boolean : "healthPlanCostSharing"
+HealthPlanNetwork ||--}o Text : "healthPlanNetworkId"
+HealthPlanNetwork ||--}o Text : "healthPlanNetworkTier"
+HealthPlanNetwork ||--}o Text : "alternateName"
+HealthPlanNetwork ||--}o Text : "disambiguatingDescription"
+HealthPlanNetwork ||--}o Text : "name"
+HealthPlanNetwork ||--}o URL : "sameAs"
+HealthPlanNetwork ||--}o Action : "potentialAction"
+HealthPlanNetwork ||--}o URL : "url"
+

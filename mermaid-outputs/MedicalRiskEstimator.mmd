@@ -1,0 +1,27 @@
+erDiagram
+MedicalRiskEstimator {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalRiskEstimator ||--}o MedicalEntity : "estimatesRiskOf"
+MedicalRiskEstimator ||--}o MedicalRiskFactor : "includedRiskFactor"
+MedicalRiskEstimator ||--}o MedicalCode : "code"
+MedicalRiskEstimator ||--}o Grant : "funding"
+MedicalRiskEstimator ||--}o MedicalGuideline : "guideline"
+MedicalRiskEstimator ||--}o MedicineSystem : "medicineSystem"
+MedicalRiskEstimator ||--}o Organization : "recognizingAuthority"
+MedicalRiskEstimator ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalRiskEstimator ||--}o MedicalStudy : "study"
+MedicalRiskEstimator ||--}o Text : "alternateName"
+MedicalRiskEstimator ||--}o Text : "disambiguatingDescription"
+MedicalRiskEstimator ||--}o Text : "name"
+MedicalRiskEstimator ||--}o URL : "sameAs"
+MedicalRiskEstimator ||--}o Action : "potentialAction"
+MedicalRiskEstimator ||--}o URL : "url"
+

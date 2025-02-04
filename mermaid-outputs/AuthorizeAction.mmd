@@ -1,0 +1,31 @@
+erDiagram
+AuthorizeAction {
+    stringList recipient  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+AuthorizeAction ||--}o Thing : "instrument"
+AuthorizeAction ||--}o Thing : "object"
+AuthorizeAction ||--}o Thing : "result"
+AuthorizeAction ||--}o HowTo : "actionProcess"
+AuthorizeAction ||--}o ActionStatusType : "actionStatus"
+AuthorizeAction ||--}o Thing : "error"
+AuthorizeAction ||--}o Text : "alternateName"
+AuthorizeAction ||--}o Text : "disambiguatingDescription"
+AuthorizeAction ||--}o Text : "name"
+AuthorizeAction ||--}o URL : "sameAs"
+AuthorizeAction ||--}o Action : "potentialAction"
+AuthorizeAction ||--}o URL : "url"
+

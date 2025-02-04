@@ -1,0 +1,18 @@
+erDiagram
+StatusEnumeration {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+StatusEnumeration ||--}o Text : "alternateName"
+StatusEnumeration ||--}o Text : "disambiguatingDescription"
+StatusEnumeration ||--}o Text : "name"
+StatusEnumeration ||--}o URL : "sameAs"
+StatusEnumeration ||--}o Action : "potentialAction"
+StatusEnumeration ||--}o URL : "url"
+

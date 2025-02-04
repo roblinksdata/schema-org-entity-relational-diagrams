@@ -1,0 +1,33 @@
+erDiagram
+CookAction {
+    stringList foodEstablishment  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CookAction ||--}o FoodEvent : "foodEvent"
+CookAction ||--}o Recipe : "recipe"
+CookAction ||--}o Thing : "instrument"
+CookAction ||--}o Thing : "object"
+CookAction ||--}o Thing : "result"
+CookAction ||--}o HowTo : "actionProcess"
+CookAction ||--}o ActionStatusType : "actionStatus"
+CookAction ||--}o Thing : "error"
+CookAction ||--}o Text : "alternateName"
+CookAction ||--}o Text : "disambiguatingDescription"
+CookAction ||--}o Text : "name"
+CookAction ||--}o URL : "sameAs"
+CookAction ||--}o Action : "potentialAction"
+CookAction ||--}o URL : "url"
+

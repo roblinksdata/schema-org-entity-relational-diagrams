@@ -1,0 +1,40 @@
+erDiagram
+Flight {
+    stringList seller  
+    stringList aircraft  
+    stringList estimatedFlightDuration  
+    stringList flightDistance  
+    stringList arrivalTime  
+    stringList departureTime  
+    stringList itinerary  
+    stringList offers  
+    stringList provider  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Flight ||--}o Text : "flightNumber"
+Flight ||--}o Airport : "arrivalAirport"
+Flight ||--}o Text : "arrivalGate"
+Flight ||--}o Text : "arrivalTerminal"
+Flight ||--}o BoardingPolicyType : "boardingPolicy"
+Flight ||--}o Organization : "carrier"
+Flight ||--}o Airport : "departureAirport"
+Flight ||--}o Text : "departureGate"
+Flight ||--}o Text : "departureTerminal"
+Flight ||--}o Text : "mealService"
+Flight ||--}o DateTime : "webCheckinTime"
+Flight ||--}o Trip : "partOfTrip"
+Flight ||--}o Trip : "subTrip"
+Flight ||--}o Place : "tripOrigin"
+Flight ||--}o Text : "alternateName"
+Flight ||--}o Text : "disambiguatingDescription"
+Flight ||--}o Text : "name"
+Flight ||--}o URL : "sameAs"
+Flight ||--}o Action : "potentialAction"
+Flight ||--}o URL : "url"
+

@@ -1,0 +1,140 @@
+erDiagram
+UserReview {
+    stringList negativeNotes  
+    stringList positiveNotes  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UserReview ||--}o Review : "associatedClaimReview"
+UserReview ||--}o Review : "associatedMediaReview"
+UserReview ||--}o Review : "associatedReview"
+UserReview ||--}o Thing : "itemReviewed"
+UserReview ||--}o Text : "reviewAspect"
+UserReview ||--}o Text : "reviewBody"
+UserReview ||--}o Rating : "reviewRating"
+UserReview ||--}o Thing : "about"
+UserReview ||--}o Place : "contentLocation"
+UserReview ||--}o CreativeWork : "hasPart"
+UserReview ||--}o Claim : "interpretedAsClaim"
+UserReview ||--}o Thing : "mainEntity"
+UserReview ||--}o Place : "spatialCoverage"
+UserReview ||--}o CreativeWork : "workExample"
+UserReview ||--}o Text : "abstract"
+UserReview ||--}o Text : "accessMode"
+UserReview ||--}o ItemList : "accessModeSufficient"
+UserReview ||--}o Text : "accessibilityAPI"
+UserReview ||--}o Text : "accessibilityControl"
+UserReview ||--}o Text : "accessibilityFeature"
+UserReview ||--}o Text : "accessibilityHazard"
+UserReview ||--}o Text : "accessibilitySummary"
+UserReview ||--}o Person : "accountablePerson"
+UserReview ||--}o AggregateRating : "aggregateRating"
+UserReview ||--}o Text : "alternativeHeadline"
+UserReview ||--}o MediaObject : "associatedMedia"
+UserReview ||--}o Audience : "audience"
+UserReview ||--}o Text : "award"
+UserReview ||--}o Text : "awards"
+UserReview ||--}o Person : "character"
+UserReview ||--}o Comment : "comment"
+UserReview ||--}o Integer : "commentCount"
+UserReview ||--}o Text : "conditionsOfAccess"
+UserReview ||--}o DateTime : "contentReferenceTime"
+UserReview ||--}o Text : "copyrightNotice"
+UserReview ||--}o Number : "copyrightYear"
+UserReview ||--}o Country : "countryOfOrigin"
+UserReview ||--}o Text : "creditText"
+UserReview ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+UserReview ||--}o URL : "discussionUrl"
+UserReview ||--}o Person : "editor"
+UserReview ||--}o AlignmentObject : "educationalAlignment"
+UserReview ||--}o MediaObject : "encoding"
+UserReview ||--}o MediaObject : "encodings"
+UserReview ||--}o CreativeWork : "exampleOfWork"
+UserReview ||--}o Grant : "funding"
+UserReview ||--}o Text : "headline"
+UserReview ||--}o InteractionCounter : "interactionStatistic"
+UserReview ||--}o Text : "interactivityType"
+UserReview ||--}o Boolean : "isAccessibleForFree"
+UserReview ||--}o Boolean : "isFamilyFriendly"
+UserReview ||--}o Place : "locationCreated"
+UserReview ||--}o Thing : "mentions"
+UserReview ||--}o PublicationEvent : "publication"
+UserReview ||--}o Organization : "publisherImprint"
+UserReview ||--}o Event : "recordedAt"
+UserReview ||--}o PublicationEvent : "releasedEvent"
+UserReview ||--}o Review : "review"
+UserReview ||--}o Review : "reviews"
+UserReview ||--}o Date : "sdDatePublished"
+UserReview ||--}o Organization : "sourceOrganization"
+UserReview ||--}o Place : "spatial"
+UserReview ||--}o Text : "text"
+UserReview ||--}o ImageObject : "thumbnail"
+UserReview ||--}o URL : "thumbnailUrl"
+UserReview ||--}o Duration : "timeRequired"
+UserReview ||--}o CreativeWork : "translationOfWork"
+UserReview ||--}o Text : "typicalAgeRange"
+UserReview ||--}o CreativeWork : "workTranslation"
+UserReview ||--}o Text : "alternateName"
+UserReview ||--}o Text : "disambiguatingDescription"
+UserReview ||--}o Text : "name"
+UserReview ||--}o URL : "sameAs"
+UserReview ||--}o Action : "potentialAction"
+UserReview ||--}o URL : "url"
+

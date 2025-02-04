@@ -1,0 +1,144 @@
+erDiagram
+NewsArticle {
+    stringList backstory  
+    stringList pageEnd  
+    stringList pageStart  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+NewsArticle ||--}o Text : "dateline"
+NewsArticle ||--}o Text : "printColumn"
+NewsArticle ||--}o Text : "printEdition"
+NewsArticle ||--}o Text : "printPage"
+NewsArticle ||--}o Text : "printSection"
+NewsArticle ||--}o Text : "articleBody"
+NewsArticle ||--}o Text : "articleSection"
+NewsArticle ||--}o Text : "pagination"
+NewsArticle ||--}o Integer : "wordCount"
+NewsArticle ||--}o Thing : "about"
+NewsArticle ||--}o Place : "contentLocation"
+NewsArticle ||--}o CreativeWork : "hasPart"
+NewsArticle ||--}o Claim : "interpretedAsClaim"
+NewsArticle ||--}o Thing : "mainEntity"
+NewsArticle ||--}o Place : "spatialCoverage"
+NewsArticle ||--}o CreativeWork : "workExample"
+NewsArticle ||--}o Text : "abstract"
+NewsArticle ||--}o Text : "accessMode"
+NewsArticle ||--}o ItemList : "accessModeSufficient"
+NewsArticle ||--}o Text : "accessibilityAPI"
+NewsArticle ||--}o Text : "accessibilityControl"
+NewsArticle ||--}o Text : "accessibilityFeature"
+NewsArticle ||--}o Text : "accessibilityHazard"
+NewsArticle ||--}o Text : "accessibilitySummary"
+NewsArticle ||--}o Person : "accountablePerson"
+NewsArticle ||--}o AggregateRating : "aggregateRating"
+NewsArticle ||--}o Text : "alternativeHeadline"
+NewsArticle ||--}o MediaObject : "associatedMedia"
+NewsArticle ||--}o Audience : "audience"
+NewsArticle ||--}o Text : "award"
+NewsArticle ||--}o Text : "awards"
+NewsArticle ||--}o Person : "character"
+NewsArticle ||--}o Comment : "comment"
+NewsArticle ||--}o Integer : "commentCount"
+NewsArticle ||--}o Text : "conditionsOfAccess"
+NewsArticle ||--}o DateTime : "contentReferenceTime"
+NewsArticle ||--}o Text : "copyrightNotice"
+NewsArticle ||--}o Number : "copyrightYear"
+NewsArticle ||--}o Country : "countryOfOrigin"
+NewsArticle ||--}o Text : "creditText"
+NewsArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+NewsArticle ||--}o URL : "discussionUrl"
+NewsArticle ||--}o Person : "editor"
+NewsArticle ||--}o AlignmentObject : "educationalAlignment"
+NewsArticle ||--}o MediaObject : "encoding"
+NewsArticle ||--}o MediaObject : "encodings"
+NewsArticle ||--}o CreativeWork : "exampleOfWork"
+NewsArticle ||--}o Grant : "funding"
+NewsArticle ||--}o Text : "headline"
+NewsArticle ||--}o InteractionCounter : "interactionStatistic"
+NewsArticle ||--}o Text : "interactivityType"
+NewsArticle ||--}o Boolean : "isAccessibleForFree"
+NewsArticle ||--}o Boolean : "isFamilyFriendly"
+NewsArticle ||--}o Place : "locationCreated"
+NewsArticle ||--}o Thing : "mentions"
+NewsArticle ||--}o PublicationEvent : "publication"
+NewsArticle ||--}o Organization : "publisherImprint"
+NewsArticle ||--}o Event : "recordedAt"
+NewsArticle ||--}o PublicationEvent : "releasedEvent"
+NewsArticle ||--}o Review : "review"
+NewsArticle ||--}o Review : "reviews"
+NewsArticle ||--}o Date : "sdDatePublished"
+NewsArticle ||--}o Organization : "sourceOrganization"
+NewsArticle ||--}o Place : "spatial"
+NewsArticle ||--}o Text : "text"
+NewsArticle ||--}o ImageObject : "thumbnail"
+NewsArticle ||--}o URL : "thumbnailUrl"
+NewsArticle ||--}o Duration : "timeRequired"
+NewsArticle ||--}o CreativeWork : "translationOfWork"
+NewsArticle ||--}o Text : "typicalAgeRange"
+NewsArticle ||--}o CreativeWork : "workTranslation"
+NewsArticle ||--}o Text : "alternateName"
+NewsArticle ||--}o Text : "disambiguatingDescription"
+NewsArticle ||--}o Text : "name"
+NewsArticle ||--}o URL : "sameAs"
+NewsArticle ||--}o Action : "potentialAction"
+NewsArticle ||--}o URL : "url"
+

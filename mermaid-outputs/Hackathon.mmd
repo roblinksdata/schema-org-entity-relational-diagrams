@@ -1,0 +1,58 @@
+erDiagram
+Hackathon {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Hackathon ||--}o Thing : "about"
+Hackathon ||--}o Duration : "duration"
+Hackathon ||--}o CreativeWork : "workFeatured"
+Hackathon ||--}o CreativeWork : "workPerformed"
+Hackathon ||--}o AggregateRating : "aggregateRating"
+Hackathon ||--}o Audience : "audience"
+Hackathon ||--}o Person : "director"
+Hackathon ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+Hackathon ||--}o Schedule : "eventSchedule"
+Hackathon ||--}o EventStatusType : "eventStatus"
+Hackathon ||--}o Grant : "funding"
+Hackathon ||--}o Boolean : "isAccessibleForFree"
+Hackathon ||--}o Integer : "maximumAttendeeCapacity"
+Hackathon ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+Hackathon ||--}o Integer : "maximumVirtualAttendeeCapacity"
+Hackathon ||--}o Date : "previousStartDate"
+Hackathon ||--}o CreativeWork : "recordedIn"
+Hackathon ||--}o Integer : "remainingAttendeeCapacity"
+Hackathon ||--}o Review : "review"
+Hackathon ||--}o Event : "subEvent"
+Hackathon ||--}o Event : "subEvents"
+Hackathon ||--}o Event : "superEvent"
+Hackathon ||--}o Text : "typicalAgeRange"
+Hackathon ||--}o Text : "alternateName"
+Hackathon ||--}o Text : "disambiguatingDescription"
+Hackathon ||--}o Text : "name"
+Hackathon ||--}o URL : "sameAs"
+Hackathon ||--}o Action : "potentialAction"
+Hackathon ||--}o URL : "url"
+

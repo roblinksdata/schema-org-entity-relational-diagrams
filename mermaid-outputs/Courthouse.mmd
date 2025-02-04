@@ -1,0 +1,65 @@
+erDiagram
+Courthouse {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Courthouse ||--}o Text : "openingHours"
+Courthouse ||--}o Text : "globalLocationNumber"
+Courthouse ||--}o URL : "hasGS1DigitalLink"
+Courthouse ||--}o PropertyValue : "additionalProperty"
+Courthouse ||--}o AggregateRating : "aggregateRating"
+Courthouse ||--}o LocationFeatureSpecification : "amenityFeature"
+Courthouse ||--}o Text : "branchCode"
+Courthouse ||--}o Place : "containedIn"
+Courthouse ||--}o Place : "containedInPlace"
+Courthouse ||--}o Place : "containsPlace"
+Courthouse ||--}o Event : "event"
+Courthouse ||--}o Event : "events"
+Courthouse ||--}o Text : "faxNumber"
+Courthouse ||--}o Certification : "hasCertification"
+Courthouse ||--}o Boolean : "hasDriveThroughService"
+Courthouse ||--}o Boolean : "isAccessibleForFree"
+Courthouse ||--}o Text : "isicV4"
+Courthouse ||--}o URL : "map"
+Courthouse ||--}o URL : "maps"
+Courthouse ||--}o Integer : "maximumAttendeeCapacity"
+Courthouse ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Courthouse ||--}o Boolean : "publicAccess"
+Courthouse ||--}o Review : "review"
+Courthouse ||--}o Review : "reviews"
+Courthouse ||--}o Text : "slogan"
+Courthouse ||--}o Boolean : "smokingAllowed"
+Courthouse ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Courthouse ||--}o Text : "telephone"
+Courthouse ||--}o URL : "tourBookingPage"
+Courthouse ||--}o Text : "alternateName"
+Courthouse ||--}o Text : "disambiguatingDescription"
+Courthouse ||--}o Text : "name"
+Courthouse ||--}o URL : "sameAs"
+Courthouse ||--}o Action : "potentialAction"
+Courthouse ||--}o URL : "url"
+

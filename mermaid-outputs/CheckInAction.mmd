@@ -1,0 +1,34 @@
+erDiagram
+CheckInAction {
+    stringList recipient  
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CheckInAction ||--}o Thing : "about"
+CheckInAction ||--}o Language : "language"
+CheckInAction ||--}o Thing : "instrument"
+CheckInAction ||--}o Thing : "object"
+CheckInAction ||--}o Thing : "result"
+CheckInAction ||--}o HowTo : "actionProcess"
+CheckInAction ||--}o ActionStatusType : "actionStatus"
+CheckInAction ||--}o Thing : "error"
+CheckInAction ||--}o Text : "alternateName"
+CheckInAction ||--}o Text : "disambiguatingDescription"
+CheckInAction ||--}o Text : "name"
+CheckInAction ||--}o URL : "sameAs"
+CheckInAction ||--}o Action : "potentialAction"
+CheckInAction ||--}o URL : "url"
+

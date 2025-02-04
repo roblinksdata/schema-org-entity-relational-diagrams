@@ -1,0 +1,63 @@
+erDiagram
+UserComments {
+    stringList creator  
+    stringList commentTime  
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UserComments ||--}o Text : "commentText"
+UserComments ||--}o CreativeWork : "discusses"
+UserComments ||--}o URL : "replyToUrl"
+UserComments ||--}o Thing : "about"
+UserComments ||--}o Duration : "duration"
+UserComments ||--}o CreativeWork : "workFeatured"
+UserComments ||--}o CreativeWork : "workPerformed"
+UserComments ||--}o AggregateRating : "aggregateRating"
+UserComments ||--}o Audience : "audience"
+UserComments ||--}o Person : "director"
+UserComments ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+UserComments ||--}o Schedule : "eventSchedule"
+UserComments ||--}o EventStatusType : "eventStatus"
+UserComments ||--}o Grant : "funding"
+UserComments ||--}o Boolean : "isAccessibleForFree"
+UserComments ||--}o Integer : "maximumAttendeeCapacity"
+UserComments ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+UserComments ||--}o Integer : "maximumVirtualAttendeeCapacity"
+UserComments ||--}o Date : "previousStartDate"
+UserComments ||--}o CreativeWork : "recordedIn"
+UserComments ||--}o Integer : "remainingAttendeeCapacity"
+UserComments ||--}o Review : "review"
+UserComments ||--}o Event : "subEvent"
+UserComments ||--}o Event : "subEvents"
+UserComments ||--}o Event : "superEvent"
+UserComments ||--}o Text : "typicalAgeRange"
+UserComments ||--}o Text : "alternateName"
+UserComments ||--}o Text : "disambiguatingDescription"
+UserComments ||--}o Text : "name"
+UserComments ||--}o URL : "sameAs"
+UserComments ||--}o Action : "potentialAction"
+UserComments ||--}o URL : "url"
+

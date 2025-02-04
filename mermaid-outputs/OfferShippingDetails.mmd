@@ -1,0 +1,30 @@
+erDiagram
+OfferShippingDetails {
+    stringList depth  
+    stringList height  
+    stringList width  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OfferShippingDetails ||--}o ShippingDeliveryTime : "deliveryTime"
+OfferShippingDetails ||--}o Boolean : "doesNotShip"
+OfferShippingDetails ||--}o DefinedRegion : "shippingDestination"
+OfferShippingDetails ||--}o Text : "shippingLabel"
+OfferShippingDetails ||--}o DefinedRegion : "shippingOrigin"
+OfferShippingDetails ||--}o MonetaryAmount : "shippingRate"
+OfferShippingDetails ||--}o URL : "shippingSettingsLink"
+OfferShippingDetails ||--}o Text : "transitTimeLabel"
+OfferShippingDetails ||--}o MemberProgramTier : "validForMemberTier"
+OfferShippingDetails ||--}o QuantitativeValue : "weight"
+OfferShippingDetails ||--}o Text : "alternateName"
+OfferShippingDetails ||--}o Text : "disambiguatingDescription"
+OfferShippingDetails ||--}o Text : "name"
+OfferShippingDetails ||--}o URL : "sameAs"
+OfferShippingDetails ||--}o Action : "potentialAction"
+OfferShippingDetails ||--}o URL : "url"
+

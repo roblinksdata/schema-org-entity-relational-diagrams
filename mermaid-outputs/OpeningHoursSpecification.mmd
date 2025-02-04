@@ -1,0 +1,22 @@
+erDiagram
+OpeningHoursSpecification {
+    stringList validFrom  
+    stringList validThrough  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OpeningHoursSpecification ||--}o Time : "closes"
+OpeningHoursSpecification ||--}o DayOfWeek : "dayOfWeek"
+OpeningHoursSpecification ||--}o Time : "opens"
+OpeningHoursSpecification ||--}o Text : "alternateName"
+OpeningHoursSpecification ||--}o Text : "disambiguatingDescription"
+OpeningHoursSpecification ||--}o Text : "name"
+OpeningHoursSpecification ||--}o URL : "sameAs"
+OpeningHoursSpecification ||--}o Action : "potentialAction"
+OpeningHoursSpecification ||--}o URL : "url"
+

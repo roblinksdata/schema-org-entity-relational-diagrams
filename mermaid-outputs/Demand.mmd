@@ -1,0 +1,51 @@
+erDiagram
+Demand {
+    stringList areaServed  
+    stringList asin  
+    stringList eligibleRegion  
+    stringList gtin  
+    stringList seller  
+    stringList acceptedPaymentMethod  
+    stringList availabilityEnds  
+    stringList availabilityStarts  
+    stringList ineligibleRegion  
+    stringList itemOffered  
+    stringList validFrom  
+    stringList validThrough  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Demand ||--}o Place : "availableAtOrFrom"
+Demand ||--}o Text : "gtin12"
+Demand ||--}o Text : "gtin13"
+Demand ||--}o Text : "gtin14"
+Demand ||--}o Text : "gtin8"
+Demand ||--}o Text : "serialNumber"
+Demand ||--}o Text : "sku"
+Demand ||--}o QuantitativeValue : "advanceBookingRequirement"
+Demand ||--}o ItemAvailability : "availability"
+Demand ||--}o DeliveryMethod : "availableDeliveryMethod"
+Demand ||--}o BusinessFunction : "businessFunction"
+Demand ||--}o QuantitativeValue : "deliveryLeadTime"
+Demand ||--}o BusinessEntityType : "eligibleCustomerType"
+Demand ||--}o QuantitativeValue : "eligibleDuration"
+Demand ||--}o QuantitativeValue : "eligibleQuantity"
+Demand ||--}o PriceSpecification : "eligibleTransactionVolume"
+Demand ||--}o TypeAndQuantityNode : "includesObject"
+Demand ||--}o QuantitativeValue : "inventoryLevel"
+Demand ||--}o OfferItemCondition : "itemCondition"
+Demand ||--}o Text : "mpn"
+Demand ||--}o PriceSpecification : "priceSpecification"
+Demand ||--}o WarrantyPromise : "warranty"
+Demand ||--}o Text : "alternateName"
+Demand ||--}o Text : "disambiguatingDescription"
+Demand ||--}o Text : "name"
+Demand ||--}o URL : "sameAs"
+Demand ||--}o Action : "potentialAction"
+Demand ||--}o URL : "url"
+

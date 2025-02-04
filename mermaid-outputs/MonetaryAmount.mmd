@@ -1,0 +1,23 @@
+erDiagram
+MonetaryAmount {
+    stringList validFrom  
+    stringList validThrough  
+    stringList value  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MonetaryAmount ||--}o Text : "currency"
+MonetaryAmount ||--}o Number : "maxValue"
+MonetaryAmount ||--}o Number : "minValue"
+MonetaryAmount ||--}o Text : "alternateName"
+MonetaryAmount ||--}o Text : "disambiguatingDescription"
+MonetaryAmount ||--}o Text : "name"
+MonetaryAmount ||--}o URL : "sameAs"
+MonetaryAmount ||--}o Action : "potentialAction"
+MonetaryAmount ||--}o URL : "url"
+

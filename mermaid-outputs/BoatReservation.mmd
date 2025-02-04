@@ -1,0 +1,30 @@
+erDiagram
+BoatReservation {
+    stringList bookingAgent  
+    stringList broker  
+    stringList provider  
+    stringList totalPrice  
+    stringList underName  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BoatReservation ||--}o DateTime : "bookingTime"
+BoatReservation ||--}o DateTime : "modifiedTime"
+BoatReservation ||--}o Text : "priceCurrency"
+BoatReservation ||--}o ProgramMembership : "programMembershipUsed"
+BoatReservation ||--}o Thing : "reservationFor"
+BoatReservation ||--}o Text : "reservationId"
+BoatReservation ||--}o ReservationStatusType : "reservationStatus"
+BoatReservation ||--}o Ticket : "reservedTicket"
+BoatReservation ||--}o Text : "alternateName"
+BoatReservation ||--}o Text : "disambiguatingDescription"
+BoatReservation ||--}o Text : "name"
+BoatReservation ||--}o URL : "sameAs"
+BoatReservation ||--}o Action : "potentialAction"
+BoatReservation ||--}o URL : "url"
+

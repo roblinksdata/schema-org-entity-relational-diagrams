@@ -1,0 +1,89 @@
+erDiagram
+GovernmentOrganization {
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList logo  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList address  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList keywords  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GovernmentOrganization ||--}o Text : "duns"
+GovernmentOrganization ||--}o Text : "globalLocationNumber"
+GovernmentOrganization ||--}o URL : "hasGS1DigitalLink"
+GovernmentOrganization ||--}o Text : "leiCode"
+GovernmentOrganization ||--}o Text : "taxID"
+GovernmentOrganization ||--}o InteractionCounter : "agentInteractionStatistic"
+GovernmentOrganization ||--}o AggregateRating : "aggregateRating"
+GovernmentOrganization ||--}o Person : "alumni"
+GovernmentOrganization ||--}o Text : "award"
+GovernmentOrganization ||--}o Text : "awards"
+GovernmentOrganization ||--}o ContactPoint : "contactPoint"
+GovernmentOrganization ||--}o ContactPoint : "contactPoints"
+GovernmentOrganization ||--}o Organization : "department"
+GovernmentOrganization ||--}o Date : "dissolutionDate"
+GovernmentOrganization ||--}o Text : "email"
+GovernmentOrganization ||--}o Person : "employee"
+GovernmentOrganization ||--}o Person : "employees"
+GovernmentOrganization ||--}o Event : "event"
+GovernmentOrganization ||--}o Event : "events"
+GovernmentOrganization ||--}o Text : "faxNumber"
+GovernmentOrganization ||--}o Person : "founders"
+GovernmentOrganization ||--}o Date : "foundingDate"
+GovernmentOrganization ||--}o Place : "foundingLocation"
+GovernmentOrganization ||--}o Grant : "funding"
+GovernmentOrganization ||--}o Certification : "hasCertification"
+GovernmentOrganization ||--}o EducationalOccupationalCredential : "hasCredential"
+GovernmentOrganization ||--}o MemberProgram : "hasMemberProgram"
+GovernmentOrganization ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+GovernmentOrganization ||--}o OfferCatalog : "hasOfferCatalog"
+GovernmentOrganization ||--}o Place : "hasPOS"
+GovernmentOrganization ||--}o InteractionCounter : "interactionStatistic"
+GovernmentOrganization ||--}o Text : "isicV4"
+GovernmentOrganization ||--}o Text : "iso6523Code"
+GovernmentOrganization ||--}o Text : "legalName"
+GovernmentOrganization ||--}o Offer : "makesOffer"
+GovernmentOrganization ||--}o Text : "naics"
+GovernmentOrganization ||--}o NonprofitType : "nonprofitStatus"
+GovernmentOrganization ||--}o QuantitativeValue : "numberOfEmployees"
+GovernmentOrganization ||--}o Organization : "parentOrganization"
+GovernmentOrganization ||--}o Review : "review"
+GovernmentOrganization ||--}o Review : "reviews"
+GovernmentOrganization ||--}o Demand : "seeks"
+GovernmentOrganization ||--}o Text : "slogan"
+GovernmentOrganization ||--}o Organization : "subOrganization"
+GovernmentOrganization ||--}o Text : "telephone"
+GovernmentOrganization ||--}o Text : "vatID"
+GovernmentOrganization ||--}o Text : "alternateName"
+GovernmentOrganization ||--}o Text : "disambiguatingDescription"
+GovernmentOrganization ||--}o Text : "name"
+GovernmentOrganization ||--}o URL : "sameAs"
+GovernmentOrganization ||--}o Action : "potentialAction"
+GovernmentOrganization ||--}o URL : "url"
+

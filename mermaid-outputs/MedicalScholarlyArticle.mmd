@@ -1,0 +1,140 @@
+erDiagram
+MedicalScholarlyArticle {
+    stringList backstory  
+    stringList pageEnd  
+    stringList pageStart  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalScholarlyArticle ||--}o Text : "publicationType"
+MedicalScholarlyArticle ||--}o Text : "articleBody"
+MedicalScholarlyArticle ||--}o Text : "articleSection"
+MedicalScholarlyArticle ||--}o Text : "pagination"
+MedicalScholarlyArticle ||--}o Integer : "wordCount"
+MedicalScholarlyArticle ||--}o Thing : "about"
+MedicalScholarlyArticle ||--}o Place : "contentLocation"
+MedicalScholarlyArticle ||--}o CreativeWork : "hasPart"
+MedicalScholarlyArticle ||--}o Claim : "interpretedAsClaim"
+MedicalScholarlyArticle ||--}o Thing : "mainEntity"
+MedicalScholarlyArticle ||--}o Place : "spatialCoverage"
+MedicalScholarlyArticle ||--}o CreativeWork : "workExample"
+MedicalScholarlyArticle ||--}o Text : "abstract"
+MedicalScholarlyArticle ||--}o Text : "accessMode"
+MedicalScholarlyArticle ||--}o ItemList : "accessModeSufficient"
+MedicalScholarlyArticle ||--}o Text : "accessibilityAPI"
+MedicalScholarlyArticle ||--}o Text : "accessibilityControl"
+MedicalScholarlyArticle ||--}o Text : "accessibilityFeature"
+MedicalScholarlyArticle ||--}o Text : "accessibilityHazard"
+MedicalScholarlyArticle ||--}o Text : "accessibilitySummary"
+MedicalScholarlyArticle ||--}o Person : "accountablePerson"
+MedicalScholarlyArticle ||--}o AggregateRating : "aggregateRating"
+MedicalScholarlyArticle ||--}o Text : "alternativeHeadline"
+MedicalScholarlyArticle ||--}o MediaObject : "associatedMedia"
+MedicalScholarlyArticle ||--}o Audience : "audience"
+MedicalScholarlyArticle ||--}o Text : "award"
+MedicalScholarlyArticle ||--}o Text : "awards"
+MedicalScholarlyArticle ||--}o Person : "character"
+MedicalScholarlyArticle ||--}o Comment : "comment"
+MedicalScholarlyArticle ||--}o Integer : "commentCount"
+MedicalScholarlyArticle ||--}o Text : "conditionsOfAccess"
+MedicalScholarlyArticle ||--}o DateTime : "contentReferenceTime"
+MedicalScholarlyArticle ||--}o Text : "copyrightNotice"
+MedicalScholarlyArticle ||--}o Number : "copyrightYear"
+MedicalScholarlyArticle ||--}o Country : "countryOfOrigin"
+MedicalScholarlyArticle ||--}o Text : "creditText"
+MedicalScholarlyArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+MedicalScholarlyArticle ||--}o URL : "discussionUrl"
+MedicalScholarlyArticle ||--}o Person : "editor"
+MedicalScholarlyArticle ||--}o AlignmentObject : "educationalAlignment"
+MedicalScholarlyArticle ||--}o MediaObject : "encoding"
+MedicalScholarlyArticle ||--}o MediaObject : "encodings"
+MedicalScholarlyArticle ||--}o CreativeWork : "exampleOfWork"
+MedicalScholarlyArticle ||--}o Grant : "funding"
+MedicalScholarlyArticle ||--}o Text : "headline"
+MedicalScholarlyArticle ||--}o InteractionCounter : "interactionStatistic"
+MedicalScholarlyArticle ||--}o Text : "interactivityType"
+MedicalScholarlyArticle ||--}o Boolean : "isAccessibleForFree"
+MedicalScholarlyArticle ||--}o Boolean : "isFamilyFriendly"
+MedicalScholarlyArticle ||--}o Place : "locationCreated"
+MedicalScholarlyArticle ||--}o Thing : "mentions"
+MedicalScholarlyArticle ||--}o PublicationEvent : "publication"
+MedicalScholarlyArticle ||--}o Organization : "publisherImprint"
+MedicalScholarlyArticle ||--}o Event : "recordedAt"
+MedicalScholarlyArticle ||--}o PublicationEvent : "releasedEvent"
+MedicalScholarlyArticle ||--}o Review : "review"
+MedicalScholarlyArticle ||--}o Review : "reviews"
+MedicalScholarlyArticle ||--}o Date : "sdDatePublished"
+MedicalScholarlyArticle ||--}o Organization : "sourceOrganization"
+MedicalScholarlyArticle ||--}o Place : "spatial"
+MedicalScholarlyArticle ||--}o Text : "text"
+MedicalScholarlyArticle ||--}o ImageObject : "thumbnail"
+MedicalScholarlyArticle ||--}o URL : "thumbnailUrl"
+MedicalScholarlyArticle ||--}o Duration : "timeRequired"
+MedicalScholarlyArticle ||--}o CreativeWork : "translationOfWork"
+MedicalScholarlyArticle ||--}o Text : "typicalAgeRange"
+MedicalScholarlyArticle ||--}o CreativeWork : "workTranslation"
+MedicalScholarlyArticle ||--}o Text : "alternateName"
+MedicalScholarlyArticle ||--}o Text : "disambiguatingDescription"
+MedicalScholarlyArticle ||--}o Text : "name"
+MedicalScholarlyArticle ||--}o URL : "sameAs"
+MedicalScholarlyArticle ||--}o Action : "potentialAction"
+MedicalScholarlyArticle ||--}o URL : "url"
+

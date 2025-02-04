@@ -1,0 +1,145 @@
+erDiagram
+VisualArtwork {
+    stringList artMedium  
+    stringList surface  
+    stringList artEdition  
+    stringList artform  
+    stringList artworkSurface  
+    stringList depth  
+    stringList height  
+    stringList width  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+VisualArtwork ||--}o Person : "artist"
+VisualArtwork ||--}o Person : "colorist"
+VisualArtwork ||--}o Person : "inker"
+VisualArtwork ||--}o Person : "letterer"
+VisualArtwork ||--}o Person : "penciler"
+VisualArtwork ||--}o QuantitativeValue : "weight"
+VisualArtwork ||--}o Thing : "about"
+VisualArtwork ||--}o Place : "contentLocation"
+VisualArtwork ||--}o CreativeWork : "hasPart"
+VisualArtwork ||--}o Claim : "interpretedAsClaim"
+VisualArtwork ||--}o Thing : "mainEntity"
+VisualArtwork ||--}o Place : "spatialCoverage"
+VisualArtwork ||--}o CreativeWork : "workExample"
+VisualArtwork ||--}o Text : "abstract"
+VisualArtwork ||--}o Text : "accessMode"
+VisualArtwork ||--}o ItemList : "accessModeSufficient"
+VisualArtwork ||--}o Text : "accessibilityAPI"
+VisualArtwork ||--}o Text : "accessibilityControl"
+VisualArtwork ||--}o Text : "accessibilityFeature"
+VisualArtwork ||--}o Text : "accessibilityHazard"
+VisualArtwork ||--}o Text : "accessibilitySummary"
+VisualArtwork ||--}o Person : "accountablePerson"
+VisualArtwork ||--}o AggregateRating : "aggregateRating"
+VisualArtwork ||--}o Text : "alternativeHeadline"
+VisualArtwork ||--}o MediaObject : "associatedMedia"
+VisualArtwork ||--}o Audience : "audience"
+VisualArtwork ||--}o Text : "award"
+VisualArtwork ||--}o Text : "awards"
+VisualArtwork ||--}o Person : "character"
+VisualArtwork ||--}o Comment : "comment"
+VisualArtwork ||--}o Integer : "commentCount"
+VisualArtwork ||--}o Text : "conditionsOfAccess"
+VisualArtwork ||--}o DateTime : "contentReferenceTime"
+VisualArtwork ||--}o Text : "copyrightNotice"
+VisualArtwork ||--}o Number : "copyrightYear"
+VisualArtwork ||--}o Country : "countryOfOrigin"
+VisualArtwork ||--}o Text : "creditText"
+VisualArtwork ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+VisualArtwork ||--}o URL : "discussionUrl"
+VisualArtwork ||--}o Person : "editor"
+VisualArtwork ||--}o AlignmentObject : "educationalAlignment"
+VisualArtwork ||--}o MediaObject : "encoding"
+VisualArtwork ||--}o MediaObject : "encodings"
+VisualArtwork ||--}o CreativeWork : "exampleOfWork"
+VisualArtwork ||--}o Grant : "funding"
+VisualArtwork ||--}o Text : "headline"
+VisualArtwork ||--}o InteractionCounter : "interactionStatistic"
+VisualArtwork ||--}o Text : "interactivityType"
+VisualArtwork ||--}o Boolean : "isAccessibleForFree"
+VisualArtwork ||--}o Boolean : "isFamilyFriendly"
+VisualArtwork ||--}o Place : "locationCreated"
+VisualArtwork ||--}o Thing : "mentions"
+VisualArtwork ||--}o PublicationEvent : "publication"
+VisualArtwork ||--}o Organization : "publisherImprint"
+VisualArtwork ||--}o Event : "recordedAt"
+VisualArtwork ||--}o PublicationEvent : "releasedEvent"
+VisualArtwork ||--}o Review : "review"
+VisualArtwork ||--}o Review : "reviews"
+VisualArtwork ||--}o Date : "sdDatePublished"
+VisualArtwork ||--}o Organization : "sourceOrganization"
+VisualArtwork ||--}o Place : "spatial"
+VisualArtwork ||--}o Text : "text"
+VisualArtwork ||--}o ImageObject : "thumbnail"
+VisualArtwork ||--}o URL : "thumbnailUrl"
+VisualArtwork ||--}o Duration : "timeRequired"
+VisualArtwork ||--}o CreativeWork : "translationOfWork"
+VisualArtwork ||--}o Text : "typicalAgeRange"
+VisualArtwork ||--}o CreativeWork : "workTranslation"
+VisualArtwork ||--}o Text : "alternateName"
+VisualArtwork ||--}o Text : "disambiguatingDescription"
+VisualArtwork ||--}o Text : "name"
+VisualArtwork ||--}o URL : "sameAs"
+VisualArtwork ||--}o Action : "potentialAction"
+VisualArtwork ||--}o URL : "url"
+

@@ -1,0 +1,46 @@
+erDiagram
+BrokerageAccount {
+    stringList amount  
+    stringList annualPercentageRate  
+    stringList feesAndCommissionsSpecification  
+    stringList interestRate  
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BrokerageAccount ||--}o AggregateRating : "aggregateRating"
+BrokerageAccount ||--}o Audience : "audience"
+BrokerageAccount ||--}o ServiceChannel : "availableChannel"
+BrokerageAccount ||--}o Text : "award"
+BrokerageAccount ||--}o Certification : "hasCertification"
+BrokerageAccount ||--}o OfferCatalog : "hasOfferCatalog"
+BrokerageAccount ||--}o OpeningHoursSpecification : "hoursAvailable"
+BrokerageAccount ||--}o Thing : "produces"
+BrokerageAccount ||--}o Text : "providerMobility"
+BrokerageAccount ||--}o Review : "review"
+BrokerageAccount ||--}o Audience : "serviceAudience"
+BrokerageAccount ||--}o Thing : "serviceOutput"
+BrokerageAccount ||--}o Text : "slogan"
+BrokerageAccount ||--}o Text : "alternateName"
+BrokerageAccount ||--}o Text : "disambiguatingDescription"
+BrokerageAccount ||--}o Text : "name"
+BrokerageAccount ||--}o URL : "sameAs"
+BrokerageAccount ||--}o Action : "potentialAction"
+BrokerageAccount ||--}o URL : "url"
+

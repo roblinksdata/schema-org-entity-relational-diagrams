@@ -1,0 +1,18 @@
+erDiagram
+ItemListOrderType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ItemListOrderType ||--}o Text : "alternateName"
+ItemListOrderType ||--}o Text : "disambiguatingDescription"
+ItemListOrderType ||--}o Text : "name"
+ItemListOrderType ||--}o URL : "sameAs"
+ItemListOrderType ||--}o Action : "potentialAction"
+ItemListOrderType ||--}o URL : "url"
+

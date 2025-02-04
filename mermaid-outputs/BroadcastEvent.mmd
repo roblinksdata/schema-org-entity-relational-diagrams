@@ -1,0 +1,65 @@
+erDiagram
+BroadcastEvent {
+    stringList subtitleLanguage  
+    stringList publishedBy  
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BroadcastEvent ||--}o Event : "broadcastOfEvent"
+BroadcastEvent ||--}o Boolean : "isLiveBroadcast"
+BroadcastEvent ||--}o Text : "videoFormat"
+BroadcastEvent ||--}o Boolean : "free"
+BroadcastEvent ||--}o BroadcastService : "publishedOn"
+BroadcastEvent ||--}o Thing : "about"
+BroadcastEvent ||--}o Duration : "duration"
+BroadcastEvent ||--}o CreativeWork : "workFeatured"
+BroadcastEvent ||--}o CreativeWork : "workPerformed"
+BroadcastEvent ||--}o AggregateRating : "aggregateRating"
+BroadcastEvent ||--}o Audience : "audience"
+BroadcastEvent ||--}o Person : "director"
+BroadcastEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+BroadcastEvent ||--}o Schedule : "eventSchedule"
+BroadcastEvent ||--}o EventStatusType : "eventStatus"
+BroadcastEvent ||--}o Grant : "funding"
+BroadcastEvent ||--}o Boolean : "isAccessibleForFree"
+BroadcastEvent ||--}o Integer : "maximumAttendeeCapacity"
+BroadcastEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+BroadcastEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+BroadcastEvent ||--}o Date : "previousStartDate"
+BroadcastEvent ||--}o CreativeWork : "recordedIn"
+BroadcastEvent ||--}o Integer : "remainingAttendeeCapacity"
+BroadcastEvent ||--}o Review : "review"
+BroadcastEvent ||--}o Event : "subEvent"
+BroadcastEvent ||--}o Event : "subEvents"
+BroadcastEvent ||--}o Event : "superEvent"
+BroadcastEvent ||--}o Text : "typicalAgeRange"
+BroadcastEvent ||--}o Text : "alternateName"
+BroadcastEvent ||--}o Text : "disambiguatingDescription"
+BroadcastEvent ||--}o Text : "name"
+BroadcastEvent ||--}o URL : "sameAs"
+BroadcastEvent ||--}o Action : "potentialAction"
+BroadcastEvent ||--}o URL : "url"
+

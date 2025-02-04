@@ -1,0 +1,28 @@
+erDiagram
+MedicalRiskScore {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalRiskScore ||--}o Text : "algorithm"
+MedicalRiskScore ||--}o MedicalEntity : "estimatesRiskOf"
+MedicalRiskScore ||--}o MedicalRiskFactor : "includedRiskFactor"
+MedicalRiskScore ||--}o MedicalCode : "code"
+MedicalRiskScore ||--}o Grant : "funding"
+MedicalRiskScore ||--}o MedicalGuideline : "guideline"
+MedicalRiskScore ||--}o MedicineSystem : "medicineSystem"
+MedicalRiskScore ||--}o Organization : "recognizingAuthority"
+MedicalRiskScore ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalRiskScore ||--}o MedicalStudy : "study"
+MedicalRiskScore ||--}o Text : "alternateName"
+MedicalRiskScore ||--}o Text : "disambiguatingDescription"
+MedicalRiskScore ||--}o Text : "name"
+MedicalRiskScore ||--}o URL : "sameAs"
+MedicalRiskScore ||--}o Action : "potentialAction"
+MedicalRiskScore ||--}o URL : "url"
+

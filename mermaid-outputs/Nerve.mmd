@@ -1,0 +1,37 @@
+erDiagram
+Nerve {
+    stringList sensoryUnit  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Nerve ||--}o AnatomicalStructure : "branch"
+Nerve ||--}o Muscle : "nerveMotor"
+Nerve ||--}o BrainStructure : "sourcedFrom"
+Nerve ||--}o Text : "associatedPathophysiology"
+Nerve ||--}o Text : "bodyLocation"
+Nerve ||--}o AnatomicalStructure : "connectedTo"
+Nerve ||--}o ImageObject : "diagram"
+Nerve ||--}o AnatomicalSystem : "partOfSystem"
+Nerve ||--}o MedicalCondition : "relatedCondition"
+Nerve ||--}o MedicalTherapy : "relatedTherapy"
+Nerve ||--}o AnatomicalStructure : "subStructure"
+Nerve ||--}o MedicalCode : "code"
+Nerve ||--}o Grant : "funding"
+Nerve ||--}o MedicalGuideline : "guideline"
+Nerve ||--}o MedicineSystem : "medicineSystem"
+Nerve ||--}o Organization : "recognizingAuthority"
+Nerve ||--}o MedicalSpecialty : "relevantSpecialty"
+Nerve ||--}o MedicalStudy : "study"
+Nerve ||--}o Text : "alternateName"
+Nerve ||--}o Text : "disambiguatingDescription"
+Nerve ||--}o Text : "name"
+Nerve ||--}o URL : "sameAs"
+Nerve ||--}o Action : "potentialAction"
+Nerve ||--}o URL : "url"
+

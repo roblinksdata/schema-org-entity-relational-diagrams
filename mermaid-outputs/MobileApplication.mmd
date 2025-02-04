@@ -1,0 +1,156 @@
+erDiagram
+MobileApplication {
+    stringList applicationCategory  
+    stringList applicationSubCategory  
+    stringList featureList  
+    stringList memoryRequirements  
+    stringList releaseNotes  
+    stringList requirements  
+    stringList screenshot  
+    stringList softwareRequirements  
+    stringList storageRequirements  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MobileApplication ||--}o Text : "carrierRequirements"
+MobileApplication ||--}o Text : "applicationSuite"
+MobileApplication ||--}o Text : "availableOnDevice"
+MobileApplication ||--}o Text : "countriesNotSupported"
+MobileApplication ||--}o Text : "countriesSupported"
+MobileApplication ||--}o Text : "device"
+MobileApplication ||--}o URL : "downloadUrl"
+MobileApplication ||--}o Text : "fileSize"
+MobileApplication ||--}o URL : "installUrl"
+MobileApplication ||--}o Text : "operatingSystem"
+MobileApplication ||--}o Text : "permissions"
+MobileApplication ||--}o Text : "processorRequirements"
+MobileApplication ||--}o SoftwareApplication : "softwareAddOn"
+MobileApplication ||--}o CreativeWork : "softwareHelp"
+MobileApplication ||--}o Text : "softwareVersion"
+MobileApplication ||--}o DataFeed : "supportingData"
+MobileApplication ||--}o Thing : "about"
+MobileApplication ||--}o Place : "contentLocation"
+MobileApplication ||--}o CreativeWork : "hasPart"
+MobileApplication ||--}o Claim : "interpretedAsClaim"
+MobileApplication ||--}o Thing : "mainEntity"
+MobileApplication ||--}o Place : "spatialCoverage"
+MobileApplication ||--}o CreativeWork : "workExample"
+MobileApplication ||--}o Text : "abstract"
+MobileApplication ||--}o Text : "accessMode"
+MobileApplication ||--}o ItemList : "accessModeSufficient"
+MobileApplication ||--}o Text : "accessibilityAPI"
+MobileApplication ||--}o Text : "accessibilityControl"
+MobileApplication ||--}o Text : "accessibilityFeature"
+MobileApplication ||--}o Text : "accessibilityHazard"
+MobileApplication ||--}o Text : "accessibilitySummary"
+MobileApplication ||--}o Person : "accountablePerson"
+MobileApplication ||--}o AggregateRating : "aggregateRating"
+MobileApplication ||--}o Text : "alternativeHeadline"
+MobileApplication ||--}o MediaObject : "associatedMedia"
+MobileApplication ||--}o Audience : "audience"
+MobileApplication ||--}o Text : "award"
+MobileApplication ||--}o Text : "awards"
+MobileApplication ||--}o Person : "character"
+MobileApplication ||--}o Comment : "comment"
+MobileApplication ||--}o Integer : "commentCount"
+MobileApplication ||--}o Text : "conditionsOfAccess"
+MobileApplication ||--}o DateTime : "contentReferenceTime"
+MobileApplication ||--}o Text : "copyrightNotice"
+MobileApplication ||--}o Number : "copyrightYear"
+MobileApplication ||--}o Country : "countryOfOrigin"
+MobileApplication ||--}o Text : "creditText"
+MobileApplication ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+MobileApplication ||--}o URL : "discussionUrl"
+MobileApplication ||--}o Person : "editor"
+MobileApplication ||--}o AlignmentObject : "educationalAlignment"
+MobileApplication ||--}o MediaObject : "encoding"
+MobileApplication ||--}o MediaObject : "encodings"
+MobileApplication ||--}o CreativeWork : "exampleOfWork"
+MobileApplication ||--}o Grant : "funding"
+MobileApplication ||--}o Text : "headline"
+MobileApplication ||--}o InteractionCounter : "interactionStatistic"
+MobileApplication ||--}o Text : "interactivityType"
+MobileApplication ||--}o Boolean : "isAccessibleForFree"
+MobileApplication ||--}o Boolean : "isFamilyFriendly"
+MobileApplication ||--}o Place : "locationCreated"
+MobileApplication ||--}o Thing : "mentions"
+MobileApplication ||--}o PublicationEvent : "publication"
+MobileApplication ||--}o Organization : "publisherImprint"
+MobileApplication ||--}o Event : "recordedAt"
+MobileApplication ||--}o PublicationEvent : "releasedEvent"
+MobileApplication ||--}o Review : "review"
+MobileApplication ||--}o Review : "reviews"
+MobileApplication ||--}o Date : "sdDatePublished"
+MobileApplication ||--}o Organization : "sourceOrganization"
+MobileApplication ||--}o Place : "spatial"
+MobileApplication ||--}o Text : "text"
+MobileApplication ||--}o ImageObject : "thumbnail"
+MobileApplication ||--}o URL : "thumbnailUrl"
+MobileApplication ||--}o Duration : "timeRequired"
+MobileApplication ||--}o CreativeWork : "translationOfWork"
+MobileApplication ||--}o Text : "typicalAgeRange"
+MobileApplication ||--}o CreativeWork : "workTranslation"
+MobileApplication ||--}o Text : "alternateName"
+MobileApplication ||--}o Text : "disambiguatingDescription"
+MobileApplication ||--}o Text : "name"
+MobileApplication ||--}o URL : "sameAs"
+MobileApplication ||--}o Action : "potentialAction"
+MobileApplication ||--}o URL : "url"
+

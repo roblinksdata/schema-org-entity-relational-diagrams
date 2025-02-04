@@ -1,0 +1,21 @@
+erDiagram
+OwnershipInfo {
+    stringList acquiredFrom  
+    stringList typeOfGood  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OwnershipInfo ||--}o DateTime : "ownedFrom"
+OwnershipInfo ||--}o DateTime : "ownedThrough"
+OwnershipInfo ||--}o Text : "alternateName"
+OwnershipInfo ||--}o Text : "disambiguatingDescription"
+OwnershipInfo ||--}o Text : "name"
+OwnershipInfo ||--}o URL : "sameAs"
+OwnershipInfo ||--}o Action : "potentialAction"
+OwnershipInfo ||--}o URL : "url"
+

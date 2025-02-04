@@ -1,0 +1,20 @@
+erDiagram
+BroadcastFrequencySpecification {
+    stringList broadcastFrequencyValue  
+    stringList broadcastSignalModulation  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BroadcastFrequencySpecification ||--}o Text : "broadcastSubChannel"
+BroadcastFrequencySpecification ||--}o Text : "alternateName"
+BroadcastFrequencySpecification ||--}o Text : "disambiguatingDescription"
+BroadcastFrequencySpecification ||--}o Text : "name"
+BroadcastFrequencySpecification ||--}o URL : "sameAs"
+BroadcastFrequencySpecification ||--}o Action : "potentialAction"
+BroadcastFrequencySpecification ||--}o URL : "url"
+

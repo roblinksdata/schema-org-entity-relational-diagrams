@@ -1,0 +1,26 @@
+erDiagram
+MedicalRiskFactor {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalRiskFactor ||--}o MedicalEntity : "increasesRiskOf"
+MedicalRiskFactor ||--}o MedicalCode : "code"
+MedicalRiskFactor ||--}o Grant : "funding"
+MedicalRiskFactor ||--}o MedicalGuideline : "guideline"
+MedicalRiskFactor ||--}o MedicineSystem : "medicineSystem"
+MedicalRiskFactor ||--}o Organization : "recognizingAuthority"
+MedicalRiskFactor ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalRiskFactor ||--}o MedicalStudy : "study"
+MedicalRiskFactor ||--}o Text : "alternateName"
+MedicalRiskFactor ||--}o Text : "disambiguatingDescription"
+MedicalRiskFactor ||--}o Text : "name"
+MedicalRiskFactor ||--}o URL : "sameAs"
+MedicalRiskFactor ||--}o Action : "potentialAction"
+MedicalRiskFactor ||--}o URL : "url"
+

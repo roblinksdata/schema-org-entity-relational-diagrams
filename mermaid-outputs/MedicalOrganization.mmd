@@ -1,0 +1,92 @@
+erDiagram
+MedicalOrganization {
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList logo  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList address  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList keywords  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalOrganization ||--}o Text : "healthPlanNetworkId"
+MedicalOrganization ||--}o Boolean : "isAcceptingNewPatients"
+MedicalOrganization ||--}o MedicalSpecialty : "medicalSpecialty"
+MedicalOrganization ||--}o Text : "duns"
+MedicalOrganization ||--}o Text : "globalLocationNumber"
+MedicalOrganization ||--}o URL : "hasGS1DigitalLink"
+MedicalOrganization ||--}o Text : "leiCode"
+MedicalOrganization ||--}o Text : "taxID"
+MedicalOrganization ||--}o InteractionCounter : "agentInteractionStatistic"
+MedicalOrganization ||--}o AggregateRating : "aggregateRating"
+MedicalOrganization ||--}o Person : "alumni"
+MedicalOrganization ||--}o Text : "award"
+MedicalOrganization ||--}o Text : "awards"
+MedicalOrganization ||--}o ContactPoint : "contactPoint"
+MedicalOrganization ||--}o ContactPoint : "contactPoints"
+MedicalOrganization ||--}o Organization : "department"
+MedicalOrganization ||--}o Date : "dissolutionDate"
+MedicalOrganization ||--}o Text : "email"
+MedicalOrganization ||--}o Person : "employee"
+MedicalOrganization ||--}o Person : "employees"
+MedicalOrganization ||--}o Event : "event"
+MedicalOrganization ||--}o Event : "events"
+MedicalOrganization ||--}o Text : "faxNumber"
+MedicalOrganization ||--}o Person : "founders"
+MedicalOrganization ||--}o Date : "foundingDate"
+MedicalOrganization ||--}o Place : "foundingLocation"
+MedicalOrganization ||--}o Grant : "funding"
+MedicalOrganization ||--}o Certification : "hasCertification"
+MedicalOrganization ||--}o EducationalOccupationalCredential : "hasCredential"
+MedicalOrganization ||--}o MemberProgram : "hasMemberProgram"
+MedicalOrganization ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+MedicalOrganization ||--}o OfferCatalog : "hasOfferCatalog"
+MedicalOrganization ||--}o Place : "hasPOS"
+MedicalOrganization ||--}o InteractionCounter : "interactionStatistic"
+MedicalOrganization ||--}o Text : "isicV4"
+MedicalOrganization ||--}o Text : "iso6523Code"
+MedicalOrganization ||--}o Text : "legalName"
+MedicalOrganization ||--}o Offer : "makesOffer"
+MedicalOrganization ||--}o Text : "naics"
+MedicalOrganization ||--}o NonprofitType : "nonprofitStatus"
+MedicalOrganization ||--}o QuantitativeValue : "numberOfEmployees"
+MedicalOrganization ||--}o Organization : "parentOrganization"
+MedicalOrganization ||--}o Review : "review"
+MedicalOrganization ||--}o Review : "reviews"
+MedicalOrganization ||--}o Demand : "seeks"
+MedicalOrganization ||--}o Text : "slogan"
+MedicalOrganization ||--}o Organization : "subOrganization"
+MedicalOrganization ||--}o Text : "telephone"
+MedicalOrganization ||--}o Text : "vatID"
+MedicalOrganization ||--}o Text : "alternateName"
+MedicalOrganization ||--}o Text : "disambiguatingDescription"
+MedicalOrganization ||--}o Text : "name"
+MedicalOrganization ||--}o URL : "sameAs"
+MedicalOrganization ||--}o Action : "potentialAction"
+MedicalOrganization ||--}o URL : "url"
+

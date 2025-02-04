@@ -1,0 +1,21 @@
+erDiagram
+MonetaryGrant {
+    stringList funder  
+    stringList amount  
+    stringList sponsor  
+    stringList fundedItem  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MonetaryGrant ||--}o Text : "alternateName"
+MonetaryGrant ||--}o Text : "disambiguatingDescription"
+MonetaryGrant ||--}o Text : "name"
+MonetaryGrant ||--}o URL : "sameAs"
+MonetaryGrant ||--}o Action : "potentialAction"
+MonetaryGrant ||--}o URL : "url"
+

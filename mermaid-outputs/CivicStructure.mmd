@@ -1,0 +1,65 @@
+erDiagram
+CivicStructure {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CivicStructure ||--}o Text : "openingHours"
+CivicStructure ||--}o Text : "globalLocationNumber"
+CivicStructure ||--}o URL : "hasGS1DigitalLink"
+CivicStructure ||--}o PropertyValue : "additionalProperty"
+CivicStructure ||--}o AggregateRating : "aggregateRating"
+CivicStructure ||--}o LocationFeatureSpecification : "amenityFeature"
+CivicStructure ||--}o Text : "branchCode"
+CivicStructure ||--}o Place : "containedIn"
+CivicStructure ||--}o Place : "containedInPlace"
+CivicStructure ||--}o Place : "containsPlace"
+CivicStructure ||--}o Event : "event"
+CivicStructure ||--}o Event : "events"
+CivicStructure ||--}o Text : "faxNumber"
+CivicStructure ||--}o Certification : "hasCertification"
+CivicStructure ||--}o Boolean : "hasDriveThroughService"
+CivicStructure ||--}o Boolean : "isAccessibleForFree"
+CivicStructure ||--}o Text : "isicV4"
+CivicStructure ||--}o URL : "map"
+CivicStructure ||--}o URL : "maps"
+CivicStructure ||--}o Integer : "maximumAttendeeCapacity"
+CivicStructure ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+CivicStructure ||--}o Boolean : "publicAccess"
+CivicStructure ||--}o Review : "review"
+CivicStructure ||--}o Review : "reviews"
+CivicStructure ||--}o Text : "slogan"
+CivicStructure ||--}o Boolean : "smokingAllowed"
+CivicStructure ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+CivicStructure ||--}o Text : "telephone"
+CivicStructure ||--}o URL : "tourBookingPage"
+CivicStructure ||--}o Text : "alternateName"
+CivicStructure ||--}o Text : "disambiguatingDescription"
+CivicStructure ||--}o Text : "name"
+CivicStructure ||--}o URL : "sameAs"
+CivicStructure ||--}o Action : "potentialAction"
+CivicStructure ||--}o URL : "url"
+

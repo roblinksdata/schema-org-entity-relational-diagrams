@@ -1,0 +1,58 @@
+erDiagram
+UserPlusOnes {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UserPlusOnes ||--}o Thing : "about"
+UserPlusOnes ||--}o Duration : "duration"
+UserPlusOnes ||--}o CreativeWork : "workFeatured"
+UserPlusOnes ||--}o CreativeWork : "workPerformed"
+UserPlusOnes ||--}o AggregateRating : "aggregateRating"
+UserPlusOnes ||--}o Audience : "audience"
+UserPlusOnes ||--}o Person : "director"
+UserPlusOnes ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+UserPlusOnes ||--}o Schedule : "eventSchedule"
+UserPlusOnes ||--}o EventStatusType : "eventStatus"
+UserPlusOnes ||--}o Grant : "funding"
+UserPlusOnes ||--}o Boolean : "isAccessibleForFree"
+UserPlusOnes ||--}o Integer : "maximumAttendeeCapacity"
+UserPlusOnes ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+UserPlusOnes ||--}o Integer : "maximumVirtualAttendeeCapacity"
+UserPlusOnes ||--}o Date : "previousStartDate"
+UserPlusOnes ||--}o CreativeWork : "recordedIn"
+UserPlusOnes ||--}o Integer : "remainingAttendeeCapacity"
+UserPlusOnes ||--}o Review : "review"
+UserPlusOnes ||--}o Event : "subEvent"
+UserPlusOnes ||--}o Event : "subEvents"
+UserPlusOnes ||--}o Event : "superEvent"
+UserPlusOnes ||--}o Text : "typicalAgeRange"
+UserPlusOnes ||--}o Text : "alternateName"
+UserPlusOnes ||--}o Text : "disambiguatingDescription"
+UserPlusOnes ||--}o Text : "name"
+UserPlusOnes ||--}o URL : "sameAs"
+UserPlusOnes ||--}o Action : "potentialAction"
+UserPlusOnes ||--}o URL : "url"
+

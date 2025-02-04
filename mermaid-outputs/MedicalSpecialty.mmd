@@ -1,0 +1,18 @@
+erDiagram
+MedicalSpecialty {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalSpecialty ||--}o Text : "alternateName"
+MedicalSpecialty ||--}o Text : "disambiguatingDescription"
+MedicalSpecialty ||--}o Text : "name"
+MedicalSpecialty ||--}o URL : "sameAs"
+MedicalSpecialty ||--}o Action : "potentialAction"
+MedicalSpecialty ||--}o URL : "url"
+

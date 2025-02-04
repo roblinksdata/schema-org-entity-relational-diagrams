@@ -1,0 +1,18 @@
+erDiagram
+MedicineSystem {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicineSystem ||--}o Text : "alternateName"
+MedicineSystem ||--}o Text : "disambiguatingDescription"
+MedicineSystem ||--}o Text : "name"
+MedicineSystem ||--}o URL : "sameAs"
+MedicineSystem ||--}o Action : "potentialAction"
+MedicineSystem ||--}o URL : "url"
+

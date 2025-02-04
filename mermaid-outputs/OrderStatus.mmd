@@ -1,0 +1,18 @@
+erDiagram
+OrderStatus {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OrderStatus ||--}o Text : "alternateName"
+OrderStatus ||--}o Text : "disambiguatingDescription"
+OrderStatus ||--}o Text : "name"
+OrderStatus ||--}o URL : "sameAs"
+OrderStatus ||--}o Action : "potentialAction"
+OrderStatus ||--}o URL : "url"
+

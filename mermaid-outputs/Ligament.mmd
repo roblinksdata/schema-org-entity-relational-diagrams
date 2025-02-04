@@ -1,0 +1,33 @@
+erDiagram
+Ligament {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Ligament ||--}o Text : "associatedPathophysiology"
+Ligament ||--}o Text : "bodyLocation"
+Ligament ||--}o AnatomicalStructure : "connectedTo"
+Ligament ||--}o ImageObject : "diagram"
+Ligament ||--}o AnatomicalSystem : "partOfSystem"
+Ligament ||--}o MedicalCondition : "relatedCondition"
+Ligament ||--}o MedicalTherapy : "relatedTherapy"
+Ligament ||--}o AnatomicalStructure : "subStructure"
+Ligament ||--}o MedicalCode : "code"
+Ligament ||--}o Grant : "funding"
+Ligament ||--}o MedicalGuideline : "guideline"
+Ligament ||--}o MedicineSystem : "medicineSystem"
+Ligament ||--}o Organization : "recognizingAuthority"
+Ligament ||--}o MedicalSpecialty : "relevantSpecialty"
+Ligament ||--}o MedicalStudy : "study"
+Ligament ||--}o Text : "alternateName"
+Ligament ||--}o Text : "disambiguatingDescription"
+Ligament ||--}o Text : "name"
+Ligament ||--}o URL : "sameAs"
+Ligament ||--}o Action : "potentialAction"
+Ligament ||--}o URL : "url"
+

@@ -1,0 +1,36 @@
+erDiagram
+Joint {
+    stringList functionalClass  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Joint ||--}o Text : "biomechnicalClass"
+Joint ||--}o Text : "structuralClass"
+Joint ||--}o Text : "associatedPathophysiology"
+Joint ||--}o Text : "bodyLocation"
+Joint ||--}o AnatomicalStructure : "connectedTo"
+Joint ||--}o ImageObject : "diagram"
+Joint ||--}o AnatomicalSystem : "partOfSystem"
+Joint ||--}o MedicalCondition : "relatedCondition"
+Joint ||--}o MedicalTherapy : "relatedTherapy"
+Joint ||--}o AnatomicalStructure : "subStructure"
+Joint ||--}o MedicalCode : "code"
+Joint ||--}o Grant : "funding"
+Joint ||--}o MedicalGuideline : "guideline"
+Joint ||--}o MedicineSystem : "medicineSystem"
+Joint ||--}o Organization : "recognizingAuthority"
+Joint ||--}o MedicalSpecialty : "relevantSpecialty"
+Joint ||--}o MedicalStudy : "study"
+Joint ||--}o Text : "alternateName"
+Joint ||--}o Text : "disambiguatingDescription"
+Joint ||--}o Text : "name"
+Joint ||--}o URL : "sameAs"
+Joint ||--}o Action : "potentialAction"
+Joint ||--}o URL : "url"
+

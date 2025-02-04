@@ -1,0 +1,53 @@
+erDiagram
+BroadcastService {
+    stringList broadcastFrequency  
+    stringList inLanguage  
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BroadcastService ||--}o Text : "callSign"
+BroadcastService ||--}o Place : "area"
+BroadcastService ||--}o Organization : "broadcastAffiliateOf"
+BroadcastService ||--}o Text : "broadcastDisplayName"
+BroadcastService ||--}o Text : "broadcastTimezone"
+BroadcastService ||--}o Organization : "broadcaster"
+BroadcastService ||--}o BroadcastChannel : "hasBroadcastChannel"
+BroadcastService ||--}o BroadcastService : "parentService"
+BroadcastService ||--}o Text : "videoFormat"
+BroadcastService ||--}o AggregateRating : "aggregateRating"
+BroadcastService ||--}o Audience : "audience"
+BroadcastService ||--}o ServiceChannel : "availableChannel"
+BroadcastService ||--}o Text : "award"
+BroadcastService ||--}o Certification : "hasCertification"
+BroadcastService ||--}o OfferCatalog : "hasOfferCatalog"
+BroadcastService ||--}o OpeningHoursSpecification : "hoursAvailable"
+BroadcastService ||--}o Thing : "produces"
+BroadcastService ||--}o Text : "providerMobility"
+BroadcastService ||--}o Review : "review"
+BroadcastService ||--}o Audience : "serviceAudience"
+BroadcastService ||--}o Thing : "serviceOutput"
+BroadcastService ||--}o Text : "slogan"
+BroadcastService ||--}o Text : "alternateName"
+BroadcastService ||--}o Text : "disambiguatingDescription"
+BroadcastService ||--}o Text : "name"
+BroadcastService ||--}o URL : "sameAs"
+BroadcastService ||--}o Action : "potentialAction"
+BroadcastService ||--}o URL : "url"
+

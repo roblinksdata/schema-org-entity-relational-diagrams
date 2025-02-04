@@ -1,0 +1,133 @@
+erDiagram
+ArchiveComponent {
+    stringList itemLocation  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ArchiveComponent ||--}o ArchiveOrganization : "holdingArchive"
+ArchiveComponent ||--}o Thing : "about"
+ArchiveComponent ||--}o Place : "contentLocation"
+ArchiveComponent ||--}o CreativeWork : "hasPart"
+ArchiveComponent ||--}o Claim : "interpretedAsClaim"
+ArchiveComponent ||--}o Thing : "mainEntity"
+ArchiveComponent ||--}o Place : "spatialCoverage"
+ArchiveComponent ||--}o CreativeWork : "workExample"
+ArchiveComponent ||--}o Text : "abstract"
+ArchiveComponent ||--}o Text : "accessMode"
+ArchiveComponent ||--}o ItemList : "accessModeSufficient"
+ArchiveComponent ||--}o Text : "accessibilityAPI"
+ArchiveComponent ||--}o Text : "accessibilityControl"
+ArchiveComponent ||--}o Text : "accessibilityFeature"
+ArchiveComponent ||--}o Text : "accessibilityHazard"
+ArchiveComponent ||--}o Text : "accessibilitySummary"
+ArchiveComponent ||--}o Person : "accountablePerson"
+ArchiveComponent ||--}o AggregateRating : "aggregateRating"
+ArchiveComponent ||--}o Text : "alternativeHeadline"
+ArchiveComponent ||--}o MediaObject : "associatedMedia"
+ArchiveComponent ||--}o Audience : "audience"
+ArchiveComponent ||--}o Text : "award"
+ArchiveComponent ||--}o Text : "awards"
+ArchiveComponent ||--}o Person : "character"
+ArchiveComponent ||--}o Comment : "comment"
+ArchiveComponent ||--}o Integer : "commentCount"
+ArchiveComponent ||--}o Text : "conditionsOfAccess"
+ArchiveComponent ||--}o DateTime : "contentReferenceTime"
+ArchiveComponent ||--}o Text : "copyrightNotice"
+ArchiveComponent ||--}o Number : "copyrightYear"
+ArchiveComponent ||--}o Country : "countryOfOrigin"
+ArchiveComponent ||--}o Text : "creditText"
+ArchiveComponent ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+ArchiveComponent ||--}o URL : "discussionUrl"
+ArchiveComponent ||--}o Person : "editor"
+ArchiveComponent ||--}o AlignmentObject : "educationalAlignment"
+ArchiveComponent ||--}o MediaObject : "encoding"
+ArchiveComponent ||--}o MediaObject : "encodings"
+ArchiveComponent ||--}o CreativeWork : "exampleOfWork"
+ArchiveComponent ||--}o Grant : "funding"
+ArchiveComponent ||--}o Text : "headline"
+ArchiveComponent ||--}o InteractionCounter : "interactionStatistic"
+ArchiveComponent ||--}o Text : "interactivityType"
+ArchiveComponent ||--}o Boolean : "isAccessibleForFree"
+ArchiveComponent ||--}o Boolean : "isFamilyFriendly"
+ArchiveComponent ||--}o Place : "locationCreated"
+ArchiveComponent ||--}o Thing : "mentions"
+ArchiveComponent ||--}o PublicationEvent : "publication"
+ArchiveComponent ||--}o Organization : "publisherImprint"
+ArchiveComponent ||--}o Event : "recordedAt"
+ArchiveComponent ||--}o PublicationEvent : "releasedEvent"
+ArchiveComponent ||--}o Review : "review"
+ArchiveComponent ||--}o Review : "reviews"
+ArchiveComponent ||--}o Date : "sdDatePublished"
+ArchiveComponent ||--}o Organization : "sourceOrganization"
+ArchiveComponent ||--}o Place : "spatial"
+ArchiveComponent ||--}o Text : "text"
+ArchiveComponent ||--}o ImageObject : "thumbnail"
+ArchiveComponent ||--}o URL : "thumbnailUrl"
+ArchiveComponent ||--}o Duration : "timeRequired"
+ArchiveComponent ||--}o CreativeWork : "translationOfWork"
+ArchiveComponent ||--}o Text : "typicalAgeRange"
+ArchiveComponent ||--}o CreativeWork : "workTranslation"
+ArchiveComponent ||--}o Text : "alternateName"
+ArchiveComponent ||--}o Text : "disambiguatingDescription"
+ArchiveComponent ||--}o Text : "name"
+ArchiveComponent ||--}o URL : "sameAs"
+ArchiveComponent ||--}o Action : "potentialAction"
+ArchiveComponent ||--}o URL : "url"
+

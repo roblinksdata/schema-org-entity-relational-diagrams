@@ -1,0 +1,58 @@
+erDiagram
+FoodEvent {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+FoodEvent ||--}o Thing : "about"
+FoodEvent ||--}o Duration : "duration"
+FoodEvent ||--}o CreativeWork : "workFeatured"
+FoodEvent ||--}o CreativeWork : "workPerformed"
+FoodEvent ||--}o AggregateRating : "aggregateRating"
+FoodEvent ||--}o Audience : "audience"
+FoodEvent ||--}o Person : "director"
+FoodEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+FoodEvent ||--}o Schedule : "eventSchedule"
+FoodEvent ||--}o EventStatusType : "eventStatus"
+FoodEvent ||--}o Grant : "funding"
+FoodEvent ||--}o Boolean : "isAccessibleForFree"
+FoodEvent ||--}o Integer : "maximumAttendeeCapacity"
+FoodEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+FoodEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+FoodEvent ||--}o Date : "previousStartDate"
+FoodEvent ||--}o CreativeWork : "recordedIn"
+FoodEvent ||--}o Integer : "remainingAttendeeCapacity"
+FoodEvent ||--}o Review : "review"
+FoodEvent ||--}o Event : "subEvent"
+FoodEvent ||--}o Event : "subEvents"
+FoodEvent ||--}o Event : "superEvent"
+FoodEvent ||--}o Text : "typicalAgeRange"
+FoodEvent ||--}o Text : "alternateName"
+FoodEvent ||--}o Text : "disambiguatingDescription"
+FoodEvent ||--}o Text : "name"
+FoodEvent ||--}o URL : "sameAs"
+FoodEvent ||--}o Action : "potentialAction"
+FoodEvent ||--}o URL : "url"
+

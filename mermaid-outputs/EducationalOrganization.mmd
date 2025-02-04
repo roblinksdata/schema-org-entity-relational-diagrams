@@ -1,0 +1,122 @@
+erDiagram
+EducationalOrganization {
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList logo  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList address  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList keywords  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+    stringList photo  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+}
+
+EducationalOrganization ||--}o Person : "alumni"
+EducationalOrganization ||--}o Text : "openingHours"
+EducationalOrganization ||--}o Text : "duns"
+EducationalOrganization ||--}o Text : "globalLocationNumber"
+EducationalOrganization ||--}o URL : "hasGS1DigitalLink"
+EducationalOrganization ||--}o Text : "leiCode"
+EducationalOrganization ||--}o Text : "taxID"
+EducationalOrganization ||--}o InteractionCounter : "agentInteractionStatistic"
+EducationalOrganization ||--}o AggregateRating : "aggregateRating"
+EducationalOrganization ||--}o Text : "award"
+EducationalOrganization ||--}o Text : "awards"
+EducationalOrganization ||--}o ContactPoint : "contactPoint"
+EducationalOrganization ||--}o ContactPoint : "contactPoints"
+EducationalOrganization ||--}o Organization : "department"
+EducationalOrganization ||--}o Date : "dissolutionDate"
+EducationalOrganization ||--}o Text : "email"
+EducationalOrganization ||--}o Person : "employee"
+EducationalOrganization ||--}o Person : "employees"
+EducationalOrganization ||--}o Event : "event"
+EducationalOrganization ||--}o Event : "events"
+EducationalOrganization ||--}o Text : "faxNumber"
+EducationalOrganization ||--}o Person : "founders"
+EducationalOrganization ||--}o Date : "foundingDate"
+EducationalOrganization ||--}o Place : "foundingLocation"
+EducationalOrganization ||--}o Grant : "funding"
+EducationalOrganization ||--}o Certification : "hasCertification"
+EducationalOrganization ||--}o EducationalOccupationalCredential : "hasCredential"
+EducationalOrganization ||--}o MemberProgram : "hasMemberProgram"
+EducationalOrganization ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+EducationalOrganization ||--}o OfferCatalog : "hasOfferCatalog"
+EducationalOrganization ||--}o Place : "hasPOS"
+EducationalOrganization ||--}o InteractionCounter : "interactionStatistic"
+EducationalOrganization ||--}o Text : "isicV4"
+EducationalOrganization ||--}o Text : "iso6523Code"
+EducationalOrganization ||--}o Text : "legalName"
+EducationalOrganization ||--}o Offer : "makesOffer"
+EducationalOrganization ||--}o Text : "naics"
+EducationalOrganization ||--}o NonprofitType : "nonprofitStatus"
+EducationalOrganization ||--}o QuantitativeValue : "numberOfEmployees"
+EducationalOrganization ||--}o Organization : "parentOrganization"
+EducationalOrganization ||--}o Review : "review"
+EducationalOrganization ||--}o Review : "reviews"
+EducationalOrganization ||--}o Demand : "seeks"
+EducationalOrganization ||--}o Text : "slogan"
+EducationalOrganization ||--}o Organization : "subOrganization"
+EducationalOrganization ||--}o Text : "telephone"
+EducationalOrganization ||--}o Text : "vatID"
+EducationalOrganization ||--}o Text : "alternateName"
+EducationalOrganization ||--}o Text : "disambiguatingDescription"
+EducationalOrganization ||--}o Text : "name"
+EducationalOrganization ||--}o URL : "sameAs"
+EducationalOrganization ||--}o Action : "potentialAction"
+EducationalOrganization ||--}o URL : "url"
+EducationalOrganization ||--}o PropertyValue : "additionalProperty"
+EducationalOrganization ||--}o LocationFeatureSpecification : "amenityFeature"
+EducationalOrganization ||--}o Text : "branchCode"
+EducationalOrganization ||--}o Place : "containedIn"
+EducationalOrganization ||--}o Place : "containedInPlace"
+EducationalOrganization ||--}o Place : "containsPlace"
+EducationalOrganization ||--}o Boolean : "hasDriveThroughService"
+EducationalOrganization ||--}o Boolean : "isAccessibleForFree"
+EducationalOrganization ||--}o URL : "map"
+EducationalOrganization ||--}o URL : "maps"
+EducationalOrganization ||--}o Integer : "maximumAttendeeCapacity"
+EducationalOrganization ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+EducationalOrganization ||--}o Boolean : "publicAccess"
+EducationalOrganization ||--}o Boolean : "smokingAllowed"
+EducationalOrganization ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+EducationalOrganization ||--}o URL : "tourBookingPage"
+

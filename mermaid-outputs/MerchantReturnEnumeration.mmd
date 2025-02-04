@@ -1,0 +1,18 @@
+erDiagram
+MerchantReturnEnumeration {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MerchantReturnEnumeration ||--}o Text : "alternateName"
+MerchantReturnEnumeration ||--}o Text : "disambiguatingDescription"
+MerchantReturnEnumeration ||--}o Text : "name"
+MerchantReturnEnumeration ||--}o URL : "sameAs"
+MerchantReturnEnumeration ||--}o Action : "potentialAction"
+MerchantReturnEnumeration ||--}o URL : "url"
+

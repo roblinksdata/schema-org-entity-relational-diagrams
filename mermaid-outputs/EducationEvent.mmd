@@ -1,0 +1,61 @@
+erDiagram
+EducationEvent {
+    stringList assesses  
+    stringList educationalLevel  
+    stringList teaches  
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EducationEvent ||--}o Thing : "about"
+EducationEvent ||--}o Duration : "duration"
+EducationEvent ||--}o CreativeWork : "workFeatured"
+EducationEvent ||--}o CreativeWork : "workPerformed"
+EducationEvent ||--}o AggregateRating : "aggregateRating"
+EducationEvent ||--}o Audience : "audience"
+EducationEvent ||--}o Person : "director"
+EducationEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+EducationEvent ||--}o Schedule : "eventSchedule"
+EducationEvent ||--}o EventStatusType : "eventStatus"
+EducationEvent ||--}o Grant : "funding"
+EducationEvent ||--}o Boolean : "isAccessibleForFree"
+EducationEvent ||--}o Integer : "maximumAttendeeCapacity"
+EducationEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+EducationEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+EducationEvent ||--}o Date : "previousStartDate"
+EducationEvent ||--}o CreativeWork : "recordedIn"
+EducationEvent ||--}o Integer : "remainingAttendeeCapacity"
+EducationEvent ||--}o Review : "review"
+EducationEvent ||--}o Event : "subEvent"
+EducationEvent ||--}o Event : "subEvents"
+EducationEvent ||--}o Event : "superEvent"
+EducationEvent ||--}o Text : "typicalAgeRange"
+EducationEvent ||--}o Text : "alternateName"
+EducationEvent ||--}o Text : "disambiguatingDescription"
+EducationEvent ||--}o Text : "name"
+EducationEvent ||--}o URL : "sameAs"
+EducationEvent ||--}o Action : "potentialAction"
+EducationEvent ||--}o URL : "url"
+

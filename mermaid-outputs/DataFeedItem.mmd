@@ -1,0 +1,21 @@
+erDiagram
+DataFeedItem {
+    stringList dateCreated  
+    stringList dateDeleted  
+    stringList dateModified  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DataFeedItem ||--}o Thing : "item"
+DataFeedItem ||--}o Text : "alternateName"
+DataFeedItem ||--}o Text : "disambiguatingDescription"
+DataFeedItem ||--}o Text : "name"
+DataFeedItem ||--}o URL : "sameAs"
+DataFeedItem ||--}o Action : "potentialAction"
+DataFeedItem ||--}o URL : "url"
+

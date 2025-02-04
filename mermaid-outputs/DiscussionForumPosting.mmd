@@ -1,0 +1,140 @@
+erDiagram
+DiscussionForumPosting {
+    stringList backstory  
+    stringList pageEnd  
+    stringList pageStart  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DiscussionForumPosting ||--}o CreativeWork : "sharedContent"
+DiscussionForumPosting ||--}o Text : "articleBody"
+DiscussionForumPosting ||--}o Text : "articleSection"
+DiscussionForumPosting ||--}o Text : "pagination"
+DiscussionForumPosting ||--}o Integer : "wordCount"
+DiscussionForumPosting ||--}o Thing : "about"
+DiscussionForumPosting ||--}o Place : "contentLocation"
+DiscussionForumPosting ||--}o CreativeWork : "hasPart"
+DiscussionForumPosting ||--}o Claim : "interpretedAsClaim"
+DiscussionForumPosting ||--}o Thing : "mainEntity"
+DiscussionForumPosting ||--}o Place : "spatialCoverage"
+DiscussionForumPosting ||--}o CreativeWork : "workExample"
+DiscussionForumPosting ||--}o Text : "abstract"
+DiscussionForumPosting ||--}o Text : "accessMode"
+DiscussionForumPosting ||--}o ItemList : "accessModeSufficient"
+DiscussionForumPosting ||--}o Text : "accessibilityAPI"
+DiscussionForumPosting ||--}o Text : "accessibilityControl"
+DiscussionForumPosting ||--}o Text : "accessibilityFeature"
+DiscussionForumPosting ||--}o Text : "accessibilityHazard"
+DiscussionForumPosting ||--}o Text : "accessibilitySummary"
+DiscussionForumPosting ||--}o Person : "accountablePerson"
+DiscussionForumPosting ||--}o AggregateRating : "aggregateRating"
+DiscussionForumPosting ||--}o Text : "alternativeHeadline"
+DiscussionForumPosting ||--}o MediaObject : "associatedMedia"
+DiscussionForumPosting ||--}o Audience : "audience"
+DiscussionForumPosting ||--}o Text : "award"
+DiscussionForumPosting ||--}o Text : "awards"
+DiscussionForumPosting ||--}o Person : "character"
+DiscussionForumPosting ||--}o Comment : "comment"
+DiscussionForumPosting ||--}o Integer : "commentCount"
+DiscussionForumPosting ||--}o Text : "conditionsOfAccess"
+DiscussionForumPosting ||--}o DateTime : "contentReferenceTime"
+DiscussionForumPosting ||--}o Text : "copyrightNotice"
+DiscussionForumPosting ||--}o Number : "copyrightYear"
+DiscussionForumPosting ||--}o Country : "countryOfOrigin"
+DiscussionForumPosting ||--}o Text : "creditText"
+DiscussionForumPosting ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+DiscussionForumPosting ||--}o URL : "discussionUrl"
+DiscussionForumPosting ||--}o Person : "editor"
+DiscussionForumPosting ||--}o AlignmentObject : "educationalAlignment"
+DiscussionForumPosting ||--}o MediaObject : "encoding"
+DiscussionForumPosting ||--}o MediaObject : "encodings"
+DiscussionForumPosting ||--}o CreativeWork : "exampleOfWork"
+DiscussionForumPosting ||--}o Grant : "funding"
+DiscussionForumPosting ||--}o Text : "headline"
+DiscussionForumPosting ||--}o InteractionCounter : "interactionStatistic"
+DiscussionForumPosting ||--}o Text : "interactivityType"
+DiscussionForumPosting ||--}o Boolean : "isAccessibleForFree"
+DiscussionForumPosting ||--}o Boolean : "isFamilyFriendly"
+DiscussionForumPosting ||--}o Place : "locationCreated"
+DiscussionForumPosting ||--}o Thing : "mentions"
+DiscussionForumPosting ||--}o PublicationEvent : "publication"
+DiscussionForumPosting ||--}o Organization : "publisherImprint"
+DiscussionForumPosting ||--}o Event : "recordedAt"
+DiscussionForumPosting ||--}o PublicationEvent : "releasedEvent"
+DiscussionForumPosting ||--}o Review : "review"
+DiscussionForumPosting ||--}o Review : "reviews"
+DiscussionForumPosting ||--}o Date : "sdDatePublished"
+DiscussionForumPosting ||--}o Organization : "sourceOrganization"
+DiscussionForumPosting ||--}o Place : "spatial"
+DiscussionForumPosting ||--}o Text : "text"
+DiscussionForumPosting ||--}o ImageObject : "thumbnail"
+DiscussionForumPosting ||--}o URL : "thumbnailUrl"
+DiscussionForumPosting ||--}o Duration : "timeRequired"
+DiscussionForumPosting ||--}o CreativeWork : "translationOfWork"
+DiscussionForumPosting ||--}o Text : "typicalAgeRange"
+DiscussionForumPosting ||--}o CreativeWork : "workTranslation"
+DiscussionForumPosting ||--}o Text : "alternateName"
+DiscussionForumPosting ||--}o Text : "disambiguatingDescription"
+DiscussionForumPosting ||--}o Text : "name"
+DiscussionForumPosting ||--}o URL : "sameAs"
+DiscussionForumPosting ||--}o Action : "potentialAction"
+DiscussionForumPosting ||--}o URL : "url"
+

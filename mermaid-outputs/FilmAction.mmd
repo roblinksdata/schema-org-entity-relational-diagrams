@@ -1,0 +1,30 @@
+erDiagram
+FilmAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+FilmAction ||--}o Thing : "instrument"
+FilmAction ||--}o Thing : "object"
+FilmAction ||--}o Thing : "result"
+FilmAction ||--}o HowTo : "actionProcess"
+FilmAction ||--}o ActionStatusType : "actionStatus"
+FilmAction ||--}o Thing : "error"
+FilmAction ||--}o Text : "alternateName"
+FilmAction ||--}o Text : "disambiguatingDescription"
+FilmAction ||--}o Text : "name"
+FilmAction ||--}o URL : "sameAs"
+FilmAction ||--}o Action : "potentialAction"
+FilmAction ||--}o URL : "url"
+

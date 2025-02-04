@@ -1,0 +1,18 @@
+erDiagram
+MusicAlbumProductionType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MusicAlbumProductionType ||--}o Text : "alternateName"
+MusicAlbumProductionType ||--}o Text : "disambiguatingDescription"
+MusicAlbumProductionType ||--}o Text : "name"
+MusicAlbumProductionType ||--}o URL : "sameAs"
+MusicAlbumProductionType ||--}o Action : "potentialAction"
+MusicAlbumProductionType ||--}o URL : "url"
+

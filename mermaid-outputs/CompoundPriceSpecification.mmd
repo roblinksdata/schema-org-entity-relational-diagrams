@@ -1,0 +1,30 @@
+erDiagram
+CompoundPriceSpecification {
+    stringList priceType  
+    stringList membershipPointsEarned  
+    stringList price  
+    stringList validFrom  
+    stringList validThrough  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CompoundPriceSpecification ||--}o UnitPriceSpecification : "priceComponent"
+CompoundPriceSpecification ||--}o QuantitativeValue : "eligibleQuantity"
+CompoundPriceSpecification ||--}o PriceSpecification : "eligibleTransactionVolume"
+CompoundPriceSpecification ||--}o Number : "maxPrice"
+CompoundPriceSpecification ||--}o Number : "minPrice"
+CompoundPriceSpecification ||--}o Text : "priceCurrency"
+CompoundPriceSpecification ||--}o MemberProgramTier : "validForMemberTier"
+CompoundPriceSpecification ||--}o Boolean : "valueAddedTaxIncluded"
+CompoundPriceSpecification ||--}o Text : "alternateName"
+CompoundPriceSpecification ||--}o Text : "disambiguatingDescription"
+CompoundPriceSpecification ||--}o Text : "name"
+CompoundPriceSpecification ||--}o URL : "sameAs"
+CompoundPriceSpecification ||--}o Action : "potentialAction"
+CompoundPriceSpecification ||--}o URL : "url"
+

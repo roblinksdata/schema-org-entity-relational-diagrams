@@ -1,0 +1,31 @@
+erDiagram
+MedicalTrial {
+    stringList sponsor  
+    stringList status  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalTrial ||--}o MedicalTrialDesign : "trialDesign"
+MedicalTrial ||--}o MedicalCondition : "healthCondition"
+MedicalTrial ||--}o AdministrativeArea : "studyLocation"
+MedicalTrial ||--}o MedicalEntity : "studySubject"
+MedicalTrial ||--}o MedicalCode : "code"
+MedicalTrial ||--}o Grant : "funding"
+MedicalTrial ||--}o MedicalGuideline : "guideline"
+MedicalTrial ||--}o MedicineSystem : "medicineSystem"
+MedicalTrial ||--}o Organization : "recognizingAuthority"
+MedicalTrial ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalTrial ||--}o MedicalStudy : "study"
+MedicalTrial ||--}o Text : "alternateName"
+MedicalTrial ||--}o Text : "disambiguatingDescription"
+MedicalTrial ||--}o Text : "name"
+MedicalTrial ||--}o URL : "sameAs"
+MedicalTrial ||--}o Action : "potentialAction"
+MedicalTrial ||--}o URL : "url"
+

@@ -1,0 +1,30 @@
+erDiagram
+TrainReservation {
+    stringList bookingAgent  
+    stringList broker  
+    stringList provider  
+    stringList totalPrice  
+    stringList underName  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TrainReservation ||--}o DateTime : "bookingTime"
+TrainReservation ||--}o DateTime : "modifiedTime"
+TrainReservation ||--}o Text : "priceCurrency"
+TrainReservation ||--}o ProgramMembership : "programMembershipUsed"
+TrainReservation ||--}o Thing : "reservationFor"
+TrainReservation ||--}o Text : "reservationId"
+TrainReservation ||--}o ReservationStatusType : "reservationStatus"
+TrainReservation ||--}o Ticket : "reservedTicket"
+TrainReservation ||--}o Text : "alternateName"
+TrainReservation ||--}o Text : "disambiguatingDescription"
+TrainReservation ||--}o Text : "name"
+TrainReservation ||--}o URL : "sameAs"
+TrainReservation ||--}o Action : "potentialAction"
+TrainReservation ||--}o URL : "url"
+

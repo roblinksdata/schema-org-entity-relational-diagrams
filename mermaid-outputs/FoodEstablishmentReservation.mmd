@@ -1,0 +1,33 @@
+erDiagram
+FoodEstablishmentReservation {
+    stringList endTime  
+    stringList partySize  
+    stringList startTime  
+    stringList bookingAgent  
+    stringList broker  
+    stringList provider  
+    stringList totalPrice  
+    stringList underName  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+FoodEstablishmentReservation ||--}o DateTime : "bookingTime"
+FoodEstablishmentReservation ||--}o DateTime : "modifiedTime"
+FoodEstablishmentReservation ||--}o Text : "priceCurrency"
+FoodEstablishmentReservation ||--}o ProgramMembership : "programMembershipUsed"
+FoodEstablishmentReservation ||--}o Thing : "reservationFor"
+FoodEstablishmentReservation ||--}o Text : "reservationId"
+FoodEstablishmentReservation ||--}o ReservationStatusType : "reservationStatus"
+FoodEstablishmentReservation ||--}o Ticket : "reservedTicket"
+FoodEstablishmentReservation ||--}o Text : "alternateName"
+FoodEstablishmentReservation ||--}o Text : "disambiguatingDescription"
+FoodEstablishmentReservation ||--}o Text : "name"
+FoodEstablishmentReservation ||--}o URL : "sameAs"
+FoodEstablishmentReservation ||--}o Action : "potentialAction"
+FoodEstablishmentReservation ||--}o URL : "url"
+

@@ -1,0 +1,29 @@
+erDiagram
+FloorPlan {
+    stringList layoutImage  
+    stringList numberOfBedrooms  
+    stringList numberOfRooms  
+    stringList petsAllowed  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+FloorPlan ||--}o LocationFeatureSpecification : "amenityFeature"
+FloorPlan ||--}o QuantitativeValue : "floorSize"
+FloorPlan ||--}o Accommodation : "isPlanForApartment"
+FloorPlan ||--}o QuantitativeValue : "numberOfAccommodationUnits"
+FloorPlan ||--}o QuantitativeValue : "numberOfAvailableAccommodationUnits"
+FloorPlan ||--}o Integer : "numberOfBathroomsTotal"
+FloorPlan ||--}o Number : "numberOfFullBathrooms"
+FloorPlan ||--}o Number : "numberOfPartialBathrooms"
+FloorPlan ||--}o Text : "alternateName"
+FloorPlan ||--}o Text : "disambiguatingDescription"
+FloorPlan ||--}o Text : "name"
+FloorPlan ||--}o URL : "sameAs"
+FloorPlan ||--}o Action : "potentialAction"
+FloorPlan ||--}o URL : "url"
+

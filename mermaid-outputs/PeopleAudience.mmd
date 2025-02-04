@@ -1,0 +1,28 @@
+erDiagram
+PeopleAudience {
+    stringList suggestedGender  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PeopleAudience ||--}o MedicalCondition : "healthCondition"
+PeopleAudience ||--}o Text : "requiredGender"
+PeopleAudience ||--}o Integer : "requiredMaxAge"
+PeopleAudience ||--}o Integer : "requiredMinAge"
+PeopleAudience ||--}o QuantitativeValue : "suggestedAge"
+PeopleAudience ||--}o Number : "suggestedMaxAge"
+PeopleAudience ||--}o QuantitativeValue : "suggestedMeasurement"
+PeopleAudience ||--}o Number : "suggestedMinAge"
+PeopleAudience ||--}o Text : "audienceType"
+PeopleAudience ||--}o AdministrativeArea : "geographicArea"
+PeopleAudience ||--}o Text : "alternateName"
+PeopleAudience ||--}o Text : "disambiguatingDescription"
+PeopleAudience ||--}o Text : "name"
+PeopleAudience ||--}o URL : "sameAs"
+PeopleAudience ||--}o Action : "potentialAction"
+PeopleAudience ||--}o URL : "url"
+

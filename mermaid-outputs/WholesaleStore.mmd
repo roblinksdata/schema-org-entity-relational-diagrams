@@ -1,0 +1,126 @@
+erDiagram
+WholesaleStore {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+WholesaleStore ||--}o Organization : "branchOf"
+WholesaleStore ||--}o Text : "currenciesAccepted"
+WholesaleStore ||--}o Text : "openingHours"
+WholesaleStore ||--}o Text : "paymentAccepted"
+WholesaleStore ||--}o Text : "priceRange"
+WholesaleStore ||--}o Text : "globalLocationNumber"
+WholesaleStore ||--}o URL : "hasGS1DigitalLink"
+WholesaleStore ||--}o PropertyValue : "additionalProperty"
+WholesaleStore ||--}o AggregateRating : "aggregateRating"
+WholesaleStore ||--}o LocationFeatureSpecification : "amenityFeature"
+WholesaleStore ||--}o Text : "branchCode"
+WholesaleStore ||--}o Place : "containedIn"
+WholesaleStore ||--}o Place : "containedInPlace"
+WholesaleStore ||--}o Place : "containsPlace"
+WholesaleStore ||--}o Event : "event"
+WholesaleStore ||--}o Event : "events"
+WholesaleStore ||--}o Text : "faxNumber"
+WholesaleStore ||--}o Certification : "hasCertification"
+WholesaleStore ||--}o Boolean : "hasDriveThroughService"
+WholesaleStore ||--}o Boolean : "isAccessibleForFree"
+WholesaleStore ||--}o Text : "isicV4"
+WholesaleStore ||--}o URL : "map"
+WholesaleStore ||--}o URL : "maps"
+WholesaleStore ||--}o Integer : "maximumAttendeeCapacity"
+WholesaleStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+WholesaleStore ||--}o Boolean : "publicAccess"
+WholesaleStore ||--}o Review : "review"
+WholesaleStore ||--}o Review : "reviews"
+WholesaleStore ||--}o Text : "slogan"
+WholesaleStore ||--}o Boolean : "smokingAllowed"
+WholesaleStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+WholesaleStore ||--}o Text : "telephone"
+WholesaleStore ||--}o URL : "tourBookingPage"
+WholesaleStore ||--}o Text : "duns"
+WholesaleStore ||--}o Text : "leiCode"
+WholesaleStore ||--}o Text : "taxID"
+WholesaleStore ||--}o InteractionCounter : "agentInteractionStatistic"
+WholesaleStore ||--}o Person : "alumni"
+WholesaleStore ||--}o Text : "award"
+WholesaleStore ||--}o Text : "awards"
+WholesaleStore ||--}o ContactPoint : "contactPoint"
+WholesaleStore ||--}o ContactPoint : "contactPoints"
+WholesaleStore ||--}o Organization : "department"
+WholesaleStore ||--}o Date : "dissolutionDate"
+WholesaleStore ||--}o Text : "email"
+WholesaleStore ||--}o Person : "employee"
+WholesaleStore ||--}o Person : "employees"
+WholesaleStore ||--}o Person : "founders"
+WholesaleStore ||--}o Date : "foundingDate"
+WholesaleStore ||--}o Place : "foundingLocation"
+WholesaleStore ||--}o Grant : "funding"
+WholesaleStore ||--}o EducationalOccupationalCredential : "hasCredential"
+WholesaleStore ||--}o MemberProgram : "hasMemberProgram"
+WholesaleStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+WholesaleStore ||--}o OfferCatalog : "hasOfferCatalog"
+WholesaleStore ||--}o Place : "hasPOS"
+WholesaleStore ||--}o InteractionCounter : "interactionStatistic"
+WholesaleStore ||--}o Text : "iso6523Code"
+WholesaleStore ||--}o Text : "legalName"
+WholesaleStore ||--}o Offer : "makesOffer"
+WholesaleStore ||--}o Text : "naics"
+WholesaleStore ||--}o NonprofitType : "nonprofitStatus"
+WholesaleStore ||--}o QuantitativeValue : "numberOfEmployees"
+WholesaleStore ||--}o Organization : "parentOrganization"
+WholesaleStore ||--}o Demand : "seeks"
+WholesaleStore ||--}o Organization : "subOrganization"
+WholesaleStore ||--}o Text : "vatID"
+WholesaleStore ||--}o Text : "alternateName"
+WholesaleStore ||--}o Text : "disambiguatingDescription"
+WholesaleStore ||--}o Text : "name"
+WholesaleStore ||--}o URL : "sameAs"
+WholesaleStore ||--}o Action : "potentialAction"
+WholesaleStore ||--}o URL : "url"
+

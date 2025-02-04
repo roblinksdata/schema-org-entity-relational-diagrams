@@ -1,0 +1,172 @@
+erDiagram
+VideoGame {
+    stringList actor  
+    stringList gamePlatform  
+    stringList musicBy  
+    stringList applicationCategory  
+    stringList applicationSubCategory  
+    stringList featureList  
+    stringList memoryRequirements  
+    stringList releaseNotes  
+    stringList requirements  
+    stringList screenshot  
+    stringList softwareRequirements  
+    stringList storageRequirements  
+    stringList gameLocation  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+VideoGame ||--}o Person : "actors"
+VideoGame ||--}o CreativeWork : "cheatCode"
+VideoGame ||--}o Person : "director"
+VideoGame ||--}o Person : "directors"
+VideoGame ||--}o Text : "gameEdition"
+VideoGame ||--}o GameServer : "gameServer"
+VideoGame ||--}o CreativeWork : "gameTip"
+VideoGame ||--}o GamePlayMode : "playMode"
+VideoGame ||--}o VideoObject : "trailer"
+VideoGame ||--}o Text : "applicationSuite"
+VideoGame ||--}o Text : "availableOnDevice"
+VideoGame ||--}o Text : "countriesNotSupported"
+VideoGame ||--}o Text : "countriesSupported"
+VideoGame ||--}o Text : "device"
+VideoGame ||--}o URL : "downloadUrl"
+VideoGame ||--}o Text : "fileSize"
+VideoGame ||--}o URL : "installUrl"
+VideoGame ||--}o Text : "operatingSystem"
+VideoGame ||--}o Text : "permissions"
+VideoGame ||--}o Text : "processorRequirements"
+VideoGame ||--}o SoftwareApplication : "softwareAddOn"
+VideoGame ||--}o CreativeWork : "softwareHelp"
+VideoGame ||--}o Text : "softwareVersion"
+VideoGame ||--}o DataFeed : "supportingData"
+VideoGame ||--}o Thing : "characterAttribute"
+VideoGame ||--}o Thing : "gameItem"
+VideoGame ||--}o QuantitativeValue : "numberOfPlayers"
+VideoGame ||--}o Thing : "quest"
+VideoGame ||--}o Thing : "about"
+VideoGame ||--}o Place : "contentLocation"
+VideoGame ||--}o CreativeWork : "hasPart"
+VideoGame ||--}o Claim : "interpretedAsClaim"
+VideoGame ||--}o Thing : "mainEntity"
+VideoGame ||--}o Place : "spatialCoverage"
+VideoGame ||--}o CreativeWork : "workExample"
+VideoGame ||--}o Text : "abstract"
+VideoGame ||--}o Text : "accessMode"
+VideoGame ||--}o ItemList : "accessModeSufficient"
+VideoGame ||--}o Text : "accessibilityAPI"
+VideoGame ||--}o Text : "accessibilityControl"
+VideoGame ||--}o Text : "accessibilityFeature"
+VideoGame ||--}o Text : "accessibilityHazard"
+VideoGame ||--}o Text : "accessibilitySummary"
+VideoGame ||--}o Person : "accountablePerson"
+VideoGame ||--}o AggregateRating : "aggregateRating"
+VideoGame ||--}o Text : "alternativeHeadline"
+VideoGame ||--}o MediaObject : "associatedMedia"
+VideoGame ||--}o Audience : "audience"
+VideoGame ||--}o Text : "award"
+VideoGame ||--}o Text : "awards"
+VideoGame ||--}o Person : "character"
+VideoGame ||--}o Comment : "comment"
+VideoGame ||--}o Integer : "commentCount"
+VideoGame ||--}o Text : "conditionsOfAccess"
+VideoGame ||--}o DateTime : "contentReferenceTime"
+VideoGame ||--}o Text : "copyrightNotice"
+VideoGame ||--}o Number : "copyrightYear"
+VideoGame ||--}o Country : "countryOfOrigin"
+VideoGame ||--}o Text : "creditText"
+VideoGame ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+VideoGame ||--}o URL : "discussionUrl"
+VideoGame ||--}o Person : "editor"
+VideoGame ||--}o AlignmentObject : "educationalAlignment"
+VideoGame ||--}o MediaObject : "encoding"
+VideoGame ||--}o MediaObject : "encodings"
+VideoGame ||--}o CreativeWork : "exampleOfWork"
+VideoGame ||--}o Grant : "funding"
+VideoGame ||--}o Text : "headline"
+VideoGame ||--}o InteractionCounter : "interactionStatistic"
+VideoGame ||--}o Text : "interactivityType"
+VideoGame ||--}o Boolean : "isAccessibleForFree"
+VideoGame ||--}o Boolean : "isFamilyFriendly"
+VideoGame ||--}o Place : "locationCreated"
+VideoGame ||--}o Thing : "mentions"
+VideoGame ||--}o PublicationEvent : "publication"
+VideoGame ||--}o Organization : "publisherImprint"
+VideoGame ||--}o Event : "recordedAt"
+VideoGame ||--}o PublicationEvent : "releasedEvent"
+VideoGame ||--}o Review : "review"
+VideoGame ||--}o Review : "reviews"
+VideoGame ||--}o Date : "sdDatePublished"
+VideoGame ||--}o Organization : "sourceOrganization"
+VideoGame ||--}o Place : "spatial"
+VideoGame ||--}o Text : "text"
+VideoGame ||--}o ImageObject : "thumbnail"
+VideoGame ||--}o URL : "thumbnailUrl"
+VideoGame ||--}o Duration : "timeRequired"
+VideoGame ||--}o CreativeWork : "translationOfWork"
+VideoGame ||--}o Text : "typicalAgeRange"
+VideoGame ||--}o CreativeWork : "workTranslation"
+VideoGame ||--}o Text : "alternateName"
+VideoGame ||--}o Text : "disambiguatingDescription"
+VideoGame ||--}o Text : "name"
+VideoGame ||--}o URL : "sameAs"
+VideoGame ||--}o Action : "potentialAction"
+VideoGame ||--}o URL : "url"
+

@@ -1,0 +1,126 @@
+erDiagram
+LegalService {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LegalService ||--}o Organization : "branchOf"
+LegalService ||--}o Text : "currenciesAccepted"
+LegalService ||--}o Text : "openingHours"
+LegalService ||--}o Text : "paymentAccepted"
+LegalService ||--}o Text : "priceRange"
+LegalService ||--}o Text : "globalLocationNumber"
+LegalService ||--}o URL : "hasGS1DigitalLink"
+LegalService ||--}o PropertyValue : "additionalProperty"
+LegalService ||--}o AggregateRating : "aggregateRating"
+LegalService ||--}o LocationFeatureSpecification : "amenityFeature"
+LegalService ||--}o Text : "branchCode"
+LegalService ||--}o Place : "containedIn"
+LegalService ||--}o Place : "containedInPlace"
+LegalService ||--}o Place : "containsPlace"
+LegalService ||--}o Event : "event"
+LegalService ||--}o Event : "events"
+LegalService ||--}o Text : "faxNumber"
+LegalService ||--}o Certification : "hasCertification"
+LegalService ||--}o Boolean : "hasDriveThroughService"
+LegalService ||--}o Boolean : "isAccessibleForFree"
+LegalService ||--}o Text : "isicV4"
+LegalService ||--}o URL : "map"
+LegalService ||--}o URL : "maps"
+LegalService ||--}o Integer : "maximumAttendeeCapacity"
+LegalService ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+LegalService ||--}o Boolean : "publicAccess"
+LegalService ||--}o Review : "review"
+LegalService ||--}o Review : "reviews"
+LegalService ||--}o Text : "slogan"
+LegalService ||--}o Boolean : "smokingAllowed"
+LegalService ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+LegalService ||--}o Text : "telephone"
+LegalService ||--}o URL : "tourBookingPage"
+LegalService ||--}o Text : "duns"
+LegalService ||--}o Text : "leiCode"
+LegalService ||--}o Text : "taxID"
+LegalService ||--}o InteractionCounter : "agentInteractionStatistic"
+LegalService ||--}o Person : "alumni"
+LegalService ||--}o Text : "award"
+LegalService ||--}o Text : "awards"
+LegalService ||--}o ContactPoint : "contactPoint"
+LegalService ||--}o ContactPoint : "contactPoints"
+LegalService ||--}o Organization : "department"
+LegalService ||--}o Date : "dissolutionDate"
+LegalService ||--}o Text : "email"
+LegalService ||--}o Person : "employee"
+LegalService ||--}o Person : "employees"
+LegalService ||--}o Person : "founders"
+LegalService ||--}o Date : "foundingDate"
+LegalService ||--}o Place : "foundingLocation"
+LegalService ||--}o Grant : "funding"
+LegalService ||--}o EducationalOccupationalCredential : "hasCredential"
+LegalService ||--}o MemberProgram : "hasMemberProgram"
+LegalService ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+LegalService ||--}o OfferCatalog : "hasOfferCatalog"
+LegalService ||--}o Place : "hasPOS"
+LegalService ||--}o InteractionCounter : "interactionStatistic"
+LegalService ||--}o Text : "iso6523Code"
+LegalService ||--}o Text : "legalName"
+LegalService ||--}o Offer : "makesOffer"
+LegalService ||--}o Text : "naics"
+LegalService ||--}o NonprofitType : "nonprofitStatus"
+LegalService ||--}o QuantitativeValue : "numberOfEmployees"
+LegalService ||--}o Organization : "parentOrganization"
+LegalService ||--}o Demand : "seeks"
+LegalService ||--}o Organization : "subOrganization"
+LegalService ||--}o Text : "vatID"
+LegalService ||--}o Text : "alternateName"
+LegalService ||--}o Text : "disambiguatingDescription"
+LegalService ||--}o Text : "name"
+LegalService ||--}o URL : "sameAs"
+LegalService ||--}o Action : "potentialAction"
+LegalService ||--}o URL : "url"
+

@@ -1,0 +1,30 @@
+erDiagram
+AnatomicalSystem {
+    stringList comprisedOf  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+AnatomicalSystem ||--}o Text : "associatedPathophysiology"
+AnatomicalSystem ||--}o MedicalCondition : "relatedCondition"
+AnatomicalSystem ||--}o AnatomicalStructure : "relatedStructure"
+AnatomicalSystem ||--}o MedicalTherapy : "relatedTherapy"
+AnatomicalSystem ||--}o MedicalCode : "code"
+AnatomicalSystem ||--}o Grant : "funding"
+AnatomicalSystem ||--}o MedicalGuideline : "guideline"
+AnatomicalSystem ||--}o MedicineSystem : "medicineSystem"
+AnatomicalSystem ||--}o Organization : "recognizingAuthority"
+AnatomicalSystem ||--}o MedicalSpecialty : "relevantSpecialty"
+AnatomicalSystem ||--}o MedicalStudy : "study"
+AnatomicalSystem ||--}o Text : "alternateName"
+AnatomicalSystem ||--}o Text : "disambiguatingDescription"
+AnatomicalSystem ||--}o Text : "name"
+AnatomicalSystem ||--}o URL : "sameAs"
+AnatomicalSystem ||--}o Action : "potentialAction"
+AnatomicalSystem ||--}o URL : "url"
+

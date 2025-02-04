@@ -1,0 +1,48 @@
+erDiagram
+BankAccount {
+    stringList bankAccountType  
+    stringList annualPercentageRate  
+    stringList feesAndCommissionsSpecification  
+    stringList interestRate  
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BankAccount ||--}o MonetaryAmount : "accountMinimumInflow"
+BankAccount ||--}o MonetaryAmount : "accountOverdraftLimit"
+BankAccount ||--}o AggregateRating : "aggregateRating"
+BankAccount ||--}o Audience : "audience"
+BankAccount ||--}o ServiceChannel : "availableChannel"
+BankAccount ||--}o Text : "award"
+BankAccount ||--}o Certification : "hasCertification"
+BankAccount ||--}o OfferCatalog : "hasOfferCatalog"
+BankAccount ||--}o OpeningHoursSpecification : "hoursAvailable"
+BankAccount ||--}o Thing : "produces"
+BankAccount ||--}o Text : "providerMobility"
+BankAccount ||--}o Review : "review"
+BankAccount ||--}o Audience : "serviceAudience"
+BankAccount ||--}o Thing : "serviceOutput"
+BankAccount ||--}o Text : "slogan"
+BankAccount ||--}o Text : "alternateName"
+BankAccount ||--}o Text : "disambiguatingDescription"
+BankAccount ||--}o Text : "name"
+BankAccount ||--}o URL : "sameAs"
+BankAccount ||--}o Action : "potentialAction"
+BankAccount ||--}o URL : "url"
+

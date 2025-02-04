@@ -1,0 +1,30 @@
+erDiagram
+FindAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+FindAction ||--}o Thing : "instrument"
+FindAction ||--}o Thing : "object"
+FindAction ||--}o Thing : "result"
+FindAction ||--}o HowTo : "actionProcess"
+FindAction ||--}o ActionStatusType : "actionStatus"
+FindAction ||--}o Thing : "error"
+FindAction ||--}o Text : "alternateName"
+FindAction ||--}o Text : "disambiguatingDescription"
+FindAction ||--}o Text : "name"
+FindAction ||--}o URL : "sameAs"
+FindAction ||--}o Action : "potentialAction"
+FindAction ||--}o URL : "url"
+

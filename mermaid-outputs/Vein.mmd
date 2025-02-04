@@ -1,0 +1,36 @@
+erDiagram
+Vein {
+    stringList regionDrained  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Vein ||--}o Vessel : "drainsTo"
+Vein ||--}o AnatomicalStructure : "tributary"
+Vein ||--}o Text : "associatedPathophysiology"
+Vein ||--}o Text : "bodyLocation"
+Vein ||--}o AnatomicalStructure : "connectedTo"
+Vein ||--}o ImageObject : "diagram"
+Vein ||--}o AnatomicalSystem : "partOfSystem"
+Vein ||--}o MedicalCondition : "relatedCondition"
+Vein ||--}o MedicalTherapy : "relatedTherapy"
+Vein ||--}o AnatomicalStructure : "subStructure"
+Vein ||--}o MedicalCode : "code"
+Vein ||--}o Grant : "funding"
+Vein ||--}o MedicalGuideline : "guideline"
+Vein ||--}o MedicineSystem : "medicineSystem"
+Vein ||--}o Organization : "recognizingAuthority"
+Vein ||--}o MedicalSpecialty : "relevantSpecialty"
+Vein ||--}o MedicalStudy : "study"
+Vein ||--}o Text : "alternateName"
+Vein ||--}o Text : "disambiguatingDescription"
+Vein ||--}o Text : "name"
+Vein ||--}o URL : "sameAs"
+Vein ||--}o Action : "potentialAction"
+Vein ||--}o URL : "url"
+

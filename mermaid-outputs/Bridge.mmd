@@ -1,0 +1,65 @@
+erDiagram
+Bridge {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Bridge ||--}o Text : "openingHours"
+Bridge ||--}o Text : "globalLocationNumber"
+Bridge ||--}o URL : "hasGS1DigitalLink"
+Bridge ||--}o PropertyValue : "additionalProperty"
+Bridge ||--}o AggregateRating : "aggregateRating"
+Bridge ||--}o LocationFeatureSpecification : "amenityFeature"
+Bridge ||--}o Text : "branchCode"
+Bridge ||--}o Place : "containedIn"
+Bridge ||--}o Place : "containedInPlace"
+Bridge ||--}o Place : "containsPlace"
+Bridge ||--}o Event : "event"
+Bridge ||--}o Event : "events"
+Bridge ||--}o Text : "faxNumber"
+Bridge ||--}o Certification : "hasCertification"
+Bridge ||--}o Boolean : "hasDriveThroughService"
+Bridge ||--}o Boolean : "isAccessibleForFree"
+Bridge ||--}o Text : "isicV4"
+Bridge ||--}o URL : "map"
+Bridge ||--}o URL : "maps"
+Bridge ||--}o Integer : "maximumAttendeeCapacity"
+Bridge ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Bridge ||--}o Boolean : "publicAccess"
+Bridge ||--}o Review : "review"
+Bridge ||--}o Review : "reviews"
+Bridge ||--}o Text : "slogan"
+Bridge ||--}o Boolean : "smokingAllowed"
+Bridge ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Bridge ||--}o Text : "telephone"
+Bridge ||--}o URL : "tourBookingPage"
+Bridge ||--}o Text : "alternateName"
+Bridge ||--}o Text : "disambiguatingDescription"
+Bridge ||--}o Text : "name"
+Bridge ||--}o URL : "sameAs"
+Bridge ||--}o Action : "potentialAction"
+Bridge ||--}o URL : "url"
+

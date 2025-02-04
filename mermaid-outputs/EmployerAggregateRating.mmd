@@ -1,0 +1,26 @@
+erDiagram
+EmployerAggregateRating {
+    stringList author  
+    stringList bestRating  
+    stringList ratingValue  
+    stringList worstRating  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EmployerAggregateRating ||--}o Thing : "itemReviewed"
+EmployerAggregateRating ||--}o Integer : "ratingCount"
+EmployerAggregateRating ||--}o Integer : "reviewCount"
+EmployerAggregateRating ||--}o Text : "ratingExplanation"
+EmployerAggregateRating ||--}o Text : "reviewAspect"
+EmployerAggregateRating ||--}o Text : "alternateName"
+EmployerAggregateRating ||--}o Text : "disambiguatingDescription"
+EmployerAggregateRating ||--}o Text : "name"
+EmployerAggregateRating ||--}o URL : "sameAs"
+EmployerAggregateRating ||--}o Action : "potentialAction"
+EmployerAggregateRating ||--}o URL : "url"
+

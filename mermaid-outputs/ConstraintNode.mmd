@@ -1,0 +1,19 @@
+erDiagram
+ConstraintNode {
+    stringList constraintProperty  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ConstraintNode ||--}o Integer : "numConstraints"
+ConstraintNode ||--}o Text : "alternateName"
+ConstraintNode ||--}o Text : "disambiguatingDescription"
+ConstraintNode ||--}o Text : "name"
+ConstraintNode ||--}o URL : "sameAs"
+ConstraintNode ||--}o Action : "potentialAction"
+ConstraintNode ||--}o URL : "url"
+

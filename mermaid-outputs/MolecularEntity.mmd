@@ -1,0 +1,39 @@
+erDiagram
+MolecularEntity {
+    stringList molecularWeight  
+    stringList monoisotopicMolecularWeight  
+    stringList hasRepresentation  
+    stringList associatedDisease  
+    stringList hasMolecularFunction  
+    stringList isInvolvedInBiologicalProcess  
+    stringList isLocatedInSubcellularLocation  
+    stringList taxonomicRange  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MolecularEntity ||--}o Text : "inChI"
+MolecularEntity ||--}o Text : "inChIKey"
+MolecularEntity ||--}o Text : "smiles"
+MolecularEntity ||--}o DefinedTerm : "chemicalRole"
+MolecularEntity ||--}o Text : "iupacName"
+MolecularEntity ||--}o Text : "molecularFormula"
+MolecularEntity ||--}o DefinedTerm : "potentialUse"
+MolecularEntity ||--}o BioChemEntity : "bioChemInteraction"
+MolecularEntity ||--}o BioChemEntity : "bioChemSimilarity"
+MolecularEntity ||--}o DefinedTerm : "biologicalRole"
+MolecularEntity ||--}o Grant : "funding"
+MolecularEntity ||--}o BioChemEntity : "hasBioChemEntityPart"
+MolecularEntity ||--}o Gene : "isEncodedByBioChemEntity"
+MolecularEntity ||--}o BioChemEntity : "isPartOfBioChemEntity"
+MolecularEntity ||--}o Text : "alternateName"
+MolecularEntity ||--}o Text : "disambiguatingDescription"
+MolecularEntity ||--}o Text : "name"
+MolecularEntity ||--}o URL : "sameAs"
+MolecularEntity ||--}o Action : "potentialAction"
+MolecularEntity ||--}o URL : "url"
+

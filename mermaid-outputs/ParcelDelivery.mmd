@@ -1,0 +1,29 @@
+erDiagram
+ParcelDelivery {
+    stringList expectedArrivalFrom  
+    stringList expectedArrivalUntil  
+    stringList provider  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ParcelDelivery ||--}o Organization : "carrier"
+ParcelDelivery ||--}o PostalAddress : "deliveryAddress"
+ParcelDelivery ||--}o DeliveryEvent : "deliveryStatus"
+ParcelDelivery ||--}o DeliveryMethod : "hasDeliveryMethod"
+ParcelDelivery ||--}o Product : "itemShipped"
+ParcelDelivery ||--}o PostalAddress : "originAddress"
+ParcelDelivery ||--}o Order : "partOfOrder"
+ParcelDelivery ||--}o Text : "trackingNumber"
+ParcelDelivery ||--}o URL : "trackingUrl"
+ParcelDelivery ||--}o Text : "alternateName"
+ParcelDelivery ||--}o Text : "disambiguatingDescription"
+ParcelDelivery ||--}o Text : "name"
+ParcelDelivery ||--}o URL : "sameAs"
+ParcelDelivery ||--}o Action : "potentialAction"
+ParcelDelivery ||--}o URL : "url"
+

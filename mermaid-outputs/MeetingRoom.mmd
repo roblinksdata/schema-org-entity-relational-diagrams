@@ -1,0 +1,79 @@
+erDiagram
+MeetingRoom {
+    stringList bed  
+    stringList leaseLength  
+    stringList numberOfBedrooms  
+    stringList numberOfRooms  
+    stringList petsAllowed  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MeetingRoom ||--}o Text : "accommodationCategory"
+MeetingRoom ||--}o FloorPlan : "accommodationFloorPlan"
+MeetingRoom ||--}o LocationFeatureSpecification : "amenityFeature"
+MeetingRoom ||--}o Text : "floorLevel"
+MeetingRoom ||--}o QuantitativeValue : "floorSize"
+MeetingRoom ||--}o Integer : "numberOfBathroomsTotal"
+MeetingRoom ||--}o Number : "numberOfFullBathrooms"
+MeetingRoom ||--}o Number : "numberOfPartialBathrooms"
+MeetingRoom ||--}o QuantitativeValue : "occupancy"
+MeetingRoom ||--}o Text : "permittedUsage"
+MeetingRoom ||--}o URL : "tourBookingPage"
+MeetingRoom ||--}o Number : "yearBuilt"
+MeetingRoom ||--}o Text : "globalLocationNumber"
+MeetingRoom ||--}o URL : "hasGS1DigitalLink"
+MeetingRoom ||--}o PropertyValue : "additionalProperty"
+MeetingRoom ||--}o AggregateRating : "aggregateRating"
+MeetingRoom ||--}o Text : "branchCode"
+MeetingRoom ||--}o Place : "containedIn"
+MeetingRoom ||--}o Place : "containedInPlace"
+MeetingRoom ||--}o Place : "containsPlace"
+MeetingRoom ||--}o Event : "event"
+MeetingRoom ||--}o Event : "events"
+MeetingRoom ||--}o Text : "faxNumber"
+MeetingRoom ||--}o Certification : "hasCertification"
+MeetingRoom ||--}o Boolean : "hasDriveThroughService"
+MeetingRoom ||--}o Boolean : "isAccessibleForFree"
+MeetingRoom ||--}o Text : "isicV4"
+MeetingRoom ||--}o URL : "map"
+MeetingRoom ||--}o URL : "maps"
+MeetingRoom ||--}o Integer : "maximumAttendeeCapacity"
+MeetingRoom ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+MeetingRoom ||--}o Boolean : "publicAccess"
+MeetingRoom ||--}o Review : "review"
+MeetingRoom ||--}o Review : "reviews"
+MeetingRoom ||--}o Text : "slogan"
+MeetingRoom ||--}o Boolean : "smokingAllowed"
+MeetingRoom ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+MeetingRoom ||--}o Text : "telephone"
+MeetingRoom ||--}o Text : "alternateName"
+MeetingRoom ||--}o Text : "disambiguatingDescription"
+MeetingRoom ||--}o Text : "name"
+MeetingRoom ||--}o URL : "sameAs"
+MeetingRoom ||--}o Action : "potentialAction"
+MeetingRoom ||--}o URL : "url"
+

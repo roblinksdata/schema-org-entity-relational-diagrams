@@ -1,0 +1,58 @@
+erDiagram
+SaleEvent {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SaleEvent ||--}o Thing : "about"
+SaleEvent ||--}o Duration : "duration"
+SaleEvent ||--}o CreativeWork : "workFeatured"
+SaleEvent ||--}o CreativeWork : "workPerformed"
+SaleEvent ||--}o AggregateRating : "aggregateRating"
+SaleEvent ||--}o Audience : "audience"
+SaleEvent ||--}o Person : "director"
+SaleEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+SaleEvent ||--}o Schedule : "eventSchedule"
+SaleEvent ||--}o EventStatusType : "eventStatus"
+SaleEvent ||--}o Grant : "funding"
+SaleEvent ||--}o Boolean : "isAccessibleForFree"
+SaleEvent ||--}o Integer : "maximumAttendeeCapacity"
+SaleEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+SaleEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+SaleEvent ||--}o Date : "previousStartDate"
+SaleEvent ||--}o CreativeWork : "recordedIn"
+SaleEvent ||--}o Integer : "remainingAttendeeCapacity"
+SaleEvent ||--}o Review : "review"
+SaleEvent ||--}o Event : "subEvent"
+SaleEvent ||--}o Event : "subEvents"
+SaleEvent ||--}o Event : "superEvent"
+SaleEvent ||--}o Text : "typicalAgeRange"
+SaleEvent ||--}o Text : "alternateName"
+SaleEvent ||--}o Text : "disambiguatingDescription"
+SaleEvent ||--}o Text : "name"
+SaleEvent ||--}o URL : "sameAs"
+SaleEvent ||--}o Action : "potentialAction"
+SaleEvent ||--}o URL : "url"
+

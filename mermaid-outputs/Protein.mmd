@@ -1,0 +1,31 @@
+erDiagram
+Protein {
+    stringList hasRepresentation  
+    stringList associatedDisease  
+    stringList hasMolecularFunction  
+    stringList isInvolvedInBiologicalProcess  
+    stringList isLocatedInSubcellularLocation  
+    stringList taxonomicRange  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Protein ||--}o Text : "hasBioPolymerSequence"
+Protein ||--}o BioChemEntity : "bioChemInteraction"
+Protein ||--}o BioChemEntity : "bioChemSimilarity"
+Protein ||--}o DefinedTerm : "biologicalRole"
+Protein ||--}o Grant : "funding"
+Protein ||--}o BioChemEntity : "hasBioChemEntityPart"
+Protein ||--}o Gene : "isEncodedByBioChemEntity"
+Protein ||--}o BioChemEntity : "isPartOfBioChemEntity"
+Protein ||--}o Text : "alternateName"
+Protein ||--}o Text : "disambiguatingDescription"
+Protein ||--}o Text : "name"
+Protein ||--}o URL : "sameAs"
+Protein ||--}o Action : "potentialAction"
+Protein ||--}o URL : "url"
+

@@ -1,0 +1,32 @@
+erDiagram
+ChooseAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ChooseAction ||--}o Thing : "actionOption"
+ChooseAction ||--}o Thing : "option"
+ChooseAction ||--}o Thing : "instrument"
+ChooseAction ||--}o Thing : "object"
+ChooseAction ||--}o Thing : "result"
+ChooseAction ||--}o HowTo : "actionProcess"
+ChooseAction ||--}o ActionStatusType : "actionStatus"
+ChooseAction ||--}o Thing : "error"
+ChooseAction ||--}o Text : "alternateName"
+ChooseAction ||--}o Text : "disambiguatingDescription"
+ChooseAction ||--}o Text : "name"
+ChooseAction ||--}o URL : "sameAs"
+ChooseAction ||--}o Action : "potentialAction"
+ChooseAction ||--}o URL : "url"
+

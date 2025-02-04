@@ -1,0 +1,29 @@
+erDiagram
+MaximumDoseSchedule {
+    stringList doseValue  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MaximumDoseSchedule ||--}o Text : "frequency"
+MaximumDoseSchedule ||--}o Text : "doseUnit"
+MaximumDoseSchedule ||--}o Text : "targetPopulation"
+MaximumDoseSchedule ||--}o MedicalCode : "code"
+MaximumDoseSchedule ||--}o Grant : "funding"
+MaximumDoseSchedule ||--}o MedicalGuideline : "guideline"
+MaximumDoseSchedule ||--}o MedicineSystem : "medicineSystem"
+MaximumDoseSchedule ||--}o Organization : "recognizingAuthority"
+MaximumDoseSchedule ||--}o MedicalSpecialty : "relevantSpecialty"
+MaximumDoseSchedule ||--}o MedicalStudy : "study"
+MaximumDoseSchedule ||--}o Text : "alternateName"
+MaximumDoseSchedule ||--}o Text : "disambiguatingDescription"
+MaximumDoseSchedule ||--}o Text : "name"
+MaximumDoseSchedule ||--}o URL : "sameAs"
+MaximumDoseSchedule ||--}o Action : "potentialAction"
+MaximumDoseSchedule ||--}o URL : "url"
+

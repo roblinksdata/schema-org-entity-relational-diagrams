@@ -1,0 +1,77 @@
+erDiagram
+ProductModel {
+    stringList isVariantOf  
+    stringList asin  
+    stringList category  
+    stringList colorSwatch  
+    stringList gtin  
+    stringList logo  
+    stringList material  
+    stringList brand  
+    stringList depth  
+    stringList height  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList keywords  
+    stringList model  
+    stringList negativeNotes  
+    stringList offers  
+    stringList pattern  
+    stringList positiveNotes  
+    stringList size  
+    stringList width  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ProductModel ||--}o ProductModel : "predecessorOf"
+ProductModel ||--}o ProductModel : "successorOf"
+ProductModel ||--}o Text : "gtin12"
+ProductModel ||--}o Text : "gtin13"
+ProductModel ||--}o Text : "gtin14"
+ProductModel ||--}o Text : "gtin8"
+ProductModel ||--}o URL : "hasGS1DigitalLink"
+ProductModel ||--}o Text : "nsn"
+ProductModel ||--}o Text : "productID"
+ProductModel ||--}o Text : "sku"
+ProductModel ||--}o PropertyValue : "additionalProperty"
+ProductModel ||--}o AggregateRating : "aggregateRating"
+ProductModel ||--}o Audience : "audience"
+ProductModel ||--}o Text : "award"
+ProductModel ||--}o Text : "awards"
+ProductModel ||--}o Text : "color"
+ProductModel ||--}o Text : "countryOfAssembly"
+ProductModel ||--}o Text : "countryOfLastProcessing"
+ProductModel ||--}o Country : "countryOfOrigin"
+ProductModel ||--}o Grant : "funding"
+ProductModel ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
+ProductModel ||--}o Certification : "hasCertification"
+ProductModel ||--}o EnergyConsumptionDetails : "hasEnergyConsumptionDetails"
+ProductModel ||--}o QuantitativeValue : "hasMeasurement"
+ProductModel ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+ProductModel ||--}o Text : "inProductGroupWithID"
+ProductModel ||--}o Product : "isAccessoryOrSparePartFor"
+ProductModel ||--}o Product : "isConsumableFor"
+ProductModel ||--}o Boolean : "isFamilyFriendly"
+ProductModel ||--}o OfferItemCondition : "itemCondition"
+ProductModel ||--}o Organization : "manufacturer"
+ProductModel ||--}o Text : "mobileUrl"
+ProductModel ||--}o Text : "mpn"
+ProductModel ||--}o Date : "productionDate"
+ProductModel ||--}o Date : "purchaseDate"
+ProductModel ||--}o Date : "releaseDate"
+ProductModel ||--}o Review : "review"
+ProductModel ||--}o Review : "reviews"
+ProductModel ||--}o Text : "slogan"
+ProductModel ||--}o QuantitativeValue : "weight"
+ProductModel ||--}o Text : "alternateName"
+ProductModel ||--}o Text : "disambiguatingDescription"
+ProductModel ||--}o Text : "name"
+ProductModel ||--}o URL : "sameAs"
+ProductModel ||--}o Action : "potentialAction"
+ProductModel ||--}o URL : "url"
+

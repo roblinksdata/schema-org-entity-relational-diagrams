@@ -1,0 +1,32 @@
+erDiagram
+DrinkAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DrinkAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
+DrinkAction ||--}o Offer : "expectsAcceptanceOf"
+DrinkAction ||--}o Thing : "instrument"
+DrinkAction ||--}o Thing : "object"
+DrinkAction ||--}o Thing : "result"
+DrinkAction ||--}o HowTo : "actionProcess"
+DrinkAction ||--}o ActionStatusType : "actionStatus"
+DrinkAction ||--}o Thing : "error"
+DrinkAction ||--}o Text : "alternateName"
+DrinkAction ||--}o Text : "disambiguatingDescription"
+DrinkAction ||--}o Text : "name"
+DrinkAction ||--}o URL : "sameAs"
+DrinkAction ||--}o Action : "potentialAction"
+DrinkAction ||--}o URL : "url"
+

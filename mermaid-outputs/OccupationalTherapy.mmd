@@ -1,0 +1,37 @@
+erDiagram
+OccupationalTherapy {
+    stringList contraindication  
+    stringList preparation  
+    stringList status  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OccupationalTherapy ||--}o MedicalTherapy : "duplicateTherapy"
+OccupationalTherapy ||--}o MedicalEntity : "seriousAdverseOutcome"
+OccupationalTherapy ||--}o MedicalEntity : "adverseOutcome"
+OccupationalTherapy ||--}o DoseSchedule : "doseSchedule"
+OccupationalTherapy ||--}o Drug : "drug"
+OccupationalTherapy ||--}o Text : "bodyLocation"
+OccupationalTherapy ||--}o Text : "followup"
+OccupationalTherapy ||--}o Text : "howPerformed"
+OccupationalTherapy ||--}o MedicalProcedureType : "procedureType"
+OccupationalTherapy ||--}o MedicalCode : "code"
+OccupationalTherapy ||--}o Grant : "funding"
+OccupationalTherapy ||--}o MedicalGuideline : "guideline"
+OccupationalTherapy ||--}o MedicineSystem : "medicineSystem"
+OccupationalTherapy ||--}o Organization : "recognizingAuthority"
+OccupationalTherapy ||--}o MedicalSpecialty : "relevantSpecialty"
+OccupationalTherapy ||--}o MedicalStudy : "study"
+OccupationalTherapy ||--}o Text : "alternateName"
+OccupationalTherapy ||--}o Text : "disambiguatingDescription"
+OccupationalTherapy ||--}o Text : "name"
+OccupationalTherapy ||--}o URL : "sameAs"
+OccupationalTherapy ||--}o Action : "potentialAction"
+OccupationalTherapy ||--}o URL : "url"
+

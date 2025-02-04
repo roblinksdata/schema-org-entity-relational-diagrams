@@ -1,0 +1,58 @@
+erDiagram
+VisualArtsEvent {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+VisualArtsEvent ||--}o Thing : "about"
+VisualArtsEvent ||--}o Duration : "duration"
+VisualArtsEvent ||--}o CreativeWork : "workFeatured"
+VisualArtsEvent ||--}o CreativeWork : "workPerformed"
+VisualArtsEvent ||--}o AggregateRating : "aggregateRating"
+VisualArtsEvent ||--}o Audience : "audience"
+VisualArtsEvent ||--}o Person : "director"
+VisualArtsEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+VisualArtsEvent ||--}o Schedule : "eventSchedule"
+VisualArtsEvent ||--}o EventStatusType : "eventStatus"
+VisualArtsEvent ||--}o Grant : "funding"
+VisualArtsEvent ||--}o Boolean : "isAccessibleForFree"
+VisualArtsEvent ||--}o Integer : "maximumAttendeeCapacity"
+VisualArtsEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+VisualArtsEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+VisualArtsEvent ||--}o Date : "previousStartDate"
+VisualArtsEvent ||--}o CreativeWork : "recordedIn"
+VisualArtsEvent ||--}o Integer : "remainingAttendeeCapacity"
+VisualArtsEvent ||--}o Review : "review"
+VisualArtsEvent ||--}o Event : "subEvent"
+VisualArtsEvent ||--}o Event : "subEvents"
+VisualArtsEvent ||--}o Event : "superEvent"
+VisualArtsEvent ||--}o Text : "typicalAgeRange"
+VisualArtsEvent ||--}o Text : "alternateName"
+VisualArtsEvent ||--}o Text : "disambiguatingDescription"
+VisualArtsEvent ||--}o Text : "name"
+VisualArtsEvent ||--}o URL : "sameAs"
+VisualArtsEvent ||--}o Action : "potentialAction"
+VisualArtsEvent ||--}o URL : "url"
+

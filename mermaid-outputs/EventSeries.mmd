@@ -1,0 +1,58 @@
+erDiagram
+EventSeries {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EventSeries ||--}o Thing : "about"
+EventSeries ||--}o Duration : "duration"
+EventSeries ||--}o CreativeWork : "workFeatured"
+EventSeries ||--}o CreativeWork : "workPerformed"
+EventSeries ||--}o AggregateRating : "aggregateRating"
+EventSeries ||--}o Audience : "audience"
+EventSeries ||--}o Person : "director"
+EventSeries ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+EventSeries ||--}o Schedule : "eventSchedule"
+EventSeries ||--}o EventStatusType : "eventStatus"
+EventSeries ||--}o Grant : "funding"
+EventSeries ||--}o Boolean : "isAccessibleForFree"
+EventSeries ||--}o Integer : "maximumAttendeeCapacity"
+EventSeries ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+EventSeries ||--}o Integer : "maximumVirtualAttendeeCapacity"
+EventSeries ||--}o Date : "previousStartDate"
+EventSeries ||--}o CreativeWork : "recordedIn"
+EventSeries ||--}o Integer : "remainingAttendeeCapacity"
+EventSeries ||--}o Review : "review"
+EventSeries ||--}o Event : "subEvent"
+EventSeries ||--}o Event : "subEvents"
+EventSeries ||--}o Event : "superEvent"
+EventSeries ||--}o Text : "typicalAgeRange"
+EventSeries ||--}o Text : "alternateName"
+EventSeries ||--}o Text : "disambiguatingDescription"
+EventSeries ||--}o Text : "name"
+EventSeries ||--}o URL : "sameAs"
+EventSeries ||--}o Action : "potentialAction"
+EventSeries ||--}o URL : "url"
+

@@ -1,0 +1,18 @@
+erDiagram
+CarUsageType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CarUsageType ||--}o Text : "alternateName"
+CarUsageType ||--}o Text : "disambiguatingDescription"
+CarUsageType ||--}o Text : "name"
+CarUsageType ||--}o URL : "sameAs"
+CarUsageType ||--}o Action : "potentialAction"
+CarUsageType ||--}o URL : "url"
+

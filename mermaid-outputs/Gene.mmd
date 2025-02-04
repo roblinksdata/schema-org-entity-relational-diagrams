@@ -1,0 +1,34 @@
+erDiagram
+Gene {
+    stringList expressedIn  
+    stringList hasRepresentation  
+    stringList associatedDisease  
+    stringList hasMolecularFunction  
+    stringList isInvolvedInBiologicalProcess  
+    stringList isLocatedInSubcellularLocation  
+    stringList taxonomicRange  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Gene ||--}o Text : "hasBioPolymerSequence"
+Gene ||--}o Gene : "alternativeOf"
+Gene ||--}o BioChemEntity : "encodesBioChemEntity"
+Gene ||--}o BioChemEntity : "bioChemInteraction"
+Gene ||--}o BioChemEntity : "bioChemSimilarity"
+Gene ||--}o DefinedTerm : "biologicalRole"
+Gene ||--}o Grant : "funding"
+Gene ||--}o BioChemEntity : "hasBioChemEntityPart"
+Gene ||--}o Gene : "isEncodedByBioChemEntity"
+Gene ||--}o BioChemEntity : "isPartOfBioChemEntity"
+Gene ||--}o Text : "alternateName"
+Gene ||--}o Text : "disambiguatingDescription"
+Gene ||--}o Text : "name"
+Gene ||--}o URL : "sameAs"
+Gene ||--}o Action : "potentialAction"
+Gene ||--}o URL : "url"
+

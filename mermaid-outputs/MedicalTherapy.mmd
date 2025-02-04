@@ -1,0 +1,37 @@
+erDiagram
+MedicalTherapy {
+    stringList contraindication  
+    stringList preparation  
+    stringList status  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalTherapy ||--}o MedicalTherapy : "duplicateTherapy"
+MedicalTherapy ||--}o MedicalEntity : "seriousAdverseOutcome"
+MedicalTherapy ||--}o MedicalEntity : "adverseOutcome"
+MedicalTherapy ||--}o DoseSchedule : "doseSchedule"
+MedicalTherapy ||--}o Drug : "drug"
+MedicalTherapy ||--}o Text : "bodyLocation"
+MedicalTherapy ||--}o Text : "followup"
+MedicalTherapy ||--}o Text : "howPerformed"
+MedicalTherapy ||--}o MedicalProcedureType : "procedureType"
+MedicalTherapy ||--}o MedicalCode : "code"
+MedicalTherapy ||--}o Grant : "funding"
+MedicalTherapy ||--}o MedicalGuideline : "guideline"
+MedicalTherapy ||--}o MedicineSystem : "medicineSystem"
+MedicalTherapy ||--}o Organization : "recognizingAuthority"
+MedicalTherapy ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalTherapy ||--}o MedicalStudy : "study"
+MedicalTherapy ||--}o Text : "alternateName"
+MedicalTherapy ||--}o Text : "disambiguatingDescription"
+MedicalTherapy ||--}o Text : "name"
+MedicalTherapy ||--}o URL : "sameAs"
+MedicalTherapy ||--}o Action : "potentialAction"
+MedicalTherapy ||--}o URL : "url"
+

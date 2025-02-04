@@ -1,0 +1,143 @@
+erDiagram
+MediaReview {
+    stringList originalMediaLink  
+    stringList negativeNotes  
+    stringList positiveNotes  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MediaReview ||--}o Text : "originalMediaContextDescription"
+MediaReview ||--}o MediaManipulationRatingEnumeration : "mediaAuthenticityCategory"
+MediaReview ||--}o Review : "associatedClaimReview"
+MediaReview ||--}o Review : "associatedMediaReview"
+MediaReview ||--}o Review : "associatedReview"
+MediaReview ||--}o Thing : "itemReviewed"
+MediaReview ||--}o Text : "reviewAspect"
+MediaReview ||--}o Text : "reviewBody"
+MediaReview ||--}o Rating : "reviewRating"
+MediaReview ||--}o Thing : "about"
+MediaReview ||--}o Place : "contentLocation"
+MediaReview ||--}o CreativeWork : "hasPart"
+MediaReview ||--}o Claim : "interpretedAsClaim"
+MediaReview ||--}o Thing : "mainEntity"
+MediaReview ||--}o Place : "spatialCoverage"
+MediaReview ||--}o CreativeWork : "workExample"
+MediaReview ||--}o Text : "abstract"
+MediaReview ||--}o Text : "accessMode"
+MediaReview ||--}o ItemList : "accessModeSufficient"
+MediaReview ||--}o Text : "accessibilityAPI"
+MediaReview ||--}o Text : "accessibilityControl"
+MediaReview ||--}o Text : "accessibilityFeature"
+MediaReview ||--}o Text : "accessibilityHazard"
+MediaReview ||--}o Text : "accessibilitySummary"
+MediaReview ||--}o Person : "accountablePerson"
+MediaReview ||--}o AggregateRating : "aggregateRating"
+MediaReview ||--}o Text : "alternativeHeadline"
+MediaReview ||--}o MediaObject : "associatedMedia"
+MediaReview ||--}o Audience : "audience"
+MediaReview ||--}o Text : "award"
+MediaReview ||--}o Text : "awards"
+MediaReview ||--}o Person : "character"
+MediaReview ||--}o Comment : "comment"
+MediaReview ||--}o Integer : "commentCount"
+MediaReview ||--}o Text : "conditionsOfAccess"
+MediaReview ||--}o DateTime : "contentReferenceTime"
+MediaReview ||--}o Text : "copyrightNotice"
+MediaReview ||--}o Number : "copyrightYear"
+MediaReview ||--}o Country : "countryOfOrigin"
+MediaReview ||--}o Text : "creditText"
+MediaReview ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+MediaReview ||--}o URL : "discussionUrl"
+MediaReview ||--}o Person : "editor"
+MediaReview ||--}o AlignmentObject : "educationalAlignment"
+MediaReview ||--}o MediaObject : "encoding"
+MediaReview ||--}o MediaObject : "encodings"
+MediaReview ||--}o CreativeWork : "exampleOfWork"
+MediaReview ||--}o Grant : "funding"
+MediaReview ||--}o Text : "headline"
+MediaReview ||--}o InteractionCounter : "interactionStatistic"
+MediaReview ||--}o Text : "interactivityType"
+MediaReview ||--}o Boolean : "isAccessibleForFree"
+MediaReview ||--}o Boolean : "isFamilyFriendly"
+MediaReview ||--}o Place : "locationCreated"
+MediaReview ||--}o Thing : "mentions"
+MediaReview ||--}o PublicationEvent : "publication"
+MediaReview ||--}o Organization : "publisherImprint"
+MediaReview ||--}o Event : "recordedAt"
+MediaReview ||--}o PublicationEvent : "releasedEvent"
+MediaReview ||--}o Review : "review"
+MediaReview ||--}o Review : "reviews"
+MediaReview ||--}o Date : "sdDatePublished"
+MediaReview ||--}o Organization : "sourceOrganization"
+MediaReview ||--}o Place : "spatial"
+MediaReview ||--}o Text : "text"
+MediaReview ||--}o ImageObject : "thumbnail"
+MediaReview ||--}o URL : "thumbnailUrl"
+MediaReview ||--}o Duration : "timeRequired"
+MediaReview ||--}o CreativeWork : "translationOfWork"
+MediaReview ||--}o Text : "typicalAgeRange"
+MediaReview ||--}o CreativeWork : "workTranslation"
+MediaReview ||--}o Text : "alternateName"
+MediaReview ||--}o Text : "disambiguatingDescription"
+MediaReview ||--}o Text : "name"
+MediaReview ||--}o URL : "sameAs"
+MediaReview ||--}o Action : "potentialAction"
+MediaReview ||--}o URL : "url"
+

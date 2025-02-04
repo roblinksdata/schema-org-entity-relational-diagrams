@@ -1,0 +1,142 @@
+erDiagram
+Course {
+    stringList availableLanguage  
+    stringList coursePrerequisites  
+    stringList educationalCredentialAwarded  
+    stringList financialAidEligible  
+    stringList numberOfCredits  
+    stringList occupationalCredentialAwarded  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList competencyRequired  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Course ||--}o Text : "courseCode"
+Course ||--}o CourseInstance : "hasCourseInstance"
+Course ||--}o Syllabus : "syllabusSections"
+Course ||--}o Integer : "totalHistoricalEnrollment"
+Course ||--}o Thing : "about"
+Course ||--}o Place : "contentLocation"
+Course ||--}o CreativeWork : "hasPart"
+Course ||--}o Claim : "interpretedAsClaim"
+Course ||--}o Thing : "mainEntity"
+Course ||--}o Place : "spatialCoverage"
+Course ||--}o CreativeWork : "workExample"
+Course ||--}o Text : "abstract"
+Course ||--}o Text : "accessMode"
+Course ||--}o ItemList : "accessModeSufficient"
+Course ||--}o Text : "accessibilityAPI"
+Course ||--}o Text : "accessibilityControl"
+Course ||--}o Text : "accessibilityFeature"
+Course ||--}o Text : "accessibilityHazard"
+Course ||--}o Text : "accessibilitySummary"
+Course ||--}o Person : "accountablePerson"
+Course ||--}o AggregateRating : "aggregateRating"
+Course ||--}o Text : "alternativeHeadline"
+Course ||--}o MediaObject : "associatedMedia"
+Course ||--}o Audience : "audience"
+Course ||--}o Text : "award"
+Course ||--}o Text : "awards"
+Course ||--}o Person : "character"
+Course ||--}o Comment : "comment"
+Course ||--}o Integer : "commentCount"
+Course ||--}o Text : "conditionsOfAccess"
+Course ||--}o DateTime : "contentReferenceTime"
+Course ||--}o Text : "copyrightNotice"
+Course ||--}o Number : "copyrightYear"
+Course ||--}o Country : "countryOfOrigin"
+Course ||--}o Text : "creditText"
+Course ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Course ||--}o URL : "discussionUrl"
+Course ||--}o Person : "editor"
+Course ||--}o AlignmentObject : "educationalAlignment"
+Course ||--}o MediaObject : "encoding"
+Course ||--}o MediaObject : "encodings"
+Course ||--}o CreativeWork : "exampleOfWork"
+Course ||--}o Grant : "funding"
+Course ||--}o Text : "headline"
+Course ||--}o InteractionCounter : "interactionStatistic"
+Course ||--}o Text : "interactivityType"
+Course ||--}o Boolean : "isAccessibleForFree"
+Course ||--}o Boolean : "isFamilyFriendly"
+Course ||--}o Place : "locationCreated"
+Course ||--}o Thing : "mentions"
+Course ||--}o PublicationEvent : "publication"
+Course ||--}o Organization : "publisherImprint"
+Course ||--}o Event : "recordedAt"
+Course ||--}o PublicationEvent : "releasedEvent"
+Course ||--}o Review : "review"
+Course ||--}o Review : "reviews"
+Course ||--}o Date : "sdDatePublished"
+Course ||--}o Organization : "sourceOrganization"
+Course ||--}o Place : "spatial"
+Course ||--}o Text : "text"
+Course ||--}o ImageObject : "thumbnail"
+Course ||--}o URL : "thumbnailUrl"
+Course ||--}o Duration : "timeRequired"
+Course ||--}o CreativeWork : "translationOfWork"
+Course ||--}o Text : "typicalAgeRange"
+Course ||--}o CreativeWork : "workTranslation"
+Course ||--}o Text : "alternateName"
+Course ||--}o Text : "disambiguatingDescription"
+Course ||--}o Text : "name"
+Course ||--}o URL : "sameAs"
+Course ||--}o Action : "potentialAction"
+Course ||--}o URL : "url"
+

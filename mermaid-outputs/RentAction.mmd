@@ -1,0 +1,35 @@
+erDiagram
+RentAction {
+    stringList landlord  
+    stringList price  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RentAction ||--}o RealEstateAgent : "realEstateAgent"
+RentAction ||--}o Text : "priceCurrency"
+RentAction ||--}o PriceSpecification : "priceSpecification"
+RentAction ||--}o Thing : "instrument"
+RentAction ||--}o Thing : "object"
+RentAction ||--}o Thing : "result"
+RentAction ||--}o HowTo : "actionProcess"
+RentAction ||--}o ActionStatusType : "actionStatus"
+RentAction ||--}o Thing : "error"
+RentAction ||--}o Text : "alternateName"
+RentAction ||--}o Text : "disambiguatingDescription"
+RentAction ||--}o Text : "name"
+RentAction ||--}o URL : "sameAs"
+RentAction ||--}o Action : "potentialAction"
+RentAction ||--}o URL : "url"
+

@@ -1,0 +1,18 @@
+erDiagram
+USNonprofitType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+USNonprofitType ||--}o Text : "alternateName"
+USNonprofitType ||--}o Text : "disambiguatingDescription"
+USNonprofitType ||--}o Text : "name"
+USNonprofitType ||--}o URL : "sameAs"
+USNonprofitType ||--}o Action : "potentialAction"
+USNonprofitType ||--}o URL : "url"
+

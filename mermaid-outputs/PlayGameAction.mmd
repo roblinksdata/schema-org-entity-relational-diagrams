@@ -1,0 +1,33 @@
+erDiagram
+PlayGameAction {
+    stringList gameAvailabilityType  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PlayGameAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
+PlayGameAction ||--}o Offer : "expectsAcceptanceOf"
+PlayGameAction ||--}o Thing : "instrument"
+PlayGameAction ||--}o Thing : "object"
+PlayGameAction ||--}o Thing : "result"
+PlayGameAction ||--}o HowTo : "actionProcess"
+PlayGameAction ||--}o ActionStatusType : "actionStatus"
+PlayGameAction ||--}o Thing : "error"
+PlayGameAction ||--}o Text : "alternateName"
+PlayGameAction ||--}o Text : "disambiguatingDescription"
+PlayGameAction ||--}o Text : "name"
+PlayGameAction ||--}o URL : "sameAs"
+PlayGameAction ||--}o Action : "potentialAction"
+PlayGameAction ||--}o URL : "url"
+

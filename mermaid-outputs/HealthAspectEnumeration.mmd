@@ -1,0 +1,18 @@
+erDiagram
+HealthAspectEnumeration {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+HealthAspectEnumeration ||--}o Text : "alternateName"
+HealthAspectEnumeration ||--}o Text : "disambiguatingDescription"
+HealthAspectEnumeration ||--}o Text : "name"
+HealthAspectEnumeration ||--}o URL : "sameAs"
+HealthAspectEnumeration ||--}o Action : "potentialAction"
+HealthAspectEnumeration ||--}o URL : "url"
+

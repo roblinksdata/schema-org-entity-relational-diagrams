@@ -1,0 +1,18 @@
+erDiagram
+DataType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DataType ||--}o Text : "alternateName"
+DataType ||--}o Text : "disambiguatingDescription"
+DataType ||--}o Text : "name"
+DataType ||--}o URL : "sameAs"
+DataType ||--}o Action : "potentialAction"
+DataType ||--}o URL : "url"
+

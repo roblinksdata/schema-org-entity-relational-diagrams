@@ -1,0 +1,38 @@
+erDiagram
+RsvpAction {
+    stringList recipient  
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RsvpAction ||--}o Number : "additionalNumberOfGuests"
+RsvpAction ||--}o Comment : "comment"
+RsvpAction ||--}o RsvpResponseType : "rsvpResponse"
+RsvpAction ||--}o Event : "event"
+RsvpAction ||--}o Thing : "about"
+RsvpAction ||--}o Language : "language"
+RsvpAction ||--}o Thing : "instrument"
+RsvpAction ||--}o Thing : "object"
+RsvpAction ||--}o Thing : "result"
+RsvpAction ||--}o HowTo : "actionProcess"
+RsvpAction ||--}o ActionStatusType : "actionStatus"
+RsvpAction ||--}o Thing : "error"
+RsvpAction ||--}o Text : "alternateName"
+RsvpAction ||--}o Text : "disambiguatingDescription"
+RsvpAction ||--}o Text : "name"
+RsvpAction ||--}o URL : "sameAs"
+RsvpAction ||--}o Action : "potentialAction"
+RsvpAction ||--}o URL : "url"
+

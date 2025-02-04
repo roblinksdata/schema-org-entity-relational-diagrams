@@ -1,0 +1,65 @@
+erDiagram
+Aquarium {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Aquarium ||--}o Text : "openingHours"
+Aquarium ||--}o Text : "globalLocationNumber"
+Aquarium ||--}o URL : "hasGS1DigitalLink"
+Aquarium ||--}o PropertyValue : "additionalProperty"
+Aquarium ||--}o AggregateRating : "aggregateRating"
+Aquarium ||--}o LocationFeatureSpecification : "amenityFeature"
+Aquarium ||--}o Text : "branchCode"
+Aquarium ||--}o Place : "containedIn"
+Aquarium ||--}o Place : "containedInPlace"
+Aquarium ||--}o Place : "containsPlace"
+Aquarium ||--}o Event : "event"
+Aquarium ||--}o Event : "events"
+Aquarium ||--}o Text : "faxNumber"
+Aquarium ||--}o Certification : "hasCertification"
+Aquarium ||--}o Boolean : "hasDriveThroughService"
+Aquarium ||--}o Boolean : "isAccessibleForFree"
+Aquarium ||--}o Text : "isicV4"
+Aquarium ||--}o URL : "map"
+Aquarium ||--}o URL : "maps"
+Aquarium ||--}o Integer : "maximumAttendeeCapacity"
+Aquarium ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Aquarium ||--}o Boolean : "publicAccess"
+Aquarium ||--}o Review : "review"
+Aquarium ||--}o Review : "reviews"
+Aquarium ||--}o Text : "slogan"
+Aquarium ||--}o Boolean : "smokingAllowed"
+Aquarium ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Aquarium ||--}o Text : "telephone"
+Aquarium ||--}o URL : "tourBookingPage"
+Aquarium ||--}o Text : "alternateName"
+Aquarium ||--}o Text : "disambiguatingDescription"
+Aquarium ||--}o Text : "name"
+Aquarium ||--}o URL : "sameAs"
+Aquarium ||--}o Action : "potentialAction"
+Aquarium ||--}o URL : "url"
+

@@ -1,0 +1,36 @@
+erDiagram
+LymphaticVessel {
+    stringList regionDrained  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LymphaticVessel ||--}o Vessel : "originatesFrom"
+LymphaticVessel ||--}o Vessel : "runsTo"
+LymphaticVessel ||--}o Text : "associatedPathophysiology"
+LymphaticVessel ||--}o Text : "bodyLocation"
+LymphaticVessel ||--}o AnatomicalStructure : "connectedTo"
+LymphaticVessel ||--}o ImageObject : "diagram"
+LymphaticVessel ||--}o AnatomicalSystem : "partOfSystem"
+LymphaticVessel ||--}o MedicalCondition : "relatedCondition"
+LymphaticVessel ||--}o MedicalTherapy : "relatedTherapy"
+LymphaticVessel ||--}o AnatomicalStructure : "subStructure"
+LymphaticVessel ||--}o MedicalCode : "code"
+LymphaticVessel ||--}o Grant : "funding"
+LymphaticVessel ||--}o MedicalGuideline : "guideline"
+LymphaticVessel ||--}o MedicineSystem : "medicineSystem"
+LymphaticVessel ||--}o Organization : "recognizingAuthority"
+LymphaticVessel ||--}o MedicalSpecialty : "relevantSpecialty"
+LymphaticVessel ||--}o MedicalStudy : "study"
+LymphaticVessel ||--}o Text : "alternateName"
+LymphaticVessel ||--}o Text : "disambiguatingDescription"
+LymphaticVessel ||--}o Text : "name"
+LymphaticVessel ||--}o URL : "sameAs"
+LymphaticVessel ||--}o Action : "potentialAction"
+LymphaticVessel ||--}o URL : "url"
+

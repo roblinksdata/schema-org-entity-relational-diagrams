@@ -1,0 +1,26 @@
+erDiagram
+DrugClass {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DrugClass ||--}o Drug : "drug"
+DrugClass ||--}o MedicalCode : "code"
+DrugClass ||--}o Grant : "funding"
+DrugClass ||--}o MedicalGuideline : "guideline"
+DrugClass ||--}o MedicineSystem : "medicineSystem"
+DrugClass ||--}o Organization : "recognizingAuthority"
+DrugClass ||--}o MedicalSpecialty : "relevantSpecialty"
+DrugClass ||--}o MedicalStudy : "study"
+DrugClass ||--}o Text : "alternateName"
+DrugClass ||--}o Text : "disambiguatingDescription"
+DrugClass ||--}o Text : "name"
+DrugClass ||--}o URL : "sameAs"
+DrugClass ||--}o Action : "potentialAction"
+DrugClass ||--}o URL : "url"
+

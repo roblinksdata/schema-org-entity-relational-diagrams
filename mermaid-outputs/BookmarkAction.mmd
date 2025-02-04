@@ -1,0 +1,30 @@
+erDiagram
+BookmarkAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BookmarkAction ||--}o Thing : "instrument"
+BookmarkAction ||--}o Thing : "object"
+BookmarkAction ||--}o Thing : "result"
+BookmarkAction ||--}o HowTo : "actionProcess"
+BookmarkAction ||--}o ActionStatusType : "actionStatus"
+BookmarkAction ||--}o Thing : "error"
+BookmarkAction ||--}o Text : "alternateName"
+BookmarkAction ||--}o Text : "disambiguatingDescription"
+BookmarkAction ||--}o Text : "name"
+BookmarkAction ||--}o URL : "sameAs"
+BookmarkAction ||--}o Action : "potentialAction"
+BookmarkAction ||--}o URL : "url"
+

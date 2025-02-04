@@ -1,0 +1,156 @@
+erDiagram
+VideoGameSeries {
+    stringList actor  
+    stringList gameLocation  
+    stringList gamePlatform  
+    stringList musicBy  
+    stringList endDate  
+    stringList startDate  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+VideoGameSeries ||--}o CreativeWorkSeason : "containsSeason"
+VideoGameSeries ||--}o Episode : "episode"
+VideoGameSeries ||--}o CreativeWork : "season"
+VideoGameSeries ||--}o Person : "actors"
+VideoGameSeries ||--}o Thing : "characterAttribute"
+VideoGameSeries ||--}o CreativeWork : "cheatCode"
+VideoGameSeries ||--}o Person : "director"
+VideoGameSeries ||--}o Person : "directors"
+VideoGameSeries ||--}o Episode : "episodes"
+VideoGameSeries ||--}o Thing : "gameItem"
+VideoGameSeries ||--}o Integer : "numberOfEpisodes"
+VideoGameSeries ||--}o QuantitativeValue : "numberOfPlayers"
+VideoGameSeries ||--}o Integer : "numberOfSeasons"
+VideoGameSeries ||--}o GamePlayMode : "playMode"
+VideoGameSeries ||--}o Organization : "productionCompany"
+VideoGameSeries ||--}o Thing : "quest"
+VideoGameSeries ||--}o CreativeWorkSeason : "seasons"
+VideoGameSeries ||--}o VideoObject : "trailer"
+VideoGameSeries ||--}o Text : "issn"
+VideoGameSeries ||--}o Thing : "about"
+VideoGameSeries ||--}o Place : "contentLocation"
+VideoGameSeries ||--}o CreativeWork : "hasPart"
+VideoGameSeries ||--}o Claim : "interpretedAsClaim"
+VideoGameSeries ||--}o Thing : "mainEntity"
+VideoGameSeries ||--}o Place : "spatialCoverage"
+VideoGameSeries ||--}o CreativeWork : "workExample"
+VideoGameSeries ||--}o Text : "abstract"
+VideoGameSeries ||--}o Text : "accessMode"
+VideoGameSeries ||--}o ItemList : "accessModeSufficient"
+VideoGameSeries ||--}o Text : "accessibilityAPI"
+VideoGameSeries ||--}o Text : "accessibilityControl"
+VideoGameSeries ||--}o Text : "accessibilityFeature"
+VideoGameSeries ||--}o Text : "accessibilityHazard"
+VideoGameSeries ||--}o Text : "accessibilitySummary"
+VideoGameSeries ||--}o Person : "accountablePerson"
+VideoGameSeries ||--}o AggregateRating : "aggregateRating"
+VideoGameSeries ||--}o Text : "alternativeHeadline"
+VideoGameSeries ||--}o MediaObject : "associatedMedia"
+VideoGameSeries ||--}o Audience : "audience"
+VideoGameSeries ||--}o Text : "award"
+VideoGameSeries ||--}o Text : "awards"
+VideoGameSeries ||--}o Person : "character"
+VideoGameSeries ||--}o Comment : "comment"
+VideoGameSeries ||--}o Integer : "commentCount"
+VideoGameSeries ||--}o Text : "conditionsOfAccess"
+VideoGameSeries ||--}o DateTime : "contentReferenceTime"
+VideoGameSeries ||--}o Text : "copyrightNotice"
+VideoGameSeries ||--}o Number : "copyrightYear"
+VideoGameSeries ||--}o Country : "countryOfOrigin"
+VideoGameSeries ||--}o Text : "creditText"
+VideoGameSeries ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+VideoGameSeries ||--}o URL : "discussionUrl"
+VideoGameSeries ||--}o Person : "editor"
+VideoGameSeries ||--}o AlignmentObject : "educationalAlignment"
+VideoGameSeries ||--}o MediaObject : "encoding"
+VideoGameSeries ||--}o MediaObject : "encodings"
+VideoGameSeries ||--}o CreativeWork : "exampleOfWork"
+VideoGameSeries ||--}o Grant : "funding"
+VideoGameSeries ||--}o Text : "headline"
+VideoGameSeries ||--}o InteractionCounter : "interactionStatistic"
+VideoGameSeries ||--}o Text : "interactivityType"
+VideoGameSeries ||--}o Boolean : "isAccessibleForFree"
+VideoGameSeries ||--}o Boolean : "isFamilyFriendly"
+VideoGameSeries ||--}o Place : "locationCreated"
+VideoGameSeries ||--}o Thing : "mentions"
+VideoGameSeries ||--}o PublicationEvent : "publication"
+VideoGameSeries ||--}o Organization : "publisherImprint"
+VideoGameSeries ||--}o Event : "recordedAt"
+VideoGameSeries ||--}o PublicationEvent : "releasedEvent"
+VideoGameSeries ||--}o Review : "review"
+VideoGameSeries ||--}o Review : "reviews"
+VideoGameSeries ||--}o Date : "sdDatePublished"
+VideoGameSeries ||--}o Organization : "sourceOrganization"
+VideoGameSeries ||--}o Place : "spatial"
+VideoGameSeries ||--}o Text : "text"
+VideoGameSeries ||--}o ImageObject : "thumbnail"
+VideoGameSeries ||--}o URL : "thumbnailUrl"
+VideoGameSeries ||--}o Duration : "timeRequired"
+VideoGameSeries ||--}o CreativeWork : "translationOfWork"
+VideoGameSeries ||--}o Text : "typicalAgeRange"
+VideoGameSeries ||--}o CreativeWork : "workTranslation"
+VideoGameSeries ||--}o Text : "alternateName"
+VideoGameSeries ||--}o Text : "disambiguatingDescription"
+VideoGameSeries ||--}o Text : "name"
+VideoGameSeries ||--}o URL : "sameAs"
+VideoGameSeries ||--}o Action : "potentialAction"
+VideoGameSeries ||--}o URL : "url"
+

@@ -1,0 +1,19 @@
+erDiagram
+BedDetails {
+    stringList typeOfBed  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BedDetails ||--}o Number : "numberOfBeds"
+BedDetails ||--}o Text : "alternateName"
+BedDetails ||--}o Text : "disambiguatingDescription"
+BedDetails ||--}o Text : "name"
+BedDetails ||--}o URL : "sameAs"
+BedDetails ||--}o Action : "potentialAction"
+BedDetails ||--}o URL : "url"
+

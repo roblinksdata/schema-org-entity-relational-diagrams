@@ -1,0 +1,18 @@
+erDiagram
+UKNonprofitType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UKNonprofitType ||--}o Text : "alternateName"
+UKNonprofitType ||--}o Text : "disambiguatingDescription"
+UKNonprofitType ||--}o Text : "name"
+UKNonprofitType ||--}o URL : "sameAs"
+UKNonprofitType ||--}o Action : "potentialAction"
+UKNonprofitType ||--}o URL : "url"
+

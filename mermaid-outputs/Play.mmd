@@ -1,0 +1,131 @@
+erDiagram
+Play {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Play ||--}o Thing : "about"
+Play ||--}o Place : "contentLocation"
+Play ||--}o CreativeWork : "hasPart"
+Play ||--}o Claim : "interpretedAsClaim"
+Play ||--}o Thing : "mainEntity"
+Play ||--}o Place : "spatialCoverage"
+Play ||--}o CreativeWork : "workExample"
+Play ||--}o Text : "abstract"
+Play ||--}o Text : "accessMode"
+Play ||--}o ItemList : "accessModeSufficient"
+Play ||--}o Text : "accessibilityAPI"
+Play ||--}o Text : "accessibilityControl"
+Play ||--}o Text : "accessibilityFeature"
+Play ||--}o Text : "accessibilityHazard"
+Play ||--}o Text : "accessibilitySummary"
+Play ||--}o Person : "accountablePerson"
+Play ||--}o AggregateRating : "aggregateRating"
+Play ||--}o Text : "alternativeHeadline"
+Play ||--}o MediaObject : "associatedMedia"
+Play ||--}o Audience : "audience"
+Play ||--}o Text : "award"
+Play ||--}o Text : "awards"
+Play ||--}o Person : "character"
+Play ||--}o Comment : "comment"
+Play ||--}o Integer : "commentCount"
+Play ||--}o Text : "conditionsOfAccess"
+Play ||--}o DateTime : "contentReferenceTime"
+Play ||--}o Text : "copyrightNotice"
+Play ||--}o Number : "copyrightYear"
+Play ||--}o Country : "countryOfOrigin"
+Play ||--}o Text : "creditText"
+Play ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Play ||--}o URL : "discussionUrl"
+Play ||--}o Person : "editor"
+Play ||--}o AlignmentObject : "educationalAlignment"
+Play ||--}o MediaObject : "encoding"
+Play ||--}o MediaObject : "encodings"
+Play ||--}o CreativeWork : "exampleOfWork"
+Play ||--}o Grant : "funding"
+Play ||--}o Text : "headline"
+Play ||--}o InteractionCounter : "interactionStatistic"
+Play ||--}o Text : "interactivityType"
+Play ||--}o Boolean : "isAccessibleForFree"
+Play ||--}o Boolean : "isFamilyFriendly"
+Play ||--}o Place : "locationCreated"
+Play ||--}o Thing : "mentions"
+Play ||--}o PublicationEvent : "publication"
+Play ||--}o Organization : "publisherImprint"
+Play ||--}o Event : "recordedAt"
+Play ||--}o PublicationEvent : "releasedEvent"
+Play ||--}o Review : "review"
+Play ||--}o Review : "reviews"
+Play ||--}o Date : "sdDatePublished"
+Play ||--}o Organization : "sourceOrganization"
+Play ||--}o Place : "spatial"
+Play ||--}o Text : "text"
+Play ||--}o ImageObject : "thumbnail"
+Play ||--}o URL : "thumbnailUrl"
+Play ||--}o Duration : "timeRequired"
+Play ||--}o CreativeWork : "translationOfWork"
+Play ||--}o Text : "typicalAgeRange"
+Play ||--}o CreativeWork : "workTranslation"
+Play ||--}o Text : "alternateName"
+Play ||--}o Text : "disambiguatingDescription"
+Play ||--}o Text : "name"
+Play ||--}o URL : "sameAs"
+Play ||--}o Action : "potentialAction"
+Play ||--}o URL : "url"
+

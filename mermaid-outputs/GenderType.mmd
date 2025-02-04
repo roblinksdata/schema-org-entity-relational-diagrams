@@ -1,0 +1,18 @@
+erDiagram
+GenderType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GenderType ||--}o Text : "alternateName"
+GenderType ||--}o Text : "disambiguatingDescription"
+GenderType ||--}o Text : "name"
+GenderType ||--}o URL : "sameAs"
+GenderType ||--}o Action : "potentialAction"
+GenderType ||--}o URL : "url"
+

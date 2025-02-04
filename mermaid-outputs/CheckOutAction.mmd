@@ -1,0 +1,34 @@
+erDiagram
+CheckOutAction {
+    stringList recipient  
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CheckOutAction ||--}o Thing : "about"
+CheckOutAction ||--}o Language : "language"
+CheckOutAction ||--}o Thing : "instrument"
+CheckOutAction ||--}o Thing : "object"
+CheckOutAction ||--}o Thing : "result"
+CheckOutAction ||--}o HowTo : "actionProcess"
+CheckOutAction ||--}o ActionStatusType : "actionStatus"
+CheckOutAction ||--}o Thing : "error"
+CheckOutAction ||--}o Text : "alternateName"
+CheckOutAction ||--}o Text : "disambiguatingDescription"
+CheckOutAction ||--}o Text : "name"
+CheckOutAction ||--}o URL : "sameAs"
+CheckOutAction ||--}o Action : "potentialAction"
+CheckOutAction ||--}o URL : "url"
+

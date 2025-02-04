@@ -1,0 +1,32 @@
+erDiagram
+ConsumeAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ConsumeAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
+ConsumeAction ||--}o Offer : "expectsAcceptanceOf"
+ConsumeAction ||--}o Thing : "instrument"
+ConsumeAction ||--}o Thing : "object"
+ConsumeAction ||--}o Thing : "result"
+ConsumeAction ||--}o HowTo : "actionProcess"
+ConsumeAction ||--}o ActionStatusType : "actionStatus"
+ConsumeAction ||--}o Thing : "error"
+ConsumeAction ||--}o Text : "alternateName"
+ConsumeAction ||--}o Text : "disambiguatingDescription"
+ConsumeAction ||--}o Text : "name"
+ConsumeAction ||--}o URL : "sameAs"
+ConsumeAction ||--}o Action : "potentialAction"
+ConsumeAction ||--}o URL : "url"
+

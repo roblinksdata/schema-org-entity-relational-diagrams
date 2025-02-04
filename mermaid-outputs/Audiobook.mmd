@@ -1,0 +1,159 @@
+erDiagram
+Audiobook {
+    stringList caption  
+    stringList encodingFormat  
+    stringList endTime  
+    stringList height  
+    stringList ineligibleRegion  
+    stringList requiresSubscription  
+    stringList startTime  
+    stringList uploadDate  
+    stringList width  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Audiobook ||--}o Duration : "duration"
+Audiobook ||--}o Person : "readBy"
+Audiobook ||--}o Text : "isbn"
+Audiobook ||--}o Boolean : "abridged"
+Audiobook ||--}o Text : "bookEdition"
+Audiobook ||--}o BookFormatType : "bookFormat"
+Audiobook ||--}o Person : "illustrator"
+Audiobook ||--}o Integer : "numberOfPages"
+Audiobook ||--}o Text : "embeddedTextCaption"
+Audiobook ||--}o Text : "transcript"
+Audiobook ||--}o Claim : "interpretedAsClaim"
+Audiobook ||--}o Text : "sha256"
+Audiobook ||--}o NewsArticle : "associatedArticle"
+Audiobook ||--}o Text : "bitrate"
+Audiobook ||--}o Text : "contentSize"
+Audiobook ||--}o URL : "contentUrl"
+Audiobook ||--}o URL : "embedUrl"
+Audiobook ||--}o CreativeWork : "encodesCreativeWork"
+Audiobook ||--}o Text : "playerType"
+Audiobook ||--}o Organization : "productionCompany"
+Audiobook ||--}o Place : "regionsAllowed"
+Audiobook ||--}o Thing : "about"
+Audiobook ||--}o Place : "contentLocation"
+Audiobook ||--}o CreativeWork : "hasPart"
+Audiobook ||--}o Thing : "mainEntity"
+Audiobook ||--}o Place : "spatialCoverage"
+Audiobook ||--}o CreativeWork : "workExample"
+Audiobook ||--}o Text : "abstract"
+Audiobook ||--}o Text : "accessMode"
+Audiobook ||--}o ItemList : "accessModeSufficient"
+Audiobook ||--}o Text : "accessibilityAPI"
+Audiobook ||--}o Text : "accessibilityControl"
+Audiobook ||--}o Text : "accessibilityFeature"
+Audiobook ||--}o Text : "accessibilityHazard"
+Audiobook ||--}o Text : "accessibilitySummary"
+Audiobook ||--}o Person : "accountablePerson"
+Audiobook ||--}o AggregateRating : "aggregateRating"
+Audiobook ||--}o Text : "alternativeHeadline"
+Audiobook ||--}o MediaObject : "associatedMedia"
+Audiobook ||--}o Audience : "audience"
+Audiobook ||--}o Text : "award"
+Audiobook ||--}o Text : "awards"
+Audiobook ||--}o Person : "character"
+Audiobook ||--}o Comment : "comment"
+Audiobook ||--}o Integer : "commentCount"
+Audiobook ||--}o Text : "conditionsOfAccess"
+Audiobook ||--}o DateTime : "contentReferenceTime"
+Audiobook ||--}o Text : "copyrightNotice"
+Audiobook ||--}o Number : "copyrightYear"
+Audiobook ||--}o Country : "countryOfOrigin"
+Audiobook ||--}o Text : "creditText"
+Audiobook ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Audiobook ||--}o URL : "discussionUrl"
+Audiobook ||--}o Person : "editor"
+Audiobook ||--}o AlignmentObject : "educationalAlignment"
+Audiobook ||--}o MediaObject : "encoding"
+Audiobook ||--}o MediaObject : "encodings"
+Audiobook ||--}o CreativeWork : "exampleOfWork"
+Audiobook ||--}o Grant : "funding"
+Audiobook ||--}o Text : "headline"
+Audiobook ||--}o InteractionCounter : "interactionStatistic"
+Audiobook ||--}o Text : "interactivityType"
+Audiobook ||--}o Boolean : "isAccessibleForFree"
+Audiobook ||--}o Boolean : "isFamilyFriendly"
+Audiobook ||--}o Place : "locationCreated"
+Audiobook ||--}o Thing : "mentions"
+Audiobook ||--}o PublicationEvent : "publication"
+Audiobook ||--}o Organization : "publisherImprint"
+Audiobook ||--}o Event : "recordedAt"
+Audiobook ||--}o PublicationEvent : "releasedEvent"
+Audiobook ||--}o Review : "review"
+Audiobook ||--}o Review : "reviews"
+Audiobook ||--}o Date : "sdDatePublished"
+Audiobook ||--}o Organization : "sourceOrganization"
+Audiobook ||--}o Place : "spatial"
+Audiobook ||--}o Text : "text"
+Audiobook ||--}o ImageObject : "thumbnail"
+Audiobook ||--}o URL : "thumbnailUrl"
+Audiobook ||--}o Duration : "timeRequired"
+Audiobook ||--}o CreativeWork : "translationOfWork"
+Audiobook ||--}o Text : "typicalAgeRange"
+Audiobook ||--}o CreativeWork : "workTranslation"
+Audiobook ||--}o Text : "alternateName"
+Audiobook ||--}o Text : "disambiguatingDescription"
+Audiobook ||--}o Text : "name"
+Audiobook ||--}o URL : "sameAs"
+Audiobook ||--}o Action : "potentialAction"
+Audiobook ||--}o URL : "url"
+

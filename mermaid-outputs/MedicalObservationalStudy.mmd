@@ -1,0 +1,31 @@
+erDiagram
+MedicalObservationalStudy {
+    stringList sponsor  
+    stringList status  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalObservationalStudy ||--}o MedicalObservationalStudyDesign : "studyDesign"
+MedicalObservationalStudy ||--}o MedicalCondition : "healthCondition"
+MedicalObservationalStudy ||--}o AdministrativeArea : "studyLocation"
+MedicalObservationalStudy ||--}o MedicalEntity : "studySubject"
+MedicalObservationalStudy ||--}o MedicalCode : "code"
+MedicalObservationalStudy ||--}o Grant : "funding"
+MedicalObservationalStudy ||--}o MedicalGuideline : "guideline"
+MedicalObservationalStudy ||--}o MedicineSystem : "medicineSystem"
+MedicalObservationalStudy ||--}o Organization : "recognizingAuthority"
+MedicalObservationalStudy ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalObservationalStudy ||--}o MedicalStudy : "study"
+MedicalObservationalStudy ||--}o Text : "alternateName"
+MedicalObservationalStudy ||--}o Text : "disambiguatingDescription"
+MedicalObservationalStudy ||--}o Text : "name"
+MedicalObservationalStudy ||--}o URL : "sameAs"
+MedicalObservationalStudy ||--}o Action : "potentialAction"
+MedicalObservationalStudy ||--}o URL : "url"
+

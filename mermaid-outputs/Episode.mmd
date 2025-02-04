@@ -1,0 +1,142 @@
+erDiagram
+Episode {
+    stringList actor  
+    stringList episodeNumber  
+    stringList musicBy  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Episode ||--}o Duration : "duration"
+Episode ||--}o CreativeWorkSeason : "partOfSeason"
+Episode ||--}o CreativeWorkSeries : "partOfSeries"
+Episode ||--}o Person : "actors"
+Episode ||--}o Person : "director"
+Episode ||--}o Person : "directors"
+Episode ||--}o Organization : "productionCompany"
+Episode ||--}o VideoObject : "trailer"
+Episode ||--}o Thing : "about"
+Episode ||--}o Place : "contentLocation"
+Episode ||--}o CreativeWork : "hasPart"
+Episode ||--}o Claim : "interpretedAsClaim"
+Episode ||--}o Thing : "mainEntity"
+Episode ||--}o Place : "spatialCoverage"
+Episode ||--}o CreativeWork : "workExample"
+Episode ||--}o Text : "abstract"
+Episode ||--}o Text : "accessMode"
+Episode ||--}o ItemList : "accessModeSufficient"
+Episode ||--}o Text : "accessibilityAPI"
+Episode ||--}o Text : "accessibilityControl"
+Episode ||--}o Text : "accessibilityFeature"
+Episode ||--}o Text : "accessibilityHazard"
+Episode ||--}o Text : "accessibilitySummary"
+Episode ||--}o Person : "accountablePerson"
+Episode ||--}o AggregateRating : "aggregateRating"
+Episode ||--}o Text : "alternativeHeadline"
+Episode ||--}o MediaObject : "associatedMedia"
+Episode ||--}o Audience : "audience"
+Episode ||--}o Text : "award"
+Episode ||--}o Text : "awards"
+Episode ||--}o Person : "character"
+Episode ||--}o Comment : "comment"
+Episode ||--}o Integer : "commentCount"
+Episode ||--}o Text : "conditionsOfAccess"
+Episode ||--}o DateTime : "contentReferenceTime"
+Episode ||--}o Text : "copyrightNotice"
+Episode ||--}o Number : "copyrightYear"
+Episode ||--}o Country : "countryOfOrigin"
+Episode ||--}o Text : "creditText"
+Episode ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Episode ||--}o URL : "discussionUrl"
+Episode ||--}o Person : "editor"
+Episode ||--}o AlignmentObject : "educationalAlignment"
+Episode ||--}o MediaObject : "encoding"
+Episode ||--}o MediaObject : "encodings"
+Episode ||--}o CreativeWork : "exampleOfWork"
+Episode ||--}o Grant : "funding"
+Episode ||--}o Text : "headline"
+Episode ||--}o InteractionCounter : "interactionStatistic"
+Episode ||--}o Text : "interactivityType"
+Episode ||--}o Boolean : "isAccessibleForFree"
+Episode ||--}o Boolean : "isFamilyFriendly"
+Episode ||--}o Place : "locationCreated"
+Episode ||--}o Thing : "mentions"
+Episode ||--}o PublicationEvent : "publication"
+Episode ||--}o Organization : "publisherImprint"
+Episode ||--}o Event : "recordedAt"
+Episode ||--}o PublicationEvent : "releasedEvent"
+Episode ||--}o Review : "review"
+Episode ||--}o Review : "reviews"
+Episode ||--}o Date : "sdDatePublished"
+Episode ||--}o Organization : "sourceOrganization"
+Episode ||--}o Place : "spatial"
+Episode ||--}o Text : "text"
+Episode ||--}o ImageObject : "thumbnail"
+Episode ||--}o URL : "thumbnailUrl"
+Episode ||--}o Duration : "timeRequired"
+Episode ||--}o CreativeWork : "translationOfWork"
+Episode ||--}o Text : "typicalAgeRange"
+Episode ||--}o CreativeWork : "workTranslation"
+Episode ||--}o Text : "alternateName"
+Episode ||--}o Text : "disambiguatingDescription"
+Episode ||--}o Text : "name"
+Episode ||--}o URL : "sameAs"
+Episode ||--}o Action : "potentialAction"
+Episode ||--}o URL : "url"
+

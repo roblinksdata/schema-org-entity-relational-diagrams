@@ -1,0 +1,24 @@
+erDiagram
+ActionAccessSpecification {
+    stringList category  
+    stringList eligibleRegion  
+    stringList availabilityEnds  
+    stringList availabilityStarts  
+    stringList ineligibleRegion  
+    stringList requiresSubscription  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ActionAccessSpecification ||--}o Offer : "expectsAcceptanceOf"
+ActionAccessSpecification ||--}o Text : "alternateName"
+ActionAccessSpecification ||--}o Text : "disambiguatingDescription"
+ActionAccessSpecification ||--}o Text : "name"
+ActionAccessSpecification ||--}o URL : "sameAs"
+ActionAccessSpecification ||--}o Action : "potentialAction"
+ActionAccessSpecification ||--}o URL : "url"
+

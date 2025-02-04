@@ -1,0 +1,18 @@
+erDiagram
+MusicReleaseFormatType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MusicReleaseFormatType ||--}o Text : "alternateName"
+MusicReleaseFormatType ||--}o Text : "disambiguatingDescription"
+MusicReleaseFormatType ||--}o Text : "name"
+MusicReleaseFormatType ||--}o URL : "sameAs"
+MusicReleaseFormatType ||--}o Action : "potentialAction"
+MusicReleaseFormatType ||--}o URL : "url"
+

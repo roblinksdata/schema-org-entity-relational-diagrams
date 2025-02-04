@@ -1,0 +1,23 @@
+erDiagram
+EndorsementRating {
+    stringList author  
+    stringList bestRating  
+    stringList ratingValue  
+    stringList worstRating  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EndorsementRating ||--}o Text : "ratingExplanation"
+EndorsementRating ||--}o Text : "reviewAspect"
+EndorsementRating ||--}o Text : "alternateName"
+EndorsementRating ||--}o Text : "disambiguatingDescription"
+EndorsementRating ||--}o Text : "name"
+EndorsementRating ||--}o URL : "sameAs"
+EndorsementRating ||--}o Action : "potentialAction"
+EndorsementRating ||--}o URL : "url"
+

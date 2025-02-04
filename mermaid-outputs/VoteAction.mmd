@@ -1,0 +1,33 @@
+erDiagram
+VoteAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+VoteAction ||--}o Person : "candidate"
+VoteAction ||--}o Thing : "actionOption"
+VoteAction ||--}o Thing : "option"
+VoteAction ||--}o Thing : "instrument"
+VoteAction ||--}o Thing : "object"
+VoteAction ||--}o Thing : "result"
+VoteAction ||--}o HowTo : "actionProcess"
+VoteAction ||--}o ActionStatusType : "actionStatus"
+VoteAction ||--}o Thing : "error"
+VoteAction ||--}o Text : "alternateName"
+VoteAction ||--}o Text : "disambiguatingDescription"
+VoteAction ||--}o Text : "name"
+VoteAction ||--}o URL : "sameAs"
+VoteAction ||--}o Action : "potentialAction"
+VoteAction ||--}o URL : "url"
+

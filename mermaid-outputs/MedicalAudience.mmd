@@ -1,0 +1,28 @@
+erDiagram
+MedicalAudience {
+    stringList suggestedGender  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalAudience ||--}o Text : "audienceType"
+MedicalAudience ||--}o AdministrativeArea : "geographicArea"
+MedicalAudience ||--}o MedicalCondition : "healthCondition"
+MedicalAudience ||--}o Text : "requiredGender"
+MedicalAudience ||--}o Integer : "requiredMaxAge"
+MedicalAudience ||--}o Integer : "requiredMinAge"
+MedicalAudience ||--}o QuantitativeValue : "suggestedAge"
+MedicalAudience ||--}o Number : "suggestedMaxAge"
+MedicalAudience ||--}o QuantitativeValue : "suggestedMeasurement"
+MedicalAudience ||--}o Number : "suggestedMinAge"
+MedicalAudience ||--}o Text : "alternateName"
+MedicalAudience ||--}o Text : "disambiguatingDescription"
+MedicalAudience ||--}o Text : "name"
+MedicalAudience ||--}o URL : "sameAs"
+MedicalAudience ||--}o Action : "potentialAction"
+MedicalAudience ||--}o URL : "url"
+

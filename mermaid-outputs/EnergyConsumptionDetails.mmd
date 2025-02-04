@@ -1,0 +1,20 @@
+erDiagram
+EnergyConsumptionDetails {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EnergyConsumptionDetails ||--}o EUEnergyEfficiencyEnumeration : "energyEfficiencyScaleMax"
+EnergyConsumptionDetails ||--}o EUEnergyEfficiencyEnumeration : "energyEfficiencyScaleMin"
+EnergyConsumptionDetails ||--}o EnergyEfficiencyEnumeration : "hasEnergyEfficiencyCategory"
+EnergyConsumptionDetails ||--}o Text : "alternateName"
+EnergyConsumptionDetails ||--}o Text : "disambiguatingDescription"
+EnergyConsumptionDetails ||--}o Text : "name"
+EnergyConsumptionDetails ||--}o URL : "sameAs"
+EnergyConsumptionDetails ||--}o Action : "potentialAction"
+EnergyConsumptionDetails ||--}o URL : "url"
+

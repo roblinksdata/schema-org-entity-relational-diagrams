@@ -1,0 +1,18 @@
+erDiagram
+MeasurementMethodEnum {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MeasurementMethodEnum ||--}o Text : "alternateName"
+MeasurementMethodEnum ||--}o Text : "disambiguatingDescription"
+MeasurementMethodEnum ||--}o Text : "name"
+MeasurementMethodEnum ||--}o URL : "sameAs"
+MeasurementMethodEnum ||--}o Action : "potentialAction"
+MeasurementMethodEnum ||--}o URL : "url"
+

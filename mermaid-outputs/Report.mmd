@@ -1,0 +1,140 @@
+erDiagram
+Report {
+    stringList backstory  
+    stringList pageEnd  
+    stringList pageStart  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Report ||--}o Text : "reportNumber"
+Report ||--}o Text : "articleBody"
+Report ||--}o Text : "articleSection"
+Report ||--}o Text : "pagination"
+Report ||--}o Integer : "wordCount"
+Report ||--}o Thing : "about"
+Report ||--}o Place : "contentLocation"
+Report ||--}o CreativeWork : "hasPart"
+Report ||--}o Claim : "interpretedAsClaim"
+Report ||--}o Thing : "mainEntity"
+Report ||--}o Place : "spatialCoverage"
+Report ||--}o CreativeWork : "workExample"
+Report ||--}o Text : "abstract"
+Report ||--}o Text : "accessMode"
+Report ||--}o ItemList : "accessModeSufficient"
+Report ||--}o Text : "accessibilityAPI"
+Report ||--}o Text : "accessibilityControl"
+Report ||--}o Text : "accessibilityFeature"
+Report ||--}o Text : "accessibilityHazard"
+Report ||--}o Text : "accessibilitySummary"
+Report ||--}o Person : "accountablePerson"
+Report ||--}o AggregateRating : "aggregateRating"
+Report ||--}o Text : "alternativeHeadline"
+Report ||--}o MediaObject : "associatedMedia"
+Report ||--}o Audience : "audience"
+Report ||--}o Text : "award"
+Report ||--}o Text : "awards"
+Report ||--}o Person : "character"
+Report ||--}o Comment : "comment"
+Report ||--}o Integer : "commentCount"
+Report ||--}o Text : "conditionsOfAccess"
+Report ||--}o DateTime : "contentReferenceTime"
+Report ||--}o Text : "copyrightNotice"
+Report ||--}o Number : "copyrightYear"
+Report ||--}o Country : "countryOfOrigin"
+Report ||--}o Text : "creditText"
+Report ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Report ||--}o URL : "discussionUrl"
+Report ||--}o Person : "editor"
+Report ||--}o AlignmentObject : "educationalAlignment"
+Report ||--}o MediaObject : "encoding"
+Report ||--}o MediaObject : "encodings"
+Report ||--}o CreativeWork : "exampleOfWork"
+Report ||--}o Grant : "funding"
+Report ||--}o Text : "headline"
+Report ||--}o InteractionCounter : "interactionStatistic"
+Report ||--}o Text : "interactivityType"
+Report ||--}o Boolean : "isAccessibleForFree"
+Report ||--}o Boolean : "isFamilyFriendly"
+Report ||--}o Place : "locationCreated"
+Report ||--}o Thing : "mentions"
+Report ||--}o PublicationEvent : "publication"
+Report ||--}o Organization : "publisherImprint"
+Report ||--}o Event : "recordedAt"
+Report ||--}o PublicationEvent : "releasedEvent"
+Report ||--}o Review : "review"
+Report ||--}o Review : "reviews"
+Report ||--}o Date : "sdDatePublished"
+Report ||--}o Organization : "sourceOrganization"
+Report ||--}o Place : "spatial"
+Report ||--}o Text : "text"
+Report ||--}o ImageObject : "thumbnail"
+Report ||--}o URL : "thumbnailUrl"
+Report ||--}o Duration : "timeRequired"
+Report ||--}o CreativeWork : "translationOfWork"
+Report ||--}o Text : "typicalAgeRange"
+Report ||--}o CreativeWork : "workTranslation"
+Report ||--}o Text : "alternateName"
+Report ||--}o Text : "disambiguatingDescription"
+Report ||--}o Text : "name"
+Report ||--}o URL : "sameAs"
+Report ||--}o Action : "potentialAction"
+Report ||--}o URL : "url"
+

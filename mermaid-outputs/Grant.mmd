@@ -1,0 +1,20 @@
+erDiagram
+Grant {
+    stringList funder  
+    stringList sponsor  
+    stringList fundedItem  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Grant ||--}o Text : "alternateName"
+Grant ||--}o Text : "disambiguatingDescription"
+Grant ||--}o Text : "name"
+Grant ||--}o URL : "sameAs"
+Grant ||--}o Action : "potentialAction"
+Grant ||--}o URL : "url"
+

@@ -1,0 +1,19 @@
+erDiagram
+Audience {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Audience ||--}o Text : "audienceType"
+Audience ||--}o AdministrativeArea : "geographicArea"
+Audience ||--}o Text : "alternateName"
+Audience ||--}o Text : "disambiguatingDescription"
+Audience ||--}o Text : "name"
+Audience ||--}o URL : "sameAs"
+Audience ||--}o Action : "potentialAction"
+Audience ||--}o URL : "url"
+

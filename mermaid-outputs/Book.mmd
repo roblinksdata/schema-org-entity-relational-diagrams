@@ -1,0 +1,137 @@
+erDiagram
+Book {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Book ||--}o Text : "isbn"
+Book ||--}o Boolean : "abridged"
+Book ||--}o Text : "bookEdition"
+Book ||--}o BookFormatType : "bookFormat"
+Book ||--}o Person : "illustrator"
+Book ||--}o Integer : "numberOfPages"
+Book ||--}o Thing : "about"
+Book ||--}o Place : "contentLocation"
+Book ||--}o CreativeWork : "hasPart"
+Book ||--}o Claim : "interpretedAsClaim"
+Book ||--}o Thing : "mainEntity"
+Book ||--}o Place : "spatialCoverage"
+Book ||--}o CreativeWork : "workExample"
+Book ||--}o Text : "abstract"
+Book ||--}o Text : "accessMode"
+Book ||--}o ItemList : "accessModeSufficient"
+Book ||--}o Text : "accessibilityAPI"
+Book ||--}o Text : "accessibilityControl"
+Book ||--}o Text : "accessibilityFeature"
+Book ||--}o Text : "accessibilityHazard"
+Book ||--}o Text : "accessibilitySummary"
+Book ||--}o Person : "accountablePerson"
+Book ||--}o AggregateRating : "aggregateRating"
+Book ||--}o Text : "alternativeHeadline"
+Book ||--}o MediaObject : "associatedMedia"
+Book ||--}o Audience : "audience"
+Book ||--}o Text : "award"
+Book ||--}o Text : "awards"
+Book ||--}o Person : "character"
+Book ||--}o Comment : "comment"
+Book ||--}o Integer : "commentCount"
+Book ||--}o Text : "conditionsOfAccess"
+Book ||--}o DateTime : "contentReferenceTime"
+Book ||--}o Text : "copyrightNotice"
+Book ||--}o Number : "copyrightYear"
+Book ||--}o Country : "countryOfOrigin"
+Book ||--}o Text : "creditText"
+Book ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Book ||--}o URL : "discussionUrl"
+Book ||--}o Person : "editor"
+Book ||--}o AlignmentObject : "educationalAlignment"
+Book ||--}o MediaObject : "encoding"
+Book ||--}o MediaObject : "encodings"
+Book ||--}o CreativeWork : "exampleOfWork"
+Book ||--}o Grant : "funding"
+Book ||--}o Text : "headline"
+Book ||--}o InteractionCounter : "interactionStatistic"
+Book ||--}o Text : "interactivityType"
+Book ||--}o Boolean : "isAccessibleForFree"
+Book ||--}o Boolean : "isFamilyFriendly"
+Book ||--}o Place : "locationCreated"
+Book ||--}o Thing : "mentions"
+Book ||--}o PublicationEvent : "publication"
+Book ||--}o Organization : "publisherImprint"
+Book ||--}o Event : "recordedAt"
+Book ||--}o PublicationEvent : "releasedEvent"
+Book ||--}o Review : "review"
+Book ||--}o Review : "reviews"
+Book ||--}o Date : "sdDatePublished"
+Book ||--}o Organization : "sourceOrganization"
+Book ||--}o Place : "spatial"
+Book ||--}o Text : "text"
+Book ||--}o ImageObject : "thumbnail"
+Book ||--}o URL : "thumbnailUrl"
+Book ||--}o Duration : "timeRequired"
+Book ||--}o CreativeWork : "translationOfWork"
+Book ||--}o Text : "typicalAgeRange"
+Book ||--}o CreativeWork : "workTranslation"
+Book ||--}o Text : "alternateName"
+Book ||--}o Text : "disambiguatingDescription"
+Book ||--}o Text : "name"
+Book ||--}o URL : "sameAs"
+Book ||--}o Action : "potentialAction"
+Book ||--}o URL : "url"
+

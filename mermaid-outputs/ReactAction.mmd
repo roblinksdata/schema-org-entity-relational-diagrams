@@ -1,0 +1,30 @@
+erDiagram
+ReactAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ReactAction ||--}o Thing : "instrument"
+ReactAction ||--}o Thing : "object"
+ReactAction ||--}o Thing : "result"
+ReactAction ||--}o HowTo : "actionProcess"
+ReactAction ||--}o ActionStatusType : "actionStatus"
+ReactAction ||--}o Thing : "error"
+ReactAction ||--}o Text : "alternateName"
+ReactAction ||--}o Text : "disambiguatingDescription"
+ReactAction ||--}o Text : "name"
+ReactAction ||--}o URL : "sameAs"
+ReactAction ||--}o Action : "potentialAction"
+ReactAction ||--}o URL : "url"
+

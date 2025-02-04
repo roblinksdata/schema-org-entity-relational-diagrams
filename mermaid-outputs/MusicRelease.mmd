@@ -1,0 +1,140 @@
+erDiagram
+MusicRelease {
+    stringList creditedTo  
+    stringList track  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MusicRelease ||--}o Duration : "duration"
+MusicRelease ||--}o Text : "catalogNumber"
+MusicRelease ||--}o MusicReleaseFormatType : "musicReleaseFormat"
+MusicRelease ||--}o Organization : "recordLabel"
+MusicRelease ||--}o MusicAlbum : "releaseOf"
+MusicRelease ||--}o Integer : "numTracks"
+MusicRelease ||--}o MusicRecording : "tracks"
+MusicRelease ||--}o Thing : "about"
+MusicRelease ||--}o Place : "contentLocation"
+MusicRelease ||--}o CreativeWork : "hasPart"
+MusicRelease ||--}o Claim : "interpretedAsClaim"
+MusicRelease ||--}o Thing : "mainEntity"
+MusicRelease ||--}o Place : "spatialCoverage"
+MusicRelease ||--}o CreativeWork : "workExample"
+MusicRelease ||--}o Text : "abstract"
+MusicRelease ||--}o Text : "accessMode"
+MusicRelease ||--}o ItemList : "accessModeSufficient"
+MusicRelease ||--}o Text : "accessibilityAPI"
+MusicRelease ||--}o Text : "accessibilityControl"
+MusicRelease ||--}o Text : "accessibilityFeature"
+MusicRelease ||--}o Text : "accessibilityHazard"
+MusicRelease ||--}o Text : "accessibilitySummary"
+MusicRelease ||--}o Person : "accountablePerson"
+MusicRelease ||--}o AggregateRating : "aggregateRating"
+MusicRelease ||--}o Text : "alternativeHeadline"
+MusicRelease ||--}o MediaObject : "associatedMedia"
+MusicRelease ||--}o Audience : "audience"
+MusicRelease ||--}o Text : "award"
+MusicRelease ||--}o Text : "awards"
+MusicRelease ||--}o Person : "character"
+MusicRelease ||--}o Comment : "comment"
+MusicRelease ||--}o Integer : "commentCount"
+MusicRelease ||--}o Text : "conditionsOfAccess"
+MusicRelease ||--}o DateTime : "contentReferenceTime"
+MusicRelease ||--}o Text : "copyrightNotice"
+MusicRelease ||--}o Number : "copyrightYear"
+MusicRelease ||--}o Country : "countryOfOrigin"
+MusicRelease ||--}o Text : "creditText"
+MusicRelease ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+MusicRelease ||--}o URL : "discussionUrl"
+MusicRelease ||--}o Person : "editor"
+MusicRelease ||--}o AlignmentObject : "educationalAlignment"
+MusicRelease ||--}o MediaObject : "encoding"
+MusicRelease ||--}o MediaObject : "encodings"
+MusicRelease ||--}o CreativeWork : "exampleOfWork"
+MusicRelease ||--}o Grant : "funding"
+MusicRelease ||--}o Text : "headline"
+MusicRelease ||--}o InteractionCounter : "interactionStatistic"
+MusicRelease ||--}o Text : "interactivityType"
+MusicRelease ||--}o Boolean : "isAccessibleForFree"
+MusicRelease ||--}o Boolean : "isFamilyFriendly"
+MusicRelease ||--}o Place : "locationCreated"
+MusicRelease ||--}o Thing : "mentions"
+MusicRelease ||--}o PublicationEvent : "publication"
+MusicRelease ||--}o Organization : "publisherImprint"
+MusicRelease ||--}o Event : "recordedAt"
+MusicRelease ||--}o PublicationEvent : "releasedEvent"
+MusicRelease ||--}o Review : "review"
+MusicRelease ||--}o Review : "reviews"
+MusicRelease ||--}o Date : "sdDatePublished"
+MusicRelease ||--}o Organization : "sourceOrganization"
+MusicRelease ||--}o Place : "spatial"
+MusicRelease ||--}o Text : "text"
+MusicRelease ||--}o ImageObject : "thumbnail"
+MusicRelease ||--}o URL : "thumbnailUrl"
+MusicRelease ||--}o Duration : "timeRequired"
+MusicRelease ||--}o CreativeWork : "translationOfWork"
+MusicRelease ||--}o Text : "typicalAgeRange"
+MusicRelease ||--}o CreativeWork : "workTranslation"
+MusicRelease ||--}o Text : "alternateName"
+MusicRelease ||--}o Text : "disambiguatingDescription"
+MusicRelease ||--}o Text : "name"
+MusicRelease ||--}o URL : "sameAs"
+MusicRelease ||--}o Action : "potentialAction"
+MusicRelease ||--}o URL : "url"
+

@@ -1,0 +1,18 @@
+erDiagram
+OfferItemCondition {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OfferItemCondition ||--}o Text : "alternateName"
+OfferItemCondition ||--}o Text : "disambiguatingDescription"
+OfferItemCondition ||--}o Text : "name"
+OfferItemCondition ||--}o URL : "sameAs"
+OfferItemCondition ||--}o Action : "potentialAction"
+OfferItemCondition ||--}o URL : "url"
+

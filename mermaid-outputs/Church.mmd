@@ -1,0 +1,65 @@
+erDiagram
+Church {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Church ||--}o Text : "openingHours"
+Church ||--}o Text : "globalLocationNumber"
+Church ||--}o URL : "hasGS1DigitalLink"
+Church ||--}o PropertyValue : "additionalProperty"
+Church ||--}o AggregateRating : "aggregateRating"
+Church ||--}o LocationFeatureSpecification : "amenityFeature"
+Church ||--}o Text : "branchCode"
+Church ||--}o Place : "containedIn"
+Church ||--}o Place : "containedInPlace"
+Church ||--}o Place : "containsPlace"
+Church ||--}o Event : "event"
+Church ||--}o Event : "events"
+Church ||--}o Text : "faxNumber"
+Church ||--}o Certification : "hasCertification"
+Church ||--}o Boolean : "hasDriveThroughService"
+Church ||--}o Boolean : "isAccessibleForFree"
+Church ||--}o Text : "isicV4"
+Church ||--}o URL : "map"
+Church ||--}o URL : "maps"
+Church ||--}o Integer : "maximumAttendeeCapacity"
+Church ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Church ||--}o Boolean : "publicAccess"
+Church ||--}o Review : "review"
+Church ||--}o Review : "reviews"
+Church ||--}o Text : "slogan"
+Church ||--}o Boolean : "smokingAllowed"
+Church ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Church ||--}o Text : "telephone"
+Church ||--}o URL : "tourBookingPage"
+Church ||--}o Text : "alternateName"
+Church ||--}o Text : "disambiguatingDescription"
+Church ||--}o Text : "name"
+Church ||--}o URL : "sameAs"
+Church ||--}o Action : "potentialAction"
+Church ||--}o URL : "url"
+

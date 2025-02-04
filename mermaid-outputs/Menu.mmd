@@ -1,0 +1,133 @@
+erDiagram
+Menu {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Menu ||--}o MenuItem : "hasMenuItem"
+Menu ||--}o MenuSection : "hasMenuSection"
+Menu ||--}o Thing : "about"
+Menu ||--}o Place : "contentLocation"
+Menu ||--}o CreativeWork : "hasPart"
+Menu ||--}o Claim : "interpretedAsClaim"
+Menu ||--}o Thing : "mainEntity"
+Menu ||--}o Place : "spatialCoverage"
+Menu ||--}o CreativeWork : "workExample"
+Menu ||--}o Text : "abstract"
+Menu ||--}o Text : "accessMode"
+Menu ||--}o ItemList : "accessModeSufficient"
+Menu ||--}o Text : "accessibilityAPI"
+Menu ||--}o Text : "accessibilityControl"
+Menu ||--}o Text : "accessibilityFeature"
+Menu ||--}o Text : "accessibilityHazard"
+Menu ||--}o Text : "accessibilitySummary"
+Menu ||--}o Person : "accountablePerson"
+Menu ||--}o AggregateRating : "aggregateRating"
+Menu ||--}o Text : "alternativeHeadline"
+Menu ||--}o MediaObject : "associatedMedia"
+Menu ||--}o Audience : "audience"
+Menu ||--}o Text : "award"
+Menu ||--}o Text : "awards"
+Menu ||--}o Person : "character"
+Menu ||--}o Comment : "comment"
+Menu ||--}o Integer : "commentCount"
+Menu ||--}o Text : "conditionsOfAccess"
+Menu ||--}o DateTime : "contentReferenceTime"
+Menu ||--}o Text : "copyrightNotice"
+Menu ||--}o Number : "copyrightYear"
+Menu ||--}o Country : "countryOfOrigin"
+Menu ||--}o Text : "creditText"
+Menu ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Menu ||--}o URL : "discussionUrl"
+Menu ||--}o Person : "editor"
+Menu ||--}o AlignmentObject : "educationalAlignment"
+Menu ||--}o MediaObject : "encoding"
+Menu ||--}o MediaObject : "encodings"
+Menu ||--}o CreativeWork : "exampleOfWork"
+Menu ||--}o Grant : "funding"
+Menu ||--}o Text : "headline"
+Menu ||--}o InteractionCounter : "interactionStatistic"
+Menu ||--}o Text : "interactivityType"
+Menu ||--}o Boolean : "isAccessibleForFree"
+Menu ||--}o Boolean : "isFamilyFriendly"
+Menu ||--}o Place : "locationCreated"
+Menu ||--}o Thing : "mentions"
+Menu ||--}o PublicationEvent : "publication"
+Menu ||--}o Organization : "publisherImprint"
+Menu ||--}o Event : "recordedAt"
+Menu ||--}o PublicationEvent : "releasedEvent"
+Menu ||--}o Review : "review"
+Menu ||--}o Review : "reviews"
+Menu ||--}o Date : "sdDatePublished"
+Menu ||--}o Organization : "sourceOrganization"
+Menu ||--}o Place : "spatial"
+Menu ||--}o Text : "text"
+Menu ||--}o ImageObject : "thumbnail"
+Menu ||--}o URL : "thumbnailUrl"
+Menu ||--}o Duration : "timeRequired"
+Menu ||--}o CreativeWork : "translationOfWork"
+Menu ||--}o Text : "typicalAgeRange"
+Menu ||--}o CreativeWork : "workTranslation"
+Menu ||--}o Text : "alternateName"
+Menu ||--}o Text : "disambiguatingDescription"
+Menu ||--}o Text : "name"
+Menu ||--}o URL : "sameAs"
+Menu ||--}o Action : "potentialAction"
+Menu ||--}o URL : "url"
+

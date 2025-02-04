@@ -1,0 +1,134 @@
+erDiagram
+BookSeries {
+    stringList endDate  
+    stringList startDate  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BookSeries ||--}o Text : "issn"
+BookSeries ||--}o Thing : "about"
+BookSeries ||--}o Place : "contentLocation"
+BookSeries ||--}o CreativeWork : "hasPart"
+BookSeries ||--}o Claim : "interpretedAsClaim"
+BookSeries ||--}o Thing : "mainEntity"
+BookSeries ||--}o Place : "spatialCoverage"
+BookSeries ||--}o CreativeWork : "workExample"
+BookSeries ||--}o Text : "abstract"
+BookSeries ||--}o Text : "accessMode"
+BookSeries ||--}o ItemList : "accessModeSufficient"
+BookSeries ||--}o Text : "accessibilityAPI"
+BookSeries ||--}o Text : "accessibilityControl"
+BookSeries ||--}o Text : "accessibilityFeature"
+BookSeries ||--}o Text : "accessibilityHazard"
+BookSeries ||--}o Text : "accessibilitySummary"
+BookSeries ||--}o Person : "accountablePerson"
+BookSeries ||--}o AggregateRating : "aggregateRating"
+BookSeries ||--}o Text : "alternativeHeadline"
+BookSeries ||--}o MediaObject : "associatedMedia"
+BookSeries ||--}o Audience : "audience"
+BookSeries ||--}o Text : "award"
+BookSeries ||--}o Text : "awards"
+BookSeries ||--}o Person : "character"
+BookSeries ||--}o Comment : "comment"
+BookSeries ||--}o Integer : "commentCount"
+BookSeries ||--}o Text : "conditionsOfAccess"
+BookSeries ||--}o DateTime : "contentReferenceTime"
+BookSeries ||--}o Text : "copyrightNotice"
+BookSeries ||--}o Number : "copyrightYear"
+BookSeries ||--}o Country : "countryOfOrigin"
+BookSeries ||--}o Text : "creditText"
+BookSeries ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+BookSeries ||--}o URL : "discussionUrl"
+BookSeries ||--}o Person : "editor"
+BookSeries ||--}o AlignmentObject : "educationalAlignment"
+BookSeries ||--}o MediaObject : "encoding"
+BookSeries ||--}o MediaObject : "encodings"
+BookSeries ||--}o CreativeWork : "exampleOfWork"
+BookSeries ||--}o Grant : "funding"
+BookSeries ||--}o Text : "headline"
+BookSeries ||--}o InteractionCounter : "interactionStatistic"
+BookSeries ||--}o Text : "interactivityType"
+BookSeries ||--}o Boolean : "isAccessibleForFree"
+BookSeries ||--}o Boolean : "isFamilyFriendly"
+BookSeries ||--}o Place : "locationCreated"
+BookSeries ||--}o Thing : "mentions"
+BookSeries ||--}o PublicationEvent : "publication"
+BookSeries ||--}o Organization : "publisherImprint"
+BookSeries ||--}o Event : "recordedAt"
+BookSeries ||--}o PublicationEvent : "releasedEvent"
+BookSeries ||--}o Review : "review"
+BookSeries ||--}o Review : "reviews"
+BookSeries ||--}o Date : "sdDatePublished"
+BookSeries ||--}o Organization : "sourceOrganization"
+BookSeries ||--}o Place : "spatial"
+BookSeries ||--}o Text : "text"
+BookSeries ||--}o ImageObject : "thumbnail"
+BookSeries ||--}o URL : "thumbnailUrl"
+BookSeries ||--}o Duration : "timeRequired"
+BookSeries ||--}o CreativeWork : "translationOfWork"
+BookSeries ||--}o Text : "typicalAgeRange"
+BookSeries ||--}o CreativeWork : "workTranslation"
+BookSeries ||--}o Text : "alternateName"
+BookSeries ||--}o Text : "disambiguatingDescription"
+BookSeries ||--}o Text : "name"
+BookSeries ||--}o URL : "sameAs"
+BookSeries ||--}o Action : "potentialAction"
+BookSeries ||--}o URL : "url"
+

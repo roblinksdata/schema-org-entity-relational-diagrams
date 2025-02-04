@@ -1,0 +1,143 @@
+erDiagram
+LiveBlogPosting {
+    stringList backstory  
+    stringList pageEnd  
+    stringList pageStart  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LiveBlogPosting ||--}o DateTime : "coverageEndTime"
+LiveBlogPosting ||--}o DateTime : "coverageStartTime"
+LiveBlogPosting ||--}o BlogPosting : "liveBlogUpdate"
+LiveBlogPosting ||--}o CreativeWork : "sharedContent"
+LiveBlogPosting ||--}o Text : "articleBody"
+LiveBlogPosting ||--}o Text : "articleSection"
+LiveBlogPosting ||--}o Text : "pagination"
+LiveBlogPosting ||--}o Integer : "wordCount"
+LiveBlogPosting ||--}o Thing : "about"
+LiveBlogPosting ||--}o Place : "contentLocation"
+LiveBlogPosting ||--}o CreativeWork : "hasPart"
+LiveBlogPosting ||--}o Claim : "interpretedAsClaim"
+LiveBlogPosting ||--}o Thing : "mainEntity"
+LiveBlogPosting ||--}o Place : "spatialCoverage"
+LiveBlogPosting ||--}o CreativeWork : "workExample"
+LiveBlogPosting ||--}o Text : "abstract"
+LiveBlogPosting ||--}o Text : "accessMode"
+LiveBlogPosting ||--}o ItemList : "accessModeSufficient"
+LiveBlogPosting ||--}o Text : "accessibilityAPI"
+LiveBlogPosting ||--}o Text : "accessibilityControl"
+LiveBlogPosting ||--}o Text : "accessibilityFeature"
+LiveBlogPosting ||--}o Text : "accessibilityHazard"
+LiveBlogPosting ||--}o Text : "accessibilitySummary"
+LiveBlogPosting ||--}o Person : "accountablePerson"
+LiveBlogPosting ||--}o AggregateRating : "aggregateRating"
+LiveBlogPosting ||--}o Text : "alternativeHeadline"
+LiveBlogPosting ||--}o MediaObject : "associatedMedia"
+LiveBlogPosting ||--}o Audience : "audience"
+LiveBlogPosting ||--}o Text : "award"
+LiveBlogPosting ||--}o Text : "awards"
+LiveBlogPosting ||--}o Person : "character"
+LiveBlogPosting ||--}o Comment : "comment"
+LiveBlogPosting ||--}o Integer : "commentCount"
+LiveBlogPosting ||--}o Text : "conditionsOfAccess"
+LiveBlogPosting ||--}o DateTime : "contentReferenceTime"
+LiveBlogPosting ||--}o Text : "copyrightNotice"
+LiveBlogPosting ||--}o Number : "copyrightYear"
+LiveBlogPosting ||--}o Country : "countryOfOrigin"
+LiveBlogPosting ||--}o Text : "creditText"
+LiveBlogPosting ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+LiveBlogPosting ||--}o URL : "discussionUrl"
+LiveBlogPosting ||--}o Person : "editor"
+LiveBlogPosting ||--}o AlignmentObject : "educationalAlignment"
+LiveBlogPosting ||--}o MediaObject : "encoding"
+LiveBlogPosting ||--}o MediaObject : "encodings"
+LiveBlogPosting ||--}o CreativeWork : "exampleOfWork"
+LiveBlogPosting ||--}o Grant : "funding"
+LiveBlogPosting ||--}o Text : "headline"
+LiveBlogPosting ||--}o InteractionCounter : "interactionStatistic"
+LiveBlogPosting ||--}o Text : "interactivityType"
+LiveBlogPosting ||--}o Boolean : "isAccessibleForFree"
+LiveBlogPosting ||--}o Boolean : "isFamilyFriendly"
+LiveBlogPosting ||--}o Place : "locationCreated"
+LiveBlogPosting ||--}o Thing : "mentions"
+LiveBlogPosting ||--}o PublicationEvent : "publication"
+LiveBlogPosting ||--}o Organization : "publisherImprint"
+LiveBlogPosting ||--}o Event : "recordedAt"
+LiveBlogPosting ||--}o PublicationEvent : "releasedEvent"
+LiveBlogPosting ||--}o Review : "review"
+LiveBlogPosting ||--}o Review : "reviews"
+LiveBlogPosting ||--}o Date : "sdDatePublished"
+LiveBlogPosting ||--}o Organization : "sourceOrganization"
+LiveBlogPosting ||--}o Place : "spatial"
+LiveBlogPosting ||--}o Text : "text"
+LiveBlogPosting ||--}o ImageObject : "thumbnail"
+LiveBlogPosting ||--}o URL : "thumbnailUrl"
+LiveBlogPosting ||--}o Duration : "timeRequired"
+LiveBlogPosting ||--}o CreativeWork : "translationOfWork"
+LiveBlogPosting ||--}o Text : "typicalAgeRange"
+LiveBlogPosting ||--}o CreativeWork : "workTranslation"
+LiveBlogPosting ||--}o Text : "alternateName"
+LiveBlogPosting ||--}o Text : "disambiguatingDescription"
+LiveBlogPosting ||--}o Text : "name"
+LiveBlogPosting ||--}o URL : "sameAs"
+LiveBlogPosting ||--}o Action : "potentialAction"
+LiveBlogPosting ||--}o URL : "url"
+

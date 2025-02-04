@@ -1,0 +1,18 @@
+erDiagram
+BoardingPolicyType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BoardingPolicyType ||--}o Text : "alternateName"
+BoardingPolicyType ||--}o Text : "disambiguatingDescription"
+BoardingPolicyType ||--}o Text : "name"
+BoardingPolicyType ||--}o URL : "sameAs"
+BoardingPolicyType ||--}o Action : "potentialAction"
+BoardingPolicyType ||--}o URL : "url"
+

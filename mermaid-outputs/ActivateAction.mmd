@@ -1,0 +1,30 @@
+erDiagram
+ActivateAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ActivateAction ||--}o Thing : "instrument"
+ActivateAction ||--}o Thing : "object"
+ActivateAction ||--}o Thing : "result"
+ActivateAction ||--}o HowTo : "actionProcess"
+ActivateAction ||--}o ActionStatusType : "actionStatus"
+ActivateAction ||--}o Thing : "error"
+ActivateAction ||--}o Text : "alternateName"
+ActivateAction ||--}o Text : "disambiguatingDescription"
+ActivateAction ||--}o Text : "name"
+ActivateAction ||--}o URL : "sameAs"
+ActivateAction ||--}o Action : "potentialAction"
+ActivateAction ||--}o URL : "url"
+

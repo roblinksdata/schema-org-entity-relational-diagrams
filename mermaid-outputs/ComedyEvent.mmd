@@ -1,0 +1,58 @@
+erDiagram
+ComedyEvent {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ComedyEvent ||--}o Thing : "about"
+ComedyEvent ||--}o Duration : "duration"
+ComedyEvent ||--}o CreativeWork : "workFeatured"
+ComedyEvent ||--}o CreativeWork : "workPerformed"
+ComedyEvent ||--}o AggregateRating : "aggregateRating"
+ComedyEvent ||--}o Audience : "audience"
+ComedyEvent ||--}o Person : "director"
+ComedyEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+ComedyEvent ||--}o Schedule : "eventSchedule"
+ComedyEvent ||--}o EventStatusType : "eventStatus"
+ComedyEvent ||--}o Grant : "funding"
+ComedyEvent ||--}o Boolean : "isAccessibleForFree"
+ComedyEvent ||--}o Integer : "maximumAttendeeCapacity"
+ComedyEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+ComedyEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+ComedyEvent ||--}o Date : "previousStartDate"
+ComedyEvent ||--}o CreativeWork : "recordedIn"
+ComedyEvent ||--}o Integer : "remainingAttendeeCapacity"
+ComedyEvent ||--}o Review : "review"
+ComedyEvent ||--}o Event : "subEvent"
+ComedyEvent ||--}o Event : "subEvents"
+ComedyEvent ||--}o Event : "superEvent"
+ComedyEvent ||--}o Text : "typicalAgeRange"
+ComedyEvent ||--}o Text : "alternateName"
+ComedyEvent ||--}o Text : "disambiguatingDescription"
+ComedyEvent ||--}o Text : "name"
+ComedyEvent ||--}o URL : "sameAs"
+ComedyEvent ||--}o Action : "potentialAction"
+ComedyEvent ||--}o URL : "url"
+

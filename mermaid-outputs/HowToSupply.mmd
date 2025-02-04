@@ -1,0 +1,23 @@
+erDiagram
+HowToSupply {
+    stringList estimatedCost  
+    stringList requiredQuantity  
+    stringList position  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+HowToSupply ||--}o Thing : "item"
+HowToSupply ||--}o ListItem : "nextItem"
+HowToSupply ||--}o ListItem : "previousItem"
+HowToSupply ||--}o Text : "alternateName"
+HowToSupply ||--}o Text : "disambiguatingDescription"
+HowToSupply ||--}o Text : "name"
+HowToSupply ||--}o URL : "sameAs"
+HowToSupply ||--}o Action : "potentialAction"
+HowToSupply ||--}o URL : "url"
+

@@ -1,0 +1,64 @@
+erDiagram
+Continent {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Continent ||--}o Text : "globalLocationNumber"
+Continent ||--}o URL : "hasGS1DigitalLink"
+Continent ||--}o PropertyValue : "additionalProperty"
+Continent ||--}o AggregateRating : "aggregateRating"
+Continent ||--}o LocationFeatureSpecification : "amenityFeature"
+Continent ||--}o Text : "branchCode"
+Continent ||--}o Place : "containedIn"
+Continent ||--}o Place : "containedInPlace"
+Continent ||--}o Place : "containsPlace"
+Continent ||--}o Event : "event"
+Continent ||--}o Event : "events"
+Continent ||--}o Text : "faxNumber"
+Continent ||--}o Certification : "hasCertification"
+Continent ||--}o Boolean : "hasDriveThroughService"
+Continent ||--}o Boolean : "isAccessibleForFree"
+Continent ||--}o Text : "isicV4"
+Continent ||--}o URL : "map"
+Continent ||--}o URL : "maps"
+Continent ||--}o Integer : "maximumAttendeeCapacity"
+Continent ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Continent ||--}o Boolean : "publicAccess"
+Continent ||--}o Review : "review"
+Continent ||--}o Review : "reviews"
+Continent ||--}o Text : "slogan"
+Continent ||--}o Boolean : "smokingAllowed"
+Continent ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Continent ||--}o Text : "telephone"
+Continent ||--}o URL : "tourBookingPage"
+Continent ||--}o Text : "alternateName"
+Continent ||--}o Text : "disambiguatingDescription"
+Continent ||--}o Text : "name"
+Continent ||--}o URL : "sameAs"
+Continent ||--}o Action : "potentialAction"
+Continent ||--}o URL : "url"
+

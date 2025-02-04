@@ -1,0 +1,32 @@
+erDiagram
+MoveAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MoveAction ||--}o Place : "fromLocation"
+MoveAction ||--}o Place : "toLocation"
+MoveAction ||--}o Thing : "instrument"
+MoveAction ||--}o Thing : "object"
+MoveAction ||--}o Thing : "result"
+MoveAction ||--}o HowTo : "actionProcess"
+MoveAction ||--}o ActionStatusType : "actionStatus"
+MoveAction ||--}o Thing : "error"
+MoveAction ||--}o Text : "alternateName"
+MoveAction ||--}o Text : "disambiguatingDescription"
+MoveAction ||--}o Text : "name"
+MoveAction ||--}o URL : "sameAs"
+MoveAction ||--}o Action : "potentialAction"
+MoveAction ||--}o URL : "url"
+

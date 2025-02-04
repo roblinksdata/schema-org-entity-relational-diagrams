@@ -1,0 +1,58 @@
+erDiagram
+UserPageVisits {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UserPageVisits ||--}o Thing : "about"
+UserPageVisits ||--}o Duration : "duration"
+UserPageVisits ||--}o CreativeWork : "workFeatured"
+UserPageVisits ||--}o CreativeWork : "workPerformed"
+UserPageVisits ||--}o AggregateRating : "aggregateRating"
+UserPageVisits ||--}o Audience : "audience"
+UserPageVisits ||--}o Person : "director"
+UserPageVisits ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+UserPageVisits ||--}o Schedule : "eventSchedule"
+UserPageVisits ||--}o EventStatusType : "eventStatus"
+UserPageVisits ||--}o Grant : "funding"
+UserPageVisits ||--}o Boolean : "isAccessibleForFree"
+UserPageVisits ||--}o Integer : "maximumAttendeeCapacity"
+UserPageVisits ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+UserPageVisits ||--}o Integer : "maximumVirtualAttendeeCapacity"
+UserPageVisits ||--}o Date : "previousStartDate"
+UserPageVisits ||--}o CreativeWork : "recordedIn"
+UserPageVisits ||--}o Integer : "remainingAttendeeCapacity"
+UserPageVisits ||--}o Review : "review"
+UserPageVisits ||--}o Event : "subEvent"
+UserPageVisits ||--}o Event : "subEvents"
+UserPageVisits ||--}o Event : "superEvent"
+UserPageVisits ||--}o Text : "typicalAgeRange"
+UserPageVisits ||--}o Text : "alternateName"
+UserPageVisits ||--}o Text : "disambiguatingDescription"
+UserPageVisits ||--}o Text : "name"
+UserPageVisits ||--}o URL : "sameAs"
+UserPageVisits ||--}o Action : "potentialAction"
+UserPageVisits ||--}o URL : "url"
+

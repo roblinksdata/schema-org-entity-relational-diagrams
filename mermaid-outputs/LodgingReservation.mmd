@@ -1,0 +1,36 @@
+erDiagram
+LodgingReservation {
+    stringList checkinTime  
+    stringList checkoutTime  
+    stringList lodgingUnitType  
+    stringList numAdults  
+    stringList numChildren  
+    stringList bookingAgent  
+    stringList broker  
+    stringList provider  
+    stringList totalPrice  
+    stringList underName  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LodgingReservation ||--}o Text : "lodgingUnitDescription"
+LodgingReservation ||--}o DateTime : "bookingTime"
+LodgingReservation ||--}o DateTime : "modifiedTime"
+LodgingReservation ||--}o Text : "priceCurrency"
+LodgingReservation ||--}o ProgramMembership : "programMembershipUsed"
+LodgingReservation ||--}o Thing : "reservationFor"
+LodgingReservation ||--}o Text : "reservationId"
+LodgingReservation ||--}o ReservationStatusType : "reservationStatus"
+LodgingReservation ||--}o Ticket : "reservedTicket"
+LodgingReservation ||--}o Text : "alternateName"
+LodgingReservation ||--}o Text : "disambiguatingDescription"
+LodgingReservation ||--}o Text : "name"
+LodgingReservation ||--}o URL : "sameAs"
+LodgingReservation ||--}o Action : "potentialAction"
+LodgingReservation ||--}o URL : "url"
+

@@ -1,0 +1,17 @@
+erDiagram
+Quantity {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Quantity ||--}o Text : "alternateName"
+Quantity ||--}o Text : "disambiguatingDescription"
+Quantity ||--}o Text : "name"
+Quantity ||--}o URL : "sameAs"
+Quantity ||--}o Action : "potentialAction"
+Quantity ||--}o URL : "url"
+

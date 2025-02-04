@@ -1,0 +1,18 @@
+erDiagram
+MedicalTrialDesign {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalTrialDesign ||--}o Text : "alternateName"
+MedicalTrialDesign ||--}o Text : "disambiguatingDescription"
+MedicalTrialDesign ||--}o Text : "name"
+MedicalTrialDesign ||--}o URL : "sameAs"
+MedicalTrialDesign ||--}o Action : "potentialAction"
+MedicalTrialDesign ||--}o URL : "url"
+

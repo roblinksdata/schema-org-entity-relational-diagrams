@@ -1,0 +1,17 @@
+erDiagram
+VirtualLocation {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+VirtualLocation ||--}o Text : "alternateName"
+VirtualLocation ||--}o Text : "disambiguatingDescription"
+VirtualLocation ||--}o Text : "name"
+VirtualLocation ||--}o URL : "sameAs"
+VirtualLocation ||--}o Action : "potentialAction"
+VirtualLocation ||--}o URL : "url"
+

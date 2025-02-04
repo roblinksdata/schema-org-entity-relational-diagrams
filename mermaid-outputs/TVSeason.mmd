@@ -1,0 +1,144 @@
+erDiagram
+TVSeason {
+    stringList titleEIDR  
+    stringList actor  
+    stringList seasonNumber  
+    stringList endDate  
+    stringList startDate  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TVSeason ||--}o TVSeries : "partOfTVSeries"
+TVSeason ||--}o Country : "countryOfOrigin"
+TVSeason ||--}o Episode : "episode"
+TVSeason ||--}o CreativeWorkSeries : "partOfSeries"
+TVSeason ||--}o Person : "director"
+TVSeason ||--}o Episode : "episodes"
+TVSeason ||--}o Integer : "numberOfEpisodes"
+TVSeason ||--}o Organization : "productionCompany"
+TVSeason ||--}o VideoObject : "trailer"
+TVSeason ||--}o Thing : "about"
+TVSeason ||--}o Place : "contentLocation"
+TVSeason ||--}o CreativeWork : "hasPart"
+TVSeason ||--}o Claim : "interpretedAsClaim"
+TVSeason ||--}o Thing : "mainEntity"
+TVSeason ||--}o Place : "spatialCoverage"
+TVSeason ||--}o CreativeWork : "workExample"
+TVSeason ||--}o Text : "abstract"
+TVSeason ||--}o Text : "accessMode"
+TVSeason ||--}o ItemList : "accessModeSufficient"
+TVSeason ||--}o Text : "accessibilityAPI"
+TVSeason ||--}o Text : "accessibilityControl"
+TVSeason ||--}o Text : "accessibilityFeature"
+TVSeason ||--}o Text : "accessibilityHazard"
+TVSeason ||--}o Text : "accessibilitySummary"
+TVSeason ||--}o Person : "accountablePerson"
+TVSeason ||--}o AggregateRating : "aggregateRating"
+TVSeason ||--}o Text : "alternativeHeadline"
+TVSeason ||--}o MediaObject : "associatedMedia"
+TVSeason ||--}o Audience : "audience"
+TVSeason ||--}o Text : "award"
+TVSeason ||--}o Text : "awards"
+TVSeason ||--}o Person : "character"
+TVSeason ||--}o Comment : "comment"
+TVSeason ||--}o Integer : "commentCount"
+TVSeason ||--}o Text : "conditionsOfAccess"
+TVSeason ||--}o DateTime : "contentReferenceTime"
+TVSeason ||--}o Text : "copyrightNotice"
+TVSeason ||--}o Number : "copyrightYear"
+TVSeason ||--}o Text : "creditText"
+TVSeason ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+TVSeason ||--}o URL : "discussionUrl"
+TVSeason ||--}o Person : "editor"
+TVSeason ||--}o AlignmentObject : "educationalAlignment"
+TVSeason ||--}o MediaObject : "encoding"
+TVSeason ||--}o MediaObject : "encodings"
+TVSeason ||--}o CreativeWork : "exampleOfWork"
+TVSeason ||--}o Grant : "funding"
+TVSeason ||--}o Text : "headline"
+TVSeason ||--}o InteractionCounter : "interactionStatistic"
+TVSeason ||--}o Text : "interactivityType"
+TVSeason ||--}o Boolean : "isAccessibleForFree"
+TVSeason ||--}o Boolean : "isFamilyFriendly"
+TVSeason ||--}o Place : "locationCreated"
+TVSeason ||--}o Thing : "mentions"
+TVSeason ||--}o PublicationEvent : "publication"
+TVSeason ||--}o Organization : "publisherImprint"
+TVSeason ||--}o Event : "recordedAt"
+TVSeason ||--}o PublicationEvent : "releasedEvent"
+TVSeason ||--}o Review : "review"
+TVSeason ||--}o Review : "reviews"
+TVSeason ||--}o Date : "sdDatePublished"
+TVSeason ||--}o Organization : "sourceOrganization"
+TVSeason ||--}o Place : "spatial"
+TVSeason ||--}o Text : "text"
+TVSeason ||--}o ImageObject : "thumbnail"
+TVSeason ||--}o URL : "thumbnailUrl"
+TVSeason ||--}o Duration : "timeRequired"
+TVSeason ||--}o CreativeWork : "translationOfWork"
+TVSeason ||--}o Text : "typicalAgeRange"
+TVSeason ||--}o CreativeWork : "workTranslation"
+TVSeason ||--}o Text : "alternateName"
+TVSeason ||--}o Text : "disambiguatingDescription"
+TVSeason ||--}o Text : "name"
+TVSeason ||--}o URL : "sameAs"
+TVSeason ||--}o Action : "potentialAction"
+TVSeason ||--}o URL : "url"
+

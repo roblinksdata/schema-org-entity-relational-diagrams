@@ -1,0 +1,34 @@
+erDiagram
+ReplaceAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ReplaceAction ||--}o Thing : "replacee"
+ReplaceAction ||--}o Thing : "replacer"
+ReplaceAction ||--}o Thing : "collection"
+ReplaceAction ||--}o Thing : "targetCollection"
+ReplaceAction ||--}o Thing : "instrument"
+ReplaceAction ||--}o Thing : "object"
+ReplaceAction ||--}o Thing : "result"
+ReplaceAction ||--}o HowTo : "actionProcess"
+ReplaceAction ||--}o ActionStatusType : "actionStatus"
+ReplaceAction ||--}o Thing : "error"
+ReplaceAction ||--}o Text : "alternateName"
+ReplaceAction ||--}o Text : "disambiguatingDescription"
+ReplaceAction ||--}o Text : "name"
+ReplaceAction ||--}o URL : "sameAs"
+ReplaceAction ||--}o Action : "potentialAction"
+ReplaceAction ||--}o URL : "url"
+

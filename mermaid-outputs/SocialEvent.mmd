@@ -1,0 +1,58 @@
+erDiagram
+SocialEvent {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SocialEvent ||--}o Thing : "about"
+SocialEvent ||--}o Duration : "duration"
+SocialEvent ||--}o CreativeWork : "workFeatured"
+SocialEvent ||--}o CreativeWork : "workPerformed"
+SocialEvent ||--}o AggregateRating : "aggregateRating"
+SocialEvent ||--}o Audience : "audience"
+SocialEvent ||--}o Person : "director"
+SocialEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+SocialEvent ||--}o Schedule : "eventSchedule"
+SocialEvent ||--}o EventStatusType : "eventStatus"
+SocialEvent ||--}o Grant : "funding"
+SocialEvent ||--}o Boolean : "isAccessibleForFree"
+SocialEvent ||--}o Integer : "maximumAttendeeCapacity"
+SocialEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+SocialEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
+SocialEvent ||--}o Date : "previousStartDate"
+SocialEvent ||--}o CreativeWork : "recordedIn"
+SocialEvent ||--}o Integer : "remainingAttendeeCapacity"
+SocialEvent ||--}o Review : "review"
+SocialEvent ||--}o Event : "subEvent"
+SocialEvent ||--}o Event : "subEvents"
+SocialEvent ||--}o Event : "superEvent"
+SocialEvent ||--}o Text : "typicalAgeRange"
+SocialEvent ||--}o Text : "alternateName"
+SocialEvent ||--}o Text : "disambiguatingDescription"
+SocialEvent ||--}o Text : "name"
+SocialEvent ||--}o URL : "sameAs"
+SocialEvent ||--}o Action : "potentialAction"
+SocialEvent ||--}o URL : "url"
+

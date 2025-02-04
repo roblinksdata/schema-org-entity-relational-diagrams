@@ -1,0 +1,132 @@
+erDiagram
+MathSolver {
+    stringList mathExpression  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MathSolver ||--}o Thing : "about"
+MathSolver ||--}o Place : "contentLocation"
+MathSolver ||--}o CreativeWork : "hasPart"
+MathSolver ||--}o Claim : "interpretedAsClaim"
+MathSolver ||--}o Thing : "mainEntity"
+MathSolver ||--}o Place : "spatialCoverage"
+MathSolver ||--}o CreativeWork : "workExample"
+MathSolver ||--}o Text : "abstract"
+MathSolver ||--}o Text : "accessMode"
+MathSolver ||--}o ItemList : "accessModeSufficient"
+MathSolver ||--}o Text : "accessibilityAPI"
+MathSolver ||--}o Text : "accessibilityControl"
+MathSolver ||--}o Text : "accessibilityFeature"
+MathSolver ||--}o Text : "accessibilityHazard"
+MathSolver ||--}o Text : "accessibilitySummary"
+MathSolver ||--}o Person : "accountablePerson"
+MathSolver ||--}o AggregateRating : "aggregateRating"
+MathSolver ||--}o Text : "alternativeHeadline"
+MathSolver ||--}o MediaObject : "associatedMedia"
+MathSolver ||--}o Audience : "audience"
+MathSolver ||--}o Text : "award"
+MathSolver ||--}o Text : "awards"
+MathSolver ||--}o Person : "character"
+MathSolver ||--}o Comment : "comment"
+MathSolver ||--}o Integer : "commentCount"
+MathSolver ||--}o Text : "conditionsOfAccess"
+MathSolver ||--}o DateTime : "contentReferenceTime"
+MathSolver ||--}o Text : "copyrightNotice"
+MathSolver ||--}o Number : "copyrightYear"
+MathSolver ||--}o Country : "countryOfOrigin"
+MathSolver ||--}o Text : "creditText"
+MathSolver ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+MathSolver ||--}o URL : "discussionUrl"
+MathSolver ||--}o Person : "editor"
+MathSolver ||--}o AlignmentObject : "educationalAlignment"
+MathSolver ||--}o MediaObject : "encoding"
+MathSolver ||--}o MediaObject : "encodings"
+MathSolver ||--}o CreativeWork : "exampleOfWork"
+MathSolver ||--}o Grant : "funding"
+MathSolver ||--}o Text : "headline"
+MathSolver ||--}o InteractionCounter : "interactionStatistic"
+MathSolver ||--}o Text : "interactivityType"
+MathSolver ||--}o Boolean : "isAccessibleForFree"
+MathSolver ||--}o Boolean : "isFamilyFriendly"
+MathSolver ||--}o Place : "locationCreated"
+MathSolver ||--}o Thing : "mentions"
+MathSolver ||--}o PublicationEvent : "publication"
+MathSolver ||--}o Organization : "publisherImprint"
+MathSolver ||--}o Event : "recordedAt"
+MathSolver ||--}o PublicationEvent : "releasedEvent"
+MathSolver ||--}o Review : "review"
+MathSolver ||--}o Review : "reviews"
+MathSolver ||--}o Date : "sdDatePublished"
+MathSolver ||--}o Organization : "sourceOrganization"
+MathSolver ||--}o Place : "spatial"
+MathSolver ||--}o Text : "text"
+MathSolver ||--}o ImageObject : "thumbnail"
+MathSolver ||--}o URL : "thumbnailUrl"
+MathSolver ||--}o Duration : "timeRequired"
+MathSolver ||--}o CreativeWork : "translationOfWork"
+MathSolver ||--}o Text : "typicalAgeRange"
+MathSolver ||--}o CreativeWork : "workTranslation"
+MathSolver ||--}o Text : "alternateName"
+MathSolver ||--}o Text : "disambiguatingDescription"
+MathSolver ||--}o Text : "name"
+MathSolver ||--}o URL : "sameAs"
+MathSolver ||--}o Action : "potentialAction"
+MathSolver ||--}o URL : "url"
+

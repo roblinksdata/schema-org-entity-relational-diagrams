@@ -1,0 +1,50 @@
+erDiagram
+PaymentCard {
+    stringList cashBack  
+    stringList monthlyMinimumRepaymentAmount  
+    stringList annualPercentageRate  
+    stringList feesAndCommissionsSpecification  
+    stringList interestRate  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+}
+
+PaymentCard ||--}o Boolean : "contactlessPayment"
+PaymentCard ||--}o MonetaryAmount : "floorLimit"
+PaymentCard ||--}o PaymentMethodType : "paymentMethodType"
+PaymentCard ||--}o Text : "alternateName"
+PaymentCard ||--}o Text : "disambiguatingDescription"
+PaymentCard ||--}o Text : "name"
+PaymentCard ||--}o URL : "sameAs"
+PaymentCard ||--}o Action : "potentialAction"
+PaymentCard ||--}o URL : "url"
+PaymentCard ||--}o AggregateRating : "aggregateRating"
+PaymentCard ||--}o Audience : "audience"
+PaymentCard ||--}o ServiceChannel : "availableChannel"
+PaymentCard ||--}o Text : "award"
+PaymentCard ||--}o Certification : "hasCertification"
+PaymentCard ||--}o OfferCatalog : "hasOfferCatalog"
+PaymentCard ||--}o OpeningHoursSpecification : "hoursAvailable"
+PaymentCard ||--}o Thing : "produces"
+PaymentCard ||--}o Text : "providerMobility"
+PaymentCard ||--}o Review : "review"
+PaymentCard ||--}o Audience : "serviceAudience"
+PaymentCard ||--}o Thing : "serviceOutput"
+PaymentCard ||--}o Text : "slogan"
+

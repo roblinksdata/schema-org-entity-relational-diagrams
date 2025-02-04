@@ -1,0 +1,34 @@
+erDiagram
+ShareAction {
+    stringList recipient  
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ShareAction ||--}o Thing : "about"
+ShareAction ||--}o Language : "language"
+ShareAction ||--}o Thing : "instrument"
+ShareAction ||--}o Thing : "object"
+ShareAction ||--}o Thing : "result"
+ShareAction ||--}o HowTo : "actionProcess"
+ShareAction ||--}o ActionStatusType : "actionStatus"
+ShareAction ||--}o Thing : "error"
+ShareAction ||--}o Text : "alternateName"
+ShareAction ||--}o Text : "disambiguatingDescription"
+ShareAction ||--}o Text : "name"
+ShareAction ||--}o URL : "sameAs"
+ShareAction ||--}o Action : "potentialAction"
+ShareAction ||--}o URL : "url"
+

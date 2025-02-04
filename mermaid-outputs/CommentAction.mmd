@@ -1,0 +1,35 @@
+erDiagram
+CommentAction {
+    stringList recipient  
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CommentAction ||--}o Comment : "resultComment"
+CommentAction ||--}o Thing : "about"
+CommentAction ||--}o Language : "language"
+CommentAction ||--}o Thing : "instrument"
+CommentAction ||--}o Thing : "object"
+CommentAction ||--}o Thing : "result"
+CommentAction ||--}o HowTo : "actionProcess"
+CommentAction ||--}o ActionStatusType : "actionStatus"
+CommentAction ||--}o Thing : "error"
+CommentAction ||--}o Text : "alternateName"
+CommentAction ||--}o Text : "disambiguatingDescription"
+CommentAction ||--}o Text : "name"
+CommentAction ||--}o URL : "sameAs"
+CommentAction ||--}o Action : "potentialAction"
+CommentAction ||--}o URL : "url"
+

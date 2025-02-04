@@ -1,0 +1,35 @@
+erDiagram
+ConfirmAction {
+    stringList recipient  
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ConfirmAction ||--}o Event : "event"
+ConfirmAction ||--}o Thing : "about"
+ConfirmAction ||--}o Language : "language"
+ConfirmAction ||--}o Thing : "instrument"
+ConfirmAction ||--}o Thing : "object"
+ConfirmAction ||--}o Thing : "result"
+ConfirmAction ||--}o HowTo : "actionProcess"
+ConfirmAction ||--}o ActionStatusType : "actionStatus"
+ConfirmAction ||--}o Thing : "error"
+ConfirmAction ||--}o Text : "alternateName"
+ConfirmAction ||--}o Text : "disambiguatingDescription"
+ConfirmAction ||--}o Text : "name"
+ConfirmAction ||--}o URL : "sameAs"
+ConfirmAction ||--}o Action : "potentialAction"
+ConfirmAction ||--}o URL : "url"
+

@@ -1,0 +1,31 @@
+erDiagram
+ReviewAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ReviewAction ||--}o Review : "resultReview"
+ReviewAction ||--}o Thing : "instrument"
+ReviewAction ||--}o Thing : "object"
+ReviewAction ||--}o Thing : "result"
+ReviewAction ||--}o HowTo : "actionProcess"
+ReviewAction ||--}o ActionStatusType : "actionStatus"
+ReviewAction ||--}o Thing : "error"
+ReviewAction ||--}o Text : "alternateName"
+ReviewAction ||--}o Text : "disambiguatingDescription"
+ReviewAction ||--}o Text : "name"
+ReviewAction ||--}o URL : "sameAs"
+ReviewAction ||--}o Action : "potentialAction"
+ReviewAction ||--}o URL : "url"
+

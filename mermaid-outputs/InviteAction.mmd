@@ -1,0 +1,35 @@
+erDiagram
+InviteAction {
+    stringList recipient  
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+InviteAction ||--}o Event : "event"
+InviteAction ||--}o Thing : "about"
+InviteAction ||--}o Language : "language"
+InviteAction ||--}o Thing : "instrument"
+InviteAction ||--}o Thing : "object"
+InviteAction ||--}o Thing : "result"
+InviteAction ||--}o HowTo : "actionProcess"
+InviteAction ||--}o ActionStatusType : "actionStatus"
+InviteAction ||--}o Thing : "error"
+InviteAction ||--}o Text : "alternateName"
+InviteAction ||--}o Text : "disambiguatingDescription"
+InviteAction ||--}o Text : "name"
+InviteAction ||--}o URL : "sameAs"
+InviteAction ||--}o Action : "potentialAction"
+InviteAction ||--}o URL : "url"
+

@@ -1,0 +1,19 @@
+erDiagram
+PostalCodeRangeSpecification {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PostalCodeRangeSpecification ||--}o Text : "postalCodeBegin"
+PostalCodeRangeSpecification ||--}o Text : "postalCodeEnd"
+PostalCodeRangeSpecification ||--}o Text : "alternateName"
+PostalCodeRangeSpecification ||--}o Text : "disambiguatingDescription"
+PostalCodeRangeSpecification ||--}o Text : "name"
+PostalCodeRangeSpecification ||--}o URL : "sameAs"
+PostalCodeRangeSpecification ||--}o Action : "potentialAction"
+PostalCodeRangeSpecification ||--}o URL : "url"
+

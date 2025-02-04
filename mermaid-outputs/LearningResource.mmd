@@ -1,0 +1,132 @@
+erDiagram
+LearningResource {
+    stringList assesses  
+    stringList competencyRequired  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList learningResourceType  
+    stringList teaches  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LearningResource ||--}o AlignmentObject : "educationalAlignment"
+LearningResource ||--}o Thing : "about"
+LearningResource ||--}o Place : "contentLocation"
+LearningResource ||--}o CreativeWork : "hasPart"
+LearningResource ||--}o Claim : "interpretedAsClaim"
+LearningResource ||--}o Thing : "mainEntity"
+LearningResource ||--}o Place : "spatialCoverage"
+LearningResource ||--}o CreativeWork : "workExample"
+LearningResource ||--}o Text : "abstract"
+LearningResource ||--}o Text : "accessMode"
+LearningResource ||--}o ItemList : "accessModeSufficient"
+LearningResource ||--}o Text : "accessibilityAPI"
+LearningResource ||--}o Text : "accessibilityControl"
+LearningResource ||--}o Text : "accessibilityFeature"
+LearningResource ||--}o Text : "accessibilityHazard"
+LearningResource ||--}o Text : "accessibilitySummary"
+LearningResource ||--}o Person : "accountablePerson"
+LearningResource ||--}o AggregateRating : "aggregateRating"
+LearningResource ||--}o Text : "alternativeHeadline"
+LearningResource ||--}o MediaObject : "associatedMedia"
+LearningResource ||--}o Audience : "audience"
+LearningResource ||--}o Text : "award"
+LearningResource ||--}o Text : "awards"
+LearningResource ||--}o Person : "character"
+LearningResource ||--}o Comment : "comment"
+LearningResource ||--}o Integer : "commentCount"
+LearningResource ||--}o Text : "conditionsOfAccess"
+LearningResource ||--}o DateTime : "contentReferenceTime"
+LearningResource ||--}o Text : "copyrightNotice"
+LearningResource ||--}o Number : "copyrightYear"
+LearningResource ||--}o Country : "countryOfOrigin"
+LearningResource ||--}o Text : "creditText"
+LearningResource ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+LearningResource ||--}o URL : "discussionUrl"
+LearningResource ||--}o Person : "editor"
+LearningResource ||--}o MediaObject : "encoding"
+LearningResource ||--}o MediaObject : "encodings"
+LearningResource ||--}o CreativeWork : "exampleOfWork"
+LearningResource ||--}o Grant : "funding"
+LearningResource ||--}o Text : "headline"
+LearningResource ||--}o InteractionCounter : "interactionStatistic"
+LearningResource ||--}o Text : "interactivityType"
+LearningResource ||--}o Boolean : "isAccessibleForFree"
+LearningResource ||--}o Boolean : "isFamilyFriendly"
+LearningResource ||--}o Place : "locationCreated"
+LearningResource ||--}o Thing : "mentions"
+LearningResource ||--}o PublicationEvent : "publication"
+LearningResource ||--}o Organization : "publisherImprint"
+LearningResource ||--}o Event : "recordedAt"
+LearningResource ||--}o PublicationEvent : "releasedEvent"
+LearningResource ||--}o Review : "review"
+LearningResource ||--}o Review : "reviews"
+LearningResource ||--}o Date : "sdDatePublished"
+LearningResource ||--}o Organization : "sourceOrganization"
+LearningResource ||--}o Place : "spatial"
+LearningResource ||--}o Text : "text"
+LearningResource ||--}o ImageObject : "thumbnail"
+LearningResource ||--}o URL : "thumbnailUrl"
+LearningResource ||--}o Duration : "timeRequired"
+LearningResource ||--}o CreativeWork : "translationOfWork"
+LearningResource ||--}o Text : "typicalAgeRange"
+LearningResource ||--}o CreativeWork : "workTranslation"
+LearningResource ||--}o Text : "alternateName"
+LearningResource ||--}o Text : "disambiguatingDescription"
+LearningResource ||--}o Text : "name"
+LearningResource ||--}o URL : "sameAs"
+LearningResource ||--}o Action : "potentialAction"
+LearningResource ||--}o URL : "url"
+

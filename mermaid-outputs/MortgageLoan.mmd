@@ -1,0 +1,56 @@
+erDiagram
+MortgageLoan {
+    stringList amount  
+    stringList loanType  
+    stringList requiredCollateral  
+    stringList annualPercentageRate  
+    stringList feesAndCommissionsSpecification  
+    stringList interestRate  
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MortgageLoan ||--}o Boolean : "domiciledMortgage"
+MortgageLoan ||--}o MonetaryAmount : "loanMortgageMandateAmount"
+MortgageLoan ||--}o QuantitativeValue : "loanTerm"
+MortgageLoan ||--}o Text : "currency"
+MortgageLoan ||--}o Duration : "gracePeriod"
+MortgageLoan ||--}o RepaymentSpecification : "loanRepaymentForm"
+MortgageLoan ||--}o Boolean : "recourseLoan"
+MortgageLoan ||--}o Boolean : "renegotiableLoan"
+MortgageLoan ||--}o AggregateRating : "aggregateRating"
+MortgageLoan ||--}o Audience : "audience"
+MortgageLoan ||--}o ServiceChannel : "availableChannel"
+MortgageLoan ||--}o Text : "award"
+MortgageLoan ||--}o Certification : "hasCertification"
+MortgageLoan ||--}o OfferCatalog : "hasOfferCatalog"
+MortgageLoan ||--}o OpeningHoursSpecification : "hoursAvailable"
+MortgageLoan ||--}o Thing : "produces"
+MortgageLoan ||--}o Text : "providerMobility"
+MortgageLoan ||--}o Review : "review"
+MortgageLoan ||--}o Audience : "serviceAudience"
+MortgageLoan ||--}o Thing : "serviceOutput"
+MortgageLoan ||--}o Text : "slogan"
+MortgageLoan ||--}o Text : "alternateName"
+MortgageLoan ||--}o Text : "disambiguatingDescription"
+MortgageLoan ||--}o Text : "name"
+MortgageLoan ||--}o URL : "sameAs"
+MortgageLoan ||--}o Action : "potentialAction"
+MortgageLoan ||--}o URL : "url"
+

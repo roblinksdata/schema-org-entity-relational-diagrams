@@ -1,0 +1,27 @@
+erDiagram
+Substance {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Substance ||--}o Text : "activeIngredient"
+Substance ||--}o MaximumDoseSchedule : "maximumIntake"
+Substance ||--}o MedicalCode : "code"
+Substance ||--}o Grant : "funding"
+Substance ||--}o MedicalGuideline : "guideline"
+Substance ||--}o MedicineSystem : "medicineSystem"
+Substance ||--}o Organization : "recognizingAuthority"
+Substance ||--}o MedicalSpecialty : "relevantSpecialty"
+Substance ||--}o MedicalStudy : "study"
+Substance ||--}o Text : "alternateName"
+Substance ||--}o Text : "disambiguatingDescription"
+Substance ||--}o Text : "name"
+Substance ||--}o URL : "sameAs"
+Substance ||--}o Action : "potentialAction"
+Substance ||--}o URL : "url"
+

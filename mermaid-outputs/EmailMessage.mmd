@@ -1,0 +1,140 @@
+erDiagram
+EmailMessage {
+    stringList bccRecipient  
+    stringList ccRecipient  
+    stringList recipient  
+    stringList sender  
+    stringList toRecipient  
+    stringList dateRead  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EmailMessage ||--}o DateTime : "dateReceived"
+EmailMessage ||--}o DateTime : "dateSent"
+EmailMessage ||--}o CreativeWork : "messageAttachment"
+EmailMessage ||--}o Thing : "about"
+EmailMessage ||--}o Place : "contentLocation"
+EmailMessage ||--}o CreativeWork : "hasPart"
+EmailMessage ||--}o Claim : "interpretedAsClaim"
+EmailMessage ||--}o Thing : "mainEntity"
+EmailMessage ||--}o Place : "spatialCoverage"
+EmailMessage ||--}o CreativeWork : "workExample"
+EmailMessage ||--}o Text : "abstract"
+EmailMessage ||--}o Text : "accessMode"
+EmailMessage ||--}o ItemList : "accessModeSufficient"
+EmailMessage ||--}o Text : "accessibilityAPI"
+EmailMessage ||--}o Text : "accessibilityControl"
+EmailMessage ||--}o Text : "accessibilityFeature"
+EmailMessage ||--}o Text : "accessibilityHazard"
+EmailMessage ||--}o Text : "accessibilitySummary"
+EmailMessage ||--}o Person : "accountablePerson"
+EmailMessage ||--}o AggregateRating : "aggregateRating"
+EmailMessage ||--}o Text : "alternativeHeadline"
+EmailMessage ||--}o MediaObject : "associatedMedia"
+EmailMessage ||--}o Audience : "audience"
+EmailMessage ||--}o Text : "award"
+EmailMessage ||--}o Text : "awards"
+EmailMessage ||--}o Person : "character"
+EmailMessage ||--}o Comment : "comment"
+EmailMessage ||--}o Integer : "commentCount"
+EmailMessage ||--}o Text : "conditionsOfAccess"
+EmailMessage ||--}o DateTime : "contentReferenceTime"
+EmailMessage ||--}o Text : "copyrightNotice"
+EmailMessage ||--}o Number : "copyrightYear"
+EmailMessage ||--}o Country : "countryOfOrigin"
+EmailMessage ||--}o Text : "creditText"
+EmailMessage ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+EmailMessage ||--}o URL : "discussionUrl"
+EmailMessage ||--}o Person : "editor"
+EmailMessage ||--}o AlignmentObject : "educationalAlignment"
+EmailMessage ||--}o MediaObject : "encoding"
+EmailMessage ||--}o MediaObject : "encodings"
+EmailMessage ||--}o CreativeWork : "exampleOfWork"
+EmailMessage ||--}o Grant : "funding"
+EmailMessage ||--}o Text : "headline"
+EmailMessage ||--}o InteractionCounter : "interactionStatistic"
+EmailMessage ||--}o Text : "interactivityType"
+EmailMessage ||--}o Boolean : "isAccessibleForFree"
+EmailMessage ||--}o Boolean : "isFamilyFriendly"
+EmailMessage ||--}o Place : "locationCreated"
+EmailMessage ||--}o Thing : "mentions"
+EmailMessage ||--}o PublicationEvent : "publication"
+EmailMessage ||--}o Organization : "publisherImprint"
+EmailMessage ||--}o Event : "recordedAt"
+EmailMessage ||--}o PublicationEvent : "releasedEvent"
+EmailMessage ||--}o Review : "review"
+EmailMessage ||--}o Review : "reviews"
+EmailMessage ||--}o Date : "sdDatePublished"
+EmailMessage ||--}o Organization : "sourceOrganization"
+EmailMessage ||--}o Place : "spatial"
+EmailMessage ||--}o Text : "text"
+EmailMessage ||--}o ImageObject : "thumbnail"
+EmailMessage ||--}o URL : "thumbnailUrl"
+EmailMessage ||--}o Duration : "timeRequired"
+EmailMessage ||--}o CreativeWork : "translationOfWork"
+EmailMessage ||--}o Text : "typicalAgeRange"
+EmailMessage ||--}o CreativeWork : "workTranslation"
+EmailMessage ||--}o Text : "alternateName"
+EmailMessage ||--}o Text : "disambiguatingDescription"
+EmailMessage ||--}o Text : "name"
+EmailMessage ||--}o URL : "sameAs"
+EmailMessage ||--}o Action : "potentialAction"
+EmailMessage ||--}o URL : "url"
+

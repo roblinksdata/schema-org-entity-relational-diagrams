@@ -1,0 +1,30 @@
+erDiagram
+UnRegisterAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UnRegisterAction ||--}o Thing : "instrument"
+UnRegisterAction ||--}o Thing : "object"
+UnRegisterAction ||--}o Thing : "result"
+UnRegisterAction ||--}o HowTo : "actionProcess"
+UnRegisterAction ||--}o ActionStatusType : "actionStatus"
+UnRegisterAction ||--}o Thing : "error"
+UnRegisterAction ||--}o Text : "alternateName"
+UnRegisterAction ||--}o Text : "disambiguatingDescription"
+UnRegisterAction ||--}o Text : "name"
+UnRegisterAction ||--}o URL : "sameAs"
+UnRegisterAction ||--}o Action : "potentialAction"
+UnRegisterAction ||--}o URL : "url"
+

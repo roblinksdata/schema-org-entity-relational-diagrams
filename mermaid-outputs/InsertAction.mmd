@@ -1,0 +1,33 @@
+erDiagram
+InsertAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+InsertAction ||--}o Place : "toLocation"
+InsertAction ||--}o Thing : "collection"
+InsertAction ||--}o Thing : "targetCollection"
+InsertAction ||--}o Thing : "instrument"
+InsertAction ||--}o Thing : "object"
+InsertAction ||--}o Thing : "result"
+InsertAction ||--}o HowTo : "actionProcess"
+InsertAction ||--}o ActionStatusType : "actionStatus"
+InsertAction ||--}o Thing : "error"
+InsertAction ||--}o Text : "alternateName"
+InsertAction ||--}o Text : "disambiguatingDescription"
+InsertAction ||--}o Text : "name"
+InsertAction ||--}o URL : "sameAs"
+InsertAction ||--}o Action : "potentialAction"
+InsertAction ||--}o URL : "url"
+

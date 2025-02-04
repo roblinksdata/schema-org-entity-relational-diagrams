@@ -1,0 +1,32 @@
+erDiagram
+WriteAction {
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+WriteAction ||--}o Language : "language"
+WriteAction ||--}o Thing : "instrument"
+WriteAction ||--}o Thing : "object"
+WriteAction ||--}o Thing : "result"
+WriteAction ||--}o HowTo : "actionProcess"
+WriteAction ||--}o ActionStatusType : "actionStatus"
+WriteAction ||--}o Thing : "error"
+WriteAction ||--}o Text : "alternateName"
+WriteAction ||--}o Text : "disambiguatingDescription"
+WriteAction ||--}o Text : "name"
+WriteAction ||--}o URL : "sameAs"
+WriteAction ||--}o Action : "potentialAction"
+WriteAction ||--}o URL : "url"
+

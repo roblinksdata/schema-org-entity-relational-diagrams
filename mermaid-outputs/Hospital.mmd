@@ -1,0 +1,131 @@
+erDiagram
+Hospital {
+    stringList availableService  
+    stringList healthcareReportingData  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+}
+
+Hospital ||--}o MedicalSpecialty : "medicalSpecialty"
+Hospital ||--}o Text : "healthPlanNetworkId"
+Hospital ||--}o Boolean : "isAcceptingNewPatients"
+Hospital ||--}o Text : "openingHours"
+Hospital ||--}o Text : "globalLocationNumber"
+Hospital ||--}o URL : "hasGS1DigitalLink"
+Hospital ||--}o PropertyValue : "additionalProperty"
+Hospital ||--}o AggregateRating : "aggregateRating"
+Hospital ||--}o LocationFeatureSpecification : "amenityFeature"
+Hospital ||--}o Text : "branchCode"
+Hospital ||--}o Place : "containedIn"
+Hospital ||--}o Place : "containedInPlace"
+Hospital ||--}o Place : "containsPlace"
+Hospital ||--}o Event : "event"
+Hospital ||--}o Event : "events"
+Hospital ||--}o Text : "faxNumber"
+Hospital ||--}o Certification : "hasCertification"
+Hospital ||--}o Boolean : "hasDriveThroughService"
+Hospital ||--}o Boolean : "isAccessibleForFree"
+Hospital ||--}o Text : "isicV4"
+Hospital ||--}o URL : "map"
+Hospital ||--}o URL : "maps"
+Hospital ||--}o Integer : "maximumAttendeeCapacity"
+Hospital ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+Hospital ||--}o Boolean : "publicAccess"
+Hospital ||--}o Review : "review"
+Hospital ||--}o Review : "reviews"
+Hospital ||--}o Text : "slogan"
+Hospital ||--}o Boolean : "smokingAllowed"
+Hospital ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+Hospital ||--}o Text : "telephone"
+Hospital ||--}o URL : "tourBookingPage"
+Hospital ||--}o Text : "alternateName"
+Hospital ||--}o Text : "disambiguatingDescription"
+Hospital ||--}o Text : "name"
+Hospital ||--}o URL : "sameAs"
+Hospital ||--}o Action : "potentialAction"
+Hospital ||--}o URL : "url"
+Hospital ||--}o Organization : "branchOf"
+Hospital ||--}o Text : "currenciesAccepted"
+Hospital ||--}o Text : "paymentAccepted"
+Hospital ||--}o Text : "priceRange"
+Hospital ||--}o Text : "duns"
+Hospital ||--}o Text : "leiCode"
+Hospital ||--}o Text : "taxID"
+Hospital ||--}o InteractionCounter : "agentInteractionStatistic"
+Hospital ||--}o Person : "alumni"
+Hospital ||--}o Text : "award"
+Hospital ||--}o Text : "awards"
+Hospital ||--}o ContactPoint : "contactPoint"
+Hospital ||--}o ContactPoint : "contactPoints"
+Hospital ||--}o Organization : "department"
+Hospital ||--}o Date : "dissolutionDate"
+Hospital ||--}o Text : "email"
+Hospital ||--}o Person : "employee"
+Hospital ||--}o Person : "employees"
+Hospital ||--}o Person : "founders"
+Hospital ||--}o Date : "foundingDate"
+Hospital ||--}o Place : "foundingLocation"
+Hospital ||--}o Grant : "funding"
+Hospital ||--}o EducationalOccupationalCredential : "hasCredential"
+Hospital ||--}o MemberProgram : "hasMemberProgram"
+Hospital ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+Hospital ||--}o OfferCatalog : "hasOfferCatalog"
+Hospital ||--}o Place : "hasPOS"
+Hospital ||--}o InteractionCounter : "interactionStatistic"
+Hospital ||--}o Text : "iso6523Code"
+Hospital ||--}o Text : "legalName"
+Hospital ||--}o Offer : "makesOffer"
+Hospital ||--}o Text : "naics"
+Hospital ||--}o NonprofitType : "nonprofitStatus"
+Hospital ||--}o QuantitativeValue : "numberOfEmployees"
+Hospital ||--}o Organization : "parentOrganization"
+Hospital ||--}o Demand : "seeks"
+Hospital ||--}o Organization : "subOrganization"
+Hospital ||--}o Text : "vatID"
+

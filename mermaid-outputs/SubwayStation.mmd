@@ -1,0 +1,65 @@
+erDiagram
+SubwayStation {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SubwayStation ||--}o Text : "openingHours"
+SubwayStation ||--}o Text : "globalLocationNumber"
+SubwayStation ||--}o URL : "hasGS1DigitalLink"
+SubwayStation ||--}o PropertyValue : "additionalProperty"
+SubwayStation ||--}o AggregateRating : "aggregateRating"
+SubwayStation ||--}o LocationFeatureSpecification : "amenityFeature"
+SubwayStation ||--}o Text : "branchCode"
+SubwayStation ||--}o Place : "containedIn"
+SubwayStation ||--}o Place : "containedInPlace"
+SubwayStation ||--}o Place : "containsPlace"
+SubwayStation ||--}o Event : "event"
+SubwayStation ||--}o Event : "events"
+SubwayStation ||--}o Text : "faxNumber"
+SubwayStation ||--}o Certification : "hasCertification"
+SubwayStation ||--}o Boolean : "hasDriveThroughService"
+SubwayStation ||--}o Boolean : "isAccessibleForFree"
+SubwayStation ||--}o Text : "isicV4"
+SubwayStation ||--}o URL : "map"
+SubwayStation ||--}o URL : "maps"
+SubwayStation ||--}o Integer : "maximumAttendeeCapacity"
+SubwayStation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+SubwayStation ||--}o Boolean : "publicAccess"
+SubwayStation ||--}o Review : "review"
+SubwayStation ||--}o Review : "reviews"
+SubwayStation ||--}o Text : "slogan"
+SubwayStation ||--}o Boolean : "smokingAllowed"
+SubwayStation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+SubwayStation ||--}o Text : "telephone"
+SubwayStation ||--}o URL : "tourBookingPage"
+SubwayStation ||--}o Text : "alternateName"
+SubwayStation ||--}o Text : "disambiguatingDescription"
+SubwayStation ||--}o Text : "name"
+SubwayStation ||--}o URL : "sameAs"
+SubwayStation ||--}o Action : "potentialAction"
+SubwayStation ||--}o URL : "url"
+

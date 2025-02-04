@@ -1,0 +1,34 @@
+erDiagram
+SendAction {
+    stringList recipient  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SendAction ||--}o DeliveryMethod : "deliveryMethod"
+SendAction ||--}o Place : "fromLocation"
+SendAction ||--}o Place : "toLocation"
+SendAction ||--}o Thing : "instrument"
+SendAction ||--}o Thing : "object"
+SendAction ||--}o Thing : "result"
+SendAction ||--}o HowTo : "actionProcess"
+SendAction ||--}o ActionStatusType : "actionStatus"
+SendAction ||--}o Thing : "error"
+SendAction ||--}o Text : "alternateName"
+SendAction ||--}o Text : "disambiguatingDescription"
+SendAction ||--}o Text : "name"
+SendAction ||--}o URL : "sameAs"
+SendAction ||--}o Action : "potentialAction"
+SendAction ||--}o URL : "url"
+

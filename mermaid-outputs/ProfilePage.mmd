@@ -1,0 +1,141 @@
+erDiagram
+ProfilePage {
+    stringList breadcrumb  
+    stringList reviewedBy  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ProfilePage ||--}o Date : "lastReviewed"
+ProfilePage ||--}o WebPageElement : "mainContentOfPage"
+ProfilePage ||--}o ImageObject : "primaryImageOfPage"
+ProfilePage ||--}o URL : "relatedLink"
+ProfilePage ||--}o URL : "significantLink"
+ProfilePage ||--}o URL : "significantLinks"
+ProfilePage ||--}o Specialty : "specialty"
+ProfilePage ||--}o Thing : "about"
+ProfilePage ||--}o Place : "contentLocation"
+ProfilePage ||--}o CreativeWork : "hasPart"
+ProfilePage ||--}o Claim : "interpretedAsClaim"
+ProfilePage ||--}o Thing : "mainEntity"
+ProfilePage ||--}o Place : "spatialCoverage"
+ProfilePage ||--}o CreativeWork : "workExample"
+ProfilePage ||--}o Text : "abstract"
+ProfilePage ||--}o Text : "accessMode"
+ProfilePage ||--}o ItemList : "accessModeSufficient"
+ProfilePage ||--}o Text : "accessibilityAPI"
+ProfilePage ||--}o Text : "accessibilityControl"
+ProfilePage ||--}o Text : "accessibilityFeature"
+ProfilePage ||--}o Text : "accessibilityHazard"
+ProfilePage ||--}o Text : "accessibilitySummary"
+ProfilePage ||--}o Person : "accountablePerson"
+ProfilePage ||--}o AggregateRating : "aggregateRating"
+ProfilePage ||--}o Text : "alternativeHeadline"
+ProfilePage ||--}o MediaObject : "associatedMedia"
+ProfilePage ||--}o Audience : "audience"
+ProfilePage ||--}o Text : "award"
+ProfilePage ||--}o Text : "awards"
+ProfilePage ||--}o Person : "character"
+ProfilePage ||--}o Comment : "comment"
+ProfilePage ||--}o Integer : "commentCount"
+ProfilePage ||--}o Text : "conditionsOfAccess"
+ProfilePage ||--}o DateTime : "contentReferenceTime"
+ProfilePage ||--}o Text : "copyrightNotice"
+ProfilePage ||--}o Number : "copyrightYear"
+ProfilePage ||--}o Country : "countryOfOrigin"
+ProfilePage ||--}o Text : "creditText"
+ProfilePage ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+ProfilePage ||--}o URL : "discussionUrl"
+ProfilePage ||--}o Person : "editor"
+ProfilePage ||--}o AlignmentObject : "educationalAlignment"
+ProfilePage ||--}o MediaObject : "encoding"
+ProfilePage ||--}o MediaObject : "encodings"
+ProfilePage ||--}o CreativeWork : "exampleOfWork"
+ProfilePage ||--}o Grant : "funding"
+ProfilePage ||--}o Text : "headline"
+ProfilePage ||--}o InteractionCounter : "interactionStatistic"
+ProfilePage ||--}o Text : "interactivityType"
+ProfilePage ||--}o Boolean : "isAccessibleForFree"
+ProfilePage ||--}o Boolean : "isFamilyFriendly"
+ProfilePage ||--}o Place : "locationCreated"
+ProfilePage ||--}o Thing : "mentions"
+ProfilePage ||--}o PublicationEvent : "publication"
+ProfilePage ||--}o Organization : "publisherImprint"
+ProfilePage ||--}o Event : "recordedAt"
+ProfilePage ||--}o PublicationEvent : "releasedEvent"
+ProfilePage ||--}o Review : "review"
+ProfilePage ||--}o Review : "reviews"
+ProfilePage ||--}o Date : "sdDatePublished"
+ProfilePage ||--}o Organization : "sourceOrganization"
+ProfilePage ||--}o Place : "spatial"
+ProfilePage ||--}o Text : "text"
+ProfilePage ||--}o ImageObject : "thumbnail"
+ProfilePage ||--}o URL : "thumbnailUrl"
+ProfilePage ||--}o Duration : "timeRequired"
+ProfilePage ||--}o CreativeWork : "translationOfWork"
+ProfilePage ||--}o Text : "typicalAgeRange"
+ProfilePage ||--}o CreativeWork : "workTranslation"
+ProfilePage ||--}o Text : "alternateName"
+ProfilePage ||--}o Text : "disambiguatingDescription"
+ProfilePage ||--}o Text : "name"
+ProfilePage ||--}o URL : "sameAs"
+ProfilePage ||--}o Action : "potentialAction"
+ProfilePage ||--}o URL : "url"
+

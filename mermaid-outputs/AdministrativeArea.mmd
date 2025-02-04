@@ -1,0 +1,64 @@
+erDiagram
+AdministrativeArea {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+AdministrativeArea ||--}o Text : "globalLocationNumber"
+AdministrativeArea ||--}o URL : "hasGS1DigitalLink"
+AdministrativeArea ||--}o PropertyValue : "additionalProperty"
+AdministrativeArea ||--}o AggregateRating : "aggregateRating"
+AdministrativeArea ||--}o LocationFeatureSpecification : "amenityFeature"
+AdministrativeArea ||--}o Text : "branchCode"
+AdministrativeArea ||--}o Place : "containedIn"
+AdministrativeArea ||--}o Place : "containedInPlace"
+AdministrativeArea ||--}o Place : "containsPlace"
+AdministrativeArea ||--}o Event : "event"
+AdministrativeArea ||--}o Event : "events"
+AdministrativeArea ||--}o Text : "faxNumber"
+AdministrativeArea ||--}o Certification : "hasCertification"
+AdministrativeArea ||--}o Boolean : "hasDriveThroughService"
+AdministrativeArea ||--}o Boolean : "isAccessibleForFree"
+AdministrativeArea ||--}o Text : "isicV4"
+AdministrativeArea ||--}o URL : "map"
+AdministrativeArea ||--}o URL : "maps"
+AdministrativeArea ||--}o Integer : "maximumAttendeeCapacity"
+AdministrativeArea ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+AdministrativeArea ||--}o Boolean : "publicAccess"
+AdministrativeArea ||--}o Review : "review"
+AdministrativeArea ||--}o Review : "reviews"
+AdministrativeArea ||--}o Text : "slogan"
+AdministrativeArea ||--}o Boolean : "smokingAllowed"
+AdministrativeArea ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+AdministrativeArea ||--}o Text : "telephone"
+AdministrativeArea ||--}o URL : "tourBookingPage"
+AdministrativeArea ||--}o Text : "alternateName"
+AdministrativeArea ||--}o Text : "disambiguatingDescription"
+AdministrativeArea ||--}o Text : "name"
+AdministrativeArea ||--}o URL : "sameAs"
+AdministrativeArea ||--}o Action : "potentialAction"
+AdministrativeArea ||--}o URL : "url"
+

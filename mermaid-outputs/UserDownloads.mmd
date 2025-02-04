@@ -1,0 +1,58 @@
+erDiagram
+UserDownloads {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UserDownloads ||--}o Thing : "about"
+UserDownloads ||--}o Duration : "duration"
+UserDownloads ||--}o CreativeWork : "workFeatured"
+UserDownloads ||--}o CreativeWork : "workPerformed"
+UserDownloads ||--}o AggregateRating : "aggregateRating"
+UserDownloads ||--}o Audience : "audience"
+UserDownloads ||--}o Person : "director"
+UserDownloads ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+UserDownloads ||--}o Schedule : "eventSchedule"
+UserDownloads ||--}o EventStatusType : "eventStatus"
+UserDownloads ||--}o Grant : "funding"
+UserDownloads ||--}o Boolean : "isAccessibleForFree"
+UserDownloads ||--}o Integer : "maximumAttendeeCapacity"
+UserDownloads ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+UserDownloads ||--}o Integer : "maximumVirtualAttendeeCapacity"
+UserDownloads ||--}o Date : "previousStartDate"
+UserDownloads ||--}o CreativeWork : "recordedIn"
+UserDownloads ||--}o Integer : "remainingAttendeeCapacity"
+UserDownloads ||--}o Review : "review"
+UserDownloads ||--}o Event : "subEvent"
+UserDownloads ||--}o Event : "subEvents"
+UserDownloads ||--}o Event : "superEvent"
+UserDownloads ||--}o Text : "typicalAgeRange"
+UserDownloads ||--}o Text : "alternateName"
+UserDownloads ||--}o Text : "disambiguatingDescription"
+UserDownloads ||--}o Text : "name"
+UserDownloads ||--}o URL : "sameAs"
+UserDownloads ||--}o Action : "potentialAction"
+UserDownloads ||--}o URL : "url"
+

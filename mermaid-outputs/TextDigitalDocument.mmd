@@ -1,0 +1,132 @@
+erDiagram
+TextDigitalDocument {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TextDigitalDocument ||--}o DigitalDocumentPermission : "hasDigitalDocumentPermission"
+TextDigitalDocument ||--}o Thing : "about"
+TextDigitalDocument ||--}o Place : "contentLocation"
+TextDigitalDocument ||--}o CreativeWork : "hasPart"
+TextDigitalDocument ||--}o Claim : "interpretedAsClaim"
+TextDigitalDocument ||--}o Thing : "mainEntity"
+TextDigitalDocument ||--}o Place : "spatialCoverage"
+TextDigitalDocument ||--}o CreativeWork : "workExample"
+TextDigitalDocument ||--}o Text : "abstract"
+TextDigitalDocument ||--}o Text : "accessMode"
+TextDigitalDocument ||--}o ItemList : "accessModeSufficient"
+TextDigitalDocument ||--}o Text : "accessibilityAPI"
+TextDigitalDocument ||--}o Text : "accessibilityControl"
+TextDigitalDocument ||--}o Text : "accessibilityFeature"
+TextDigitalDocument ||--}o Text : "accessibilityHazard"
+TextDigitalDocument ||--}o Text : "accessibilitySummary"
+TextDigitalDocument ||--}o Person : "accountablePerson"
+TextDigitalDocument ||--}o AggregateRating : "aggregateRating"
+TextDigitalDocument ||--}o Text : "alternativeHeadline"
+TextDigitalDocument ||--}o MediaObject : "associatedMedia"
+TextDigitalDocument ||--}o Audience : "audience"
+TextDigitalDocument ||--}o Text : "award"
+TextDigitalDocument ||--}o Text : "awards"
+TextDigitalDocument ||--}o Person : "character"
+TextDigitalDocument ||--}o Comment : "comment"
+TextDigitalDocument ||--}o Integer : "commentCount"
+TextDigitalDocument ||--}o Text : "conditionsOfAccess"
+TextDigitalDocument ||--}o DateTime : "contentReferenceTime"
+TextDigitalDocument ||--}o Text : "copyrightNotice"
+TextDigitalDocument ||--}o Number : "copyrightYear"
+TextDigitalDocument ||--}o Country : "countryOfOrigin"
+TextDigitalDocument ||--}o Text : "creditText"
+TextDigitalDocument ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+TextDigitalDocument ||--}o URL : "discussionUrl"
+TextDigitalDocument ||--}o Person : "editor"
+TextDigitalDocument ||--}o AlignmentObject : "educationalAlignment"
+TextDigitalDocument ||--}o MediaObject : "encoding"
+TextDigitalDocument ||--}o MediaObject : "encodings"
+TextDigitalDocument ||--}o CreativeWork : "exampleOfWork"
+TextDigitalDocument ||--}o Grant : "funding"
+TextDigitalDocument ||--}o Text : "headline"
+TextDigitalDocument ||--}o InteractionCounter : "interactionStatistic"
+TextDigitalDocument ||--}o Text : "interactivityType"
+TextDigitalDocument ||--}o Boolean : "isAccessibleForFree"
+TextDigitalDocument ||--}o Boolean : "isFamilyFriendly"
+TextDigitalDocument ||--}o Place : "locationCreated"
+TextDigitalDocument ||--}o Thing : "mentions"
+TextDigitalDocument ||--}o PublicationEvent : "publication"
+TextDigitalDocument ||--}o Organization : "publisherImprint"
+TextDigitalDocument ||--}o Event : "recordedAt"
+TextDigitalDocument ||--}o PublicationEvent : "releasedEvent"
+TextDigitalDocument ||--}o Review : "review"
+TextDigitalDocument ||--}o Review : "reviews"
+TextDigitalDocument ||--}o Date : "sdDatePublished"
+TextDigitalDocument ||--}o Organization : "sourceOrganization"
+TextDigitalDocument ||--}o Place : "spatial"
+TextDigitalDocument ||--}o Text : "text"
+TextDigitalDocument ||--}o ImageObject : "thumbnail"
+TextDigitalDocument ||--}o URL : "thumbnailUrl"
+TextDigitalDocument ||--}o Duration : "timeRequired"
+TextDigitalDocument ||--}o CreativeWork : "translationOfWork"
+TextDigitalDocument ||--}o Text : "typicalAgeRange"
+TextDigitalDocument ||--}o CreativeWork : "workTranslation"
+TextDigitalDocument ||--}o Text : "alternateName"
+TextDigitalDocument ||--}o Text : "disambiguatingDescription"
+TextDigitalDocument ||--}o Text : "name"
+TextDigitalDocument ||--}o URL : "sameAs"
+TextDigitalDocument ||--}o Action : "potentialAction"
+TextDigitalDocument ||--}o URL : "url"
+

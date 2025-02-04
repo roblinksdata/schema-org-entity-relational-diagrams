@@ -1,0 +1,96 @@
+erDiagram
+Patient {
+    stringList funder  
+    stringList homeLocation  
+    stringList memberOf  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList workLocation  
+    stringList address  
+    stringList alumniOf  
+    stringList brand  
+    stringList colleague  
+    stringList gender  
+    stringList height  
+    stringList jobTitle  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList netWorth  
+    stringList owns  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+    stringList suggestedGender  
+}
+
+Patient ||--}o MedicalCondition : "diagnosis"
+Patient ||--}o Drug : "drug"
+Patient ||--}o MedicalCondition : "healthCondition"
+Patient ||--}o Text : "additionalName"
+Patient ||--}o Organization : "affiliation"
+Patient ||--}o Text : "callSign"
+Patient ||--}o Text : "duns"
+Patient ||--}o Text : "globalLocationNumber"
+Patient ||--}o Text : "taxID"
+Patient ||--}o InteractionCounter : "agentInteractionStatistic"
+Patient ||--}o Text : "award"
+Patient ||--}o Text : "awards"
+Patient ||--}o Date : "birthDate"
+Patient ||--}o Place : "birthPlace"
+Patient ||--}o Person : "children"
+Patient ||--}o Person : "colleagues"
+Patient ||--}o ContactPoint : "contactPoint"
+Patient ||--}o ContactPoint : "contactPoints"
+Patient ||--}o Date : "deathDate"
+Patient ||--}o Place : "deathPlace"
+Patient ||--}o Text : "email"
+Patient ||--}o Text : "familyName"
+Patient ||--}o Text : "faxNumber"
+Patient ||--}o Person : "follows"
+Patient ||--}o Grant : "funding"
+Patient ||--}o Text : "givenName"
+Patient ||--}o Certification : "hasCertification"
+Patient ||--}o EducationalOccupationalCredential : "hasCredential"
+Patient ||--}o Occupation : "hasOccupation"
+Patient ||--}o OfferCatalog : "hasOfferCatalog"
+Patient ||--}o Place : "hasPOS"
+Patient ||--}o Text : "honorificPrefix"
+Patient ||--}o Text : "honorificSuffix"
+Patient ||--}o InteractionCounter : "interactionStatistic"
+Patient ||--}o Text : "isicV4"
+Patient ||--}o Person : "knows"
+Patient ||--}o Offer : "makesOffer"
+Patient ||--}o Text : "naics"
+Patient ||--}o Country : "nationality"
+Patient ||--}o Person : "parent"
+Patient ||--}o Person : "parents"
+Patient ||--}o Event : "performerIn"
+Patient ||--}o Person : "relatedTo"
+Patient ||--}o Demand : "seeks"
+Patient ||--}o Person : "sibling"
+Patient ||--}o Person : "siblings"
+Patient ||--}o Person : "spouse"
+Patient ||--}o Text : "telephone"
+Patient ||--}o Text : "vatID"
+Patient ||--}o QuantitativeValue : "weight"
+Patient ||--}o Organization : "worksFor"
+Patient ||--}o Text : "alternateName"
+Patient ||--}o Text : "disambiguatingDescription"
+Patient ||--}o Text : "name"
+Patient ||--}o URL : "sameAs"
+Patient ||--}o Action : "potentialAction"
+Patient ||--}o URL : "url"
+Patient ||--}o Text : "audienceType"
+Patient ||--}o AdministrativeArea : "geographicArea"
+Patient ||--}o Text : "requiredGender"
+Patient ||--}o Integer : "requiredMaxAge"
+Patient ||--}o Integer : "requiredMinAge"
+Patient ||--}o QuantitativeValue : "suggestedAge"
+Patient ||--}o Number : "suggestedMaxAge"
+Patient ||--}o QuantitativeValue : "suggestedMeasurement"
+Patient ||--}o Number : "suggestedMinAge"
+

@@ -1,0 +1,22 @@
+erDiagram
+EngineSpecification {
+    stringList engineType  
+    stringList fuelType  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EngineSpecification ||--}o QuantitativeValue : "engineDisplacement"
+EngineSpecification ||--}o QuantitativeValue : "enginePower"
+EngineSpecification ||--}o QuantitativeValue : "torque"
+EngineSpecification ||--}o Text : "alternateName"
+EngineSpecification ||--}o Text : "disambiguatingDescription"
+EngineSpecification ||--}o Text : "name"
+EngineSpecification ||--}o URL : "sameAs"
+EngineSpecification ||--}o Action : "potentialAction"
+EngineSpecification ||--}o URL : "url"
+

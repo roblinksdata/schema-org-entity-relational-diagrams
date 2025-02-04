@@ -1,0 +1,18 @@
+erDiagram
+ItemAvailability {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ItemAvailability ||--}o Text : "alternateName"
+ItemAvailability ||--}o Text : "disambiguatingDescription"
+ItemAvailability ||--}o Text : "name"
+ItemAvailability ||--}o URL : "sameAs"
+ItemAvailability ||--}o Action : "potentialAction"
+ItemAvailability ||--}o URL : "url"
+

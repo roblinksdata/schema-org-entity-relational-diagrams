@@ -1,0 +1,46 @@
+erDiagram
+InvestmentOrDeposit {
+    stringList amount  
+    stringList annualPercentageRate  
+    stringList feesAndCommissionsSpecification  
+    stringList interestRate  
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+InvestmentOrDeposit ||--}o AggregateRating : "aggregateRating"
+InvestmentOrDeposit ||--}o Audience : "audience"
+InvestmentOrDeposit ||--}o ServiceChannel : "availableChannel"
+InvestmentOrDeposit ||--}o Text : "award"
+InvestmentOrDeposit ||--}o Certification : "hasCertification"
+InvestmentOrDeposit ||--}o OfferCatalog : "hasOfferCatalog"
+InvestmentOrDeposit ||--}o OpeningHoursSpecification : "hoursAvailable"
+InvestmentOrDeposit ||--}o Thing : "produces"
+InvestmentOrDeposit ||--}o Text : "providerMobility"
+InvestmentOrDeposit ||--}o Review : "review"
+InvestmentOrDeposit ||--}o Audience : "serviceAudience"
+InvestmentOrDeposit ||--}o Thing : "serviceOutput"
+InvestmentOrDeposit ||--}o Text : "slogan"
+InvestmentOrDeposit ||--}o Text : "alternateName"
+InvestmentOrDeposit ||--}o Text : "disambiguatingDescription"
+InvestmentOrDeposit ||--}o Text : "name"
+InvestmentOrDeposit ||--}o URL : "sameAs"
+InvestmentOrDeposit ||--}o Action : "potentialAction"
+InvestmentOrDeposit ||--}o URL : "url"
+

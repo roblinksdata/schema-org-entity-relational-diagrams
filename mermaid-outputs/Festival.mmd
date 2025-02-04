@@ -1,0 +1,58 @@
+erDiagram
+Festival {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Festival ||--}o Thing : "about"
+Festival ||--}o Duration : "duration"
+Festival ||--}o CreativeWork : "workFeatured"
+Festival ||--}o CreativeWork : "workPerformed"
+Festival ||--}o AggregateRating : "aggregateRating"
+Festival ||--}o Audience : "audience"
+Festival ||--}o Person : "director"
+Festival ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+Festival ||--}o Schedule : "eventSchedule"
+Festival ||--}o EventStatusType : "eventStatus"
+Festival ||--}o Grant : "funding"
+Festival ||--}o Boolean : "isAccessibleForFree"
+Festival ||--}o Integer : "maximumAttendeeCapacity"
+Festival ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+Festival ||--}o Integer : "maximumVirtualAttendeeCapacity"
+Festival ||--}o Date : "previousStartDate"
+Festival ||--}o CreativeWork : "recordedIn"
+Festival ||--}o Integer : "remainingAttendeeCapacity"
+Festival ||--}o Review : "review"
+Festival ||--}o Event : "subEvent"
+Festival ||--}o Event : "subEvents"
+Festival ||--}o Event : "superEvent"
+Festival ||--}o Text : "typicalAgeRange"
+Festival ||--}o Text : "alternateName"
+Festival ||--}o Text : "disambiguatingDescription"
+Festival ||--}o Text : "name"
+Festival ||--}o URL : "sameAs"
+Festival ||--}o Action : "potentialAction"
+Festival ||--}o URL : "url"
+

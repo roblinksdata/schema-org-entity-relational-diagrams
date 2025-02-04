@@ -1,0 +1,21 @@
+erDiagram
+ShippingDeliveryTime {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ShippingDeliveryTime ||--}o OpeningHoursSpecification : "businessDays"
+ShippingDeliveryTime ||--}o Time : "cutoffTime"
+ShippingDeliveryTime ||--}o QuantitativeValue : "handlingTime"
+ShippingDeliveryTime ||--}o QuantitativeValue : "transitTime"
+ShippingDeliveryTime ||--}o Text : "alternateName"
+ShippingDeliveryTime ||--}o Text : "disambiguatingDescription"
+ShippingDeliveryTime ||--}o Text : "name"
+ShippingDeliveryTime ||--}o URL : "sameAs"
+ShippingDeliveryTime ||--}o Action : "potentialAction"
+ShippingDeliveryTime ||--}o URL : "url"
+

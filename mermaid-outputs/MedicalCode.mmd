@@ -1,0 +1,30 @@
+erDiagram
+MedicalCode {
+    stringList inCodeSet  
+    stringList inDefinedTermSet  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+    stringList legalStatus  
+}
+
+MedicalCode ||--}o Text : "codeValue"
+MedicalCode ||--}o Text : "codingSystem"
+MedicalCode ||--}o Text : "termCode"
+MedicalCode ||--}o Text : "alternateName"
+MedicalCode ||--}o Text : "disambiguatingDescription"
+MedicalCode ||--}o Text : "name"
+MedicalCode ||--}o URL : "sameAs"
+MedicalCode ||--}o Action : "potentialAction"
+MedicalCode ||--}o URL : "url"
+MedicalCode ||--}o MedicalCode : "code"
+MedicalCode ||--}o Grant : "funding"
+MedicalCode ||--}o MedicalGuideline : "guideline"
+MedicalCode ||--}o MedicineSystem : "medicineSystem"
+MedicalCode ||--}o Organization : "recognizingAuthority"
+MedicalCode ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalCode ||--}o MedicalStudy : "study"
+

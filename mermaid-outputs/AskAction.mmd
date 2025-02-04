@@ -1,0 +1,35 @@
+erDiagram
+AskAction {
+    stringList recipient  
+    stringList inLanguage  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+AskAction ||--}o Question : "question"
+AskAction ||--}o Thing : "about"
+AskAction ||--}o Language : "language"
+AskAction ||--}o Thing : "instrument"
+AskAction ||--}o Thing : "object"
+AskAction ||--}o Thing : "result"
+AskAction ||--}o HowTo : "actionProcess"
+AskAction ||--}o ActionStatusType : "actionStatus"
+AskAction ||--}o Thing : "error"
+AskAction ||--}o Text : "alternateName"
+AskAction ||--}o Text : "disambiguatingDescription"
+AskAction ||--}o Text : "name"
+AskAction ||--}o URL : "sameAs"
+AskAction ||--}o Action : "potentialAction"
+AskAction ||--}o URL : "url"
+

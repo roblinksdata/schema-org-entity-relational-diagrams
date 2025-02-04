@@ -1,0 +1,27 @@
+erDiagram
+BoatTrip {
+    stringList arrivalTime  
+    stringList departureTime  
+    stringList itinerary  
+    stringList offers  
+    stringList provider  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BoatTrip ||--}o BoatTerminal : "arrivalBoatTerminal"
+BoatTrip ||--}o BoatTerminal : "departureBoatTerminal"
+BoatTrip ||--}o Trip : "partOfTrip"
+BoatTrip ||--}o Trip : "subTrip"
+BoatTrip ||--}o Place : "tripOrigin"
+BoatTrip ||--}o Text : "alternateName"
+BoatTrip ||--}o Text : "disambiguatingDescription"
+BoatTrip ||--}o Text : "name"
+BoatTrip ||--}o URL : "sameAs"
+BoatTrip ||--}o Action : "potentialAction"
+BoatTrip ||--}o URL : "url"
+

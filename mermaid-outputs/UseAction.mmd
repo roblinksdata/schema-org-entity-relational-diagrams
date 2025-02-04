@@ -1,0 +1,32 @@
+erDiagram
+UseAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UseAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
+UseAction ||--}o Offer : "expectsAcceptanceOf"
+UseAction ||--}o Thing : "instrument"
+UseAction ||--}o Thing : "object"
+UseAction ||--}o Thing : "result"
+UseAction ||--}o HowTo : "actionProcess"
+UseAction ||--}o ActionStatusType : "actionStatus"
+UseAction ||--}o Thing : "error"
+UseAction ||--}o Text : "alternateName"
+UseAction ||--}o Text : "disambiguatingDescription"
+UseAction ||--}o Text : "name"
+UseAction ||--}o URL : "sameAs"
+UseAction ||--}o Action : "potentialAction"
+UseAction ||--}o URL : "url"
+

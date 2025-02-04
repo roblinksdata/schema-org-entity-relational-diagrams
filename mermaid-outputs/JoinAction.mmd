@@ -1,0 +1,31 @@
+erDiagram
+JoinAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+JoinAction ||--}o Event : "event"
+JoinAction ||--}o Thing : "instrument"
+JoinAction ||--}o Thing : "object"
+JoinAction ||--}o Thing : "result"
+JoinAction ||--}o HowTo : "actionProcess"
+JoinAction ||--}o ActionStatusType : "actionStatus"
+JoinAction ||--}o Thing : "error"
+JoinAction ||--}o Text : "alternateName"
+JoinAction ||--}o Text : "disambiguatingDescription"
+JoinAction ||--}o Text : "name"
+JoinAction ||--}o URL : "sameAs"
+JoinAction ||--}o Action : "potentialAction"
+JoinAction ||--}o URL : "url"
+

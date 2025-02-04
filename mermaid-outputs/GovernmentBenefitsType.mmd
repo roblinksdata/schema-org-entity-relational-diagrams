@@ -1,0 +1,18 @@
+erDiagram
+GovernmentBenefitsType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GovernmentBenefitsType ||--}o Text : "alternateName"
+GovernmentBenefitsType ||--}o Text : "disambiguatingDescription"
+GovernmentBenefitsType ||--}o Text : "name"
+GovernmentBenefitsType ||--}o URL : "sameAs"
+GovernmentBenefitsType ||--}o Action : "potentialAction"
+GovernmentBenefitsType ||--}o URL : "url"
+

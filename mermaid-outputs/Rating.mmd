@@ -1,0 +1,23 @@
+erDiagram
+Rating {
+    stringList author  
+    stringList bestRating  
+    stringList ratingValue  
+    stringList worstRating  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Rating ||--}o Text : "ratingExplanation"
+Rating ||--}o Text : "reviewAspect"
+Rating ||--}o Text : "alternateName"
+Rating ||--}o Text : "disambiguatingDescription"
+Rating ||--}o Text : "name"
+Rating ||--}o URL : "sameAs"
+Rating ||--}o Action : "potentialAction"
+Rating ||--}o URL : "url"
+

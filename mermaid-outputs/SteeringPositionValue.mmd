@@ -1,0 +1,26 @@
+erDiagram
+SteeringPositionValue {
+    stringList valueReference  
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SteeringPositionValue ||--}o PropertyValue : "additionalProperty"
+SteeringPositionValue ||--}o QualitativeValue : "equal"
+SteeringPositionValue ||--}o QualitativeValue : "greater"
+SteeringPositionValue ||--}o QualitativeValue : "greaterOrEqual"
+SteeringPositionValue ||--}o QualitativeValue : "lesser"
+SteeringPositionValue ||--}o QualitativeValue : "lesserOrEqual"
+SteeringPositionValue ||--}o QualitativeValue : "nonEqual"
+SteeringPositionValue ||--}o Text : "alternateName"
+SteeringPositionValue ||--}o Text : "disambiguatingDescription"
+SteeringPositionValue ||--}o Text : "name"
+SteeringPositionValue ||--}o URL : "sameAs"
+SteeringPositionValue ||--}o Action : "potentialAction"
+SteeringPositionValue ||--}o URL : "url"
+

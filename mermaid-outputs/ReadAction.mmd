@@ -1,0 +1,32 @@
+erDiagram
+ReadAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ReadAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
+ReadAction ||--}o Offer : "expectsAcceptanceOf"
+ReadAction ||--}o Thing : "instrument"
+ReadAction ||--}o Thing : "object"
+ReadAction ||--}o Thing : "result"
+ReadAction ||--}o HowTo : "actionProcess"
+ReadAction ||--}o ActionStatusType : "actionStatus"
+ReadAction ||--}o Thing : "error"
+ReadAction ||--}o Text : "alternateName"
+ReadAction ||--}o Text : "disambiguatingDescription"
+ReadAction ||--}o Text : "name"
+ReadAction ||--}o URL : "sameAs"
+ReadAction ||--}o Action : "potentialAction"
+ReadAction ||--}o URL : "url"
+

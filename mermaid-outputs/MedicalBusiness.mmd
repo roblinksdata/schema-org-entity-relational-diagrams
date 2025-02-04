@@ -1,0 +1,126 @@
+erDiagram
+MedicalBusiness {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalBusiness ||--}o Organization : "branchOf"
+MedicalBusiness ||--}o Text : "currenciesAccepted"
+MedicalBusiness ||--}o Text : "openingHours"
+MedicalBusiness ||--}o Text : "paymentAccepted"
+MedicalBusiness ||--}o Text : "priceRange"
+MedicalBusiness ||--}o Text : "globalLocationNumber"
+MedicalBusiness ||--}o URL : "hasGS1DigitalLink"
+MedicalBusiness ||--}o PropertyValue : "additionalProperty"
+MedicalBusiness ||--}o AggregateRating : "aggregateRating"
+MedicalBusiness ||--}o LocationFeatureSpecification : "amenityFeature"
+MedicalBusiness ||--}o Text : "branchCode"
+MedicalBusiness ||--}o Place : "containedIn"
+MedicalBusiness ||--}o Place : "containedInPlace"
+MedicalBusiness ||--}o Place : "containsPlace"
+MedicalBusiness ||--}o Event : "event"
+MedicalBusiness ||--}o Event : "events"
+MedicalBusiness ||--}o Text : "faxNumber"
+MedicalBusiness ||--}o Certification : "hasCertification"
+MedicalBusiness ||--}o Boolean : "hasDriveThroughService"
+MedicalBusiness ||--}o Boolean : "isAccessibleForFree"
+MedicalBusiness ||--}o Text : "isicV4"
+MedicalBusiness ||--}o URL : "map"
+MedicalBusiness ||--}o URL : "maps"
+MedicalBusiness ||--}o Integer : "maximumAttendeeCapacity"
+MedicalBusiness ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+MedicalBusiness ||--}o Boolean : "publicAccess"
+MedicalBusiness ||--}o Review : "review"
+MedicalBusiness ||--}o Review : "reviews"
+MedicalBusiness ||--}o Text : "slogan"
+MedicalBusiness ||--}o Boolean : "smokingAllowed"
+MedicalBusiness ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+MedicalBusiness ||--}o Text : "telephone"
+MedicalBusiness ||--}o URL : "tourBookingPage"
+MedicalBusiness ||--}o Text : "duns"
+MedicalBusiness ||--}o Text : "leiCode"
+MedicalBusiness ||--}o Text : "taxID"
+MedicalBusiness ||--}o InteractionCounter : "agentInteractionStatistic"
+MedicalBusiness ||--}o Person : "alumni"
+MedicalBusiness ||--}o Text : "award"
+MedicalBusiness ||--}o Text : "awards"
+MedicalBusiness ||--}o ContactPoint : "contactPoint"
+MedicalBusiness ||--}o ContactPoint : "contactPoints"
+MedicalBusiness ||--}o Organization : "department"
+MedicalBusiness ||--}o Date : "dissolutionDate"
+MedicalBusiness ||--}o Text : "email"
+MedicalBusiness ||--}o Person : "employee"
+MedicalBusiness ||--}o Person : "employees"
+MedicalBusiness ||--}o Person : "founders"
+MedicalBusiness ||--}o Date : "foundingDate"
+MedicalBusiness ||--}o Place : "foundingLocation"
+MedicalBusiness ||--}o Grant : "funding"
+MedicalBusiness ||--}o EducationalOccupationalCredential : "hasCredential"
+MedicalBusiness ||--}o MemberProgram : "hasMemberProgram"
+MedicalBusiness ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+MedicalBusiness ||--}o OfferCatalog : "hasOfferCatalog"
+MedicalBusiness ||--}o Place : "hasPOS"
+MedicalBusiness ||--}o InteractionCounter : "interactionStatistic"
+MedicalBusiness ||--}o Text : "iso6523Code"
+MedicalBusiness ||--}o Text : "legalName"
+MedicalBusiness ||--}o Offer : "makesOffer"
+MedicalBusiness ||--}o Text : "naics"
+MedicalBusiness ||--}o NonprofitType : "nonprofitStatus"
+MedicalBusiness ||--}o QuantitativeValue : "numberOfEmployees"
+MedicalBusiness ||--}o Organization : "parentOrganization"
+MedicalBusiness ||--}o Demand : "seeks"
+MedicalBusiness ||--}o Organization : "subOrganization"
+MedicalBusiness ||--}o Text : "vatID"
+MedicalBusiness ||--}o Text : "alternateName"
+MedicalBusiness ||--}o Text : "disambiguatingDescription"
+MedicalBusiness ||--}o Text : "name"
+MedicalBusiness ||--}o URL : "sameAs"
+MedicalBusiness ||--}o Action : "potentialAction"
+MedicalBusiness ||--}o URL : "url"
+

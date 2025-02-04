@@ -1,0 +1,145 @@
+erDiagram
+CoverArt {
+    stringList artMedium  
+    stringList surface  
+    stringList artEdition  
+    stringList artform  
+    stringList artworkSurface  
+    stringList depth  
+    stringList height  
+    stringList width  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CoverArt ||--}o Person : "artist"
+CoverArt ||--}o Person : "colorist"
+CoverArt ||--}o Person : "inker"
+CoverArt ||--}o Person : "letterer"
+CoverArt ||--}o Person : "penciler"
+CoverArt ||--}o QuantitativeValue : "weight"
+CoverArt ||--}o Thing : "about"
+CoverArt ||--}o Place : "contentLocation"
+CoverArt ||--}o CreativeWork : "hasPart"
+CoverArt ||--}o Claim : "interpretedAsClaim"
+CoverArt ||--}o Thing : "mainEntity"
+CoverArt ||--}o Place : "spatialCoverage"
+CoverArt ||--}o CreativeWork : "workExample"
+CoverArt ||--}o Text : "abstract"
+CoverArt ||--}o Text : "accessMode"
+CoverArt ||--}o ItemList : "accessModeSufficient"
+CoverArt ||--}o Text : "accessibilityAPI"
+CoverArt ||--}o Text : "accessibilityControl"
+CoverArt ||--}o Text : "accessibilityFeature"
+CoverArt ||--}o Text : "accessibilityHazard"
+CoverArt ||--}o Text : "accessibilitySummary"
+CoverArt ||--}o Person : "accountablePerson"
+CoverArt ||--}o AggregateRating : "aggregateRating"
+CoverArt ||--}o Text : "alternativeHeadline"
+CoverArt ||--}o MediaObject : "associatedMedia"
+CoverArt ||--}o Audience : "audience"
+CoverArt ||--}o Text : "award"
+CoverArt ||--}o Text : "awards"
+CoverArt ||--}o Person : "character"
+CoverArt ||--}o Comment : "comment"
+CoverArt ||--}o Integer : "commentCount"
+CoverArt ||--}o Text : "conditionsOfAccess"
+CoverArt ||--}o DateTime : "contentReferenceTime"
+CoverArt ||--}o Text : "copyrightNotice"
+CoverArt ||--}o Number : "copyrightYear"
+CoverArt ||--}o Country : "countryOfOrigin"
+CoverArt ||--}o Text : "creditText"
+CoverArt ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+CoverArt ||--}o URL : "discussionUrl"
+CoverArt ||--}o Person : "editor"
+CoverArt ||--}o AlignmentObject : "educationalAlignment"
+CoverArt ||--}o MediaObject : "encoding"
+CoverArt ||--}o MediaObject : "encodings"
+CoverArt ||--}o CreativeWork : "exampleOfWork"
+CoverArt ||--}o Grant : "funding"
+CoverArt ||--}o Text : "headline"
+CoverArt ||--}o InteractionCounter : "interactionStatistic"
+CoverArt ||--}o Text : "interactivityType"
+CoverArt ||--}o Boolean : "isAccessibleForFree"
+CoverArt ||--}o Boolean : "isFamilyFriendly"
+CoverArt ||--}o Place : "locationCreated"
+CoverArt ||--}o Thing : "mentions"
+CoverArt ||--}o PublicationEvent : "publication"
+CoverArt ||--}o Organization : "publisherImprint"
+CoverArt ||--}o Event : "recordedAt"
+CoverArt ||--}o PublicationEvent : "releasedEvent"
+CoverArt ||--}o Review : "review"
+CoverArt ||--}o Review : "reviews"
+CoverArt ||--}o Date : "sdDatePublished"
+CoverArt ||--}o Organization : "sourceOrganization"
+CoverArt ||--}o Place : "spatial"
+CoverArt ||--}o Text : "text"
+CoverArt ||--}o ImageObject : "thumbnail"
+CoverArt ||--}o URL : "thumbnailUrl"
+CoverArt ||--}o Duration : "timeRequired"
+CoverArt ||--}o CreativeWork : "translationOfWork"
+CoverArt ||--}o Text : "typicalAgeRange"
+CoverArt ||--}o CreativeWork : "workTranslation"
+CoverArt ||--}o Text : "alternateName"
+CoverArt ||--}o Text : "disambiguatingDescription"
+CoverArt ||--}o Text : "name"
+CoverArt ||--}o URL : "sameAs"
+CoverArt ||--}o Action : "potentialAction"
+CoverArt ||--}o URL : "url"
+

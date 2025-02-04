@@ -1,0 +1,131 @@
+erDiagram
+Statement {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Statement ||--}o Thing : "about"
+Statement ||--}o Place : "contentLocation"
+Statement ||--}o CreativeWork : "hasPart"
+Statement ||--}o Claim : "interpretedAsClaim"
+Statement ||--}o Thing : "mainEntity"
+Statement ||--}o Place : "spatialCoverage"
+Statement ||--}o CreativeWork : "workExample"
+Statement ||--}o Text : "abstract"
+Statement ||--}o Text : "accessMode"
+Statement ||--}o ItemList : "accessModeSufficient"
+Statement ||--}o Text : "accessibilityAPI"
+Statement ||--}o Text : "accessibilityControl"
+Statement ||--}o Text : "accessibilityFeature"
+Statement ||--}o Text : "accessibilityHazard"
+Statement ||--}o Text : "accessibilitySummary"
+Statement ||--}o Person : "accountablePerson"
+Statement ||--}o AggregateRating : "aggregateRating"
+Statement ||--}o Text : "alternativeHeadline"
+Statement ||--}o MediaObject : "associatedMedia"
+Statement ||--}o Audience : "audience"
+Statement ||--}o Text : "award"
+Statement ||--}o Text : "awards"
+Statement ||--}o Person : "character"
+Statement ||--}o Comment : "comment"
+Statement ||--}o Integer : "commentCount"
+Statement ||--}o Text : "conditionsOfAccess"
+Statement ||--}o DateTime : "contentReferenceTime"
+Statement ||--}o Text : "copyrightNotice"
+Statement ||--}o Number : "copyrightYear"
+Statement ||--}o Country : "countryOfOrigin"
+Statement ||--}o Text : "creditText"
+Statement ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Statement ||--}o URL : "discussionUrl"
+Statement ||--}o Person : "editor"
+Statement ||--}o AlignmentObject : "educationalAlignment"
+Statement ||--}o MediaObject : "encoding"
+Statement ||--}o MediaObject : "encodings"
+Statement ||--}o CreativeWork : "exampleOfWork"
+Statement ||--}o Grant : "funding"
+Statement ||--}o Text : "headline"
+Statement ||--}o InteractionCounter : "interactionStatistic"
+Statement ||--}o Text : "interactivityType"
+Statement ||--}o Boolean : "isAccessibleForFree"
+Statement ||--}o Boolean : "isFamilyFriendly"
+Statement ||--}o Place : "locationCreated"
+Statement ||--}o Thing : "mentions"
+Statement ||--}o PublicationEvent : "publication"
+Statement ||--}o Organization : "publisherImprint"
+Statement ||--}o Event : "recordedAt"
+Statement ||--}o PublicationEvent : "releasedEvent"
+Statement ||--}o Review : "review"
+Statement ||--}o Review : "reviews"
+Statement ||--}o Date : "sdDatePublished"
+Statement ||--}o Organization : "sourceOrganization"
+Statement ||--}o Place : "spatial"
+Statement ||--}o Text : "text"
+Statement ||--}o ImageObject : "thumbnail"
+Statement ||--}o URL : "thumbnailUrl"
+Statement ||--}o Duration : "timeRequired"
+Statement ||--}o CreativeWork : "translationOfWork"
+Statement ||--}o Text : "typicalAgeRange"
+Statement ||--}o CreativeWork : "workTranslation"
+Statement ||--}o Text : "alternateName"
+Statement ||--}o Text : "disambiguatingDescription"
+Statement ||--}o Text : "name"
+Statement ||--}o URL : "sameAs"
+Statement ||--}o Action : "potentialAction"
+Statement ||--}o URL : "url"
+

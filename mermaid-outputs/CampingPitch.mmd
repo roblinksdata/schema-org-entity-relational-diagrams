@@ -1,0 +1,79 @@
+erDiagram
+CampingPitch {
+    stringList bed  
+    stringList leaseLength  
+    stringList numberOfBedrooms  
+    stringList numberOfRooms  
+    stringList petsAllowed  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CampingPitch ||--}o Text : "accommodationCategory"
+CampingPitch ||--}o FloorPlan : "accommodationFloorPlan"
+CampingPitch ||--}o LocationFeatureSpecification : "amenityFeature"
+CampingPitch ||--}o Text : "floorLevel"
+CampingPitch ||--}o QuantitativeValue : "floorSize"
+CampingPitch ||--}o Integer : "numberOfBathroomsTotal"
+CampingPitch ||--}o Number : "numberOfFullBathrooms"
+CampingPitch ||--}o Number : "numberOfPartialBathrooms"
+CampingPitch ||--}o QuantitativeValue : "occupancy"
+CampingPitch ||--}o Text : "permittedUsage"
+CampingPitch ||--}o URL : "tourBookingPage"
+CampingPitch ||--}o Number : "yearBuilt"
+CampingPitch ||--}o Text : "globalLocationNumber"
+CampingPitch ||--}o URL : "hasGS1DigitalLink"
+CampingPitch ||--}o PropertyValue : "additionalProperty"
+CampingPitch ||--}o AggregateRating : "aggregateRating"
+CampingPitch ||--}o Text : "branchCode"
+CampingPitch ||--}o Place : "containedIn"
+CampingPitch ||--}o Place : "containedInPlace"
+CampingPitch ||--}o Place : "containsPlace"
+CampingPitch ||--}o Event : "event"
+CampingPitch ||--}o Event : "events"
+CampingPitch ||--}o Text : "faxNumber"
+CampingPitch ||--}o Certification : "hasCertification"
+CampingPitch ||--}o Boolean : "hasDriveThroughService"
+CampingPitch ||--}o Boolean : "isAccessibleForFree"
+CampingPitch ||--}o Text : "isicV4"
+CampingPitch ||--}o URL : "map"
+CampingPitch ||--}o URL : "maps"
+CampingPitch ||--}o Integer : "maximumAttendeeCapacity"
+CampingPitch ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+CampingPitch ||--}o Boolean : "publicAccess"
+CampingPitch ||--}o Review : "review"
+CampingPitch ||--}o Review : "reviews"
+CampingPitch ||--}o Text : "slogan"
+CampingPitch ||--}o Boolean : "smokingAllowed"
+CampingPitch ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+CampingPitch ||--}o Text : "telephone"
+CampingPitch ||--}o Text : "alternateName"
+CampingPitch ||--}o Text : "disambiguatingDescription"
+CampingPitch ||--}o Text : "name"
+CampingPitch ||--}o URL : "sameAs"
+CampingPitch ||--}o Action : "potentialAction"
+CampingPitch ||--}o URL : "url"
+

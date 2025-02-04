@@ -1,0 +1,18 @@
+erDiagram
+EventStatusType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EventStatusType ||--}o Text : "alternateName"
+EventStatusType ||--}o Text : "disambiguatingDescription"
+EventStatusType ||--}o Text : "name"
+EventStatusType ||--}o URL : "sameAs"
+EventStatusType ||--}o Action : "potentialAction"
+EventStatusType ||--}o URL : "url"
+

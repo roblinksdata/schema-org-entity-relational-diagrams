@@ -1,0 +1,41 @@
+erDiagram
+MedicalSignOrSymptom {
+    stringList associatedAnatomy  
+    stringList status  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalSignOrSymptom ||--}o MedicalTherapy : "possibleTreatment"
+MedicalSignOrSymptom ||--}o DDxElement : "differentialDiagnosis"
+MedicalSignOrSymptom ||--}o Drug : "drug"
+MedicalSignOrSymptom ||--}o Text : "epidemiology"
+MedicalSignOrSymptom ||--}o Text : "expectedPrognosis"
+MedicalSignOrSymptom ||--}o Text : "naturalProgression"
+MedicalSignOrSymptom ||--}o Text : "pathophysiology"
+MedicalSignOrSymptom ||--}o Text : "possibleComplication"
+MedicalSignOrSymptom ||--}o MedicalTherapy : "primaryPrevention"
+MedicalSignOrSymptom ||--}o MedicalRiskFactor : "riskFactor"
+MedicalSignOrSymptom ||--}o MedicalTherapy : "secondaryPrevention"
+MedicalSignOrSymptom ||--}o MedicalSignOrSymptom : "signOrSymptom"
+MedicalSignOrSymptom ||--}o MedicalConditionStage : "stage"
+MedicalSignOrSymptom ||--}o MedicalTest : "typicalTest"
+MedicalSignOrSymptom ||--}o MedicalCode : "code"
+MedicalSignOrSymptom ||--}o Grant : "funding"
+MedicalSignOrSymptom ||--}o MedicalGuideline : "guideline"
+MedicalSignOrSymptom ||--}o MedicineSystem : "medicineSystem"
+MedicalSignOrSymptom ||--}o Organization : "recognizingAuthority"
+MedicalSignOrSymptom ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalSignOrSymptom ||--}o MedicalStudy : "study"
+MedicalSignOrSymptom ||--}o Text : "alternateName"
+MedicalSignOrSymptom ||--}o Text : "disambiguatingDescription"
+MedicalSignOrSymptom ||--}o Text : "name"
+MedicalSignOrSymptom ||--}o URL : "sameAs"
+MedicalSignOrSymptom ||--}o Action : "potentialAction"
+MedicalSignOrSymptom ||--}o URL : "url"
+

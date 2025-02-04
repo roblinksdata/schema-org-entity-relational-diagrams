@@ -1,0 +1,20 @@
+erDiagram
+GameServer {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GameServer ||--}o VideoGame : "game"
+GameServer ||--}o Integer : "playersOnline"
+GameServer ||--}o GameServerStatus : "serverStatus"
+GameServer ||--}o Text : "alternateName"
+GameServer ||--}o Text : "disambiguatingDescription"
+GameServer ||--}o Text : "name"
+GameServer ||--}o URL : "sameAs"
+GameServer ||--}o Action : "potentialAction"
+GameServer ||--}o URL : "url"
+

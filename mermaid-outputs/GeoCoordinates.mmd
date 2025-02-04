@@ -1,0 +1,23 @@
+erDiagram
+GeoCoordinates {
+    stringList address  
+    stringList addressCountry  
+    stringList elevation  
+    stringList latitude  
+    stringList longitude  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GeoCoordinates ||--}o Text : "postalCode"
+GeoCoordinates ||--}o Text : "alternateName"
+GeoCoordinates ||--}o Text : "disambiguatingDescription"
+GeoCoordinates ||--}o Text : "name"
+GeoCoordinates ||--}o URL : "sameAs"
+GeoCoordinates ||--}o Action : "potentialAction"
+GeoCoordinates ||--}o URL : "url"
+

@@ -1,0 +1,26 @@
+erDiagram
+StatisticalVariable {
+    stringList measurementMethod  
+    stringList measurementTechnique  
+    stringList statType  
+    stringList constraintProperty  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+StatisticalVariable ||--}o Property : "measuredProperty"
+StatisticalVariable ||--}o StatisticalVariable : "measurementDenominator"
+StatisticalVariable ||--}o Enumeration : "measurementQualifier"
+StatisticalVariable ||--}o Class : "populationType"
+StatisticalVariable ||--}o Integer : "numConstraints"
+StatisticalVariable ||--}o Text : "alternateName"
+StatisticalVariable ||--}o Text : "disambiguatingDescription"
+StatisticalVariable ||--}o Text : "name"
+StatisticalVariable ||--}o URL : "sameAs"
+StatisticalVariable ||--}o Action : "potentialAction"
+StatisticalVariable ||--}o URL : "url"
+

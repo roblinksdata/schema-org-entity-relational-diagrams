@@ -1,0 +1,30 @@
+erDiagram
+ParentAudience {
+    stringList suggestedGender  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ParentAudience ||--}o Number : "childMaxAge"
+ParentAudience ||--}o Number : "childMinAge"
+ParentAudience ||--}o MedicalCondition : "healthCondition"
+ParentAudience ||--}o Text : "requiredGender"
+ParentAudience ||--}o Integer : "requiredMaxAge"
+ParentAudience ||--}o Integer : "requiredMinAge"
+ParentAudience ||--}o QuantitativeValue : "suggestedAge"
+ParentAudience ||--}o Number : "suggestedMaxAge"
+ParentAudience ||--}o QuantitativeValue : "suggestedMeasurement"
+ParentAudience ||--}o Number : "suggestedMinAge"
+ParentAudience ||--}o Text : "audienceType"
+ParentAudience ||--}o AdministrativeArea : "geographicArea"
+ParentAudience ||--}o Text : "alternateName"
+ParentAudience ||--}o Text : "disambiguatingDescription"
+ParentAudience ||--}o Text : "name"
+ParentAudience ||--}o URL : "sameAs"
+ParentAudience ||--}o Action : "potentialAction"
+ParentAudience ||--}o URL : "url"
+

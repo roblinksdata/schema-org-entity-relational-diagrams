@@ -1,0 +1,32 @@
+erDiagram
+ListenAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ListenAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
+ListenAction ||--}o Offer : "expectsAcceptanceOf"
+ListenAction ||--}o Thing : "instrument"
+ListenAction ||--}o Thing : "object"
+ListenAction ||--}o Thing : "result"
+ListenAction ||--}o HowTo : "actionProcess"
+ListenAction ||--}o ActionStatusType : "actionStatus"
+ListenAction ||--}o Thing : "error"
+ListenAction ||--}o Text : "alternateName"
+ListenAction ||--}o Text : "disambiguatingDescription"
+ListenAction ||--}o Text : "name"
+ListenAction ||--}o URL : "sameAs"
+ListenAction ||--}o Action : "potentialAction"
+ListenAction ||--}o URL : "url"
+

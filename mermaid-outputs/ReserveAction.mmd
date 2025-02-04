@@ -1,0 +1,31 @@
+erDiagram
+ReserveAction {
+    stringList scheduledTime  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ReserveAction ||--}o Thing : "instrument"
+ReserveAction ||--}o Thing : "object"
+ReserveAction ||--}o Thing : "result"
+ReserveAction ||--}o HowTo : "actionProcess"
+ReserveAction ||--}o ActionStatusType : "actionStatus"
+ReserveAction ||--}o Thing : "error"
+ReserveAction ||--}o Text : "alternateName"
+ReserveAction ||--}o Text : "disambiguatingDescription"
+ReserveAction ||--}o Text : "name"
+ReserveAction ||--}o URL : "sameAs"
+ReserveAction ||--}o Action : "potentialAction"
+ReserveAction ||--}o URL : "url"
+

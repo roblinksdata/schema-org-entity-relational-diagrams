@@ -1,0 +1,140 @@
+erDiagram
+Certification {
+    stringList logo  
+    stringList auditDate  
+    stringList certificationIdentification  
+    stringList datePublished  
+    stringList expires  
+    stringList validFrom  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Certification ||--}o Thing : "about"
+Certification ||--}o Rating : "certificationRating"
+Certification ||--}o CertificationStatusEnumeration : "certificationStatus"
+Certification ||--}o QuantitativeValue : "hasMeasurement"
+Certification ||--}o Organization : "issuedBy"
+Certification ||--}o AdministrativeArea : "validIn"
+Certification ||--}o Place : "contentLocation"
+Certification ||--}o CreativeWork : "hasPart"
+Certification ||--}o Claim : "interpretedAsClaim"
+Certification ||--}o Thing : "mainEntity"
+Certification ||--}o Place : "spatialCoverage"
+Certification ||--}o CreativeWork : "workExample"
+Certification ||--}o Text : "abstract"
+Certification ||--}o Text : "accessMode"
+Certification ||--}o ItemList : "accessModeSufficient"
+Certification ||--}o Text : "accessibilityAPI"
+Certification ||--}o Text : "accessibilityControl"
+Certification ||--}o Text : "accessibilityFeature"
+Certification ||--}o Text : "accessibilityHazard"
+Certification ||--}o Text : "accessibilitySummary"
+Certification ||--}o Person : "accountablePerson"
+Certification ||--}o AggregateRating : "aggregateRating"
+Certification ||--}o Text : "alternativeHeadline"
+Certification ||--}o MediaObject : "associatedMedia"
+Certification ||--}o Audience : "audience"
+Certification ||--}o Text : "award"
+Certification ||--}o Text : "awards"
+Certification ||--}o Person : "character"
+Certification ||--}o Comment : "comment"
+Certification ||--}o Integer : "commentCount"
+Certification ||--}o Text : "conditionsOfAccess"
+Certification ||--}o DateTime : "contentReferenceTime"
+Certification ||--}o Text : "copyrightNotice"
+Certification ||--}o Number : "copyrightYear"
+Certification ||--}o Country : "countryOfOrigin"
+Certification ||--}o Text : "creditText"
+Certification ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Certification ||--}o URL : "discussionUrl"
+Certification ||--}o Person : "editor"
+Certification ||--}o AlignmentObject : "educationalAlignment"
+Certification ||--}o MediaObject : "encoding"
+Certification ||--}o MediaObject : "encodings"
+Certification ||--}o CreativeWork : "exampleOfWork"
+Certification ||--}o Grant : "funding"
+Certification ||--}o Text : "headline"
+Certification ||--}o InteractionCounter : "interactionStatistic"
+Certification ||--}o Text : "interactivityType"
+Certification ||--}o Boolean : "isAccessibleForFree"
+Certification ||--}o Boolean : "isFamilyFriendly"
+Certification ||--}o Place : "locationCreated"
+Certification ||--}o Thing : "mentions"
+Certification ||--}o PublicationEvent : "publication"
+Certification ||--}o Organization : "publisherImprint"
+Certification ||--}o Event : "recordedAt"
+Certification ||--}o PublicationEvent : "releasedEvent"
+Certification ||--}o Review : "review"
+Certification ||--}o Review : "reviews"
+Certification ||--}o Date : "sdDatePublished"
+Certification ||--}o Organization : "sourceOrganization"
+Certification ||--}o Place : "spatial"
+Certification ||--}o Text : "text"
+Certification ||--}o ImageObject : "thumbnail"
+Certification ||--}o URL : "thumbnailUrl"
+Certification ||--}o Duration : "timeRequired"
+Certification ||--}o CreativeWork : "translationOfWork"
+Certification ||--}o Text : "typicalAgeRange"
+Certification ||--}o CreativeWork : "workTranslation"
+Certification ||--}o Text : "alternateName"
+Certification ||--}o Text : "disambiguatingDescription"
+Certification ||--}o Text : "name"
+Certification ||--}o URL : "sameAs"
+Certification ||--}o Action : "potentialAction"
+Certification ||--}o URL : "url"
+

@@ -1,0 +1,30 @@
+erDiagram
+PaymentChargeSpecification {
+    stringList membershipPointsEarned  
+    stringList price  
+    stringList validFrom  
+    stringList validThrough  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PaymentChargeSpecification ||--}o DeliveryMethod : "appliesToDeliveryMethod"
+PaymentChargeSpecification ||--}o PaymentMethod : "appliesToPaymentMethod"
+PaymentChargeSpecification ||--}o QuantitativeValue : "eligibleQuantity"
+PaymentChargeSpecification ||--}o PriceSpecification : "eligibleTransactionVolume"
+PaymentChargeSpecification ||--}o Number : "maxPrice"
+PaymentChargeSpecification ||--}o Number : "minPrice"
+PaymentChargeSpecification ||--}o Text : "priceCurrency"
+PaymentChargeSpecification ||--}o MemberProgramTier : "validForMemberTier"
+PaymentChargeSpecification ||--}o Boolean : "valueAddedTaxIncluded"
+PaymentChargeSpecification ||--}o Text : "alternateName"
+PaymentChargeSpecification ||--}o Text : "disambiguatingDescription"
+PaymentChargeSpecification ||--}o Text : "name"
+PaymentChargeSpecification ||--}o URL : "sameAs"
+PaymentChargeSpecification ||--}o Action : "potentialAction"
+PaymentChargeSpecification ||--}o URL : "url"
+

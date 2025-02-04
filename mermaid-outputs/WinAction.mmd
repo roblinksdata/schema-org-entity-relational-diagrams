@@ -1,0 +1,31 @@
+erDiagram
+WinAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+WinAction ||--}o Person : "loser"
+WinAction ||--}o Thing : "instrument"
+WinAction ||--}o Thing : "object"
+WinAction ||--}o Thing : "result"
+WinAction ||--}o HowTo : "actionProcess"
+WinAction ||--}o ActionStatusType : "actionStatus"
+WinAction ||--}o Thing : "error"
+WinAction ||--}o Text : "alternateName"
+WinAction ||--}o Text : "disambiguatingDescription"
+WinAction ||--}o Text : "name"
+WinAction ||--}o URL : "sameAs"
+WinAction ||--}o Action : "potentialAction"
+WinAction ||--}o URL : "url"
+

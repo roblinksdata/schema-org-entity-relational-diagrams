@@ -1,0 +1,139 @@
+erDiagram
+SatiricalArticle {
+    stringList backstory  
+    stringList pageEnd  
+    stringList pageStart  
+    stringList speakable  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SatiricalArticle ||--}o Text : "articleBody"
+SatiricalArticle ||--}o Text : "articleSection"
+SatiricalArticle ||--}o Text : "pagination"
+SatiricalArticle ||--}o Integer : "wordCount"
+SatiricalArticle ||--}o Thing : "about"
+SatiricalArticle ||--}o Place : "contentLocation"
+SatiricalArticle ||--}o CreativeWork : "hasPart"
+SatiricalArticle ||--}o Claim : "interpretedAsClaim"
+SatiricalArticle ||--}o Thing : "mainEntity"
+SatiricalArticle ||--}o Place : "spatialCoverage"
+SatiricalArticle ||--}o CreativeWork : "workExample"
+SatiricalArticle ||--}o Text : "abstract"
+SatiricalArticle ||--}o Text : "accessMode"
+SatiricalArticle ||--}o ItemList : "accessModeSufficient"
+SatiricalArticle ||--}o Text : "accessibilityAPI"
+SatiricalArticle ||--}o Text : "accessibilityControl"
+SatiricalArticle ||--}o Text : "accessibilityFeature"
+SatiricalArticle ||--}o Text : "accessibilityHazard"
+SatiricalArticle ||--}o Text : "accessibilitySummary"
+SatiricalArticle ||--}o Person : "accountablePerson"
+SatiricalArticle ||--}o AggregateRating : "aggregateRating"
+SatiricalArticle ||--}o Text : "alternativeHeadline"
+SatiricalArticle ||--}o MediaObject : "associatedMedia"
+SatiricalArticle ||--}o Audience : "audience"
+SatiricalArticle ||--}o Text : "award"
+SatiricalArticle ||--}o Text : "awards"
+SatiricalArticle ||--}o Person : "character"
+SatiricalArticle ||--}o Comment : "comment"
+SatiricalArticle ||--}o Integer : "commentCount"
+SatiricalArticle ||--}o Text : "conditionsOfAccess"
+SatiricalArticle ||--}o DateTime : "contentReferenceTime"
+SatiricalArticle ||--}o Text : "copyrightNotice"
+SatiricalArticle ||--}o Number : "copyrightYear"
+SatiricalArticle ||--}o Country : "countryOfOrigin"
+SatiricalArticle ||--}o Text : "creditText"
+SatiricalArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+SatiricalArticle ||--}o URL : "discussionUrl"
+SatiricalArticle ||--}o Person : "editor"
+SatiricalArticle ||--}o AlignmentObject : "educationalAlignment"
+SatiricalArticle ||--}o MediaObject : "encoding"
+SatiricalArticle ||--}o MediaObject : "encodings"
+SatiricalArticle ||--}o CreativeWork : "exampleOfWork"
+SatiricalArticle ||--}o Grant : "funding"
+SatiricalArticle ||--}o Text : "headline"
+SatiricalArticle ||--}o InteractionCounter : "interactionStatistic"
+SatiricalArticle ||--}o Text : "interactivityType"
+SatiricalArticle ||--}o Boolean : "isAccessibleForFree"
+SatiricalArticle ||--}o Boolean : "isFamilyFriendly"
+SatiricalArticle ||--}o Place : "locationCreated"
+SatiricalArticle ||--}o Thing : "mentions"
+SatiricalArticle ||--}o PublicationEvent : "publication"
+SatiricalArticle ||--}o Organization : "publisherImprint"
+SatiricalArticle ||--}o Event : "recordedAt"
+SatiricalArticle ||--}o PublicationEvent : "releasedEvent"
+SatiricalArticle ||--}o Review : "review"
+SatiricalArticle ||--}o Review : "reviews"
+SatiricalArticle ||--}o Date : "sdDatePublished"
+SatiricalArticle ||--}o Organization : "sourceOrganization"
+SatiricalArticle ||--}o Place : "spatial"
+SatiricalArticle ||--}o Text : "text"
+SatiricalArticle ||--}o ImageObject : "thumbnail"
+SatiricalArticle ||--}o URL : "thumbnailUrl"
+SatiricalArticle ||--}o Duration : "timeRequired"
+SatiricalArticle ||--}o CreativeWork : "translationOfWork"
+SatiricalArticle ||--}o Text : "typicalAgeRange"
+SatiricalArticle ||--}o CreativeWork : "workTranslation"
+SatiricalArticle ||--}o Text : "alternateName"
+SatiricalArticle ||--}o Text : "disambiguatingDescription"
+SatiricalArticle ||--}o Text : "name"
+SatiricalArticle ||--}o URL : "sameAs"
+SatiricalArticle ||--}o Action : "potentialAction"
+SatiricalArticle ||--}o URL : "url"
+

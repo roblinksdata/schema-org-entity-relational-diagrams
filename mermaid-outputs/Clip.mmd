@@ -1,0 +1,142 @@
+erDiagram
+Clip {
+    stringList actor  
+    stringList clipNumber  
+    stringList endOffset  
+    stringList musicBy  
+    stringList startOffset  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Clip ||--}o Episode : "partOfEpisode"
+Clip ||--}o CreativeWorkSeason : "partOfSeason"
+Clip ||--}o CreativeWorkSeries : "partOfSeries"
+Clip ||--}o Person : "actors"
+Clip ||--}o Person : "director"
+Clip ||--}o Person : "directors"
+Clip ||--}o Thing : "about"
+Clip ||--}o Place : "contentLocation"
+Clip ||--}o CreativeWork : "hasPart"
+Clip ||--}o Claim : "interpretedAsClaim"
+Clip ||--}o Thing : "mainEntity"
+Clip ||--}o Place : "spatialCoverage"
+Clip ||--}o CreativeWork : "workExample"
+Clip ||--}o Text : "abstract"
+Clip ||--}o Text : "accessMode"
+Clip ||--}o ItemList : "accessModeSufficient"
+Clip ||--}o Text : "accessibilityAPI"
+Clip ||--}o Text : "accessibilityControl"
+Clip ||--}o Text : "accessibilityFeature"
+Clip ||--}o Text : "accessibilityHazard"
+Clip ||--}o Text : "accessibilitySummary"
+Clip ||--}o Person : "accountablePerson"
+Clip ||--}o AggregateRating : "aggregateRating"
+Clip ||--}o Text : "alternativeHeadline"
+Clip ||--}o MediaObject : "associatedMedia"
+Clip ||--}o Audience : "audience"
+Clip ||--}o Text : "award"
+Clip ||--}o Text : "awards"
+Clip ||--}o Person : "character"
+Clip ||--}o Comment : "comment"
+Clip ||--}o Integer : "commentCount"
+Clip ||--}o Text : "conditionsOfAccess"
+Clip ||--}o DateTime : "contentReferenceTime"
+Clip ||--}o Text : "copyrightNotice"
+Clip ||--}o Number : "copyrightYear"
+Clip ||--}o Country : "countryOfOrigin"
+Clip ||--}o Text : "creditText"
+Clip ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Clip ||--}o URL : "discussionUrl"
+Clip ||--}o Person : "editor"
+Clip ||--}o AlignmentObject : "educationalAlignment"
+Clip ||--}o MediaObject : "encoding"
+Clip ||--}o MediaObject : "encodings"
+Clip ||--}o CreativeWork : "exampleOfWork"
+Clip ||--}o Grant : "funding"
+Clip ||--}o Text : "headline"
+Clip ||--}o InteractionCounter : "interactionStatistic"
+Clip ||--}o Text : "interactivityType"
+Clip ||--}o Boolean : "isAccessibleForFree"
+Clip ||--}o Boolean : "isFamilyFriendly"
+Clip ||--}o Place : "locationCreated"
+Clip ||--}o Thing : "mentions"
+Clip ||--}o PublicationEvent : "publication"
+Clip ||--}o Organization : "publisherImprint"
+Clip ||--}o Event : "recordedAt"
+Clip ||--}o PublicationEvent : "releasedEvent"
+Clip ||--}o Review : "review"
+Clip ||--}o Review : "reviews"
+Clip ||--}o Date : "sdDatePublished"
+Clip ||--}o Organization : "sourceOrganization"
+Clip ||--}o Place : "spatial"
+Clip ||--}o Text : "text"
+Clip ||--}o ImageObject : "thumbnail"
+Clip ||--}o URL : "thumbnailUrl"
+Clip ||--}o Duration : "timeRequired"
+Clip ||--}o CreativeWork : "translationOfWork"
+Clip ||--}o Text : "typicalAgeRange"
+Clip ||--}o CreativeWork : "workTranslation"
+Clip ||--}o Text : "alternateName"
+Clip ||--}o Text : "disambiguatingDescription"
+Clip ||--}o Text : "name"
+Clip ||--}o URL : "sameAs"
+Clip ||--}o Action : "potentialAction"
+Clip ||--}o URL : "url"
+

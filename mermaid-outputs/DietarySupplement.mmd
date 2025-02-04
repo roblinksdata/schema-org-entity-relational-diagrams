@@ -1,0 +1,91 @@
+erDiagram
+DietarySupplement {
+    stringList legalStatus  
+    stringList asin  
+    stringList category  
+    stringList colorSwatch  
+    stringList gtin  
+    stringList logo  
+    stringList material  
+    stringList brand  
+    stringList depth  
+    stringList height  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList isVariantOf  
+    stringList keywords  
+    stringList model  
+    stringList negativeNotes  
+    stringList offers  
+    stringList pattern  
+    stringList positiveNotes  
+    stringList size  
+    stringList width  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DietarySupplement ||--}o Text : "activeIngredient"
+DietarySupplement ||--}o Boolean : "isProprietary"
+DietarySupplement ||--}o MaximumDoseSchedule : "maximumIntake"
+DietarySupplement ||--}o Text : "mechanismOfAction"
+DietarySupplement ||--}o Text : "nonProprietaryName"
+DietarySupplement ||--}o Text : "proprietaryName"
+DietarySupplement ||--}o RecommendedDoseSchedule : "recommendedIntake"
+DietarySupplement ||--}o Text : "safetyConsideration"
+DietarySupplement ||--}o Text : "targetPopulation"
+DietarySupplement ||--}o Text : "gtin12"
+DietarySupplement ||--}o Text : "gtin13"
+DietarySupplement ||--}o Text : "gtin14"
+DietarySupplement ||--}o Text : "gtin8"
+DietarySupplement ||--}o URL : "hasGS1DigitalLink"
+DietarySupplement ||--}o Text : "nsn"
+DietarySupplement ||--}o Text : "productID"
+DietarySupplement ||--}o Text : "sku"
+DietarySupplement ||--}o PropertyValue : "additionalProperty"
+DietarySupplement ||--}o AggregateRating : "aggregateRating"
+DietarySupplement ||--}o Audience : "audience"
+DietarySupplement ||--}o Text : "award"
+DietarySupplement ||--}o Text : "awards"
+DietarySupplement ||--}o Text : "color"
+DietarySupplement ||--}o Text : "countryOfAssembly"
+DietarySupplement ||--}o Text : "countryOfLastProcessing"
+DietarySupplement ||--}o Country : "countryOfOrigin"
+DietarySupplement ||--}o Grant : "funding"
+DietarySupplement ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
+DietarySupplement ||--}o Certification : "hasCertification"
+DietarySupplement ||--}o EnergyConsumptionDetails : "hasEnergyConsumptionDetails"
+DietarySupplement ||--}o QuantitativeValue : "hasMeasurement"
+DietarySupplement ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+DietarySupplement ||--}o Text : "inProductGroupWithID"
+DietarySupplement ||--}o Product : "isAccessoryOrSparePartFor"
+DietarySupplement ||--}o Product : "isConsumableFor"
+DietarySupplement ||--}o Boolean : "isFamilyFriendly"
+DietarySupplement ||--}o OfferItemCondition : "itemCondition"
+DietarySupplement ||--}o Organization : "manufacturer"
+DietarySupplement ||--}o Text : "mobileUrl"
+DietarySupplement ||--}o Text : "mpn"
+DietarySupplement ||--}o Date : "productionDate"
+DietarySupplement ||--}o Date : "purchaseDate"
+DietarySupplement ||--}o Date : "releaseDate"
+DietarySupplement ||--}o Review : "review"
+DietarySupplement ||--}o Review : "reviews"
+DietarySupplement ||--}o Text : "slogan"
+DietarySupplement ||--}o QuantitativeValue : "weight"
+DietarySupplement ||--}o Text : "alternateName"
+DietarySupplement ||--}o Text : "disambiguatingDescription"
+DietarySupplement ||--}o Text : "name"
+DietarySupplement ||--}o URL : "sameAs"
+DietarySupplement ||--}o Action : "potentialAction"
+DietarySupplement ||--}o URL : "url"
+DietarySupplement ||--}o MedicalCode : "code"
+DietarySupplement ||--}o MedicalGuideline : "guideline"
+DietarySupplement ||--}o MedicineSystem : "medicineSystem"
+DietarySupplement ||--}o Organization : "recognizingAuthority"
+DietarySupplement ||--}o MedicalSpecialty : "relevantSpecialty"
+DietarySupplement ||--}o MedicalStudy : "study"
+

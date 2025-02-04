@@ -1,0 +1,142 @@
+erDiagram
+RadioSeason {
+    stringList actor  
+    stringList seasonNumber  
+    stringList endDate  
+    stringList startDate  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RadioSeason ||--}o Episode : "episode"
+RadioSeason ||--}o CreativeWorkSeries : "partOfSeries"
+RadioSeason ||--}o Person : "director"
+RadioSeason ||--}o Episode : "episodes"
+RadioSeason ||--}o Integer : "numberOfEpisodes"
+RadioSeason ||--}o Organization : "productionCompany"
+RadioSeason ||--}o VideoObject : "trailer"
+RadioSeason ||--}o Thing : "about"
+RadioSeason ||--}o Place : "contentLocation"
+RadioSeason ||--}o CreativeWork : "hasPart"
+RadioSeason ||--}o Claim : "interpretedAsClaim"
+RadioSeason ||--}o Thing : "mainEntity"
+RadioSeason ||--}o Place : "spatialCoverage"
+RadioSeason ||--}o CreativeWork : "workExample"
+RadioSeason ||--}o Text : "abstract"
+RadioSeason ||--}o Text : "accessMode"
+RadioSeason ||--}o ItemList : "accessModeSufficient"
+RadioSeason ||--}o Text : "accessibilityAPI"
+RadioSeason ||--}o Text : "accessibilityControl"
+RadioSeason ||--}o Text : "accessibilityFeature"
+RadioSeason ||--}o Text : "accessibilityHazard"
+RadioSeason ||--}o Text : "accessibilitySummary"
+RadioSeason ||--}o Person : "accountablePerson"
+RadioSeason ||--}o AggregateRating : "aggregateRating"
+RadioSeason ||--}o Text : "alternativeHeadline"
+RadioSeason ||--}o MediaObject : "associatedMedia"
+RadioSeason ||--}o Audience : "audience"
+RadioSeason ||--}o Text : "award"
+RadioSeason ||--}o Text : "awards"
+RadioSeason ||--}o Person : "character"
+RadioSeason ||--}o Comment : "comment"
+RadioSeason ||--}o Integer : "commentCount"
+RadioSeason ||--}o Text : "conditionsOfAccess"
+RadioSeason ||--}o DateTime : "contentReferenceTime"
+RadioSeason ||--}o Text : "copyrightNotice"
+RadioSeason ||--}o Number : "copyrightYear"
+RadioSeason ||--}o Country : "countryOfOrigin"
+RadioSeason ||--}o Text : "creditText"
+RadioSeason ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+RadioSeason ||--}o URL : "discussionUrl"
+RadioSeason ||--}o Person : "editor"
+RadioSeason ||--}o AlignmentObject : "educationalAlignment"
+RadioSeason ||--}o MediaObject : "encoding"
+RadioSeason ||--}o MediaObject : "encodings"
+RadioSeason ||--}o CreativeWork : "exampleOfWork"
+RadioSeason ||--}o Grant : "funding"
+RadioSeason ||--}o Text : "headline"
+RadioSeason ||--}o InteractionCounter : "interactionStatistic"
+RadioSeason ||--}o Text : "interactivityType"
+RadioSeason ||--}o Boolean : "isAccessibleForFree"
+RadioSeason ||--}o Boolean : "isFamilyFriendly"
+RadioSeason ||--}o Place : "locationCreated"
+RadioSeason ||--}o Thing : "mentions"
+RadioSeason ||--}o PublicationEvent : "publication"
+RadioSeason ||--}o Organization : "publisherImprint"
+RadioSeason ||--}o Event : "recordedAt"
+RadioSeason ||--}o PublicationEvent : "releasedEvent"
+RadioSeason ||--}o Review : "review"
+RadioSeason ||--}o Review : "reviews"
+RadioSeason ||--}o Date : "sdDatePublished"
+RadioSeason ||--}o Organization : "sourceOrganization"
+RadioSeason ||--}o Place : "spatial"
+RadioSeason ||--}o Text : "text"
+RadioSeason ||--}o ImageObject : "thumbnail"
+RadioSeason ||--}o URL : "thumbnailUrl"
+RadioSeason ||--}o Duration : "timeRequired"
+RadioSeason ||--}o CreativeWork : "translationOfWork"
+RadioSeason ||--}o Text : "typicalAgeRange"
+RadioSeason ||--}o CreativeWork : "workTranslation"
+RadioSeason ||--}o Text : "alternateName"
+RadioSeason ||--}o Text : "disambiguatingDescription"
+RadioSeason ||--}o Text : "name"
+RadioSeason ||--}o URL : "sameAs"
+RadioSeason ||--}o Action : "potentialAction"
+RadioSeason ||--}o URL : "url"
+

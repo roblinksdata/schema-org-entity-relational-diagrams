@@ -1,0 +1,31 @@
+erDiagram
+SolveMathAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SolveMathAction ||--}o Text : "eduQuestionType"
+SolveMathAction ||--}o Thing : "instrument"
+SolveMathAction ||--}o Thing : "object"
+SolveMathAction ||--}o Thing : "result"
+SolveMathAction ||--}o HowTo : "actionProcess"
+SolveMathAction ||--}o ActionStatusType : "actionStatus"
+SolveMathAction ||--}o Thing : "error"
+SolveMathAction ||--}o Text : "alternateName"
+SolveMathAction ||--}o Text : "disambiguatingDescription"
+SolveMathAction ||--}o Text : "name"
+SolveMathAction ||--}o URL : "sameAs"
+SolveMathAction ||--}o Action : "potentialAction"
+SolveMathAction ||--}o URL : "url"
+

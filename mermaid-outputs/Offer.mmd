@@ -1,0 +1,71 @@
+erDiagram
+Offer {
+    stringList areaServed  
+    stringList asin  
+    stringList category  
+    stringList eligibleRegion  
+    stringList gtin  
+    stringList seller  
+    stringList acceptedPaymentMethod  
+    stringList availabilityEnds  
+    stringList availabilityStarts  
+    stringList ineligibleRegion  
+    stringList itemOffered  
+    stringList leaseLength  
+    stringList offeredBy  
+    stringList price  
+    stringList validFrom  
+    stringList validThrough  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Offer ||--}o Place : "availableAtOrFrom"
+Offer ||--}o Text : "gtin12"
+Offer ||--}o Text : "gtin13"
+Offer ||--}o Text : "gtin14"
+Offer ||--}o Text : "gtin8"
+Offer ||--}o URL : "hasGS1DigitalLink"
+Offer ||--}o Text : "serialNumber"
+Offer ||--}o Text : "sku"
+Offer ||--}o Offer : "addOn"
+Offer ||--}o PropertyValue : "additionalProperty"
+Offer ||--}o QuantitativeValue : "advanceBookingRequirement"
+Offer ||--}o AggregateRating : "aggregateRating"
+Offer ||--}o ItemAvailability : "availability"
+Offer ||--}o DeliveryMethod : "availableDeliveryMethod"
+Offer ||--}o BusinessFunction : "businessFunction"
+Offer ||--}o Text : "checkoutPageURLTemplate"
+Offer ||--}o QuantitativeValue : "deliveryLeadTime"
+Offer ||--}o BusinessEntityType : "eligibleCustomerType"
+Offer ||--}o QuantitativeValue : "eligibleDuration"
+Offer ||--}o QuantitativeValue : "eligibleQuantity"
+Offer ||--}o PriceSpecification : "eligibleTransactionVolume"
+Offer ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
+Offer ||--}o QuantitativeValue : "hasMeasurement"
+Offer ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+Offer ||--}o TypeAndQuantityNode : "includesObject"
+Offer ||--}o QuantitativeValue : "inventoryLevel"
+Offer ||--}o Boolean : "isFamilyFriendly"
+Offer ||--}o OfferItemCondition : "itemCondition"
+Offer ||--}o Text : "mobileUrl"
+Offer ||--}o Text : "mpn"
+Offer ||--}o Text : "priceCurrency"
+Offer ||--}o PriceSpecification : "priceSpecification"
+Offer ||--}o Date : "priceValidUntil"
+Offer ||--}o Review : "review"
+Offer ||--}o Review : "reviews"
+Offer ||--}o OfferShippingDetails : "shippingDetails"
+Offer ||--}o MemberProgramTier : "validForMemberTier"
+Offer ||--}o WarrantyPromise : "warranty"
+Offer ||--}o Text : "alternateName"
+Offer ||--}o Text : "disambiguatingDescription"
+Offer ||--}o Text : "name"
+Offer ||--}o URL : "sameAs"
+Offer ||--}o Action : "potentialAction"
+Offer ||--}o URL : "url"
+

@@ -1,0 +1,131 @@
+erDiagram
+CreativeWork {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CreativeWork ||--}o Thing : "about"
+CreativeWork ||--}o Place : "contentLocation"
+CreativeWork ||--}o CreativeWork : "hasPart"
+CreativeWork ||--}o Claim : "interpretedAsClaim"
+CreativeWork ||--}o Thing : "mainEntity"
+CreativeWork ||--}o Place : "spatialCoverage"
+CreativeWork ||--}o CreativeWork : "workExample"
+CreativeWork ||--}o Text : "abstract"
+CreativeWork ||--}o Text : "accessMode"
+CreativeWork ||--}o ItemList : "accessModeSufficient"
+CreativeWork ||--}o Text : "accessibilityAPI"
+CreativeWork ||--}o Text : "accessibilityControl"
+CreativeWork ||--}o Text : "accessibilityFeature"
+CreativeWork ||--}o Text : "accessibilityHazard"
+CreativeWork ||--}o Text : "accessibilitySummary"
+CreativeWork ||--}o Person : "accountablePerson"
+CreativeWork ||--}o AggregateRating : "aggregateRating"
+CreativeWork ||--}o Text : "alternativeHeadline"
+CreativeWork ||--}o MediaObject : "associatedMedia"
+CreativeWork ||--}o Audience : "audience"
+CreativeWork ||--}o Text : "award"
+CreativeWork ||--}o Text : "awards"
+CreativeWork ||--}o Person : "character"
+CreativeWork ||--}o Comment : "comment"
+CreativeWork ||--}o Integer : "commentCount"
+CreativeWork ||--}o Text : "conditionsOfAccess"
+CreativeWork ||--}o DateTime : "contentReferenceTime"
+CreativeWork ||--}o Text : "copyrightNotice"
+CreativeWork ||--}o Number : "copyrightYear"
+CreativeWork ||--}o Country : "countryOfOrigin"
+CreativeWork ||--}o Text : "creditText"
+CreativeWork ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+CreativeWork ||--}o URL : "discussionUrl"
+CreativeWork ||--}o Person : "editor"
+CreativeWork ||--}o AlignmentObject : "educationalAlignment"
+CreativeWork ||--}o MediaObject : "encoding"
+CreativeWork ||--}o MediaObject : "encodings"
+CreativeWork ||--}o CreativeWork : "exampleOfWork"
+CreativeWork ||--}o Grant : "funding"
+CreativeWork ||--}o Text : "headline"
+CreativeWork ||--}o InteractionCounter : "interactionStatistic"
+CreativeWork ||--}o Text : "interactivityType"
+CreativeWork ||--}o Boolean : "isAccessibleForFree"
+CreativeWork ||--}o Boolean : "isFamilyFriendly"
+CreativeWork ||--}o Place : "locationCreated"
+CreativeWork ||--}o Thing : "mentions"
+CreativeWork ||--}o PublicationEvent : "publication"
+CreativeWork ||--}o Organization : "publisherImprint"
+CreativeWork ||--}o Event : "recordedAt"
+CreativeWork ||--}o PublicationEvent : "releasedEvent"
+CreativeWork ||--}o Review : "review"
+CreativeWork ||--}o Review : "reviews"
+CreativeWork ||--}o Date : "sdDatePublished"
+CreativeWork ||--}o Organization : "sourceOrganization"
+CreativeWork ||--}o Place : "spatial"
+CreativeWork ||--}o Text : "text"
+CreativeWork ||--}o ImageObject : "thumbnail"
+CreativeWork ||--}o URL : "thumbnailUrl"
+CreativeWork ||--}o Duration : "timeRequired"
+CreativeWork ||--}o CreativeWork : "translationOfWork"
+CreativeWork ||--}o Text : "typicalAgeRange"
+CreativeWork ||--}o CreativeWork : "workTranslation"
+CreativeWork ||--}o Text : "alternateName"
+CreativeWork ||--}o Text : "disambiguatingDescription"
+CreativeWork ||--}o Text : "name"
+CreativeWork ||--}o URL : "sameAs"
+CreativeWork ||--}o Action : "potentialAction"
+CreativeWork ||--}o URL : "url"
+

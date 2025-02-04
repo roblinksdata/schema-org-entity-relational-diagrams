@@ -1,0 +1,18 @@
+erDiagram
+GameServerStatus {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GameServerStatus ||--}o Text : "alternateName"
+GameServerStatus ||--}o Text : "disambiguatingDescription"
+GameServerStatus ||--}o Text : "name"
+GameServerStatus ||--}o URL : "sameAs"
+GameServerStatus ||--}o Action : "potentialAction"
+GameServerStatus ||--}o URL : "url"
+

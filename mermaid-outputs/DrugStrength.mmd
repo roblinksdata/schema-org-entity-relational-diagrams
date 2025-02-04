@@ -1,0 +1,30 @@
+erDiagram
+DrugStrength {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DrugStrength ||--}o Text : "activeIngredient"
+DrugStrength ||--}o AdministrativeArea : "availableIn"
+DrugStrength ||--}o MaximumDoseSchedule : "maximumIntake"
+DrugStrength ||--}o Text : "strengthUnit"
+DrugStrength ||--}o Number : "strengthValue"
+DrugStrength ||--}o MedicalCode : "code"
+DrugStrength ||--}o Grant : "funding"
+DrugStrength ||--}o MedicalGuideline : "guideline"
+DrugStrength ||--}o MedicineSystem : "medicineSystem"
+DrugStrength ||--}o Organization : "recognizingAuthority"
+DrugStrength ||--}o MedicalSpecialty : "relevantSpecialty"
+DrugStrength ||--}o MedicalStudy : "study"
+DrugStrength ||--}o Text : "alternateName"
+DrugStrength ||--}o Text : "disambiguatingDescription"
+DrugStrength ||--}o Text : "name"
+DrugStrength ||--}o URL : "sameAs"
+DrugStrength ||--}o Action : "potentialAction"
+DrugStrength ||--}o URL : "url"
+

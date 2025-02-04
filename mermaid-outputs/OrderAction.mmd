@@ -1,0 +1,34 @@
+erDiagram
+OrderAction {
+    stringList price  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OrderAction ||--}o DeliveryMethod : "deliveryMethod"
+OrderAction ||--}o Text : "priceCurrency"
+OrderAction ||--}o PriceSpecification : "priceSpecification"
+OrderAction ||--}o Thing : "instrument"
+OrderAction ||--}o Thing : "object"
+OrderAction ||--}o Thing : "result"
+OrderAction ||--}o HowTo : "actionProcess"
+OrderAction ||--}o ActionStatusType : "actionStatus"
+OrderAction ||--}o Thing : "error"
+OrderAction ||--}o Text : "alternateName"
+OrderAction ||--}o Text : "disambiguatingDescription"
+OrderAction ||--}o Text : "name"
+OrderAction ||--}o URL : "sameAs"
+OrderAction ||--}o Action : "potentialAction"
+OrderAction ||--}o URL : "url"
+

@@ -1,0 +1,22 @@
+erDiagram
+OrganizationRole {
+    stringList endDate  
+    stringList namedPosition  
+    stringList roleName  
+    stringList startDate  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+OrganizationRole ||--}o Number : "numberedPosition"
+OrganizationRole ||--}o Text : "alternateName"
+OrganizationRole ||--}o Text : "disambiguatingDescription"
+OrganizationRole ||--}o Text : "name"
+OrganizationRole ||--}o URL : "sameAs"
+OrganizationRole ||--}o Action : "potentialAction"
+OrganizationRole ||--}o URL : "url"
+

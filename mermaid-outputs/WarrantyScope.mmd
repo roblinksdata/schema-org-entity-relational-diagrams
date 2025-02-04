@@ -1,0 +1,18 @@
+erDiagram
+WarrantyScope {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+WarrantyScope ||--}o Text : "alternateName"
+WarrantyScope ||--}o Text : "disambiguatingDescription"
+WarrantyScope ||--}o Text : "name"
+WarrantyScope ||--}o URL : "sameAs"
+WarrantyScope ||--}o Action : "potentialAction"
+WarrantyScope ||--}o URL : "url"
+

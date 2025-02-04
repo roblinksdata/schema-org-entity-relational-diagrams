@@ -1,0 +1,133 @@
+erDiagram
+HyperTocEntry {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+HyperTocEntry ||--}o MediaObject : "associatedMedia"
+HyperTocEntry ||--}o HyperTocEntry : "tocContinuation"
+HyperTocEntry ||--}o Text : "utterances"
+HyperTocEntry ||--}o Thing : "about"
+HyperTocEntry ||--}o Place : "contentLocation"
+HyperTocEntry ||--}o CreativeWork : "hasPart"
+HyperTocEntry ||--}o Claim : "interpretedAsClaim"
+HyperTocEntry ||--}o Thing : "mainEntity"
+HyperTocEntry ||--}o Place : "spatialCoverage"
+HyperTocEntry ||--}o CreativeWork : "workExample"
+HyperTocEntry ||--}o Text : "abstract"
+HyperTocEntry ||--}o Text : "accessMode"
+HyperTocEntry ||--}o ItemList : "accessModeSufficient"
+HyperTocEntry ||--}o Text : "accessibilityAPI"
+HyperTocEntry ||--}o Text : "accessibilityControl"
+HyperTocEntry ||--}o Text : "accessibilityFeature"
+HyperTocEntry ||--}o Text : "accessibilityHazard"
+HyperTocEntry ||--}o Text : "accessibilitySummary"
+HyperTocEntry ||--}o Person : "accountablePerson"
+HyperTocEntry ||--}o AggregateRating : "aggregateRating"
+HyperTocEntry ||--}o Text : "alternativeHeadline"
+HyperTocEntry ||--}o Audience : "audience"
+HyperTocEntry ||--}o Text : "award"
+HyperTocEntry ||--}o Text : "awards"
+HyperTocEntry ||--}o Person : "character"
+HyperTocEntry ||--}o Comment : "comment"
+HyperTocEntry ||--}o Integer : "commentCount"
+HyperTocEntry ||--}o Text : "conditionsOfAccess"
+HyperTocEntry ||--}o DateTime : "contentReferenceTime"
+HyperTocEntry ||--}o Text : "copyrightNotice"
+HyperTocEntry ||--}o Number : "copyrightYear"
+HyperTocEntry ||--}o Country : "countryOfOrigin"
+HyperTocEntry ||--}o Text : "creditText"
+HyperTocEntry ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+HyperTocEntry ||--}o URL : "discussionUrl"
+HyperTocEntry ||--}o Person : "editor"
+HyperTocEntry ||--}o AlignmentObject : "educationalAlignment"
+HyperTocEntry ||--}o MediaObject : "encoding"
+HyperTocEntry ||--}o MediaObject : "encodings"
+HyperTocEntry ||--}o CreativeWork : "exampleOfWork"
+HyperTocEntry ||--}o Grant : "funding"
+HyperTocEntry ||--}o Text : "headline"
+HyperTocEntry ||--}o InteractionCounter : "interactionStatistic"
+HyperTocEntry ||--}o Text : "interactivityType"
+HyperTocEntry ||--}o Boolean : "isAccessibleForFree"
+HyperTocEntry ||--}o Boolean : "isFamilyFriendly"
+HyperTocEntry ||--}o Place : "locationCreated"
+HyperTocEntry ||--}o Thing : "mentions"
+HyperTocEntry ||--}o PublicationEvent : "publication"
+HyperTocEntry ||--}o Organization : "publisherImprint"
+HyperTocEntry ||--}o Event : "recordedAt"
+HyperTocEntry ||--}o PublicationEvent : "releasedEvent"
+HyperTocEntry ||--}o Review : "review"
+HyperTocEntry ||--}o Review : "reviews"
+HyperTocEntry ||--}o Date : "sdDatePublished"
+HyperTocEntry ||--}o Organization : "sourceOrganization"
+HyperTocEntry ||--}o Place : "spatial"
+HyperTocEntry ||--}o Text : "text"
+HyperTocEntry ||--}o ImageObject : "thumbnail"
+HyperTocEntry ||--}o URL : "thumbnailUrl"
+HyperTocEntry ||--}o Duration : "timeRequired"
+HyperTocEntry ||--}o CreativeWork : "translationOfWork"
+HyperTocEntry ||--}o Text : "typicalAgeRange"
+HyperTocEntry ||--}o CreativeWork : "workTranslation"
+HyperTocEntry ||--}o Text : "alternateName"
+HyperTocEntry ||--}o Text : "disambiguatingDescription"
+HyperTocEntry ||--}o Text : "name"
+HyperTocEntry ||--}o URL : "sameAs"
+HyperTocEntry ||--}o Action : "potentialAction"
+HyperTocEntry ||--}o URL : "url"
+

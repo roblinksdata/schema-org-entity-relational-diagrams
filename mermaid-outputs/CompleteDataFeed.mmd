@@ -1,0 +1,141 @@
+erDiagram
+CompleteDataFeed {
+    stringList dataFeedElement  
+    stringList measurementMethod  
+    stringList measurementTechnique  
+    stringList variableMeasured  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CompleteDataFeed ||--}o Text : "issn"
+CompleteDataFeed ||--}o DataCatalog : "catalog"
+CompleteDataFeed ||--}o DateTime : "datasetTimeInterval"
+CompleteDataFeed ||--}o DataDownload : "distribution"
+CompleteDataFeed ||--}o DataCatalog : "includedDataCatalog"
+CompleteDataFeed ||--}o DataCatalog : "includedInDataCatalog"
+CompleteDataFeed ||--}o Thing : "about"
+CompleteDataFeed ||--}o Place : "contentLocation"
+CompleteDataFeed ||--}o CreativeWork : "hasPart"
+CompleteDataFeed ||--}o Claim : "interpretedAsClaim"
+CompleteDataFeed ||--}o Thing : "mainEntity"
+CompleteDataFeed ||--}o Place : "spatialCoverage"
+CompleteDataFeed ||--}o CreativeWork : "workExample"
+CompleteDataFeed ||--}o Text : "abstract"
+CompleteDataFeed ||--}o Text : "accessMode"
+CompleteDataFeed ||--}o ItemList : "accessModeSufficient"
+CompleteDataFeed ||--}o Text : "accessibilityAPI"
+CompleteDataFeed ||--}o Text : "accessibilityControl"
+CompleteDataFeed ||--}o Text : "accessibilityFeature"
+CompleteDataFeed ||--}o Text : "accessibilityHazard"
+CompleteDataFeed ||--}o Text : "accessibilitySummary"
+CompleteDataFeed ||--}o Person : "accountablePerson"
+CompleteDataFeed ||--}o AggregateRating : "aggregateRating"
+CompleteDataFeed ||--}o Text : "alternativeHeadline"
+CompleteDataFeed ||--}o MediaObject : "associatedMedia"
+CompleteDataFeed ||--}o Audience : "audience"
+CompleteDataFeed ||--}o Text : "award"
+CompleteDataFeed ||--}o Text : "awards"
+CompleteDataFeed ||--}o Person : "character"
+CompleteDataFeed ||--}o Comment : "comment"
+CompleteDataFeed ||--}o Integer : "commentCount"
+CompleteDataFeed ||--}o Text : "conditionsOfAccess"
+CompleteDataFeed ||--}o DateTime : "contentReferenceTime"
+CompleteDataFeed ||--}o Text : "copyrightNotice"
+CompleteDataFeed ||--}o Number : "copyrightYear"
+CompleteDataFeed ||--}o Country : "countryOfOrigin"
+CompleteDataFeed ||--}o Text : "creditText"
+CompleteDataFeed ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+CompleteDataFeed ||--}o URL : "discussionUrl"
+CompleteDataFeed ||--}o Person : "editor"
+CompleteDataFeed ||--}o AlignmentObject : "educationalAlignment"
+CompleteDataFeed ||--}o MediaObject : "encoding"
+CompleteDataFeed ||--}o MediaObject : "encodings"
+CompleteDataFeed ||--}o CreativeWork : "exampleOfWork"
+CompleteDataFeed ||--}o Grant : "funding"
+CompleteDataFeed ||--}o Text : "headline"
+CompleteDataFeed ||--}o InteractionCounter : "interactionStatistic"
+CompleteDataFeed ||--}o Text : "interactivityType"
+CompleteDataFeed ||--}o Boolean : "isAccessibleForFree"
+CompleteDataFeed ||--}o Boolean : "isFamilyFriendly"
+CompleteDataFeed ||--}o Place : "locationCreated"
+CompleteDataFeed ||--}o Thing : "mentions"
+CompleteDataFeed ||--}o PublicationEvent : "publication"
+CompleteDataFeed ||--}o Organization : "publisherImprint"
+CompleteDataFeed ||--}o Event : "recordedAt"
+CompleteDataFeed ||--}o PublicationEvent : "releasedEvent"
+CompleteDataFeed ||--}o Review : "review"
+CompleteDataFeed ||--}o Review : "reviews"
+CompleteDataFeed ||--}o Date : "sdDatePublished"
+CompleteDataFeed ||--}o Organization : "sourceOrganization"
+CompleteDataFeed ||--}o Place : "spatial"
+CompleteDataFeed ||--}o Text : "text"
+CompleteDataFeed ||--}o ImageObject : "thumbnail"
+CompleteDataFeed ||--}o URL : "thumbnailUrl"
+CompleteDataFeed ||--}o Duration : "timeRequired"
+CompleteDataFeed ||--}o CreativeWork : "translationOfWork"
+CompleteDataFeed ||--}o Text : "typicalAgeRange"
+CompleteDataFeed ||--}o CreativeWork : "workTranslation"
+CompleteDataFeed ||--}o Text : "alternateName"
+CompleteDataFeed ||--}o Text : "disambiguatingDescription"
+CompleteDataFeed ||--}o Text : "name"
+CompleteDataFeed ||--}o URL : "sameAs"
+CompleteDataFeed ||--}o Action : "potentialAction"
+CompleteDataFeed ||--}o URL : "url"
+

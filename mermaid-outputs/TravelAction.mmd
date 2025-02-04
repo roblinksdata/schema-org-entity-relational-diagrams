@@ -1,0 +1,33 @@
+erDiagram
+TravelAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TravelAction ||--}o Distance : "distance"
+TravelAction ||--}o Place : "fromLocation"
+TravelAction ||--}o Place : "toLocation"
+TravelAction ||--}o Thing : "instrument"
+TravelAction ||--}o Thing : "object"
+TravelAction ||--}o Thing : "result"
+TravelAction ||--}o HowTo : "actionProcess"
+TravelAction ||--}o ActionStatusType : "actionStatus"
+TravelAction ||--}o Thing : "error"
+TravelAction ||--}o Text : "alternateName"
+TravelAction ||--}o Text : "disambiguatingDescription"
+TravelAction ||--}o Text : "name"
+TravelAction ||--}o URL : "sameAs"
+TravelAction ||--}o Action : "potentialAction"
+TravelAction ||--}o URL : "url"
+

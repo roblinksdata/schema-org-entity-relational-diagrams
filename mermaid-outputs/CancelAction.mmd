@@ -1,0 +1,31 @@
+erDiagram
+CancelAction {
+    stringList scheduledTime  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CancelAction ||--}o Thing : "instrument"
+CancelAction ||--}o Thing : "object"
+CancelAction ||--}o Thing : "result"
+CancelAction ||--}o HowTo : "actionProcess"
+CancelAction ||--}o ActionStatusType : "actionStatus"
+CancelAction ||--}o Thing : "error"
+CancelAction ||--}o Text : "alternateName"
+CancelAction ||--}o Text : "disambiguatingDescription"
+CancelAction ||--}o Text : "name"
+CancelAction ||--}o URL : "sameAs"
+CancelAction ||--}o Action : "potentialAction"
+CancelAction ||--}o URL : "url"
+

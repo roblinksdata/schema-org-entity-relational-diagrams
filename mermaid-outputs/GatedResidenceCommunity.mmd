@@ -1,0 +1,65 @@
+erDiagram
+GatedResidenceCommunity {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+GatedResidenceCommunity ||--}o FloorPlan : "accommodationFloorPlan"
+GatedResidenceCommunity ||--}o Text : "globalLocationNumber"
+GatedResidenceCommunity ||--}o URL : "hasGS1DigitalLink"
+GatedResidenceCommunity ||--}o PropertyValue : "additionalProperty"
+GatedResidenceCommunity ||--}o AggregateRating : "aggregateRating"
+GatedResidenceCommunity ||--}o LocationFeatureSpecification : "amenityFeature"
+GatedResidenceCommunity ||--}o Text : "branchCode"
+GatedResidenceCommunity ||--}o Place : "containedIn"
+GatedResidenceCommunity ||--}o Place : "containedInPlace"
+GatedResidenceCommunity ||--}o Place : "containsPlace"
+GatedResidenceCommunity ||--}o Event : "event"
+GatedResidenceCommunity ||--}o Event : "events"
+GatedResidenceCommunity ||--}o Text : "faxNumber"
+GatedResidenceCommunity ||--}o Certification : "hasCertification"
+GatedResidenceCommunity ||--}o Boolean : "hasDriveThroughService"
+GatedResidenceCommunity ||--}o Boolean : "isAccessibleForFree"
+GatedResidenceCommunity ||--}o Text : "isicV4"
+GatedResidenceCommunity ||--}o URL : "map"
+GatedResidenceCommunity ||--}o URL : "maps"
+GatedResidenceCommunity ||--}o Integer : "maximumAttendeeCapacity"
+GatedResidenceCommunity ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+GatedResidenceCommunity ||--}o Boolean : "publicAccess"
+GatedResidenceCommunity ||--}o Review : "review"
+GatedResidenceCommunity ||--}o Review : "reviews"
+GatedResidenceCommunity ||--}o Text : "slogan"
+GatedResidenceCommunity ||--}o Boolean : "smokingAllowed"
+GatedResidenceCommunity ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+GatedResidenceCommunity ||--}o Text : "telephone"
+GatedResidenceCommunity ||--}o URL : "tourBookingPage"
+GatedResidenceCommunity ||--}o Text : "alternateName"
+GatedResidenceCommunity ||--}o Text : "disambiguatingDescription"
+GatedResidenceCommunity ||--}o Text : "name"
+GatedResidenceCommunity ||--}o URL : "sameAs"
+GatedResidenceCommunity ||--}o Action : "potentialAction"
+GatedResidenceCommunity ||--}o URL : "url"
+

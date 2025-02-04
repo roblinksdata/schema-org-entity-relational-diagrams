@@ -1,0 +1,30 @@
+erDiagram
+BioChemEntity {
+    stringList hasRepresentation  
+    stringList associatedDisease  
+    stringList hasMolecularFunction  
+    stringList isInvolvedInBiologicalProcess  
+    stringList isLocatedInSubcellularLocation  
+    stringList taxonomicRange  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BioChemEntity ||--}o BioChemEntity : "bioChemInteraction"
+BioChemEntity ||--}o BioChemEntity : "bioChemSimilarity"
+BioChemEntity ||--}o DefinedTerm : "biologicalRole"
+BioChemEntity ||--}o Grant : "funding"
+BioChemEntity ||--}o BioChemEntity : "hasBioChemEntityPart"
+BioChemEntity ||--}o Gene : "isEncodedByBioChemEntity"
+BioChemEntity ||--}o BioChemEntity : "isPartOfBioChemEntity"
+BioChemEntity ||--}o Text : "alternateName"
+BioChemEntity ||--}o Text : "disambiguatingDescription"
+BioChemEntity ||--}o Text : "name"
+BioChemEntity ||--}o URL : "sameAs"
+BioChemEntity ||--}o Action : "potentialAction"
+BioChemEntity ||--}o URL : "url"
+

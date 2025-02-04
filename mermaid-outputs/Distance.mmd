@@ -1,0 +1,17 @@
+erDiagram
+Distance {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Distance ||--}o Text : "alternateName"
+Distance ||--}o Text : "disambiguatingDescription"
+Distance ||--}o Text : "name"
+Distance ||--}o URL : "sameAs"
+Distance ||--}o Action : "potentialAction"
+Distance ||--}o URL : "url"
+

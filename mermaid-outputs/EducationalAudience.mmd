@@ -1,0 +1,20 @@
+erDiagram
+EducationalAudience {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EducationalAudience ||--}o Text : "educationalRole"
+EducationalAudience ||--}o Text : "audienceType"
+EducationalAudience ||--}o AdministrativeArea : "geographicArea"
+EducationalAudience ||--}o Text : "alternateName"
+EducationalAudience ||--}o Text : "disambiguatingDescription"
+EducationalAudience ||--}o Text : "name"
+EducationalAudience ||--}o URL : "sameAs"
+EducationalAudience ||--}o Action : "potentialAction"
+EducationalAudience ||--}o URL : "url"
+

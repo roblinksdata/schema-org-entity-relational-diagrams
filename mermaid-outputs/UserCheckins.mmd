@@ -1,0 +1,58 @@
+erDiagram
+UserCheckins {
+    stringList actor  
+    stringList contributor  
+    stringList funder  
+    stringList location  
+    stringList sponsor  
+    stringList attendee  
+    stringList attendees  
+    stringList composer  
+    stringList doorTime  
+    stringList endDate  
+    stringList inLanguage  
+    stringList keywords  
+    stringList offers  
+    stringList organizer  
+    stringList performer  
+    stringList performers  
+    stringList startDate  
+    stringList translator  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+UserCheckins ||--}o Thing : "about"
+UserCheckins ||--}o Duration : "duration"
+UserCheckins ||--}o CreativeWork : "workFeatured"
+UserCheckins ||--}o CreativeWork : "workPerformed"
+UserCheckins ||--}o AggregateRating : "aggregateRating"
+UserCheckins ||--}o Audience : "audience"
+UserCheckins ||--}o Person : "director"
+UserCheckins ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
+UserCheckins ||--}o Schedule : "eventSchedule"
+UserCheckins ||--}o EventStatusType : "eventStatus"
+UserCheckins ||--}o Grant : "funding"
+UserCheckins ||--}o Boolean : "isAccessibleForFree"
+UserCheckins ||--}o Integer : "maximumAttendeeCapacity"
+UserCheckins ||--}o Integer : "maximumPhysicalAttendeeCapacity"
+UserCheckins ||--}o Integer : "maximumVirtualAttendeeCapacity"
+UserCheckins ||--}o Date : "previousStartDate"
+UserCheckins ||--}o CreativeWork : "recordedIn"
+UserCheckins ||--}o Integer : "remainingAttendeeCapacity"
+UserCheckins ||--}o Review : "review"
+UserCheckins ||--}o Event : "subEvent"
+UserCheckins ||--}o Event : "subEvents"
+UserCheckins ||--}o Event : "superEvent"
+UserCheckins ||--}o Text : "typicalAgeRange"
+UserCheckins ||--}o Text : "alternateName"
+UserCheckins ||--}o Text : "disambiguatingDescription"
+UserCheckins ||--}o Text : "name"
+UserCheckins ||--}o URL : "sameAs"
+UserCheckins ||--}o Action : "potentialAction"
+UserCheckins ||--}o URL : "url"
+

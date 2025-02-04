@@ -1,0 +1,30 @@
+erDiagram
+PaintAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PaintAction ||--}o Thing : "instrument"
+PaintAction ||--}o Thing : "object"
+PaintAction ||--}o Thing : "result"
+PaintAction ||--}o HowTo : "actionProcess"
+PaintAction ||--}o ActionStatusType : "actionStatus"
+PaintAction ||--}o Thing : "error"
+PaintAction ||--}o Text : "alternateName"
+PaintAction ||--}o Text : "disambiguatingDescription"
+PaintAction ||--}o Text : "name"
+PaintAction ||--}o URL : "sameAs"
+PaintAction ||--}o Action : "potentialAction"
+PaintAction ||--}o URL : "url"
+

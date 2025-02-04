@@ -1,0 +1,32 @@
+erDiagram
+DownloadAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DownloadAction ||--}o Place : "fromLocation"
+DownloadAction ||--}o Place : "toLocation"
+DownloadAction ||--}o Thing : "instrument"
+DownloadAction ||--}o Thing : "object"
+DownloadAction ||--}o Thing : "result"
+DownloadAction ||--}o HowTo : "actionProcess"
+DownloadAction ||--}o ActionStatusType : "actionStatus"
+DownloadAction ||--}o Thing : "error"
+DownloadAction ||--}o Text : "alternateName"
+DownloadAction ||--}o Text : "disambiguatingDescription"
+DownloadAction ||--}o Text : "name"
+DownloadAction ||--}o URL : "sameAs"
+DownloadAction ||--}o Action : "potentialAction"
+DownloadAction ||--}o URL : "url"
+

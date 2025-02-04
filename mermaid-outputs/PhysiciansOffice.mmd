@@ -1,0 +1,133 @@
+erDiagram
+PhysiciansOffice {
+    stringList availableService  
+    stringList occupationalCategory  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PhysiciansOffice ||--}o Text : "usNPI"
+PhysiciansOffice ||--}o Hospital : "hospitalAffiliation"
+PhysiciansOffice ||--}o MedicalSpecialty : "medicalSpecialty"
+PhysiciansOffice ||--}o Text : "healthPlanNetworkId"
+PhysiciansOffice ||--}o Boolean : "isAcceptingNewPatients"
+PhysiciansOffice ||--}o Organization : "branchOf"
+PhysiciansOffice ||--}o Text : "currenciesAccepted"
+PhysiciansOffice ||--}o Text : "openingHours"
+PhysiciansOffice ||--}o Text : "paymentAccepted"
+PhysiciansOffice ||--}o Text : "priceRange"
+PhysiciansOffice ||--}o Text : "globalLocationNumber"
+PhysiciansOffice ||--}o URL : "hasGS1DigitalLink"
+PhysiciansOffice ||--}o PropertyValue : "additionalProperty"
+PhysiciansOffice ||--}o AggregateRating : "aggregateRating"
+PhysiciansOffice ||--}o LocationFeatureSpecification : "amenityFeature"
+PhysiciansOffice ||--}o Text : "branchCode"
+PhysiciansOffice ||--}o Place : "containedIn"
+PhysiciansOffice ||--}o Place : "containedInPlace"
+PhysiciansOffice ||--}o Place : "containsPlace"
+PhysiciansOffice ||--}o Event : "event"
+PhysiciansOffice ||--}o Event : "events"
+PhysiciansOffice ||--}o Text : "faxNumber"
+PhysiciansOffice ||--}o Certification : "hasCertification"
+PhysiciansOffice ||--}o Boolean : "hasDriveThroughService"
+PhysiciansOffice ||--}o Boolean : "isAccessibleForFree"
+PhysiciansOffice ||--}o Text : "isicV4"
+PhysiciansOffice ||--}o URL : "map"
+PhysiciansOffice ||--}o URL : "maps"
+PhysiciansOffice ||--}o Integer : "maximumAttendeeCapacity"
+PhysiciansOffice ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+PhysiciansOffice ||--}o Boolean : "publicAccess"
+PhysiciansOffice ||--}o Review : "review"
+PhysiciansOffice ||--}o Review : "reviews"
+PhysiciansOffice ||--}o Text : "slogan"
+PhysiciansOffice ||--}o Boolean : "smokingAllowed"
+PhysiciansOffice ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+PhysiciansOffice ||--}o Text : "telephone"
+PhysiciansOffice ||--}o URL : "tourBookingPage"
+PhysiciansOffice ||--}o Text : "duns"
+PhysiciansOffice ||--}o Text : "leiCode"
+PhysiciansOffice ||--}o Text : "taxID"
+PhysiciansOffice ||--}o InteractionCounter : "agentInteractionStatistic"
+PhysiciansOffice ||--}o Person : "alumni"
+PhysiciansOffice ||--}o Text : "award"
+PhysiciansOffice ||--}o Text : "awards"
+PhysiciansOffice ||--}o ContactPoint : "contactPoint"
+PhysiciansOffice ||--}o ContactPoint : "contactPoints"
+PhysiciansOffice ||--}o Organization : "department"
+PhysiciansOffice ||--}o Date : "dissolutionDate"
+PhysiciansOffice ||--}o Text : "email"
+PhysiciansOffice ||--}o Person : "employee"
+PhysiciansOffice ||--}o Person : "employees"
+PhysiciansOffice ||--}o Person : "founders"
+PhysiciansOffice ||--}o Date : "foundingDate"
+PhysiciansOffice ||--}o Place : "foundingLocation"
+PhysiciansOffice ||--}o Grant : "funding"
+PhysiciansOffice ||--}o EducationalOccupationalCredential : "hasCredential"
+PhysiciansOffice ||--}o MemberProgram : "hasMemberProgram"
+PhysiciansOffice ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+PhysiciansOffice ||--}o OfferCatalog : "hasOfferCatalog"
+PhysiciansOffice ||--}o Place : "hasPOS"
+PhysiciansOffice ||--}o InteractionCounter : "interactionStatistic"
+PhysiciansOffice ||--}o Text : "iso6523Code"
+PhysiciansOffice ||--}o Text : "legalName"
+PhysiciansOffice ||--}o Offer : "makesOffer"
+PhysiciansOffice ||--}o Text : "naics"
+PhysiciansOffice ||--}o NonprofitType : "nonprofitStatus"
+PhysiciansOffice ||--}o QuantitativeValue : "numberOfEmployees"
+PhysiciansOffice ||--}o Organization : "parentOrganization"
+PhysiciansOffice ||--}o Demand : "seeks"
+PhysiciansOffice ||--}o Organization : "subOrganization"
+PhysiciansOffice ||--}o Text : "vatID"
+PhysiciansOffice ||--}o Text : "alternateName"
+PhysiciansOffice ||--}o Text : "disambiguatingDescription"
+PhysiciansOffice ||--}o Text : "name"
+PhysiciansOffice ||--}o URL : "sameAs"
+PhysiciansOffice ||--}o Action : "potentialAction"
+PhysiciansOffice ||--}o URL : "url"
+

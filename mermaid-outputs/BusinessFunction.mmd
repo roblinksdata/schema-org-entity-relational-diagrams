@@ -1,0 +1,18 @@
+erDiagram
+BusinessFunction {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BusinessFunction ||--}o Text : "alternateName"
+BusinessFunction ||--}o Text : "disambiguatingDescription"
+BusinessFunction ||--}o Text : "name"
+BusinessFunction ||--}o URL : "sameAs"
+BusinessFunction ||--}o Action : "potentialAction"
+BusinessFunction ||--}o URL : "url"
+

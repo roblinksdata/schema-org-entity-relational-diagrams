@@ -1,0 +1,31 @@
+erDiagram
+TrackAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TrackAction ||--}o DeliveryMethod : "deliveryMethod"
+TrackAction ||--}o Thing : "instrument"
+TrackAction ||--}o Thing : "object"
+TrackAction ||--}o Thing : "result"
+TrackAction ||--}o HowTo : "actionProcess"
+TrackAction ||--}o ActionStatusType : "actionStatus"
+TrackAction ||--}o Thing : "error"
+TrackAction ||--}o Text : "alternateName"
+TrackAction ||--}o Text : "disambiguatingDescription"
+TrackAction ||--}o Text : "name"
+TrackAction ||--}o URL : "sameAs"
+TrackAction ||--}o Action : "potentialAction"
+TrackAction ||--}o URL : "url"
+

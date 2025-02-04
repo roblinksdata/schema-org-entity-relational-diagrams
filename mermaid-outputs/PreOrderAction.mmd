@@ -1,0 +1,33 @@
+erDiagram
+PreOrderAction {
+    stringList price  
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PreOrderAction ||--}o Text : "priceCurrency"
+PreOrderAction ||--}o PriceSpecification : "priceSpecification"
+PreOrderAction ||--}o Thing : "instrument"
+PreOrderAction ||--}o Thing : "object"
+PreOrderAction ||--}o Thing : "result"
+PreOrderAction ||--}o HowTo : "actionProcess"
+PreOrderAction ||--}o ActionStatusType : "actionStatus"
+PreOrderAction ||--}o Thing : "error"
+PreOrderAction ||--}o Text : "alternateName"
+PreOrderAction ||--}o Text : "disambiguatingDescription"
+PreOrderAction ||--}o Text : "name"
+PreOrderAction ||--}o URL : "sameAs"
+PreOrderAction ||--}o Action : "potentialAction"
+PreOrderAction ||--}o URL : "url"
+

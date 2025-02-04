@@ -1,0 +1,17 @@
+erDiagram
+Mass {
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Mass ||--}o Text : "alternateName"
+Mass ||--}o Text : "disambiguatingDescription"
+Mass ||--}o Text : "name"
+Mass ||--}o URL : "sameAs"
+Mass ||--}o Action : "potentialAction"
+Mass ||--}o URL : "url"
+

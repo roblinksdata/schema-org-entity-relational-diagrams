@@ -1,0 +1,18 @@
+erDiagram
+Specialty {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Specialty ||--}o Text : "alternateName"
+Specialty ||--}o Text : "disambiguatingDescription"
+Specialty ||--}o Text : "name"
+Specialty ||--}o URL : "sameAs"
+Specialty ||--}o Action : "potentialAction"
+Specialty ||--}o URL : "url"
+

@@ -1,0 +1,26 @@
+erDiagram
+QualitativeValue {
+    stringList valueReference  
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+QualitativeValue ||--}o PropertyValue : "additionalProperty"
+QualitativeValue ||--}o QualitativeValue : "equal"
+QualitativeValue ||--}o QualitativeValue : "greater"
+QualitativeValue ||--}o QualitativeValue : "greaterOrEqual"
+QualitativeValue ||--}o QualitativeValue : "lesser"
+QualitativeValue ||--}o QualitativeValue : "lesserOrEqual"
+QualitativeValue ||--}o QualitativeValue : "nonEqual"
+QualitativeValue ||--}o Text : "alternateName"
+QualitativeValue ||--}o Text : "disambiguatingDescription"
+QualitativeValue ||--}o Text : "name"
+QualitativeValue ||--}o URL : "sameAs"
+QualitativeValue ||--}o Action : "potentialAction"
+QualitativeValue ||--}o URL : "url"
+

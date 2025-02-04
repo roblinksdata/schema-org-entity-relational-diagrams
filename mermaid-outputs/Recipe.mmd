@@ -1,0 +1,150 @@
+erDiagram
+Recipe {
+    stringList recipeInstructions  
+    stringList recipeYield  
+    stringList step  
+    stringList yield  
+    stringList estimatedCost  
+    stringList steps  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Recipe ||--}o Duration : "cookTime"
+Recipe ||--}o Text : "ingredients"
+Recipe ||--}o Text : "recipeIngredient"
+Recipe ||--}o Text : "cookingMethod"
+Recipe ||--}o NutritionInformation : "nutrition"
+Recipe ||--}o Text : "recipeCategory"
+Recipe ||--}o Text : "recipeCuisine"
+Recipe ||--}o RestrictedDiet : "suitableForDiet"
+Recipe ||--}o Duration : "performTime"
+Recipe ||--}o Thing : "supply"
+Recipe ||--}o Thing : "tool"
+Recipe ||--}o Duration : "prepTime"
+Recipe ||--}o Duration : "totalTime"
+Recipe ||--}o Thing : "about"
+Recipe ||--}o Place : "contentLocation"
+Recipe ||--}o CreativeWork : "hasPart"
+Recipe ||--}o Claim : "interpretedAsClaim"
+Recipe ||--}o Thing : "mainEntity"
+Recipe ||--}o Place : "spatialCoverage"
+Recipe ||--}o CreativeWork : "workExample"
+Recipe ||--}o Text : "abstract"
+Recipe ||--}o Text : "accessMode"
+Recipe ||--}o ItemList : "accessModeSufficient"
+Recipe ||--}o Text : "accessibilityAPI"
+Recipe ||--}o Text : "accessibilityControl"
+Recipe ||--}o Text : "accessibilityFeature"
+Recipe ||--}o Text : "accessibilityHazard"
+Recipe ||--}o Text : "accessibilitySummary"
+Recipe ||--}o Person : "accountablePerson"
+Recipe ||--}o AggregateRating : "aggregateRating"
+Recipe ||--}o Text : "alternativeHeadline"
+Recipe ||--}o MediaObject : "associatedMedia"
+Recipe ||--}o Audience : "audience"
+Recipe ||--}o Text : "award"
+Recipe ||--}o Text : "awards"
+Recipe ||--}o Person : "character"
+Recipe ||--}o Comment : "comment"
+Recipe ||--}o Integer : "commentCount"
+Recipe ||--}o Text : "conditionsOfAccess"
+Recipe ||--}o DateTime : "contentReferenceTime"
+Recipe ||--}o Text : "copyrightNotice"
+Recipe ||--}o Number : "copyrightYear"
+Recipe ||--}o Country : "countryOfOrigin"
+Recipe ||--}o Text : "creditText"
+Recipe ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Recipe ||--}o URL : "discussionUrl"
+Recipe ||--}o Person : "editor"
+Recipe ||--}o AlignmentObject : "educationalAlignment"
+Recipe ||--}o MediaObject : "encoding"
+Recipe ||--}o MediaObject : "encodings"
+Recipe ||--}o CreativeWork : "exampleOfWork"
+Recipe ||--}o Grant : "funding"
+Recipe ||--}o Text : "headline"
+Recipe ||--}o InteractionCounter : "interactionStatistic"
+Recipe ||--}o Text : "interactivityType"
+Recipe ||--}o Boolean : "isAccessibleForFree"
+Recipe ||--}o Boolean : "isFamilyFriendly"
+Recipe ||--}o Place : "locationCreated"
+Recipe ||--}o Thing : "mentions"
+Recipe ||--}o PublicationEvent : "publication"
+Recipe ||--}o Organization : "publisherImprint"
+Recipe ||--}o Event : "recordedAt"
+Recipe ||--}o PublicationEvent : "releasedEvent"
+Recipe ||--}o Review : "review"
+Recipe ||--}o Review : "reviews"
+Recipe ||--}o Date : "sdDatePublished"
+Recipe ||--}o Organization : "sourceOrganization"
+Recipe ||--}o Place : "spatial"
+Recipe ||--}o Text : "text"
+Recipe ||--}o ImageObject : "thumbnail"
+Recipe ||--}o URL : "thumbnailUrl"
+Recipe ||--}o Duration : "timeRequired"
+Recipe ||--}o CreativeWork : "translationOfWork"
+Recipe ||--}o Text : "typicalAgeRange"
+Recipe ||--}o CreativeWork : "workTranslation"
+Recipe ||--}o Text : "alternateName"
+Recipe ||--}o Text : "disambiguatingDescription"
+Recipe ||--}o Text : "name"
+Recipe ||--}o URL : "sameAs"
+Recipe ||--}o Action : "potentialAction"
+Recipe ||--}o URL : "url"
+

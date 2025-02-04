@@ -1,0 +1,134 @@
+erDiagram
+Claim {
+    stringList claimInterpreter  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Claim ||--}o CreativeWork : "appearance"
+Claim ||--}o CreativeWork : "firstAppearance"
+Claim ||--}o Thing : "about"
+Claim ||--}o Place : "contentLocation"
+Claim ||--}o CreativeWork : "hasPart"
+Claim ||--}o Claim : "interpretedAsClaim"
+Claim ||--}o Thing : "mainEntity"
+Claim ||--}o Place : "spatialCoverage"
+Claim ||--}o CreativeWork : "workExample"
+Claim ||--}o Text : "abstract"
+Claim ||--}o Text : "accessMode"
+Claim ||--}o ItemList : "accessModeSufficient"
+Claim ||--}o Text : "accessibilityAPI"
+Claim ||--}o Text : "accessibilityControl"
+Claim ||--}o Text : "accessibilityFeature"
+Claim ||--}o Text : "accessibilityHazard"
+Claim ||--}o Text : "accessibilitySummary"
+Claim ||--}o Person : "accountablePerson"
+Claim ||--}o AggregateRating : "aggregateRating"
+Claim ||--}o Text : "alternativeHeadline"
+Claim ||--}o MediaObject : "associatedMedia"
+Claim ||--}o Audience : "audience"
+Claim ||--}o Text : "award"
+Claim ||--}o Text : "awards"
+Claim ||--}o Person : "character"
+Claim ||--}o Comment : "comment"
+Claim ||--}o Integer : "commentCount"
+Claim ||--}o Text : "conditionsOfAccess"
+Claim ||--}o DateTime : "contentReferenceTime"
+Claim ||--}o Text : "copyrightNotice"
+Claim ||--}o Number : "copyrightYear"
+Claim ||--}o Country : "countryOfOrigin"
+Claim ||--}o Text : "creditText"
+Claim ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Claim ||--}o URL : "discussionUrl"
+Claim ||--}o Person : "editor"
+Claim ||--}o AlignmentObject : "educationalAlignment"
+Claim ||--}o MediaObject : "encoding"
+Claim ||--}o MediaObject : "encodings"
+Claim ||--}o CreativeWork : "exampleOfWork"
+Claim ||--}o Grant : "funding"
+Claim ||--}o Text : "headline"
+Claim ||--}o InteractionCounter : "interactionStatistic"
+Claim ||--}o Text : "interactivityType"
+Claim ||--}o Boolean : "isAccessibleForFree"
+Claim ||--}o Boolean : "isFamilyFriendly"
+Claim ||--}o Place : "locationCreated"
+Claim ||--}o Thing : "mentions"
+Claim ||--}o PublicationEvent : "publication"
+Claim ||--}o Organization : "publisherImprint"
+Claim ||--}o Event : "recordedAt"
+Claim ||--}o PublicationEvent : "releasedEvent"
+Claim ||--}o Review : "review"
+Claim ||--}o Review : "reviews"
+Claim ||--}o Date : "sdDatePublished"
+Claim ||--}o Organization : "sourceOrganization"
+Claim ||--}o Place : "spatial"
+Claim ||--}o Text : "text"
+Claim ||--}o ImageObject : "thumbnail"
+Claim ||--}o URL : "thumbnailUrl"
+Claim ||--}o Duration : "timeRequired"
+Claim ||--}o CreativeWork : "translationOfWork"
+Claim ||--}o Text : "typicalAgeRange"
+Claim ||--}o CreativeWork : "workTranslation"
+Claim ||--}o Text : "alternateName"
+Claim ||--}o Text : "disambiguatingDescription"
+Claim ||--}o Text : "name"
+Claim ||--}o URL : "sameAs"
+Claim ||--}o Action : "potentialAction"
+Claim ||--}o URL : "url"
+

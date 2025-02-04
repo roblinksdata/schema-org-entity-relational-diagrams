@@ -1,0 +1,139 @@
+erDiagram
+Question {
+    stringList acceptedAnswer  
+    stringList suggestedAnswer  
+    stringList parentItem  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Question ||--}o Integer : "answerCount"
+Question ||--}o Text : "eduQuestionType"
+Question ||--}o Integer : "downvoteCount"
+Question ||--}o CreativeWork : "sharedContent"
+Question ||--}o Integer : "upvoteCount"
+Question ||--}o Thing : "about"
+Question ||--}o Place : "contentLocation"
+Question ||--}o CreativeWork : "hasPart"
+Question ||--}o Claim : "interpretedAsClaim"
+Question ||--}o Thing : "mainEntity"
+Question ||--}o Place : "spatialCoverage"
+Question ||--}o CreativeWork : "workExample"
+Question ||--}o Text : "abstract"
+Question ||--}o Text : "accessMode"
+Question ||--}o ItemList : "accessModeSufficient"
+Question ||--}o Text : "accessibilityAPI"
+Question ||--}o Text : "accessibilityControl"
+Question ||--}o Text : "accessibilityFeature"
+Question ||--}o Text : "accessibilityHazard"
+Question ||--}o Text : "accessibilitySummary"
+Question ||--}o Person : "accountablePerson"
+Question ||--}o AggregateRating : "aggregateRating"
+Question ||--}o Text : "alternativeHeadline"
+Question ||--}o MediaObject : "associatedMedia"
+Question ||--}o Audience : "audience"
+Question ||--}o Text : "award"
+Question ||--}o Text : "awards"
+Question ||--}o Person : "character"
+Question ||--}o Comment : "comment"
+Question ||--}o Integer : "commentCount"
+Question ||--}o Text : "conditionsOfAccess"
+Question ||--}o DateTime : "contentReferenceTime"
+Question ||--}o Text : "copyrightNotice"
+Question ||--}o Number : "copyrightYear"
+Question ||--}o Country : "countryOfOrigin"
+Question ||--}o Text : "creditText"
+Question ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Question ||--}o URL : "discussionUrl"
+Question ||--}o Person : "editor"
+Question ||--}o AlignmentObject : "educationalAlignment"
+Question ||--}o MediaObject : "encoding"
+Question ||--}o MediaObject : "encodings"
+Question ||--}o CreativeWork : "exampleOfWork"
+Question ||--}o Grant : "funding"
+Question ||--}o Text : "headline"
+Question ||--}o InteractionCounter : "interactionStatistic"
+Question ||--}o Text : "interactivityType"
+Question ||--}o Boolean : "isAccessibleForFree"
+Question ||--}o Boolean : "isFamilyFriendly"
+Question ||--}o Place : "locationCreated"
+Question ||--}o Thing : "mentions"
+Question ||--}o PublicationEvent : "publication"
+Question ||--}o Organization : "publisherImprint"
+Question ||--}o Event : "recordedAt"
+Question ||--}o PublicationEvent : "releasedEvent"
+Question ||--}o Review : "review"
+Question ||--}o Review : "reviews"
+Question ||--}o Date : "sdDatePublished"
+Question ||--}o Organization : "sourceOrganization"
+Question ||--}o Place : "spatial"
+Question ||--}o Text : "text"
+Question ||--}o ImageObject : "thumbnail"
+Question ||--}o URL : "thumbnailUrl"
+Question ||--}o Duration : "timeRequired"
+Question ||--}o CreativeWork : "translationOfWork"
+Question ||--}o Text : "typicalAgeRange"
+Question ||--}o CreativeWork : "workTranslation"
+Question ||--}o Text : "alternateName"
+Question ||--}o Text : "disambiguatingDescription"
+Question ||--}o Text : "name"
+Question ||--}o URL : "sameAs"
+Question ||--}o Action : "potentialAction"
+Question ||--}o URL : "url"
+

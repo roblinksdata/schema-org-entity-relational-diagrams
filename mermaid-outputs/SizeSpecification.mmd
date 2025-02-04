@@ -1,0 +1,32 @@
+erDiagram
+SizeSpecification {
+    stringList sizeGroup  
+    stringList sizeSystem  
+    stringList suggestedGender  
+    stringList valueReference  
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+SizeSpecification ||--}o QuantitativeValue : "hasMeasurement"
+SizeSpecification ||--}o QuantitativeValue : "suggestedAge"
+SizeSpecification ||--}o QuantitativeValue : "suggestedMeasurement"
+SizeSpecification ||--}o PropertyValue : "additionalProperty"
+SizeSpecification ||--}o QualitativeValue : "equal"
+SizeSpecification ||--}o QualitativeValue : "greater"
+SizeSpecification ||--}o QualitativeValue : "greaterOrEqual"
+SizeSpecification ||--}o QualitativeValue : "lesser"
+SizeSpecification ||--}o QualitativeValue : "lesserOrEqual"
+SizeSpecification ||--}o QualitativeValue : "nonEqual"
+SizeSpecification ||--}o Text : "alternateName"
+SizeSpecification ||--}o Text : "disambiguatingDescription"
+SizeSpecification ||--}o Text : "name"
+SizeSpecification ||--}o URL : "sameAs"
+SizeSpecification ||--}o Action : "potentialAction"
+SizeSpecification ||--}o URL : "url"
+

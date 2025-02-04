@@ -1,0 +1,25 @@
+erDiagram
+MedicalIndication {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalIndication ||--}o MedicalCode : "code"
+MedicalIndication ||--}o Grant : "funding"
+MedicalIndication ||--}o MedicalGuideline : "guideline"
+MedicalIndication ||--}o MedicineSystem : "medicineSystem"
+MedicalIndication ||--}o Organization : "recognizingAuthority"
+MedicalIndication ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalIndication ||--}o MedicalStudy : "study"
+MedicalIndication ||--}o Text : "alternateName"
+MedicalIndication ||--}o Text : "disambiguatingDescription"
+MedicalIndication ||--}o Text : "name"
+MedicalIndication ||--}o URL : "sameAs"
+MedicalIndication ||--}o Action : "potentialAction"
+MedicalIndication ||--}o URL : "url"
+

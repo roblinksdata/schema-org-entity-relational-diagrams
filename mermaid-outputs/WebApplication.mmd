@@ -1,0 +1,156 @@
+erDiagram
+WebApplication {
+    stringList applicationCategory  
+    stringList applicationSubCategory  
+    stringList featureList  
+    stringList memoryRequirements  
+    stringList releaseNotes  
+    stringList requirements  
+    stringList screenshot  
+    stringList softwareRequirements  
+    stringList storageRequirements  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+WebApplication ||--}o Text : "browserRequirements"
+WebApplication ||--}o Text : "applicationSuite"
+WebApplication ||--}o Text : "availableOnDevice"
+WebApplication ||--}o Text : "countriesNotSupported"
+WebApplication ||--}o Text : "countriesSupported"
+WebApplication ||--}o Text : "device"
+WebApplication ||--}o URL : "downloadUrl"
+WebApplication ||--}o Text : "fileSize"
+WebApplication ||--}o URL : "installUrl"
+WebApplication ||--}o Text : "operatingSystem"
+WebApplication ||--}o Text : "permissions"
+WebApplication ||--}o Text : "processorRequirements"
+WebApplication ||--}o SoftwareApplication : "softwareAddOn"
+WebApplication ||--}o CreativeWork : "softwareHelp"
+WebApplication ||--}o Text : "softwareVersion"
+WebApplication ||--}o DataFeed : "supportingData"
+WebApplication ||--}o Thing : "about"
+WebApplication ||--}o Place : "contentLocation"
+WebApplication ||--}o CreativeWork : "hasPart"
+WebApplication ||--}o Claim : "interpretedAsClaim"
+WebApplication ||--}o Thing : "mainEntity"
+WebApplication ||--}o Place : "spatialCoverage"
+WebApplication ||--}o CreativeWork : "workExample"
+WebApplication ||--}o Text : "abstract"
+WebApplication ||--}o Text : "accessMode"
+WebApplication ||--}o ItemList : "accessModeSufficient"
+WebApplication ||--}o Text : "accessibilityAPI"
+WebApplication ||--}o Text : "accessibilityControl"
+WebApplication ||--}o Text : "accessibilityFeature"
+WebApplication ||--}o Text : "accessibilityHazard"
+WebApplication ||--}o Text : "accessibilitySummary"
+WebApplication ||--}o Person : "accountablePerson"
+WebApplication ||--}o AggregateRating : "aggregateRating"
+WebApplication ||--}o Text : "alternativeHeadline"
+WebApplication ||--}o MediaObject : "associatedMedia"
+WebApplication ||--}o Audience : "audience"
+WebApplication ||--}o Text : "award"
+WebApplication ||--}o Text : "awards"
+WebApplication ||--}o Person : "character"
+WebApplication ||--}o Comment : "comment"
+WebApplication ||--}o Integer : "commentCount"
+WebApplication ||--}o Text : "conditionsOfAccess"
+WebApplication ||--}o DateTime : "contentReferenceTime"
+WebApplication ||--}o Text : "copyrightNotice"
+WebApplication ||--}o Number : "copyrightYear"
+WebApplication ||--}o Country : "countryOfOrigin"
+WebApplication ||--}o Text : "creditText"
+WebApplication ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+WebApplication ||--}o URL : "discussionUrl"
+WebApplication ||--}o Person : "editor"
+WebApplication ||--}o AlignmentObject : "educationalAlignment"
+WebApplication ||--}o MediaObject : "encoding"
+WebApplication ||--}o MediaObject : "encodings"
+WebApplication ||--}o CreativeWork : "exampleOfWork"
+WebApplication ||--}o Grant : "funding"
+WebApplication ||--}o Text : "headline"
+WebApplication ||--}o InteractionCounter : "interactionStatistic"
+WebApplication ||--}o Text : "interactivityType"
+WebApplication ||--}o Boolean : "isAccessibleForFree"
+WebApplication ||--}o Boolean : "isFamilyFriendly"
+WebApplication ||--}o Place : "locationCreated"
+WebApplication ||--}o Thing : "mentions"
+WebApplication ||--}o PublicationEvent : "publication"
+WebApplication ||--}o Organization : "publisherImprint"
+WebApplication ||--}o Event : "recordedAt"
+WebApplication ||--}o PublicationEvent : "releasedEvent"
+WebApplication ||--}o Review : "review"
+WebApplication ||--}o Review : "reviews"
+WebApplication ||--}o Date : "sdDatePublished"
+WebApplication ||--}o Organization : "sourceOrganization"
+WebApplication ||--}o Place : "spatial"
+WebApplication ||--}o Text : "text"
+WebApplication ||--}o ImageObject : "thumbnail"
+WebApplication ||--}o URL : "thumbnailUrl"
+WebApplication ||--}o Duration : "timeRequired"
+WebApplication ||--}o CreativeWork : "translationOfWork"
+WebApplication ||--}o Text : "typicalAgeRange"
+WebApplication ||--}o CreativeWork : "workTranslation"
+WebApplication ||--}o Text : "alternateName"
+WebApplication ||--}o Text : "disambiguatingDescription"
+WebApplication ||--}o Text : "name"
+WebApplication ||--}o URL : "sameAs"
+WebApplication ||--}o Action : "potentialAction"
+WebApplication ||--}o URL : "url"
+

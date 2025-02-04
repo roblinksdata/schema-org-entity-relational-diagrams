@@ -1,0 +1,18 @@
+erDiagram
+LegalForceStatus {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+LegalForceStatus ||--}o Text : "alternateName"
+LegalForceStatus ||--}o Text : "disambiguatingDescription"
+LegalForceStatus ||--}o Text : "name"
+LegalForceStatus ||--}o URL : "sameAs"
+LegalForceStatus ||--}o Action : "potentialAction"
+LegalForceStatus ||--}o URL : "url"
+

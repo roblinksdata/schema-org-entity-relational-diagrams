@@ -1,0 +1,141 @@
+erDiagram
+Movie {
+    stringList actor  
+    stringList titleEIDR  
+    stringList musicBy  
+    stringList subtitleLanguage  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Movie ||--}o Duration : "duration"
+Movie ||--}o Person : "actors"
+Movie ||--}o Country : "countryOfOrigin"
+Movie ||--}o Person : "director"
+Movie ||--}o Person : "directors"
+Movie ||--}o Organization : "productionCompany"
+Movie ||--}o VideoObject : "trailer"
+Movie ||--}o Thing : "about"
+Movie ||--}o Place : "contentLocation"
+Movie ||--}o CreativeWork : "hasPart"
+Movie ||--}o Claim : "interpretedAsClaim"
+Movie ||--}o Thing : "mainEntity"
+Movie ||--}o Place : "spatialCoverage"
+Movie ||--}o CreativeWork : "workExample"
+Movie ||--}o Text : "abstract"
+Movie ||--}o Text : "accessMode"
+Movie ||--}o ItemList : "accessModeSufficient"
+Movie ||--}o Text : "accessibilityAPI"
+Movie ||--}o Text : "accessibilityControl"
+Movie ||--}o Text : "accessibilityFeature"
+Movie ||--}o Text : "accessibilityHazard"
+Movie ||--}o Text : "accessibilitySummary"
+Movie ||--}o Person : "accountablePerson"
+Movie ||--}o AggregateRating : "aggregateRating"
+Movie ||--}o Text : "alternativeHeadline"
+Movie ||--}o MediaObject : "associatedMedia"
+Movie ||--}o Audience : "audience"
+Movie ||--}o Text : "award"
+Movie ||--}o Text : "awards"
+Movie ||--}o Person : "character"
+Movie ||--}o Comment : "comment"
+Movie ||--}o Integer : "commentCount"
+Movie ||--}o Text : "conditionsOfAccess"
+Movie ||--}o DateTime : "contentReferenceTime"
+Movie ||--}o Text : "copyrightNotice"
+Movie ||--}o Number : "copyrightYear"
+Movie ||--}o Text : "creditText"
+Movie ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+Movie ||--}o URL : "discussionUrl"
+Movie ||--}o Person : "editor"
+Movie ||--}o AlignmentObject : "educationalAlignment"
+Movie ||--}o MediaObject : "encoding"
+Movie ||--}o MediaObject : "encodings"
+Movie ||--}o CreativeWork : "exampleOfWork"
+Movie ||--}o Grant : "funding"
+Movie ||--}o Text : "headline"
+Movie ||--}o InteractionCounter : "interactionStatistic"
+Movie ||--}o Text : "interactivityType"
+Movie ||--}o Boolean : "isAccessibleForFree"
+Movie ||--}o Boolean : "isFamilyFriendly"
+Movie ||--}o Place : "locationCreated"
+Movie ||--}o Thing : "mentions"
+Movie ||--}o PublicationEvent : "publication"
+Movie ||--}o Organization : "publisherImprint"
+Movie ||--}o Event : "recordedAt"
+Movie ||--}o PublicationEvent : "releasedEvent"
+Movie ||--}o Review : "review"
+Movie ||--}o Review : "reviews"
+Movie ||--}o Date : "sdDatePublished"
+Movie ||--}o Organization : "sourceOrganization"
+Movie ||--}o Place : "spatial"
+Movie ||--}o Text : "text"
+Movie ||--}o ImageObject : "thumbnail"
+Movie ||--}o URL : "thumbnailUrl"
+Movie ||--}o Duration : "timeRequired"
+Movie ||--}o CreativeWork : "translationOfWork"
+Movie ||--}o Text : "typicalAgeRange"
+Movie ||--}o CreativeWork : "workTranslation"
+Movie ||--}o Text : "alternateName"
+Movie ||--}o Text : "disambiguatingDescription"
+Movie ||--}o Text : "name"
+Movie ||--}o URL : "sameAs"
+Movie ||--}o Action : "potentialAction"
+Movie ||--}o URL : "url"
+

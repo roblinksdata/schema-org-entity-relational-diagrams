@@ -1,0 +1,112 @@
+erDiagram
+Vehicle {
+    stringList bodyType  
+    stringList driveWheelConfiguration  
+    stringList fuelType  
+    stringList meetsEmissionStandard  
+    stringList numberOfAirbags  
+    stringList numberOfAxles  
+    stringList numberOfDoors  
+    stringList numberOfForwardGears  
+    stringList numberOfPreviousOwners  
+    stringList seatingCapacity  
+    stringList vehicleSeatingCapacity  
+    stringList vehicleSpecialUsage  
+    stringList vehicleTransmission  
+    stringList asin  
+    stringList category  
+    stringList colorSwatch  
+    stringList gtin  
+    stringList logo  
+    stringList material  
+    stringList brand  
+    stringList depth  
+    stringList height  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList isVariantOf  
+    stringList keywords  
+    stringList model  
+    stringList negativeNotes  
+    stringList offers  
+    stringList pattern  
+    stringList positiveNotes  
+    stringList size  
+    stringList width  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Vehicle ||--}o Text : "callSign"
+Vehicle ||--}o Text : "vehicleIdentificationNumber"
+Vehicle ||--}o QuantitativeValue : "accelerationTime"
+Vehicle ||--}o QuantitativeValue : "cargoVolume"
+Vehicle ||--}o Date : "dateVehicleFirstRegistered"
+Vehicle ||--}o Number : "emissionsCO2"
+Vehicle ||--}o QuantitativeValue : "fuelCapacity"
+Vehicle ||--}o QuantitativeValue : "fuelConsumption"
+Vehicle ||--}o QuantitativeValue : "fuelEfficiency"
+Vehicle ||--}o Text : "knownVehicleDamages"
+Vehicle ||--}o QuantitativeValue : "mileageFromOdometer"
+Vehicle ||--}o Date : "modelDate"
+Vehicle ||--}o QuantitativeValue : "payload"
+Vehicle ||--}o Date : "productionDate"
+Vehicle ||--}o Date : "purchaseDate"
+Vehicle ||--}o QuantitativeValue : "speed"
+Vehicle ||--}o SteeringPositionValue : "steeringPosition"
+Vehicle ||--}o QuantitativeValue : "tongueWeight"
+Vehicle ||--}o QuantitativeValue : "trailerWeight"
+Vehicle ||--}o Text : "vehicleConfiguration"
+Vehicle ||--}o EngineSpecification : "vehicleEngine"
+Vehicle ||--}o Text : "vehicleInteriorColor"
+Vehicle ||--}o Text : "vehicleInteriorType"
+Vehicle ||--}o Date : "vehicleModelDate"
+Vehicle ||--}o QuantitativeValue : "weightTotal"
+Vehicle ||--}o QuantitativeValue : "wheelbase"
+Vehicle ||--}o Text : "gtin12"
+Vehicle ||--}o Text : "gtin13"
+Vehicle ||--}o Text : "gtin14"
+Vehicle ||--}o Text : "gtin8"
+Vehicle ||--}o URL : "hasGS1DigitalLink"
+Vehicle ||--}o Text : "nsn"
+Vehicle ||--}o Text : "productID"
+Vehicle ||--}o Text : "sku"
+Vehicle ||--}o PropertyValue : "additionalProperty"
+Vehicle ||--}o AggregateRating : "aggregateRating"
+Vehicle ||--}o Audience : "audience"
+Vehicle ||--}o Text : "award"
+Vehicle ||--}o Text : "awards"
+Vehicle ||--}o Text : "color"
+Vehicle ||--}o Text : "countryOfAssembly"
+Vehicle ||--}o Text : "countryOfLastProcessing"
+Vehicle ||--}o Country : "countryOfOrigin"
+Vehicle ||--}o Grant : "funding"
+Vehicle ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
+Vehicle ||--}o Certification : "hasCertification"
+Vehicle ||--}o EnergyConsumptionDetails : "hasEnergyConsumptionDetails"
+Vehicle ||--}o QuantitativeValue : "hasMeasurement"
+Vehicle ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+Vehicle ||--}o Text : "inProductGroupWithID"
+Vehicle ||--}o Product : "isAccessoryOrSparePartFor"
+Vehicle ||--}o Product : "isConsumableFor"
+Vehicle ||--}o Boolean : "isFamilyFriendly"
+Vehicle ||--}o OfferItemCondition : "itemCondition"
+Vehicle ||--}o Organization : "manufacturer"
+Vehicle ||--}o Text : "mobileUrl"
+Vehicle ||--}o Text : "mpn"
+Vehicle ||--}o Date : "releaseDate"
+Vehicle ||--}o Review : "review"
+Vehicle ||--}o Review : "reviews"
+Vehicle ||--}o Text : "slogan"
+Vehicle ||--}o QuantitativeValue : "weight"
+Vehicle ||--}o Text : "alternateName"
+Vehicle ||--}o Text : "disambiguatingDescription"
+Vehicle ||--}o Text : "name"
+Vehicle ||--}o URL : "sameAs"
+Vehicle ||--}o Action : "potentialAction"
+Vehicle ||--}o URL : "url"
+

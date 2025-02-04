@@ -1,0 +1,30 @@
+erDiagram
+Reservation {
+    stringList bookingAgent  
+    stringList broker  
+    stringList provider  
+    stringList totalPrice  
+    stringList underName  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+Reservation ||--}o DateTime : "bookingTime"
+Reservation ||--}o DateTime : "modifiedTime"
+Reservation ||--}o Text : "priceCurrency"
+Reservation ||--}o ProgramMembership : "programMembershipUsed"
+Reservation ||--}o Thing : "reservationFor"
+Reservation ||--}o Text : "reservationId"
+Reservation ||--}o ReservationStatusType : "reservationStatus"
+Reservation ||--}o Ticket : "reservedTicket"
+Reservation ||--}o Text : "alternateName"
+Reservation ||--}o Text : "disambiguatingDescription"
+Reservation ||--}o Text : "name"
+Reservation ||--}o URL : "sameAs"
+Reservation ||--}o Action : "potentialAction"
+Reservation ||--}o URL : "url"
+

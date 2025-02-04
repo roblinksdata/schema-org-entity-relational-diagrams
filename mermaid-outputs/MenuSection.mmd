@@ -1,0 +1,133 @@
+erDiagram
+MenuSection {
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MenuSection ||--}o MenuItem : "hasMenuItem"
+MenuSection ||--}o MenuSection : "hasMenuSection"
+MenuSection ||--}o Thing : "about"
+MenuSection ||--}o Place : "contentLocation"
+MenuSection ||--}o CreativeWork : "hasPart"
+MenuSection ||--}o Claim : "interpretedAsClaim"
+MenuSection ||--}o Thing : "mainEntity"
+MenuSection ||--}o Place : "spatialCoverage"
+MenuSection ||--}o CreativeWork : "workExample"
+MenuSection ||--}o Text : "abstract"
+MenuSection ||--}o Text : "accessMode"
+MenuSection ||--}o ItemList : "accessModeSufficient"
+MenuSection ||--}o Text : "accessibilityAPI"
+MenuSection ||--}o Text : "accessibilityControl"
+MenuSection ||--}o Text : "accessibilityFeature"
+MenuSection ||--}o Text : "accessibilityHazard"
+MenuSection ||--}o Text : "accessibilitySummary"
+MenuSection ||--}o Person : "accountablePerson"
+MenuSection ||--}o AggregateRating : "aggregateRating"
+MenuSection ||--}o Text : "alternativeHeadline"
+MenuSection ||--}o MediaObject : "associatedMedia"
+MenuSection ||--}o Audience : "audience"
+MenuSection ||--}o Text : "award"
+MenuSection ||--}o Text : "awards"
+MenuSection ||--}o Person : "character"
+MenuSection ||--}o Comment : "comment"
+MenuSection ||--}o Integer : "commentCount"
+MenuSection ||--}o Text : "conditionsOfAccess"
+MenuSection ||--}o DateTime : "contentReferenceTime"
+MenuSection ||--}o Text : "copyrightNotice"
+MenuSection ||--}o Number : "copyrightYear"
+MenuSection ||--}o Country : "countryOfOrigin"
+MenuSection ||--}o Text : "creditText"
+MenuSection ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+MenuSection ||--}o URL : "discussionUrl"
+MenuSection ||--}o Person : "editor"
+MenuSection ||--}o AlignmentObject : "educationalAlignment"
+MenuSection ||--}o MediaObject : "encoding"
+MenuSection ||--}o MediaObject : "encodings"
+MenuSection ||--}o CreativeWork : "exampleOfWork"
+MenuSection ||--}o Grant : "funding"
+MenuSection ||--}o Text : "headline"
+MenuSection ||--}o InteractionCounter : "interactionStatistic"
+MenuSection ||--}o Text : "interactivityType"
+MenuSection ||--}o Boolean : "isAccessibleForFree"
+MenuSection ||--}o Boolean : "isFamilyFriendly"
+MenuSection ||--}o Place : "locationCreated"
+MenuSection ||--}o Thing : "mentions"
+MenuSection ||--}o PublicationEvent : "publication"
+MenuSection ||--}o Organization : "publisherImprint"
+MenuSection ||--}o Event : "recordedAt"
+MenuSection ||--}o PublicationEvent : "releasedEvent"
+MenuSection ||--}o Review : "review"
+MenuSection ||--}o Review : "reviews"
+MenuSection ||--}o Date : "sdDatePublished"
+MenuSection ||--}o Organization : "sourceOrganization"
+MenuSection ||--}o Place : "spatial"
+MenuSection ||--}o Text : "text"
+MenuSection ||--}o ImageObject : "thumbnail"
+MenuSection ||--}o URL : "thumbnailUrl"
+MenuSection ||--}o Duration : "timeRequired"
+MenuSection ||--}o CreativeWork : "translationOfWork"
+MenuSection ||--}o Text : "typicalAgeRange"
+MenuSection ||--}o CreativeWork : "workTranslation"
+MenuSection ||--}o Text : "alternateName"
+MenuSection ||--}o Text : "disambiguatingDescription"
+MenuSection ||--}o Text : "name"
+MenuSection ||--}o URL : "sameAs"
+MenuSection ||--}o Action : "potentialAction"
+MenuSection ||--}o URL : "url"
+

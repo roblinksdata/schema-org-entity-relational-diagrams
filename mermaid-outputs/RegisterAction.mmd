@@ -1,0 +1,30 @@
+erDiagram
+RegisterAction {
+    stringList location  
+    stringList participant  
+    stringList agent  
+    stringList endTime  
+    stringList provider  
+    stringList startTime  
+    stringList target  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RegisterAction ||--}o Thing : "instrument"
+RegisterAction ||--}o Thing : "object"
+RegisterAction ||--}o Thing : "result"
+RegisterAction ||--}o HowTo : "actionProcess"
+RegisterAction ||--}o ActionStatusType : "actionStatus"
+RegisterAction ||--}o Thing : "error"
+RegisterAction ||--}o Text : "alternateName"
+RegisterAction ||--}o Text : "disambiguatingDescription"
+RegisterAction ||--}o Text : "name"
+RegisterAction ||--}o URL : "sameAs"
+RegisterAction ||--}o Action : "potentialAction"
+RegisterAction ||--}o URL : "url"
+

@@ -1,0 +1,41 @@
+erDiagram
+EducationalOccupationalProgram {
+    stringList applicationDeadline  
+    stringList educationalCredentialAwarded  
+    stringList educationalProgramMode  
+    stringList endDate  
+    stringList financialAidEligible  
+    stringList numberOfCredits  
+    stringList occupationalCategory  
+    stringList occupationalCredentialAwarded  
+    stringList offers  
+    stringList programPrerequisites  
+    stringList programType  
+    stringList provider  
+    stringList startDate  
+    stringList typicalCreditsPerTerm  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EducationalOccupationalProgram ||--}o Date : "applicationStartDate"
+EducationalOccupationalProgram ||--}o DayOfWeek : "dayOfWeek"
+EducationalOccupationalProgram ||--}o Course : "hasCourse"
+EducationalOccupationalProgram ||--}o Integer : "maximumEnrollment"
+EducationalOccupationalProgram ||--}o MonetaryAmountDistribution : "salaryUponCompletion"
+EducationalOccupationalProgram ||--}o Duration : "termDuration"
+EducationalOccupationalProgram ||--}o Number : "termsPerYear"
+EducationalOccupationalProgram ||--}o Text : "timeOfDay"
+EducationalOccupationalProgram ||--}o Duration : "timeToComplete"
+EducationalOccupationalProgram ||--}o MonetaryAmountDistribution : "trainingSalary"
+EducationalOccupationalProgram ||--}o Text : "alternateName"
+EducationalOccupationalProgram ||--}o Text : "disambiguatingDescription"
+EducationalOccupationalProgram ||--}o Text : "name"
+EducationalOccupationalProgram ||--}o URL : "sameAs"
+EducationalOccupationalProgram ||--}o Action : "potentialAction"
+EducationalOccupationalProgram ||--}o URL : "url"
+

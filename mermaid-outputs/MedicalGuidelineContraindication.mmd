@@ -1,0 +1,29 @@
+erDiagram
+MedicalGuidelineContraindication {
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+MedicalGuidelineContraindication ||--}o MedicalEvidenceLevel : "evidenceLevel"
+MedicalGuidelineContraindication ||--}o Text : "evidenceOrigin"
+MedicalGuidelineContraindication ||--}o Date : "guidelineDate"
+MedicalGuidelineContraindication ||--}o MedicalEntity : "guidelineSubject"
+MedicalGuidelineContraindication ||--}o MedicalCode : "code"
+MedicalGuidelineContraindication ||--}o Grant : "funding"
+MedicalGuidelineContraindication ||--}o MedicalGuideline : "guideline"
+MedicalGuidelineContraindication ||--}o MedicineSystem : "medicineSystem"
+MedicalGuidelineContraindication ||--}o Organization : "recognizingAuthority"
+MedicalGuidelineContraindication ||--}o MedicalSpecialty : "relevantSpecialty"
+MedicalGuidelineContraindication ||--}o MedicalStudy : "study"
+MedicalGuidelineContraindication ||--}o Text : "alternateName"
+MedicalGuidelineContraindication ||--}o Text : "disambiguatingDescription"
+MedicalGuidelineContraindication ||--}o Text : "name"
+MedicalGuidelineContraindication ||--}o URL : "sameAs"
+MedicalGuidelineContraindication ||--}o Action : "potentialAction"
+MedicalGuidelineContraindication ||--}o URL : "url"
+

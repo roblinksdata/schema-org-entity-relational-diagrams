@@ -1,0 +1,66 @@
+erDiagram
+TouristAttraction {
+    stringList availableLanguage  
+    stringList touristType  
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+TouristAttraction ||--}o Text : "globalLocationNumber"
+TouristAttraction ||--}o URL : "hasGS1DigitalLink"
+TouristAttraction ||--}o PropertyValue : "additionalProperty"
+TouristAttraction ||--}o AggregateRating : "aggregateRating"
+TouristAttraction ||--}o LocationFeatureSpecification : "amenityFeature"
+TouristAttraction ||--}o Text : "branchCode"
+TouristAttraction ||--}o Place : "containedIn"
+TouristAttraction ||--}o Place : "containedInPlace"
+TouristAttraction ||--}o Place : "containsPlace"
+TouristAttraction ||--}o Event : "event"
+TouristAttraction ||--}o Event : "events"
+TouristAttraction ||--}o Text : "faxNumber"
+TouristAttraction ||--}o Certification : "hasCertification"
+TouristAttraction ||--}o Boolean : "hasDriveThroughService"
+TouristAttraction ||--}o Boolean : "isAccessibleForFree"
+TouristAttraction ||--}o Text : "isicV4"
+TouristAttraction ||--}o URL : "map"
+TouristAttraction ||--}o URL : "maps"
+TouristAttraction ||--}o Integer : "maximumAttendeeCapacity"
+TouristAttraction ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+TouristAttraction ||--}o Boolean : "publicAccess"
+TouristAttraction ||--}o Review : "review"
+TouristAttraction ||--}o Review : "reviews"
+TouristAttraction ||--}o Text : "slogan"
+TouristAttraction ||--}o Boolean : "smokingAllowed"
+TouristAttraction ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+TouristAttraction ||--}o Text : "telephone"
+TouristAttraction ||--}o URL : "tourBookingPage"
+TouristAttraction ||--}o Text : "alternateName"
+TouristAttraction ||--}o Text : "disambiguatingDescription"
+TouristAttraction ||--}o Text : "name"
+TouristAttraction ||--}o URL : "sameAs"
+TouristAttraction ||--}o Action : "potentialAction"
+TouristAttraction ||--}o URL : "url"
+

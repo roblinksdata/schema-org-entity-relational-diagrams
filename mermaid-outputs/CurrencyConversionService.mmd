@@ -1,0 +1,45 @@
+erDiagram
+CurrencyConversionService {
+    stringList annualPercentageRate  
+    stringList feesAndCommissionsSpecification  
+    stringList interestRate  
+    stringList areaServed  
+    stringList category  
+    stringList logo  
+    stringList brand  
+    stringList broker  
+    stringList isRelatedTo  
+    stringList isSimilarTo  
+    stringList offers  
+    stringList provider  
+    stringList serviceArea  
+    stringList serviceType  
+    stringList termsOfService  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CurrencyConversionService ||--}o AggregateRating : "aggregateRating"
+CurrencyConversionService ||--}o Audience : "audience"
+CurrencyConversionService ||--}o ServiceChannel : "availableChannel"
+CurrencyConversionService ||--}o Text : "award"
+CurrencyConversionService ||--}o Certification : "hasCertification"
+CurrencyConversionService ||--}o OfferCatalog : "hasOfferCatalog"
+CurrencyConversionService ||--}o OpeningHoursSpecification : "hoursAvailable"
+CurrencyConversionService ||--}o Thing : "produces"
+CurrencyConversionService ||--}o Text : "providerMobility"
+CurrencyConversionService ||--}o Review : "review"
+CurrencyConversionService ||--}o Audience : "serviceAudience"
+CurrencyConversionService ||--}o Thing : "serviceOutput"
+CurrencyConversionService ||--}o Text : "slogan"
+CurrencyConversionService ||--}o Text : "alternateName"
+CurrencyConversionService ||--}o Text : "disambiguatingDescription"
+CurrencyConversionService ||--}o Text : "name"
+CurrencyConversionService ||--}o URL : "sameAs"
+CurrencyConversionService ||--}o Action : "potentialAction"
+CurrencyConversionService ||--}o URL : "url"
+

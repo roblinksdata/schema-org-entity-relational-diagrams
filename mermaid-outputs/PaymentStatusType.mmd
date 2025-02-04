@@ -1,0 +1,18 @@
+erDiagram
+PaymentStatusType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PaymentStatusType ||--}o Text : "alternateName"
+PaymentStatusType ||--}o Text : "disambiguatingDescription"
+PaymentStatusType ||--}o Text : "name"
+PaymentStatusType ||--}o URL : "sameAs"
+PaymentStatusType ||--}o Action : "potentialAction"
+PaymentStatusType ||--}o URL : "url"
+

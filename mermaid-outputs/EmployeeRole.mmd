@@ -1,0 +1,24 @@
+erDiagram
+EmployeeRole {
+    stringList baseSalary  
+    stringList endDate  
+    stringList namedPosition  
+    stringList roleName  
+    stringList startDate  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+EmployeeRole ||--}o Text : "salaryCurrency"
+EmployeeRole ||--}o Number : "numberedPosition"
+EmployeeRole ||--}o Text : "alternateName"
+EmployeeRole ||--}o Text : "disambiguatingDescription"
+EmployeeRole ||--}o Text : "name"
+EmployeeRole ||--}o URL : "sameAs"
+EmployeeRole ||--}o Action : "potentialAction"
+EmployeeRole ||--}o URL : "url"
+

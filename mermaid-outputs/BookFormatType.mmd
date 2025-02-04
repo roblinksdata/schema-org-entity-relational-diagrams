@@ -1,0 +1,18 @@
+erDiagram
+BookFormatType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+BookFormatType ||--}o Text : "alternateName"
+BookFormatType ||--}o Text : "disambiguatingDescription"
+BookFormatType ||--}o Text : "name"
+BookFormatType ||--}o URL : "sameAs"
+BookFormatType ||--}o Action : "potentialAction"
+BookFormatType ||--}o URL : "url"
+

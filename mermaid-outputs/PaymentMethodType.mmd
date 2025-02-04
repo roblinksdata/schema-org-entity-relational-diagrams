@@ -1,0 +1,18 @@
+erDiagram
+PaymentMethodType {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+PaymentMethodType ||--}o Text : "alternateName"
+PaymentMethodType ||--}o Text : "disambiguatingDescription"
+PaymentMethodType ||--}o Text : "name"
+PaymentMethodType ||--}o URL : "sameAs"
+PaymentMethodType ||--}o Action : "potentialAction"
+PaymentMethodType ||--}o URL : "url"
+

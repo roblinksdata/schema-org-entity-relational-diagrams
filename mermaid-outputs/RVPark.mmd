@@ -1,0 +1,65 @@
+erDiagram
+RVPark {
+    stringList logo  
+    stringList photo  
+    stringList address  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList keywords  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+RVPark ||--}o Text : "openingHours"
+RVPark ||--}o Text : "globalLocationNumber"
+RVPark ||--}o URL : "hasGS1DigitalLink"
+RVPark ||--}o PropertyValue : "additionalProperty"
+RVPark ||--}o AggregateRating : "aggregateRating"
+RVPark ||--}o LocationFeatureSpecification : "amenityFeature"
+RVPark ||--}o Text : "branchCode"
+RVPark ||--}o Place : "containedIn"
+RVPark ||--}o Place : "containedInPlace"
+RVPark ||--}o Place : "containsPlace"
+RVPark ||--}o Event : "event"
+RVPark ||--}o Event : "events"
+RVPark ||--}o Text : "faxNumber"
+RVPark ||--}o Certification : "hasCertification"
+RVPark ||--}o Boolean : "hasDriveThroughService"
+RVPark ||--}o Boolean : "isAccessibleForFree"
+RVPark ||--}o Text : "isicV4"
+RVPark ||--}o URL : "map"
+RVPark ||--}o URL : "maps"
+RVPark ||--}o Integer : "maximumAttendeeCapacity"
+RVPark ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+RVPark ||--}o Boolean : "publicAccess"
+RVPark ||--}o Review : "review"
+RVPark ||--}o Review : "reviews"
+RVPark ||--}o Text : "slogan"
+RVPark ||--}o Boolean : "smokingAllowed"
+RVPark ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+RVPark ||--}o Text : "telephone"
+RVPark ||--}o URL : "tourBookingPage"
+RVPark ||--}o Text : "alternateName"
+RVPark ||--}o Text : "disambiguatingDescription"
+RVPark ||--}o Text : "name"
+RVPark ||--}o URL : "sameAs"
+RVPark ||--}o Action : "potentialAction"
+RVPark ||--}o URL : "url"
+

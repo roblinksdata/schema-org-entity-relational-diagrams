@@ -1,0 +1,89 @@
+erDiagram
+ResearchOrganization {
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList logo  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList address  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList keywords  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ResearchOrganization ||--}o Text : "duns"
+ResearchOrganization ||--}o Text : "globalLocationNumber"
+ResearchOrganization ||--}o URL : "hasGS1DigitalLink"
+ResearchOrganization ||--}o Text : "leiCode"
+ResearchOrganization ||--}o Text : "taxID"
+ResearchOrganization ||--}o InteractionCounter : "agentInteractionStatistic"
+ResearchOrganization ||--}o AggregateRating : "aggregateRating"
+ResearchOrganization ||--}o Person : "alumni"
+ResearchOrganization ||--}o Text : "award"
+ResearchOrganization ||--}o Text : "awards"
+ResearchOrganization ||--}o ContactPoint : "contactPoint"
+ResearchOrganization ||--}o ContactPoint : "contactPoints"
+ResearchOrganization ||--}o Organization : "department"
+ResearchOrganization ||--}o Date : "dissolutionDate"
+ResearchOrganization ||--}o Text : "email"
+ResearchOrganization ||--}o Person : "employee"
+ResearchOrganization ||--}o Person : "employees"
+ResearchOrganization ||--}o Event : "event"
+ResearchOrganization ||--}o Event : "events"
+ResearchOrganization ||--}o Text : "faxNumber"
+ResearchOrganization ||--}o Person : "founders"
+ResearchOrganization ||--}o Date : "foundingDate"
+ResearchOrganization ||--}o Place : "foundingLocation"
+ResearchOrganization ||--}o Grant : "funding"
+ResearchOrganization ||--}o Certification : "hasCertification"
+ResearchOrganization ||--}o EducationalOccupationalCredential : "hasCredential"
+ResearchOrganization ||--}o MemberProgram : "hasMemberProgram"
+ResearchOrganization ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+ResearchOrganization ||--}o OfferCatalog : "hasOfferCatalog"
+ResearchOrganization ||--}o Place : "hasPOS"
+ResearchOrganization ||--}o InteractionCounter : "interactionStatistic"
+ResearchOrganization ||--}o Text : "isicV4"
+ResearchOrganization ||--}o Text : "iso6523Code"
+ResearchOrganization ||--}o Text : "legalName"
+ResearchOrganization ||--}o Offer : "makesOffer"
+ResearchOrganization ||--}o Text : "naics"
+ResearchOrganization ||--}o NonprofitType : "nonprofitStatus"
+ResearchOrganization ||--}o QuantitativeValue : "numberOfEmployees"
+ResearchOrganization ||--}o Organization : "parentOrganization"
+ResearchOrganization ||--}o Review : "review"
+ResearchOrganization ||--}o Review : "reviews"
+ResearchOrganization ||--}o Demand : "seeks"
+ResearchOrganization ||--}o Text : "slogan"
+ResearchOrganization ||--}o Organization : "subOrganization"
+ResearchOrganization ||--}o Text : "telephone"
+ResearchOrganization ||--}o Text : "vatID"
+ResearchOrganization ||--}o Text : "alternateName"
+ResearchOrganization ||--}o Text : "disambiguatingDescription"
+ResearchOrganization ||--}o Text : "name"
+ResearchOrganization ||--}o URL : "sameAs"
+ResearchOrganization ||--}o Action : "potentialAction"
+ResearchOrganization ||--}o URL : "url"
+

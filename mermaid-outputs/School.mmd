@@ -1,0 +1,122 @@
+erDiagram
+School {
+    stringList actionableFeedbackPolicy  
+    stringList areaServed  
+    stringList correctionsPolicy  
+    stringList diversityStaffingReport  
+    stringList funder  
+    stringList location  
+    stringList logo  
+    stringList memberOf  
+    stringList ownershipFundingInfo  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList unnamedSourcesPolicy  
+    stringList acceptedPaymentMethod  
+    stringList address  
+    stringList brand  
+    stringList diversityPolicy  
+    stringList ethicsPolicy  
+    stringList founder  
+    stringList keywords  
+    stringList knowsAbout  
+    stringList knowsLanguage  
+    stringList member  
+    stringList members  
+    stringList owns  
+    stringList serviceArea  
+    stringList skills  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+    stringList photo  
+    stringList geo  
+    stringList geoContains  
+    stringList geoCoveredBy  
+    stringList geoCovers  
+    stringList geoCrosses  
+    stringList geoDisjoint  
+    stringList geoEquals  
+    stringList geoIntersects  
+    stringList geoOverlaps  
+    stringList geoTouches  
+    stringList geoWithin  
+    stringList hasMap  
+    stringList latitude  
+    stringList longitude  
+    stringList photos  
+}
+
+School ||--}o Person : "alumni"
+School ||--}o Text : "openingHours"
+School ||--}o Text : "duns"
+School ||--}o Text : "globalLocationNumber"
+School ||--}o URL : "hasGS1DigitalLink"
+School ||--}o Text : "leiCode"
+School ||--}o Text : "taxID"
+School ||--}o InteractionCounter : "agentInteractionStatistic"
+School ||--}o AggregateRating : "aggregateRating"
+School ||--}o Text : "award"
+School ||--}o Text : "awards"
+School ||--}o ContactPoint : "contactPoint"
+School ||--}o ContactPoint : "contactPoints"
+School ||--}o Organization : "department"
+School ||--}o Date : "dissolutionDate"
+School ||--}o Text : "email"
+School ||--}o Person : "employee"
+School ||--}o Person : "employees"
+School ||--}o Event : "event"
+School ||--}o Event : "events"
+School ||--}o Text : "faxNumber"
+School ||--}o Person : "founders"
+School ||--}o Date : "foundingDate"
+School ||--}o Place : "foundingLocation"
+School ||--}o Grant : "funding"
+School ||--}o Certification : "hasCertification"
+School ||--}o EducationalOccupationalCredential : "hasCredential"
+School ||--}o MemberProgram : "hasMemberProgram"
+School ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
+School ||--}o OfferCatalog : "hasOfferCatalog"
+School ||--}o Place : "hasPOS"
+School ||--}o InteractionCounter : "interactionStatistic"
+School ||--}o Text : "isicV4"
+School ||--}o Text : "iso6523Code"
+School ||--}o Text : "legalName"
+School ||--}o Offer : "makesOffer"
+School ||--}o Text : "naics"
+School ||--}o NonprofitType : "nonprofitStatus"
+School ||--}o QuantitativeValue : "numberOfEmployees"
+School ||--}o Organization : "parentOrganization"
+School ||--}o Review : "review"
+School ||--}o Review : "reviews"
+School ||--}o Demand : "seeks"
+School ||--}o Text : "slogan"
+School ||--}o Organization : "subOrganization"
+School ||--}o Text : "telephone"
+School ||--}o Text : "vatID"
+School ||--}o Text : "alternateName"
+School ||--}o Text : "disambiguatingDescription"
+School ||--}o Text : "name"
+School ||--}o URL : "sameAs"
+School ||--}o Action : "potentialAction"
+School ||--}o URL : "url"
+School ||--}o PropertyValue : "additionalProperty"
+School ||--}o LocationFeatureSpecification : "amenityFeature"
+School ||--}o Text : "branchCode"
+School ||--}o Place : "containedIn"
+School ||--}o Place : "containedInPlace"
+School ||--}o Place : "containsPlace"
+School ||--}o Boolean : "hasDriveThroughService"
+School ||--}o Boolean : "isAccessibleForFree"
+School ||--}o URL : "map"
+School ||--}o URL : "maps"
+School ||--}o Integer : "maximumAttendeeCapacity"
+School ||--}o OpeningHoursSpecification : "openingHoursSpecification"
+School ||--}o Boolean : "publicAccess"
+School ||--}o Boolean : "smokingAllowed"
+School ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
+School ||--}o URL : "tourBookingPage"
+

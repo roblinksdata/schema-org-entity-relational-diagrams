@@ -1,0 +1,29 @@
+erDiagram
+DoseSchedule {
+    stringList doseValue  
+    stringList legalStatus  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DoseSchedule ||--}o Text : "frequency"
+DoseSchedule ||--}o Text : "doseUnit"
+DoseSchedule ||--}o Text : "targetPopulation"
+DoseSchedule ||--}o MedicalCode : "code"
+DoseSchedule ||--}o Grant : "funding"
+DoseSchedule ||--}o MedicalGuideline : "guideline"
+DoseSchedule ||--}o MedicineSystem : "medicineSystem"
+DoseSchedule ||--}o Organization : "recognizingAuthority"
+DoseSchedule ||--}o MedicalSpecialty : "relevantSpecialty"
+DoseSchedule ||--}o MedicalStudy : "study"
+DoseSchedule ||--}o Text : "alternateName"
+DoseSchedule ||--}o Text : "disambiguatingDescription"
+DoseSchedule ||--}o Text : "name"
+DoseSchedule ||--}o URL : "sameAs"
+DoseSchedule ||--}o Action : "potentialAction"
+DoseSchedule ||--}o URL : "url"
+

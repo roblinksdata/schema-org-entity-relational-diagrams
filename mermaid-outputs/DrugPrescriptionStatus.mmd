@@ -1,0 +1,18 @@
+erDiagram
+DrugPrescriptionStatus {
+    stringList supersededBy  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+DrugPrescriptionStatus ||--}o Text : "alternateName"
+DrugPrescriptionStatus ||--}o Text : "disambiguatingDescription"
+DrugPrescriptionStatus ||--}o Text : "name"
+DrugPrescriptionStatus ||--}o URL : "sameAs"
+DrugPrescriptionStatus ||--}o Action : "potentialAction"
+DrugPrescriptionStatus ||--}o URL : "url"
+

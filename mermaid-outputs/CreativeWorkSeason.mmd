@@ -1,0 +1,142 @@
+erDiagram
+CreativeWorkSeason {
+    stringList actor  
+    stringList seasonNumber  
+    stringList endDate  
+    stringList startDate  
+    stringList acquireLicensePage  
+    stringList contributor  
+    stringList creator  
+    stringList dateCreated  
+    stringList editEIDR  
+    stringList funder  
+    stringList genre  
+    stringList isPartOf  
+    stringList material  
+    stringList position  
+    stringList publishingPrinciples  
+    stringList sponsor  
+    stringList usageInfo  
+    stringList archivedAt  
+    stringList assesses  
+    stringList audio  
+    stringList author  
+    stringList citation  
+    stringList contentRating  
+    stringList copyrightHolder  
+    stringList correction  
+    stringList creativeWorkStatus  
+    stringList dateModified  
+    stringList datePublished  
+    stringList educationalLevel  
+    stringList educationalUse  
+    stringList encodingFormat  
+    stringList expires  
+    stringList fileFormat  
+    stringList inLanguage  
+    stringList isBasedOn  
+    stringList isBasedOnUrl  
+    stringList keywords  
+    stringList learningResourceType  
+    stringList license  
+    stringList maintainer  
+    stringList materialExtent  
+    stringList offers  
+    stringList pattern  
+    stringList producer  
+    stringList provider  
+    stringList publisher  
+    stringList schemaVersion  
+    stringList sdLicense  
+    stringList sdPublisher  
+    stringList size  
+    stringList teaches  
+    stringList temporal  
+    stringList temporalCoverage  
+    stringList translator  
+    stringList version  
+    stringList video  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+CreativeWorkSeason ||--}o Episode : "episode"
+CreativeWorkSeason ||--}o CreativeWorkSeries : "partOfSeries"
+CreativeWorkSeason ||--}o Person : "director"
+CreativeWorkSeason ||--}o Episode : "episodes"
+CreativeWorkSeason ||--}o Integer : "numberOfEpisodes"
+CreativeWorkSeason ||--}o Organization : "productionCompany"
+CreativeWorkSeason ||--}o VideoObject : "trailer"
+CreativeWorkSeason ||--}o Thing : "about"
+CreativeWorkSeason ||--}o Place : "contentLocation"
+CreativeWorkSeason ||--}o CreativeWork : "hasPart"
+CreativeWorkSeason ||--}o Claim : "interpretedAsClaim"
+CreativeWorkSeason ||--}o Thing : "mainEntity"
+CreativeWorkSeason ||--}o Place : "spatialCoverage"
+CreativeWorkSeason ||--}o CreativeWork : "workExample"
+CreativeWorkSeason ||--}o Text : "abstract"
+CreativeWorkSeason ||--}o Text : "accessMode"
+CreativeWorkSeason ||--}o ItemList : "accessModeSufficient"
+CreativeWorkSeason ||--}o Text : "accessibilityAPI"
+CreativeWorkSeason ||--}o Text : "accessibilityControl"
+CreativeWorkSeason ||--}o Text : "accessibilityFeature"
+CreativeWorkSeason ||--}o Text : "accessibilityHazard"
+CreativeWorkSeason ||--}o Text : "accessibilitySummary"
+CreativeWorkSeason ||--}o Person : "accountablePerson"
+CreativeWorkSeason ||--}o AggregateRating : "aggregateRating"
+CreativeWorkSeason ||--}o Text : "alternativeHeadline"
+CreativeWorkSeason ||--}o MediaObject : "associatedMedia"
+CreativeWorkSeason ||--}o Audience : "audience"
+CreativeWorkSeason ||--}o Text : "award"
+CreativeWorkSeason ||--}o Text : "awards"
+CreativeWorkSeason ||--}o Person : "character"
+CreativeWorkSeason ||--}o Comment : "comment"
+CreativeWorkSeason ||--}o Integer : "commentCount"
+CreativeWorkSeason ||--}o Text : "conditionsOfAccess"
+CreativeWorkSeason ||--}o DateTime : "contentReferenceTime"
+CreativeWorkSeason ||--}o Text : "copyrightNotice"
+CreativeWorkSeason ||--}o Number : "copyrightYear"
+CreativeWorkSeason ||--}o Country : "countryOfOrigin"
+CreativeWorkSeason ||--}o Text : "creditText"
+CreativeWorkSeason ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
+CreativeWorkSeason ||--}o URL : "discussionUrl"
+CreativeWorkSeason ||--}o Person : "editor"
+CreativeWorkSeason ||--}o AlignmentObject : "educationalAlignment"
+CreativeWorkSeason ||--}o MediaObject : "encoding"
+CreativeWorkSeason ||--}o MediaObject : "encodings"
+CreativeWorkSeason ||--}o CreativeWork : "exampleOfWork"
+CreativeWorkSeason ||--}o Grant : "funding"
+CreativeWorkSeason ||--}o Text : "headline"
+CreativeWorkSeason ||--}o InteractionCounter : "interactionStatistic"
+CreativeWorkSeason ||--}o Text : "interactivityType"
+CreativeWorkSeason ||--}o Boolean : "isAccessibleForFree"
+CreativeWorkSeason ||--}o Boolean : "isFamilyFriendly"
+CreativeWorkSeason ||--}o Place : "locationCreated"
+CreativeWorkSeason ||--}o Thing : "mentions"
+CreativeWorkSeason ||--}o PublicationEvent : "publication"
+CreativeWorkSeason ||--}o Organization : "publisherImprint"
+CreativeWorkSeason ||--}o Event : "recordedAt"
+CreativeWorkSeason ||--}o PublicationEvent : "releasedEvent"
+CreativeWorkSeason ||--}o Review : "review"
+CreativeWorkSeason ||--}o Review : "reviews"
+CreativeWorkSeason ||--}o Date : "sdDatePublished"
+CreativeWorkSeason ||--}o Organization : "sourceOrganization"
+CreativeWorkSeason ||--}o Place : "spatial"
+CreativeWorkSeason ||--}o Text : "text"
+CreativeWorkSeason ||--}o ImageObject : "thumbnail"
+CreativeWorkSeason ||--}o URL : "thumbnailUrl"
+CreativeWorkSeason ||--}o Duration : "timeRequired"
+CreativeWorkSeason ||--}o CreativeWork : "translationOfWork"
+CreativeWorkSeason ||--}o Text : "typicalAgeRange"
+CreativeWorkSeason ||--}o CreativeWork : "workTranslation"
+CreativeWorkSeason ||--}o Text : "alternateName"
+CreativeWorkSeason ||--}o Text : "disambiguatingDescription"
+CreativeWorkSeason ||--}o Text : "name"
+CreativeWorkSeason ||--}o URL : "sameAs"
+CreativeWorkSeason ||--}o Action : "potentialAction"
+CreativeWorkSeason ||--}o URL : "url"
+

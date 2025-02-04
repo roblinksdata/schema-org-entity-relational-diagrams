@@ -1,0 +1,24 @@
+erDiagram
+ProgramMembership {
+    stringList member  
+    stringList members  
+    stringList membershipPointsEarned  
+    stringList additionalType  
+    stringList description  
+    stringList identifier  
+    stringList image  
+    stringList mainEntityOfPage  
+    stringList subjectOf  
+}
+
+ProgramMembership ||--}o Organization : "hostingOrganization"
+ProgramMembership ||--}o Text : "membershipNumber"
+ProgramMembership ||--}o MemberProgram : "program"
+ProgramMembership ||--}o Text : "programName"
+ProgramMembership ||--}o Text : "alternateName"
+ProgramMembership ||--}o Text : "disambiguatingDescription"
+ProgramMembership ||--}o Text : "name"
+ProgramMembership ||--}o URL : "sameAs"
+ProgramMembership ||--}o Action : "potentialAction"
+ProgramMembership ||--}o URL : "url"
+
