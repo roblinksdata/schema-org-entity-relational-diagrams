@@ -13,13 +13,15 @@ Use these at your own risk as the accuracy of the information is not guaranteed.
 ## Generating the models
 
 ```bash
-make
+make init;
+make;
 ```
 
 ### Parallelisation
 
 ```bash
-make -j 4 # (Or other appropriate parallelisation factor for your machine)
+make init;
+make -j 4; # (Or other appropriate parallelisation factor for your machine)
 ```
 
 ## License

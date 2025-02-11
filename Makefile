@@ -32,7 +32,9 @@ docker-pull:
 mermaid-outputs:
 	mkdir -p mermaid-outputs
 
-$(MMD_FILES): mermaid-outputs docker-pull
+init: docker-pull mermaid-outputs
+
+$(MMD_FILES):
 	@echo "Generating mermaid for $(@:mermaid-outputs/%=%)"; 
 	linkml generate erdiagram --format mermaid -c "$(@:mermaid-outputs/%.mmd=%)" --max-hops 0 schema.org.yaml > "$@";
 
