@@ -8,11 +8,16 @@ AllocateAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AllocateAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ AllocateAction ||--}o Thing : "result"
 AllocateAction ||--}o HowTo : "actionProcess"
 AllocateAction ||--}o ActionStatusType : "actionStatus"
 AllocateAction ||--}o Thing : "error"
-AllocateAction ||--}o Text : "alternateName"
-AllocateAction ||--}o Text : "disambiguatingDescription"
-AllocateAction ||--}o Text : "name"
-AllocateAction ||--}o URL : "sameAs"
 AllocateAction ||--}o Action : "potentialAction"
-AllocateAction ||--}o URL : "url"
 

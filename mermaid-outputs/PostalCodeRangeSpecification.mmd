@@ -1,19 +1,19 @@
 erDiagram
 PostalCodeRangeSpecification {
+    TextList postalCodeBegin  
+    TextList postalCodeEnd  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PostalCodeRangeSpecification ||--}o Text : "postalCodeBegin"
-PostalCodeRangeSpecification ||--}o Text : "postalCodeEnd"
-PostalCodeRangeSpecification ||--}o Text : "alternateName"
-PostalCodeRangeSpecification ||--}o Text : "disambiguatingDescription"
-PostalCodeRangeSpecification ||--}o Text : "name"
-PostalCodeRangeSpecification ||--}o URL : "sameAs"
 PostalCodeRangeSpecification ||--}o Action : "potentialAction"
-PostalCodeRangeSpecification ||--}o URL : "url"
 

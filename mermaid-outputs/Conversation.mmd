@@ -13,25 +13,46 @@ Conversation {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Conversation {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Conversation ||--}o Thing : "about"
@@ -67,43 +97,22 @@ Conversation ||--}o Claim : "interpretedAsClaim"
 Conversation ||--}o Thing : "mainEntity"
 Conversation ||--}o Place : "spatialCoverage"
 Conversation ||--}o CreativeWork : "workExample"
-Conversation ||--}o Text : "abstract"
-Conversation ||--}o Text : "accessMode"
 Conversation ||--}o ItemList : "accessModeSufficient"
-Conversation ||--}o Text : "accessibilityAPI"
-Conversation ||--}o Text : "accessibilityControl"
-Conversation ||--}o Text : "accessibilityFeature"
-Conversation ||--}o Text : "accessibilityHazard"
-Conversation ||--}o Text : "accessibilitySummary"
 Conversation ||--}o Person : "accountablePerson"
 Conversation ||--}o AggregateRating : "aggregateRating"
-Conversation ||--}o Text : "alternativeHeadline"
 Conversation ||--}o MediaObject : "associatedMedia"
 Conversation ||--}o Audience : "audience"
-Conversation ||--}o Text : "award"
-Conversation ||--}o Text : "awards"
 Conversation ||--}o Person : "character"
 Conversation ||--}o Comment : "comment"
-Conversation ||--}o Integer : "commentCount"
-Conversation ||--}o Text : "conditionsOfAccess"
-Conversation ||--}o DateTime : "contentReferenceTime"
-Conversation ||--}o Text : "copyrightNotice"
-Conversation ||--}o Number : "copyrightYear"
 Conversation ||--}o Country : "countryOfOrigin"
-Conversation ||--}o Text : "creditText"
 Conversation ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Conversation ||--}o URL : "discussionUrl"
 Conversation ||--}o Person : "editor"
 Conversation ||--}o AlignmentObject : "educationalAlignment"
 Conversation ||--}o MediaObject : "encoding"
 Conversation ||--}o MediaObject : "encodings"
 Conversation ||--}o CreativeWork : "exampleOfWork"
 Conversation ||--}o Grant : "funding"
-Conversation ||--}o Text : "headline"
 Conversation ||--}o InteractionCounter : "interactionStatistic"
-Conversation ||--}o Text : "interactivityType"
-Conversation ||--}o Boolean : "isAccessibleForFree"
-Conversation ||--}o Boolean : "isFamilyFriendly"
 Conversation ||--}o Place : "locationCreated"
 Conversation ||--}o Thing : "mentions"
 Conversation ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ Conversation ||--}o Event : "recordedAt"
 Conversation ||--}o PublicationEvent : "releasedEvent"
 Conversation ||--}o Review : "review"
 Conversation ||--}o Review : "reviews"
-Conversation ||--}o Date : "sdDatePublished"
 Conversation ||--}o Organization : "sourceOrganization"
 Conversation ||--}o Place : "spatial"
-Conversation ||--}o Text : "text"
 Conversation ||--}o ImageObject : "thumbnail"
-Conversation ||--}o URL : "thumbnailUrl"
 Conversation ||--}o Duration : "timeRequired"
 Conversation ||--}o CreativeWork : "translationOfWork"
-Conversation ||--}o Text : "typicalAgeRange"
 Conversation ||--}o CreativeWork : "workTranslation"
-Conversation ||--}o Text : "alternateName"
-Conversation ||--}o Text : "disambiguatingDescription"
-Conversation ||--}o Text : "name"
-Conversation ||--}o URL : "sameAs"
 Conversation ||--}o Action : "potentialAction"
-Conversation ||--}o URL : "url"
 

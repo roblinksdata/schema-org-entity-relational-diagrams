@@ -2,11 +2,16 @@ erDiagram
 MedicalRiskFactor {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalRiskFactor ||--}o MedicalEntity : "increasesRiskOf"
@@ -17,10 +22,5 @@ MedicalRiskFactor ||--}o MedicineSystem : "medicineSystem"
 MedicalRiskFactor ||--}o Organization : "recognizingAuthority"
 MedicalRiskFactor ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalRiskFactor ||--}o MedicalStudy : "study"
-MedicalRiskFactor ||--}o Text : "alternateName"
-MedicalRiskFactor ||--}o Text : "disambiguatingDescription"
-MedicalRiskFactor ||--}o Text : "name"
-MedicalRiskFactor ||--}o URL : "sameAs"
 MedicalRiskFactor ||--}o Action : "potentialAction"
-MedicalRiskFactor ||--}o URL : "url"
 

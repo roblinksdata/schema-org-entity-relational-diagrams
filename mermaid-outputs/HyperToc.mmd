@@ -13,25 +13,46 @@ HyperToc {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ HyperToc {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 HyperToc ||--}o HyperTocEntry : "tocEntry"
@@ -69,42 +99,21 @@ HyperToc ||--}o Claim : "interpretedAsClaim"
 HyperToc ||--}o Thing : "mainEntity"
 HyperToc ||--}o Place : "spatialCoverage"
 HyperToc ||--}o CreativeWork : "workExample"
-HyperToc ||--}o Text : "abstract"
-HyperToc ||--}o Text : "accessMode"
 HyperToc ||--}o ItemList : "accessModeSufficient"
-HyperToc ||--}o Text : "accessibilityAPI"
-HyperToc ||--}o Text : "accessibilityControl"
-HyperToc ||--}o Text : "accessibilityFeature"
-HyperToc ||--}o Text : "accessibilityHazard"
-HyperToc ||--}o Text : "accessibilitySummary"
 HyperToc ||--}o Person : "accountablePerson"
 HyperToc ||--}o AggregateRating : "aggregateRating"
-HyperToc ||--}o Text : "alternativeHeadline"
 HyperToc ||--}o Audience : "audience"
-HyperToc ||--}o Text : "award"
-HyperToc ||--}o Text : "awards"
 HyperToc ||--}o Person : "character"
 HyperToc ||--}o Comment : "comment"
-HyperToc ||--}o Integer : "commentCount"
-HyperToc ||--}o Text : "conditionsOfAccess"
-HyperToc ||--}o DateTime : "contentReferenceTime"
-HyperToc ||--}o Text : "copyrightNotice"
-HyperToc ||--}o Number : "copyrightYear"
 HyperToc ||--}o Country : "countryOfOrigin"
-HyperToc ||--}o Text : "creditText"
 HyperToc ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-HyperToc ||--}o URL : "discussionUrl"
 HyperToc ||--}o Person : "editor"
 HyperToc ||--}o AlignmentObject : "educationalAlignment"
 HyperToc ||--}o MediaObject : "encoding"
 HyperToc ||--}o MediaObject : "encodings"
 HyperToc ||--}o CreativeWork : "exampleOfWork"
 HyperToc ||--}o Grant : "funding"
-HyperToc ||--}o Text : "headline"
 HyperToc ||--}o InteractionCounter : "interactionStatistic"
-HyperToc ||--}o Text : "interactivityType"
-HyperToc ||--}o Boolean : "isAccessibleForFree"
-HyperToc ||--}o Boolean : "isFamilyFriendly"
 HyperToc ||--}o Place : "locationCreated"
 HyperToc ||--}o Thing : "mentions"
 HyperToc ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ HyperToc ||--}o Event : "recordedAt"
 HyperToc ||--}o PublicationEvent : "releasedEvent"
 HyperToc ||--}o Review : "review"
 HyperToc ||--}o Review : "reviews"
-HyperToc ||--}o Date : "sdDatePublished"
 HyperToc ||--}o Organization : "sourceOrganization"
 HyperToc ||--}o Place : "spatial"
-HyperToc ||--}o Text : "text"
 HyperToc ||--}o ImageObject : "thumbnail"
-HyperToc ||--}o URL : "thumbnailUrl"
 HyperToc ||--}o Duration : "timeRequired"
 HyperToc ||--}o CreativeWork : "translationOfWork"
-HyperToc ||--}o Text : "typicalAgeRange"
 HyperToc ||--}o CreativeWork : "workTranslation"
-HyperToc ||--}o Text : "alternateName"
-HyperToc ||--}o Text : "disambiguatingDescription"
-HyperToc ||--}o Text : "name"
-HyperToc ||--}o URL : "sameAs"
 HyperToc ||--}o Action : "potentialAction"
-HyperToc ||--}o URL : "url"
 

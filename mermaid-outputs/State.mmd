@@ -1,8 +1,12 @@
 erDiagram
 State {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,51 +18,47 @@ State {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-State ||--}o Text : "globalLocationNumber"
-State ||--}o URL : "hasGS1DigitalLink"
 State ||--}o PropertyValue : "additionalProperty"
 State ||--}o AggregateRating : "aggregateRating"
 State ||--}o LocationFeatureSpecification : "amenityFeature"
-State ||--}o Text : "branchCode"
 State ||--}o Place : "containedIn"
 State ||--}o Place : "containedInPlace"
 State ||--}o Place : "containsPlace"
 State ||--}o Event : "event"
 State ||--}o Event : "events"
-State ||--}o Text : "faxNumber"
 State ||--}o Certification : "hasCertification"
-State ||--}o Boolean : "hasDriveThroughService"
-State ||--}o Boolean : "isAccessibleForFree"
-State ||--}o Text : "isicV4"
-State ||--}o URL : "map"
-State ||--}o URL : "maps"
-State ||--}o Integer : "maximumAttendeeCapacity"
 State ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-State ||--}o Boolean : "publicAccess"
 State ||--}o Review : "review"
 State ||--}o Review : "reviews"
-State ||--}o Text : "slogan"
-State ||--}o Boolean : "smokingAllowed"
 State ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-State ||--}o Text : "telephone"
-State ||--}o URL : "tourBookingPage"
-State ||--}o Text : "alternateName"
-State ||--}o Text : "disambiguatingDescription"
-State ||--}o Text : "name"
-State ||--}o URL : "sameAs"
 State ||--}o Action : "potentialAction"
-State ||--}o URL : "url"
 

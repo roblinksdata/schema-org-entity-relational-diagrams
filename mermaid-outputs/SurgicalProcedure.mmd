@@ -1,19 +1,24 @@
 erDiagram
 SurgicalProcedure {
+    TextList bodyLocation  
+    TextList followup  
+    TextList howPerformed  
     stringList preparation  
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-SurgicalProcedure ||--}o Text : "bodyLocation"
-SurgicalProcedure ||--}o Text : "followup"
-SurgicalProcedure ||--}o Text : "howPerformed"
 SurgicalProcedure ||--}o MedicalProcedureType : "procedureType"
 SurgicalProcedure ||--}o MedicalCode : "code"
 SurgicalProcedure ||--}o Grant : "funding"
@@ -22,10 +27,5 @@ SurgicalProcedure ||--}o MedicineSystem : "medicineSystem"
 SurgicalProcedure ||--}o Organization : "recognizingAuthority"
 SurgicalProcedure ||--}o MedicalSpecialty : "relevantSpecialty"
 SurgicalProcedure ||--}o MedicalStudy : "study"
-SurgicalProcedure ||--}o Text : "alternateName"
-SurgicalProcedure ||--}o Text : "disambiguatingDescription"
-SurgicalProcedure ||--}o Text : "name"
-SurgicalProcedure ||--}o URL : "sameAs"
 SurgicalProcedure ||--}o Action : "potentialAction"
-SurgicalProcedure ||--}o URL : "url"
 

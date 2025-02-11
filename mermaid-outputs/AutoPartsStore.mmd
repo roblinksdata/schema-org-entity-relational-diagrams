@@ -1,8 +1,16 @@
 erDiagram
 AutoPartsStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ AutoPartsStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AutoPartsStore ||--}o Organization : "branchOf"
-AutoPartsStore ||--}o Text : "currenciesAccepted"
-AutoPartsStore ||--}o Text : "openingHours"
-AutoPartsStore ||--}o Text : "paymentAccepted"
-AutoPartsStore ||--}o Text : "priceRange"
-AutoPartsStore ||--}o Text : "globalLocationNumber"
-AutoPartsStore ||--}o URL : "hasGS1DigitalLink"
 AutoPartsStore ||--}o PropertyValue : "additionalProperty"
 AutoPartsStore ||--}o AggregateRating : "aggregateRating"
 AutoPartsStore ||--}o LocationFeatureSpecification : "amenityFeature"
-AutoPartsStore ||--}o Text : "branchCode"
 AutoPartsStore ||--}o Place : "containedIn"
 AutoPartsStore ||--}o Place : "containedInPlace"
 AutoPartsStore ||--}o Place : "containsPlace"
 AutoPartsStore ||--}o Event : "event"
 AutoPartsStore ||--}o Event : "events"
-AutoPartsStore ||--}o Text : "faxNumber"
 AutoPartsStore ||--}o Certification : "hasCertification"
-AutoPartsStore ||--}o Boolean : "hasDriveThroughService"
-AutoPartsStore ||--}o Boolean : "isAccessibleForFree"
-AutoPartsStore ||--}o Text : "isicV4"
-AutoPartsStore ||--}o URL : "map"
-AutoPartsStore ||--}o URL : "maps"
-AutoPartsStore ||--}o Integer : "maximumAttendeeCapacity"
 AutoPartsStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-AutoPartsStore ||--}o Boolean : "publicAccess"
 AutoPartsStore ||--}o Review : "review"
 AutoPartsStore ||--}o Review : "reviews"
-AutoPartsStore ||--}o Text : "slogan"
-AutoPartsStore ||--}o Boolean : "smokingAllowed"
 AutoPartsStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-AutoPartsStore ||--}o Text : "telephone"
-AutoPartsStore ||--}o URL : "tourBookingPage"
-AutoPartsStore ||--}o Text : "duns"
-AutoPartsStore ||--}o Text : "leiCode"
-AutoPartsStore ||--}o Text : "taxID"
 AutoPartsStore ||--}o InteractionCounter : "agentInteractionStatistic"
 AutoPartsStore ||--}o Person : "alumni"
-AutoPartsStore ||--}o Text : "award"
-AutoPartsStore ||--}o Text : "awards"
 AutoPartsStore ||--}o ContactPoint : "contactPoint"
 AutoPartsStore ||--}o ContactPoint : "contactPoints"
 AutoPartsStore ||--}o Organization : "department"
-AutoPartsStore ||--}o Date : "dissolutionDate"
-AutoPartsStore ||--}o Text : "email"
 AutoPartsStore ||--}o Person : "employee"
 AutoPartsStore ||--}o Person : "employees"
 AutoPartsStore ||--}o Person : "founders"
-AutoPartsStore ||--}o Date : "foundingDate"
 AutoPartsStore ||--}o Place : "foundingLocation"
 AutoPartsStore ||--}o Grant : "funding"
 AutoPartsStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ AutoPartsStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 AutoPartsStore ||--}o OfferCatalog : "hasOfferCatalog"
 AutoPartsStore ||--}o Place : "hasPOS"
 AutoPartsStore ||--}o InteractionCounter : "interactionStatistic"
-AutoPartsStore ||--}o Text : "iso6523Code"
-AutoPartsStore ||--}o Text : "legalName"
 AutoPartsStore ||--}o Offer : "makesOffer"
-AutoPartsStore ||--}o Text : "naics"
 AutoPartsStore ||--}o NonprofitType : "nonprofitStatus"
 AutoPartsStore ||--}o QuantitativeValue : "numberOfEmployees"
 AutoPartsStore ||--}o Organization : "parentOrganization"
 AutoPartsStore ||--}o Demand : "seeks"
 AutoPartsStore ||--}o Organization : "subOrganization"
-AutoPartsStore ||--}o Text : "vatID"
-AutoPartsStore ||--}o Text : "alternateName"
-AutoPartsStore ||--}o Text : "disambiguatingDescription"
-AutoPartsStore ||--}o Text : "name"
-AutoPartsStore ||--}o URL : "sameAs"
 AutoPartsStore ||--}o Action : "potentialAction"
-AutoPartsStore ||--}o URL : "url"
 

@@ -8,11 +8,16 @@ TieAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TieAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ TieAction ||--}o Thing : "result"
 TieAction ||--}o HowTo : "actionProcess"
 TieAction ||--}o ActionStatusType : "actionStatus"
 TieAction ||--}o Thing : "error"
-TieAction ||--}o Text : "alternateName"
-TieAction ||--}o Text : "disambiguatingDescription"
-TieAction ||--}o Text : "name"
-TieAction ||--}o URL : "sameAs"
 TieAction ||--}o Action : "potentialAction"
-TieAction ||--}o URL : "url"
 

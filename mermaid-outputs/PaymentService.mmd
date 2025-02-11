@@ -4,43 +4,43 @@ PaymentService {
     stringList feesAndCommissionsSpecification  
     stringList interestRate  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
 }
 
 PaymentService ||--}o PaymentMethodType : "paymentMethodType"
-PaymentService ||--}o Text : "alternateName"
-PaymentService ||--}o Text : "disambiguatingDescription"
-PaymentService ||--}o Text : "name"
-PaymentService ||--}o URL : "sameAs"
 PaymentService ||--}o Action : "potentialAction"
-PaymentService ||--}o URL : "url"
 PaymentService ||--}o AggregateRating : "aggregateRating"
 PaymentService ||--}o Audience : "audience"
 PaymentService ||--}o ServiceChannel : "availableChannel"
-PaymentService ||--}o Text : "award"
 PaymentService ||--}o Certification : "hasCertification"
 PaymentService ||--}o OfferCatalog : "hasOfferCatalog"
 PaymentService ||--}o OpeningHoursSpecification : "hoursAvailable"
 PaymentService ||--}o Thing : "produces"
-PaymentService ||--}o Text : "providerMobility"
 PaymentService ||--}o Review : "review"
 PaymentService ||--}o Audience : "serviceAudience"
 PaymentService ||--}o Thing : "serviceOutput"
-PaymentService ||--}o Text : "slogan"
 

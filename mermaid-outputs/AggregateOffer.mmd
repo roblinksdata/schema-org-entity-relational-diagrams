@@ -2,40 +2,51 @@ erDiagram
 AggregateOffer {
     stringList highPrice  
     stringList lowPrice  
+    IntegerList offerCount  
     stringList offers  
     stringList areaServed  
     stringList asin  
     stringList category  
     stringList eligibleRegion  
     stringList gtin  
+    TextList gtin12  
+    TextList gtin13  
+    TextList gtin14  
+    TextList gtin8  
+    URLList hasGS1DigitalLink  
     stringList seller  
+    TextList serialNumber  
+    TextList sku  
     stringList acceptedPaymentMethod  
     stringList availabilityEnds  
     stringList availabilityStarts  
+    TextList checkoutPageURLTemplate  
     stringList ineligibleRegion  
+    BooleanList isFamilyFriendly  
     stringList itemOffered  
     stringList leaseLength  
+    TextList mobileUrl  
+    TextList mpn  
     stringList offeredBy  
     stringList price  
+    TextList priceCurrency  
+    DateList priceValidUntil  
     stringList validFrom  
     stringList validThrough  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-AggregateOffer ||--}o Integer : "offerCount"
 AggregateOffer ||--}o Place : "availableAtOrFrom"
-AggregateOffer ||--}o Text : "gtin12"
-AggregateOffer ||--}o Text : "gtin13"
-AggregateOffer ||--}o Text : "gtin14"
-AggregateOffer ||--}o Text : "gtin8"
-AggregateOffer ||--}o URL : "hasGS1DigitalLink"
-AggregateOffer ||--}o Text : "serialNumber"
-AggregateOffer ||--}o Text : "sku"
 AggregateOffer ||--}o Offer : "addOn"
 AggregateOffer ||--}o PropertyValue : "additionalProperty"
 AggregateOffer ||--}o QuantitativeValue : "advanceBookingRequirement"
@@ -43,7 +54,6 @@ AggregateOffer ||--}o AggregateRating : "aggregateRating"
 AggregateOffer ||--}o ItemAvailability : "availability"
 AggregateOffer ||--}o DeliveryMethod : "availableDeliveryMethod"
 AggregateOffer ||--}o BusinessFunction : "businessFunction"
-AggregateOffer ||--}o Text : "checkoutPageURLTemplate"
 AggregateOffer ||--}o QuantitativeValue : "deliveryLeadTime"
 AggregateOffer ||--}o BusinessEntityType : "eligibleCustomerType"
 AggregateOffer ||--}o QuantitativeValue : "eligibleDuration"
@@ -54,22 +64,12 @@ AggregateOffer ||--}o QuantitativeValue : "hasMeasurement"
 AggregateOffer ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 AggregateOffer ||--}o TypeAndQuantityNode : "includesObject"
 AggregateOffer ||--}o QuantitativeValue : "inventoryLevel"
-AggregateOffer ||--}o Boolean : "isFamilyFriendly"
 AggregateOffer ||--}o OfferItemCondition : "itemCondition"
-AggregateOffer ||--}o Text : "mobileUrl"
-AggregateOffer ||--}o Text : "mpn"
-AggregateOffer ||--}o Text : "priceCurrency"
 AggregateOffer ||--}o PriceSpecification : "priceSpecification"
-AggregateOffer ||--}o Date : "priceValidUntil"
 AggregateOffer ||--}o Review : "review"
 AggregateOffer ||--}o Review : "reviews"
 AggregateOffer ||--}o OfferShippingDetails : "shippingDetails"
 AggregateOffer ||--}o MemberProgramTier : "validForMemberTier"
 AggregateOffer ||--}o WarrantyPromise : "warranty"
-AggregateOffer ||--}o Text : "alternateName"
-AggregateOffer ||--}o Text : "disambiguatingDescription"
-AggregateOffer ||--}o Text : "name"
-AggregateOffer ||--}o URL : "sameAs"
 AggregateOffer ||--}o Action : "potentialAction"
-AggregateOffer ||--}o URL : "url"
 

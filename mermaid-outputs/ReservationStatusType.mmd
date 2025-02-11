@@ -2,17 +2,17 @@ erDiagram
 ReservationStatusType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ReservationStatusType ||--}o Text : "alternateName"
-ReservationStatusType ||--}o Text : "disambiguatingDescription"
-ReservationStatusType ||--}o Text : "name"
-ReservationStatusType ||--}o URL : "sameAs"
 ReservationStatusType ||--}o Action : "potentialAction"
-ReservationStatusType ||--}o URL : "url"
 

@@ -1,8 +1,13 @@
 erDiagram
 PerformingArtsTheater {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ PerformingArtsTheater {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PerformingArtsTheater ||--}o Text : "openingHours"
-PerformingArtsTheater ||--}o Text : "globalLocationNumber"
-PerformingArtsTheater ||--}o URL : "hasGS1DigitalLink"
 PerformingArtsTheater ||--}o PropertyValue : "additionalProperty"
 PerformingArtsTheater ||--}o AggregateRating : "aggregateRating"
 PerformingArtsTheater ||--}o LocationFeatureSpecification : "amenityFeature"
-PerformingArtsTheater ||--}o Text : "branchCode"
 PerformingArtsTheater ||--}o Place : "containedIn"
 PerformingArtsTheater ||--}o Place : "containedInPlace"
 PerformingArtsTheater ||--}o Place : "containsPlace"
 PerformingArtsTheater ||--}o Event : "event"
 PerformingArtsTheater ||--}o Event : "events"
-PerformingArtsTheater ||--}o Text : "faxNumber"
 PerformingArtsTheater ||--}o Certification : "hasCertification"
-PerformingArtsTheater ||--}o Boolean : "hasDriveThroughService"
-PerformingArtsTheater ||--}o Boolean : "isAccessibleForFree"
-PerformingArtsTheater ||--}o Text : "isicV4"
-PerformingArtsTheater ||--}o URL : "map"
-PerformingArtsTheater ||--}o URL : "maps"
-PerformingArtsTheater ||--}o Integer : "maximumAttendeeCapacity"
 PerformingArtsTheater ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-PerformingArtsTheater ||--}o Boolean : "publicAccess"
 PerformingArtsTheater ||--}o Review : "review"
 PerformingArtsTheater ||--}o Review : "reviews"
-PerformingArtsTheater ||--}o Text : "slogan"
-PerformingArtsTheater ||--}o Boolean : "smokingAllowed"
 PerformingArtsTheater ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-PerformingArtsTheater ||--}o Text : "telephone"
-PerformingArtsTheater ||--}o URL : "tourBookingPage"
-PerformingArtsTheater ||--}o Text : "alternateName"
-PerformingArtsTheater ||--}o Text : "disambiguatingDescription"
-PerformingArtsTheater ||--}o Text : "name"
-PerformingArtsTheater ||--}o URL : "sameAs"
 PerformingArtsTheater ||--}o Action : "potentialAction"
-PerformingArtsTheater ||--}o URL : "url"
 

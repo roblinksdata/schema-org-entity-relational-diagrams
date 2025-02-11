@@ -13,25 +13,46 @@ NoteDigitalDocument {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ NoteDigitalDocument {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 NoteDigitalDocument ||--}o DigitalDocumentPermission : "hasDigitalDocumentPermission"
@@ -68,43 +98,22 @@ NoteDigitalDocument ||--}o Claim : "interpretedAsClaim"
 NoteDigitalDocument ||--}o Thing : "mainEntity"
 NoteDigitalDocument ||--}o Place : "spatialCoverage"
 NoteDigitalDocument ||--}o CreativeWork : "workExample"
-NoteDigitalDocument ||--}o Text : "abstract"
-NoteDigitalDocument ||--}o Text : "accessMode"
 NoteDigitalDocument ||--}o ItemList : "accessModeSufficient"
-NoteDigitalDocument ||--}o Text : "accessibilityAPI"
-NoteDigitalDocument ||--}o Text : "accessibilityControl"
-NoteDigitalDocument ||--}o Text : "accessibilityFeature"
-NoteDigitalDocument ||--}o Text : "accessibilityHazard"
-NoteDigitalDocument ||--}o Text : "accessibilitySummary"
 NoteDigitalDocument ||--}o Person : "accountablePerson"
 NoteDigitalDocument ||--}o AggregateRating : "aggregateRating"
-NoteDigitalDocument ||--}o Text : "alternativeHeadline"
 NoteDigitalDocument ||--}o MediaObject : "associatedMedia"
 NoteDigitalDocument ||--}o Audience : "audience"
-NoteDigitalDocument ||--}o Text : "award"
-NoteDigitalDocument ||--}o Text : "awards"
 NoteDigitalDocument ||--}o Person : "character"
 NoteDigitalDocument ||--}o Comment : "comment"
-NoteDigitalDocument ||--}o Integer : "commentCount"
-NoteDigitalDocument ||--}o Text : "conditionsOfAccess"
-NoteDigitalDocument ||--}o DateTime : "contentReferenceTime"
-NoteDigitalDocument ||--}o Text : "copyrightNotice"
-NoteDigitalDocument ||--}o Number : "copyrightYear"
 NoteDigitalDocument ||--}o Country : "countryOfOrigin"
-NoteDigitalDocument ||--}o Text : "creditText"
 NoteDigitalDocument ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-NoteDigitalDocument ||--}o URL : "discussionUrl"
 NoteDigitalDocument ||--}o Person : "editor"
 NoteDigitalDocument ||--}o AlignmentObject : "educationalAlignment"
 NoteDigitalDocument ||--}o MediaObject : "encoding"
 NoteDigitalDocument ||--}o MediaObject : "encodings"
 NoteDigitalDocument ||--}o CreativeWork : "exampleOfWork"
 NoteDigitalDocument ||--}o Grant : "funding"
-NoteDigitalDocument ||--}o Text : "headline"
 NoteDigitalDocument ||--}o InteractionCounter : "interactionStatistic"
-NoteDigitalDocument ||--}o Text : "interactivityType"
-NoteDigitalDocument ||--}o Boolean : "isAccessibleForFree"
-NoteDigitalDocument ||--}o Boolean : "isFamilyFriendly"
 NoteDigitalDocument ||--}o Place : "locationCreated"
 NoteDigitalDocument ||--}o Thing : "mentions"
 NoteDigitalDocument ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ NoteDigitalDocument ||--}o Event : "recordedAt"
 NoteDigitalDocument ||--}o PublicationEvent : "releasedEvent"
 NoteDigitalDocument ||--}o Review : "review"
 NoteDigitalDocument ||--}o Review : "reviews"
-NoteDigitalDocument ||--}o Date : "sdDatePublished"
 NoteDigitalDocument ||--}o Organization : "sourceOrganization"
 NoteDigitalDocument ||--}o Place : "spatial"
-NoteDigitalDocument ||--}o Text : "text"
 NoteDigitalDocument ||--}o ImageObject : "thumbnail"
-NoteDigitalDocument ||--}o URL : "thumbnailUrl"
 NoteDigitalDocument ||--}o Duration : "timeRequired"
 NoteDigitalDocument ||--}o CreativeWork : "translationOfWork"
-NoteDigitalDocument ||--}o Text : "typicalAgeRange"
 NoteDigitalDocument ||--}o CreativeWork : "workTranslation"
-NoteDigitalDocument ||--}o Text : "alternateName"
-NoteDigitalDocument ||--}o Text : "disambiguatingDescription"
-NoteDigitalDocument ||--}o Text : "name"
-NoteDigitalDocument ||--}o URL : "sameAs"
 NoteDigitalDocument ||--}o Action : "potentialAction"
-NoteDigitalDocument ||--}o URL : "url"
 

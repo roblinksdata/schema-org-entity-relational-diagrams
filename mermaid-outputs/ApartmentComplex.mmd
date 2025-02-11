@@ -2,9 +2,14 @@ erDiagram
 ApartmentComplex {
     stringList numberOfBedrooms  
     stringList petsAllowed  
+    URLList tourBookingPage  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -16,54 +21,49 @@ ApartmentComplex {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ApartmentComplex ||--}o QuantitativeValue : "numberOfAccommodationUnits"
 ApartmentComplex ||--}o QuantitativeValue : "numberOfAvailableAccommodationUnits"
-ApartmentComplex ||--}o URL : "tourBookingPage"
 ApartmentComplex ||--}o FloorPlan : "accommodationFloorPlan"
-ApartmentComplex ||--}o Text : "globalLocationNumber"
-ApartmentComplex ||--}o URL : "hasGS1DigitalLink"
 ApartmentComplex ||--}o PropertyValue : "additionalProperty"
 ApartmentComplex ||--}o AggregateRating : "aggregateRating"
 ApartmentComplex ||--}o LocationFeatureSpecification : "amenityFeature"
-ApartmentComplex ||--}o Text : "branchCode"
 ApartmentComplex ||--}o Place : "containedIn"
 ApartmentComplex ||--}o Place : "containedInPlace"
 ApartmentComplex ||--}o Place : "containsPlace"
 ApartmentComplex ||--}o Event : "event"
 ApartmentComplex ||--}o Event : "events"
-ApartmentComplex ||--}o Text : "faxNumber"
 ApartmentComplex ||--}o Certification : "hasCertification"
-ApartmentComplex ||--}o Boolean : "hasDriveThroughService"
-ApartmentComplex ||--}o Boolean : "isAccessibleForFree"
-ApartmentComplex ||--}o Text : "isicV4"
-ApartmentComplex ||--}o URL : "map"
-ApartmentComplex ||--}o URL : "maps"
-ApartmentComplex ||--}o Integer : "maximumAttendeeCapacity"
 ApartmentComplex ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-ApartmentComplex ||--}o Boolean : "publicAccess"
 ApartmentComplex ||--}o Review : "review"
 ApartmentComplex ||--}o Review : "reviews"
-ApartmentComplex ||--}o Text : "slogan"
-ApartmentComplex ||--}o Boolean : "smokingAllowed"
 ApartmentComplex ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-ApartmentComplex ||--}o Text : "telephone"
-ApartmentComplex ||--}o Text : "alternateName"
-ApartmentComplex ||--}o Text : "disambiguatingDescription"
-ApartmentComplex ||--}o Text : "name"
-ApartmentComplex ||--}o URL : "sameAs"
 ApartmentComplex ||--}o Action : "potentialAction"
-ApartmentComplex ||--}o URL : "url"
 

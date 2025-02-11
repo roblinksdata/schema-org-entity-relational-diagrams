@@ -1,8 +1,16 @@
 erDiagram
 SportsClub {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ SportsClub {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SportsClub ||--}o Organization : "branchOf"
-SportsClub ||--}o Text : "currenciesAccepted"
-SportsClub ||--}o Text : "openingHours"
-SportsClub ||--}o Text : "paymentAccepted"
-SportsClub ||--}o Text : "priceRange"
-SportsClub ||--}o Text : "globalLocationNumber"
-SportsClub ||--}o URL : "hasGS1DigitalLink"
 SportsClub ||--}o PropertyValue : "additionalProperty"
 SportsClub ||--}o AggregateRating : "aggregateRating"
 SportsClub ||--}o LocationFeatureSpecification : "amenityFeature"
-SportsClub ||--}o Text : "branchCode"
 SportsClub ||--}o Place : "containedIn"
 SportsClub ||--}o Place : "containedInPlace"
 SportsClub ||--}o Place : "containsPlace"
 SportsClub ||--}o Event : "event"
 SportsClub ||--}o Event : "events"
-SportsClub ||--}o Text : "faxNumber"
 SportsClub ||--}o Certification : "hasCertification"
-SportsClub ||--}o Boolean : "hasDriveThroughService"
-SportsClub ||--}o Boolean : "isAccessibleForFree"
-SportsClub ||--}o Text : "isicV4"
-SportsClub ||--}o URL : "map"
-SportsClub ||--}o URL : "maps"
-SportsClub ||--}o Integer : "maximumAttendeeCapacity"
 SportsClub ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-SportsClub ||--}o Boolean : "publicAccess"
 SportsClub ||--}o Review : "review"
 SportsClub ||--}o Review : "reviews"
-SportsClub ||--}o Text : "slogan"
-SportsClub ||--}o Boolean : "smokingAllowed"
 SportsClub ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-SportsClub ||--}o Text : "telephone"
-SportsClub ||--}o URL : "tourBookingPage"
-SportsClub ||--}o Text : "duns"
-SportsClub ||--}o Text : "leiCode"
-SportsClub ||--}o Text : "taxID"
 SportsClub ||--}o InteractionCounter : "agentInteractionStatistic"
 SportsClub ||--}o Person : "alumni"
-SportsClub ||--}o Text : "award"
-SportsClub ||--}o Text : "awards"
 SportsClub ||--}o ContactPoint : "contactPoint"
 SportsClub ||--}o ContactPoint : "contactPoints"
 SportsClub ||--}o Organization : "department"
-SportsClub ||--}o Date : "dissolutionDate"
-SportsClub ||--}o Text : "email"
 SportsClub ||--}o Person : "employee"
 SportsClub ||--}o Person : "employees"
 SportsClub ||--}o Person : "founders"
-SportsClub ||--}o Date : "foundingDate"
 SportsClub ||--}o Place : "foundingLocation"
 SportsClub ||--}o Grant : "funding"
 SportsClub ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ SportsClub ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 SportsClub ||--}o OfferCatalog : "hasOfferCatalog"
 SportsClub ||--}o Place : "hasPOS"
 SportsClub ||--}o InteractionCounter : "interactionStatistic"
-SportsClub ||--}o Text : "iso6523Code"
-SportsClub ||--}o Text : "legalName"
 SportsClub ||--}o Offer : "makesOffer"
-SportsClub ||--}o Text : "naics"
 SportsClub ||--}o NonprofitType : "nonprofitStatus"
 SportsClub ||--}o QuantitativeValue : "numberOfEmployees"
 SportsClub ||--}o Organization : "parentOrganization"
 SportsClub ||--}o Demand : "seeks"
 SportsClub ||--}o Organization : "subOrganization"
-SportsClub ||--}o Text : "vatID"
-SportsClub ||--}o Text : "alternateName"
-SportsClub ||--}o Text : "disambiguatingDescription"
-SportsClub ||--}o Text : "name"
-SportsClub ||--}o URL : "sameAs"
 SportsClub ||--}o Action : "potentialAction"
-SportsClub ||--}o URL : "url"
 

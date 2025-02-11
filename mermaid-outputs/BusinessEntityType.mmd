@@ -2,17 +2,17 @@ erDiagram
 BusinessEntityType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BusinessEntityType ||--}o Text : "alternateName"
-BusinessEntityType ||--}o Text : "disambiguatingDescription"
-BusinessEntityType ||--}o Text : "name"
-BusinessEntityType ||--}o URL : "sameAs"
 BusinessEntityType ||--}o Action : "potentialAction"
-BusinessEntityType ||--}o URL : "url"
 

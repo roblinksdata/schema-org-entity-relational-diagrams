@@ -1,15 +1,23 @@
 erDiagram
 PhysicalTherapy {
     stringList contraindication  
+    TextList bodyLocation  
+    TextList followup  
+    TextList howPerformed  
     stringList preparation  
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 PhysicalTherapy ||--}o MedicalTherapy : "duplicateTherapy"
@@ -17,9 +25,6 @@ PhysicalTherapy ||--}o MedicalEntity : "seriousAdverseOutcome"
 PhysicalTherapy ||--}o MedicalEntity : "adverseOutcome"
 PhysicalTherapy ||--}o DoseSchedule : "doseSchedule"
 PhysicalTherapy ||--}o Drug : "drug"
-PhysicalTherapy ||--}o Text : "bodyLocation"
-PhysicalTherapy ||--}o Text : "followup"
-PhysicalTherapy ||--}o Text : "howPerformed"
 PhysicalTherapy ||--}o MedicalProcedureType : "procedureType"
 PhysicalTherapy ||--}o MedicalCode : "code"
 PhysicalTherapy ||--}o Grant : "funding"
@@ -28,10 +33,5 @@ PhysicalTherapy ||--}o MedicineSystem : "medicineSystem"
 PhysicalTherapy ||--}o Organization : "recognizingAuthority"
 PhysicalTherapy ||--}o MedicalSpecialty : "relevantSpecialty"
 PhysicalTherapy ||--}o MedicalStudy : "study"
-PhysicalTherapy ||--}o Text : "alternateName"
-PhysicalTherapy ||--}o Text : "disambiguatingDescription"
-PhysicalTherapy ||--}o Text : "name"
-PhysicalTherapy ||--}o URL : "sameAs"
 PhysicalTherapy ||--}o Action : "potentialAction"
-PhysicalTherapy ||--}o URL : "url"
 

@@ -1,6 +1,7 @@
 erDiagram
 CourseInstance {
     stringList courseMode  
+    TextList courseWorkload  
     stringList actor  
     stringList contributor  
     stringList funder  
@@ -12,23 +13,34 @@ CourseInstance {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CourseInstance ||--}o Schedule : "courseSchedule"
-CourseInstance ||--}o Text : "courseWorkload"
 CourseInstance ||--}o Person : "instructor"
 CourseInstance ||--}o Thing : "about"
 CourseInstance ||--}o Duration : "duration"
@@ -41,22 +53,10 @@ CourseInstance ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 CourseInstance ||--}o Schedule : "eventSchedule"
 CourseInstance ||--}o EventStatusType : "eventStatus"
 CourseInstance ||--}o Grant : "funding"
-CourseInstance ||--}o Boolean : "isAccessibleForFree"
-CourseInstance ||--}o Integer : "maximumAttendeeCapacity"
-CourseInstance ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-CourseInstance ||--}o Integer : "maximumVirtualAttendeeCapacity"
-CourseInstance ||--}o Date : "previousStartDate"
 CourseInstance ||--}o CreativeWork : "recordedIn"
-CourseInstance ||--}o Integer : "remainingAttendeeCapacity"
 CourseInstance ||--}o Review : "review"
 CourseInstance ||--}o Event : "subEvent"
 CourseInstance ||--}o Event : "subEvents"
 CourseInstance ||--}o Event : "superEvent"
-CourseInstance ||--}o Text : "typicalAgeRange"
-CourseInstance ||--}o Text : "alternateName"
-CourseInstance ||--}o Text : "disambiguatingDescription"
-CourseInstance ||--}o Text : "name"
-CourseInstance ||--}o URL : "sameAs"
 CourseInstance ||--}o Action : "potentialAction"
-CourseInstance ||--}o URL : "url"
 

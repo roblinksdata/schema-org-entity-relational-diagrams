@@ -8,11 +8,16 @@ ConsumeAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ConsumeAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
@@ -23,10 +28,5 @@ ConsumeAction ||--}o Thing : "result"
 ConsumeAction ||--}o HowTo : "actionProcess"
 ConsumeAction ||--}o ActionStatusType : "actionStatus"
 ConsumeAction ||--}o Thing : "error"
-ConsumeAction ||--}o Text : "alternateName"
-ConsumeAction ||--}o Text : "disambiguatingDescription"
-ConsumeAction ||--}o Text : "name"
-ConsumeAction ||--}o URL : "sameAs"
 ConsumeAction ||--}o Action : "potentialAction"
-ConsumeAction ||--}o URL : "url"
 

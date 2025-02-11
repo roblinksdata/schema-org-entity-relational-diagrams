@@ -1,8 +1,16 @@
 erDiagram
 GasStation {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ GasStation {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 GasStation ||--}o Organization : "branchOf"
-GasStation ||--}o Text : "currenciesAccepted"
-GasStation ||--}o Text : "openingHours"
-GasStation ||--}o Text : "paymentAccepted"
-GasStation ||--}o Text : "priceRange"
-GasStation ||--}o Text : "globalLocationNumber"
-GasStation ||--}o URL : "hasGS1DigitalLink"
 GasStation ||--}o PropertyValue : "additionalProperty"
 GasStation ||--}o AggregateRating : "aggregateRating"
 GasStation ||--}o LocationFeatureSpecification : "amenityFeature"
-GasStation ||--}o Text : "branchCode"
 GasStation ||--}o Place : "containedIn"
 GasStation ||--}o Place : "containedInPlace"
 GasStation ||--}o Place : "containsPlace"
 GasStation ||--}o Event : "event"
 GasStation ||--}o Event : "events"
-GasStation ||--}o Text : "faxNumber"
 GasStation ||--}o Certification : "hasCertification"
-GasStation ||--}o Boolean : "hasDriveThroughService"
-GasStation ||--}o Boolean : "isAccessibleForFree"
-GasStation ||--}o Text : "isicV4"
-GasStation ||--}o URL : "map"
-GasStation ||--}o URL : "maps"
-GasStation ||--}o Integer : "maximumAttendeeCapacity"
 GasStation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-GasStation ||--}o Boolean : "publicAccess"
 GasStation ||--}o Review : "review"
 GasStation ||--}o Review : "reviews"
-GasStation ||--}o Text : "slogan"
-GasStation ||--}o Boolean : "smokingAllowed"
 GasStation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-GasStation ||--}o Text : "telephone"
-GasStation ||--}o URL : "tourBookingPage"
-GasStation ||--}o Text : "duns"
-GasStation ||--}o Text : "leiCode"
-GasStation ||--}o Text : "taxID"
 GasStation ||--}o InteractionCounter : "agentInteractionStatistic"
 GasStation ||--}o Person : "alumni"
-GasStation ||--}o Text : "award"
-GasStation ||--}o Text : "awards"
 GasStation ||--}o ContactPoint : "contactPoint"
 GasStation ||--}o ContactPoint : "contactPoints"
 GasStation ||--}o Organization : "department"
-GasStation ||--}o Date : "dissolutionDate"
-GasStation ||--}o Text : "email"
 GasStation ||--}o Person : "employee"
 GasStation ||--}o Person : "employees"
 GasStation ||--}o Person : "founders"
-GasStation ||--}o Date : "foundingDate"
 GasStation ||--}o Place : "foundingLocation"
 GasStation ||--}o Grant : "funding"
 GasStation ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ GasStation ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 GasStation ||--}o OfferCatalog : "hasOfferCatalog"
 GasStation ||--}o Place : "hasPOS"
 GasStation ||--}o InteractionCounter : "interactionStatistic"
-GasStation ||--}o Text : "iso6523Code"
-GasStation ||--}o Text : "legalName"
 GasStation ||--}o Offer : "makesOffer"
-GasStation ||--}o Text : "naics"
 GasStation ||--}o NonprofitType : "nonprofitStatus"
 GasStation ||--}o QuantitativeValue : "numberOfEmployees"
 GasStation ||--}o Organization : "parentOrganization"
 GasStation ||--}o Demand : "seeks"
 GasStation ||--}o Organization : "subOrganization"
-GasStation ||--}o Text : "vatID"
-GasStation ||--}o Text : "alternateName"
-GasStation ||--}o Text : "disambiguatingDescription"
-GasStation ||--}o Text : "name"
-GasStation ||--}o URL : "sameAs"
 GasStation ||--}o Action : "potentialAction"
-GasStation ||--}o URL : "url"
 

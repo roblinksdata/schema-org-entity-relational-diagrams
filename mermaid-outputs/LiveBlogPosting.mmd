@@ -1,9 +1,15 @@
 erDiagram
 LiveBlogPosting {
+    DateTimeList coverageEndTime  
+    DateTimeList coverageStartTime  
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -17,25 +23,46 @@ LiveBlogPosting {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,31 +74,34 @@ LiveBlogPosting {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-LiveBlogPosting ||--}o DateTime : "coverageEndTime"
-LiveBlogPosting ||--}o DateTime : "coverageStartTime"
 LiveBlogPosting ||--}o BlogPosting : "liveBlogUpdate"
 LiveBlogPosting ||--}o CreativeWork : "sharedContent"
-LiveBlogPosting ||--}o Text : "articleBody"
-LiveBlogPosting ||--}o Text : "articleSection"
-LiveBlogPosting ||--}o Text : "pagination"
-LiveBlogPosting ||--}o Integer : "wordCount"
 LiveBlogPosting ||--}o Thing : "about"
 LiveBlogPosting ||--}o Place : "contentLocation"
 LiveBlogPosting ||--}o CreativeWork : "hasPart"
@@ -79,43 +109,22 @@ LiveBlogPosting ||--}o Claim : "interpretedAsClaim"
 LiveBlogPosting ||--}o Thing : "mainEntity"
 LiveBlogPosting ||--}o Place : "spatialCoverage"
 LiveBlogPosting ||--}o CreativeWork : "workExample"
-LiveBlogPosting ||--}o Text : "abstract"
-LiveBlogPosting ||--}o Text : "accessMode"
 LiveBlogPosting ||--}o ItemList : "accessModeSufficient"
-LiveBlogPosting ||--}o Text : "accessibilityAPI"
-LiveBlogPosting ||--}o Text : "accessibilityControl"
-LiveBlogPosting ||--}o Text : "accessibilityFeature"
-LiveBlogPosting ||--}o Text : "accessibilityHazard"
-LiveBlogPosting ||--}o Text : "accessibilitySummary"
 LiveBlogPosting ||--}o Person : "accountablePerson"
 LiveBlogPosting ||--}o AggregateRating : "aggregateRating"
-LiveBlogPosting ||--}o Text : "alternativeHeadline"
 LiveBlogPosting ||--}o MediaObject : "associatedMedia"
 LiveBlogPosting ||--}o Audience : "audience"
-LiveBlogPosting ||--}o Text : "award"
-LiveBlogPosting ||--}o Text : "awards"
 LiveBlogPosting ||--}o Person : "character"
 LiveBlogPosting ||--}o Comment : "comment"
-LiveBlogPosting ||--}o Integer : "commentCount"
-LiveBlogPosting ||--}o Text : "conditionsOfAccess"
-LiveBlogPosting ||--}o DateTime : "contentReferenceTime"
-LiveBlogPosting ||--}o Text : "copyrightNotice"
-LiveBlogPosting ||--}o Number : "copyrightYear"
 LiveBlogPosting ||--}o Country : "countryOfOrigin"
-LiveBlogPosting ||--}o Text : "creditText"
 LiveBlogPosting ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-LiveBlogPosting ||--}o URL : "discussionUrl"
 LiveBlogPosting ||--}o Person : "editor"
 LiveBlogPosting ||--}o AlignmentObject : "educationalAlignment"
 LiveBlogPosting ||--}o MediaObject : "encoding"
 LiveBlogPosting ||--}o MediaObject : "encodings"
 LiveBlogPosting ||--}o CreativeWork : "exampleOfWork"
 LiveBlogPosting ||--}o Grant : "funding"
-LiveBlogPosting ||--}o Text : "headline"
 LiveBlogPosting ||--}o InteractionCounter : "interactionStatistic"
-LiveBlogPosting ||--}o Text : "interactivityType"
-LiveBlogPosting ||--}o Boolean : "isAccessibleForFree"
-LiveBlogPosting ||--}o Boolean : "isFamilyFriendly"
 LiveBlogPosting ||--}o Place : "locationCreated"
 LiveBlogPosting ||--}o Thing : "mentions"
 LiveBlogPosting ||--}o PublicationEvent : "publication"
@@ -124,20 +133,11 @@ LiveBlogPosting ||--}o Event : "recordedAt"
 LiveBlogPosting ||--}o PublicationEvent : "releasedEvent"
 LiveBlogPosting ||--}o Review : "review"
 LiveBlogPosting ||--}o Review : "reviews"
-LiveBlogPosting ||--}o Date : "sdDatePublished"
 LiveBlogPosting ||--}o Organization : "sourceOrganization"
 LiveBlogPosting ||--}o Place : "spatial"
-LiveBlogPosting ||--}o Text : "text"
 LiveBlogPosting ||--}o ImageObject : "thumbnail"
-LiveBlogPosting ||--}o URL : "thumbnailUrl"
 LiveBlogPosting ||--}o Duration : "timeRequired"
 LiveBlogPosting ||--}o CreativeWork : "translationOfWork"
-LiveBlogPosting ||--}o Text : "typicalAgeRange"
 LiveBlogPosting ||--}o CreativeWork : "workTranslation"
-LiveBlogPosting ||--}o Text : "alternateName"
-LiveBlogPosting ||--}o Text : "disambiguatingDescription"
-LiveBlogPosting ||--}o Text : "name"
-LiveBlogPosting ||--}o URL : "sameAs"
 LiveBlogPosting ||--}o Action : "potentialAction"
-LiveBlogPosting ||--}o URL : "url"
 

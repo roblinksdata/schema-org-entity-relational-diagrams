@@ -19,23 +19,44 @@ Certification {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,21 +68,30 @@ Certification {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Certification ||--}o Thing : "about"
@@ -76,43 +106,22 @@ Certification ||--}o Claim : "interpretedAsClaim"
 Certification ||--}o Thing : "mainEntity"
 Certification ||--}o Place : "spatialCoverage"
 Certification ||--}o CreativeWork : "workExample"
-Certification ||--}o Text : "abstract"
-Certification ||--}o Text : "accessMode"
 Certification ||--}o ItemList : "accessModeSufficient"
-Certification ||--}o Text : "accessibilityAPI"
-Certification ||--}o Text : "accessibilityControl"
-Certification ||--}o Text : "accessibilityFeature"
-Certification ||--}o Text : "accessibilityHazard"
-Certification ||--}o Text : "accessibilitySummary"
 Certification ||--}o Person : "accountablePerson"
 Certification ||--}o AggregateRating : "aggregateRating"
-Certification ||--}o Text : "alternativeHeadline"
 Certification ||--}o MediaObject : "associatedMedia"
 Certification ||--}o Audience : "audience"
-Certification ||--}o Text : "award"
-Certification ||--}o Text : "awards"
 Certification ||--}o Person : "character"
 Certification ||--}o Comment : "comment"
-Certification ||--}o Integer : "commentCount"
-Certification ||--}o Text : "conditionsOfAccess"
-Certification ||--}o DateTime : "contentReferenceTime"
-Certification ||--}o Text : "copyrightNotice"
-Certification ||--}o Number : "copyrightYear"
 Certification ||--}o Country : "countryOfOrigin"
-Certification ||--}o Text : "creditText"
 Certification ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Certification ||--}o URL : "discussionUrl"
 Certification ||--}o Person : "editor"
 Certification ||--}o AlignmentObject : "educationalAlignment"
 Certification ||--}o MediaObject : "encoding"
 Certification ||--}o MediaObject : "encodings"
 Certification ||--}o CreativeWork : "exampleOfWork"
 Certification ||--}o Grant : "funding"
-Certification ||--}o Text : "headline"
 Certification ||--}o InteractionCounter : "interactionStatistic"
-Certification ||--}o Text : "interactivityType"
-Certification ||--}o Boolean : "isAccessibleForFree"
-Certification ||--}o Boolean : "isFamilyFriendly"
 Certification ||--}o Place : "locationCreated"
 Certification ||--}o Thing : "mentions"
 Certification ||--}o PublicationEvent : "publication"
@@ -121,20 +130,11 @@ Certification ||--}o Event : "recordedAt"
 Certification ||--}o PublicationEvent : "releasedEvent"
 Certification ||--}o Review : "review"
 Certification ||--}o Review : "reviews"
-Certification ||--}o Date : "sdDatePublished"
 Certification ||--}o Organization : "sourceOrganization"
 Certification ||--}o Place : "spatial"
-Certification ||--}o Text : "text"
 Certification ||--}o ImageObject : "thumbnail"
-Certification ||--}o URL : "thumbnailUrl"
 Certification ||--}o Duration : "timeRequired"
 Certification ||--}o CreativeWork : "translationOfWork"
-Certification ||--}o Text : "typicalAgeRange"
 Certification ||--}o CreativeWork : "workTranslation"
-Certification ||--}o Text : "alternateName"
-Certification ||--}o Text : "disambiguatingDescription"
-Certification ||--}o Text : "name"
-Certification ||--}o URL : "sameAs"
 Certification ||--}o Action : "potentialAction"
-Certification ||--}o URL : "url"
 

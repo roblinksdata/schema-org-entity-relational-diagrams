@@ -1,8 +1,13 @@
 erDiagram
 DefenceEstablishment {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ DefenceEstablishment {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DefenceEstablishment ||--}o Text : "openingHours"
-DefenceEstablishment ||--}o Text : "globalLocationNumber"
-DefenceEstablishment ||--}o URL : "hasGS1DigitalLink"
 DefenceEstablishment ||--}o PropertyValue : "additionalProperty"
 DefenceEstablishment ||--}o AggregateRating : "aggregateRating"
 DefenceEstablishment ||--}o LocationFeatureSpecification : "amenityFeature"
-DefenceEstablishment ||--}o Text : "branchCode"
 DefenceEstablishment ||--}o Place : "containedIn"
 DefenceEstablishment ||--}o Place : "containedInPlace"
 DefenceEstablishment ||--}o Place : "containsPlace"
 DefenceEstablishment ||--}o Event : "event"
 DefenceEstablishment ||--}o Event : "events"
-DefenceEstablishment ||--}o Text : "faxNumber"
 DefenceEstablishment ||--}o Certification : "hasCertification"
-DefenceEstablishment ||--}o Boolean : "hasDriveThroughService"
-DefenceEstablishment ||--}o Boolean : "isAccessibleForFree"
-DefenceEstablishment ||--}o Text : "isicV4"
-DefenceEstablishment ||--}o URL : "map"
-DefenceEstablishment ||--}o URL : "maps"
-DefenceEstablishment ||--}o Integer : "maximumAttendeeCapacity"
 DefenceEstablishment ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-DefenceEstablishment ||--}o Boolean : "publicAccess"
 DefenceEstablishment ||--}o Review : "review"
 DefenceEstablishment ||--}o Review : "reviews"
-DefenceEstablishment ||--}o Text : "slogan"
-DefenceEstablishment ||--}o Boolean : "smokingAllowed"
 DefenceEstablishment ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-DefenceEstablishment ||--}o Text : "telephone"
-DefenceEstablishment ||--}o URL : "tourBookingPage"
-DefenceEstablishment ||--}o Text : "alternateName"
-DefenceEstablishment ||--}o Text : "disambiguatingDescription"
-DefenceEstablishment ||--}o Text : "name"
-DefenceEstablishment ||--}o URL : "sameAs"
 DefenceEstablishment ||--}o Action : "potentialAction"
-DefenceEstablishment ||--}o URL : "url"
 

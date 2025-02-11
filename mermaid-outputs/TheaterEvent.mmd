@@ -11,19 +11,31 @@ TheaterEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TheaterEvent ||--}o Thing : "about"
@@ -37,22 +49,10 @@ TheaterEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 TheaterEvent ||--}o Schedule : "eventSchedule"
 TheaterEvent ||--}o EventStatusType : "eventStatus"
 TheaterEvent ||--}o Grant : "funding"
-TheaterEvent ||--}o Boolean : "isAccessibleForFree"
-TheaterEvent ||--}o Integer : "maximumAttendeeCapacity"
-TheaterEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-TheaterEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-TheaterEvent ||--}o Date : "previousStartDate"
 TheaterEvent ||--}o CreativeWork : "recordedIn"
-TheaterEvent ||--}o Integer : "remainingAttendeeCapacity"
 TheaterEvent ||--}o Review : "review"
 TheaterEvent ||--}o Event : "subEvent"
 TheaterEvent ||--}o Event : "subEvents"
 TheaterEvent ||--}o Event : "superEvent"
-TheaterEvent ||--}o Text : "typicalAgeRange"
-TheaterEvent ||--}o Text : "alternateName"
-TheaterEvent ||--}o Text : "disambiguatingDescription"
-TheaterEvent ||--}o Text : "name"
-TheaterEvent ||--}o URL : "sameAs"
 TheaterEvent ||--}o Action : "potentialAction"
-TheaterEvent ||--}o URL : "url"
 

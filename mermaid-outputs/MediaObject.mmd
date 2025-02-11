@@ -1,9 +1,15 @@
 erDiagram
 MediaObject {
+    TextList sha256  
+    TextList bitrate  
+    TextList contentSize  
+    URLList contentUrl  
+    URLList embedUrl  
     stringList encodingFormat  
     stringList endTime  
     stringList height  
     stringList ineligibleRegion  
+    TextList playerType  
     stringList requiresSubscription  
     stringList startTime  
     stringList uploadDate  
@@ -21,24 +27,45 @@ MediaObject {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -50,33 +77,36 @@ MediaObject {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MediaObject ||--}o Duration : "duration"
 MediaObject ||--}o Claim : "interpretedAsClaim"
-MediaObject ||--}o Text : "sha256"
 MediaObject ||--}o NewsArticle : "associatedArticle"
-MediaObject ||--}o Text : "bitrate"
-MediaObject ||--}o Text : "contentSize"
-MediaObject ||--}o URL : "contentUrl"
-MediaObject ||--}o URL : "embedUrl"
 MediaObject ||--}o CreativeWork : "encodesCreativeWork"
-MediaObject ||--}o Text : "playerType"
 MediaObject ||--}o Organization : "productionCompany"
 MediaObject ||--}o Place : "regionsAllowed"
 MediaObject ||--}o Thing : "about"
@@ -85,43 +115,22 @@ MediaObject ||--}o CreativeWork : "hasPart"
 MediaObject ||--}o Thing : "mainEntity"
 MediaObject ||--}o Place : "spatialCoverage"
 MediaObject ||--}o CreativeWork : "workExample"
-MediaObject ||--}o Text : "abstract"
-MediaObject ||--}o Text : "accessMode"
 MediaObject ||--}o ItemList : "accessModeSufficient"
-MediaObject ||--}o Text : "accessibilityAPI"
-MediaObject ||--}o Text : "accessibilityControl"
-MediaObject ||--}o Text : "accessibilityFeature"
-MediaObject ||--}o Text : "accessibilityHazard"
-MediaObject ||--}o Text : "accessibilitySummary"
 MediaObject ||--}o Person : "accountablePerson"
 MediaObject ||--}o AggregateRating : "aggregateRating"
-MediaObject ||--}o Text : "alternativeHeadline"
 MediaObject ||--}o MediaObject : "associatedMedia"
 MediaObject ||--}o Audience : "audience"
-MediaObject ||--}o Text : "award"
-MediaObject ||--}o Text : "awards"
 MediaObject ||--}o Person : "character"
 MediaObject ||--}o Comment : "comment"
-MediaObject ||--}o Integer : "commentCount"
-MediaObject ||--}o Text : "conditionsOfAccess"
-MediaObject ||--}o DateTime : "contentReferenceTime"
-MediaObject ||--}o Text : "copyrightNotice"
-MediaObject ||--}o Number : "copyrightYear"
 MediaObject ||--}o Country : "countryOfOrigin"
-MediaObject ||--}o Text : "creditText"
 MediaObject ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-MediaObject ||--}o URL : "discussionUrl"
 MediaObject ||--}o Person : "editor"
 MediaObject ||--}o AlignmentObject : "educationalAlignment"
 MediaObject ||--}o MediaObject : "encoding"
 MediaObject ||--}o MediaObject : "encodings"
 MediaObject ||--}o CreativeWork : "exampleOfWork"
 MediaObject ||--}o Grant : "funding"
-MediaObject ||--}o Text : "headline"
 MediaObject ||--}o InteractionCounter : "interactionStatistic"
-MediaObject ||--}o Text : "interactivityType"
-MediaObject ||--}o Boolean : "isAccessibleForFree"
-MediaObject ||--}o Boolean : "isFamilyFriendly"
 MediaObject ||--}o Place : "locationCreated"
 MediaObject ||--}o Thing : "mentions"
 MediaObject ||--}o PublicationEvent : "publication"
@@ -130,20 +139,11 @@ MediaObject ||--}o Event : "recordedAt"
 MediaObject ||--}o PublicationEvent : "releasedEvent"
 MediaObject ||--}o Review : "review"
 MediaObject ||--}o Review : "reviews"
-MediaObject ||--}o Date : "sdDatePublished"
 MediaObject ||--}o Organization : "sourceOrganization"
 MediaObject ||--}o Place : "spatial"
-MediaObject ||--}o Text : "text"
 MediaObject ||--}o ImageObject : "thumbnail"
-MediaObject ||--}o URL : "thumbnailUrl"
 MediaObject ||--}o Duration : "timeRequired"
 MediaObject ||--}o CreativeWork : "translationOfWork"
-MediaObject ||--}o Text : "typicalAgeRange"
 MediaObject ||--}o CreativeWork : "workTranslation"
-MediaObject ||--}o Text : "alternateName"
-MediaObject ||--}o Text : "disambiguatingDescription"
-MediaObject ||--}o Text : "name"
-MediaObject ||--}o URL : "sameAs"
 MediaObject ||--}o Action : "potentialAction"
-MediaObject ||--}o URL : "url"
 

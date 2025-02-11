@@ -1,24 +1,24 @@
 erDiagram
 EmployeeRole {
     stringList baseSalary  
+    TextList salaryCurrency  
+    NumberList numberedPosition  
     stringList endDate  
     stringList namedPosition  
     stringList roleName  
     stringList startDate  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-EmployeeRole ||--}o Text : "salaryCurrency"
-EmployeeRole ||--}o Number : "numberedPosition"
-EmployeeRole ||--}o Text : "alternateName"
-EmployeeRole ||--}o Text : "disambiguatingDescription"
-EmployeeRole ||--}o Text : "name"
-EmployeeRole ||--}o URL : "sameAs"
 EmployeeRole ||--}o Action : "potentialAction"
-EmployeeRole ||--}o URL : "url"
 

@@ -8,11 +8,16 @@ LeaveAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LeaveAction ||--}o Event : "event"
@@ -22,10 +27,5 @@ LeaveAction ||--}o Thing : "result"
 LeaveAction ||--}o HowTo : "actionProcess"
 LeaveAction ||--}o ActionStatusType : "actionStatus"
 LeaveAction ||--}o Thing : "error"
-LeaveAction ||--}o Text : "alternateName"
-LeaveAction ||--}o Text : "disambiguatingDescription"
-LeaveAction ||--}o Text : "name"
-LeaveAction ||--}o URL : "sameAs"
 LeaveAction ||--}o Action : "potentialAction"
-LeaveAction ||--}o URL : "url"
 

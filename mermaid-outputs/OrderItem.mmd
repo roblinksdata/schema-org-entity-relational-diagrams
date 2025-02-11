@@ -1,22 +1,22 @@
 erDiagram
 OrderItem {
+    TextList orderItemNumber  
     stringList orderQuantity  
     stringList orderedItem  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 OrderItem ||--}o ParcelDelivery : "orderDelivery"
-OrderItem ||--}o Text : "orderItemNumber"
 OrderItem ||--}o OrderStatus : "orderItemStatus"
-OrderItem ||--}o Text : "alternateName"
-OrderItem ||--}o Text : "disambiguatingDescription"
-OrderItem ||--}o Text : "name"
-OrderItem ||--}o URL : "sameAs"
 OrderItem ||--}o Action : "potentialAction"
-OrderItem ||--}o URL : "url"
 

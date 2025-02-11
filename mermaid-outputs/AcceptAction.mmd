@@ -8,11 +8,16 @@ AcceptAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AcceptAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ AcceptAction ||--}o Thing : "result"
 AcceptAction ||--}o HowTo : "actionProcess"
 AcceptAction ||--}o ActionStatusType : "actionStatus"
 AcceptAction ||--}o Thing : "error"
-AcceptAction ||--}o Text : "alternateName"
-AcceptAction ||--}o Text : "disambiguatingDescription"
-AcceptAction ||--}o Text : "name"
-AcceptAction ||--}o URL : "sameAs"
 AcceptAction ||--}o Action : "potentialAction"
-AcceptAction ||--}o URL : "url"
 

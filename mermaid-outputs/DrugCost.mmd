@@ -1,20 +1,25 @@
 erDiagram
 DrugCost {
+    TextList costCurrency  
+    TextList costOrigin  
     stringList costPerUnit  
+    TextList drugUnit  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DrugCost ||--}o AdministrativeArea : "applicableLocation"
 DrugCost ||--}o DrugCostCategory : "costCategory"
-DrugCost ||--}o Text : "costCurrency"
-DrugCost ||--}o Text : "costOrigin"
-DrugCost ||--}o Text : "drugUnit"
 DrugCost ||--}o MedicalCode : "code"
 DrugCost ||--}o Grant : "funding"
 DrugCost ||--}o MedicalGuideline : "guideline"
@@ -22,10 +27,5 @@ DrugCost ||--}o MedicineSystem : "medicineSystem"
 DrugCost ||--}o Organization : "recognizingAuthority"
 DrugCost ||--}o MedicalSpecialty : "relevantSpecialty"
 DrugCost ||--}o MedicalStudy : "study"
-DrugCost ||--}o Text : "alternateName"
-DrugCost ||--}o Text : "disambiguatingDescription"
-DrugCost ||--}o Text : "name"
-DrugCost ||--}o URL : "sameAs"
 DrugCost ||--}o Action : "potentialAction"
-DrugCost ||--}o URL : "url"
 

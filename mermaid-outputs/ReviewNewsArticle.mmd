@@ -1,7 +1,14 @@
 erDiagram
 ReviewNewsArticle {
+    TextList dateline  
+    TextList printColumn  
+    TextList printEdition  
+    TextList printPage  
+    TextList printSection  
     stringList negativeNotes  
     stringList positiveNotes  
+    TextList reviewAspect  
+    TextList reviewBody  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -15,25 +22,46 @@ ReviewNewsArticle {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,38 +73,44 @@ ReviewNewsArticle {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
 }
 
-ReviewNewsArticle ||--}o Text : "dateline"
-ReviewNewsArticle ||--}o Text : "printColumn"
-ReviewNewsArticle ||--}o Text : "printEdition"
-ReviewNewsArticle ||--}o Text : "printPage"
-ReviewNewsArticle ||--}o Text : "printSection"
 ReviewNewsArticle ||--}o Review : "associatedClaimReview"
 ReviewNewsArticle ||--}o Review : "associatedMediaReview"
 ReviewNewsArticle ||--}o Review : "associatedReview"
 ReviewNewsArticle ||--}o Thing : "itemReviewed"
-ReviewNewsArticle ||--}o Text : "reviewAspect"
-ReviewNewsArticle ||--}o Text : "reviewBody"
 ReviewNewsArticle ||--}o Rating : "reviewRating"
 ReviewNewsArticle ||--}o Thing : "about"
 ReviewNewsArticle ||--}o Place : "contentLocation"
@@ -85,43 +119,22 @@ ReviewNewsArticle ||--}o Claim : "interpretedAsClaim"
 ReviewNewsArticle ||--}o Thing : "mainEntity"
 ReviewNewsArticle ||--}o Place : "spatialCoverage"
 ReviewNewsArticle ||--}o CreativeWork : "workExample"
-ReviewNewsArticle ||--}o Text : "abstract"
-ReviewNewsArticle ||--}o Text : "accessMode"
 ReviewNewsArticle ||--}o ItemList : "accessModeSufficient"
-ReviewNewsArticle ||--}o Text : "accessibilityAPI"
-ReviewNewsArticle ||--}o Text : "accessibilityControl"
-ReviewNewsArticle ||--}o Text : "accessibilityFeature"
-ReviewNewsArticle ||--}o Text : "accessibilityHazard"
-ReviewNewsArticle ||--}o Text : "accessibilitySummary"
 ReviewNewsArticle ||--}o Person : "accountablePerson"
 ReviewNewsArticle ||--}o AggregateRating : "aggregateRating"
-ReviewNewsArticle ||--}o Text : "alternativeHeadline"
 ReviewNewsArticle ||--}o MediaObject : "associatedMedia"
 ReviewNewsArticle ||--}o Audience : "audience"
-ReviewNewsArticle ||--}o Text : "award"
-ReviewNewsArticle ||--}o Text : "awards"
 ReviewNewsArticle ||--}o Person : "character"
 ReviewNewsArticle ||--}o Comment : "comment"
-ReviewNewsArticle ||--}o Integer : "commentCount"
-ReviewNewsArticle ||--}o Text : "conditionsOfAccess"
-ReviewNewsArticle ||--}o DateTime : "contentReferenceTime"
-ReviewNewsArticle ||--}o Text : "copyrightNotice"
-ReviewNewsArticle ||--}o Number : "copyrightYear"
 ReviewNewsArticle ||--}o Country : "countryOfOrigin"
-ReviewNewsArticle ||--}o Text : "creditText"
 ReviewNewsArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ReviewNewsArticle ||--}o URL : "discussionUrl"
 ReviewNewsArticle ||--}o Person : "editor"
 ReviewNewsArticle ||--}o AlignmentObject : "educationalAlignment"
 ReviewNewsArticle ||--}o MediaObject : "encoding"
 ReviewNewsArticle ||--}o MediaObject : "encodings"
 ReviewNewsArticle ||--}o CreativeWork : "exampleOfWork"
 ReviewNewsArticle ||--}o Grant : "funding"
-ReviewNewsArticle ||--}o Text : "headline"
 ReviewNewsArticle ||--}o InteractionCounter : "interactionStatistic"
-ReviewNewsArticle ||--}o Text : "interactivityType"
-ReviewNewsArticle ||--}o Boolean : "isAccessibleForFree"
-ReviewNewsArticle ||--}o Boolean : "isFamilyFriendly"
 ReviewNewsArticle ||--}o Place : "locationCreated"
 ReviewNewsArticle ||--}o Thing : "mentions"
 ReviewNewsArticle ||--}o PublicationEvent : "publication"
@@ -130,24 +143,11 @@ ReviewNewsArticle ||--}o Event : "recordedAt"
 ReviewNewsArticle ||--}o PublicationEvent : "releasedEvent"
 ReviewNewsArticle ||--}o Review : "review"
 ReviewNewsArticle ||--}o Review : "reviews"
-ReviewNewsArticle ||--}o Date : "sdDatePublished"
 ReviewNewsArticle ||--}o Organization : "sourceOrganization"
 ReviewNewsArticle ||--}o Place : "spatial"
-ReviewNewsArticle ||--}o Text : "text"
 ReviewNewsArticle ||--}o ImageObject : "thumbnail"
-ReviewNewsArticle ||--}o URL : "thumbnailUrl"
 ReviewNewsArticle ||--}o Duration : "timeRequired"
 ReviewNewsArticle ||--}o CreativeWork : "translationOfWork"
-ReviewNewsArticle ||--}o Text : "typicalAgeRange"
 ReviewNewsArticle ||--}o CreativeWork : "workTranslation"
-ReviewNewsArticle ||--}o Text : "alternateName"
-ReviewNewsArticle ||--}o Text : "disambiguatingDescription"
-ReviewNewsArticle ||--}o Text : "name"
-ReviewNewsArticle ||--}o URL : "sameAs"
 ReviewNewsArticle ||--}o Action : "potentialAction"
-ReviewNewsArticle ||--}o URL : "url"
-ReviewNewsArticle ||--}o Text : "articleBody"
-ReviewNewsArticle ||--}o Text : "articleSection"
-ReviewNewsArticle ||--}o Text : "pagination"
-ReviewNewsArticle ||--}o Integer : "wordCount"
 

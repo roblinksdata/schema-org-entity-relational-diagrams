@@ -1,8 +1,16 @@
 erDiagram
 TravelAgency {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ TravelAgency {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TravelAgency ||--}o Organization : "branchOf"
-TravelAgency ||--}o Text : "currenciesAccepted"
-TravelAgency ||--}o Text : "openingHours"
-TravelAgency ||--}o Text : "paymentAccepted"
-TravelAgency ||--}o Text : "priceRange"
-TravelAgency ||--}o Text : "globalLocationNumber"
-TravelAgency ||--}o URL : "hasGS1DigitalLink"
 TravelAgency ||--}o PropertyValue : "additionalProperty"
 TravelAgency ||--}o AggregateRating : "aggregateRating"
 TravelAgency ||--}o LocationFeatureSpecification : "amenityFeature"
-TravelAgency ||--}o Text : "branchCode"
 TravelAgency ||--}o Place : "containedIn"
 TravelAgency ||--}o Place : "containedInPlace"
 TravelAgency ||--}o Place : "containsPlace"
 TravelAgency ||--}o Event : "event"
 TravelAgency ||--}o Event : "events"
-TravelAgency ||--}o Text : "faxNumber"
 TravelAgency ||--}o Certification : "hasCertification"
-TravelAgency ||--}o Boolean : "hasDriveThroughService"
-TravelAgency ||--}o Boolean : "isAccessibleForFree"
-TravelAgency ||--}o Text : "isicV4"
-TravelAgency ||--}o URL : "map"
-TravelAgency ||--}o URL : "maps"
-TravelAgency ||--}o Integer : "maximumAttendeeCapacity"
 TravelAgency ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-TravelAgency ||--}o Boolean : "publicAccess"
 TravelAgency ||--}o Review : "review"
 TravelAgency ||--}o Review : "reviews"
-TravelAgency ||--}o Text : "slogan"
-TravelAgency ||--}o Boolean : "smokingAllowed"
 TravelAgency ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-TravelAgency ||--}o Text : "telephone"
-TravelAgency ||--}o URL : "tourBookingPage"
-TravelAgency ||--}o Text : "duns"
-TravelAgency ||--}o Text : "leiCode"
-TravelAgency ||--}o Text : "taxID"
 TravelAgency ||--}o InteractionCounter : "agentInteractionStatistic"
 TravelAgency ||--}o Person : "alumni"
-TravelAgency ||--}o Text : "award"
-TravelAgency ||--}o Text : "awards"
 TravelAgency ||--}o ContactPoint : "contactPoint"
 TravelAgency ||--}o ContactPoint : "contactPoints"
 TravelAgency ||--}o Organization : "department"
-TravelAgency ||--}o Date : "dissolutionDate"
-TravelAgency ||--}o Text : "email"
 TravelAgency ||--}o Person : "employee"
 TravelAgency ||--}o Person : "employees"
 TravelAgency ||--}o Person : "founders"
-TravelAgency ||--}o Date : "foundingDate"
 TravelAgency ||--}o Place : "foundingLocation"
 TravelAgency ||--}o Grant : "funding"
 TravelAgency ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ TravelAgency ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 TravelAgency ||--}o OfferCatalog : "hasOfferCatalog"
 TravelAgency ||--}o Place : "hasPOS"
 TravelAgency ||--}o InteractionCounter : "interactionStatistic"
-TravelAgency ||--}o Text : "iso6523Code"
-TravelAgency ||--}o Text : "legalName"
 TravelAgency ||--}o Offer : "makesOffer"
-TravelAgency ||--}o Text : "naics"
 TravelAgency ||--}o NonprofitType : "nonprofitStatus"
 TravelAgency ||--}o QuantitativeValue : "numberOfEmployees"
 TravelAgency ||--}o Organization : "parentOrganization"
 TravelAgency ||--}o Demand : "seeks"
 TravelAgency ||--}o Organization : "subOrganization"
-TravelAgency ||--}o Text : "vatID"
-TravelAgency ||--}o Text : "alternateName"
-TravelAgency ||--}o Text : "disambiguatingDescription"
-TravelAgency ||--}o Text : "name"
-TravelAgency ||--}o URL : "sameAs"
 TravelAgency ||--}o Action : "potentialAction"
-TravelAgency ||--}o URL : "url"
 

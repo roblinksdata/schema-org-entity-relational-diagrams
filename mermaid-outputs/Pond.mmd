@@ -1,8 +1,12 @@
 erDiagram
 Pond {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,51 +18,47 @@ Pond {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Pond ||--}o Text : "globalLocationNumber"
-Pond ||--}o URL : "hasGS1DigitalLink"
 Pond ||--}o PropertyValue : "additionalProperty"
 Pond ||--}o AggregateRating : "aggregateRating"
 Pond ||--}o LocationFeatureSpecification : "amenityFeature"
-Pond ||--}o Text : "branchCode"
 Pond ||--}o Place : "containedIn"
 Pond ||--}o Place : "containedInPlace"
 Pond ||--}o Place : "containsPlace"
 Pond ||--}o Event : "event"
 Pond ||--}o Event : "events"
-Pond ||--}o Text : "faxNumber"
 Pond ||--}o Certification : "hasCertification"
-Pond ||--}o Boolean : "hasDriveThroughService"
-Pond ||--}o Boolean : "isAccessibleForFree"
-Pond ||--}o Text : "isicV4"
-Pond ||--}o URL : "map"
-Pond ||--}o URL : "maps"
-Pond ||--}o Integer : "maximumAttendeeCapacity"
 Pond ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Pond ||--}o Boolean : "publicAccess"
 Pond ||--}o Review : "review"
 Pond ||--}o Review : "reviews"
-Pond ||--}o Text : "slogan"
-Pond ||--}o Boolean : "smokingAllowed"
 Pond ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Pond ||--}o Text : "telephone"
-Pond ||--}o URL : "tourBookingPage"
-Pond ||--}o Text : "alternateName"
-Pond ||--}o Text : "disambiguatingDescription"
-Pond ||--}o Text : "name"
-Pond ||--}o URL : "sameAs"
 Pond ||--}o Action : "potentialAction"
-Pond ||--}o URL : "url"
 

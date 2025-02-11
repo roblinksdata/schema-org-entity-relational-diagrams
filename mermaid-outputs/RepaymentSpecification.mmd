@@ -1,22 +1,22 @@
 erDiagram
 RepaymentSpecification {
     stringList downPayment  
+    NumberList loanPaymentFrequency  
+    NumberList numberOfLoanPayments  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 RepaymentSpecification ||--}o MonetaryAmount : "earlyPrepaymentPenalty"
 RepaymentSpecification ||--}o MonetaryAmount : "loanPaymentAmount"
-RepaymentSpecification ||--}o Number : "loanPaymentFrequency"
-RepaymentSpecification ||--}o Number : "numberOfLoanPayments"
-RepaymentSpecification ||--}o Text : "alternateName"
-RepaymentSpecification ||--}o Text : "disambiguatingDescription"
-RepaymentSpecification ||--}o Text : "name"
-RepaymentSpecification ||--}o URL : "sameAs"
 RepaymentSpecification ||--}o Action : "potentialAction"
-RepaymentSpecification ||--}o URL : "url"
 

@@ -11,19 +11,31 @@ MusicEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MusicEvent ||--}o Thing : "about"
@@ -37,22 +49,10 @@ MusicEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 MusicEvent ||--}o Schedule : "eventSchedule"
 MusicEvent ||--}o EventStatusType : "eventStatus"
 MusicEvent ||--}o Grant : "funding"
-MusicEvent ||--}o Boolean : "isAccessibleForFree"
-MusicEvent ||--}o Integer : "maximumAttendeeCapacity"
-MusicEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-MusicEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-MusicEvent ||--}o Date : "previousStartDate"
 MusicEvent ||--}o CreativeWork : "recordedIn"
-MusicEvent ||--}o Integer : "remainingAttendeeCapacity"
 MusicEvent ||--}o Review : "review"
 MusicEvent ||--}o Event : "subEvent"
 MusicEvent ||--}o Event : "subEvents"
 MusicEvent ||--}o Event : "superEvent"
-MusicEvent ||--}o Text : "typicalAgeRange"
-MusicEvent ||--}o Text : "alternateName"
-MusicEvent ||--}o Text : "disambiguatingDescription"
-MusicEvent ||--}o Text : "name"
-MusicEvent ||--}o URL : "sameAs"
 MusicEvent ||--}o Action : "potentialAction"
-MusicEvent ||--}o URL : "url"
 

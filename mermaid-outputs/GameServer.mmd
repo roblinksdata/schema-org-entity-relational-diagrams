@@ -1,20 +1,20 @@
 erDiagram
 GameServer {
+    IntegerList playersOnline  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 GameServer ||--}o VideoGame : "game"
-GameServer ||--}o Integer : "playersOnline"
 GameServer ||--}o GameServerStatus : "serverStatus"
-GameServer ||--}o Text : "alternateName"
-GameServer ||--}o Text : "disambiguatingDescription"
-GameServer ||--}o Text : "name"
-GameServer ||--}o URL : "sameAs"
 GameServer ||--}o Action : "potentialAction"
-GameServer ||--}o URL : "url"
 

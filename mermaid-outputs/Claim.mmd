@@ -14,25 +14,46 @@ Claim {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -44,21 +65,30 @@ Claim {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Claim ||--}o CreativeWork : "appearance"
@@ -70,43 +100,22 @@ Claim ||--}o Claim : "interpretedAsClaim"
 Claim ||--}o Thing : "mainEntity"
 Claim ||--}o Place : "spatialCoverage"
 Claim ||--}o CreativeWork : "workExample"
-Claim ||--}o Text : "abstract"
-Claim ||--}o Text : "accessMode"
 Claim ||--}o ItemList : "accessModeSufficient"
-Claim ||--}o Text : "accessibilityAPI"
-Claim ||--}o Text : "accessibilityControl"
-Claim ||--}o Text : "accessibilityFeature"
-Claim ||--}o Text : "accessibilityHazard"
-Claim ||--}o Text : "accessibilitySummary"
 Claim ||--}o Person : "accountablePerson"
 Claim ||--}o AggregateRating : "aggregateRating"
-Claim ||--}o Text : "alternativeHeadline"
 Claim ||--}o MediaObject : "associatedMedia"
 Claim ||--}o Audience : "audience"
-Claim ||--}o Text : "award"
-Claim ||--}o Text : "awards"
 Claim ||--}o Person : "character"
 Claim ||--}o Comment : "comment"
-Claim ||--}o Integer : "commentCount"
-Claim ||--}o Text : "conditionsOfAccess"
-Claim ||--}o DateTime : "contentReferenceTime"
-Claim ||--}o Text : "copyrightNotice"
-Claim ||--}o Number : "copyrightYear"
 Claim ||--}o Country : "countryOfOrigin"
-Claim ||--}o Text : "creditText"
 Claim ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Claim ||--}o URL : "discussionUrl"
 Claim ||--}o Person : "editor"
 Claim ||--}o AlignmentObject : "educationalAlignment"
 Claim ||--}o MediaObject : "encoding"
 Claim ||--}o MediaObject : "encodings"
 Claim ||--}o CreativeWork : "exampleOfWork"
 Claim ||--}o Grant : "funding"
-Claim ||--}o Text : "headline"
 Claim ||--}o InteractionCounter : "interactionStatistic"
-Claim ||--}o Text : "interactivityType"
-Claim ||--}o Boolean : "isAccessibleForFree"
-Claim ||--}o Boolean : "isFamilyFriendly"
 Claim ||--}o Place : "locationCreated"
 Claim ||--}o Thing : "mentions"
 Claim ||--}o PublicationEvent : "publication"
@@ -115,20 +124,11 @@ Claim ||--}o Event : "recordedAt"
 Claim ||--}o PublicationEvent : "releasedEvent"
 Claim ||--}o Review : "review"
 Claim ||--}o Review : "reviews"
-Claim ||--}o Date : "sdDatePublished"
 Claim ||--}o Organization : "sourceOrganization"
 Claim ||--}o Place : "spatial"
-Claim ||--}o Text : "text"
 Claim ||--}o ImageObject : "thumbnail"
-Claim ||--}o URL : "thumbnailUrl"
 Claim ||--}o Duration : "timeRequired"
 Claim ||--}o CreativeWork : "translationOfWork"
-Claim ||--}o Text : "typicalAgeRange"
 Claim ||--}o CreativeWork : "workTranslation"
-Claim ||--}o Text : "alternateName"
-Claim ||--}o Text : "disambiguatingDescription"
-Claim ||--}o Text : "name"
-Claim ||--}o URL : "sameAs"
 Claim ||--}o Action : "potentialAction"
-Claim ||--}o URL : "url"
 

@@ -1,8 +1,16 @@
 erDiagram
 ToyStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ ToyStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ToyStore ||--}o Organization : "branchOf"
-ToyStore ||--}o Text : "currenciesAccepted"
-ToyStore ||--}o Text : "openingHours"
-ToyStore ||--}o Text : "paymentAccepted"
-ToyStore ||--}o Text : "priceRange"
-ToyStore ||--}o Text : "globalLocationNumber"
-ToyStore ||--}o URL : "hasGS1DigitalLink"
 ToyStore ||--}o PropertyValue : "additionalProperty"
 ToyStore ||--}o AggregateRating : "aggregateRating"
 ToyStore ||--}o LocationFeatureSpecification : "amenityFeature"
-ToyStore ||--}o Text : "branchCode"
 ToyStore ||--}o Place : "containedIn"
 ToyStore ||--}o Place : "containedInPlace"
 ToyStore ||--}o Place : "containsPlace"
 ToyStore ||--}o Event : "event"
 ToyStore ||--}o Event : "events"
-ToyStore ||--}o Text : "faxNumber"
 ToyStore ||--}o Certification : "hasCertification"
-ToyStore ||--}o Boolean : "hasDriveThroughService"
-ToyStore ||--}o Boolean : "isAccessibleForFree"
-ToyStore ||--}o Text : "isicV4"
-ToyStore ||--}o URL : "map"
-ToyStore ||--}o URL : "maps"
-ToyStore ||--}o Integer : "maximumAttendeeCapacity"
 ToyStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-ToyStore ||--}o Boolean : "publicAccess"
 ToyStore ||--}o Review : "review"
 ToyStore ||--}o Review : "reviews"
-ToyStore ||--}o Text : "slogan"
-ToyStore ||--}o Boolean : "smokingAllowed"
 ToyStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-ToyStore ||--}o Text : "telephone"
-ToyStore ||--}o URL : "tourBookingPage"
-ToyStore ||--}o Text : "duns"
-ToyStore ||--}o Text : "leiCode"
-ToyStore ||--}o Text : "taxID"
 ToyStore ||--}o InteractionCounter : "agentInteractionStatistic"
 ToyStore ||--}o Person : "alumni"
-ToyStore ||--}o Text : "award"
-ToyStore ||--}o Text : "awards"
 ToyStore ||--}o ContactPoint : "contactPoint"
 ToyStore ||--}o ContactPoint : "contactPoints"
 ToyStore ||--}o Organization : "department"
-ToyStore ||--}o Date : "dissolutionDate"
-ToyStore ||--}o Text : "email"
 ToyStore ||--}o Person : "employee"
 ToyStore ||--}o Person : "employees"
 ToyStore ||--}o Person : "founders"
-ToyStore ||--}o Date : "foundingDate"
 ToyStore ||--}o Place : "foundingLocation"
 ToyStore ||--}o Grant : "funding"
 ToyStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ ToyStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 ToyStore ||--}o OfferCatalog : "hasOfferCatalog"
 ToyStore ||--}o Place : "hasPOS"
 ToyStore ||--}o InteractionCounter : "interactionStatistic"
-ToyStore ||--}o Text : "iso6523Code"
-ToyStore ||--}o Text : "legalName"
 ToyStore ||--}o Offer : "makesOffer"
-ToyStore ||--}o Text : "naics"
 ToyStore ||--}o NonprofitType : "nonprofitStatus"
 ToyStore ||--}o QuantitativeValue : "numberOfEmployees"
 ToyStore ||--}o Organization : "parentOrganization"
 ToyStore ||--}o Demand : "seeks"
 ToyStore ||--}o Organization : "subOrganization"
-ToyStore ||--}o Text : "vatID"
-ToyStore ||--}o Text : "alternateName"
-ToyStore ||--}o Text : "disambiguatingDescription"
-ToyStore ||--}o Text : "name"
-ToyStore ||--}o URL : "sameAs"
 ToyStore ||--}o Action : "potentialAction"
-ToyStore ||--}o URL : "url"
 

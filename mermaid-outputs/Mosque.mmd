@@ -1,8 +1,13 @@
 erDiagram
 Mosque {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ Mosque {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Mosque ||--}o Text : "openingHours"
-Mosque ||--}o Text : "globalLocationNumber"
-Mosque ||--}o URL : "hasGS1DigitalLink"
 Mosque ||--}o PropertyValue : "additionalProperty"
 Mosque ||--}o AggregateRating : "aggregateRating"
 Mosque ||--}o LocationFeatureSpecification : "amenityFeature"
-Mosque ||--}o Text : "branchCode"
 Mosque ||--}o Place : "containedIn"
 Mosque ||--}o Place : "containedInPlace"
 Mosque ||--}o Place : "containsPlace"
 Mosque ||--}o Event : "event"
 Mosque ||--}o Event : "events"
-Mosque ||--}o Text : "faxNumber"
 Mosque ||--}o Certification : "hasCertification"
-Mosque ||--}o Boolean : "hasDriveThroughService"
-Mosque ||--}o Boolean : "isAccessibleForFree"
-Mosque ||--}o Text : "isicV4"
-Mosque ||--}o URL : "map"
-Mosque ||--}o URL : "maps"
-Mosque ||--}o Integer : "maximumAttendeeCapacity"
 Mosque ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Mosque ||--}o Boolean : "publicAccess"
 Mosque ||--}o Review : "review"
 Mosque ||--}o Review : "reviews"
-Mosque ||--}o Text : "slogan"
-Mosque ||--}o Boolean : "smokingAllowed"
 Mosque ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Mosque ||--}o Text : "telephone"
-Mosque ||--}o URL : "tourBookingPage"
-Mosque ||--}o Text : "alternateName"
-Mosque ||--}o Text : "disambiguatingDescription"
-Mosque ||--}o Text : "name"
-Mosque ||--}o URL : "sameAs"
 Mosque ||--}o Action : "potentialAction"
-Mosque ||--}o URL : "url"
 

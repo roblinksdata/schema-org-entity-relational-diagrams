@@ -1,5 +1,7 @@
 erDiagram
 WPFooter {
+    CssSelectorTypeList cssSelector  
+    XPathTypeList xpath  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -13,25 +15,46 @@ WPFooter {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,25 +66,32 @@ WPFooter {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-WPFooter ||--}o CssSelectorType : "cssSelector"
-WPFooter ||--}o XPathType : "xpath"
 WPFooter ||--}o Thing : "about"
 WPFooter ||--}o Place : "contentLocation"
 WPFooter ||--}o CreativeWork : "hasPart"
@@ -69,43 +99,22 @@ WPFooter ||--}o Claim : "interpretedAsClaim"
 WPFooter ||--}o Thing : "mainEntity"
 WPFooter ||--}o Place : "spatialCoverage"
 WPFooter ||--}o CreativeWork : "workExample"
-WPFooter ||--}o Text : "abstract"
-WPFooter ||--}o Text : "accessMode"
 WPFooter ||--}o ItemList : "accessModeSufficient"
-WPFooter ||--}o Text : "accessibilityAPI"
-WPFooter ||--}o Text : "accessibilityControl"
-WPFooter ||--}o Text : "accessibilityFeature"
-WPFooter ||--}o Text : "accessibilityHazard"
-WPFooter ||--}o Text : "accessibilitySummary"
 WPFooter ||--}o Person : "accountablePerson"
 WPFooter ||--}o AggregateRating : "aggregateRating"
-WPFooter ||--}o Text : "alternativeHeadline"
 WPFooter ||--}o MediaObject : "associatedMedia"
 WPFooter ||--}o Audience : "audience"
-WPFooter ||--}o Text : "award"
-WPFooter ||--}o Text : "awards"
 WPFooter ||--}o Person : "character"
 WPFooter ||--}o Comment : "comment"
-WPFooter ||--}o Integer : "commentCount"
-WPFooter ||--}o Text : "conditionsOfAccess"
-WPFooter ||--}o DateTime : "contentReferenceTime"
-WPFooter ||--}o Text : "copyrightNotice"
-WPFooter ||--}o Number : "copyrightYear"
 WPFooter ||--}o Country : "countryOfOrigin"
-WPFooter ||--}o Text : "creditText"
 WPFooter ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-WPFooter ||--}o URL : "discussionUrl"
 WPFooter ||--}o Person : "editor"
 WPFooter ||--}o AlignmentObject : "educationalAlignment"
 WPFooter ||--}o MediaObject : "encoding"
 WPFooter ||--}o MediaObject : "encodings"
 WPFooter ||--}o CreativeWork : "exampleOfWork"
 WPFooter ||--}o Grant : "funding"
-WPFooter ||--}o Text : "headline"
 WPFooter ||--}o InteractionCounter : "interactionStatistic"
-WPFooter ||--}o Text : "interactivityType"
-WPFooter ||--}o Boolean : "isAccessibleForFree"
-WPFooter ||--}o Boolean : "isFamilyFriendly"
 WPFooter ||--}o Place : "locationCreated"
 WPFooter ||--}o Thing : "mentions"
 WPFooter ||--}o PublicationEvent : "publication"
@@ -114,20 +123,11 @@ WPFooter ||--}o Event : "recordedAt"
 WPFooter ||--}o PublicationEvent : "releasedEvent"
 WPFooter ||--}o Review : "review"
 WPFooter ||--}o Review : "reviews"
-WPFooter ||--}o Date : "sdDatePublished"
 WPFooter ||--}o Organization : "sourceOrganization"
 WPFooter ||--}o Place : "spatial"
-WPFooter ||--}o Text : "text"
 WPFooter ||--}o ImageObject : "thumbnail"
-WPFooter ||--}o URL : "thumbnailUrl"
 WPFooter ||--}o Duration : "timeRequired"
 WPFooter ||--}o CreativeWork : "translationOfWork"
-WPFooter ||--}o Text : "typicalAgeRange"
 WPFooter ||--}o CreativeWork : "workTranslation"
-WPFooter ||--}o Text : "alternateName"
-WPFooter ||--}o Text : "disambiguatingDescription"
-WPFooter ||--}o Text : "name"
-WPFooter ||--}o URL : "sameAs"
 WPFooter ||--}o Action : "potentialAction"
-WPFooter ||--}o URL : "url"
 

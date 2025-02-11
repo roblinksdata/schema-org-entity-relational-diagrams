@@ -8,11 +8,16 @@ TrackAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TrackAction ||--}o DeliveryMethod : "deliveryMethod"
@@ -22,10 +27,5 @@ TrackAction ||--}o Thing : "result"
 TrackAction ||--}o HowTo : "actionProcess"
 TrackAction ||--}o ActionStatusType : "actionStatus"
 TrackAction ||--}o Thing : "error"
-TrackAction ||--}o Text : "alternateName"
-TrackAction ||--}o Text : "disambiguatingDescription"
-TrackAction ||--}o Text : "name"
-TrackAction ||--}o URL : "sameAs"
 TrackAction ||--}o Action : "potentialAction"
-TrackAction ||--}o URL : "url"
 

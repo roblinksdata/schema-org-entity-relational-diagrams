@@ -2,17 +2,22 @@ erDiagram
 PhysicalActivity {
     stringList category  
     stringList associatedAnatomy  
+    TextList epidemiology  
+    TextList pathophysiology  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PhysicalActivity ||--}o Text : "epidemiology"
-PhysicalActivity ||--}o Text : "pathophysiology"
 PhysicalActivity ||--}o MedicalCode : "code"
 PhysicalActivity ||--}o Grant : "funding"
 PhysicalActivity ||--}o MedicalGuideline : "guideline"
@@ -20,10 +25,5 @@ PhysicalActivity ||--}o MedicineSystem : "medicineSystem"
 PhysicalActivity ||--}o Organization : "recognizingAuthority"
 PhysicalActivity ||--}o MedicalSpecialty : "relevantSpecialty"
 PhysicalActivity ||--}o MedicalStudy : "study"
-PhysicalActivity ||--}o Text : "alternateName"
-PhysicalActivity ||--}o Text : "disambiguatingDescription"
-PhysicalActivity ||--}o Text : "name"
-PhysicalActivity ||--}o URL : "sameAs"
 PhysicalActivity ||--}o Action : "potentialAction"
-PhysicalActivity ||--}o URL : "url"
 

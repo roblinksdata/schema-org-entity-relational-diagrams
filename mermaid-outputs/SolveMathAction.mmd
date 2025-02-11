@@ -1,5 +1,6 @@
 erDiagram
 SolveMathAction {
+    TextList eduQuestionType  
     stringList location  
     stringList participant  
     stringList agent  
@@ -8,24 +9,23 @@ SolveMathAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-SolveMathAction ||--}o Text : "eduQuestionType"
 SolveMathAction ||--}o Thing : "instrument"
 SolveMathAction ||--}o Thing : "object"
 SolveMathAction ||--}o Thing : "result"
 SolveMathAction ||--}o HowTo : "actionProcess"
 SolveMathAction ||--}o ActionStatusType : "actionStatus"
 SolveMathAction ||--}o Thing : "error"
-SolveMathAction ||--}o Text : "alternateName"
-SolveMathAction ||--}o Text : "disambiguatingDescription"
-SolveMathAction ||--}o Text : "name"
-SolveMathAction ||--}o URL : "sameAs"
 SolveMathAction ||--}o Action : "potentialAction"
-SolveMathAction ||--}o URL : "url"
 

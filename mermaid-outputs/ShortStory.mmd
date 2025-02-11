@@ -13,25 +13,46 @@ ShortStory {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ ShortStory {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ShortStory ||--}o Thing : "about"
@@ -67,43 +97,22 @@ ShortStory ||--}o Claim : "interpretedAsClaim"
 ShortStory ||--}o Thing : "mainEntity"
 ShortStory ||--}o Place : "spatialCoverage"
 ShortStory ||--}o CreativeWork : "workExample"
-ShortStory ||--}o Text : "abstract"
-ShortStory ||--}o Text : "accessMode"
 ShortStory ||--}o ItemList : "accessModeSufficient"
-ShortStory ||--}o Text : "accessibilityAPI"
-ShortStory ||--}o Text : "accessibilityControl"
-ShortStory ||--}o Text : "accessibilityFeature"
-ShortStory ||--}o Text : "accessibilityHazard"
-ShortStory ||--}o Text : "accessibilitySummary"
 ShortStory ||--}o Person : "accountablePerson"
 ShortStory ||--}o AggregateRating : "aggregateRating"
-ShortStory ||--}o Text : "alternativeHeadline"
 ShortStory ||--}o MediaObject : "associatedMedia"
 ShortStory ||--}o Audience : "audience"
-ShortStory ||--}o Text : "award"
-ShortStory ||--}o Text : "awards"
 ShortStory ||--}o Person : "character"
 ShortStory ||--}o Comment : "comment"
-ShortStory ||--}o Integer : "commentCount"
-ShortStory ||--}o Text : "conditionsOfAccess"
-ShortStory ||--}o DateTime : "contentReferenceTime"
-ShortStory ||--}o Text : "copyrightNotice"
-ShortStory ||--}o Number : "copyrightYear"
 ShortStory ||--}o Country : "countryOfOrigin"
-ShortStory ||--}o Text : "creditText"
 ShortStory ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ShortStory ||--}o URL : "discussionUrl"
 ShortStory ||--}o Person : "editor"
 ShortStory ||--}o AlignmentObject : "educationalAlignment"
 ShortStory ||--}o MediaObject : "encoding"
 ShortStory ||--}o MediaObject : "encodings"
 ShortStory ||--}o CreativeWork : "exampleOfWork"
 ShortStory ||--}o Grant : "funding"
-ShortStory ||--}o Text : "headline"
 ShortStory ||--}o InteractionCounter : "interactionStatistic"
-ShortStory ||--}o Text : "interactivityType"
-ShortStory ||--}o Boolean : "isAccessibleForFree"
-ShortStory ||--}o Boolean : "isFamilyFriendly"
 ShortStory ||--}o Place : "locationCreated"
 ShortStory ||--}o Thing : "mentions"
 ShortStory ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ ShortStory ||--}o Event : "recordedAt"
 ShortStory ||--}o PublicationEvent : "releasedEvent"
 ShortStory ||--}o Review : "review"
 ShortStory ||--}o Review : "reviews"
-ShortStory ||--}o Date : "sdDatePublished"
 ShortStory ||--}o Organization : "sourceOrganization"
 ShortStory ||--}o Place : "spatial"
-ShortStory ||--}o Text : "text"
 ShortStory ||--}o ImageObject : "thumbnail"
-ShortStory ||--}o URL : "thumbnailUrl"
 ShortStory ||--}o Duration : "timeRequired"
 ShortStory ||--}o CreativeWork : "translationOfWork"
-ShortStory ||--}o Text : "typicalAgeRange"
 ShortStory ||--}o CreativeWork : "workTranslation"
-ShortStory ||--}o Text : "alternateName"
-ShortStory ||--}o Text : "disambiguatingDescription"
-ShortStory ||--}o Text : "name"
-ShortStory ||--}o URL : "sameAs"
 ShortStory ||--}o Action : "potentialAction"
-ShortStory ||--}o URL : "url"
 

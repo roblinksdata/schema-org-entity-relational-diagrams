@@ -1,19 +1,19 @@
 erDiagram
 ConstraintNode {
     stringList constraintProperty  
+    IntegerList numConstraints  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ConstraintNode ||--}o Integer : "numConstraints"
-ConstraintNode ||--}o Text : "alternateName"
-ConstraintNode ||--}o Text : "disambiguatingDescription"
-ConstraintNode ||--}o Text : "name"
-ConstraintNode ||--}o URL : "sameAs"
 ConstraintNode ||--}o Action : "potentialAction"
-ConstraintNode ||--}o URL : "url"
 

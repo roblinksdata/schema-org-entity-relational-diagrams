@@ -1,19 +1,24 @@
 erDiagram
 LymphaticVessel {
     stringList regionDrained  
+    TextList associatedPathophysiology  
+    TextList bodyLocation  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LymphaticVessel ||--}o Vessel : "originatesFrom"
 LymphaticVessel ||--}o Vessel : "runsTo"
-LymphaticVessel ||--}o Text : "associatedPathophysiology"
-LymphaticVessel ||--}o Text : "bodyLocation"
 LymphaticVessel ||--}o AnatomicalStructure : "connectedTo"
 LymphaticVessel ||--}o ImageObject : "diagram"
 LymphaticVessel ||--}o AnatomicalSystem : "partOfSystem"
@@ -27,10 +32,5 @@ LymphaticVessel ||--}o MedicineSystem : "medicineSystem"
 LymphaticVessel ||--}o Organization : "recognizingAuthority"
 LymphaticVessel ||--}o MedicalSpecialty : "relevantSpecialty"
 LymphaticVessel ||--}o MedicalStudy : "study"
-LymphaticVessel ||--}o Text : "alternateName"
-LymphaticVessel ||--}o Text : "disambiguatingDescription"
-LymphaticVessel ||--}o Text : "name"
-LymphaticVessel ||--}o URL : "sameAs"
 LymphaticVessel ||--}o Action : "potentialAction"
-LymphaticVessel ||--}o URL : "url"
 

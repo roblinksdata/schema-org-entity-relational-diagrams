@@ -2,6 +2,7 @@ erDiagram
 PayAction {
     stringList recipient  
     stringList price  
+    TextList priceCurrency  
     stringList location  
     stringList participant  
     stringList agent  
@@ -10,14 +11,18 @@ PayAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PayAction ||--}o Text : "priceCurrency"
 PayAction ||--}o PriceSpecification : "priceSpecification"
 PayAction ||--}o Thing : "instrument"
 PayAction ||--}o Thing : "object"
@@ -25,10 +30,5 @@ PayAction ||--}o Thing : "result"
 PayAction ||--}o HowTo : "actionProcess"
 PayAction ||--}o ActionStatusType : "actionStatus"
 PayAction ||--}o Thing : "error"
-PayAction ||--}o Text : "alternateName"
-PayAction ||--}o Text : "disambiguatingDescription"
-PayAction ||--}o Text : "name"
-PayAction ||--}o URL : "sameAs"
 PayAction ||--}o Action : "potentialAction"
-PayAction ||--}o URL : "url"
 

@@ -1,8 +1,16 @@
 erDiagram
 FurnitureStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ FurnitureStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 FurnitureStore ||--}o Organization : "branchOf"
-FurnitureStore ||--}o Text : "currenciesAccepted"
-FurnitureStore ||--}o Text : "openingHours"
-FurnitureStore ||--}o Text : "paymentAccepted"
-FurnitureStore ||--}o Text : "priceRange"
-FurnitureStore ||--}o Text : "globalLocationNumber"
-FurnitureStore ||--}o URL : "hasGS1DigitalLink"
 FurnitureStore ||--}o PropertyValue : "additionalProperty"
 FurnitureStore ||--}o AggregateRating : "aggregateRating"
 FurnitureStore ||--}o LocationFeatureSpecification : "amenityFeature"
-FurnitureStore ||--}o Text : "branchCode"
 FurnitureStore ||--}o Place : "containedIn"
 FurnitureStore ||--}o Place : "containedInPlace"
 FurnitureStore ||--}o Place : "containsPlace"
 FurnitureStore ||--}o Event : "event"
 FurnitureStore ||--}o Event : "events"
-FurnitureStore ||--}o Text : "faxNumber"
 FurnitureStore ||--}o Certification : "hasCertification"
-FurnitureStore ||--}o Boolean : "hasDriveThroughService"
-FurnitureStore ||--}o Boolean : "isAccessibleForFree"
-FurnitureStore ||--}o Text : "isicV4"
-FurnitureStore ||--}o URL : "map"
-FurnitureStore ||--}o URL : "maps"
-FurnitureStore ||--}o Integer : "maximumAttendeeCapacity"
 FurnitureStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-FurnitureStore ||--}o Boolean : "publicAccess"
 FurnitureStore ||--}o Review : "review"
 FurnitureStore ||--}o Review : "reviews"
-FurnitureStore ||--}o Text : "slogan"
-FurnitureStore ||--}o Boolean : "smokingAllowed"
 FurnitureStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-FurnitureStore ||--}o Text : "telephone"
-FurnitureStore ||--}o URL : "tourBookingPage"
-FurnitureStore ||--}o Text : "duns"
-FurnitureStore ||--}o Text : "leiCode"
-FurnitureStore ||--}o Text : "taxID"
 FurnitureStore ||--}o InteractionCounter : "agentInteractionStatistic"
 FurnitureStore ||--}o Person : "alumni"
-FurnitureStore ||--}o Text : "award"
-FurnitureStore ||--}o Text : "awards"
 FurnitureStore ||--}o ContactPoint : "contactPoint"
 FurnitureStore ||--}o ContactPoint : "contactPoints"
 FurnitureStore ||--}o Organization : "department"
-FurnitureStore ||--}o Date : "dissolutionDate"
-FurnitureStore ||--}o Text : "email"
 FurnitureStore ||--}o Person : "employee"
 FurnitureStore ||--}o Person : "employees"
 FurnitureStore ||--}o Person : "founders"
-FurnitureStore ||--}o Date : "foundingDate"
 FurnitureStore ||--}o Place : "foundingLocation"
 FurnitureStore ||--}o Grant : "funding"
 FurnitureStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ FurnitureStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 FurnitureStore ||--}o OfferCatalog : "hasOfferCatalog"
 FurnitureStore ||--}o Place : "hasPOS"
 FurnitureStore ||--}o InteractionCounter : "interactionStatistic"
-FurnitureStore ||--}o Text : "iso6523Code"
-FurnitureStore ||--}o Text : "legalName"
 FurnitureStore ||--}o Offer : "makesOffer"
-FurnitureStore ||--}o Text : "naics"
 FurnitureStore ||--}o NonprofitType : "nonprofitStatus"
 FurnitureStore ||--}o QuantitativeValue : "numberOfEmployees"
 FurnitureStore ||--}o Organization : "parentOrganization"
 FurnitureStore ||--}o Demand : "seeks"
 FurnitureStore ||--}o Organization : "subOrganization"
-FurnitureStore ||--}o Text : "vatID"
-FurnitureStore ||--}o Text : "alternateName"
-FurnitureStore ||--}o Text : "disambiguatingDescription"
-FurnitureStore ||--}o Text : "name"
-FurnitureStore ||--}o URL : "sameAs"
 FurnitureStore ||--}o Action : "potentialAction"
-FurnitureStore ||--}o URL : "url"
 

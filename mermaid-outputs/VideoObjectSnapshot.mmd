@@ -2,11 +2,21 @@ erDiagram
 VideoObjectSnapshot {
     stringList actor  
     stringList caption  
+    TextList embeddedTextCaption  
     stringList musicBy  
+    TextList transcript  
+    TextList videoFrameSize  
+    TextList videoQuality  
+    TextList sha256  
+    TextList bitrate  
+    TextList contentSize  
+    URLList contentUrl  
+    URLList embedUrl  
     stringList encodingFormat  
     stringList endTime  
     stringList height  
     stringList ineligibleRegion  
+    TextList playerType  
     stringList requiresSubscription  
     stringList startTime  
     stringList uploadDate  
@@ -24,24 +34,45 @@ VideoObjectSnapshot {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -53,40 +84,39 @@ VideoObjectSnapshot {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-VideoObjectSnapshot ||--}o Text : "embeddedTextCaption"
 VideoObjectSnapshot ||--}o Person : "actors"
 VideoObjectSnapshot ||--}o Person : "director"
 VideoObjectSnapshot ||--}o Person : "directors"
-VideoObjectSnapshot ||--}o Text : "transcript"
-VideoObjectSnapshot ||--}o Text : "videoFrameSize"
-VideoObjectSnapshot ||--}o Text : "videoQuality"
 VideoObjectSnapshot ||--}o Duration : "duration"
 VideoObjectSnapshot ||--}o Claim : "interpretedAsClaim"
-VideoObjectSnapshot ||--}o Text : "sha256"
 VideoObjectSnapshot ||--}o NewsArticle : "associatedArticle"
-VideoObjectSnapshot ||--}o Text : "bitrate"
-VideoObjectSnapshot ||--}o Text : "contentSize"
-VideoObjectSnapshot ||--}o URL : "contentUrl"
-VideoObjectSnapshot ||--}o URL : "embedUrl"
 VideoObjectSnapshot ||--}o CreativeWork : "encodesCreativeWork"
-VideoObjectSnapshot ||--}o Text : "playerType"
 VideoObjectSnapshot ||--}o Organization : "productionCompany"
 VideoObjectSnapshot ||--}o Place : "regionsAllowed"
 VideoObjectSnapshot ||--}o Thing : "about"
@@ -95,43 +125,22 @@ VideoObjectSnapshot ||--}o CreativeWork : "hasPart"
 VideoObjectSnapshot ||--}o Thing : "mainEntity"
 VideoObjectSnapshot ||--}o Place : "spatialCoverage"
 VideoObjectSnapshot ||--}o CreativeWork : "workExample"
-VideoObjectSnapshot ||--}o Text : "abstract"
-VideoObjectSnapshot ||--}o Text : "accessMode"
 VideoObjectSnapshot ||--}o ItemList : "accessModeSufficient"
-VideoObjectSnapshot ||--}o Text : "accessibilityAPI"
-VideoObjectSnapshot ||--}o Text : "accessibilityControl"
-VideoObjectSnapshot ||--}o Text : "accessibilityFeature"
-VideoObjectSnapshot ||--}o Text : "accessibilityHazard"
-VideoObjectSnapshot ||--}o Text : "accessibilitySummary"
 VideoObjectSnapshot ||--}o Person : "accountablePerson"
 VideoObjectSnapshot ||--}o AggregateRating : "aggregateRating"
-VideoObjectSnapshot ||--}o Text : "alternativeHeadline"
 VideoObjectSnapshot ||--}o MediaObject : "associatedMedia"
 VideoObjectSnapshot ||--}o Audience : "audience"
-VideoObjectSnapshot ||--}o Text : "award"
-VideoObjectSnapshot ||--}o Text : "awards"
 VideoObjectSnapshot ||--}o Person : "character"
 VideoObjectSnapshot ||--}o Comment : "comment"
-VideoObjectSnapshot ||--}o Integer : "commentCount"
-VideoObjectSnapshot ||--}o Text : "conditionsOfAccess"
-VideoObjectSnapshot ||--}o DateTime : "contentReferenceTime"
-VideoObjectSnapshot ||--}o Text : "copyrightNotice"
-VideoObjectSnapshot ||--}o Number : "copyrightYear"
 VideoObjectSnapshot ||--}o Country : "countryOfOrigin"
-VideoObjectSnapshot ||--}o Text : "creditText"
 VideoObjectSnapshot ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-VideoObjectSnapshot ||--}o URL : "discussionUrl"
 VideoObjectSnapshot ||--}o Person : "editor"
 VideoObjectSnapshot ||--}o AlignmentObject : "educationalAlignment"
 VideoObjectSnapshot ||--}o MediaObject : "encoding"
 VideoObjectSnapshot ||--}o MediaObject : "encodings"
 VideoObjectSnapshot ||--}o CreativeWork : "exampleOfWork"
 VideoObjectSnapshot ||--}o Grant : "funding"
-VideoObjectSnapshot ||--}o Text : "headline"
 VideoObjectSnapshot ||--}o InteractionCounter : "interactionStatistic"
-VideoObjectSnapshot ||--}o Text : "interactivityType"
-VideoObjectSnapshot ||--}o Boolean : "isAccessibleForFree"
-VideoObjectSnapshot ||--}o Boolean : "isFamilyFriendly"
 VideoObjectSnapshot ||--}o Place : "locationCreated"
 VideoObjectSnapshot ||--}o Thing : "mentions"
 VideoObjectSnapshot ||--}o PublicationEvent : "publication"
@@ -140,20 +149,11 @@ VideoObjectSnapshot ||--}o Event : "recordedAt"
 VideoObjectSnapshot ||--}o PublicationEvent : "releasedEvent"
 VideoObjectSnapshot ||--}o Review : "review"
 VideoObjectSnapshot ||--}o Review : "reviews"
-VideoObjectSnapshot ||--}o Date : "sdDatePublished"
 VideoObjectSnapshot ||--}o Organization : "sourceOrganization"
 VideoObjectSnapshot ||--}o Place : "spatial"
-VideoObjectSnapshot ||--}o Text : "text"
 VideoObjectSnapshot ||--}o ImageObject : "thumbnail"
-VideoObjectSnapshot ||--}o URL : "thumbnailUrl"
 VideoObjectSnapshot ||--}o Duration : "timeRequired"
 VideoObjectSnapshot ||--}o CreativeWork : "translationOfWork"
-VideoObjectSnapshot ||--}o Text : "typicalAgeRange"
 VideoObjectSnapshot ||--}o CreativeWork : "workTranslation"
-VideoObjectSnapshot ||--}o Text : "alternateName"
-VideoObjectSnapshot ||--}o Text : "disambiguatingDescription"
-VideoObjectSnapshot ||--}o Text : "name"
-VideoObjectSnapshot ||--}o URL : "sameAs"
 VideoObjectSnapshot ||--}o Action : "potentialAction"
-VideoObjectSnapshot ||--}o URL : "url"
 

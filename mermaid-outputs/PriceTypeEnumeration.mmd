@@ -2,17 +2,17 @@ erDiagram
 PriceTypeEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PriceTypeEnumeration ||--}o Text : "alternateName"
-PriceTypeEnumeration ||--}o Text : "disambiguatingDescription"
-PriceTypeEnumeration ||--}o Text : "name"
-PriceTypeEnumeration ||--}o URL : "sameAs"
 PriceTypeEnumeration ||--}o Action : "potentialAction"
-PriceTypeEnumeration ||--}o URL : "url"
 

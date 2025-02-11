@@ -3,6 +3,9 @@ TVSeries {
     stringList actor  
     stringList titleEIDR  
     stringList musicBy  
+    IntegerList numberOfEpisodes  
+    IntegerList numberOfSeasons  
+    TextList issn  
     stringList endDate  
     stringList startDate  
     stringList acquireLicensePage  
@@ -18,25 +21,46 @@ TVSeries {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -48,21 +72,30 @@ TVSeries {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TVSeries ||--}o CreativeWorkSeason : "containsSeason"
@@ -73,12 +106,9 @@ TVSeries ||--}o Country : "countryOfOrigin"
 TVSeries ||--}o Person : "director"
 TVSeries ||--}o Person : "directors"
 TVSeries ||--}o Episode : "episodes"
-TVSeries ||--}o Integer : "numberOfEpisodes"
-TVSeries ||--}o Integer : "numberOfSeasons"
 TVSeries ||--}o Organization : "productionCompany"
 TVSeries ||--}o CreativeWorkSeason : "seasons"
 TVSeries ||--}o VideoObject : "trailer"
-TVSeries ||--}o Text : "issn"
 TVSeries ||--}o Thing : "about"
 TVSeries ||--}o Place : "contentLocation"
 TVSeries ||--}o CreativeWork : "hasPart"
@@ -86,42 +116,21 @@ TVSeries ||--}o Claim : "interpretedAsClaim"
 TVSeries ||--}o Thing : "mainEntity"
 TVSeries ||--}o Place : "spatialCoverage"
 TVSeries ||--}o CreativeWork : "workExample"
-TVSeries ||--}o Text : "abstract"
-TVSeries ||--}o Text : "accessMode"
 TVSeries ||--}o ItemList : "accessModeSufficient"
-TVSeries ||--}o Text : "accessibilityAPI"
-TVSeries ||--}o Text : "accessibilityControl"
-TVSeries ||--}o Text : "accessibilityFeature"
-TVSeries ||--}o Text : "accessibilityHazard"
-TVSeries ||--}o Text : "accessibilitySummary"
 TVSeries ||--}o Person : "accountablePerson"
 TVSeries ||--}o AggregateRating : "aggregateRating"
-TVSeries ||--}o Text : "alternativeHeadline"
 TVSeries ||--}o MediaObject : "associatedMedia"
 TVSeries ||--}o Audience : "audience"
-TVSeries ||--}o Text : "award"
-TVSeries ||--}o Text : "awards"
 TVSeries ||--}o Person : "character"
 TVSeries ||--}o Comment : "comment"
-TVSeries ||--}o Integer : "commentCount"
-TVSeries ||--}o Text : "conditionsOfAccess"
-TVSeries ||--}o DateTime : "contentReferenceTime"
-TVSeries ||--}o Text : "copyrightNotice"
-TVSeries ||--}o Number : "copyrightYear"
-TVSeries ||--}o Text : "creditText"
 TVSeries ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-TVSeries ||--}o URL : "discussionUrl"
 TVSeries ||--}o Person : "editor"
 TVSeries ||--}o AlignmentObject : "educationalAlignment"
 TVSeries ||--}o MediaObject : "encoding"
 TVSeries ||--}o MediaObject : "encodings"
 TVSeries ||--}o CreativeWork : "exampleOfWork"
 TVSeries ||--}o Grant : "funding"
-TVSeries ||--}o Text : "headline"
 TVSeries ||--}o InteractionCounter : "interactionStatistic"
-TVSeries ||--}o Text : "interactivityType"
-TVSeries ||--}o Boolean : "isAccessibleForFree"
-TVSeries ||--}o Boolean : "isFamilyFriendly"
 TVSeries ||--}o Place : "locationCreated"
 TVSeries ||--}o Thing : "mentions"
 TVSeries ||--}o PublicationEvent : "publication"
@@ -130,20 +139,11 @@ TVSeries ||--}o Event : "recordedAt"
 TVSeries ||--}o PublicationEvent : "releasedEvent"
 TVSeries ||--}o Review : "review"
 TVSeries ||--}o Review : "reviews"
-TVSeries ||--}o Date : "sdDatePublished"
 TVSeries ||--}o Organization : "sourceOrganization"
 TVSeries ||--}o Place : "spatial"
-TVSeries ||--}o Text : "text"
 TVSeries ||--}o ImageObject : "thumbnail"
-TVSeries ||--}o URL : "thumbnailUrl"
 TVSeries ||--}o Duration : "timeRequired"
 TVSeries ||--}o CreativeWork : "translationOfWork"
-TVSeries ||--}o Text : "typicalAgeRange"
 TVSeries ||--}o CreativeWork : "workTranslation"
-TVSeries ||--}o Text : "alternateName"
-TVSeries ||--}o Text : "disambiguatingDescription"
-TVSeries ||--}o Text : "name"
-TVSeries ||--}o URL : "sameAs"
 TVSeries ||--}o Action : "potentialAction"
-TVSeries ||--}o URL : "url"
 

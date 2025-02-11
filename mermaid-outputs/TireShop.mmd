@@ -1,8 +1,16 @@
 erDiagram
 TireShop {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ TireShop {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TireShop ||--}o Organization : "branchOf"
-TireShop ||--}o Text : "currenciesAccepted"
-TireShop ||--}o Text : "openingHours"
-TireShop ||--}o Text : "paymentAccepted"
-TireShop ||--}o Text : "priceRange"
-TireShop ||--}o Text : "globalLocationNumber"
-TireShop ||--}o URL : "hasGS1DigitalLink"
 TireShop ||--}o PropertyValue : "additionalProperty"
 TireShop ||--}o AggregateRating : "aggregateRating"
 TireShop ||--}o LocationFeatureSpecification : "amenityFeature"
-TireShop ||--}o Text : "branchCode"
 TireShop ||--}o Place : "containedIn"
 TireShop ||--}o Place : "containedInPlace"
 TireShop ||--}o Place : "containsPlace"
 TireShop ||--}o Event : "event"
 TireShop ||--}o Event : "events"
-TireShop ||--}o Text : "faxNumber"
 TireShop ||--}o Certification : "hasCertification"
-TireShop ||--}o Boolean : "hasDriveThroughService"
-TireShop ||--}o Boolean : "isAccessibleForFree"
-TireShop ||--}o Text : "isicV4"
-TireShop ||--}o URL : "map"
-TireShop ||--}o URL : "maps"
-TireShop ||--}o Integer : "maximumAttendeeCapacity"
 TireShop ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-TireShop ||--}o Boolean : "publicAccess"
 TireShop ||--}o Review : "review"
 TireShop ||--}o Review : "reviews"
-TireShop ||--}o Text : "slogan"
-TireShop ||--}o Boolean : "smokingAllowed"
 TireShop ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-TireShop ||--}o Text : "telephone"
-TireShop ||--}o URL : "tourBookingPage"
-TireShop ||--}o Text : "duns"
-TireShop ||--}o Text : "leiCode"
-TireShop ||--}o Text : "taxID"
 TireShop ||--}o InteractionCounter : "agentInteractionStatistic"
 TireShop ||--}o Person : "alumni"
-TireShop ||--}o Text : "award"
-TireShop ||--}o Text : "awards"
 TireShop ||--}o ContactPoint : "contactPoint"
 TireShop ||--}o ContactPoint : "contactPoints"
 TireShop ||--}o Organization : "department"
-TireShop ||--}o Date : "dissolutionDate"
-TireShop ||--}o Text : "email"
 TireShop ||--}o Person : "employee"
 TireShop ||--}o Person : "employees"
 TireShop ||--}o Person : "founders"
-TireShop ||--}o Date : "foundingDate"
 TireShop ||--}o Place : "foundingLocation"
 TireShop ||--}o Grant : "funding"
 TireShop ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ TireShop ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 TireShop ||--}o OfferCatalog : "hasOfferCatalog"
 TireShop ||--}o Place : "hasPOS"
 TireShop ||--}o InteractionCounter : "interactionStatistic"
-TireShop ||--}o Text : "iso6523Code"
-TireShop ||--}o Text : "legalName"
 TireShop ||--}o Offer : "makesOffer"
-TireShop ||--}o Text : "naics"
 TireShop ||--}o NonprofitType : "nonprofitStatus"
 TireShop ||--}o QuantitativeValue : "numberOfEmployees"
 TireShop ||--}o Organization : "parentOrganization"
 TireShop ||--}o Demand : "seeks"
 TireShop ||--}o Organization : "subOrganization"
-TireShop ||--}o Text : "vatID"
-TireShop ||--}o Text : "alternateName"
-TireShop ||--}o Text : "disambiguatingDescription"
-TireShop ||--}o Text : "name"
-TireShop ||--}o URL : "sameAs"
 TireShop ||--}o Action : "potentialAction"
-TireShop ||--}o URL : "url"
 

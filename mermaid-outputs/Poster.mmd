@@ -13,25 +13,46 @@ Poster {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Poster {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Poster ||--}o Thing : "about"
@@ -67,43 +97,22 @@ Poster ||--}o Claim : "interpretedAsClaim"
 Poster ||--}o Thing : "mainEntity"
 Poster ||--}o Place : "spatialCoverage"
 Poster ||--}o CreativeWork : "workExample"
-Poster ||--}o Text : "abstract"
-Poster ||--}o Text : "accessMode"
 Poster ||--}o ItemList : "accessModeSufficient"
-Poster ||--}o Text : "accessibilityAPI"
-Poster ||--}o Text : "accessibilityControl"
-Poster ||--}o Text : "accessibilityFeature"
-Poster ||--}o Text : "accessibilityHazard"
-Poster ||--}o Text : "accessibilitySummary"
 Poster ||--}o Person : "accountablePerson"
 Poster ||--}o AggregateRating : "aggregateRating"
-Poster ||--}o Text : "alternativeHeadline"
 Poster ||--}o MediaObject : "associatedMedia"
 Poster ||--}o Audience : "audience"
-Poster ||--}o Text : "award"
-Poster ||--}o Text : "awards"
 Poster ||--}o Person : "character"
 Poster ||--}o Comment : "comment"
-Poster ||--}o Integer : "commentCount"
-Poster ||--}o Text : "conditionsOfAccess"
-Poster ||--}o DateTime : "contentReferenceTime"
-Poster ||--}o Text : "copyrightNotice"
-Poster ||--}o Number : "copyrightYear"
 Poster ||--}o Country : "countryOfOrigin"
-Poster ||--}o Text : "creditText"
 Poster ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Poster ||--}o URL : "discussionUrl"
 Poster ||--}o Person : "editor"
 Poster ||--}o AlignmentObject : "educationalAlignment"
 Poster ||--}o MediaObject : "encoding"
 Poster ||--}o MediaObject : "encodings"
 Poster ||--}o CreativeWork : "exampleOfWork"
 Poster ||--}o Grant : "funding"
-Poster ||--}o Text : "headline"
 Poster ||--}o InteractionCounter : "interactionStatistic"
-Poster ||--}o Text : "interactivityType"
-Poster ||--}o Boolean : "isAccessibleForFree"
-Poster ||--}o Boolean : "isFamilyFriendly"
 Poster ||--}o Place : "locationCreated"
 Poster ||--}o Thing : "mentions"
 Poster ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ Poster ||--}o Event : "recordedAt"
 Poster ||--}o PublicationEvent : "releasedEvent"
 Poster ||--}o Review : "review"
 Poster ||--}o Review : "reviews"
-Poster ||--}o Date : "sdDatePublished"
 Poster ||--}o Organization : "sourceOrganization"
 Poster ||--}o Place : "spatial"
-Poster ||--}o Text : "text"
 Poster ||--}o ImageObject : "thumbnail"
-Poster ||--}o URL : "thumbnailUrl"
 Poster ||--}o Duration : "timeRequired"
 Poster ||--}o CreativeWork : "translationOfWork"
-Poster ||--}o Text : "typicalAgeRange"
 Poster ||--}o CreativeWork : "workTranslation"
-Poster ||--}o Text : "alternateName"
-Poster ||--}o Text : "disambiguatingDescription"
-Poster ||--}o Text : "name"
-Poster ||--}o URL : "sameAs"
 Poster ||--}o Action : "potentialAction"
-Poster ||--}o URL : "url"
 

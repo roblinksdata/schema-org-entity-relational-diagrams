@@ -8,11 +8,16 @@ AppendAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AppendAction ||--}o Place : "toLocation"
@@ -24,10 +29,5 @@ AppendAction ||--}o Thing : "result"
 AppendAction ||--}o HowTo : "actionProcess"
 AppendAction ||--}o ActionStatusType : "actionStatus"
 AppendAction ||--}o Thing : "error"
-AppendAction ||--}o Text : "alternateName"
-AppendAction ||--}o Text : "disambiguatingDescription"
-AppendAction ||--}o Text : "name"
-AppendAction ||--}o URL : "sameAs"
 AppendAction ||--}o Action : "potentialAction"
-AppendAction ||--}o URL : "url"
 

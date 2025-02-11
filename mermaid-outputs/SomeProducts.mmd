@@ -4,47 +4,60 @@ SomeProducts {
     stringList category  
     stringList colorSwatch  
     stringList gtin  
+    TextList gtin12  
+    TextList gtin13  
+    TextList gtin14  
+    TextList gtin8  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList material  
+    TextList nsn  
+    TextList productID  
+    TextList sku  
+    TextList award  
+    TextList awards  
     stringList brand  
+    TextList color  
+    TextList countryOfAssembly  
+    TextList countryOfLastProcessing  
     stringList depth  
     stringList height  
+    TextList inProductGroupWithID  
+    BooleanList isFamilyFriendly  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList isVariantOf  
     stringList keywords  
+    TextList mobileUrl  
     stringList model  
+    TextList mpn  
     stringList negativeNotes  
     stringList offers  
     stringList pattern  
     stringList positiveNotes  
+    DateList productionDate  
+    DateList purchaseDate  
+    DateList releaseDate  
     stringList size  
+    TextList slogan  
     stringList width  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SomeProducts ||--}o QuantitativeValue : "inventoryLevel"
-SomeProducts ||--}o Text : "gtin12"
-SomeProducts ||--}o Text : "gtin13"
-SomeProducts ||--}o Text : "gtin14"
-SomeProducts ||--}o Text : "gtin8"
-SomeProducts ||--}o URL : "hasGS1DigitalLink"
-SomeProducts ||--}o Text : "nsn"
-SomeProducts ||--}o Text : "productID"
-SomeProducts ||--}o Text : "sku"
 SomeProducts ||--}o PropertyValue : "additionalProperty"
 SomeProducts ||--}o AggregateRating : "aggregateRating"
 SomeProducts ||--}o Audience : "audience"
-SomeProducts ||--}o Text : "award"
-SomeProducts ||--}o Text : "awards"
-SomeProducts ||--}o Text : "color"
-SomeProducts ||--}o Text : "countryOfAssembly"
-SomeProducts ||--}o Text : "countryOfLastProcessing"
 SomeProducts ||--}o Country : "countryOfOrigin"
 SomeProducts ||--}o Grant : "funding"
 SomeProducts ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
@@ -52,25 +65,12 @@ SomeProducts ||--}o Certification : "hasCertification"
 SomeProducts ||--}o EnergyConsumptionDetails : "hasEnergyConsumptionDetails"
 SomeProducts ||--}o QuantitativeValue : "hasMeasurement"
 SomeProducts ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
-SomeProducts ||--}o Text : "inProductGroupWithID"
 SomeProducts ||--}o Product : "isAccessoryOrSparePartFor"
 SomeProducts ||--}o Product : "isConsumableFor"
-SomeProducts ||--}o Boolean : "isFamilyFriendly"
 SomeProducts ||--}o OfferItemCondition : "itemCondition"
 SomeProducts ||--}o Organization : "manufacturer"
-SomeProducts ||--}o Text : "mobileUrl"
-SomeProducts ||--}o Text : "mpn"
-SomeProducts ||--}o Date : "productionDate"
-SomeProducts ||--}o Date : "purchaseDate"
-SomeProducts ||--}o Date : "releaseDate"
 SomeProducts ||--}o Review : "review"
 SomeProducts ||--}o Review : "reviews"
-SomeProducts ||--}o Text : "slogan"
 SomeProducts ||--}o QuantitativeValue : "weight"
-SomeProducts ||--}o Text : "alternateName"
-SomeProducts ||--}o Text : "disambiguatingDescription"
-SomeProducts ||--}o Text : "name"
-SomeProducts ||--}o URL : "sameAs"
 SomeProducts ||--}o Action : "potentialAction"
-SomeProducts ||--}o URL : "url"
 

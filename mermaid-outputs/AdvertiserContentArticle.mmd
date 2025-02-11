@@ -1,9 +1,13 @@
 erDiagram
 AdvertiserContentArticle {
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -17,25 +21,46 @@ AdvertiserContentArticle {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,27 +72,32 @@ AdvertiserContentArticle {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-AdvertiserContentArticle ||--}o Text : "articleBody"
-AdvertiserContentArticle ||--}o Text : "articleSection"
-AdvertiserContentArticle ||--}o Text : "pagination"
-AdvertiserContentArticle ||--}o Integer : "wordCount"
 AdvertiserContentArticle ||--}o Thing : "about"
 AdvertiserContentArticle ||--}o Place : "contentLocation"
 AdvertiserContentArticle ||--}o CreativeWork : "hasPart"
@@ -75,43 +105,22 @@ AdvertiserContentArticle ||--}o Claim : "interpretedAsClaim"
 AdvertiserContentArticle ||--}o Thing : "mainEntity"
 AdvertiserContentArticle ||--}o Place : "spatialCoverage"
 AdvertiserContentArticle ||--}o CreativeWork : "workExample"
-AdvertiserContentArticle ||--}o Text : "abstract"
-AdvertiserContentArticle ||--}o Text : "accessMode"
 AdvertiserContentArticle ||--}o ItemList : "accessModeSufficient"
-AdvertiserContentArticle ||--}o Text : "accessibilityAPI"
-AdvertiserContentArticle ||--}o Text : "accessibilityControl"
-AdvertiserContentArticle ||--}o Text : "accessibilityFeature"
-AdvertiserContentArticle ||--}o Text : "accessibilityHazard"
-AdvertiserContentArticle ||--}o Text : "accessibilitySummary"
 AdvertiserContentArticle ||--}o Person : "accountablePerson"
 AdvertiserContentArticle ||--}o AggregateRating : "aggregateRating"
-AdvertiserContentArticle ||--}o Text : "alternativeHeadline"
 AdvertiserContentArticle ||--}o MediaObject : "associatedMedia"
 AdvertiserContentArticle ||--}o Audience : "audience"
-AdvertiserContentArticle ||--}o Text : "award"
-AdvertiserContentArticle ||--}o Text : "awards"
 AdvertiserContentArticle ||--}o Person : "character"
 AdvertiserContentArticle ||--}o Comment : "comment"
-AdvertiserContentArticle ||--}o Integer : "commentCount"
-AdvertiserContentArticle ||--}o Text : "conditionsOfAccess"
-AdvertiserContentArticle ||--}o DateTime : "contentReferenceTime"
-AdvertiserContentArticle ||--}o Text : "copyrightNotice"
-AdvertiserContentArticle ||--}o Number : "copyrightYear"
 AdvertiserContentArticle ||--}o Country : "countryOfOrigin"
-AdvertiserContentArticle ||--}o Text : "creditText"
 AdvertiserContentArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-AdvertiserContentArticle ||--}o URL : "discussionUrl"
 AdvertiserContentArticle ||--}o Person : "editor"
 AdvertiserContentArticle ||--}o AlignmentObject : "educationalAlignment"
 AdvertiserContentArticle ||--}o MediaObject : "encoding"
 AdvertiserContentArticle ||--}o MediaObject : "encodings"
 AdvertiserContentArticle ||--}o CreativeWork : "exampleOfWork"
 AdvertiserContentArticle ||--}o Grant : "funding"
-AdvertiserContentArticle ||--}o Text : "headline"
 AdvertiserContentArticle ||--}o InteractionCounter : "interactionStatistic"
-AdvertiserContentArticle ||--}o Text : "interactivityType"
-AdvertiserContentArticle ||--}o Boolean : "isAccessibleForFree"
-AdvertiserContentArticle ||--}o Boolean : "isFamilyFriendly"
 AdvertiserContentArticle ||--}o Place : "locationCreated"
 AdvertiserContentArticle ||--}o Thing : "mentions"
 AdvertiserContentArticle ||--}o PublicationEvent : "publication"
@@ -120,20 +129,11 @@ AdvertiserContentArticle ||--}o Event : "recordedAt"
 AdvertiserContentArticle ||--}o PublicationEvent : "releasedEvent"
 AdvertiserContentArticle ||--}o Review : "review"
 AdvertiserContentArticle ||--}o Review : "reviews"
-AdvertiserContentArticle ||--}o Date : "sdDatePublished"
 AdvertiserContentArticle ||--}o Organization : "sourceOrganization"
 AdvertiserContentArticle ||--}o Place : "spatial"
-AdvertiserContentArticle ||--}o Text : "text"
 AdvertiserContentArticle ||--}o ImageObject : "thumbnail"
-AdvertiserContentArticle ||--}o URL : "thumbnailUrl"
 AdvertiserContentArticle ||--}o Duration : "timeRequired"
 AdvertiserContentArticle ||--}o CreativeWork : "translationOfWork"
-AdvertiserContentArticle ||--}o Text : "typicalAgeRange"
 AdvertiserContentArticle ||--}o CreativeWork : "workTranslation"
-AdvertiserContentArticle ||--}o Text : "alternateName"
-AdvertiserContentArticle ||--}o Text : "disambiguatingDescription"
-AdvertiserContentArticle ||--}o Text : "name"
-AdvertiserContentArticle ||--}o URL : "sameAs"
 AdvertiserContentArticle ||--}o Action : "potentialAction"
-AdvertiserContentArticle ||--}o URL : "url"
 

@@ -8,11 +8,16 @@ ViewAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ViewAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
@@ -23,10 +28,5 @@ ViewAction ||--}o Thing : "result"
 ViewAction ||--}o HowTo : "actionProcess"
 ViewAction ||--}o ActionStatusType : "actionStatus"
 ViewAction ||--}o Thing : "error"
-ViewAction ||--}o Text : "alternateName"
-ViewAction ||--}o Text : "disambiguatingDescription"
-ViewAction ||--}o Text : "name"
-ViewAction ||--}o URL : "sameAs"
 ViewAction ||--}o Action : "potentialAction"
-ViewAction ||--}o URL : "url"
 

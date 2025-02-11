@@ -8,11 +8,16 @@ PrependAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 PrependAction ||--}o Place : "toLocation"
@@ -24,10 +29,5 @@ PrependAction ||--}o Thing : "result"
 PrependAction ||--}o HowTo : "actionProcess"
 PrependAction ||--}o ActionStatusType : "actionStatus"
 PrependAction ||--}o Thing : "error"
-PrependAction ||--}o Text : "alternateName"
-PrependAction ||--}o Text : "disambiguatingDescription"
-PrependAction ||--}o Text : "name"
-PrependAction ||--}o URL : "sameAs"
 PrependAction ||--}o Action : "potentialAction"
-PrependAction ||--}o URL : "url"
 

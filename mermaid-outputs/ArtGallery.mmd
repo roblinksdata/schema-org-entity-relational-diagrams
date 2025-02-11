@@ -1,8 +1,16 @@
 erDiagram
 ArtGallery {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ ArtGallery {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ArtGallery ||--}o Organization : "branchOf"
-ArtGallery ||--}o Text : "currenciesAccepted"
-ArtGallery ||--}o Text : "openingHours"
-ArtGallery ||--}o Text : "paymentAccepted"
-ArtGallery ||--}o Text : "priceRange"
-ArtGallery ||--}o Text : "globalLocationNumber"
-ArtGallery ||--}o URL : "hasGS1DigitalLink"
 ArtGallery ||--}o PropertyValue : "additionalProperty"
 ArtGallery ||--}o AggregateRating : "aggregateRating"
 ArtGallery ||--}o LocationFeatureSpecification : "amenityFeature"
-ArtGallery ||--}o Text : "branchCode"
 ArtGallery ||--}o Place : "containedIn"
 ArtGallery ||--}o Place : "containedInPlace"
 ArtGallery ||--}o Place : "containsPlace"
 ArtGallery ||--}o Event : "event"
 ArtGallery ||--}o Event : "events"
-ArtGallery ||--}o Text : "faxNumber"
 ArtGallery ||--}o Certification : "hasCertification"
-ArtGallery ||--}o Boolean : "hasDriveThroughService"
-ArtGallery ||--}o Boolean : "isAccessibleForFree"
-ArtGallery ||--}o Text : "isicV4"
-ArtGallery ||--}o URL : "map"
-ArtGallery ||--}o URL : "maps"
-ArtGallery ||--}o Integer : "maximumAttendeeCapacity"
 ArtGallery ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-ArtGallery ||--}o Boolean : "publicAccess"
 ArtGallery ||--}o Review : "review"
 ArtGallery ||--}o Review : "reviews"
-ArtGallery ||--}o Text : "slogan"
-ArtGallery ||--}o Boolean : "smokingAllowed"
 ArtGallery ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-ArtGallery ||--}o Text : "telephone"
-ArtGallery ||--}o URL : "tourBookingPage"
-ArtGallery ||--}o Text : "duns"
-ArtGallery ||--}o Text : "leiCode"
-ArtGallery ||--}o Text : "taxID"
 ArtGallery ||--}o InteractionCounter : "agentInteractionStatistic"
 ArtGallery ||--}o Person : "alumni"
-ArtGallery ||--}o Text : "award"
-ArtGallery ||--}o Text : "awards"
 ArtGallery ||--}o ContactPoint : "contactPoint"
 ArtGallery ||--}o ContactPoint : "contactPoints"
 ArtGallery ||--}o Organization : "department"
-ArtGallery ||--}o Date : "dissolutionDate"
-ArtGallery ||--}o Text : "email"
 ArtGallery ||--}o Person : "employee"
 ArtGallery ||--}o Person : "employees"
 ArtGallery ||--}o Person : "founders"
-ArtGallery ||--}o Date : "foundingDate"
 ArtGallery ||--}o Place : "foundingLocation"
 ArtGallery ||--}o Grant : "funding"
 ArtGallery ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ ArtGallery ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 ArtGallery ||--}o OfferCatalog : "hasOfferCatalog"
 ArtGallery ||--}o Place : "hasPOS"
 ArtGallery ||--}o InteractionCounter : "interactionStatistic"
-ArtGallery ||--}o Text : "iso6523Code"
-ArtGallery ||--}o Text : "legalName"
 ArtGallery ||--}o Offer : "makesOffer"
-ArtGallery ||--}o Text : "naics"
 ArtGallery ||--}o NonprofitType : "nonprofitStatus"
 ArtGallery ||--}o QuantitativeValue : "numberOfEmployees"
 ArtGallery ||--}o Organization : "parentOrganization"
 ArtGallery ||--}o Demand : "seeks"
 ArtGallery ||--}o Organization : "subOrganization"
-ArtGallery ||--}o Text : "vatID"
-ArtGallery ||--}o Text : "alternateName"
-ArtGallery ||--}o Text : "disambiguatingDescription"
-ArtGallery ||--}o Text : "name"
-ArtGallery ||--}o URL : "sameAs"
 ArtGallery ||--}o Action : "potentialAction"
-ArtGallery ||--}o URL : "url"
 

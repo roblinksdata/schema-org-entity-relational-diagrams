@@ -1,8 +1,16 @@
 erDiagram
 MotorcycleRepair {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ MotorcycleRepair {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MotorcycleRepair ||--}o Organization : "branchOf"
-MotorcycleRepair ||--}o Text : "currenciesAccepted"
-MotorcycleRepair ||--}o Text : "openingHours"
-MotorcycleRepair ||--}o Text : "paymentAccepted"
-MotorcycleRepair ||--}o Text : "priceRange"
-MotorcycleRepair ||--}o Text : "globalLocationNumber"
-MotorcycleRepair ||--}o URL : "hasGS1DigitalLink"
 MotorcycleRepair ||--}o PropertyValue : "additionalProperty"
 MotorcycleRepair ||--}o AggregateRating : "aggregateRating"
 MotorcycleRepair ||--}o LocationFeatureSpecification : "amenityFeature"
-MotorcycleRepair ||--}o Text : "branchCode"
 MotorcycleRepair ||--}o Place : "containedIn"
 MotorcycleRepair ||--}o Place : "containedInPlace"
 MotorcycleRepair ||--}o Place : "containsPlace"
 MotorcycleRepair ||--}o Event : "event"
 MotorcycleRepair ||--}o Event : "events"
-MotorcycleRepair ||--}o Text : "faxNumber"
 MotorcycleRepair ||--}o Certification : "hasCertification"
-MotorcycleRepair ||--}o Boolean : "hasDriveThroughService"
-MotorcycleRepair ||--}o Boolean : "isAccessibleForFree"
-MotorcycleRepair ||--}o Text : "isicV4"
-MotorcycleRepair ||--}o URL : "map"
-MotorcycleRepair ||--}o URL : "maps"
-MotorcycleRepair ||--}o Integer : "maximumAttendeeCapacity"
 MotorcycleRepair ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-MotorcycleRepair ||--}o Boolean : "publicAccess"
 MotorcycleRepair ||--}o Review : "review"
 MotorcycleRepair ||--}o Review : "reviews"
-MotorcycleRepair ||--}o Text : "slogan"
-MotorcycleRepair ||--}o Boolean : "smokingAllowed"
 MotorcycleRepair ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-MotorcycleRepair ||--}o Text : "telephone"
-MotorcycleRepair ||--}o URL : "tourBookingPage"
-MotorcycleRepair ||--}o Text : "duns"
-MotorcycleRepair ||--}o Text : "leiCode"
-MotorcycleRepair ||--}o Text : "taxID"
 MotorcycleRepair ||--}o InteractionCounter : "agentInteractionStatistic"
 MotorcycleRepair ||--}o Person : "alumni"
-MotorcycleRepair ||--}o Text : "award"
-MotorcycleRepair ||--}o Text : "awards"
 MotorcycleRepair ||--}o ContactPoint : "contactPoint"
 MotorcycleRepair ||--}o ContactPoint : "contactPoints"
 MotorcycleRepair ||--}o Organization : "department"
-MotorcycleRepair ||--}o Date : "dissolutionDate"
-MotorcycleRepair ||--}o Text : "email"
 MotorcycleRepair ||--}o Person : "employee"
 MotorcycleRepair ||--}o Person : "employees"
 MotorcycleRepair ||--}o Person : "founders"
-MotorcycleRepair ||--}o Date : "foundingDate"
 MotorcycleRepair ||--}o Place : "foundingLocation"
 MotorcycleRepair ||--}o Grant : "funding"
 MotorcycleRepair ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ MotorcycleRepair ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 MotorcycleRepair ||--}o OfferCatalog : "hasOfferCatalog"
 MotorcycleRepair ||--}o Place : "hasPOS"
 MotorcycleRepair ||--}o InteractionCounter : "interactionStatistic"
-MotorcycleRepair ||--}o Text : "iso6523Code"
-MotorcycleRepair ||--}o Text : "legalName"
 MotorcycleRepair ||--}o Offer : "makesOffer"
-MotorcycleRepair ||--}o Text : "naics"
 MotorcycleRepair ||--}o NonprofitType : "nonprofitStatus"
 MotorcycleRepair ||--}o QuantitativeValue : "numberOfEmployees"
 MotorcycleRepair ||--}o Organization : "parentOrganization"
 MotorcycleRepair ||--}o Demand : "seeks"
 MotorcycleRepair ||--}o Organization : "subOrganization"
-MotorcycleRepair ||--}o Text : "vatID"
-MotorcycleRepair ||--}o Text : "alternateName"
-MotorcycleRepair ||--}o Text : "disambiguatingDescription"
-MotorcycleRepair ||--}o Text : "name"
-MotorcycleRepair ||--}o URL : "sameAs"
 MotorcycleRepair ||--}o Action : "potentialAction"
-MotorcycleRepair ||--}o URL : "url"
 

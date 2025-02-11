@@ -1,20 +1,20 @@
 erDiagram
 EducationalAudience {
+    TextList educationalRole  
+    TextList audienceType  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-EducationalAudience ||--}o Text : "educationalRole"
-EducationalAudience ||--}o Text : "audienceType"
 EducationalAudience ||--}o AdministrativeArea : "geographicArea"
-EducationalAudience ||--}o Text : "alternateName"
-EducationalAudience ||--}o Text : "disambiguatingDescription"
-EducationalAudience ||--}o Text : "name"
-EducationalAudience ||--}o URL : "sameAs"
 EducationalAudience ||--}o Action : "potentialAction"
-EducationalAudience ||--}o URL : "url"
 

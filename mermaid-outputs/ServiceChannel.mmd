@@ -1,12 +1,18 @@
 erDiagram
 ServiceChannel {
     stringList availableLanguage  
+    URLList serviceUrl  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ServiceChannel ||--}o Duration : "processingTime"
@@ -15,11 +21,5 @@ ServiceChannel ||--}o Place : "serviceLocation"
 ServiceChannel ||--}o ContactPoint : "servicePhone"
 ServiceChannel ||--}o PostalAddress : "servicePostalAddress"
 ServiceChannel ||--}o ContactPoint : "serviceSmsNumber"
-ServiceChannel ||--}o URL : "serviceUrl"
-ServiceChannel ||--}o Text : "alternateName"
-ServiceChannel ||--}o Text : "disambiguatingDescription"
-ServiceChannel ||--}o Text : "name"
-ServiceChannel ||--}o URL : "sameAs"
 ServiceChannel ||--}o Action : "potentialAction"
-ServiceChannel ||--}o URL : "url"
 

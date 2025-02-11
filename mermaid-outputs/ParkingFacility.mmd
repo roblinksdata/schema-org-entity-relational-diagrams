@@ -1,8 +1,13 @@
 erDiagram
 ParkingFacility {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ ParkingFacility {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ParkingFacility ||--}o Text : "openingHours"
-ParkingFacility ||--}o Text : "globalLocationNumber"
-ParkingFacility ||--}o URL : "hasGS1DigitalLink"
 ParkingFacility ||--}o PropertyValue : "additionalProperty"
 ParkingFacility ||--}o AggregateRating : "aggregateRating"
 ParkingFacility ||--}o LocationFeatureSpecification : "amenityFeature"
-ParkingFacility ||--}o Text : "branchCode"
 ParkingFacility ||--}o Place : "containedIn"
 ParkingFacility ||--}o Place : "containedInPlace"
 ParkingFacility ||--}o Place : "containsPlace"
 ParkingFacility ||--}o Event : "event"
 ParkingFacility ||--}o Event : "events"
-ParkingFacility ||--}o Text : "faxNumber"
 ParkingFacility ||--}o Certification : "hasCertification"
-ParkingFacility ||--}o Boolean : "hasDriveThroughService"
-ParkingFacility ||--}o Boolean : "isAccessibleForFree"
-ParkingFacility ||--}o Text : "isicV4"
-ParkingFacility ||--}o URL : "map"
-ParkingFacility ||--}o URL : "maps"
-ParkingFacility ||--}o Integer : "maximumAttendeeCapacity"
 ParkingFacility ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-ParkingFacility ||--}o Boolean : "publicAccess"
 ParkingFacility ||--}o Review : "review"
 ParkingFacility ||--}o Review : "reviews"
-ParkingFacility ||--}o Text : "slogan"
-ParkingFacility ||--}o Boolean : "smokingAllowed"
 ParkingFacility ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-ParkingFacility ||--}o Text : "telephone"
-ParkingFacility ||--}o URL : "tourBookingPage"
-ParkingFacility ||--}o Text : "alternateName"
-ParkingFacility ||--}o Text : "disambiguatingDescription"
-ParkingFacility ||--}o Text : "name"
-ParkingFacility ||--}o URL : "sameAs"
 ParkingFacility ||--}o Action : "potentialAction"
-ParkingFacility ||--}o URL : "url"
 

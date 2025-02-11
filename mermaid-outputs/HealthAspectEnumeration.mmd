@@ -2,17 +2,17 @@ erDiagram
 HealthAspectEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-HealthAspectEnumeration ||--}o Text : "alternateName"
-HealthAspectEnumeration ||--}o Text : "disambiguatingDescription"
-HealthAspectEnumeration ||--}o Text : "name"
-HealthAspectEnumeration ||--}o URL : "sameAs"
 HealthAspectEnumeration ||--}o Action : "potentialAction"
-HealthAspectEnumeration ||--}o URL : "url"
 

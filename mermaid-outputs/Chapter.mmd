@@ -2,6 +2,7 @@ erDiagram
 Chapter {
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -15,25 +16,46 @@ Chapter {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,24 +67,32 @@ Chapter {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Chapter ||--}o Text : "pagination"
 Chapter ||--}o Thing : "about"
 Chapter ||--}o Place : "contentLocation"
 Chapter ||--}o CreativeWork : "hasPart"
@@ -70,43 +100,22 @@ Chapter ||--}o Claim : "interpretedAsClaim"
 Chapter ||--}o Thing : "mainEntity"
 Chapter ||--}o Place : "spatialCoverage"
 Chapter ||--}o CreativeWork : "workExample"
-Chapter ||--}o Text : "abstract"
-Chapter ||--}o Text : "accessMode"
 Chapter ||--}o ItemList : "accessModeSufficient"
-Chapter ||--}o Text : "accessibilityAPI"
-Chapter ||--}o Text : "accessibilityControl"
-Chapter ||--}o Text : "accessibilityFeature"
-Chapter ||--}o Text : "accessibilityHazard"
-Chapter ||--}o Text : "accessibilitySummary"
 Chapter ||--}o Person : "accountablePerson"
 Chapter ||--}o AggregateRating : "aggregateRating"
-Chapter ||--}o Text : "alternativeHeadline"
 Chapter ||--}o MediaObject : "associatedMedia"
 Chapter ||--}o Audience : "audience"
-Chapter ||--}o Text : "award"
-Chapter ||--}o Text : "awards"
 Chapter ||--}o Person : "character"
 Chapter ||--}o Comment : "comment"
-Chapter ||--}o Integer : "commentCount"
-Chapter ||--}o Text : "conditionsOfAccess"
-Chapter ||--}o DateTime : "contentReferenceTime"
-Chapter ||--}o Text : "copyrightNotice"
-Chapter ||--}o Number : "copyrightYear"
 Chapter ||--}o Country : "countryOfOrigin"
-Chapter ||--}o Text : "creditText"
 Chapter ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Chapter ||--}o URL : "discussionUrl"
 Chapter ||--}o Person : "editor"
 Chapter ||--}o AlignmentObject : "educationalAlignment"
 Chapter ||--}o MediaObject : "encoding"
 Chapter ||--}o MediaObject : "encodings"
 Chapter ||--}o CreativeWork : "exampleOfWork"
 Chapter ||--}o Grant : "funding"
-Chapter ||--}o Text : "headline"
 Chapter ||--}o InteractionCounter : "interactionStatistic"
-Chapter ||--}o Text : "interactivityType"
-Chapter ||--}o Boolean : "isAccessibleForFree"
-Chapter ||--}o Boolean : "isFamilyFriendly"
 Chapter ||--}o Place : "locationCreated"
 Chapter ||--}o Thing : "mentions"
 Chapter ||--}o PublicationEvent : "publication"
@@ -115,20 +124,11 @@ Chapter ||--}o Event : "recordedAt"
 Chapter ||--}o PublicationEvent : "releasedEvent"
 Chapter ||--}o Review : "review"
 Chapter ||--}o Review : "reviews"
-Chapter ||--}o Date : "sdDatePublished"
 Chapter ||--}o Organization : "sourceOrganization"
 Chapter ||--}o Place : "spatial"
-Chapter ||--}o Text : "text"
 Chapter ||--}o ImageObject : "thumbnail"
-Chapter ||--}o URL : "thumbnailUrl"
 Chapter ||--}o Duration : "timeRequired"
 Chapter ||--}o CreativeWork : "translationOfWork"
-Chapter ||--}o Text : "typicalAgeRange"
 Chapter ||--}o CreativeWork : "workTranslation"
-Chapter ||--}o Text : "alternateName"
-Chapter ||--}o Text : "disambiguatingDescription"
-Chapter ||--}o Text : "name"
-Chapter ||--}o URL : "sameAs"
 Chapter ||--}o Action : "potentialAction"
-Chapter ||--}o URL : "url"
 

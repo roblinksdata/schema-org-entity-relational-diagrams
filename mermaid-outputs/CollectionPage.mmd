@@ -1,7 +1,11 @@
 erDiagram
 CollectionPage {
     stringList breadcrumb  
+    DateList lastReviewed  
+    URLList relatedLink  
     stringList reviewedBy  
+    URLList significantLink  
+    URLList significantLinks  
     stringList speakable  
     stringList acquireLicensePage  
     stringList contributor  
@@ -16,25 +20,46 @@ CollectionPage {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -46,29 +71,34 @@ CollectionPage {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-CollectionPage ||--}o Date : "lastReviewed"
 CollectionPage ||--}o WebPageElement : "mainContentOfPage"
 CollectionPage ||--}o ImageObject : "primaryImageOfPage"
-CollectionPage ||--}o URL : "relatedLink"
-CollectionPage ||--}o URL : "significantLink"
-CollectionPage ||--}o URL : "significantLinks"
 CollectionPage ||--}o Specialty : "specialty"
 CollectionPage ||--}o Thing : "about"
 CollectionPage ||--}o Place : "contentLocation"
@@ -77,43 +107,22 @@ CollectionPage ||--}o Claim : "interpretedAsClaim"
 CollectionPage ||--}o Thing : "mainEntity"
 CollectionPage ||--}o Place : "spatialCoverage"
 CollectionPage ||--}o CreativeWork : "workExample"
-CollectionPage ||--}o Text : "abstract"
-CollectionPage ||--}o Text : "accessMode"
 CollectionPage ||--}o ItemList : "accessModeSufficient"
-CollectionPage ||--}o Text : "accessibilityAPI"
-CollectionPage ||--}o Text : "accessibilityControl"
-CollectionPage ||--}o Text : "accessibilityFeature"
-CollectionPage ||--}o Text : "accessibilityHazard"
-CollectionPage ||--}o Text : "accessibilitySummary"
 CollectionPage ||--}o Person : "accountablePerson"
 CollectionPage ||--}o AggregateRating : "aggregateRating"
-CollectionPage ||--}o Text : "alternativeHeadline"
 CollectionPage ||--}o MediaObject : "associatedMedia"
 CollectionPage ||--}o Audience : "audience"
-CollectionPage ||--}o Text : "award"
-CollectionPage ||--}o Text : "awards"
 CollectionPage ||--}o Person : "character"
 CollectionPage ||--}o Comment : "comment"
-CollectionPage ||--}o Integer : "commentCount"
-CollectionPage ||--}o Text : "conditionsOfAccess"
-CollectionPage ||--}o DateTime : "contentReferenceTime"
-CollectionPage ||--}o Text : "copyrightNotice"
-CollectionPage ||--}o Number : "copyrightYear"
 CollectionPage ||--}o Country : "countryOfOrigin"
-CollectionPage ||--}o Text : "creditText"
 CollectionPage ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-CollectionPage ||--}o URL : "discussionUrl"
 CollectionPage ||--}o Person : "editor"
 CollectionPage ||--}o AlignmentObject : "educationalAlignment"
 CollectionPage ||--}o MediaObject : "encoding"
 CollectionPage ||--}o MediaObject : "encodings"
 CollectionPage ||--}o CreativeWork : "exampleOfWork"
 CollectionPage ||--}o Grant : "funding"
-CollectionPage ||--}o Text : "headline"
 CollectionPage ||--}o InteractionCounter : "interactionStatistic"
-CollectionPage ||--}o Text : "interactivityType"
-CollectionPage ||--}o Boolean : "isAccessibleForFree"
-CollectionPage ||--}o Boolean : "isFamilyFriendly"
 CollectionPage ||--}o Place : "locationCreated"
 CollectionPage ||--}o Thing : "mentions"
 CollectionPage ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ CollectionPage ||--}o Event : "recordedAt"
 CollectionPage ||--}o PublicationEvent : "releasedEvent"
 CollectionPage ||--}o Review : "review"
 CollectionPage ||--}o Review : "reviews"
-CollectionPage ||--}o Date : "sdDatePublished"
 CollectionPage ||--}o Organization : "sourceOrganization"
 CollectionPage ||--}o Place : "spatial"
-CollectionPage ||--}o Text : "text"
 CollectionPage ||--}o ImageObject : "thumbnail"
-CollectionPage ||--}o URL : "thumbnailUrl"
 CollectionPage ||--}o Duration : "timeRequired"
 CollectionPage ||--}o CreativeWork : "translationOfWork"
-CollectionPage ||--}o Text : "typicalAgeRange"
 CollectionPage ||--}o CreativeWork : "workTranslation"
-CollectionPage ||--}o Text : "alternateName"
-CollectionPage ||--}o Text : "disambiguatingDescription"
-CollectionPage ||--}o Text : "name"
-CollectionPage ||--}o URL : "sameAs"
 CollectionPage ||--}o Action : "potentialAction"
-CollectionPage ||--}o URL : "url"
 

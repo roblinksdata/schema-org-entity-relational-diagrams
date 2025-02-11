@@ -8,11 +8,16 @@ DiscoverAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DiscoverAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ DiscoverAction ||--}o Thing : "result"
 DiscoverAction ||--}o HowTo : "actionProcess"
 DiscoverAction ||--}o ActionStatusType : "actionStatus"
 DiscoverAction ||--}o Thing : "error"
-DiscoverAction ||--}o Text : "alternateName"
-DiscoverAction ||--}o Text : "disambiguatingDescription"
-DiscoverAction ||--}o Text : "name"
-DiscoverAction ||--}o URL : "sameAs"
 DiscoverAction ||--}o Action : "potentialAction"
-DiscoverAction ||--}o URL : "url"
 

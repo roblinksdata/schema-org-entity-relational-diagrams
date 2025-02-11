@@ -2,9 +2,13 @@ erDiagram
 TouristAttraction {
     stringList availableLanguage  
     stringList touristType  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -16,51 +20,47 @@ TouristAttraction {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-TouristAttraction ||--}o Text : "globalLocationNumber"
-TouristAttraction ||--}o URL : "hasGS1DigitalLink"
 TouristAttraction ||--}o PropertyValue : "additionalProperty"
 TouristAttraction ||--}o AggregateRating : "aggregateRating"
 TouristAttraction ||--}o LocationFeatureSpecification : "amenityFeature"
-TouristAttraction ||--}o Text : "branchCode"
 TouristAttraction ||--}o Place : "containedIn"
 TouristAttraction ||--}o Place : "containedInPlace"
 TouristAttraction ||--}o Place : "containsPlace"
 TouristAttraction ||--}o Event : "event"
 TouristAttraction ||--}o Event : "events"
-TouristAttraction ||--}o Text : "faxNumber"
 TouristAttraction ||--}o Certification : "hasCertification"
-TouristAttraction ||--}o Boolean : "hasDriveThroughService"
-TouristAttraction ||--}o Boolean : "isAccessibleForFree"
-TouristAttraction ||--}o Text : "isicV4"
-TouristAttraction ||--}o URL : "map"
-TouristAttraction ||--}o URL : "maps"
-TouristAttraction ||--}o Integer : "maximumAttendeeCapacity"
 TouristAttraction ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-TouristAttraction ||--}o Boolean : "publicAccess"
 TouristAttraction ||--}o Review : "review"
 TouristAttraction ||--}o Review : "reviews"
-TouristAttraction ||--}o Text : "slogan"
-TouristAttraction ||--}o Boolean : "smokingAllowed"
 TouristAttraction ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-TouristAttraction ||--}o Text : "telephone"
-TouristAttraction ||--}o URL : "tourBookingPage"
-TouristAttraction ||--}o Text : "alternateName"
-TouristAttraction ||--}o Text : "disambiguatingDescription"
-TouristAttraction ||--}o Text : "name"
-TouristAttraction ||--}o URL : "sameAs"
 TouristAttraction ||--}o Action : "potentialAction"
-TouristAttraction ||--}o URL : "url"
 

@@ -4,58 +4,70 @@ ResearchProject {
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ResearchProject ||--}o Text : "duns"
-ResearchProject ||--}o Text : "globalLocationNumber"
-ResearchProject ||--}o URL : "hasGS1DigitalLink"
-ResearchProject ||--}o Text : "leiCode"
-ResearchProject ||--}o Text : "taxID"
 ResearchProject ||--}o InteractionCounter : "agentInteractionStatistic"
 ResearchProject ||--}o AggregateRating : "aggregateRating"
 ResearchProject ||--}o Person : "alumni"
-ResearchProject ||--}o Text : "award"
-ResearchProject ||--}o Text : "awards"
 ResearchProject ||--}o ContactPoint : "contactPoint"
 ResearchProject ||--}o ContactPoint : "contactPoints"
 ResearchProject ||--}o Organization : "department"
-ResearchProject ||--}o Date : "dissolutionDate"
-ResearchProject ||--}o Text : "email"
 ResearchProject ||--}o Person : "employee"
 ResearchProject ||--}o Person : "employees"
 ResearchProject ||--}o Event : "event"
 ResearchProject ||--}o Event : "events"
-ResearchProject ||--}o Text : "faxNumber"
 ResearchProject ||--}o Person : "founders"
-ResearchProject ||--}o Date : "foundingDate"
 ResearchProject ||--}o Place : "foundingLocation"
 ResearchProject ||--}o Grant : "funding"
 ResearchProject ||--}o Certification : "hasCertification"
@@ -65,25 +77,13 @@ ResearchProject ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 ResearchProject ||--}o OfferCatalog : "hasOfferCatalog"
 ResearchProject ||--}o Place : "hasPOS"
 ResearchProject ||--}o InteractionCounter : "interactionStatistic"
-ResearchProject ||--}o Text : "isicV4"
-ResearchProject ||--}o Text : "iso6523Code"
-ResearchProject ||--}o Text : "legalName"
 ResearchProject ||--}o Offer : "makesOffer"
-ResearchProject ||--}o Text : "naics"
 ResearchProject ||--}o NonprofitType : "nonprofitStatus"
 ResearchProject ||--}o QuantitativeValue : "numberOfEmployees"
 ResearchProject ||--}o Organization : "parentOrganization"
 ResearchProject ||--}o Review : "review"
 ResearchProject ||--}o Review : "reviews"
 ResearchProject ||--}o Demand : "seeks"
-ResearchProject ||--}o Text : "slogan"
 ResearchProject ||--}o Organization : "subOrganization"
-ResearchProject ||--}o Text : "telephone"
-ResearchProject ||--}o Text : "vatID"
-ResearchProject ||--}o Text : "alternateName"
-ResearchProject ||--}o Text : "disambiguatingDescription"
-ResearchProject ||--}o Text : "name"
-ResearchProject ||--}o URL : "sameAs"
 ResearchProject ||--}o Action : "potentialAction"
-ResearchProject ||--}o URL : "url"
 

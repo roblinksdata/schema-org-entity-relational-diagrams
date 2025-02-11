@@ -1,21 +1,21 @@
 erDiagram
 CategoryCode {
+    TextList codeValue  
     stringList inCodeSet  
     stringList inDefinedTermSet  
+    TextList termCode  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-CategoryCode ||--}o Text : "codeValue"
-CategoryCode ||--}o Text : "termCode"
-CategoryCode ||--}o Text : "alternateName"
-CategoryCode ||--}o Text : "disambiguatingDescription"
-CategoryCode ||--}o Text : "name"
-CategoryCode ||--}o URL : "sameAs"
 CategoryCode ||--}o Action : "potentialAction"
-CategoryCode ||--}o URL : "url"
 

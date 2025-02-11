@@ -1,7 +1,12 @@
 erDiagram
 Recipe {
+    TextList ingredients  
+    TextList recipeIngredient  
     stringList recipeInstructions  
     stringList recipeYield  
+    TextList cookingMethod  
+    TextList recipeCategory  
+    TextList recipeCuisine  
     stringList step  
     stringList yield  
     stringList estimatedCost  
@@ -19,25 +24,46 @@ Recipe {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -49,30 +75,34 @@ Recipe {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Recipe ||--}o Duration : "cookTime"
-Recipe ||--}o Text : "ingredients"
-Recipe ||--}o Text : "recipeIngredient"
-Recipe ||--}o Text : "cookingMethod"
 Recipe ||--}o NutritionInformation : "nutrition"
-Recipe ||--}o Text : "recipeCategory"
-Recipe ||--}o Text : "recipeCuisine"
 Recipe ||--}o RestrictedDiet : "suitableForDiet"
 Recipe ||--}o Duration : "performTime"
 Recipe ||--}o Thing : "supply"
@@ -86,43 +116,22 @@ Recipe ||--}o Claim : "interpretedAsClaim"
 Recipe ||--}o Thing : "mainEntity"
 Recipe ||--}o Place : "spatialCoverage"
 Recipe ||--}o CreativeWork : "workExample"
-Recipe ||--}o Text : "abstract"
-Recipe ||--}o Text : "accessMode"
 Recipe ||--}o ItemList : "accessModeSufficient"
-Recipe ||--}o Text : "accessibilityAPI"
-Recipe ||--}o Text : "accessibilityControl"
-Recipe ||--}o Text : "accessibilityFeature"
-Recipe ||--}o Text : "accessibilityHazard"
-Recipe ||--}o Text : "accessibilitySummary"
 Recipe ||--}o Person : "accountablePerson"
 Recipe ||--}o AggregateRating : "aggregateRating"
-Recipe ||--}o Text : "alternativeHeadline"
 Recipe ||--}o MediaObject : "associatedMedia"
 Recipe ||--}o Audience : "audience"
-Recipe ||--}o Text : "award"
-Recipe ||--}o Text : "awards"
 Recipe ||--}o Person : "character"
 Recipe ||--}o Comment : "comment"
-Recipe ||--}o Integer : "commentCount"
-Recipe ||--}o Text : "conditionsOfAccess"
-Recipe ||--}o DateTime : "contentReferenceTime"
-Recipe ||--}o Text : "copyrightNotice"
-Recipe ||--}o Number : "copyrightYear"
 Recipe ||--}o Country : "countryOfOrigin"
-Recipe ||--}o Text : "creditText"
 Recipe ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Recipe ||--}o URL : "discussionUrl"
 Recipe ||--}o Person : "editor"
 Recipe ||--}o AlignmentObject : "educationalAlignment"
 Recipe ||--}o MediaObject : "encoding"
 Recipe ||--}o MediaObject : "encodings"
 Recipe ||--}o CreativeWork : "exampleOfWork"
 Recipe ||--}o Grant : "funding"
-Recipe ||--}o Text : "headline"
 Recipe ||--}o InteractionCounter : "interactionStatistic"
-Recipe ||--}o Text : "interactivityType"
-Recipe ||--}o Boolean : "isAccessibleForFree"
-Recipe ||--}o Boolean : "isFamilyFriendly"
 Recipe ||--}o Place : "locationCreated"
 Recipe ||--}o Thing : "mentions"
 Recipe ||--}o PublicationEvent : "publication"
@@ -131,20 +140,11 @@ Recipe ||--}o Event : "recordedAt"
 Recipe ||--}o PublicationEvent : "releasedEvent"
 Recipe ||--}o Review : "review"
 Recipe ||--}o Review : "reviews"
-Recipe ||--}o Date : "sdDatePublished"
 Recipe ||--}o Organization : "sourceOrganization"
 Recipe ||--}o Place : "spatial"
-Recipe ||--}o Text : "text"
 Recipe ||--}o ImageObject : "thumbnail"
-Recipe ||--}o URL : "thumbnailUrl"
 Recipe ||--}o Duration : "timeRequired"
 Recipe ||--}o CreativeWork : "translationOfWork"
-Recipe ||--}o Text : "typicalAgeRange"
 Recipe ||--}o CreativeWork : "workTranslation"
-Recipe ||--}o Text : "alternateName"
-Recipe ||--}o Text : "disambiguatingDescription"
-Recipe ||--}o Text : "name"
-Recipe ||--}o URL : "sameAs"
 Recipe ||--}o Action : "potentialAction"
-Recipe ||--}o URL : "url"
 

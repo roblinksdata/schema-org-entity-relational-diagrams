@@ -9,11 +9,16 @@ PlanAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 PlanAction ||--}o Thing : "instrument"
@@ -22,10 +27,5 @@ PlanAction ||--}o Thing : "result"
 PlanAction ||--}o HowTo : "actionProcess"
 PlanAction ||--}o ActionStatusType : "actionStatus"
 PlanAction ||--}o Thing : "error"
-PlanAction ||--}o Text : "alternateName"
-PlanAction ||--}o Text : "disambiguatingDescription"
-PlanAction ||--}o Text : "name"
-PlanAction ||--}o URL : "sameAs"
 PlanAction ||--}o Action : "potentialAction"
-PlanAction ||--}o URL : "url"
 

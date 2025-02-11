@@ -9,11 +9,16 @@ SeekToAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SeekToAction ||--}o Thing : "instrument"
@@ -22,10 +27,5 @@ SeekToAction ||--}o Thing : "result"
 SeekToAction ||--}o HowTo : "actionProcess"
 SeekToAction ||--}o ActionStatusType : "actionStatus"
 SeekToAction ||--}o Thing : "error"
-SeekToAction ||--}o Text : "alternateName"
-SeekToAction ||--}o Text : "disambiguatingDescription"
-SeekToAction ||--}o Text : "name"
-SeekToAction ||--}o URL : "sameAs"
 SeekToAction ||--}o Action : "potentialAction"
-SeekToAction ||--}o URL : "url"
 

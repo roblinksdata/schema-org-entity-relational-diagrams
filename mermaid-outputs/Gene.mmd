@@ -1,5 +1,6 @@
 erDiagram
 Gene {
+    TextList hasBioPolymerSequence  
     stringList expressedIn  
     stringList hasRepresentation  
     stringList associatedDisease  
@@ -8,14 +9,18 @@ Gene {
     stringList isLocatedInSubcellularLocation  
     stringList taxonomicRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Gene ||--}o Text : "hasBioPolymerSequence"
 Gene ||--}o Gene : "alternativeOf"
 Gene ||--}o BioChemEntity : "encodesBioChemEntity"
 Gene ||--}o BioChemEntity : "bioChemInteraction"
@@ -25,10 +30,5 @@ Gene ||--}o Grant : "funding"
 Gene ||--}o BioChemEntity : "hasBioChemEntityPart"
 Gene ||--}o Gene : "isEncodedByBioChemEntity"
 Gene ||--}o BioChemEntity : "isPartOfBioChemEntity"
-Gene ||--}o Text : "alternateName"
-Gene ||--}o Text : "disambiguatingDescription"
-Gene ||--}o Text : "name"
-Gene ||--}o URL : "sameAs"
 Gene ||--}o Action : "potentialAction"
-Gene ||--}o URL : "url"
 

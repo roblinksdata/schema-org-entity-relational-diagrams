@@ -1,8 +1,16 @@
 erDiagram
 AutomotiveBusiness {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ AutomotiveBusiness {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AutomotiveBusiness ||--}o Organization : "branchOf"
-AutomotiveBusiness ||--}o Text : "currenciesAccepted"
-AutomotiveBusiness ||--}o Text : "openingHours"
-AutomotiveBusiness ||--}o Text : "paymentAccepted"
-AutomotiveBusiness ||--}o Text : "priceRange"
-AutomotiveBusiness ||--}o Text : "globalLocationNumber"
-AutomotiveBusiness ||--}o URL : "hasGS1DigitalLink"
 AutomotiveBusiness ||--}o PropertyValue : "additionalProperty"
 AutomotiveBusiness ||--}o AggregateRating : "aggregateRating"
 AutomotiveBusiness ||--}o LocationFeatureSpecification : "amenityFeature"
-AutomotiveBusiness ||--}o Text : "branchCode"
 AutomotiveBusiness ||--}o Place : "containedIn"
 AutomotiveBusiness ||--}o Place : "containedInPlace"
 AutomotiveBusiness ||--}o Place : "containsPlace"
 AutomotiveBusiness ||--}o Event : "event"
 AutomotiveBusiness ||--}o Event : "events"
-AutomotiveBusiness ||--}o Text : "faxNumber"
 AutomotiveBusiness ||--}o Certification : "hasCertification"
-AutomotiveBusiness ||--}o Boolean : "hasDriveThroughService"
-AutomotiveBusiness ||--}o Boolean : "isAccessibleForFree"
-AutomotiveBusiness ||--}o Text : "isicV4"
-AutomotiveBusiness ||--}o URL : "map"
-AutomotiveBusiness ||--}o URL : "maps"
-AutomotiveBusiness ||--}o Integer : "maximumAttendeeCapacity"
 AutomotiveBusiness ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-AutomotiveBusiness ||--}o Boolean : "publicAccess"
 AutomotiveBusiness ||--}o Review : "review"
 AutomotiveBusiness ||--}o Review : "reviews"
-AutomotiveBusiness ||--}o Text : "slogan"
-AutomotiveBusiness ||--}o Boolean : "smokingAllowed"
 AutomotiveBusiness ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-AutomotiveBusiness ||--}o Text : "telephone"
-AutomotiveBusiness ||--}o URL : "tourBookingPage"
-AutomotiveBusiness ||--}o Text : "duns"
-AutomotiveBusiness ||--}o Text : "leiCode"
-AutomotiveBusiness ||--}o Text : "taxID"
 AutomotiveBusiness ||--}o InteractionCounter : "agentInteractionStatistic"
 AutomotiveBusiness ||--}o Person : "alumni"
-AutomotiveBusiness ||--}o Text : "award"
-AutomotiveBusiness ||--}o Text : "awards"
 AutomotiveBusiness ||--}o ContactPoint : "contactPoint"
 AutomotiveBusiness ||--}o ContactPoint : "contactPoints"
 AutomotiveBusiness ||--}o Organization : "department"
-AutomotiveBusiness ||--}o Date : "dissolutionDate"
-AutomotiveBusiness ||--}o Text : "email"
 AutomotiveBusiness ||--}o Person : "employee"
 AutomotiveBusiness ||--}o Person : "employees"
 AutomotiveBusiness ||--}o Person : "founders"
-AutomotiveBusiness ||--}o Date : "foundingDate"
 AutomotiveBusiness ||--}o Place : "foundingLocation"
 AutomotiveBusiness ||--}o Grant : "funding"
 AutomotiveBusiness ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ AutomotiveBusiness ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 AutomotiveBusiness ||--}o OfferCatalog : "hasOfferCatalog"
 AutomotiveBusiness ||--}o Place : "hasPOS"
 AutomotiveBusiness ||--}o InteractionCounter : "interactionStatistic"
-AutomotiveBusiness ||--}o Text : "iso6523Code"
-AutomotiveBusiness ||--}o Text : "legalName"
 AutomotiveBusiness ||--}o Offer : "makesOffer"
-AutomotiveBusiness ||--}o Text : "naics"
 AutomotiveBusiness ||--}o NonprofitType : "nonprofitStatus"
 AutomotiveBusiness ||--}o QuantitativeValue : "numberOfEmployees"
 AutomotiveBusiness ||--}o Organization : "parentOrganization"
 AutomotiveBusiness ||--}o Demand : "seeks"
 AutomotiveBusiness ||--}o Organization : "subOrganization"
-AutomotiveBusiness ||--}o Text : "vatID"
-AutomotiveBusiness ||--}o Text : "alternateName"
-AutomotiveBusiness ||--}o Text : "disambiguatingDescription"
-AutomotiveBusiness ||--}o Text : "name"
-AutomotiveBusiness ||--}o URL : "sameAs"
 AutomotiveBusiness ||--}o Action : "potentialAction"
-AutomotiveBusiness ||--}o URL : "url"
 

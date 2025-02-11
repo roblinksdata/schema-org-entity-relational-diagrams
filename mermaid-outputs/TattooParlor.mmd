@@ -1,8 +1,16 @@
 erDiagram
 TattooParlor {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ TattooParlor {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TattooParlor ||--}o Organization : "branchOf"
-TattooParlor ||--}o Text : "currenciesAccepted"
-TattooParlor ||--}o Text : "openingHours"
-TattooParlor ||--}o Text : "paymentAccepted"
-TattooParlor ||--}o Text : "priceRange"
-TattooParlor ||--}o Text : "globalLocationNumber"
-TattooParlor ||--}o URL : "hasGS1DigitalLink"
 TattooParlor ||--}o PropertyValue : "additionalProperty"
 TattooParlor ||--}o AggregateRating : "aggregateRating"
 TattooParlor ||--}o LocationFeatureSpecification : "amenityFeature"
-TattooParlor ||--}o Text : "branchCode"
 TattooParlor ||--}o Place : "containedIn"
 TattooParlor ||--}o Place : "containedInPlace"
 TattooParlor ||--}o Place : "containsPlace"
 TattooParlor ||--}o Event : "event"
 TattooParlor ||--}o Event : "events"
-TattooParlor ||--}o Text : "faxNumber"
 TattooParlor ||--}o Certification : "hasCertification"
-TattooParlor ||--}o Boolean : "hasDriveThroughService"
-TattooParlor ||--}o Boolean : "isAccessibleForFree"
-TattooParlor ||--}o Text : "isicV4"
-TattooParlor ||--}o URL : "map"
-TattooParlor ||--}o URL : "maps"
-TattooParlor ||--}o Integer : "maximumAttendeeCapacity"
 TattooParlor ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-TattooParlor ||--}o Boolean : "publicAccess"
 TattooParlor ||--}o Review : "review"
 TattooParlor ||--}o Review : "reviews"
-TattooParlor ||--}o Text : "slogan"
-TattooParlor ||--}o Boolean : "smokingAllowed"
 TattooParlor ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-TattooParlor ||--}o Text : "telephone"
-TattooParlor ||--}o URL : "tourBookingPage"
-TattooParlor ||--}o Text : "duns"
-TattooParlor ||--}o Text : "leiCode"
-TattooParlor ||--}o Text : "taxID"
 TattooParlor ||--}o InteractionCounter : "agentInteractionStatistic"
 TattooParlor ||--}o Person : "alumni"
-TattooParlor ||--}o Text : "award"
-TattooParlor ||--}o Text : "awards"
 TattooParlor ||--}o ContactPoint : "contactPoint"
 TattooParlor ||--}o ContactPoint : "contactPoints"
 TattooParlor ||--}o Organization : "department"
-TattooParlor ||--}o Date : "dissolutionDate"
-TattooParlor ||--}o Text : "email"
 TattooParlor ||--}o Person : "employee"
 TattooParlor ||--}o Person : "employees"
 TattooParlor ||--}o Person : "founders"
-TattooParlor ||--}o Date : "foundingDate"
 TattooParlor ||--}o Place : "foundingLocation"
 TattooParlor ||--}o Grant : "funding"
 TattooParlor ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ TattooParlor ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 TattooParlor ||--}o OfferCatalog : "hasOfferCatalog"
 TattooParlor ||--}o Place : "hasPOS"
 TattooParlor ||--}o InteractionCounter : "interactionStatistic"
-TattooParlor ||--}o Text : "iso6523Code"
-TattooParlor ||--}o Text : "legalName"
 TattooParlor ||--}o Offer : "makesOffer"
-TattooParlor ||--}o Text : "naics"
 TattooParlor ||--}o NonprofitType : "nonprofitStatus"
 TattooParlor ||--}o QuantitativeValue : "numberOfEmployees"
 TattooParlor ||--}o Organization : "parentOrganization"
 TattooParlor ||--}o Demand : "seeks"
 TattooParlor ||--}o Organization : "subOrganization"
-TattooParlor ||--}o Text : "vatID"
-TattooParlor ||--}o Text : "alternateName"
-TattooParlor ||--}o Text : "disambiguatingDescription"
-TattooParlor ||--}o Text : "name"
-TattooParlor ||--}o URL : "sameAs"
 TattooParlor ||--}o Action : "potentialAction"
-TattooParlor ||--}o URL : "url"
 

@@ -4,11 +4,16 @@ MedicalTrial {
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalTrial ||--}o MedicalTrialDesign : "trialDesign"
@@ -22,10 +27,5 @@ MedicalTrial ||--}o MedicineSystem : "medicineSystem"
 MedicalTrial ||--}o Organization : "recognizingAuthority"
 MedicalTrial ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalTrial ||--}o MedicalStudy : "study"
-MedicalTrial ||--}o Text : "alternateName"
-MedicalTrial ||--}o Text : "disambiguatingDescription"
-MedicalTrial ||--}o Text : "name"
-MedicalTrial ||--}o URL : "sameAs"
 MedicalTrial ||--}o Action : "potentialAction"
-MedicalTrial ||--}o URL : "url"
 

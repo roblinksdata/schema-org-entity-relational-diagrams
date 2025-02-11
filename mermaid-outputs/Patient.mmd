@@ -1,70 +1,83 @@
 erDiagram
 Patient {
+    TextList additionalName  
+    TextList callSign  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
     stringList homeLocation  
     stringList memberOf  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList workLocation  
     stringList address  
     stringList alumniOf  
+    TextList award  
+    TextList awards  
+    DateList birthDate  
     stringList brand  
     stringList colleague  
+    DateList deathDate  
+    TextList email  
+    TextList familyName  
+    TextList faxNumber  
     stringList gender  
+    TextList givenName  
     stringList height  
+    TextList honorificPrefix  
+    TextList honorificSuffix  
+    TextList isicV4  
     stringList jobTitle  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList naics  
     stringList netWorth  
     stringList owns  
     stringList skills  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
+    TextList audienceType  
+    TextList requiredGender  
+    IntegerList requiredMaxAge  
+    IntegerList requiredMinAge  
     stringList suggestedGender  
+    NumberList suggestedMaxAge  
+    NumberList suggestedMinAge  
 }
 
 Patient ||--}o MedicalCondition : "diagnosis"
 Patient ||--}o Drug : "drug"
 Patient ||--}o MedicalCondition : "healthCondition"
-Patient ||--}o Text : "additionalName"
 Patient ||--}o Organization : "affiliation"
-Patient ||--}o Text : "callSign"
-Patient ||--}o Text : "duns"
-Patient ||--}o Text : "globalLocationNumber"
-Patient ||--}o Text : "taxID"
 Patient ||--}o InteractionCounter : "agentInteractionStatistic"
-Patient ||--}o Text : "award"
-Patient ||--}o Text : "awards"
-Patient ||--}o Date : "birthDate"
 Patient ||--}o Place : "birthPlace"
 Patient ||--}o Person : "children"
 Patient ||--}o Person : "colleagues"
 Patient ||--}o ContactPoint : "contactPoint"
 Patient ||--}o ContactPoint : "contactPoints"
-Patient ||--}o Date : "deathDate"
 Patient ||--}o Place : "deathPlace"
-Patient ||--}o Text : "email"
-Patient ||--}o Text : "familyName"
-Patient ||--}o Text : "faxNumber"
 Patient ||--}o Person : "follows"
 Patient ||--}o Grant : "funding"
-Patient ||--}o Text : "givenName"
 Patient ||--}o Certification : "hasCertification"
 Patient ||--}o EducationalOccupationalCredential : "hasCredential"
 Patient ||--}o Occupation : "hasOccupation"
 Patient ||--}o OfferCatalog : "hasOfferCatalog"
 Patient ||--}o Place : "hasPOS"
-Patient ||--}o Text : "honorificPrefix"
-Patient ||--}o Text : "honorificSuffix"
 Patient ||--}o InteractionCounter : "interactionStatistic"
-Patient ||--}o Text : "isicV4"
 Patient ||--}o Person : "knows"
 Patient ||--}o Offer : "makesOffer"
-Patient ||--}o Text : "naics"
 Patient ||--}o Country : "nationality"
 Patient ||--}o Person : "parent"
 Patient ||--}o Person : "parents"
@@ -74,23 +87,10 @@ Patient ||--}o Demand : "seeks"
 Patient ||--}o Person : "sibling"
 Patient ||--}o Person : "siblings"
 Patient ||--}o Person : "spouse"
-Patient ||--}o Text : "telephone"
-Patient ||--}o Text : "vatID"
 Patient ||--}o QuantitativeValue : "weight"
 Patient ||--}o Organization : "worksFor"
-Patient ||--}o Text : "alternateName"
-Patient ||--}o Text : "disambiguatingDescription"
-Patient ||--}o Text : "name"
-Patient ||--}o URL : "sameAs"
 Patient ||--}o Action : "potentialAction"
-Patient ||--}o URL : "url"
-Patient ||--}o Text : "audienceType"
 Patient ||--}o AdministrativeArea : "geographicArea"
-Patient ||--}o Text : "requiredGender"
-Patient ||--}o Integer : "requiredMaxAge"
-Patient ||--}o Integer : "requiredMinAge"
 Patient ||--}o QuantitativeValue : "suggestedAge"
-Patient ||--}o Number : "suggestedMaxAge"
 Patient ||--}o QuantitativeValue : "suggestedMeasurement"
-Patient ||--}o Number : "suggestedMinAge"
 

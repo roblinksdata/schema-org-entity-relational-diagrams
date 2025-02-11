@@ -1,23 +1,23 @@
 erDiagram
 TelevisionChannel {
     stringList genre  
+    TextList broadcastChannelId  
     stringList broadcastFrequency  
+    TextList broadcastServiceTier  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-TelevisionChannel ||--}o Text : "broadcastChannelId"
-TelevisionChannel ||--}o Text : "broadcastServiceTier"
 TelevisionChannel ||--}o CableOrSatelliteService : "inBroadcastLineup"
 TelevisionChannel ||--}o BroadcastService : "providesBroadcastService"
-TelevisionChannel ||--}o Text : "alternateName"
-TelevisionChannel ||--}o Text : "disambiguatingDescription"
-TelevisionChannel ||--}o Text : "name"
-TelevisionChannel ||--}o URL : "sameAs"
 TelevisionChannel ||--}o Action : "potentialAction"
-TelevisionChannel ||--}o URL : "url"
 

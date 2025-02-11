@@ -1,9 +1,18 @@
 erDiagram
 AnalysisNewsArticle {
+    TextList dateline  
+    TextList printColumn  
+    TextList printEdition  
+    TextList printPage  
+    TextList printSection  
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -17,25 +26,46 @@ AnalysisNewsArticle {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,32 +77,32 @@ AnalysisNewsArticle {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-AnalysisNewsArticle ||--}o Text : "dateline"
-AnalysisNewsArticle ||--}o Text : "printColumn"
-AnalysisNewsArticle ||--}o Text : "printEdition"
-AnalysisNewsArticle ||--}o Text : "printPage"
-AnalysisNewsArticle ||--}o Text : "printSection"
-AnalysisNewsArticle ||--}o Text : "articleBody"
-AnalysisNewsArticle ||--}o Text : "articleSection"
-AnalysisNewsArticle ||--}o Text : "pagination"
-AnalysisNewsArticle ||--}o Integer : "wordCount"
 AnalysisNewsArticle ||--}o Thing : "about"
 AnalysisNewsArticle ||--}o Place : "contentLocation"
 AnalysisNewsArticle ||--}o CreativeWork : "hasPart"
@@ -80,43 +110,22 @@ AnalysisNewsArticle ||--}o Claim : "interpretedAsClaim"
 AnalysisNewsArticle ||--}o Thing : "mainEntity"
 AnalysisNewsArticle ||--}o Place : "spatialCoverage"
 AnalysisNewsArticle ||--}o CreativeWork : "workExample"
-AnalysisNewsArticle ||--}o Text : "abstract"
-AnalysisNewsArticle ||--}o Text : "accessMode"
 AnalysisNewsArticle ||--}o ItemList : "accessModeSufficient"
-AnalysisNewsArticle ||--}o Text : "accessibilityAPI"
-AnalysisNewsArticle ||--}o Text : "accessibilityControl"
-AnalysisNewsArticle ||--}o Text : "accessibilityFeature"
-AnalysisNewsArticle ||--}o Text : "accessibilityHazard"
-AnalysisNewsArticle ||--}o Text : "accessibilitySummary"
 AnalysisNewsArticle ||--}o Person : "accountablePerson"
 AnalysisNewsArticle ||--}o AggregateRating : "aggregateRating"
-AnalysisNewsArticle ||--}o Text : "alternativeHeadline"
 AnalysisNewsArticle ||--}o MediaObject : "associatedMedia"
 AnalysisNewsArticle ||--}o Audience : "audience"
-AnalysisNewsArticle ||--}o Text : "award"
-AnalysisNewsArticle ||--}o Text : "awards"
 AnalysisNewsArticle ||--}o Person : "character"
 AnalysisNewsArticle ||--}o Comment : "comment"
-AnalysisNewsArticle ||--}o Integer : "commentCount"
-AnalysisNewsArticle ||--}o Text : "conditionsOfAccess"
-AnalysisNewsArticle ||--}o DateTime : "contentReferenceTime"
-AnalysisNewsArticle ||--}o Text : "copyrightNotice"
-AnalysisNewsArticle ||--}o Number : "copyrightYear"
 AnalysisNewsArticle ||--}o Country : "countryOfOrigin"
-AnalysisNewsArticle ||--}o Text : "creditText"
 AnalysisNewsArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-AnalysisNewsArticle ||--}o URL : "discussionUrl"
 AnalysisNewsArticle ||--}o Person : "editor"
 AnalysisNewsArticle ||--}o AlignmentObject : "educationalAlignment"
 AnalysisNewsArticle ||--}o MediaObject : "encoding"
 AnalysisNewsArticle ||--}o MediaObject : "encodings"
 AnalysisNewsArticle ||--}o CreativeWork : "exampleOfWork"
 AnalysisNewsArticle ||--}o Grant : "funding"
-AnalysisNewsArticle ||--}o Text : "headline"
 AnalysisNewsArticle ||--}o InteractionCounter : "interactionStatistic"
-AnalysisNewsArticle ||--}o Text : "interactivityType"
-AnalysisNewsArticle ||--}o Boolean : "isAccessibleForFree"
-AnalysisNewsArticle ||--}o Boolean : "isFamilyFriendly"
 AnalysisNewsArticle ||--}o Place : "locationCreated"
 AnalysisNewsArticle ||--}o Thing : "mentions"
 AnalysisNewsArticle ||--}o PublicationEvent : "publication"
@@ -125,20 +134,11 @@ AnalysisNewsArticle ||--}o Event : "recordedAt"
 AnalysisNewsArticle ||--}o PublicationEvent : "releasedEvent"
 AnalysisNewsArticle ||--}o Review : "review"
 AnalysisNewsArticle ||--}o Review : "reviews"
-AnalysisNewsArticle ||--}o Date : "sdDatePublished"
 AnalysisNewsArticle ||--}o Organization : "sourceOrganization"
 AnalysisNewsArticle ||--}o Place : "spatial"
-AnalysisNewsArticle ||--}o Text : "text"
 AnalysisNewsArticle ||--}o ImageObject : "thumbnail"
-AnalysisNewsArticle ||--}o URL : "thumbnailUrl"
 AnalysisNewsArticle ||--}o Duration : "timeRequired"
 AnalysisNewsArticle ||--}o CreativeWork : "translationOfWork"
-AnalysisNewsArticle ||--}o Text : "typicalAgeRange"
 AnalysisNewsArticle ||--}o CreativeWork : "workTranslation"
-AnalysisNewsArticle ||--}o Text : "alternateName"
-AnalysisNewsArticle ||--}o Text : "disambiguatingDescription"
-AnalysisNewsArticle ||--}o Text : "name"
-AnalysisNewsArticle ||--}o URL : "sameAs"
 AnalysisNewsArticle ||--}o Action : "potentialAction"
-AnalysisNewsArticle ||--}o URL : "url"
 

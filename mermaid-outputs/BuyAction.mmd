@@ -3,6 +3,7 @@ BuyAction {
     stringList seller  
     stringList vendor  
     stringList price  
+    TextList priceCurrency  
     stringList location  
     stringList participant  
     stringList agent  
@@ -11,15 +12,19 @@ BuyAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BuyAction ||--}o WarrantyPromise : "warrantyPromise"
-BuyAction ||--}o Text : "priceCurrency"
 BuyAction ||--}o PriceSpecification : "priceSpecification"
 BuyAction ||--}o Thing : "instrument"
 BuyAction ||--}o Thing : "object"
@@ -27,10 +32,5 @@ BuyAction ||--}o Thing : "result"
 BuyAction ||--}o HowTo : "actionProcess"
 BuyAction ||--}o ActionStatusType : "actionStatus"
 BuyAction ||--}o Thing : "error"
-BuyAction ||--}o Text : "alternateName"
-BuyAction ||--}o Text : "disambiguatingDescription"
-BuyAction ||--}o Text : "name"
-BuyAction ||--}o URL : "sameAs"
 BuyAction ||--}o Action : "potentialAction"
-BuyAction ||--}o URL : "url"
 

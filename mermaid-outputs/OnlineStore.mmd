@@ -4,58 +4,70 @@ OnlineStore {
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-OnlineStore ||--}o Text : "duns"
-OnlineStore ||--}o Text : "globalLocationNumber"
-OnlineStore ||--}o URL : "hasGS1DigitalLink"
-OnlineStore ||--}o Text : "leiCode"
-OnlineStore ||--}o Text : "taxID"
 OnlineStore ||--}o InteractionCounter : "agentInteractionStatistic"
 OnlineStore ||--}o AggregateRating : "aggregateRating"
 OnlineStore ||--}o Person : "alumni"
-OnlineStore ||--}o Text : "award"
-OnlineStore ||--}o Text : "awards"
 OnlineStore ||--}o ContactPoint : "contactPoint"
 OnlineStore ||--}o ContactPoint : "contactPoints"
 OnlineStore ||--}o Organization : "department"
-OnlineStore ||--}o Date : "dissolutionDate"
-OnlineStore ||--}o Text : "email"
 OnlineStore ||--}o Person : "employee"
 OnlineStore ||--}o Person : "employees"
 OnlineStore ||--}o Event : "event"
 OnlineStore ||--}o Event : "events"
-OnlineStore ||--}o Text : "faxNumber"
 OnlineStore ||--}o Person : "founders"
-OnlineStore ||--}o Date : "foundingDate"
 OnlineStore ||--}o Place : "foundingLocation"
 OnlineStore ||--}o Grant : "funding"
 OnlineStore ||--}o Certification : "hasCertification"
@@ -65,25 +77,13 @@ OnlineStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 OnlineStore ||--}o OfferCatalog : "hasOfferCatalog"
 OnlineStore ||--}o Place : "hasPOS"
 OnlineStore ||--}o InteractionCounter : "interactionStatistic"
-OnlineStore ||--}o Text : "isicV4"
-OnlineStore ||--}o Text : "iso6523Code"
-OnlineStore ||--}o Text : "legalName"
 OnlineStore ||--}o Offer : "makesOffer"
-OnlineStore ||--}o Text : "naics"
 OnlineStore ||--}o NonprofitType : "nonprofitStatus"
 OnlineStore ||--}o QuantitativeValue : "numberOfEmployees"
 OnlineStore ||--}o Organization : "parentOrganization"
 OnlineStore ||--}o Review : "review"
 OnlineStore ||--}o Review : "reviews"
 OnlineStore ||--}o Demand : "seeks"
-OnlineStore ||--}o Text : "slogan"
 OnlineStore ||--}o Organization : "subOrganization"
-OnlineStore ||--}o Text : "telephone"
-OnlineStore ||--}o Text : "vatID"
-OnlineStore ||--}o Text : "alternateName"
-OnlineStore ||--}o Text : "disambiguatingDescription"
-OnlineStore ||--}o Text : "name"
-OnlineStore ||--}o URL : "sameAs"
 OnlineStore ||--}o Action : "potentialAction"
-OnlineStore ||--}o URL : "url"
 

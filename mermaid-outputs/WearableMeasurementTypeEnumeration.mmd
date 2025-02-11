@@ -2,17 +2,17 @@ erDiagram
 WearableMeasurementTypeEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-WearableMeasurementTypeEnumeration ||--}o Text : "alternateName"
-WearableMeasurementTypeEnumeration ||--}o Text : "disambiguatingDescription"
-WearableMeasurementTypeEnumeration ||--}o Text : "name"
-WearableMeasurementTypeEnumeration ||--}o URL : "sameAs"
 WearableMeasurementTypeEnumeration ||--}o Action : "potentialAction"
-WearableMeasurementTypeEnumeration ||--}o URL : "url"
 

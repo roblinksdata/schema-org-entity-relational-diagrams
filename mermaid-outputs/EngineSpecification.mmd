@@ -3,20 +3,20 @@ EngineSpecification {
     stringList engineType  
     stringList fuelType  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 EngineSpecification ||--}o QuantitativeValue : "engineDisplacement"
 EngineSpecification ||--}o QuantitativeValue : "enginePower"
 EngineSpecification ||--}o QuantitativeValue : "torque"
-EngineSpecification ||--}o Text : "alternateName"
-EngineSpecification ||--}o Text : "disambiguatingDescription"
-EngineSpecification ||--}o Text : "name"
-EngineSpecification ||--}o URL : "sameAs"
 EngineSpecification ||--}o Action : "potentialAction"
-EngineSpecification ||--}o URL : "url"
 

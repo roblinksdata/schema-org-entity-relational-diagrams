@@ -17,25 +17,46 @@ Movie {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,21 +68,30 @@ Movie {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Movie ||--}o Duration : "duration"
@@ -78,42 +108,21 @@ Movie ||--}o Claim : "interpretedAsClaim"
 Movie ||--}o Thing : "mainEntity"
 Movie ||--}o Place : "spatialCoverage"
 Movie ||--}o CreativeWork : "workExample"
-Movie ||--}o Text : "abstract"
-Movie ||--}o Text : "accessMode"
 Movie ||--}o ItemList : "accessModeSufficient"
-Movie ||--}o Text : "accessibilityAPI"
-Movie ||--}o Text : "accessibilityControl"
-Movie ||--}o Text : "accessibilityFeature"
-Movie ||--}o Text : "accessibilityHazard"
-Movie ||--}o Text : "accessibilitySummary"
 Movie ||--}o Person : "accountablePerson"
 Movie ||--}o AggregateRating : "aggregateRating"
-Movie ||--}o Text : "alternativeHeadline"
 Movie ||--}o MediaObject : "associatedMedia"
 Movie ||--}o Audience : "audience"
-Movie ||--}o Text : "award"
-Movie ||--}o Text : "awards"
 Movie ||--}o Person : "character"
 Movie ||--}o Comment : "comment"
-Movie ||--}o Integer : "commentCount"
-Movie ||--}o Text : "conditionsOfAccess"
-Movie ||--}o DateTime : "contentReferenceTime"
-Movie ||--}o Text : "copyrightNotice"
-Movie ||--}o Number : "copyrightYear"
-Movie ||--}o Text : "creditText"
 Movie ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Movie ||--}o URL : "discussionUrl"
 Movie ||--}o Person : "editor"
 Movie ||--}o AlignmentObject : "educationalAlignment"
 Movie ||--}o MediaObject : "encoding"
 Movie ||--}o MediaObject : "encodings"
 Movie ||--}o CreativeWork : "exampleOfWork"
 Movie ||--}o Grant : "funding"
-Movie ||--}o Text : "headline"
 Movie ||--}o InteractionCounter : "interactionStatistic"
-Movie ||--}o Text : "interactivityType"
-Movie ||--}o Boolean : "isAccessibleForFree"
-Movie ||--}o Boolean : "isFamilyFriendly"
 Movie ||--}o Place : "locationCreated"
 Movie ||--}o Thing : "mentions"
 Movie ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ Movie ||--}o Event : "recordedAt"
 Movie ||--}o PublicationEvent : "releasedEvent"
 Movie ||--}o Review : "review"
 Movie ||--}o Review : "reviews"
-Movie ||--}o Date : "sdDatePublished"
 Movie ||--}o Organization : "sourceOrganization"
 Movie ||--}o Place : "spatial"
-Movie ||--}o Text : "text"
 Movie ||--}o ImageObject : "thumbnail"
-Movie ||--}o URL : "thumbnailUrl"
 Movie ||--}o Duration : "timeRequired"
 Movie ||--}o CreativeWork : "translationOfWork"
-Movie ||--}o Text : "typicalAgeRange"
 Movie ||--}o CreativeWork : "workTranslation"
-Movie ||--}o Text : "alternateName"
-Movie ||--}o Text : "disambiguatingDescription"
-Movie ||--}o Text : "name"
-Movie ||--}o URL : "sameAs"
 Movie ||--}o Action : "potentialAction"
-Movie ||--}o URL : "url"
 

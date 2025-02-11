@@ -1,5 +1,6 @@
 erDiagram
 CreativeWorkSeries {
+    TextList issn  
     stringList endDate  
     stringList startDate  
     stringList acquireLicensePage  
@@ -15,25 +16,46 @@ CreativeWorkSeries {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,24 +67,32 @@ CreativeWorkSeries {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-CreativeWorkSeries ||--}o Text : "issn"
 CreativeWorkSeries ||--}o Thing : "about"
 CreativeWorkSeries ||--}o Place : "contentLocation"
 CreativeWorkSeries ||--}o CreativeWork : "hasPart"
@@ -70,43 +100,22 @@ CreativeWorkSeries ||--}o Claim : "interpretedAsClaim"
 CreativeWorkSeries ||--}o Thing : "mainEntity"
 CreativeWorkSeries ||--}o Place : "spatialCoverage"
 CreativeWorkSeries ||--}o CreativeWork : "workExample"
-CreativeWorkSeries ||--}o Text : "abstract"
-CreativeWorkSeries ||--}o Text : "accessMode"
 CreativeWorkSeries ||--}o ItemList : "accessModeSufficient"
-CreativeWorkSeries ||--}o Text : "accessibilityAPI"
-CreativeWorkSeries ||--}o Text : "accessibilityControl"
-CreativeWorkSeries ||--}o Text : "accessibilityFeature"
-CreativeWorkSeries ||--}o Text : "accessibilityHazard"
-CreativeWorkSeries ||--}o Text : "accessibilitySummary"
 CreativeWorkSeries ||--}o Person : "accountablePerson"
 CreativeWorkSeries ||--}o AggregateRating : "aggregateRating"
-CreativeWorkSeries ||--}o Text : "alternativeHeadline"
 CreativeWorkSeries ||--}o MediaObject : "associatedMedia"
 CreativeWorkSeries ||--}o Audience : "audience"
-CreativeWorkSeries ||--}o Text : "award"
-CreativeWorkSeries ||--}o Text : "awards"
 CreativeWorkSeries ||--}o Person : "character"
 CreativeWorkSeries ||--}o Comment : "comment"
-CreativeWorkSeries ||--}o Integer : "commentCount"
-CreativeWorkSeries ||--}o Text : "conditionsOfAccess"
-CreativeWorkSeries ||--}o DateTime : "contentReferenceTime"
-CreativeWorkSeries ||--}o Text : "copyrightNotice"
-CreativeWorkSeries ||--}o Number : "copyrightYear"
 CreativeWorkSeries ||--}o Country : "countryOfOrigin"
-CreativeWorkSeries ||--}o Text : "creditText"
 CreativeWorkSeries ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-CreativeWorkSeries ||--}o URL : "discussionUrl"
 CreativeWorkSeries ||--}o Person : "editor"
 CreativeWorkSeries ||--}o AlignmentObject : "educationalAlignment"
 CreativeWorkSeries ||--}o MediaObject : "encoding"
 CreativeWorkSeries ||--}o MediaObject : "encodings"
 CreativeWorkSeries ||--}o CreativeWork : "exampleOfWork"
 CreativeWorkSeries ||--}o Grant : "funding"
-CreativeWorkSeries ||--}o Text : "headline"
 CreativeWorkSeries ||--}o InteractionCounter : "interactionStatistic"
-CreativeWorkSeries ||--}o Text : "interactivityType"
-CreativeWorkSeries ||--}o Boolean : "isAccessibleForFree"
-CreativeWorkSeries ||--}o Boolean : "isFamilyFriendly"
 CreativeWorkSeries ||--}o Place : "locationCreated"
 CreativeWorkSeries ||--}o Thing : "mentions"
 CreativeWorkSeries ||--}o PublicationEvent : "publication"
@@ -115,20 +124,11 @@ CreativeWorkSeries ||--}o Event : "recordedAt"
 CreativeWorkSeries ||--}o PublicationEvent : "releasedEvent"
 CreativeWorkSeries ||--}o Review : "review"
 CreativeWorkSeries ||--}o Review : "reviews"
-CreativeWorkSeries ||--}o Date : "sdDatePublished"
 CreativeWorkSeries ||--}o Organization : "sourceOrganization"
 CreativeWorkSeries ||--}o Place : "spatial"
-CreativeWorkSeries ||--}o Text : "text"
 CreativeWorkSeries ||--}o ImageObject : "thumbnail"
-CreativeWorkSeries ||--}o URL : "thumbnailUrl"
 CreativeWorkSeries ||--}o Duration : "timeRequired"
 CreativeWorkSeries ||--}o CreativeWork : "translationOfWork"
-CreativeWorkSeries ||--}o Text : "typicalAgeRange"
 CreativeWorkSeries ||--}o CreativeWork : "workTranslation"
-CreativeWorkSeries ||--}o Text : "alternateName"
-CreativeWorkSeries ||--}o Text : "disambiguatingDescription"
-CreativeWorkSeries ||--}o Text : "name"
-CreativeWorkSeries ||--}o URL : "sameAs"
 CreativeWorkSeries ||--}o Action : "potentialAction"
-CreativeWorkSeries ||--}o URL : "url"
 

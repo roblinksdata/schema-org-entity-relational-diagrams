@@ -2,17 +2,17 @@ erDiagram
 PaymentStatusType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PaymentStatusType ||--}o Text : "alternateName"
-PaymentStatusType ||--}o Text : "disambiguatingDescription"
-PaymentStatusType ||--}o Text : "name"
-PaymentStatusType ||--}o URL : "sameAs"
 PaymentStatusType ||--}o Action : "potentialAction"
-PaymentStatusType ||--}o URL : "url"
 

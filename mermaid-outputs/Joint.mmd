@@ -1,19 +1,24 @@
 erDiagram
 Joint {
+    TextList biomechnicalClass  
     stringList functionalClass  
+    TextList structuralClass  
+    TextList associatedPathophysiology  
+    TextList bodyLocation  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Joint ||--}o Text : "biomechnicalClass"
-Joint ||--}o Text : "structuralClass"
-Joint ||--}o Text : "associatedPathophysiology"
-Joint ||--}o Text : "bodyLocation"
 Joint ||--}o AnatomicalStructure : "connectedTo"
 Joint ||--}o ImageObject : "diagram"
 Joint ||--}o AnatomicalSystem : "partOfSystem"
@@ -27,10 +32,5 @@ Joint ||--}o MedicineSystem : "medicineSystem"
 Joint ||--}o Organization : "recognizingAuthority"
 Joint ||--}o MedicalSpecialty : "relevantSpecialty"
 Joint ||--}o MedicalStudy : "study"
-Joint ||--}o Text : "alternateName"
-Joint ||--}o Text : "disambiguatingDescription"
-Joint ||--}o Text : "name"
-Joint ||--}o URL : "sameAs"
 Joint ||--}o Action : "potentialAction"
-Joint ||--}o URL : "url"
 

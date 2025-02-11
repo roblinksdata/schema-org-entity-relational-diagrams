@@ -13,25 +13,46 @@ HowToTip {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ HowToTip {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 HowToTip ||--}o Thing : "about"
@@ -67,43 +97,22 @@ HowToTip ||--}o Claim : "interpretedAsClaim"
 HowToTip ||--}o Thing : "mainEntity"
 HowToTip ||--}o Place : "spatialCoverage"
 HowToTip ||--}o CreativeWork : "workExample"
-HowToTip ||--}o Text : "abstract"
-HowToTip ||--}o Text : "accessMode"
 HowToTip ||--}o ItemList : "accessModeSufficient"
-HowToTip ||--}o Text : "accessibilityAPI"
-HowToTip ||--}o Text : "accessibilityControl"
-HowToTip ||--}o Text : "accessibilityFeature"
-HowToTip ||--}o Text : "accessibilityHazard"
-HowToTip ||--}o Text : "accessibilitySummary"
 HowToTip ||--}o Person : "accountablePerson"
 HowToTip ||--}o AggregateRating : "aggregateRating"
-HowToTip ||--}o Text : "alternativeHeadline"
 HowToTip ||--}o MediaObject : "associatedMedia"
 HowToTip ||--}o Audience : "audience"
-HowToTip ||--}o Text : "award"
-HowToTip ||--}o Text : "awards"
 HowToTip ||--}o Person : "character"
 HowToTip ||--}o Comment : "comment"
-HowToTip ||--}o Integer : "commentCount"
-HowToTip ||--}o Text : "conditionsOfAccess"
-HowToTip ||--}o DateTime : "contentReferenceTime"
-HowToTip ||--}o Text : "copyrightNotice"
-HowToTip ||--}o Number : "copyrightYear"
 HowToTip ||--}o Country : "countryOfOrigin"
-HowToTip ||--}o Text : "creditText"
 HowToTip ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-HowToTip ||--}o URL : "discussionUrl"
 HowToTip ||--}o Person : "editor"
 HowToTip ||--}o AlignmentObject : "educationalAlignment"
 HowToTip ||--}o MediaObject : "encoding"
 HowToTip ||--}o MediaObject : "encodings"
 HowToTip ||--}o CreativeWork : "exampleOfWork"
 HowToTip ||--}o Grant : "funding"
-HowToTip ||--}o Text : "headline"
 HowToTip ||--}o InteractionCounter : "interactionStatistic"
-HowToTip ||--}o Text : "interactivityType"
-HowToTip ||--}o Boolean : "isAccessibleForFree"
-HowToTip ||--}o Boolean : "isFamilyFriendly"
 HowToTip ||--}o Place : "locationCreated"
 HowToTip ||--}o Thing : "mentions"
 HowToTip ||--}o PublicationEvent : "publication"
@@ -112,23 +121,14 @@ HowToTip ||--}o Event : "recordedAt"
 HowToTip ||--}o PublicationEvent : "releasedEvent"
 HowToTip ||--}o Review : "review"
 HowToTip ||--}o Review : "reviews"
-HowToTip ||--}o Date : "sdDatePublished"
 HowToTip ||--}o Organization : "sourceOrganization"
 HowToTip ||--}o Place : "spatial"
-HowToTip ||--}o Text : "text"
 HowToTip ||--}o ImageObject : "thumbnail"
-HowToTip ||--}o URL : "thumbnailUrl"
 HowToTip ||--}o Duration : "timeRequired"
 HowToTip ||--}o CreativeWork : "translationOfWork"
-HowToTip ||--}o Text : "typicalAgeRange"
 HowToTip ||--}o CreativeWork : "workTranslation"
 HowToTip ||--}o Thing : "item"
 HowToTip ||--}o ListItem : "nextItem"
 HowToTip ||--}o ListItem : "previousItem"
-HowToTip ||--}o Text : "alternateName"
-HowToTip ||--}o Text : "disambiguatingDescription"
-HowToTip ||--}o Text : "name"
-HowToTip ||--}o URL : "sameAs"
 HowToTip ||--}o Action : "potentialAction"
-HowToTip ||--}o URL : "url"
 

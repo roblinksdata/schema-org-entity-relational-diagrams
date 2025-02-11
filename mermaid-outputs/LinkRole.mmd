@@ -1,23 +1,23 @@
 erDiagram
 LinkRole {
     stringList inLanguage  
+    TextList linkRelationship  
     stringList endDate  
     stringList namedPosition  
     stringList roleName  
     stringList startDate  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-LinkRole ||--}o Text : "linkRelationship"
-LinkRole ||--}o Text : "alternateName"
-LinkRole ||--}o Text : "disambiguatingDescription"
-LinkRole ||--}o Text : "name"
-LinkRole ||--}o URL : "sameAs"
 LinkRole ||--}o Action : "potentialAction"
-LinkRole ||--}o URL : "url"
 

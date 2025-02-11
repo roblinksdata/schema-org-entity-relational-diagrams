@@ -1,12 +1,18 @@
 erDiagram
 GovernmentPermit {
     stringList validFrom  
+    DateList validUntil  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 GovernmentPermit ||--}o Organization : "issuedBy"
@@ -14,11 +20,5 @@ GovernmentPermit ||--}o Service : "issuedThrough"
 GovernmentPermit ||--}o Audience : "permitAudience"
 GovernmentPermit ||--}o Duration : "validFor"
 GovernmentPermit ||--}o AdministrativeArea : "validIn"
-GovernmentPermit ||--}o Date : "validUntil"
-GovernmentPermit ||--}o Text : "alternateName"
-GovernmentPermit ||--}o Text : "disambiguatingDescription"
-GovernmentPermit ||--}o Text : "name"
-GovernmentPermit ||--}o URL : "sameAs"
 GovernmentPermit ||--}o Action : "potentialAction"
-GovernmentPermit ||--}o URL : "url"
 

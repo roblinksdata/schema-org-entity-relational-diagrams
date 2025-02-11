@@ -13,25 +13,46 @@ Statement {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Statement {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Statement ||--}o Thing : "about"
@@ -67,43 +97,22 @@ Statement ||--}o Claim : "interpretedAsClaim"
 Statement ||--}o Thing : "mainEntity"
 Statement ||--}o Place : "spatialCoverage"
 Statement ||--}o CreativeWork : "workExample"
-Statement ||--}o Text : "abstract"
-Statement ||--}o Text : "accessMode"
 Statement ||--}o ItemList : "accessModeSufficient"
-Statement ||--}o Text : "accessibilityAPI"
-Statement ||--}o Text : "accessibilityControl"
-Statement ||--}o Text : "accessibilityFeature"
-Statement ||--}o Text : "accessibilityHazard"
-Statement ||--}o Text : "accessibilitySummary"
 Statement ||--}o Person : "accountablePerson"
 Statement ||--}o AggregateRating : "aggregateRating"
-Statement ||--}o Text : "alternativeHeadline"
 Statement ||--}o MediaObject : "associatedMedia"
 Statement ||--}o Audience : "audience"
-Statement ||--}o Text : "award"
-Statement ||--}o Text : "awards"
 Statement ||--}o Person : "character"
 Statement ||--}o Comment : "comment"
-Statement ||--}o Integer : "commentCount"
-Statement ||--}o Text : "conditionsOfAccess"
-Statement ||--}o DateTime : "contentReferenceTime"
-Statement ||--}o Text : "copyrightNotice"
-Statement ||--}o Number : "copyrightYear"
 Statement ||--}o Country : "countryOfOrigin"
-Statement ||--}o Text : "creditText"
 Statement ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Statement ||--}o URL : "discussionUrl"
 Statement ||--}o Person : "editor"
 Statement ||--}o AlignmentObject : "educationalAlignment"
 Statement ||--}o MediaObject : "encoding"
 Statement ||--}o MediaObject : "encodings"
 Statement ||--}o CreativeWork : "exampleOfWork"
 Statement ||--}o Grant : "funding"
-Statement ||--}o Text : "headline"
 Statement ||--}o InteractionCounter : "interactionStatistic"
-Statement ||--}o Text : "interactivityType"
-Statement ||--}o Boolean : "isAccessibleForFree"
-Statement ||--}o Boolean : "isFamilyFriendly"
 Statement ||--}o Place : "locationCreated"
 Statement ||--}o Thing : "mentions"
 Statement ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ Statement ||--}o Event : "recordedAt"
 Statement ||--}o PublicationEvent : "releasedEvent"
 Statement ||--}o Review : "review"
 Statement ||--}o Review : "reviews"
-Statement ||--}o Date : "sdDatePublished"
 Statement ||--}o Organization : "sourceOrganization"
 Statement ||--}o Place : "spatial"
-Statement ||--}o Text : "text"
 Statement ||--}o ImageObject : "thumbnail"
-Statement ||--}o URL : "thumbnailUrl"
 Statement ||--}o Duration : "timeRequired"
 Statement ||--}o CreativeWork : "translationOfWork"
-Statement ||--}o Text : "typicalAgeRange"
 Statement ||--}o CreativeWork : "workTranslation"
-Statement ||--}o Text : "alternateName"
-Statement ||--}o Text : "disambiguatingDescription"
-Statement ||--}o Text : "name"
-Statement ||--}o URL : "sameAs"
 Statement ||--}o Action : "potentialAction"
-Statement ||--}o URL : "url"
 

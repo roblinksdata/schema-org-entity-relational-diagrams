@@ -1,8 +1,16 @@
 erDiagram
 AutoDealer {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ AutoDealer {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AutoDealer ||--}o Organization : "branchOf"
-AutoDealer ||--}o Text : "currenciesAccepted"
-AutoDealer ||--}o Text : "openingHours"
-AutoDealer ||--}o Text : "paymentAccepted"
-AutoDealer ||--}o Text : "priceRange"
-AutoDealer ||--}o Text : "globalLocationNumber"
-AutoDealer ||--}o URL : "hasGS1DigitalLink"
 AutoDealer ||--}o PropertyValue : "additionalProperty"
 AutoDealer ||--}o AggregateRating : "aggregateRating"
 AutoDealer ||--}o LocationFeatureSpecification : "amenityFeature"
-AutoDealer ||--}o Text : "branchCode"
 AutoDealer ||--}o Place : "containedIn"
 AutoDealer ||--}o Place : "containedInPlace"
 AutoDealer ||--}o Place : "containsPlace"
 AutoDealer ||--}o Event : "event"
 AutoDealer ||--}o Event : "events"
-AutoDealer ||--}o Text : "faxNumber"
 AutoDealer ||--}o Certification : "hasCertification"
-AutoDealer ||--}o Boolean : "hasDriveThroughService"
-AutoDealer ||--}o Boolean : "isAccessibleForFree"
-AutoDealer ||--}o Text : "isicV4"
-AutoDealer ||--}o URL : "map"
-AutoDealer ||--}o URL : "maps"
-AutoDealer ||--}o Integer : "maximumAttendeeCapacity"
 AutoDealer ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-AutoDealer ||--}o Boolean : "publicAccess"
 AutoDealer ||--}o Review : "review"
 AutoDealer ||--}o Review : "reviews"
-AutoDealer ||--}o Text : "slogan"
-AutoDealer ||--}o Boolean : "smokingAllowed"
 AutoDealer ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-AutoDealer ||--}o Text : "telephone"
-AutoDealer ||--}o URL : "tourBookingPage"
-AutoDealer ||--}o Text : "duns"
-AutoDealer ||--}o Text : "leiCode"
-AutoDealer ||--}o Text : "taxID"
 AutoDealer ||--}o InteractionCounter : "agentInteractionStatistic"
 AutoDealer ||--}o Person : "alumni"
-AutoDealer ||--}o Text : "award"
-AutoDealer ||--}o Text : "awards"
 AutoDealer ||--}o ContactPoint : "contactPoint"
 AutoDealer ||--}o ContactPoint : "contactPoints"
 AutoDealer ||--}o Organization : "department"
-AutoDealer ||--}o Date : "dissolutionDate"
-AutoDealer ||--}o Text : "email"
 AutoDealer ||--}o Person : "employee"
 AutoDealer ||--}o Person : "employees"
 AutoDealer ||--}o Person : "founders"
-AutoDealer ||--}o Date : "foundingDate"
 AutoDealer ||--}o Place : "foundingLocation"
 AutoDealer ||--}o Grant : "funding"
 AutoDealer ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ AutoDealer ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 AutoDealer ||--}o OfferCatalog : "hasOfferCatalog"
 AutoDealer ||--}o Place : "hasPOS"
 AutoDealer ||--}o InteractionCounter : "interactionStatistic"
-AutoDealer ||--}o Text : "iso6523Code"
-AutoDealer ||--}o Text : "legalName"
 AutoDealer ||--}o Offer : "makesOffer"
-AutoDealer ||--}o Text : "naics"
 AutoDealer ||--}o NonprofitType : "nonprofitStatus"
 AutoDealer ||--}o QuantitativeValue : "numberOfEmployees"
 AutoDealer ||--}o Organization : "parentOrganization"
 AutoDealer ||--}o Demand : "seeks"
 AutoDealer ||--}o Organization : "subOrganization"
-AutoDealer ||--}o Text : "vatID"
-AutoDealer ||--}o Text : "alternateName"
-AutoDealer ||--}o Text : "disambiguatingDescription"
-AutoDealer ||--}o Text : "name"
-AutoDealer ||--}o URL : "sameAs"
 AutoDealer ||--}o Action : "potentialAction"
-AutoDealer ||--}o URL : "url"
 

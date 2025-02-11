@@ -2,11 +2,16 @@ erDiagram
 TreatmentIndication {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TreatmentIndication ||--}o MedicalCode : "code"
@@ -16,10 +21,5 @@ TreatmentIndication ||--}o MedicineSystem : "medicineSystem"
 TreatmentIndication ||--}o Organization : "recognizingAuthority"
 TreatmentIndication ||--}o MedicalSpecialty : "relevantSpecialty"
 TreatmentIndication ||--}o MedicalStudy : "study"
-TreatmentIndication ||--}o Text : "alternateName"
-TreatmentIndication ||--}o Text : "disambiguatingDescription"
-TreatmentIndication ||--}o Text : "name"
-TreatmentIndication ||--}o URL : "sameAs"
 TreatmentIndication ||--}o Action : "potentialAction"
-TreatmentIndication ||--}o URL : "url"
 

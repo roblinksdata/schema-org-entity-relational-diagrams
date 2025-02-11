@@ -1,8 +1,12 @@
 erDiagram
 Waterfall {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,51 +18,47 @@ Waterfall {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Waterfall ||--}o Text : "globalLocationNumber"
-Waterfall ||--}o URL : "hasGS1DigitalLink"
 Waterfall ||--}o PropertyValue : "additionalProperty"
 Waterfall ||--}o AggregateRating : "aggregateRating"
 Waterfall ||--}o LocationFeatureSpecification : "amenityFeature"
-Waterfall ||--}o Text : "branchCode"
 Waterfall ||--}o Place : "containedIn"
 Waterfall ||--}o Place : "containedInPlace"
 Waterfall ||--}o Place : "containsPlace"
 Waterfall ||--}o Event : "event"
 Waterfall ||--}o Event : "events"
-Waterfall ||--}o Text : "faxNumber"
 Waterfall ||--}o Certification : "hasCertification"
-Waterfall ||--}o Boolean : "hasDriveThroughService"
-Waterfall ||--}o Boolean : "isAccessibleForFree"
-Waterfall ||--}o Text : "isicV4"
-Waterfall ||--}o URL : "map"
-Waterfall ||--}o URL : "maps"
-Waterfall ||--}o Integer : "maximumAttendeeCapacity"
 Waterfall ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Waterfall ||--}o Boolean : "publicAccess"
 Waterfall ||--}o Review : "review"
 Waterfall ||--}o Review : "reviews"
-Waterfall ||--}o Text : "slogan"
-Waterfall ||--}o Boolean : "smokingAllowed"
 Waterfall ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Waterfall ||--}o Text : "telephone"
-Waterfall ||--}o URL : "tourBookingPage"
-Waterfall ||--}o Text : "alternateName"
-Waterfall ||--}o Text : "disambiguatingDescription"
-Waterfall ||--}o Text : "name"
-Waterfall ||--}o URL : "sameAs"
 Waterfall ||--}o Action : "potentialAction"
-Waterfall ||--}o URL : "url"
 

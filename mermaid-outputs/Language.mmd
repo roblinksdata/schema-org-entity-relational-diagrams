@@ -1,17 +1,17 @@
 erDiagram
 Language {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Language ||--}o Text : "alternateName"
-Language ||--}o Text : "disambiguatingDescription"
-Language ||--}o Text : "name"
-Language ||--}o URL : "sameAs"
 Language ||--}o Action : "potentialAction"
-Language ||--}o URL : "url"
 

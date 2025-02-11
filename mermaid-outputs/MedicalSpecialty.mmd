@@ -2,17 +2,17 @@ erDiagram
 MedicalSpecialty {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicalSpecialty ||--}o Text : "alternateName"
-MedicalSpecialty ||--}o Text : "disambiguatingDescription"
-MedicalSpecialty ||--}o Text : "name"
-MedicalSpecialty ||--}o URL : "sameAs"
 MedicalSpecialty ||--}o Action : "potentialAction"
-MedicalSpecialty ||--}o URL : "url"
 

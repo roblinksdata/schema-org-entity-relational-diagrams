@@ -8,11 +8,16 @@ AgreeAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AgreeAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ AgreeAction ||--}o Thing : "result"
 AgreeAction ||--}o HowTo : "actionProcess"
 AgreeAction ||--}o ActionStatusType : "actionStatus"
 AgreeAction ||--}o Thing : "error"
-AgreeAction ||--}o Text : "alternateName"
-AgreeAction ||--}o Text : "disambiguatingDescription"
-AgreeAction ||--}o Text : "name"
-AgreeAction ||--}o URL : "sameAs"
 AgreeAction ||--}o Action : "potentialAction"
-AgreeAction ||--}o URL : "url"
 

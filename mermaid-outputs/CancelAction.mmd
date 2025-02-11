@@ -9,11 +9,16 @@ CancelAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CancelAction ||--}o Thing : "instrument"
@@ -22,10 +27,5 @@ CancelAction ||--}o Thing : "result"
 CancelAction ||--}o HowTo : "actionProcess"
 CancelAction ||--}o ActionStatusType : "actionStatus"
 CancelAction ||--}o Thing : "error"
-CancelAction ||--}o Text : "alternateName"
-CancelAction ||--}o Text : "disambiguatingDescription"
-CancelAction ||--}o Text : "name"
-CancelAction ||--}o URL : "sameAs"
 CancelAction ||--}o Action : "potentialAction"
-CancelAction ||--}o URL : "url"
 

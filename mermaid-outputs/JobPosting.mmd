@@ -1,54 +1,54 @@
 erDiagram
 JobPosting {
     stringList baseSalary  
+    TextList benefits  
     stringList datePosted  
+    BooleanList directApply  
     stringList educationRequirements  
+    TextList eligibilityToWorkRequirement  
+    TextList employerOverview  
+    TextList employmentType  
     stringList estimatedSalary  
+    BooleanList experienceInPlaceOfEducation  
     stringList experienceRequirements  
     stringList hiringOrganization  
+    TextList incentiveCompensation  
+    TextList incentives  
     stringList industry  
+    TextList jobBenefits  
+    BooleanList jobImmediateStart  
+    TextList jobLocationType  
     stringList jobStartDate  
     stringList occupationalCategory  
     stringList physicalRequirement  
     stringList qualifications  
+    TextList responsibilities  
+    TextList salaryCurrency  
     stringList securityClearanceRequirement  
     stringList sensoryRequirement  
     stringList skills  
+    TextList specialCommitments  
+    TextList title  
+    IntegerList totalJobOpenings  
     stringList validThrough  
+    TextList workHours  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 JobPosting ||--}o AdministrativeArea : "applicantLocationRequirements"
 JobPosting ||--}o ContactPoint : "applicationContact"
-JobPosting ||--}o Text : "benefits"
-JobPosting ||--}o Boolean : "directApply"
-JobPosting ||--}o Text : "eligibilityToWorkRequirement"
-JobPosting ||--}o Text : "employerOverview"
-JobPosting ||--}o Text : "employmentType"
 JobPosting ||--}o Organization : "employmentUnit"
-JobPosting ||--}o Boolean : "experienceInPlaceOfEducation"
-JobPosting ||--}o Text : "incentiveCompensation"
-JobPosting ||--}o Text : "incentives"
-JobPosting ||--}o Text : "jobBenefits"
-JobPosting ||--}o Boolean : "jobImmediateStart"
 JobPosting ||--}o Place : "jobLocation"
-JobPosting ||--}o Text : "jobLocationType"
 JobPosting ||--}o Occupation : "relevantOccupation"
-JobPosting ||--}o Text : "responsibilities"
-JobPosting ||--}o Text : "salaryCurrency"
-JobPosting ||--}o Text : "specialCommitments"
-JobPosting ||--}o Text : "title"
-JobPosting ||--}o Integer : "totalJobOpenings"
-JobPosting ||--}o Text : "workHours"
-JobPosting ||--}o Text : "alternateName"
-JobPosting ||--}o Text : "disambiguatingDescription"
-JobPosting ||--}o Text : "name"
-JobPosting ||--}o URL : "sameAs"
 JobPosting ||--}o Action : "potentialAction"
-JobPosting ||--}o URL : "url"
 

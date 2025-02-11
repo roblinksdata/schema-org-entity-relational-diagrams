@@ -1,10 +1,21 @@
 erDiagram
 IndividualPhysician {
+    TextList usNPI  
     stringList availableService  
     stringList occupationalCategory  
+    TextList healthPlanNetworkId  
+    BooleanList isAcceptingNewPatients  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -16,97 +27,95 @@ IndividualPhysician {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 IndividualPhysician ||--}o MedicalOrganization : "practicesAt"
-IndividualPhysician ||--}o Text : "usNPI"
 IndividualPhysician ||--}o Hospital : "hospitalAffiliation"
 IndividualPhysician ||--}o MedicalSpecialty : "medicalSpecialty"
-IndividualPhysician ||--}o Text : "healthPlanNetworkId"
-IndividualPhysician ||--}o Boolean : "isAcceptingNewPatients"
 IndividualPhysician ||--}o Organization : "branchOf"
-IndividualPhysician ||--}o Text : "currenciesAccepted"
-IndividualPhysician ||--}o Text : "openingHours"
-IndividualPhysician ||--}o Text : "paymentAccepted"
-IndividualPhysician ||--}o Text : "priceRange"
-IndividualPhysician ||--}o Text : "globalLocationNumber"
-IndividualPhysician ||--}o URL : "hasGS1DigitalLink"
 IndividualPhysician ||--}o PropertyValue : "additionalProperty"
 IndividualPhysician ||--}o AggregateRating : "aggregateRating"
 IndividualPhysician ||--}o LocationFeatureSpecification : "amenityFeature"
-IndividualPhysician ||--}o Text : "branchCode"
 IndividualPhysician ||--}o Place : "containedIn"
 IndividualPhysician ||--}o Place : "containedInPlace"
 IndividualPhysician ||--}o Place : "containsPlace"
 IndividualPhysician ||--}o Event : "event"
 IndividualPhysician ||--}o Event : "events"
-IndividualPhysician ||--}o Text : "faxNumber"
 IndividualPhysician ||--}o Certification : "hasCertification"
-IndividualPhysician ||--}o Boolean : "hasDriveThroughService"
-IndividualPhysician ||--}o Boolean : "isAccessibleForFree"
-IndividualPhysician ||--}o Text : "isicV4"
-IndividualPhysician ||--}o URL : "map"
-IndividualPhysician ||--}o URL : "maps"
-IndividualPhysician ||--}o Integer : "maximumAttendeeCapacity"
 IndividualPhysician ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-IndividualPhysician ||--}o Boolean : "publicAccess"
 IndividualPhysician ||--}o Review : "review"
 IndividualPhysician ||--}o Review : "reviews"
-IndividualPhysician ||--}o Text : "slogan"
-IndividualPhysician ||--}o Boolean : "smokingAllowed"
 IndividualPhysician ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-IndividualPhysician ||--}o Text : "telephone"
-IndividualPhysician ||--}o URL : "tourBookingPage"
-IndividualPhysician ||--}o Text : "duns"
-IndividualPhysician ||--}o Text : "leiCode"
-IndividualPhysician ||--}o Text : "taxID"
 IndividualPhysician ||--}o InteractionCounter : "agentInteractionStatistic"
 IndividualPhysician ||--}o Person : "alumni"
-IndividualPhysician ||--}o Text : "award"
-IndividualPhysician ||--}o Text : "awards"
 IndividualPhysician ||--}o ContactPoint : "contactPoint"
 IndividualPhysician ||--}o ContactPoint : "contactPoints"
 IndividualPhysician ||--}o Organization : "department"
-IndividualPhysician ||--}o Date : "dissolutionDate"
-IndividualPhysician ||--}o Text : "email"
 IndividualPhysician ||--}o Person : "employee"
 IndividualPhysician ||--}o Person : "employees"
 IndividualPhysician ||--}o Person : "founders"
-IndividualPhysician ||--}o Date : "foundingDate"
 IndividualPhysician ||--}o Place : "foundingLocation"
 IndividualPhysician ||--}o Grant : "funding"
 IndividualPhysician ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -115,20 +124,11 @@ IndividualPhysician ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 IndividualPhysician ||--}o OfferCatalog : "hasOfferCatalog"
 IndividualPhysician ||--}o Place : "hasPOS"
 IndividualPhysician ||--}o InteractionCounter : "interactionStatistic"
-IndividualPhysician ||--}o Text : "iso6523Code"
-IndividualPhysician ||--}o Text : "legalName"
 IndividualPhysician ||--}o Offer : "makesOffer"
-IndividualPhysician ||--}o Text : "naics"
 IndividualPhysician ||--}o NonprofitType : "nonprofitStatus"
 IndividualPhysician ||--}o QuantitativeValue : "numberOfEmployees"
 IndividualPhysician ||--}o Organization : "parentOrganization"
 IndividualPhysician ||--}o Demand : "seeks"
 IndividualPhysician ||--}o Organization : "subOrganization"
-IndividualPhysician ||--}o Text : "vatID"
-IndividualPhysician ||--}o Text : "alternateName"
-IndividualPhysician ||--}o Text : "disambiguatingDescription"
-IndividualPhysician ||--}o Text : "name"
-IndividualPhysician ||--}o URL : "sameAs"
 IndividualPhysician ||--}o Action : "potentialAction"
-IndividualPhysician ||--}o URL : "url"
 

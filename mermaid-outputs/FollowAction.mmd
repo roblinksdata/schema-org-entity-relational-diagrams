@@ -8,11 +8,16 @@ FollowAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 FollowAction ||--}o Thing : "followee"
@@ -22,10 +27,5 @@ FollowAction ||--}o Thing : "result"
 FollowAction ||--}o HowTo : "actionProcess"
 FollowAction ||--}o ActionStatusType : "actionStatus"
 FollowAction ||--}o Thing : "error"
-FollowAction ||--}o Text : "alternateName"
-FollowAction ||--}o Text : "disambiguatingDescription"
-FollowAction ||--}o Text : "name"
-FollowAction ||--}o URL : "sameAs"
 FollowAction ||--}o Action : "potentialAction"
-FollowAction ||--}o URL : "url"
 

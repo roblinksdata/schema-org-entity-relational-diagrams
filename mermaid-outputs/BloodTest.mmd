@@ -3,11 +3,16 @@ BloodTest {
     stringList normalRange  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BloodTest ||--}o Drug : "affectedBy"
@@ -21,10 +26,5 @@ BloodTest ||--}o MedicineSystem : "medicineSystem"
 BloodTest ||--}o Organization : "recognizingAuthority"
 BloodTest ||--}o MedicalSpecialty : "relevantSpecialty"
 BloodTest ||--}o MedicalStudy : "study"
-BloodTest ||--}o Text : "alternateName"
-BloodTest ||--}o Text : "disambiguatingDescription"
-BloodTest ||--}o Text : "name"
-BloodTest ||--}o URL : "sameAs"
 BloodTest ||--}o Action : "potentialAction"
-BloodTest ||--}o URL : "url"
 

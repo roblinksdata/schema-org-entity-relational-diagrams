@@ -21,25 +21,46 @@ ComicCoverArt {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -51,21 +72,30 @@ ComicCoverArt {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ComicCoverArt ||--}o Person : "artist"
@@ -81,43 +111,22 @@ ComicCoverArt ||--}o Claim : "interpretedAsClaim"
 ComicCoverArt ||--}o Thing : "mainEntity"
 ComicCoverArt ||--}o Place : "spatialCoverage"
 ComicCoverArt ||--}o CreativeWork : "workExample"
-ComicCoverArt ||--}o Text : "abstract"
-ComicCoverArt ||--}o Text : "accessMode"
 ComicCoverArt ||--}o ItemList : "accessModeSufficient"
-ComicCoverArt ||--}o Text : "accessibilityAPI"
-ComicCoverArt ||--}o Text : "accessibilityControl"
-ComicCoverArt ||--}o Text : "accessibilityFeature"
-ComicCoverArt ||--}o Text : "accessibilityHazard"
-ComicCoverArt ||--}o Text : "accessibilitySummary"
 ComicCoverArt ||--}o Person : "accountablePerson"
 ComicCoverArt ||--}o AggregateRating : "aggregateRating"
-ComicCoverArt ||--}o Text : "alternativeHeadline"
 ComicCoverArt ||--}o MediaObject : "associatedMedia"
 ComicCoverArt ||--}o Audience : "audience"
-ComicCoverArt ||--}o Text : "award"
-ComicCoverArt ||--}o Text : "awards"
 ComicCoverArt ||--}o Person : "character"
 ComicCoverArt ||--}o Comment : "comment"
-ComicCoverArt ||--}o Integer : "commentCount"
-ComicCoverArt ||--}o Text : "conditionsOfAccess"
-ComicCoverArt ||--}o DateTime : "contentReferenceTime"
-ComicCoverArt ||--}o Text : "copyrightNotice"
-ComicCoverArt ||--}o Number : "copyrightYear"
 ComicCoverArt ||--}o Country : "countryOfOrigin"
-ComicCoverArt ||--}o Text : "creditText"
 ComicCoverArt ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ComicCoverArt ||--}o URL : "discussionUrl"
 ComicCoverArt ||--}o Person : "editor"
 ComicCoverArt ||--}o AlignmentObject : "educationalAlignment"
 ComicCoverArt ||--}o MediaObject : "encoding"
 ComicCoverArt ||--}o MediaObject : "encodings"
 ComicCoverArt ||--}o CreativeWork : "exampleOfWork"
 ComicCoverArt ||--}o Grant : "funding"
-ComicCoverArt ||--}o Text : "headline"
 ComicCoverArt ||--}o InteractionCounter : "interactionStatistic"
-ComicCoverArt ||--}o Text : "interactivityType"
-ComicCoverArt ||--}o Boolean : "isAccessibleForFree"
-ComicCoverArt ||--}o Boolean : "isFamilyFriendly"
 ComicCoverArt ||--}o Place : "locationCreated"
 ComicCoverArt ||--}o Thing : "mentions"
 ComicCoverArt ||--}o PublicationEvent : "publication"
@@ -126,20 +135,11 @@ ComicCoverArt ||--}o Event : "recordedAt"
 ComicCoverArt ||--}o PublicationEvent : "releasedEvent"
 ComicCoverArt ||--}o Review : "review"
 ComicCoverArt ||--}o Review : "reviews"
-ComicCoverArt ||--}o Date : "sdDatePublished"
 ComicCoverArt ||--}o Organization : "sourceOrganization"
 ComicCoverArt ||--}o Place : "spatial"
-ComicCoverArt ||--}o Text : "text"
 ComicCoverArt ||--}o ImageObject : "thumbnail"
-ComicCoverArt ||--}o URL : "thumbnailUrl"
 ComicCoverArt ||--}o Duration : "timeRequired"
 ComicCoverArt ||--}o CreativeWork : "translationOfWork"
-ComicCoverArt ||--}o Text : "typicalAgeRange"
 ComicCoverArt ||--}o CreativeWork : "workTranslation"
-ComicCoverArt ||--}o Text : "alternateName"
-ComicCoverArt ||--}o Text : "disambiguatingDescription"
-ComicCoverArt ||--}o Text : "name"
-ComicCoverArt ||--}o URL : "sameAs"
 ComicCoverArt ||--}o Action : "potentialAction"
-ComicCoverArt ||--}o URL : "url"
 

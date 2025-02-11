@@ -1,8 +1,16 @@
 erDiagram
 ExerciseGym {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ ExerciseGym {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ExerciseGym ||--}o Organization : "branchOf"
-ExerciseGym ||--}o Text : "currenciesAccepted"
-ExerciseGym ||--}o Text : "openingHours"
-ExerciseGym ||--}o Text : "paymentAccepted"
-ExerciseGym ||--}o Text : "priceRange"
-ExerciseGym ||--}o Text : "globalLocationNumber"
-ExerciseGym ||--}o URL : "hasGS1DigitalLink"
 ExerciseGym ||--}o PropertyValue : "additionalProperty"
 ExerciseGym ||--}o AggregateRating : "aggregateRating"
 ExerciseGym ||--}o LocationFeatureSpecification : "amenityFeature"
-ExerciseGym ||--}o Text : "branchCode"
 ExerciseGym ||--}o Place : "containedIn"
 ExerciseGym ||--}o Place : "containedInPlace"
 ExerciseGym ||--}o Place : "containsPlace"
 ExerciseGym ||--}o Event : "event"
 ExerciseGym ||--}o Event : "events"
-ExerciseGym ||--}o Text : "faxNumber"
 ExerciseGym ||--}o Certification : "hasCertification"
-ExerciseGym ||--}o Boolean : "hasDriveThroughService"
-ExerciseGym ||--}o Boolean : "isAccessibleForFree"
-ExerciseGym ||--}o Text : "isicV4"
-ExerciseGym ||--}o URL : "map"
-ExerciseGym ||--}o URL : "maps"
-ExerciseGym ||--}o Integer : "maximumAttendeeCapacity"
 ExerciseGym ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-ExerciseGym ||--}o Boolean : "publicAccess"
 ExerciseGym ||--}o Review : "review"
 ExerciseGym ||--}o Review : "reviews"
-ExerciseGym ||--}o Text : "slogan"
-ExerciseGym ||--}o Boolean : "smokingAllowed"
 ExerciseGym ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-ExerciseGym ||--}o Text : "telephone"
-ExerciseGym ||--}o URL : "tourBookingPage"
-ExerciseGym ||--}o Text : "duns"
-ExerciseGym ||--}o Text : "leiCode"
-ExerciseGym ||--}o Text : "taxID"
 ExerciseGym ||--}o InteractionCounter : "agentInteractionStatistic"
 ExerciseGym ||--}o Person : "alumni"
-ExerciseGym ||--}o Text : "award"
-ExerciseGym ||--}o Text : "awards"
 ExerciseGym ||--}o ContactPoint : "contactPoint"
 ExerciseGym ||--}o ContactPoint : "contactPoints"
 ExerciseGym ||--}o Organization : "department"
-ExerciseGym ||--}o Date : "dissolutionDate"
-ExerciseGym ||--}o Text : "email"
 ExerciseGym ||--}o Person : "employee"
 ExerciseGym ||--}o Person : "employees"
 ExerciseGym ||--}o Person : "founders"
-ExerciseGym ||--}o Date : "foundingDate"
 ExerciseGym ||--}o Place : "foundingLocation"
 ExerciseGym ||--}o Grant : "funding"
 ExerciseGym ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ ExerciseGym ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 ExerciseGym ||--}o OfferCatalog : "hasOfferCatalog"
 ExerciseGym ||--}o Place : "hasPOS"
 ExerciseGym ||--}o InteractionCounter : "interactionStatistic"
-ExerciseGym ||--}o Text : "iso6523Code"
-ExerciseGym ||--}o Text : "legalName"
 ExerciseGym ||--}o Offer : "makesOffer"
-ExerciseGym ||--}o Text : "naics"
 ExerciseGym ||--}o NonprofitType : "nonprofitStatus"
 ExerciseGym ||--}o QuantitativeValue : "numberOfEmployees"
 ExerciseGym ||--}o Organization : "parentOrganization"
 ExerciseGym ||--}o Demand : "seeks"
 ExerciseGym ||--}o Organization : "subOrganization"
-ExerciseGym ||--}o Text : "vatID"
-ExerciseGym ||--}o Text : "alternateName"
-ExerciseGym ||--}o Text : "disambiguatingDescription"
-ExerciseGym ||--}o Text : "name"
-ExerciseGym ||--}o URL : "sameAs"
 ExerciseGym ||--}o Action : "potentialAction"
-ExerciseGym ||--}o URL : "url"
 

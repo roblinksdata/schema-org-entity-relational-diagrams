@@ -4,58 +4,70 @@ DanceGroup {
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DanceGroup ||--}o Text : "duns"
-DanceGroup ||--}o Text : "globalLocationNumber"
-DanceGroup ||--}o URL : "hasGS1DigitalLink"
-DanceGroup ||--}o Text : "leiCode"
-DanceGroup ||--}o Text : "taxID"
 DanceGroup ||--}o InteractionCounter : "agentInteractionStatistic"
 DanceGroup ||--}o AggregateRating : "aggregateRating"
 DanceGroup ||--}o Person : "alumni"
-DanceGroup ||--}o Text : "award"
-DanceGroup ||--}o Text : "awards"
 DanceGroup ||--}o ContactPoint : "contactPoint"
 DanceGroup ||--}o ContactPoint : "contactPoints"
 DanceGroup ||--}o Organization : "department"
-DanceGroup ||--}o Date : "dissolutionDate"
-DanceGroup ||--}o Text : "email"
 DanceGroup ||--}o Person : "employee"
 DanceGroup ||--}o Person : "employees"
 DanceGroup ||--}o Event : "event"
 DanceGroup ||--}o Event : "events"
-DanceGroup ||--}o Text : "faxNumber"
 DanceGroup ||--}o Person : "founders"
-DanceGroup ||--}o Date : "foundingDate"
 DanceGroup ||--}o Place : "foundingLocation"
 DanceGroup ||--}o Grant : "funding"
 DanceGroup ||--}o Certification : "hasCertification"
@@ -65,25 +77,13 @@ DanceGroup ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 DanceGroup ||--}o OfferCatalog : "hasOfferCatalog"
 DanceGroup ||--}o Place : "hasPOS"
 DanceGroup ||--}o InteractionCounter : "interactionStatistic"
-DanceGroup ||--}o Text : "isicV4"
-DanceGroup ||--}o Text : "iso6523Code"
-DanceGroup ||--}o Text : "legalName"
 DanceGroup ||--}o Offer : "makesOffer"
-DanceGroup ||--}o Text : "naics"
 DanceGroup ||--}o NonprofitType : "nonprofitStatus"
 DanceGroup ||--}o QuantitativeValue : "numberOfEmployees"
 DanceGroup ||--}o Organization : "parentOrganization"
 DanceGroup ||--}o Review : "review"
 DanceGroup ||--}o Review : "reviews"
 DanceGroup ||--}o Demand : "seeks"
-DanceGroup ||--}o Text : "slogan"
 DanceGroup ||--}o Organization : "subOrganization"
-DanceGroup ||--}o Text : "telephone"
-DanceGroup ||--}o Text : "vatID"
-DanceGroup ||--}o Text : "alternateName"
-DanceGroup ||--}o Text : "disambiguatingDescription"
-DanceGroup ||--}o Text : "name"
-DanceGroup ||--}o URL : "sameAs"
 DanceGroup ||--}o Action : "potentialAction"
-DanceGroup ||--}o URL : "url"
 

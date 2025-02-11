@@ -13,25 +13,46 @@ Code {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Code {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Code ||--}o Thing : "about"
@@ -67,43 +97,22 @@ Code ||--}o Claim : "interpretedAsClaim"
 Code ||--}o Thing : "mainEntity"
 Code ||--}o Place : "spatialCoverage"
 Code ||--}o CreativeWork : "workExample"
-Code ||--}o Text : "abstract"
-Code ||--}o Text : "accessMode"
 Code ||--}o ItemList : "accessModeSufficient"
-Code ||--}o Text : "accessibilityAPI"
-Code ||--}o Text : "accessibilityControl"
-Code ||--}o Text : "accessibilityFeature"
-Code ||--}o Text : "accessibilityHazard"
-Code ||--}o Text : "accessibilitySummary"
 Code ||--}o Person : "accountablePerson"
 Code ||--}o AggregateRating : "aggregateRating"
-Code ||--}o Text : "alternativeHeadline"
 Code ||--}o MediaObject : "associatedMedia"
 Code ||--}o Audience : "audience"
-Code ||--}o Text : "award"
-Code ||--}o Text : "awards"
 Code ||--}o Person : "character"
 Code ||--}o Comment : "comment"
-Code ||--}o Integer : "commentCount"
-Code ||--}o Text : "conditionsOfAccess"
-Code ||--}o DateTime : "contentReferenceTime"
-Code ||--}o Text : "copyrightNotice"
-Code ||--}o Number : "copyrightYear"
 Code ||--}o Country : "countryOfOrigin"
-Code ||--}o Text : "creditText"
 Code ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Code ||--}o URL : "discussionUrl"
 Code ||--}o Person : "editor"
 Code ||--}o AlignmentObject : "educationalAlignment"
 Code ||--}o MediaObject : "encoding"
 Code ||--}o MediaObject : "encodings"
 Code ||--}o CreativeWork : "exampleOfWork"
 Code ||--}o Grant : "funding"
-Code ||--}o Text : "headline"
 Code ||--}o InteractionCounter : "interactionStatistic"
-Code ||--}o Text : "interactivityType"
-Code ||--}o Boolean : "isAccessibleForFree"
-Code ||--}o Boolean : "isFamilyFriendly"
 Code ||--}o Place : "locationCreated"
 Code ||--}o Thing : "mentions"
 Code ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ Code ||--}o Event : "recordedAt"
 Code ||--}o PublicationEvent : "releasedEvent"
 Code ||--}o Review : "review"
 Code ||--}o Review : "reviews"
-Code ||--}o Date : "sdDatePublished"
 Code ||--}o Organization : "sourceOrganization"
 Code ||--}o Place : "spatial"
-Code ||--}o Text : "text"
 Code ||--}o ImageObject : "thumbnail"
-Code ||--}o URL : "thumbnailUrl"
 Code ||--}o Duration : "timeRequired"
 Code ||--}o CreativeWork : "translationOfWork"
-Code ||--}o Text : "typicalAgeRange"
 Code ||--}o CreativeWork : "workTranslation"
-Code ||--}o Text : "alternateName"
-Code ||--}o Text : "disambiguatingDescription"
-Code ||--}o Text : "name"
-Code ||--}o URL : "sameAs"
 Code ||--}o Action : "potentialAction"
-Code ||--}o URL : "url"
 

@@ -3,11 +3,16 @@ QualitativeValue {
     stringList valueReference  
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 QualitativeValue ||--}o PropertyValue : "additionalProperty"
@@ -17,10 +22,5 @@ QualitativeValue ||--}o QualitativeValue : "greaterOrEqual"
 QualitativeValue ||--}o QualitativeValue : "lesser"
 QualitativeValue ||--}o QualitativeValue : "lesserOrEqual"
 QualitativeValue ||--}o QualitativeValue : "nonEqual"
-QualitativeValue ||--}o Text : "alternateName"
-QualitativeValue ||--}o Text : "disambiguatingDescription"
-QualitativeValue ||--}o Text : "name"
-QualitativeValue ||--}o URL : "sameAs"
 QualitativeValue ||--}o Action : "potentialAction"
-QualitativeValue ||--}o URL : "url"
 

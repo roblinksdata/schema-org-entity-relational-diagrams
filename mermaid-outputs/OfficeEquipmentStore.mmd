@@ -1,8 +1,16 @@
 erDiagram
 OfficeEquipmentStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ OfficeEquipmentStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 OfficeEquipmentStore ||--}o Organization : "branchOf"
-OfficeEquipmentStore ||--}o Text : "currenciesAccepted"
-OfficeEquipmentStore ||--}o Text : "openingHours"
-OfficeEquipmentStore ||--}o Text : "paymentAccepted"
-OfficeEquipmentStore ||--}o Text : "priceRange"
-OfficeEquipmentStore ||--}o Text : "globalLocationNumber"
-OfficeEquipmentStore ||--}o URL : "hasGS1DigitalLink"
 OfficeEquipmentStore ||--}o PropertyValue : "additionalProperty"
 OfficeEquipmentStore ||--}o AggregateRating : "aggregateRating"
 OfficeEquipmentStore ||--}o LocationFeatureSpecification : "amenityFeature"
-OfficeEquipmentStore ||--}o Text : "branchCode"
 OfficeEquipmentStore ||--}o Place : "containedIn"
 OfficeEquipmentStore ||--}o Place : "containedInPlace"
 OfficeEquipmentStore ||--}o Place : "containsPlace"
 OfficeEquipmentStore ||--}o Event : "event"
 OfficeEquipmentStore ||--}o Event : "events"
-OfficeEquipmentStore ||--}o Text : "faxNumber"
 OfficeEquipmentStore ||--}o Certification : "hasCertification"
-OfficeEquipmentStore ||--}o Boolean : "hasDriveThroughService"
-OfficeEquipmentStore ||--}o Boolean : "isAccessibleForFree"
-OfficeEquipmentStore ||--}o Text : "isicV4"
-OfficeEquipmentStore ||--}o URL : "map"
-OfficeEquipmentStore ||--}o URL : "maps"
-OfficeEquipmentStore ||--}o Integer : "maximumAttendeeCapacity"
 OfficeEquipmentStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-OfficeEquipmentStore ||--}o Boolean : "publicAccess"
 OfficeEquipmentStore ||--}o Review : "review"
 OfficeEquipmentStore ||--}o Review : "reviews"
-OfficeEquipmentStore ||--}o Text : "slogan"
-OfficeEquipmentStore ||--}o Boolean : "smokingAllowed"
 OfficeEquipmentStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-OfficeEquipmentStore ||--}o Text : "telephone"
-OfficeEquipmentStore ||--}o URL : "tourBookingPage"
-OfficeEquipmentStore ||--}o Text : "duns"
-OfficeEquipmentStore ||--}o Text : "leiCode"
-OfficeEquipmentStore ||--}o Text : "taxID"
 OfficeEquipmentStore ||--}o InteractionCounter : "agentInteractionStatistic"
 OfficeEquipmentStore ||--}o Person : "alumni"
-OfficeEquipmentStore ||--}o Text : "award"
-OfficeEquipmentStore ||--}o Text : "awards"
 OfficeEquipmentStore ||--}o ContactPoint : "contactPoint"
 OfficeEquipmentStore ||--}o ContactPoint : "contactPoints"
 OfficeEquipmentStore ||--}o Organization : "department"
-OfficeEquipmentStore ||--}o Date : "dissolutionDate"
-OfficeEquipmentStore ||--}o Text : "email"
 OfficeEquipmentStore ||--}o Person : "employee"
 OfficeEquipmentStore ||--}o Person : "employees"
 OfficeEquipmentStore ||--}o Person : "founders"
-OfficeEquipmentStore ||--}o Date : "foundingDate"
 OfficeEquipmentStore ||--}o Place : "foundingLocation"
 OfficeEquipmentStore ||--}o Grant : "funding"
 OfficeEquipmentStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ OfficeEquipmentStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 OfficeEquipmentStore ||--}o OfferCatalog : "hasOfferCatalog"
 OfficeEquipmentStore ||--}o Place : "hasPOS"
 OfficeEquipmentStore ||--}o InteractionCounter : "interactionStatistic"
-OfficeEquipmentStore ||--}o Text : "iso6523Code"
-OfficeEquipmentStore ||--}o Text : "legalName"
 OfficeEquipmentStore ||--}o Offer : "makesOffer"
-OfficeEquipmentStore ||--}o Text : "naics"
 OfficeEquipmentStore ||--}o NonprofitType : "nonprofitStatus"
 OfficeEquipmentStore ||--}o QuantitativeValue : "numberOfEmployees"
 OfficeEquipmentStore ||--}o Organization : "parentOrganization"
 OfficeEquipmentStore ||--}o Demand : "seeks"
 OfficeEquipmentStore ||--}o Organization : "subOrganization"
-OfficeEquipmentStore ||--}o Text : "vatID"
-OfficeEquipmentStore ||--}o Text : "alternateName"
-OfficeEquipmentStore ||--}o Text : "disambiguatingDescription"
-OfficeEquipmentStore ||--}o Text : "name"
-OfficeEquipmentStore ||--}o URL : "sameAs"
 OfficeEquipmentStore ||--}o Action : "potentialAction"
-OfficeEquipmentStore ||--}o URL : "url"
 

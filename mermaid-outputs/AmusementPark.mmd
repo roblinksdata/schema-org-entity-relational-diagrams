@@ -1,8 +1,16 @@
 erDiagram
 AmusementPark {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ AmusementPark {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AmusementPark ||--}o Organization : "branchOf"
-AmusementPark ||--}o Text : "currenciesAccepted"
-AmusementPark ||--}o Text : "openingHours"
-AmusementPark ||--}o Text : "paymentAccepted"
-AmusementPark ||--}o Text : "priceRange"
-AmusementPark ||--}o Text : "globalLocationNumber"
-AmusementPark ||--}o URL : "hasGS1DigitalLink"
 AmusementPark ||--}o PropertyValue : "additionalProperty"
 AmusementPark ||--}o AggregateRating : "aggregateRating"
 AmusementPark ||--}o LocationFeatureSpecification : "amenityFeature"
-AmusementPark ||--}o Text : "branchCode"
 AmusementPark ||--}o Place : "containedIn"
 AmusementPark ||--}o Place : "containedInPlace"
 AmusementPark ||--}o Place : "containsPlace"
 AmusementPark ||--}o Event : "event"
 AmusementPark ||--}o Event : "events"
-AmusementPark ||--}o Text : "faxNumber"
 AmusementPark ||--}o Certification : "hasCertification"
-AmusementPark ||--}o Boolean : "hasDriveThroughService"
-AmusementPark ||--}o Boolean : "isAccessibleForFree"
-AmusementPark ||--}o Text : "isicV4"
-AmusementPark ||--}o URL : "map"
-AmusementPark ||--}o URL : "maps"
-AmusementPark ||--}o Integer : "maximumAttendeeCapacity"
 AmusementPark ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-AmusementPark ||--}o Boolean : "publicAccess"
 AmusementPark ||--}o Review : "review"
 AmusementPark ||--}o Review : "reviews"
-AmusementPark ||--}o Text : "slogan"
-AmusementPark ||--}o Boolean : "smokingAllowed"
 AmusementPark ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-AmusementPark ||--}o Text : "telephone"
-AmusementPark ||--}o URL : "tourBookingPage"
-AmusementPark ||--}o Text : "duns"
-AmusementPark ||--}o Text : "leiCode"
-AmusementPark ||--}o Text : "taxID"
 AmusementPark ||--}o InteractionCounter : "agentInteractionStatistic"
 AmusementPark ||--}o Person : "alumni"
-AmusementPark ||--}o Text : "award"
-AmusementPark ||--}o Text : "awards"
 AmusementPark ||--}o ContactPoint : "contactPoint"
 AmusementPark ||--}o ContactPoint : "contactPoints"
 AmusementPark ||--}o Organization : "department"
-AmusementPark ||--}o Date : "dissolutionDate"
-AmusementPark ||--}o Text : "email"
 AmusementPark ||--}o Person : "employee"
 AmusementPark ||--}o Person : "employees"
 AmusementPark ||--}o Person : "founders"
-AmusementPark ||--}o Date : "foundingDate"
 AmusementPark ||--}o Place : "foundingLocation"
 AmusementPark ||--}o Grant : "funding"
 AmusementPark ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ AmusementPark ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 AmusementPark ||--}o OfferCatalog : "hasOfferCatalog"
 AmusementPark ||--}o Place : "hasPOS"
 AmusementPark ||--}o InteractionCounter : "interactionStatistic"
-AmusementPark ||--}o Text : "iso6523Code"
-AmusementPark ||--}o Text : "legalName"
 AmusementPark ||--}o Offer : "makesOffer"
-AmusementPark ||--}o Text : "naics"
 AmusementPark ||--}o NonprofitType : "nonprofitStatus"
 AmusementPark ||--}o QuantitativeValue : "numberOfEmployees"
 AmusementPark ||--}o Organization : "parentOrganization"
 AmusementPark ||--}o Demand : "seeks"
 AmusementPark ||--}o Organization : "subOrganization"
-AmusementPark ||--}o Text : "vatID"
-AmusementPark ||--}o Text : "alternateName"
-AmusementPark ||--}o Text : "disambiguatingDescription"
-AmusementPark ||--}o Text : "name"
-AmusementPark ||--}o URL : "sameAs"
 AmusementPark ||--}o Action : "potentialAction"
-AmusementPark ||--}o URL : "url"
 

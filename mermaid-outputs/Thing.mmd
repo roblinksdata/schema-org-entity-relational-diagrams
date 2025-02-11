@@ -1,17 +1,17 @@
 erDiagram
 Thing {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Thing ||--}o Text : "alternateName"
-Thing ||--}o Text : "disambiguatingDescription"
-Thing ||--}o Text : "name"
-Thing ||--}o URL : "sameAs"
 Thing ||--}o Action : "potentialAction"
-Thing ||--}o URL : "url"
 

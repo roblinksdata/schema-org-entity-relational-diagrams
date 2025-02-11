@@ -8,11 +8,16 @@ UseAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 UseAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
@@ -23,10 +28,5 @@ UseAction ||--}o Thing : "result"
 UseAction ||--}o HowTo : "actionProcess"
 UseAction ||--}o ActionStatusType : "actionStatus"
 UseAction ||--}o Thing : "error"
-UseAction ||--}o Text : "alternateName"
-UseAction ||--}o Text : "disambiguatingDescription"
-UseAction ||--}o Text : "name"
-UseAction ||--}o URL : "sameAs"
 UseAction ||--}o Action : "potentialAction"
-UseAction ||--}o URL : "url"
 

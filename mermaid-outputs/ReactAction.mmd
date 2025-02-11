@@ -8,11 +8,16 @@ ReactAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ReactAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ ReactAction ||--}o Thing : "result"
 ReactAction ||--}o HowTo : "actionProcess"
 ReactAction ||--}o ActionStatusType : "actionStatus"
 ReactAction ||--}o Thing : "error"
-ReactAction ||--}o Text : "alternateName"
-ReactAction ||--}o Text : "disambiguatingDescription"
-ReactAction ||--}o Text : "name"
-ReactAction ||--}o URL : "sameAs"
 ReactAction ||--}o Action : "potentialAction"
-ReactAction ||--}o URL : "url"
 

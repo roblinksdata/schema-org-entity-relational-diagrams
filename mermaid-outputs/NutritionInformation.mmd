@@ -1,11 +1,17 @@
 erDiagram
 NutritionInformation {
+    TextList servingSize  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 NutritionInformation ||--}o Energy : "calories"
@@ -15,15 +21,9 @@ NutritionInformation ||--}o Mass : "fatContent"
 NutritionInformation ||--}o Mass : "fiberContent"
 NutritionInformation ||--}o Mass : "proteinContent"
 NutritionInformation ||--}o Mass : "saturatedFatContent"
-NutritionInformation ||--}o Text : "servingSize"
 NutritionInformation ||--}o Mass : "sodiumContent"
 NutritionInformation ||--}o Mass : "sugarContent"
 NutritionInformation ||--}o Mass : "transFatContent"
 NutritionInformation ||--}o Mass : "unsaturatedFatContent"
-NutritionInformation ||--}o Text : "alternateName"
-NutritionInformation ||--}o Text : "disambiguatingDescription"
-NutritionInformation ||--}o Text : "name"
-NutritionInformation ||--}o URL : "sameAs"
 NutritionInformation ||--}o Action : "potentialAction"
-NutritionInformation ||--}o URL : "url"
 

@@ -2,17 +2,17 @@ erDiagram
 RsvpResponseType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-RsvpResponseType ||--}o Text : "alternateName"
-RsvpResponseType ||--}o Text : "disambiguatingDescription"
-RsvpResponseType ||--}o Text : "name"
-RsvpResponseType ||--}o URL : "sameAs"
 RsvpResponseType ||--}o Action : "potentialAction"
-RsvpResponseType ||--}o URL : "url"
 

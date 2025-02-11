@@ -13,25 +13,46 @@ Play {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Play {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Play ||--}o Thing : "about"
@@ -67,43 +97,22 @@ Play ||--}o Claim : "interpretedAsClaim"
 Play ||--}o Thing : "mainEntity"
 Play ||--}o Place : "spatialCoverage"
 Play ||--}o CreativeWork : "workExample"
-Play ||--}o Text : "abstract"
-Play ||--}o Text : "accessMode"
 Play ||--}o ItemList : "accessModeSufficient"
-Play ||--}o Text : "accessibilityAPI"
-Play ||--}o Text : "accessibilityControl"
-Play ||--}o Text : "accessibilityFeature"
-Play ||--}o Text : "accessibilityHazard"
-Play ||--}o Text : "accessibilitySummary"
 Play ||--}o Person : "accountablePerson"
 Play ||--}o AggregateRating : "aggregateRating"
-Play ||--}o Text : "alternativeHeadline"
 Play ||--}o MediaObject : "associatedMedia"
 Play ||--}o Audience : "audience"
-Play ||--}o Text : "award"
-Play ||--}o Text : "awards"
 Play ||--}o Person : "character"
 Play ||--}o Comment : "comment"
-Play ||--}o Integer : "commentCount"
-Play ||--}o Text : "conditionsOfAccess"
-Play ||--}o DateTime : "contentReferenceTime"
-Play ||--}o Text : "copyrightNotice"
-Play ||--}o Number : "copyrightYear"
 Play ||--}o Country : "countryOfOrigin"
-Play ||--}o Text : "creditText"
 Play ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Play ||--}o URL : "discussionUrl"
 Play ||--}o Person : "editor"
 Play ||--}o AlignmentObject : "educationalAlignment"
 Play ||--}o MediaObject : "encoding"
 Play ||--}o MediaObject : "encodings"
 Play ||--}o CreativeWork : "exampleOfWork"
 Play ||--}o Grant : "funding"
-Play ||--}o Text : "headline"
 Play ||--}o InteractionCounter : "interactionStatistic"
-Play ||--}o Text : "interactivityType"
-Play ||--}o Boolean : "isAccessibleForFree"
-Play ||--}o Boolean : "isFamilyFriendly"
 Play ||--}o Place : "locationCreated"
 Play ||--}o Thing : "mentions"
 Play ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ Play ||--}o Event : "recordedAt"
 Play ||--}o PublicationEvent : "releasedEvent"
 Play ||--}o Review : "review"
 Play ||--}o Review : "reviews"
-Play ||--}o Date : "sdDatePublished"
 Play ||--}o Organization : "sourceOrganization"
 Play ||--}o Place : "spatial"
-Play ||--}o Text : "text"
 Play ||--}o ImageObject : "thumbnail"
-Play ||--}o URL : "thumbnailUrl"
 Play ||--}o Duration : "timeRequired"
 Play ||--}o CreativeWork : "translationOfWork"
-Play ||--}o Text : "typicalAgeRange"
 Play ||--}o CreativeWork : "workTranslation"
-Play ||--}o Text : "alternateName"
-Play ||--}o Text : "disambiguatingDescription"
-Play ||--}o Text : "name"
-Play ||--}o URL : "sameAs"
 Play ||--}o Action : "potentialAction"
-Play ||--}o URL : "url"
 

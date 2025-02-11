@@ -1,17 +1,17 @@
 erDiagram
 Quantity {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Quantity ||--}o Text : "alternateName"
-Quantity ||--}o Text : "disambiguatingDescription"
-Quantity ||--}o Text : "name"
-Quantity ||--}o URL : "sameAs"
 Quantity ||--}o Action : "potentialAction"
-Quantity ||--}o URL : "url"
 

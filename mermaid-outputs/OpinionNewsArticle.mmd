@@ -1,9 +1,18 @@
 erDiagram
 OpinionNewsArticle {
+    TextList dateline  
+    TextList printColumn  
+    TextList printEdition  
+    TextList printPage  
+    TextList printSection  
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -17,25 +26,46 @@ OpinionNewsArticle {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,32 +77,32 @@ OpinionNewsArticle {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-OpinionNewsArticle ||--}o Text : "dateline"
-OpinionNewsArticle ||--}o Text : "printColumn"
-OpinionNewsArticle ||--}o Text : "printEdition"
-OpinionNewsArticle ||--}o Text : "printPage"
-OpinionNewsArticle ||--}o Text : "printSection"
-OpinionNewsArticle ||--}o Text : "articleBody"
-OpinionNewsArticle ||--}o Text : "articleSection"
-OpinionNewsArticle ||--}o Text : "pagination"
-OpinionNewsArticle ||--}o Integer : "wordCount"
 OpinionNewsArticle ||--}o Thing : "about"
 OpinionNewsArticle ||--}o Place : "contentLocation"
 OpinionNewsArticle ||--}o CreativeWork : "hasPart"
@@ -80,43 +110,22 @@ OpinionNewsArticle ||--}o Claim : "interpretedAsClaim"
 OpinionNewsArticle ||--}o Thing : "mainEntity"
 OpinionNewsArticle ||--}o Place : "spatialCoverage"
 OpinionNewsArticle ||--}o CreativeWork : "workExample"
-OpinionNewsArticle ||--}o Text : "abstract"
-OpinionNewsArticle ||--}o Text : "accessMode"
 OpinionNewsArticle ||--}o ItemList : "accessModeSufficient"
-OpinionNewsArticle ||--}o Text : "accessibilityAPI"
-OpinionNewsArticle ||--}o Text : "accessibilityControl"
-OpinionNewsArticle ||--}o Text : "accessibilityFeature"
-OpinionNewsArticle ||--}o Text : "accessibilityHazard"
-OpinionNewsArticle ||--}o Text : "accessibilitySummary"
 OpinionNewsArticle ||--}o Person : "accountablePerson"
 OpinionNewsArticle ||--}o AggregateRating : "aggregateRating"
-OpinionNewsArticle ||--}o Text : "alternativeHeadline"
 OpinionNewsArticle ||--}o MediaObject : "associatedMedia"
 OpinionNewsArticle ||--}o Audience : "audience"
-OpinionNewsArticle ||--}o Text : "award"
-OpinionNewsArticle ||--}o Text : "awards"
 OpinionNewsArticle ||--}o Person : "character"
 OpinionNewsArticle ||--}o Comment : "comment"
-OpinionNewsArticle ||--}o Integer : "commentCount"
-OpinionNewsArticle ||--}o Text : "conditionsOfAccess"
-OpinionNewsArticle ||--}o DateTime : "contentReferenceTime"
-OpinionNewsArticle ||--}o Text : "copyrightNotice"
-OpinionNewsArticle ||--}o Number : "copyrightYear"
 OpinionNewsArticle ||--}o Country : "countryOfOrigin"
-OpinionNewsArticle ||--}o Text : "creditText"
 OpinionNewsArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-OpinionNewsArticle ||--}o URL : "discussionUrl"
 OpinionNewsArticle ||--}o Person : "editor"
 OpinionNewsArticle ||--}o AlignmentObject : "educationalAlignment"
 OpinionNewsArticle ||--}o MediaObject : "encoding"
 OpinionNewsArticle ||--}o MediaObject : "encodings"
 OpinionNewsArticle ||--}o CreativeWork : "exampleOfWork"
 OpinionNewsArticle ||--}o Grant : "funding"
-OpinionNewsArticle ||--}o Text : "headline"
 OpinionNewsArticle ||--}o InteractionCounter : "interactionStatistic"
-OpinionNewsArticle ||--}o Text : "interactivityType"
-OpinionNewsArticle ||--}o Boolean : "isAccessibleForFree"
-OpinionNewsArticle ||--}o Boolean : "isFamilyFriendly"
 OpinionNewsArticle ||--}o Place : "locationCreated"
 OpinionNewsArticle ||--}o Thing : "mentions"
 OpinionNewsArticle ||--}o PublicationEvent : "publication"
@@ -125,20 +134,11 @@ OpinionNewsArticle ||--}o Event : "recordedAt"
 OpinionNewsArticle ||--}o PublicationEvent : "releasedEvent"
 OpinionNewsArticle ||--}o Review : "review"
 OpinionNewsArticle ||--}o Review : "reviews"
-OpinionNewsArticle ||--}o Date : "sdDatePublished"
 OpinionNewsArticle ||--}o Organization : "sourceOrganization"
 OpinionNewsArticle ||--}o Place : "spatial"
-OpinionNewsArticle ||--}o Text : "text"
 OpinionNewsArticle ||--}o ImageObject : "thumbnail"
-OpinionNewsArticle ||--}o URL : "thumbnailUrl"
 OpinionNewsArticle ||--}o Duration : "timeRequired"
 OpinionNewsArticle ||--}o CreativeWork : "translationOfWork"
-OpinionNewsArticle ||--}o Text : "typicalAgeRange"
 OpinionNewsArticle ||--}o CreativeWork : "workTranslation"
-OpinionNewsArticle ||--}o Text : "alternateName"
-OpinionNewsArticle ||--}o Text : "disambiguatingDescription"
-OpinionNewsArticle ||--}o Text : "name"
-OpinionNewsArticle ||--}o URL : "sameAs"
 OpinionNewsArticle ||--}o Action : "potentialAction"
-OpinionNewsArticle ||--}o URL : "url"
 

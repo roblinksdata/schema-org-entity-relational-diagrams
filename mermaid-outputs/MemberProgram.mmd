@@ -1,19 +1,19 @@
 erDiagram
 MemberProgram {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MemberProgram ||--}o MemberProgramTier : "hasTiers"
 MemberProgram ||--}o Organization : "hostingOrganization"
-MemberProgram ||--}o Text : "alternateName"
-MemberProgram ||--}o Text : "disambiguatingDescription"
-MemberProgram ||--}o Text : "name"
-MemberProgram ||--}o URL : "sameAs"
 MemberProgram ||--}o Action : "potentialAction"
-MemberProgram ||--}o URL : "url"
 

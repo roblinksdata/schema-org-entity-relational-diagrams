@@ -13,25 +13,46 @@ Painting {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Painting {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Painting ||--}o Thing : "about"
@@ -67,43 +97,22 @@ Painting ||--}o Claim : "interpretedAsClaim"
 Painting ||--}o Thing : "mainEntity"
 Painting ||--}o Place : "spatialCoverage"
 Painting ||--}o CreativeWork : "workExample"
-Painting ||--}o Text : "abstract"
-Painting ||--}o Text : "accessMode"
 Painting ||--}o ItemList : "accessModeSufficient"
-Painting ||--}o Text : "accessibilityAPI"
-Painting ||--}o Text : "accessibilityControl"
-Painting ||--}o Text : "accessibilityFeature"
-Painting ||--}o Text : "accessibilityHazard"
-Painting ||--}o Text : "accessibilitySummary"
 Painting ||--}o Person : "accountablePerson"
 Painting ||--}o AggregateRating : "aggregateRating"
-Painting ||--}o Text : "alternativeHeadline"
 Painting ||--}o MediaObject : "associatedMedia"
 Painting ||--}o Audience : "audience"
-Painting ||--}o Text : "award"
-Painting ||--}o Text : "awards"
 Painting ||--}o Person : "character"
 Painting ||--}o Comment : "comment"
-Painting ||--}o Integer : "commentCount"
-Painting ||--}o Text : "conditionsOfAccess"
-Painting ||--}o DateTime : "contentReferenceTime"
-Painting ||--}o Text : "copyrightNotice"
-Painting ||--}o Number : "copyrightYear"
 Painting ||--}o Country : "countryOfOrigin"
-Painting ||--}o Text : "creditText"
 Painting ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Painting ||--}o URL : "discussionUrl"
 Painting ||--}o Person : "editor"
 Painting ||--}o AlignmentObject : "educationalAlignment"
 Painting ||--}o MediaObject : "encoding"
 Painting ||--}o MediaObject : "encodings"
 Painting ||--}o CreativeWork : "exampleOfWork"
 Painting ||--}o Grant : "funding"
-Painting ||--}o Text : "headline"
 Painting ||--}o InteractionCounter : "interactionStatistic"
-Painting ||--}o Text : "interactivityType"
-Painting ||--}o Boolean : "isAccessibleForFree"
-Painting ||--}o Boolean : "isFamilyFriendly"
 Painting ||--}o Place : "locationCreated"
 Painting ||--}o Thing : "mentions"
 Painting ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ Painting ||--}o Event : "recordedAt"
 Painting ||--}o PublicationEvent : "releasedEvent"
 Painting ||--}o Review : "review"
 Painting ||--}o Review : "reviews"
-Painting ||--}o Date : "sdDatePublished"
 Painting ||--}o Organization : "sourceOrganization"
 Painting ||--}o Place : "spatial"
-Painting ||--}o Text : "text"
 Painting ||--}o ImageObject : "thumbnail"
-Painting ||--}o URL : "thumbnailUrl"
 Painting ||--}o Duration : "timeRequired"
 Painting ||--}o CreativeWork : "translationOfWork"
-Painting ||--}o Text : "typicalAgeRange"
 Painting ||--}o CreativeWork : "workTranslation"
-Painting ||--}o Text : "alternateName"
-Painting ||--}o Text : "disambiguatingDescription"
-Painting ||--}o Text : "name"
-Painting ||--}o URL : "sameAs"
 Painting ||--}o Action : "potentialAction"
-Painting ||--}o URL : "url"
 

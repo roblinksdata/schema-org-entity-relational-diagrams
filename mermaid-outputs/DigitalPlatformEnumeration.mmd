@@ -2,17 +2,17 @@ erDiagram
 DigitalPlatformEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DigitalPlatformEnumeration ||--}o Text : "alternateName"
-DigitalPlatformEnumeration ||--}o Text : "disambiguatingDescription"
-DigitalPlatformEnumeration ||--}o Text : "name"
-DigitalPlatformEnumeration ||--}o URL : "sameAs"
 DigitalPlatformEnumeration ||--}o Action : "potentialAction"
-DigitalPlatformEnumeration ||--}o URL : "url"
 

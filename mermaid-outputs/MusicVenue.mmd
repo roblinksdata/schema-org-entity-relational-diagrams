@@ -1,8 +1,13 @@
 erDiagram
 MusicVenue {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ MusicVenue {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MusicVenue ||--}o Text : "openingHours"
-MusicVenue ||--}o Text : "globalLocationNumber"
-MusicVenue ||--}o URL : "hasGS1DigitalLink"
 MusicVenue ||--}o PropertyValue : "additionalProperty"
 MusicVenue ||--}o AggregateRating : "aggregateRating"
 MusicVenue ||--}o LocationFeatureSpecification : "amenityFeature"
-MusicVenue ||--}o Text : "branchCode"
 MusicVenue ||--}o Place : "containedIn"
 MusicVenue ||--}o Place : "containedInPlace"
 MusicVenue ||--}o Place : "containsPlace"
 MusicVenue ||--}o Event : "event"
 MusicVenue ||--}o Event : "events"
-MusicVenue ||--}o Text : "faxNumber"
 MusicVenue ||--}o Certification : "hasCertification"
-MusicVenue ||--}o Boolean : "hasDriveThroughService"
-MusicVenue ||--}o Boolean : "isAccessibleForFree"
-MusicVenue ||--}o Text : "isicV4"
-MusicVenue ||--}o URL : "map"
-MusicVenue ||--}o URL : "maps"
-MusicVenue ||--}o Integer : "maximumAttendeeCapacity"
 MusicVenue ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-MusicVenue ||--}o Boolean : "publicAccess"
 MusicVenue ||--}o Review : "review"
 MusicVenue ||--}o Review : "reviews"
-MusicVenue ||--}o Text : "slogan"
-MusicVenue ||--}o Boolean : "smokingAllowed"
 MusicVenue ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-MusicVenue ||--}o Text : "telephone"
-MusicVenue ||--}o URL : "tourBookingPage"
-MusicVenue ||--}o Text : "alternateName"
-MusicVenue ||--}o Text : "disambiguatingDescription"
-MusicVenue ||--}o Text : "name"
-MusicVenue ||--}o URL : "sameAs"
 MusicVenue ||--}o Action : "potentialAction"
-MusicVenue ||--}o URL : "url"
 

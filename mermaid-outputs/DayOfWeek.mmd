@@ -2,17 +2,17 @@ erDiagram
 DayOfWeek {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DayOfWeek ||--}o Text : "alternateName"
-DayOfWeek ||--}o Text : "disambiguatingDescription"
-DayOfWeek ||--}o Text : "name"
-DayOfWeek ||--}o URL : "sameAs"
 DayOfWeek ||--}o Action : "potentialAction"
-DayOfWeek ||--}o URL : "url"
 

@@ -7,20 +7,20 @@ TouristTrip {
     stringList offers  
     stringList provider  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TouristTrip ||--}o Trip : "partOfTrip"
 TouristTrip ||--}o Trip : "subTrip"
 TouristTrip ||--}o Place : "tripOrigin"
-TouristTrip ||--}o Text : "alternateName"
-TouristTrip ||--}o Text : "disambiguatingDescription"
-TouristTrip ||--}o Text : "name"
-TouristTrip ||--}o URL : "sameAs"
 TouristTrip ||--}o Action : "potentialAction"
-TouristTrip ||--}o URL : "url"
 

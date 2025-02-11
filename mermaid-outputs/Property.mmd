@@ -2,20 +2,20 @@ erDiagram
 Property {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Property ||--}o Class : "domainIncludes"
 Property ||--}o Property : "inverseOf"
 Property ||--}o Class : "rangeIncludes"
-Property ||--}o Text : "alternateName"
-Property ||--}o Text : "disambiguatingDescription"
-Property ||--}o Text : "name"
-Property ||--}o URL : "sameAs"
 Property ||--}o Action : "potentialAction"
-Property ||--}o URL : "url"
 

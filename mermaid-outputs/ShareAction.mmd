@@ -10,11 +10,16 @@ ShareAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ShareAction ||--}o Thing : "about"
@@ -25,10 +30,5 @@ ShareAction ||--}o Thing : "result"
 ShareAction ||--}o HowTo : "actionProcess"
 ShareAction ||--}o ActionStatusType : "actionStatus"
 ShareAction ||--}o Thing : "error"
-ShareAction ||--}o Text : "alternateName"
-ShareAction ||--}o Text : "disambiguatingDescription"
-ShareAction ||--}o Text : "name"
-ShareAction ||--}o URL : "sameAs"
 ShareAction ||--}o Action : "potentialAction"
-ShareAction ||--}o URL : "url"
 

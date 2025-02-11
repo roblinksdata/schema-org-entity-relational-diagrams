@@ -1,9 +1,13 @@
 erDiagram
 DiscussionForumPosting {
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -17,25 +21,46 @@ DiscussionForumPosting {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,28 +72,33 @@ DiscussionForumPosting {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DiscussionForumPosting ||--}o CreativeWork : "sharedContent"
-DiscussionForumPosting ||--}o Text : "articleBody"
-DiscussionForumPosting ||--}o Text : "articleSection"
-DiscussionForumPosting ||--}o Text : "pagination"
-DiscussionForumPosting ||--}o Integer : "wordCount"
 DiscussionForumPosting ||--}o Thing : "about"
 DiscussionForumPosting ||--}o Place : "contentLocation"
 DiscussionForumPosting ||--}o CreativeWork : "hasPart"
@@ -76,43 +106,22 @@ DiscussionForumPosting ||--}o Claim : "interpretedAsClaim"
 DiscussionForumPosting ||--}o Thing : "mainEntity"
 DiscussionForumPosting ||--}o Place : "spatialCoverage"
 DiscussionForumPosting ||--}o CreativeWork : "workExample"
-DiscussionForumPosting ||--}o Text : "abstract"
-DiscussionForumPosting ||--}o Text : "accessMode"
 DiscussionForumPosting ||--}o ItemList : "accessModeSufficient"
-DiscussionForumPosting ||--}o Text : "accessibilityAPI"
-DiscussionForumPosting ||--}o Text : "accessibilityControl"
-DiscussionForumPosting ||--}o Text : "accessibilityFeature"
-DiscussionForumPosting ||--}o Text : "accessibilityHazard"
-DiscussionForumPosting ||--}o Text : "accessibilitySummary"
 DiscussionForumPosting ||--}o Person : "accountablePerson"
 DiscussionForumPosting ||--}o AggregateRating : "aggregateRating"
-DiscussionForumPosting ||--}o Text : "alternativeHeadline"
 DiscussionForumPosting ||--}o MediaObject : "associatedMedia"
 DiscussionForumPosting ||--}o Audience : "audience"
-DiscussionForumPosting ||--}o Text : "award"
-DiscussionForumPosting ||--}o Text : "awards"
 DiscussionForumPosting ||--}o Person : "character"
 DiscussionForumPosting ||--}o Comment : "comment"
-DiscussionForumPosting ||--}o Integer : "commentCount"
-DiscussionForumPosting ||--}o Text : "conditionsOfAccess"
-DiscussionForumPosting ||--}o DateTime : "contentReferenceTime"
-DiscussionForumPosting ||--}o Text : "copyrightNotice"
-DiscussionForumPosting ||--}o Number : "copyrightYear"
 DiscussionForumPosting ||--}o Country : "countryOfOrigin"
-DiscussionForumPosting ||--}o Text : "creditText"
 DiscussionForumPosting ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-DiscussionForumPosting ||--}o URL : "discussionUrl"
 DiscussionForumPosting ||--}o Person : "editor"
 DiscussionForumPosting ||--}o AlignmentObject : "educationalAlignment"
 DiscussionForumPosting ||--}o MediaObject : "encoding"
 DiscussionForumPosting ||--}o MediaObject : "encodings"
 DiscussionForumPosting ||--}o CreativeWork : "exampleOfWork"
 DiscussionForumPosting ||--}o Grant : "funding"
-DiscussionForumPosting ||--}o Text : "headline"
 DiscussionForumPosting ||--}o InteractionCounter : "interactionStatistic"
-DiscussionForumPosting ||--}o Text : "interactivityType"
-DiscussionForumPosting ||--}o Boolean : "isAccessibleForFree"
-DiscussionForumPosting ||--}o Boolean : "isFamilyFriendly"
 DiscussionForumPosting ||--}o Place : "locationCreated"
 DiscussionForumPosting ||--}o Thing : "mentions"
 DiscussionForumPosting ||--}o PublicationEvent : "publication"
@@ -121,20 +130,11 @@ DiscussionForumPosting ||--}o Event : "recordedAt"
 DiscussionForumPosting ||--}o PublicationEvent : "releasedEvent"
 DiscussionForumPosting ||--}o Review : "review"
 DiscussionForumPosting ||--}o Review : "reviews"
-DiscussionForumPosting ||--}o Date : "sdDatePublished"
 DiscussionForumPosting ||--}o Organization : "sourceOrganization"
 DiscussionForumPosting ||--}o Place : "spatial"
-DiscussionForumPosting ||--}o Text : "text"
 DiscussionForumPosting ||--}o ImageObject : "thumbnail"
-DiscussionForumPosting ||--}o URL : "thumbnailUrl"
 DiscussionForumPosting ||--}o Duration : "timeRequired"
 DiscussionForumPosting ||--}o CreativeWork : "translationOfWork"
-DiscussionForumPosting ||--}o Text : "typicalAgeRange"
 DiscussionForumPosting ||--}o CreativeWork : "workTranslation"
-DiscussionForumPosting ||--}o Text : "alternateName"
-DiscussionForumPosting ||--}o Text : "disambiguatingDescription"
-DiscussionForumPosting ||--}o Text : "name"
-DiscussionForumPosting ||--}o URL : "sameAs"
 DiscussionForumPosting ||--}o Action : "potentialAction"
-DiscussionForumPosting ||--}o URL : "url"
 

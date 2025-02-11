@@ -10,11 +10,16 @@ MoneyTransfer {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MoneyTransfer ||--}o Place : "fromLocation"
@@ -25,10 +30,5 @@ MoneyTransfer ||--}o Thing : "result"
 MoneyTransfer ||--}o HowTo : "actionProcess"
 MoneyTransfer ||--}o ActionStatusType : "actionStatus"
 MoneyTransfer ||--}o Thing : "error"
-MoneyTransfer ||--}o Text : "alternateName"
-MoneyTransfer ||--}o Text : "disambiguatingDescription"
-MoneyTransfer ||--}o Text : "name"
-MoneyTransfer ||--}o URL : "sameAs"
 MoneyTransfer ||--}o Action : "potentialAction"
-MoneyTransfer ||--}o URL : "url"
 

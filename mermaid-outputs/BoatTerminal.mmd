@@ -1,8 +1,13 @@
 erDiagram
 BoatTerminal {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ BoatTerminal {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BoatTerminal ||--}o Text : "openingHours"
-BoatTerminal ||--}o Text : "globalLocationNumber"
-BoatTerminal ||--}o URL : "hasGS1DigitalLink"
 BoatTerminal ||--}o PropertyValue : "additionalProperty"
 BoatTerminal ||--}o AggregateRating : "aggregateRating"
 BoatTerminal ||--}o LocationFeatureSpecification : "amenityFeature"
-BoatTerminal ||--}o Text : "branchCode"
 BoatTerminal ||--}o Place : "containedIn"
 BoatTerminal ||--}o Place : "containedInPlace"
 BoatTerminal ||--}o Place : "containsPlace"
 BoatTerminal ||--}o Event : "event"
 BoatTerminal ||--}o Event : "events"
-BoatTerminal ||--}o Text : "faxNumber"
 BoatTerminal ||--}o Certification : "hasCertification"
-BoatTerminal ||--}o Boolean : "hasDriveThroughService"
-BoatTerminal ||--}o Boolean : "isAccessibleForFree"
-BoatTerminal ||--}o Text : "isicV4"
-BoatTerminal ||--}o URL : "map"
-BoatTerminal ||--}o URL : "maps"
-BoatTerminal ||--}o Integer : "maximumAttendeeCapacity"
 BoatTerminal ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-BoatTerminal ||--}o Boolean : "publicAccess"
 BoatTerminal ||--}o Review : "review"
 BoatTerminal ||--}o Review : "reviews"
-BoatTerminal ||--}o Text : "slogan"
-BoatTerminal ||--}o Boolean : "smokingAllowed"
 BoatTerminal ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-BoatTerminal ||--}o Text : "telephone"
-BoatTerminal ||--}o URL : "tourBookingPage"
-BoatTerminal ||--}o Text : "alternateName"
-BoatTerminal ||--}o Text : "disambiguatingDescription"
-BoatTerminal ||--}o Text : "name"
-BoatTerminal ||--}o URL : "sameAs"
 BoatTerminal ||--}o Action : "potentialAction"
-BoatTerminal ||--}o URL : "url"
 

@@ -13,25 +13,46 @@ Atlas {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Atlas {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Atlas ||--}o Thing : "about"
@@ -67,43 +97,22 @@ Atlas ||--}o Claim : "interpretedAsClaim"
 Atlas ||--}o Thing : "mainEntity"
 Atlas ||--}o Place : "spatialCoverage"
 Atlas ||--}o CreativeWork : "workExample"
-Atlas ||--}o Text : "abstract"
-Atlas ||--}o Text : "accessMode"
 Atlas ||--}o ItemList : "accessModeSufficient"
-Atlas ||--}o Text : "accessibilityAPI"
-Atlas ||--}o Text : "accessibilityControl"
-Atlas ||--}o Text : "accessibilityFeature"
-Atlas ||--}o Text : "accessibilityHazard"
-Atlas ||--}o Text : "accessibilitySummary"
 Atlas ||--}o Person : "accountablePerson"
 Atlas ||--}o AggregateRating : "aggregateRating"
-Atlas ||--}o Text : "alternativeHeadline"
 Atlas ||--}o MediaObject : "associatedMedia"
 Atlas ||--}o Audience : "audience"
-Atlas ||--}o Text : "award"
-Atlas ||--}o Text : "awards"
 Atlas ||--}o Person : "character"
 Atlas ||--}o Comment : "comment"
-Atlas ||--}o Integer : "commentCount"
-Atlas ||--}o Text : "conditionsOfAccess"
-Atlas ||--}o DateTime : "contentReferenceTime"
-Atlas ||--}o Text : "copyrightNotice"
-Atlas ||--}o Number : "copyrightYear"
 Atlas ||--}o Country : "countryOfOrigin"
-Atlas ||--}o Text : "creditText"
 Atlas ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Atlas ||--}o URL : "discussionUrl"
 Atlas ||--}o Person : "editor"
 Atlas ||--}o AlignmentObject : "educationalAlignment"
 Atlas ||--}o MediaObject : "encoding"
 Atlas ||--}o MediaObject : "encodings"
 Atlas ||--}o CreativeWork : "exampleOfWork"
 Atlas ||--}o Grant : "funding"
-Atlas ||--}o Text : "headline"
 Atlas ||--}o InteractionCounter : "interactionStatistic"
-Atlas ||--}o Text : "interactivityType"
-Atlas ||--}o Boolean : "isAccessibleForFree"
-Atlas ||--}o Boolean : "isFamilyFriendly"
 Atlas ||--}o Place : "locationCreated"
 Atlas ||--}o Thing : "mentions"
 Atlas ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ Atlas ||--}o Event : "recordedAt"
 Atlas ||--}o PublicationEvent : "releasedEvent"
 Atlas ||--}o Review : "review"
 Atlas ||--}o Review : "reviews"
-Atlas ||--}o Date : "sdDatePublished"
 Atlas ||--}o Organization : "sourceOrganization"
 Atlas ||--}o Place : "spatial"
-Atlas ||--}o Text : "text"
 Atlas ||--}o ImageObject : "thumbnail"
-Atlas ||--}o URL : "thumbnailUrl"
 Atlas ||--}o Duration : "timeRequired"
 Atlas ||--}o CreativeWork : "translationOfWork"
-Atlas ||--}o Text : "typicalAgeRange"
 Atlas ||--}o CreativeWork : "workTranslation"
-Atlas ||--}o Text : "alternateName"
-Atlas ||--}o Text : "disambiguatingDescription"
-Atlas ||--}o Text : "name"
-Atlas ||--}o URL : "sameAs"
 Atlas ||--}o Action : "potentialAction"
-Atlas ||--}o URL : "url"
 

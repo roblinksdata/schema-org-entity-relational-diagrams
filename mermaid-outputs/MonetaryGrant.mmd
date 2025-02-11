@@ -5,17 +5,17 @@ MonetaryGrant {
     stringList sponsor  
     stringList fundedItem  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MonetaryGrant ||--}o Text : "alternateName"
-MonetaryGrant ||--}o Text : "disambiguatingDescription"
-MonetaryGrant ||--}o Text : "name"
-MonetaryGrant ||--}o URL : "sameAs"
 MonetaryGrant ||--}o Action : "potentialAction"
-MonetaryGrant ||--}o URL : "url"
 

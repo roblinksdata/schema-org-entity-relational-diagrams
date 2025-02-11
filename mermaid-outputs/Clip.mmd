@@ -18,25 +18,46 @@ Clip {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -48,21 +69,30 @@ Clip {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Clip ||--}o Episode : "partOfEpisode"
@@ -78,43 +108,22 @@ Clip ||--}o Claim : "interpretedAsClaim"
 Clip ||--}o Thing : "mainEntity"
 Clip ||--}o Place : "spatialCoverage"
 Clip ||--}o CreativeWork : "workExample"
-Clip ||--}o Text : "abstract"
-Clip ||--}o Text : "accessMode"
 Clip ||--}o ItemList : "accessModeSufficient"
-Clip ||--}o Text : "accessibilityAPI"
-Clip ||--}o Text : "accessibilityControl"
-Clip ||--}o Text : "accessibilityFeature"
-Clip ||--}o Text : "accessibilityHazard"
-Clip ||--}o Text : "accessibilitySummary"
 Clip ||--}o Person : "accountablePerson"
 Clip ||--}o AggregateRating : "aggregateRating"
-Clip ||--}o Text : "alternativeHeadline"
 Clip ||--}o MediaObject : "associatedMedia"
 Clip ||--}o Audience : "audience"
-Clip ||--}o Text : "award"
-Clip ||--}o Text : "awards"
 Clip ||--}o Person : "character"
 Clip ||--}o Comment : "comment"
-Clip ||--}o Integer : "commentCount"
-Clip ||--}o Text : "conditionsOfAccess"
-Clip ||--}o DateTime : "contentReferenceTime"
-Clip ||--}o Text : "copyrightNotice"
-Clip ||--}o Number : "copyrightYear"
 Clip ||--}o Country : "countryOfOrigin"
-Clip ||--}o Text : "creditText"
 Clip ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Clip ||--}o URL : "discussionUrl"
 Clip ||--}o Person : "editor"
 Clip ||--}o AlignmentObject : "educationalAlignment"
 Clip ||--}o MediaObject : "encoding"
 Clip ||--}o MediaObject : "encodings"
 Clip ||--}o CreativeWork : "exampleOfWork"
 Clip ||--}o Grant : "funding"
-Clip ||--}o Text : "headline"
 Clip ||--}o InteractionCounter : "interactionStatistic"
-Clip ||--}o Text : "interactivityType"
-Clip ||--}o Boolean : "isAccessibleForFree"
-Clip ||--}o Boolean : "isFamilyFriendly"
 Clip ||--}o Place : "locationCreated"
 Clip ||--}o Thing : "mentions"
 Clip ||--}o PublicationEvent : "publication"
@@ -123,20 +132,11 @@ Clip ||--}o Event : "recordedAt"
 Clip ||--}o PublicationEvent : "releasedEvent"
 Clip ||--}o Review : "review"
 Clip ||--}o Review : "reviews"
-Clip ||--}o Date : "sdDatePublished"
 Clip ||--}o Organization : "sourceOrganization"
 Clip ||--}o Place : "spatial"
-Clip ||--}o Text : "text"
 Clip ||--}o ImageObject : "thumbnail"
-Clip ||--}o URL : "thumbnailUrl"
 Clip ||--}o Duration : "timeRequired"
 Clip ||--}o CreativeWork : "translationOfWork"
-Clip ||--}o Text : "typicalAgeRange"
 Clip ||--}o CreativeWork : "workTranslation"
-Clip ||--}o Text : "alternateName"
-Clip ||--}o Text : "disambiguatingDescription"
-Clip ||--}o Text : "name"
-Clip ||--}o URL : "sameAs"
 Clip ||--}o Action : "potentialAction"
-Clip ||--}o URL : "url"
 

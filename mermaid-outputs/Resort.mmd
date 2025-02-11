@@ -5,9 +5,17 @@ Resort {
     stringList checkoutTime  
     stringList numberOfRooms  
     stringList petsAllowed  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,93 +27,94 @@ Resort {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Resort ||--}o LocationFeatureSpecification : "amenityFeature"
 Resort ||--}o Audience : "audience"
 Resort ||--}o Rating : "starRating"
 Resort ||--}o Organization : "branchOf"
-Resort ||--}o Text : "currenciesAccepted"
-Resort ||--}o Text : "openingHours"
-Resort ||--}o Text : "paymentAccepted"
-Resort ||--}o Text : "priceRange"
-Resort ||--}o Text : "globalLocationNumber"
-Resort ||--}o URL : "hasGS1DigitalLink"
 Resort ||--}o PropertyValue : "additionalProperty"
 Resort ||--}o AggregateRating : "aggregateRating"
-Resort ||--}o Text : "branchCode"
 Resort ||--}o Place : "containedIn"
 Resort ||--}o Place : "containedInPlace"
 Resort ||--}o Place : "containsPlace"
 Resort ||--}o Event : "event"
 Resort ||--}o Event : "events"
-Resort ||--}o Text : "faxNumber"
 Resort ||--}o Certification : "hasCertification"
-Resort ||--}o Boolean : "hasDriveThroughService"
-Resort ||--}o Boolean : "isAccessibleForFree"
-Resort ||--}o Text : "isicV4"
-Resort ||--}o URL : "map"
-Resort ||--}o URL : "maps"
-Resort ||--}o Integer : "maximumAttendeeCapacity"
 Resort ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Resort ||--}o Boolean : "publicAccess"
 Resort ||--}o Review : "review"
 Resort ||--}o Review : "reviews"
-Resort ||--}o Text : "slogan"
-Resort ||--}o Boolean : "smokingAllowed"
 Resort ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Resort ||--}o Text : "telephone"
-Resort ||--}o URL : "tourBookingPage"
-Resort ||--}o Text : "duns"
-Resort ||--}o Text : "leiCode"
-Resort ||--}o Text : "taxID"
 Resort ||--}o InteractionCounter : "agentInteractionStatistic"
 Resort ||--}o Person : "alumni"
-Resort ||--}o Text : "award"
-Resort ||--}o Text : "awards"
 Resort ||--}o ContactPoint : "contactPoint"
 Resort ||--}o ContactPoint : "contactPoints"
 Resort ||--}o Organization : "department"
-Resort ||--}o Date : "dissolutionDate"
-Resort ||--}o Text : "email"
 Resort ||--}o Person : "employee"
 Resort ||--}o Person : "employees"
 Resort ||--}o Person : "founders"
-Resort ||--}o Date : "foundingDate"
 Resort ||--}o Place : "foundingLocation"
 Resort ||--}o Grant : "funding"
 Resort ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -114,20 +123,11 @@ Resort ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Resort ||--}o OfferCatalog : "hasOfferCatalog"
 Resort ||--}o Place : "hasPOS"
 Resort ||--}o InteractionCounter : "interactionStatistic"
-Resort ||--}o Text : "iso6523Code"
-Resort ||--}o Text : "legalName"
 Resort ||--}o Offer : "makesOffer"
-Resort ||--}o Text : "naics"
 Resort ||--}o NonprofitType : "nonprofitStatus"
 Resort ||--}o QuantitativeValue : "numberOfEmployees"
 Resort ||--}o Organization : "parentOrganization"
 Resort ||--}o Demand : "seeks"
 Resort ||--}o Organization : "subOrganization"
-Resort ||--}o Text : "vatID"
-Resort ||--}o Text : "alternateName"
-Resort ||--}o Text : "disambiguatingDescription"
-Resort ||--}o Text : "name"
-Resort ||--}o URL : "sameAs"
 Resort ||--}o Action : "potentialAction"
-Resort ||--}o URL : "url"
 

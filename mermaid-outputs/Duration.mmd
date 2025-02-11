@@ -1,17 +1,17 @@
 erDiagram
 Duration {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Duration ||--}o Text : "alternateName"
-Duration ||--}o Text : "disambiguatingDescription"
-Duration ||--}o Text : "name"
-Duration ||--}o URL : "sameAs"
 Duration ||--}o Action : "potentialAction"
-Duration ||--}o URL : "url"
 

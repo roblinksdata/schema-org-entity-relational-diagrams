@@ -7,40 +7,40 @@ BrokerageAccount {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BrokerageAccount ||--}o AggregateRating : "aggregateRating"
 BrokerageAccount ||--}o Audience : "audience"
 BrokerageAccount ||--}o ServiceChannel : "availableChannel"
-BrokerageAccount ||--}o Text : "award"
 BrokerageAccount ||--}o Certification : "hasCertification"
 BrokerageAccount ||--}o OfferCatalog : "hasOfferCatalog"
 BrokerageAccount ||--}o OpeningHoursSpecification : "hoursAvailable"
 BrokerageAccount ||--}o Thing : "produces"
-BrokerageAccount ||--}o Text : "providerMobility"
 BrokerageAccount ||--}o Review : "review"
 BrokerageAccount ||--}o Audience : "serviceAudience"
 BrokerageAccount ||--}o Thing : "serviceOutput"
-BrokerageAccount ||--}o Text : "slogan"
-BrokerageAccount ||--}o Text : "alternateName"
-BrokerageAccount ||--}o Text : "disambiguatingDescription"
-BrokerageAccount ||--}o Text : "name"
-BrokerageAccount ||--}o URL : "sameAs"
 BrokerageAccount ||--}o Action : "potentialAction"
-BrokerageAccount ||--}o URL : "url"
 

@@ -1,20 +1,20 @@
 erDiagram
 HealthPlanFormulary {
+    BooleanList healthPlanCostSharing  
+    TextList healthPlanDrugTier  
+    BooleanList offersPrescriptionByMail  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-HealthPlanFormulary ||--}o Boolean : "healthPlanCostSharing"
-HealthPlanFormulary ||--}o Text : "healthPlanDrugTier"
-HealthPlanFormulary ||--}o Boolean : "offersPrescriptionByMail"
-HealthPlanFormulary ||--}o Text : "alternateName"
-HealthPlanFormulary ||--}o Text : "disambiguatingDescription"
-HealthPlanFormulary ||--}o Text : "name"
-HealthPlanFormulary ||--}o URL : "sameAs"
 HealthPlanFormulary ||--}o Action : "potentialAction"
-HealthPlanFormulary ||--}o URL : "url"
 

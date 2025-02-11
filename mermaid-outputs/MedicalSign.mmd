@@ -1,14 +1,24 @@
 erDiagram
 MedicalSign {
     stringList associatedAnatomy  
+    TextList epidemiology  
+    TextList expectedPrognosis  
+    TextList naturalProgression  
+    TextList pathophysiology  
+    TextList possibleComplication  
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalSign ||--}o PhysicalExam : "identifyingExam"
@@ -16,11 +26,6 @@ MedicalSign ||--}o MedicalTest : "identifyingTest"
 MedicalSign ||--}o MedicalTherapy : "possibleTreatment"
 MedicalSign ||--}o DDxElement : "differentialDiagnosis"
 MedicalSign ||--}o Drug : "drug"
-MedicalSign ||--}o Text : "epidemiology"
-MedicalSign ||--}o Text : "expectedPrognosis"
-MedicalSign ||--}o Text : "naturalProgression"
-MedicalSign ||--}o Text : "pathophysiology"
-MedicalSign ||--}o Text : "possibleComplication"
 MedicalSign ||--}o MedicalTherapy : "primaryPrevention"
 MedicalSign ||--}o MedicalRiskFactor : "riskFactor"
 MedicalSign ||--}o MedicalTherapy : "secondaryPrevention"
@@ -34,10 +39,5 @@ MedicalSign ||--}o MedicineSystem : "medicineSystem"
 MedicalSign ||--}o Organization : "recognizingAuthority"
 MedicalSign ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalSign ||--}o MedicalStudy : "study"
-MedicalSign ||--}o Text : "alternateName"
-MedicalSign ||--}o Text : "disambiguatingDescription"
-MedicalSign ||--}o Text : "name"
-MedicalSign ||--}o URL : "sameAs"
 MedicalSign ||--}o Action : "potentialAction"
-MedicalSign ||--}o URL : "url"
 

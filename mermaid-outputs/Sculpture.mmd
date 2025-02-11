@@ -13,25 +13,46 @@ Sculpture {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Sculpture {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Sculpture ||--}o Thing : "about"
@@ -67,43 +97,22 @@ Sculpture ||--}o Claim : "interpretedAsClaim"
 Sculpture ||--}o Thing : "mainEntity"
 Sculpture ||--}o Place : "spatialCoverage"
 Sculpture ||--}o CreativeWork : "workExample"
-Sculpture ||--}o Text : "abstract"
-Sculpture ||--}o Text : "accessMode"
 Sculpture ||--}o ItemList : "accessModeSufficient"
-Sculpture ||--}o Text : "accessibilityAPI"
-Sculpture ||--}o Text : "accessibilityControl"
-Sculpture ||--}o Text : "accessibilityFeature"
-Sculpture ||--}o Text : "accessibilityHazard"
-Sculpture ||--}o Text : "accessibilitySummary"
 Sculpture ||--}o Person : "accountablePerson"
 Sculpture ||--}o AggregateRating : "aggregateRating"
-Sculpture ||--}o Text : "alternativeHeadline"
 Sculpture ||--}o MediaObject : "associatedMedia"
 Sculpture ||--}o Audience : "audience"
-Sculpture ||--}o Text : "award"
-Sculpture ||--}o Text : "awards"
 Sculpture ||--}o Person : "character"
 Sculpture ||--}o Comment : "comment"
-Sculpture ||--}o Integer : "commentCount"
-Sculpture ||--}o Text : "conditionsOfAccess"
-Sculpture ||--}o DateTime : "contentReferenceTime"
-Sculpture ||--}o Text : "copyrightNotice"
-Sculpture ||--}o Number : "copyrightYear"
 Sculpture ||--}o Country : "countryOfOrigin"
-Sculpture ||--}o Text : "creditText"
 Sculpture ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Sculpture ||--}o URL : "discussionUrl"
 Sculpture ||--}o Person : "editor"
 Sculpture ||--}o AlignmentObject : "educationalAlignment"
 Sculpture ||--}o MediaObject : "encoding"
 Sculpture ||--}o MediaObject : "encodings"
 Sculpture ||--}o CreativeWork : "exampleOfWork"
 Sculpture ||--}o Grant : "funding"
-Sculpture ||--}o Text : "headline"
 Sculpture ||--}o InteractionCounter : "interactionStatistic"
-Sculpture ||--}o Text : "interactivityType"
-Sculpture ||--}o Boolean : "isAccessibleForFree"
-Sculpture ||--}o Boolean : "isFamilyFriendly"
 Sculpture ||--}o Place : "locationCreated"
 Sculpture ||--}o Thing : "mentions"
 Sculpture ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ Sculpture ||--}o Event : "recordedAt"
 Sculpture ||--}o PublicationEvent : "releasedEvent"
 Sculpture ||--}o Review : "review"
 Sculpture ||--}o Review : "reviews"
-Sculpture ||--}o Date : "sdDatePublished"
 Sculpture ||--}o Organization : "sourceOrganization"
 Sculpture ||--}o Place : "spatial"
-Sculpture ||--}o Text : "text"
 Sculpture ||--}o ImageObject : "thumbnail"
-Sculpture ||--}o URL : "thumbnailUrl"
 Sculpture ||--}o Duration : "timeRequired"
 Sculpture ||--}o CreativeWork : "translationOfWork"
-Sculpture ||--}o Text : "typicalAgeRange"
 Sculpture ||--}o CreativeWork : "workTranslation"
-Sculpture ||--}o Text : "alternateName"
-Sculpture ||--}o Text : "disambiguatingDescription"
-Sculpture ||--}o Text : "name"
-Sculpture ||--}o URL : "sameAs"
 Sculpture ||--}o Action : "potentialAction"
-Sculpture ||--}o URL : "url"
 

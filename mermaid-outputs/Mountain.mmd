@@ -1,8 +1,12 @@
 erDiagram
 Mountain {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,51 +18,47 @@ Mountain {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Mountain ||--}o Text : "globalLocationNumber"
-Mountain ||--}o URL : "hasGS1DigitalLink"
 Mountain ||--}o PropertyValue : "additionalProperty"
 Mountain ||--}o AggregateRating : "aggregateRating"
 Mountain ||--}o LocationFeatureSpecification : "amenityFeature"
-Mountain ||--}o Text : "branchCode"
 Mountain ||--}o Place : "containedIn"
 Mountain ||--}o Place : "containedInPlace"
 Mountain ||--}o Place : "containsPlace"
 Mountain ||--}o Event : "event"
 Mountain ||--}o Event : "events"
-Mountain ||--}o Text : "faxNumber"
 Mountain ||--}o Certification : "hasCertification"
-Mountain ||--}o Boolean : "hasDriveThroughService"
-Mountain ||--}o Boolean : "isAccessibleForFree"
-Mountain ||--}o Text : "isicV4"
-Mountain ||--}o URL : "map"
-Mountain ||--}o URL : "maps"
-Mountain ||--}o Integer : "maximumAttendeeCapacity"
 Mountain ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Mountain ||--}o Boolean : "publicAccess"
 Mountain ||--}o Review : "review"
 Mountain ||--}o Review : "reviews"
-Mountain ||--}o Text : "slogan"
-Mountain ||--}o Boolean : "smokingAllowed"
 Mountain ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Mountain ||--}o Text : "telephone"
-Mountain ||--}o URL : "tourBookingPage"
-Mountain ||--}o Text : "alternateName"
-Mountain ||--}o Text : "disambiguatingDescription"
-Mountain ||--}o Text : "name"
-Mountain ||--}o URL : "sameAs"
 Mountain ||--}o Action : "potentialAction"
-Mountain ||--}o URL : "url"
 

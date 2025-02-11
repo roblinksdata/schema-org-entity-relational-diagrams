@@ -1,8 +1,16 @@
 erDiagram
 BeautySalon {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ BeautySalon {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BeautySalon ||--}o Organization : "branchOf"
-BeautySalon ||--}o Text : "currenciesAccepted"
-BeautySalon ||--}o Text : "openingHours"
-BeautySalon ||--}o Text : "paymentAccepted"
-BeautySalon ||--}o Text : "priceRange"
-BeautySalon ||--}o Text : "globalLocationNumber"
-BeautySalon ||--}o URL : "hasGS1DigitalLink"
 BeautySalon ||--}o PropertyValue : "additionalProperty"
 BeautySalon ||--}o AggregateRating : "aggregateRating"
 BeautySalon ||--}o LocationFeatureSpecification : "amenityFeature"
-BeautySalon ||--}o Text : "branchCode"
 BeautySalon ||--}o Place : "containedIn"
 BeautySalon ||--}o Place : "containedInPlace"
 BeautySalon ||--}o Place : "containsPlace"
 BeautySalon ||--}o Event : "event"
 BeautySalon ||--}o Event : "events"
-BeautySalon ||--}o Text : "faxNumber"
 BeautySalon ||--}o Certification : "hasCertification"
-BeautySalon ||--}o Boolean : "hasDriveThroughService"
-BeautySalon ||--}o Boolean : "isAccessibleForFree"
-BeautySalon ||--}o Text : "isicV4"
-BeautySalon ||--}o URL : "map"
-BeautySalon ||--}o URL : "maps"
-BeautySalon ||--}o Integer : "maximumAttendeeCapacity"
 BeautySalon ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-BeautySalon ||--}o Boolean : "publicAccess"
 BeautySalon ||--}o Review : "review"
 BeautySalon ||--}o Review : "reviews"
-BeautySalon ||--}o Text : "slogan"
-BeautySalon ||--}o Boolean : "smokingAllowed"
 BeautySalon ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-BeautySalon ||--}o Text : "telephone"
-BeautySalon ||--}o URL : "tourBookingPage"
-BeautySalon ||--}o Text : "duns"
-BeautySalon ||--}o Text : "leiCode"
-BeautySalon ||--}o Text : "taxID"
 BeautySalon ||--}o InteractionCounter : "agentInteractionStatistic"
 BeautySalon ||--}o Person : "alumni"
-BeautySalon ||--}o Text : "award"
-BeautySalon ||--}o Text : "awards"
 BeautySalon ||--}o ContactPoint : "contactPoint"
 BeautySalon ||--}o ContactPoint : "contactPoints"
 BeautySalon ||--}o Organization : "department"
-BeautySalon ||--}o Date : "dissolutionDate"
-BeautySalon ||--}o Text : "email"
 BeautySalon ||--}o Person : "employee"
 BeautySalon ||--}o Person : "employees"
 BeautySalon ||--}o Person : "founders"
-BeautySalon ||--}o Date : "foundingDate"
 BeautySalon ||--}o Place : "foundingLocation"
 BeautySalon ||--}o Grant : "funding"
 BeautySalon ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ BeautySalon ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 BeautySalon ||--}o OfferCatalog : "hasOfferCatalog"
 BeautySalon ||--}o Place : "hasPOS"
 BeautySalon ||--}o InteractionCounter : "interactionStatistic"
-BeautySalon ||--}o Text : "iso6523Code"
-BeautySalon ||--}o Text : "legalName"
 BeautySalon ||--}o Offer : "makesOffer"
-BeautySalon ||--}o Text : "naics"
 BeautySalon ||--}o NonprofitType : "nonprofitStatus"
 BeautySalon ||--}o QuantitativeValue : "numberOfEmployees"
 BeautySalon ||--}o Organization : "parentOrganization"
 BeautySalon ||--}o Demand : "seeks"
 BeautySalon ||--}o Organization : "subOrganization"
-BeautySalon ||--}o Text : "vatID"
-BeautySalon ||--}o Text : "alternateName"
-BeautySalon ||--}o Text : "disambiguatingDescription"
-BeautySalon ||--}o Text : "name"
-BeautySalon ||--}o URL : "sameAs"
 BeautySalon ||--}o Action : "potentialAction"
-BeautySalon ||--}o URL : "url"
 

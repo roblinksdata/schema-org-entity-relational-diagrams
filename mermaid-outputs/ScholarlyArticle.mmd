@@ -1,9 +1,13 @@
 erDiagram
 ScholarlyArticle {
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -17,25 +21,46 @@ ScholarlyArticle {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,27 +72,32 @@ ScholarlyArticle {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ScholarlyArticle ||--}o Text : "articleBody"
-ScholarlyArticle ||--}o Text : "articleSection"
-ScholarlyArticle ||--}o Text : "pagination"
-ScholarlyArticle ||--}o Integer : "wordCount"
 ScholarlyArticle ||--}o Thing : "about"
 ScholarlyArticle ||--}o Place : "contentLocation"
 ScholarlyArticle ||--}o CreativeWork : "hasPart"
@@ -75,43 +105,22 @@ ScholarlyArticle ||--}o Claim : "interpretedAsClaim"
 ScholarlyArticle ||--}o Thing : "mainEntity"
 ScholarlyArticle ||--}o Place : "spatialCoverage"
 ScholarlyArticle ||--}o CreativeWork : "workExample"
-ScholarlyArticle ||--}o Text : "abstract"
-ScholarlyArticle ||--}o Text : "accessMode"
 ScholarlyArticle ||--}o ItemList : "accessModeSufficient"
-ScholarlyArticle ||--}o Text : "accessibilityAPI"
-ScholarlyArticle ||--}o Text : "accessibilityControl"
-ScholarlyArticle ||--}o Text : "accessibilityFeature"
-ScholarlyArticle ||--}o Text : "accessibilityHazard"
-ScholarlyArticle ||--}o Text : "accessibilitySummary"
 ScholarlyArticle ||--}o Person : "accountablePerson"
 ScholarlyArticle ||--}o AggregateRating : "aggregateRating"
-ScholarlyArticle ||--}o Text : "alternativeHeadline"
 ScholarlyArticle ||--}o MediaObject : "associatedMedia"
 ScholarlyArticle ||--}o Audience : "audience"
-ScholarlyArticle ||--}o Text : "award"
-ScholarlyArticle ||--}o Text : "awards"
 ScholarlyArticle ||--}o Person : "character"
 ScholarlyArticle ||--}o Comment : "comment"
-ScholarlyArticle ||--}o Integer : "commentCount"
-ScholarlyArticle ||--}o Text : "conditionsOfAccess"
-ScholarlyArticle ||--}o DateTime : "contentReferenceTime"
-ScholarlyArticle ||--}o Text : "copyrightNotice"
-ScholarlyArticle ||--}o Number : "copyrightYear"
 ScholarlyArticle ||--}o Country : "countryOfOrigin"
-ScholarlyArticle ||--}o Text : "creditText"
 ScholarlyArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ScholarlyArticle ||--}o URL : "discussionUrl"
 ScholarlyArticle ||--}o Person : "editor"
 ScholarlyArticle ||--}o AlignmentObject : "educationalAlignment"
 ScholarlyArticle ||--}o MediaObject : "encoding"
 ScholarlyArticle ||--}o MediaObject : "encodings"
 ScholarlyArticle ||--}o CreativeWork : "exampleOfWork"
 ScholarlyArticle ||--}o Grant : "funding"
-ScholarlyArticle ||--}o Text : "headline"
 ScholarlyArticle ||--}o InteractionCounter : "interactionStatistic"
-ScholarlyArticle ||--}o Text : "interactivityType"
-ScholarlyArticle ||--}o Boolean : "isAccessibleForFree"
-ScholarlyArticle ||--}o Boolean : "isFamilyFriendly"
 ScholarlyArticle ||--}o Place : "locationCreated"
 ScholarlyArticle ||--}o Thing : "mentions"
 ScholarlyArticle ||--}o PublicationEvent : "publication"
@@ -120,20 +129,11 @@ ScholarlyArticle ||--}o Event : "recordedAt"
 ScholarlyArticle ||--}o PublicationEvent : "releasedEvent"
 ScholarlyArticle ||--}o Review : "review"
 ScholarlyArticle ||--}o Review : "reviews"
-ScholarlyArticle ||--}o Date : "sdDatePublished"
 ScholarlyArticle ||--}o Organization : "sourceOrganization"
 ScholarlyArticle ||--}o Place : "spatial"
-ScholarlyArticle ||--}o Text : "text"
 ScholarlyArticle ||--}o ImageObject : "thumbnail"
-ScholarlyArticle ||--}o URL : "thumbnailUrl"
 ScholarlyArticle ||--}o Duration : "timeRequired"
 ScholarlyArticle ||--}o CreativeWork : "translationOfWork"
-ScholarlyArticle ||--}o Text : "typicalAgeRange"
 ScholarlyArticle ||--}o CreativeWork : "workTranslation"
-ScholarlyArticle ||--}o Text : "alternateName"
-ScholarlyArticle ||--}o Text : "disambiguatingDescription"
-ScholarlyArticle ||--}o Text : "name"
-ScholarlyArticle ||--}o URL : "sameAs"
 ScholarlyArticle ||--}o Action : "potentialAction"
-ScholarlyArticle ||--}o URL : "url"
 

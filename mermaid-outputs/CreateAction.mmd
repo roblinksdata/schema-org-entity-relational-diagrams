@@ -8,11 +8,16 @@ CreateAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CreateAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ CreateAction ||--}o Thing : "result"
 CreateAction ||--}o HowTo : "actionProcess"
 CreateAction ||--}o ActionStatusType : "actionStatus"
 CreateAction ||--}o Thing : "error"
-CreateAction ||--}o Text : "alternateName"
-CreateAction ||--}o Text : "disambiguatingDescription"
-CreateAction ||--}o Text : "name"
-CreateAction ||--}o URL : "sameAs"
 CreateAction ||--}o Action : "potentialAction"
-CreateAction ||--}o URL : "url"
 

@@ -4,20 +4,20 @@ HowToSupply {
     stringList requiredQuantity  
     stringList position  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 HowToSupply ||--}o Thing : "item"
 HowToSupply ||--}o ListItem : "nextItem"
 HowToSupply ||--}o ListItem : "previousItem"
-HowToSupply ||--}o Text : "alternateName"
-HowToSupply ||--}o Text : "disambiguatingDescription"
-HowToSupply ||--}o Text : "name"
-HowToSupply ||--}o URL : "sameAs"
 HowToSupply ||--}o Action : "potentialAction"
-HowToSupply ||--}o URL : "url"
 

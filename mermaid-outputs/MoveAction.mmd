@@ -8,11 +8,16 @@ MoveAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MoveAction ||--}o Place : "fromLocation"
@@ -23,10 +28,5 @@ MoveAction ||--}o Thing : "result"
 MoveAction ||--}o HowTo : "actionProcess"
 MoveAction ||--}o ActionStatusType : "actionStatus"
 MoveAction ||--}o Thing : "error"
-MoveAction ||--}o Text : "alternateName"
-MoveAction ||--}o Text : "disambiguatingDescription"
-MoveAction ||--}o Text : "name"
-MoveAction ||--}o URL : "sameAs"
 MoveAction ||--}o Action : "potentialAction"
-MoveAction ||--}o URL : "url"
 

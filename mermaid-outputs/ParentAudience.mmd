@@ -1,30 +1,30 @@
 erDiagram
 ParentAudience {
+    NumberList childMaxAge  
+    NumberList childMinAge  
+    TextList requiredGender  
+    IntegerList requiredMaxAge  
+    IntegerList requiredMinAge  
     stringList suggestedGender  
+    NumberList suggestedMaxAge  
+    NumberList suggestedMinAge  
+    TextList audienceType  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ParentAudience ||--}o Number : "childMaxAge"
-ParentAudience ||--}o Number : "childMinAge"
 ParentAudience ||--}o MedicalCondition : "healthCondition"
-ParentAudience ||--}o Text : "requiredGender"
-ParentAudience ||--}o Integer : "requiredMaxAge"
-ParentAudience ||--}o Integer : "requiredMinAge"
 ParentAudience ||--}o QuantitativeValue : "suggestedAge"
-ParentAudience ||--}o Number : "suggestedMaxAge"
 ParentAudience ||--}o QuantitativeValue : "suggestedMeasurement"
-ParentAudience ||--}o Number : "suggestedMinAge"
-ParentAudience ||--}o Text : "audienceType"
 ParentAudience ||--}o AdministrativeArea : "geographicArea"
-ParentAudience ||--}o Text : "alternateName"
-ParentAudience ||--}o Text : "disambiguatingDescription"
-ParentAudience ||--}o Text : "name"
-ParentAudience ||--}o URL : "sameAs"
 ParentAudience ||--}o Action : "potentialAction"
-ParentAudience ||--}o URL : "url"
 

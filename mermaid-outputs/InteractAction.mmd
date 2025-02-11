@@ -8,11 +8,16 @@ InteractAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 InteractAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ InteractAction ||--}o Thing : "result"
 InteractAction ||--}o HowTo : "actionProcess"
 InteractAction ||--}o ActionStatusType : "actionStatus"
 InteractAction ||--}o Thing : "error"
-InteractAction ||--}o Text : "alternateName"
-InteractAction ||--}o Text : "disambiguatingDescription"
-InteractAction ||--}o Text : "name"
-InteractAction ||--}o URL : "sameAs"
 InteractAction ||--}o Action : "potentialAction"
-InteractAction ||--}o URL : "url"
 

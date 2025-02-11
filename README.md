@@ -10,6 +10,18 @@ Use these at your own risk as the accuracy of the information is not guaranteed.
 - `3DModel` is missing.
 - Predicates which have a range of more than one class aren't serialised properly - they get listed as a `stringlist` and the related classes don't show up on the diagram. See https://github.com/linkml/linkml/issues/2527.
 
+## Generating the models
+
+```bash
+make
+```
+
+### Parallelisation
+
+```bash
+make -j 4 # (Or other appropriate parallelisation factor for your machine)
+```
+
 ## License
 
 License inherited from <https://github.com/schemaorg/schemaorg/>.

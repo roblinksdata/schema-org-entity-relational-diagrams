@@ -3,9 +3,18 @@ Distillery {
     stringList acceptsReservations  
     stringList hasMenu  
     stringList menu  
+    TextList servesCuisine  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -17,93 +26,93 @@ Distillery {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Distillery ||--}o Text : "servesCuisine"
 Distillery ||--}o Rating : "starRating"
 Distillery ||--}o Organization : "branchOf"
-Distillery ||--}o Text : "currenciesAccepted"
-Distillery ||--}o Text : "openingHours"
-Distillery ||--}o Text : "paymentAccepted"
-Distillery ||--}o Text : "priceRange"
-Distillery ||--}o Text : "globalLocationNumber"
-Distillery ||--}o URL : "hasGS1DigitalLink"
 Distillery ||--}o PropertyValue : "additionalProperty"
 Distillery ||--}o AggregateRating : "aggregateRating"
 Distillery ||--}o LocationFeatureSpecification : "amenityFeature"
-Distillery ||--}o Text : "branchCode"
 Distillery ||--}o Place : "containedIn"
 Distillery ||--}o Place : "containedInPlace"
 Distillery ||--}o Place : "containsPlace"
 Distillery ||--}o Event : "event"
 Distillery ||--}o Event : "events"
-Distillery ||--}o Text : "faxNumber"
 Distillery ||--}o Certification : "hasCertification"
-Distillery ||--}o Boolean : "hasDriveThroughService"
-Distillery ||--}o Boolean : "isAccessibleForFree"
-Distillery ||--}o Text : "isicV4"
-Distillery ||--}o URL : "map"
-Distillery ||--}o URL : "maps"
-Distillery ||--}o Integer : "maximumAttendeeCapacity"
 Distillery ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Distillery ||--}o Boolean : "publicAccess"
 Distillery ||--}o Review : "review"
 Distillery ||--}o Review : "reviews"
-Distillery ||--}o Text : "slogan"
-Distillery ||--}o Boolean : "smokingAllowed"
 Distillery ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Distillery ||--}o Text : "telephone"
-Distillery ||--}o URL : "tourBookingPage"
-Distillery ||--}o Text : "duns"
-Distillery ||--}o Text : "leiCode"
-Distillery ||--}o Text : "taxID"
 Distillery ||--}o InteractionCounter : "agentInteractionStatistic"
 Distillery ||--}o Person : "alumni"
-Distillery ||--}o Text : "award"
-Distillery ||--}o Text : "awards"
 Distillery ||--}o ContactPoint : "contactPoint"
 Distillery ||--}o ContactPoint : "contactPoints"
 Distillery ||--}o Organization : "department"
-Distillery ||--}o Date : "dissolutionDate"
-Distillery ||--}o Text : "email"
 Distillery ||--}o Person : "employee"
 Distillery ||--}o Person : "employees"
 Distillery ||--}o Person : "founders"
-Distillery ||--}o Date : "foundingDate"
 Distillery ||--}o Place : "foundingLocation"
 Distillery ||--}o Grant : "funding"
 Distillery ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -112,20 +121,11 @@ Distillery ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Distillery ||--}o OfferCatalog : "hasOfferCatalog"
 Distillery ||--}o Place : "hasPOS"
 Distillery ||--}o InteractionCounter : "interactionStatistic"
-Distillery ||--}o Text : "iso6523Code"
-Distillery ||--}o Text : "legalName"
 Distillery ||--}o Offer : "makesOffer"
-Distillery ||--}o Text : "naics"
 Distillery ||--}o NonprofitType : "nonprofitStatus"
 Distillery ||--}o QuantitativeValue : "numberOfEmployees"
 Distillery ||--}o Organization : "parentOrganization"
 Distillery ||--}o Demand : "seeks"
 Distillery ||--}o Organization : "subOrganization"
-Distillery ||--}o Text : "vatID"
-Distillery ||--}o Text : "alternateName"
-Distillery ||--}o Text : "disambiguatingDescription"
-Distillery ||--}o Text : "name"
-Distillery ||--}o URL : "sameAs"
 Distillery ||--}o Action : "potentialAction"
-Distillery ||--}o URL : "url"
 

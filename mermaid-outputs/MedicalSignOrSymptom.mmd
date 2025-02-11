@@ -1,24 +1,29 @@
 erDiagram
 MedicalSignOrSymptom {
     stringList associatedAnatomy  
+    TextList epidemiology  
+    TextList expectedPrognosis  
+    TextList naturalProgression  
+    TextList pathophysiology  
+    TextList possibleComplication  
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalSignOrSymptom ||--}o MedicalTherapy : "possibleTreatment"
 MedicalSignOrSymptom ||--}o DDxElement : "differentialDiagnosis"
 MedicalSignOrSymptom ||--}o Drug : "drug"
-MedicalSignOrSymptom ||--}o Text : "epidemiology"
-MedicalSignOrSymptom ||--}o Text : "expectedPrognosis"
-MedicalSignOrSymptom ||--}o Text : "naturalProgression"
-MedicalSignOrSymptom ||--}o Text : "pathophysiology"
-MedicalSignOrSymptom ||--}o Text : "possibleComplication"
 MedicalSignOrSymptom ||--}o MedicalTherapy : "primaryPrevention"
 MedicalSignOrSymptom ||--}o MedicalRiskFactor : "riskFactor"
 MedicalSignOrSymptom ||--}o MedicalTherapy : "secondaryPrevention"
@@ -32,10 +37,5 @@ MedicalSignOrSymptom ||--}o MedicineSystem : "medicineSystem"
 MedicalSignOrSymptom ||--}o Organization : "recognizingAuthority"
 MedicalSignOrSymptom ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalSignOrSymptom ||--}o MedicalStudy : "study"
-MedicalSignOrSymptom ||--}o Text : "alternateName"
-MedicalSignOrSymptom ||--}o Text : "disambiguatingDescription"
-MedicalSignOrSymptom ||--}o Text : "name"
-MedicalSignOrSymptom ||--}o URL : "sameAs"
 MedicalSignOrSymptom ||--}o Action : "potentialAction"
-MedicalSignOrSymptom ||--}o URL : "url"
 

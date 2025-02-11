@@ -10,11 +10,16 @@ ConfirmAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ConfirmAction ||--}o Event : "event"
@@ -26,10 +31,5 @@ ConfirmAction ||--}o Thing : "result"
 ConfirmAction ||--}o HowTo : "actionProcess"
 ConfirmAction ||--}o ActionStatusType : "actionStatus"
 ConfirmAction ||--}o Thing : "error"
-ConfirmAction ||--}o Text : "alternateName"
-ConfirmAction ||--}o Text : "disambiguatingDescription"
-ConfirmAction ||--}o Text : "name"
-ConfirmAction ||--}o URL : "sameAs"
 ConfirmAction ||--}o Action : "potentialAction"
-ConfirmAction ||--}o URL : "url"
 

@@ -1,8 +1,12 @@
 erDiagram
 Volcano {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,51 +18,47 @@ Volcano {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Volcano ||--}o Text : "globalLocationNumber"
-Volcano ||--}o URL : "hasGS1DigitalLink"
 Volcano ||--}o PropertyValue : "additionalProperty"
 Volcano ||--}o AggregateRating : "aggregateRating"
 Volcano ||--}o LocationFeatureSpecification : "amenityFeature"
-Volcano ||--}o Text : "branchCode"
 Volcano ||--}o Place : "containedIn"
 Volcano ||--}o Place : "containedInPlace"
 Volcano ||--}o Place : "containsPlace"
 Volcano ||--}o Event : "event"
 Volcano ||--}o Event : "events"
-Volcano ||--}o Text : "faxNumber"
 Volcano ||--}o Certification : "hasCertification"
-Volcano ||--}o Boolean : "hasDriveThroughService"
-Volcano ||--}o Boolean : "isAccessibleForFree"
-Volcano ||--}o Text : "isicV4"
-Volcano ||--}o URL : "map"
-Volcano ||--}o URL : "maps"
-Volcano ||--}o Integer : "maximumAttendeeCapacity"
 Volcano ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Volcano ||--}o Boolean : "publicAccess"
 Volcano ||--}o Review : "review"
 Volcano ||--}o Review : "reviews"
-Volcano ||--}o Text : "slogan"
-Volcano ||--}o Boolean : "smokingAllowed"
 Volcano ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Volcano ||--}o Text : "telephone"
-Volcano ||--}o URL : "tourBookingPage"
-Volcano ||--}o Text : "alternateName"
-Volcano ||--}o Text : "disambiguatingDescription"
-Volcano ||--}o Text : "name"
-Volcano ||--}o URL : "sameAs"
 Volcano ||--}o Action : "potentialAction"
-Volcano ||--}o URL : "url"
 

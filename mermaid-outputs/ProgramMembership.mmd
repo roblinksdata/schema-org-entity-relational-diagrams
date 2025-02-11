@@ -2,23 +2,23 @@ erDiagram
 ProgramMembership {
     stringList member  
     stringList members  
+    TextList membershipNumber  
     stringList membershipPointsEarned  
+    TextList programName  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ProgramMembership ||--}o Organization : "hostingOrganization"
-ProgramMembership ||--}o Text : "membershipNumber"
 ProgramMembership ||--}o MemberProgram : "program"
-ProgramMembership ||--}o Text : "programName"
-ProgramMembership ||--}o Text : "alternateName"
-ProgramMembership ||--}o Text : "disambiguatingDescription"
-ProgramMembership ||--}o Text : "name"
-ProgramMembership ||--}o URL : "sameAs"
 ProgramMembership ||--}o Action : "potentialAction"
-ProgramMembership ||--}o URL : "url"
 

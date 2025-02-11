@@ -2,17 +2,17 @@ erDiagram
 ItemAvailability {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ItemAvailability ||--}o Text : "alternateName"
-ItemAvailability ||--}o Text : "disambiguatingDescription"
-ItemAvailability ||--}o Text : "name"
-ItemAvailability ||--}o URL : "sameAs"
 ItemAvailability ||--}o Action : "potentialAction"
-ItemAvailability ||--}o URL : "url"
 

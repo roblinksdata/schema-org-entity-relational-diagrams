@@ -9,11 +9,16 @@ AuthorizeAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AuthorizeAction ||--}o Thing : "instrument"
@@ -22,10 +27,5 @@ AuthorizeAction ||--}o Thing : "result"
 AuthorizeAction ||--}o HowTo : "actionProcess"
 AuthorizeAction ||--}o ActionStatusType : "actionStatus"
 AuthorizeAction ||--}o Thing : "error"
-AuthorizeAction ||--}o Text : "alternateName"
-AuthorizeAction ||--}o Text : "disambiguatingDescription"
-AuthorizeAction ||--}o Text : "name"
-AuthorizeAction ||--}o URL : "sameAs"
 AuthorizeAction ||--}o Action : "potentialAction"
-AuthorizeAction ||--}o URL : "url"
 

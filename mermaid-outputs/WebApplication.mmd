@@ -1,13 +1,26 @@
 erDiagram
 WebApplication {
+    TextList browserRequirements  
     stringList applicationCategory  
     stringList applicationSubCategory  
+    TextList applicationSuite  
+    TextList availableOnDevice  
+    TextList countriesNotSupported  
+    TextList countriesSupported  
+    TextList device  
+    URLList downloadUrl  
     stringList featureList  
+    TextList fileSize  
+    URLList installUrl  
     stringList memoryRequirements  
+    TextList operatingSystem  
+    TextList permissions  
+    TextList processorRequirements  
     stringList releaseNotes  
     stringList requirements  
     stringList screenshot  
     stringList softwareRequirements  
+    TextList softwareVersion  
     stringList storageRequirements  
     stringList acquireLicensePage  
     stringList contributor  
@@ -22,25 +35,46 @@ WebApplication {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -52,38 +86,34 @@ WebApplication {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-WebApplication ||--}o Text : "browserRequirements"
-WebApplication ||--}o Text : "applicationSuite"
-WebApplication ||--}o Text : "availableOnDevice"
-WebApplication ||--}o Text : "countriesNotSupported"
-WebApplication ||--}o Text : "countriesSupported"
-WebApplication ||--}o Text : "device"
-WebApplication ||--}o URL : "downloadUrl"
-WebApplication ||--}o Text : "fileSize"
-WebApplication ||--}o URL : "installUrl"
-WebApplication ||--}o Text : "operatingSystem"
-WebApplication ||--}o Text : "permissions"
-WebApplication ||--}o Text : "processorRequirements"
 WebApplication ||--}o SoftwareApplication : "softwareAddOn"
 WebApplication ||--}o CreativeWork : "softwareHelp"
-WebApplication ||--}o Text : "softwareVersion"
 WebApplication ||--}o DataFeed : "supportingData"
 WebApplication ||--}o Thing : "about"
 WebApplication ||--}o Place : "contentLocation"
@@ -92,43 +122,22 @@ WebApplication ||--}o Claim : "interpretedAsClaim"
 WebApplication ||--}o Thing : "mainEntity"
 WebApplication ||--}o Place : "spatialCoverage"
 WebApplication ||--}o CreativeWork : "workExample"
-WebApplication ||--}o Text : "abstract"
-WebApplication ||--}o Text : "accessMode"
 WebApplication ||--}o ItemList : "accessModeSufficient"
-WebApplication ||--}o Text : "accessibilityAPI"
-WebApplication ||--}o Text : "accessibilityControl"
-WebApplication ||--}o Text : "accessibilityFeature"
-WebApplication ||--}o Text : "accessibilityHazard"
-WebApplication ||--}o Text : "accessibilitySummary"
 WebApplication ||--}o Person : "accountablePerson"
 WebApplication ||--}o AggregateRating : "aggregateRating"
-WebApplication ||--}o Text : "alternativeHeadline"
 WebApplication ||--}o MediaObject : "associatedMedia"
 WebApplication ||--}o Audience : "audience"
-WebApplication ||--}o Text : "award"
-WebApplication ||--}o Text : "awards"
 WebApplication ||--}o Person : "character"
 WebApplication ||--}o Comment : "comment"
-WebApplication ||--}o Integer : "commentCount"
-WebApplication ||--}o Text : "conditionsOfAccess"
-WebApplication ||--}o DateTime : "contentReferenceTime"
-WebApplication ||--}o Text : "copyrightNotice"
-WebApplication ||--}o Number : "copyrightYear"
 WebApplication ||--}o Country : "countryOfOrigin"
-WebApplication ||--}o Text : "creditText"
 WebApplication ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-WebApplication ||--}o URL : "discussionUrl"
 WebApplication ||--}o Person : "editor"
 WebApplication ||--}o AlignmentObject : "educationalAlignment"
 WebApplication ||--}o MediaObject : "encoding"
 WebApplication ||--}o MediaObject : "encodings"
 WebApplication ||--}o CreativeWork : "exampleOfWork"
 WebApplication ||--}o Grant : "funding"
-WebApplication ||--}o Text : "headline"
 WebApplication ||--}o InteractionCounter : "interactionStatistic"
-WebApplication ||--}o Text : "interactivityType"
-WebApplication ||--}o Boolean : "isAccessibleForFree"
-WebApplication ||--}o Boolean : "isFamilyFriendly"
 WebApplication ||--}o Place : "locationCreated"
 WebApplication ||--}o Thing : "mentions"
 WebApplication ||--}o PublicationEvent : "publication"
@@ -137,20 +146,11 @@ WebApplication ||--}o Event : "recordedAt"
 WebApplication ||--}o PublicationEvent : "releasedEvent"
 WebApplication ||--}o Review : "review"
 WebApplication ||--}o Review : "reviews"
-WebApplication ||--}o Date : "sdDatePublished"
 WebApplication ||--}o Organization : "sourceOrganization"
 WebApplication ||--}o Place : "spatial"
-WebApplication ||--}o Text : "text"
 WebApplication ||--}o ImageObject : "thumbnail"
-WebApplication ||--}o URL : "thumbnailUrl"
 WebApplication ||--}o Duration : "timeRequired"
 WebApplication ||--}o CreativeWork : "translationOfWork"
-WebApplication ||--}o Text : "typicalAgeRange"
 WebApplication ||--}o CreativeWork : "workTranslation"
-WebApplication ||--}o Text : "alternateName"
-WebApplication ||--}o Text : "disambiguatingDescription"
-WebApplication ||--}o Text : "name"
-WebApplication ||--}o URL : "sameAs"
 WebApplication ||--}o Action : "potentialAction"
-WebApplication ||--}o URL : "url"
 

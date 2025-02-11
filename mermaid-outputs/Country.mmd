@@ -1,8 +1,12 @@
 erDiagram
 Country {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,51 +18,47 @@ Country {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Country ||--}o Text : "globalLocationNumber"
-Country ||--}o URL : "hasGS1DigitalLink"
 Country ||--}o PropertyValue : "additionalProperty"
 Country ||--}o AggregateRating : "aggregateRating"
 Country ||--}o LocationFeatureSpecification : "amenityFeature"
-Country ||--}o Text : "branchCode"
 Country ||--}o Place : "containedIn"
 Country ||--}o Place : "containedInPlace"
 Country ||--}o Place : "containsPlace"
 Country ||--}o Event : "event"
 Country ||--}o Event : "events"
-Country ||--}o Text : "faxNumber"
 Country ||--}o Certification : "hasCertification"
-Country ||--}o Boolean : "hasDriveThroughService"
-Country ||--}o Boolean : "isAccessibleForFree"
-Country ||--}o Text : "isicV4"
-Country ||--}o URL : "map"
-Country ||--}o URL : "maps"
-Country ||--}o Integer : "maximumAttendeeCapacity"
 Country ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Country ||--}o Boolean : "publicAccess"
 Country ||--}o Review : "review"
 Country ||--}o Review : "reviews"
-Country ||--}o Text : "slogan"
-Country ||--}o Boolean : "smokingAllowed"
 Country ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Country ||--}o Text : "telephone"
-Country ||--}o URL : "tourBookingPage"
-Country ||--}o Text : "alternateName"
-Country ||--}o Text : "disambiguatingDescription"
-Country ||--}o Text : "name"
-Country ||--}o URL : "sameAs"
 Country ||--}o Action : "potentialAction"
-Country ||--}o URL : "url"
 

@@ -1,5 +1,6 @@
 erDiagram
 Protein {
+    TextList hasBioPolymerSequence  
     stringList hasRepresentation  
     stringList associatedDisease  
     stringList hasMolecularFunction  
@@ -7,14 +8,18 @@ Protein {
     stringList isLocatedInSubcellularLocation  
     stringList taxonomicRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Protein ||--}o Text : "hasBioPolymerSequence"
 Protein ||--}o BioChemEntity : "bioChemInteraction"
 Protein ||--}o BioChemEntity : "bioChemSimilarity"
 Protein ||--}o DefinedTerm : "biologicalRole"
@@ -22,10 +27,5 @@ Protein ||--}o Grant : "funding"
 Protein ||--}o BioChemEntity : "hasBioChemEntityPart"
 Protein ||--}o Gene : "isEncodedByBioChemEntity"
 Protein ||--}o BioChemEntity : "isPartOfBioChemEntity"
-Protein ||--}o Text : "alternateName"
-Protein ||--}o Text : "disambiguatingDescription"
-Protein ||--}o Text : "name"
-Protein ||--}o URL : "sameAs"
 Protein ||--}o Action : "potentialAction"
-Protein ||--}o URL : "url"
 

@@ -3,40 +3,40 @@ CableOrSatelliteService {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CableOrSatelliteService ||--}o AggregateRating : "aggregateRating"
 CableOrSatelliteService ||--}o Audience : "audience"
 CableOrSatelliteService ||--}o ServiceChannel : "availableChannel"
-CableOrSatelliteService ||--}o Text : "award"
 CableOrSatelliteService ||--}o Certification : "hasCertification"
 CableOrSatelliteService ||--}o OfferCatalog : "hasOfferCatalog"
 CableOrSatelliteService ||--}o OpeningHoursSpecification : "hoursAvailable"
 CableOrSatelliteService ||--}o Thing : "produces"
-CableOrSatelliteService ||--}o Text : "providerMobility"
 CableOrSatelliteService ||--}o Review : "review"
 CableOrSatelliteService ||--}o Audience : "serviceAudience"
 CableOrSatelliteService ||--}o Thing : "serviceOutput"
-CableOrSatelliteService ||--}o Text : "slogan"
-CableOrSatelliteService ||--}o Text : "alternateName"
-CableOrSatelliteService ||--}o Text : "disambiguatingDescription"
-CableOrSatelliteService ||--}o Text : "name"
-CableOrSatelliteService ||--}o URL : "sameAs"
 CableOrSatelliteService ||--}o Action : "potentialAction"
-CableOrSatelliteService ||--}o URL : "url"
 

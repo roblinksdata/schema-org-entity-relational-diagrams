@@ -2,17 +2,17 @@ erDiagram
 MedicalStudyStatus {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicalStudyStatus ||--}o Text : "alternateName"
-MedicalStudyStatus ||--}o Text : "disambiguatingDescription"
-MedicalStudyStatus ||--}o Text : "name"
-MedicalStudyStatus ||--}o URL : "sameAs"
 MedicalStudyStatus ||--}o Action : "potentialAction"
-MedicalStudyStatus ||--}o URL : "url"
 

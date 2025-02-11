@@ -1,5 +1,6 @@
 erDiagram
 Periodical {
+    TextList issn  
     stringList endDate  
     stringList startDate  
     stringList acquireLicensePage  
@@ -15,25 +16,46 @@ Periodical {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,24 +67,32 @@ Periodical {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Periodical ||--}o Text : "issn"
 Periodical ||--}o Thing : "about"
 Periodical ||--}o Place : "contentLocation"
 Periodical ||--}o CreativeWork : "hasPart"
@@ -70,43 +100,22 @@ Periodical ||--}o Claim : "interpretedAsClaim"
 Periodical ||--}o Thing : "mainEntity"
 Periodical ||--}o Place : "spatialCoverage"
 Periodical ||--}o CreativeWork : "workExample"
-Periodical ||--}o Text : "abstract"
-Periodical ||--}o Text : "accessMode"
 Periodical ||--}o ItemList : "accessModeSufficient"
-Periodical ||--}o Text : "accessibilityAPI"
-Periodical ||--}o Text : "accessibilityControl"
-Periodical ||--}o Text : "accessibilityFeature"
-Periodical ||--}o Text : "accessibilityHazard"
-Periodical ||--}o Text : "accessibilitySummary"
 Periodical ||--}o Person : "accountablePerson"
 Periodical ||--}o AggregateRating : "aggregateRating"
-Periodical ||--}o Text : "alternativeHeadline"
 Periodical ||--}o MediaObject : "associatedMedia"
 Periodical ||--}o Audience : "audience"
-Periodical ||--}o Text : "award"
-Periodical ||--}o Text : "awards"
 Periodical ||--}o Person : "character"
 Periodical ||--}o Comment : "comment"
-Periodical ||--}o Integer : "commentCount"
-Periodical ||--}o Text : "conditionsOfAccess"
-Periodical ||--}o DateTime : "contentReferenceTime"
-Periodical ||--}o Text : "copyrightNotice"
-Periodical ||--}o Number : "copyrightYear"
 Periodical ||--}o Country : "countryOfOrigin"
-Periodical ||--}o Text : "creditText"
 Periodical ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Periodical ||--}o URL : "discussionUrl"
 Periodical ||--}o Person : "editor"
 Periodical ||--}o AlignmentObject : "educationalAlignment"
 Periodical ||--}o MediaObject : "encoding"
 Periodical ||--}o MediaObject : "encodings"
 Periodical ||--}o CreativeWork : "exampleOfWork"
 Periodical ||--}o Grant : "funding"
-Periodical ||--}o Text : "headline"
 Periodical ||--}o InteractionCounter : "interactionStatistic"
-Periodical ||--}o Text : "interactivityType"
-Periodical ||--}o Boolean : "isAccessibleForFree"
-Periodical ||--}o Boolean : "isFamilyFriendly"
 Periodical ||--}o Place : "locationCreated"
 Periodical ||--}o Thing : "mentions"
 Periodical ||--}o PublicationEvent : "publication"
@@ -115,20 +124,11 @@ Periodical ||--}o Event : "recordedAt"
 Periodical ||--}o PublicationEvent : "releasedEvent"
 Periodical ||--}o Review : "review"
 Periodical ||--}o Review : "reviews"
-Periodical ||--}o Date : "sdDatePublished"
 Periodical ||--}o Organization : "sourceOrganization"
 Periodical ||--}o Place : "spatial"
-Periodical ||--}o Text : "text"
 Periodical ||--}o ImageObject : "thumbnail"
-Periodical ||--}o URL : "thumbnailUrl"
 Periodical ||--}o Duration : "timeRequired"
 Periodical ||--}o CreativeWork : "translationOfWork"
-Periodical ||--}o Text : "typicalAgeRange"
 Periodical ||--}o CreativeWork : "workTranslation"
-Periodical ||--}o Text : "alternateName"
-Periodical ||--}o Text : "disambiguatingDescription"
-Periodical ||--}o Text : "name"
-Periodical ||--}o URL : "sameAs"
 Periodical ||--}o Action : "potentialAction"
-Periodical ||--}o URL : "url"
 

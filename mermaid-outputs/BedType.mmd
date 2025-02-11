@@ -3,11 +3,16 @@ BedType {
     stringList valueReference  
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BedType ||--}o PropertyValue : "additionalProperty"
@@ -17,10 +22,5 @@ BedType ||--}o QualitativeValue : "greaterOrEqual"
 BedType ||--}o QualitativeValue : "lesser"
 BedType ||--}o QualitativeValue : "lesserOrEqual"
 BedType ||--}o QualitativeValue : "nonEqual"
-BedType ||--}o Text : "alternateName"
-BedType ||--}o Text : "disambiguatingDescription"
-BedType ||--}o Text : "name"
-BedType ||--}o URL : "sameAs"
 BedType ||--}o Action : "potentialAction"
-BedType ||--}o URL : "url"
 

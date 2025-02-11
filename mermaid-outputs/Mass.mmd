@@ -1,17 +1,17 @@
 erDiagram
 Mass {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Mass ||--}o Text : "alternateName"
-Mass ||--}o Text : "disambiguatingDescription"
-Mass ||--}o Text : "name"
-Mass ||--}o URL : "sameAs"
 Mass ||--}o Action : "potentialAction"
-Mass ||--}o URL : "url"
 

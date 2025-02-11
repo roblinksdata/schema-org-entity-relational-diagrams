@@ -1,8 +1,16 @@
 erDiagram
 GroceryStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ GroceryStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 GroceryStore ||--}o Organization : "branchOf"
-GroceryStore ||--}o Text : "currenciesAccepted"
-GroceryStore ||--}o Text : "openingHours"
-GroceryStore ||--}o Text : "paymentAccepted"
-GroceryStore ||--}o Text : "priceRange"
-GroceryStore ||--}o Text : "globalLocationNumber"
-GroceryStore ||--}o URL : "hasGS1DigitalLink"
 GroceryStore ||--}o PropertyValue : "additionalProperty"
 GroceryStore ||--}o AggregateRating : "aggregateRating"
 GroceryStore ||--}o LocationFeatureSpecification : "amenityFeature"
-GroceryStore ||--}o Text : "branchCode"
 GroceryStore ||--}o Place : "containedIn"
 GroceryStore ||--}o Place : "containedInPlace"
 GroceryStore ||--}o Place : "containsPlace"
 GroceryStore ||--}o Event : "event"
 GroceryStore ||--}o Event : "events"
-GroceryStore ||--}o Text : "faxNumber"
 GroceryStore ||--}o Certification : "hasCertification"
-GroceryStore ||--}o Boolean : "hasDriveThroughService"
-GroceryStore ||--}o Boolean : "isAccessibleForFree"
-GroceryStore ||--}o Text : "isicV4"
-GroceryStore ||--}o URL : "map"
-GroceryStore ||--}o URL : "maps"
-GroceryStore ||--}o Integer : "maximumAttendeeCapacity"
 GroceryStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-GroceryStore ||--}o Boolean : "publicAccess"
 GroceryStore ||--}o Review : "review"
 GroceryStore ||--}o Review : "reviews"
-GroceryStore ||--}o Text : "slogan"
-GroceryStore ||--}o Boolean : "smokingAllowed"
 GroceryStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-GroceryStore ||--}o Text : "telephone"
-GroceryStore ||--}o URL : "tourBookingPage"
-GroceryStore ||--}o Text : "duns"
-GroceryStore ||--}o Text : "leiCode"
-GroceryStore ||--}o Text : "taxID"
 GroceryStore ||--}o InteractionCounter : "agentInteractionStatistic"
 GroceryStore ||--}o Person : "alumni"
-GroceryStore ||--}o Text : "award"
-GroceryStore ||--}o Text : "awards"
 GroceryStore ||--}o ContactPoint : "contactPoint"
 GroceryStore ||--}o ContactPoint : "contactPoints"
 GroceryStore ||--}o Organization : "department"
-GroceryStore ||--}o Date : "dissolutionDate"
-GroceryStore ||--}o Text : "email"
 GroceryStore ||--}o Person : "employee"
 GroceryStore ||--}o Person : "employees"
 GroceryStore ||--}o Person : "founders"
-GroceryStore ||--}o Date : "foundingDate"
 GroceryStore ||--}o Place : "foundingLocation"
 GroceryStore ||--}o Grant : "funding"
 GroceryStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ GroceryStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 GroceryStore ||--}o OfferCatalog : "hasOfferCatalog"
 GroceryStore ||--}o Place : "hasPOS"
 GroceryStore ||--}o InteractionCounter : "interactionStatistic"
-GroceryStore ||--}o Text : "iso6523Code"
-GroceryStore ||--}o Text : "legalName"
 GroceryStore ||--}o Offer : "makesOffer"
-GroceryStore ||--}o Text : "naics"
 GroceryStore ||--}o NonprofitType : "nonprofitStatus"
 GroceryStore ||--}o QuantitativeValue : "numberOfEmployees"
 GroceryStore ||--}o Organization : "parentOrganization"
 GroceryStore ||--}o Demand : "seeks"
 GroceryStore ||--}o Organization : "subOrganization"
-GroceryStore ||--}o Text : "vatID"
-GroceryStore ||--}o Text : "alternateName"
-GroceryStore ||--}o Text : "disambiguatingDescription"
-GroceryStore ||--}o Text : "name"
-GroceryStore ||--}o URL : "sameAs"
 GroceryStore ||--}o Action : "potentialAction"
-GroceryStore ||--}o URL : "url"
 

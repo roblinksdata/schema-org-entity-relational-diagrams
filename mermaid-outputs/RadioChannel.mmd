@@ -1,23 +1,23 @@
 erDiagram
 RadioChannel {
     stringList genre  
+    TextList broadcastChannelId  
     stringList broadcastFrequency  
+    TextList broadcastServiceTier  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-RadioChannel ||--}o Text : "broadcastChannelId"
-RadioChannel ||--}o Text : "broadcastServiceTier"
 RadioChannel ||--}o CableOrSatelliteService : "inBroadcastLineup"
 RadioChannel ||--}o BroadcastService : "providesBroadcastService"
-RadioChannel ||--}o Text : "alternateName"
-RadioChannel ||--}o Text : "disambiguatingDescription"
-RadioChannel ||--}o Text : "name"
-RadioChannel ||--}o URL : "sameAs"
 RadioChannel ||--}o Action : "potentialAction"
-RadioChannel ||--}o URL : "url"
 

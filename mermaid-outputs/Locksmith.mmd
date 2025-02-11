@@ -1,8 +1,16 @@
 erDiagram
 Locksmith {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ Locksmith {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Locksmith ||--}o Organization : "branchOf"
-Locksmith ||--}o Text : "currenciesAccepted"
-Locksmith ||--}o Text : "openingHours"
-Locksmith ||--}o Text : "paymentAccepted"
-Locksmith ||--}o Text : "priceRange"
-Locksmith ||--}o Text : "globalLocationNumber"
-Locksmith ||--}o URL : "hasGS1DigitalLink"
 Locksmith ||--}o PropertyValue : "additionalProperty"
 Locksmith ||--}o AggregateRating : "aggregateRating"
 Locksmith ||--}o LocationFeatureSpecification : "amenityFeature"
-Locksmith ||--}o Text : "branchCode"
 Locksmith ||--}o Place : "containedIn"
 Locksmith ||--}o Place : "containedInPlace"
 Locksmith ||--}o Place : "containsPlace"
 Locksmith ||--}o Event : "event"
 Locksmith ||--}o Event : "events"
-Locksmith ||--}o Text : "faxNumber"
 Locksmith ||--}o Certification : "hasCertification"
-Locksmith ||--}o Boolean : "hasDriveThroughService"
-Locksmith ||--}o Boolean : "isAccessibleForFree"
-Locksmith ||--}o Text : "isicV4"
-Locksmith ||--}o URL : "map"
-Locksmith ||--}o URL : "maps"
-Locksmith ||--}o Integer : "maximumAttendeeCapacity"
 Locksmith ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Locksmith ||--}o Boolean : "publicAccess"
 Locksmith ||--}o Review : "review"
 Locksmith ||--}o Review : "reviews"
-Locksmith ||--}o Text : "slogan"
-Locksmith ||--}o Boolean : "smokingAllowed"
 Locksmith ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Locksmith ||--}o Text : "telephone"
-Locksmith ||--}o URL : "tourBookingPage"
-Locksmith ||--}o Text : "duns"
-Locksmith ||--}o Text : "leiCode"
-Locksmith ||--}o Text : "taxID"
 Locksmith ||--}o InteractionCounter : "agentInteractionStatistic"
 Locksmith ||--}o Person : "alumni"
-Locksmith ||--}o Text : "award"
-Locksmith ||--}o Text : "awards"
 Locksmith ||--}o ContactPoint : "contactPoint"
 Locksmith ||--}o ContactPoint : "contactPoints"
 Locksmith ||--}o Organization : "department"
-Locksmith ||--}o Date : "dissolutionDate"
-Locksmith ||--}o Text : "email"
 Locksmith ||--}o Person : "employee"
 Locksmith ||--}o Person : "employees"
 Locksmith ||--}o Person : "founders"
-Locksmith ||--}o Date : "foundingDate"
 Locksmith ||--}o Place : "foundingLocation"
 Locksmith ||--}o Grant : "funding"
 Locksmith ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ Locksmith ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Locksmith ||--}o OfferCatalog : "hasOfferCatalog"
 Locksmith ||--}o Place : "hasPOS"
 Locksmith ||--}o InteractionCounter : "interactionStatistic"
-Locksmith ||--}o Text : "iso6523Code"
-Locksmith ||--}o Text : "legalName"
 Locksmith ||--}o Offer : "makesOffer"
-Locksmith ||--}o Text : "naics"
 Locksmith ||--}o NonprofitType : "nonprofitStatus"
 Locksmith ||--}o QuantitativeValue : "numberOfEmployees"
 Locksmith ||--}o Organization : "parentOrganization"
 Locksmith ||--}o Demand : "seeks"
 Locksmith ||--}o Organization : "subOrganization"
-Locksmith ||--}o Text : "vatID"
-Locksmith ||--}o Text : "alternateName"
-Locksmith ||--}o Text : "disambiguatingDescription"
-Locksmith ||--}o Text : "name"
-Locksmith ||--}o URL : "sameAs"
 Locksmith ||--}o Action : "potentialAction"
-Locksmith ||--}o URL : "url"
 

@@ -8,11 +8,16 @@ DepartAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DepartAction ||--}o Place : "fromLocation"
@@ -23,10 +28,5 @@ DepartAction ||--}o Thing : "result"
 DepartAction ||--}o HowTo : "actionProcess"
 DepartAction ||--}o ActionStatusType : "actionStatus"
 DepartAction ||--}o Thing : "error"
-DepartAction ||--}o Text : "alternateName"
-DepartAction ||--}o Text : "disambiguatingDescription"
-DepartAction ||--}o Text : "name"
-DepartAction ||--}o URL : "sameAs"
 DepartAction ||--}o Action : "potentialAction"
-DepartAction ||--}o URL : "url"
 

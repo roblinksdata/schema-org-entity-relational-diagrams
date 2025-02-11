@@ -1,20 +1,20 @@
 erDiagram
 HealthPlanNetwork {
+    BooleanList healthPlanCostSharing  
+    TextList healthPlanNetworkId  
+    TextList healthPlanNetworkTier  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-HealthPlanNetwork ||--}o Boolean : "healthPlanCostSharing"
-HealthPlanNetwork ||--}o Text : "healthPlanNetworkId"
-HealthPlanNetwork ||--}o Text : "healthPlanNetworkTier"
-HealthPlanNetwork ||--}o Text : "alternateName"
-HealthPlanNetwork ||--}o Text : "disambiguatingDescription"
-HealthPlanNetwork ||--}o Text : "name"
-HealthPlanNetwork ||--}o URL : "sameAs"
 HealthPlanNetwork ||--}o Action : "potentialAction"
-HealthPlanNetwork ||--}o URL : "url"
 

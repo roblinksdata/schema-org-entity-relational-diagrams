@@ -3,9 +3,18 @@ Restaurant {
     stringList acceptsReservations  
     stringList hasMenu  
     stringList menu  
+    TextList servesCuisine  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -17,93 +26,93 @@ Restaurant {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Restaurant ||--}o Text : "servesCuisine"
 Restaurant ||--}o Rating : "starRating"
 Restaurant ||--}o Organization : "branchOf"
-Restaurant ||--}o Text : "currenciesAccepted"
-Restaurant ||--}o Text : "openingHours"
-Restaurant ||--}o Text : "paymentAccepted"
-Restaurant ||--}o Text : "priceRange"
-Restaurant ||--}o Text : "globalLocationNumber"
-Restaurant ||--}o URL : "hasGS1DigitalLink"
 Restaurant ||--}o PropertyValue : "additionalProperty"
 Restaurant ||--}o AggregateRating : "aggregateRating"
 Restaurant ||--}o LocationFeatureSpecification : "amenityFeature"
-Restaurant ||--}o Text : "branchCode"
 Restaurant ||--}o Place : "containedIn"
 Restaurant ||--}o Place : "containedInPlace"
 Restaurant ||--}o Place : "containsPlace"
 Restaurant ||--}o Event : "event"
 Restaurant ||--}o Event : "events"
-Restaurant ||--}o Text : "faxNumber"
 Restaurant ||--}o Certification : "hasCertification"
-Restaurant ||--}o Boolean : "hasDriveThroughService"
-Restaurant ||--}o Boolean : "isAccessibleForFree"
-Restaurant ||--}o Text : "isicV4"
-Restaurant ||--}o URL : "map"
-Restaurant ||--}o URL : "maps"
-Restaurant ||--}o Integer : "maximumAttendeeCapacity"
 Restaurant ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Restaurant ||--}o Boolean : "publicAccess"
 Restaurant ||--}o Review : "review"
 Restaurant ||--}o Review : "reviews"
-Restaurant ||--}o Text : "slogan"
-Restaurant ||--}o Boolean : "smokingAllowed"
 Restaurant ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Restaurant ||--}o Text : "telephone"
-Restaurant ||--}o URL : "tourBookingPage"
-Restaurant ||--}o Text : "duns"
-Restaurant ||--}o Text : "leiCode"
-Restaurant ||--}o Text : "taxID"
 Restaurant ||--}o InteractionCounter : "agentInteractionStatistic"
 Restaurant ||--}o Person : "alumni"
-Restaurant ||--}o Text : "award"
-Restaurant ||--}o Text : "awards"
 Restaurant ||--}o ContactPoint : "contactPoint"
 Restaurant ||--}o ContactPoint : "contactPoints"
 Restaurant ||--}o Organization : "department"
-Restaurant ||--}o Date : "dissolutionDate"
-Restaurant ||--}o Text : "email"
 Restaurant ||--}o Person : "employee"
 Restaurant ||--}o Person : "employees"
 Restaurant ||--}o Person : "founders"
-Restaurant ||--}o Date : "foundingDate"
 Restaurant ||--}o Place : "foundingLocation"
 Restaurant ||--}o Grant : "funding"
 Restaurant ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -112,20 +121,11 @@ Restaurant ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Restaurant ||--}o OfferCatalog : "hasOfferCatalog"
 Restaurant ||--}o Place : "hasPOS"
 Restaurant ||--}o InteractionCounter : "interactionStatistic"
-Restaurant ||--}o Text : "iso6523Code"
-Restaurant ||--}o Text : "legalName"
 Restaurant ||--}o Offer : "makesOffer"
-Restaurant ||--}o Text : "naics"
 Restaurant ||--}o NonprofitType : "nonprofitStatus"
 Restaurant ||--}o QuantitativeValue : "numberOfEmployees"
 Restaurant ||--}o Organization : "parentOrganization"
 Restaurant ||--}o Demand : "seeks"
 Restaurant ||--}o Organization : "subOrganization"
-Restaurant ||--}o Text : "vatID"
-Restaurant ||--}o Text : "alternateName"
-Restaurant ||--}o Text : "disambiguatingDescription"
-Restaurant ||--}o Text : "name"
-Restaurant ||--}o URL : "sameAs"
 Restaurant ||--}o Action : "potentialAction"
-Restaurant ||--}o URL : "url"
 

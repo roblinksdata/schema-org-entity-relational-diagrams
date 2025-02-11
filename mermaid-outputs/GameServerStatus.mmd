@@ -2,17 +2,17 @@ erDiagram
 GameServerStatus {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-GameServerStatus ||--}o Text : "alternateName"
-GameServerStatus ||--}o Text : "disambiguatingDescription"
-GameServerStatus ||--}o Text : "name"
-GameServerStatus ||--}o URL : "sameAs"
 GameServerStatus ||--}o Action : "potentialAction"
-GameServerStatus ||--}o URL : "url"
 

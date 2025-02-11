@@ -1,5 +1,8 @@
 erDiagram
 DeliveryEvent {
+    TextList accessCode  
+    DateTimeList availableFrom  
+    DateTimeList availableThrough  
     stringList actor  
     stringList contributor  
     stringList funder  
@@ -11,24 +14,33 @@ DeliveryEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DeliveryEvent ||--}o Text : "accessCode"
-DeliveryEvent ||--}o DateTime : "availableFrom"
-DeliveryEvent ||--}o DateTime : "availableThrough"
 DeliveryEvent ||--}o DeliveryMethod : "hasDeliveryMethod"
 DeliveryEvent ||--}o Thing : "about"
 DeliveryEvent ||--}o Duration : "duration"
@@ -41,22 +53,10 @@ DeliveryEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 DeliveryEvent ||--}o Schedule : "eventSchedule"
 DeliveryEvent ||--}o EventStatusType : "eventStatus"
 DeliveryEvent ||--}o Grant : "funding"
-DeliveryEvent ||--}o Boolean : "isAccessibleForFree"
-DeliveryEvent ||--}o Integer : "maximumAttendeeCapacity"
-DeliveryEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-DeliveryEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-DeliveryEvent ||--}o Date : "previousStartDate"
 DeliveryEvent ||--}o CreativeWork : "recordedIn"
-DeliveryEvent ||--}o Integer : "remainingAttendeeCapacity"
 DeliveryEvent ||--}o Review : "review"
 DeliveryEvent ||--}o Event : "subEvent"
 DeliveryEvent ||--}o Event : "subEvents"
 DeliveryEvent ||--}o Event : "superEvent"
-DeliveryEvent ||--}o Text : "typicalAgeRange"
-DeliveryEvent ||--}o Text : "alternateName"
-DeliveryEvent ||--}o Text : "disambiguatingDescription"
-DeliveryEvent ||--}o Text : "name"
-DeliveryEvent ||--}o URL : "sameAs"
 DeliveryEvent ||--}o Action : "potentialAction"
-DeliveryEvent ||--}o URL : "url"
 

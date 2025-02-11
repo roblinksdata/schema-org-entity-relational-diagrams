@@ -3,9 +3,18 @@ BarOrPub {
     stringList acceptsReservations  
     stringList hasMenu  
     stringList menu  
+    TextList servesCuisine  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -17,93 +26,93 @@ BarOrPub {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BarOrPub ||--}o Text : "servesCuisine"
 BarOrPub ||--}o Rating : "starRating"
 BarOrPub ||--}o Organization : "branchOf"
-BarOrPub ||--}o Text : "currenciesAccepted"
-BarOrPub ||--}o Text : "openingHours"
-BarOrPub ||--}o Text : "paymentAccepted"
-BarOrPub ||--}o Text : "priceRange"
-BarOrPub ||--}o Text : "globalLocationNumber"
-BarOrPub ||--}o URL : "hasGS1DigitalLink"
 BarOrPub ||--}o PropertyValue : "additionalProperty"
 BarOrPub ||--}o AggregateRating : "aggregateRating"
 BarOrPub ||--}o LocationFeatureSpecification : "amenityFeature"
-BarOrPub ||--}o Text : "branchCode"
 BarOrPub ||--}o Place : "containedIn"
 BarOrPub ||--}o Place : "containedInPlace"
 BarOrPub ||--}o Place : "containsPlace"
 BarOrPub ||--}o Event : "event"
 BarOrPub ||--}o Event : "events"
-BarOrPub ||--}o Text : "faxNumber"
 BarOrPub ||--}o Certification : "hasCertification"
-BarOrPub ||--}o Boolean : "hasDriveThroughService"
-BarOrPub ||--}o Boolean : "isAccessibleForFree"
-BarOrPub ||--}o Text : "isicV4"
-BarOrPub ||--}o URL : "map"
-BarOrPub ||--}o URL : "maps"
-BarOrPub ||--}o Integer : "maximumAttendeeCapacity"
 BarOrPub ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-BarOrPub ||--}o Boolean : "publicAccess"
 BarOrPub ||--}o Review : "review"
 BarOrPub ||--}o Review : "reviews"
-BarOrPub ||--}o Text : "slogan"
-BarOrPub ||--}o Boolean : "smokingAllowed"
 BarOrPub ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-BarOrPub ||--}o Text : "telephone"
-BarOrPub ||--}o URL : "tourBookingPage"
-BarOrPub ||--}o Text : "duns"
-BarOrPub ||--}o Text : "leiCode"
-BarOrPub ||--}o Text : "taxID"
 BarOrPub ||--}o InteractionCounter : "agentInteractionStatistic"
 BarOrPub ||--}o Person : "alumni"
-BarOrPub ||--}o Text : "award"
-BarOrPub ||--}o Text : "awards"
 BarOrPub ||--}o ContactPoint : "contactPoint"
 BarOrPub ||--}o ContactPoint : "contactPoints"
 BarOrPub ||--}o Organization : "department"
-BarOrPub ||--}o Date : "dissolutionDate"
-BarOrPub ||--}o Text : "email"
 BarOrPub ||--}o Person : "employee"
 BarOrPub ||--}o Person : "employees"
 BarOrPub ||--}o Person : "founders"
-BarOrPub ||--}o Date : "foundingDate"
 BarOrPub ||--}o Place : "foundingLocation"
 BarOrPub ||--}o Grant : "funding"
 BarOrPub ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -112,20 +121,11 @@ BarOrPub ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 BarOrPub ||--}o OfferCatalog : "hasOfferCatalog"
 BarOrPub ||--}o Place : "hasPOS"
 BarOrPub ||--}o InteractionCounter : "interactionStatistic"
-BarOrPub ||--}o Text : "iso6523Code"
-BarOrPub ||--}o Text : "legalName"
 BarOrPub ||--}o Offer : "makesOffer"
-BarOrPub ||--}o Text : "naics"
 BarOrPub ||--}o NonprofitType : "nonprofitStatus"
 BarOrPub ||--}o QuantitativeValue : "numberOfEmployees"
 BarOrPub ||--}o Organization : "parentOrganization"
 BarOrPub ||--}o Demand : "seeks"
 BarOrPub ||--}o Organization : "subOrganization"
-BarOrPub ||--}o Text : "vatID"
-BarOrPub ||--}o Text : "alternateName"
-BarOrPub ||--}o Text : "disambiguatingDescription"
-BarOrPub ||--}o Text : "name"
-BarOrPub ||--}o URL : "sameAs"
 BarOrPub ||--}o Action : "potentialAction"
-BarOrPub ||--}o URL : "url"
 

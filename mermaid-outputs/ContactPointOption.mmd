@@ -2,17 +2,17 @@ erDiagram
 ContactPointOption {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ContactPointOption ||--}o Text : "alternateName"
-ContactPointOption ||--}o Text : "disambiguatingDescription"
-ContactPointOption ||--}o Text : "name"
-ContactPointOption ||--}o URL : "sameAs"
 ContactPointOption ||--}o Action : "potentialAction"
-ContactPointOption ||--}o URL : "url"
 

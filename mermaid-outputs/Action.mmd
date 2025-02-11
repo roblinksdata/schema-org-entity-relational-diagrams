@@ -8,11 +8,16 @@ Action {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Action ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ Action ||--}o Thing : "result"
 Action ||--}o HowTo : "actionProcess"
 Action ||--}o ActionStatusType : "actionStatus"
 Action ||--}o Thing : "error"
-Action ||--}o Text : "alternateName"
-Action ||--}o Text : "disambiguatingDescription"
-Action ||--}o Text : "name"
-Action ||--}o URL : "sameAs"
 Action ||--}o Action : "potentialAction"
-Action ||--}o URL : "url"
 

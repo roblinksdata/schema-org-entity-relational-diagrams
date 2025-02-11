@@ -13,25 +13,46 @@ DefinedTermSet {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ DefinedTermSet {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DefinedTermSet ||--}o DefinedTerm : "hasDefinedTerm"
@@ -68,43 +98,22 @@ DefinedTermSet ||--}o Claim : "interpretedAsClaim"
 DefinedTermSet ||--}o Thing : "mainEntity"
 DefinedTermSet ||--}o Place : "spatialCoverage"
 DefinedTermSet ||--}o CreativeWork : "workExample"
-DefinedTermSet ||--}o Text : "abstract"
-DefinedTermSet ||--}o Text : "accessMode"
 DefinedTermSet ||--}o ItemList : "accessModeSufficient"
-DefinedTermSet ||--}o Text : "accessibilityAPI"
-DefinedTermSet ||--}o Text : "accessibilityControl"
-DefinedTermSet ||--}o Text : "accessibilityFeature"
-DefinedTermSet ||--}o Text : "accessibilityHazard"
-DefinedTermSet ||--}o Text : "accessibilitySummary"
 DefinedTermSet ||--}o Person : "accountablePerson"
 DefinedTermSet ||--}o AggregateRating : "aggregateRating"
-DefinedTermSet ||--}o Text : "alternativeHeadline"
 DefinedTermSet ||--}o MediaObject : "associatedMedia"
 DefinedTermSet ||--}o Audience : "audience"
-DefinedTermSet ||--}o Text : "award"
-DefinedTermSet ||--}o Text : "awards"
 DefinedTermSet ||--}o Person : "character"
 DefinedTermSet ||--}o Comment : "comment"
-DefinedTermSet ||--}o Integer : "commentCount"
-DefinedTermSet ||--}o Text : "conditionsOfAccess"
-DefinedTermSet ||--}o DateTime : "contentReferenceTime"
-DefinedTermSet ||--}o Text : "copyrightNotice"
-DefinedTermSet ||--}o Number : "copyrightYear"
 DefinedTermSet ||--}o Country : "countryOfOrigin"
-DefinedTermSet ||--}o Text : "creditText"
 DefinedTermSet ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-DefinedTermSet ||--}o URL : "discussionUrl"
 DefinedTermSet ||--}o Person : "editor"
 DefinedTermSet ||--}o AlignmentObject : "educationalAlignment"
 DefinedTermSet ||--}o MediaObject : "encoding"
 DefinedTermSet ||--}o MediaObject : "encodings"
 DefinedTermSet ||--}o CreativeWork : "exampleOfWork"
 DefinedTermSet ||--}o Grant : "funding"
-DefinedTermSet ||--}o Text : "headline"
 DefinedTermSet ||--}o InteractionCounter : "interactionStatistic"
-DefinedTermSet ||--}o Text : "interactivityType"
-DefinedTermSet ||--}o Boolean : "isAccessibleForFree"
-DefinedTermSet ||--}o Boolean : "isFamilyFriendly"
 DefinedTermSet ||--}o Place : "locationCreated"
 DefinedTermSet ||--}o Thing : "mentions"
 DefinedTermSet ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ DefinedTermSet ||--}o Event : "recordedAt"
 DefinedTermSet ||--}o PublicationEvent : "releasedEvent"
 DefinedTermSet ||--}o Review : "review"
 DefinedTermSet ||--}o Review : "reviews"
-DefinedTermSet ||--}o Date : "sdDatePublished"
 DefinedTermSet ||--}o Organization : "sourceOrganization"
 DefinedTermSet ||--}o Place : "spatial"
-DefinedTermSet ||--}o Text : "text"
 DefinedTermSet ||--}o ImageObject : "thumbnail"
-DefinedTermSet ||--}o URL : "thumbnailUrl"
 DefinedTermSet ||--}o Duration : "timeRequired"
 DefinedTermSet ||--}o CreativeWork : "translationOfWork"
-DefinedTermSet ||--}o Text : "typicalAgeRange"
 DefinedTermSet ||--}o CreativeWork : "workTranslation"
-DefinedTermSet ||--}o Text : "alternateName"
-DefinedTermSet ||--}o Text : "disambiguatingDescription"
-DefinedTermSet ||--}o Text : "name"
-DefinedTermSet ||--}o URL : "sameAs"
 DefinedTermSet ||--}o Action : "potentialAction"
-DefinedTermSet ||--}o URL : "url"
 

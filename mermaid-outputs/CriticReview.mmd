@@ -2,6 +2,8 @@ erDiagram
 CriticReview {
     stringList negativeNotes  
     stringList positiveNotes  
+    TextList reviewAspect  
+    TextList reviewBody  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -15,25 +17,46 @@ CriticReview {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,29 +68,36 @@ CriticReview {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CriticReview ||--}o Review : "associatedClaimReview"
 CriticReview ||--}o Review : "associatedMediaReview"
 CriticReview ||--}o Review : "associatedReview"
 CriticReview ||--}o Thing : "itemReviewed"
-CriticReview ||--}o Text : "reviewAspect"
-CriticReview ||--}o Text : "reviewBody"
 CriticReview ||--}o Rating : "reviewRating"
 CriticReview ||--}o Thing : "about"
 CriticReview ||--}o Place : "contentLocation"
@@ -76,43 +106,22 @@ CriticReview ||--}o Claim : "interpretedAsClaim"
 CriticReview ||--}o Thing : "mainEntity"
 CriticReview ||--}o Place : "spatialCoverage"
 CriticReview ||--}o CreativeWork : "workExample"
-CriticReview ||--}o Text : "abstract"
-CriticReview ||--}o Text : "accessMode"
 CriticReview ||--}o ItemList : "accessModeSufficient"
-CriticReview ||--}o Text : "accessibilityAPI"
-CriticReview ||--}o Text : "accessibilityControl"
-CriticReview ||--}o Text : "accessibilityFeature"
-CriticReview ||--}o Text : "accessibilityHazard"
-CriticReview ||--}o Text : "accessibilitySummary"
 CriticReview ||--}o Person : "accountablePerson"
 CriticReview ||--}o AggregateRating : "aggregateRating"
-CriticReview ||--}o Text : "alternativeHeadline"
 CriticReview ||--}o MediaObject : "associatedMedia"
 CriticReview ||--}o Audience : "audience"
-CriticReview ||--}o Text : "award"
-CriticReview ||--}o Text : "awards"
 CriticReview ||--}o Person : "character"
 CriticReview ||--}o Comment : "comment"
-CriticReview ||--}o Integer : "commentCount"
-CriticReview ||--}o Text : "conditionsOfAccess"
-CriticReview ||--}o DateTime : "contentReferenceTime"
-CriticReview ||--}o Text : "copyrightNotice"
-CriticReview ||--}o Number : "copyrightYear"
 CriticReview ||--}o Country : "countryOfOrigin"
-CriticReview ||--}o Text : "creditText"
 CriticReview ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-CriticReview ||--}o URL : "discussionUrl"
 CriticReview ||--}o Person : "editor"
 CriticReview ||--}o AlignmentObject : "educationalAlignment"
 CriticReview ||--}o MediaObject : "encoding"
 CriticReview ||--}o MediaObject : "encodings"
 CriticReview ||--}o CreativeWork : "exampleOfWork"
 CriticReview ||--}o Grant : "funding"
-CriticReview ||--}o Text : "headline"
 CriticReview ||--}o InteractionCounter : "interactionStatistic"
-CriticReview ||--}o Text : "interactivityType"
-CriticReview ||--}o Boolean : "isAccessibleForFree"
-CriticReview ||--}o Boolean : "isFamilyFriendly"
 CriticReview ||--}o Place : "locationCreated"
 CriticReview ||--}o Thing : "mentions"
 CriticReview ||--}o PublicationEvent : "publication"
@@ -121,20 +130,11 @@ CriticReview ||--}o Event : "recordedAt"
 CriticReview ||--}o PublicationEvent : "releasedEvent"
 CriticReview ||--}o Review : "review"
 CriticReview ||--}o Review : "reviews"
-CriticReview ||--}o Date : "sdDatePublished"
 CriticReview ||--}o Organization : "sourceOrganization"
 CriticReview ||--}o Place : "spatial"
-CriticReview ||--}o Text : "text"
 CriticReview ||--}o ImageObject : "thumbnail"
-CriticReview ||--}o URL : "thumbnailUrl"
 CriticReview ||--}o Duration : "timeRequired"
 CriticReview ||--}o CreativeWork : "translationOfWork"
-CriticReview ||--}o Text : "typicalAgeRange"
 CriticReview ||--}o CreativeWork : "workTranslation"
-CriticReview ||--}o Text : "alternateName"
-CriticReview ||--}o Text : "disambiguatingDescription"
-CriticReview ||--}o Text : "name"
-CriticReview ||--}o URL : "sameAs"
 CriticReview ||--}o Action : "potentialAction"
-CriticReview ||--}o URL : "url"
 

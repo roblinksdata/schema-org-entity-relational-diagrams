@@ -10,11 +10,16 @@ InformAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 InformAction ||--}o Event : "event"
@@ -26,10 +31,5 @@ InformAction ||--}o Thing : "result"
 InformAction ||--}o HowTo : "actionProcess"
 InformAction ||--}o ActionStatusType : "actionStatus"
 InformAction ||--}o Thing : "error"
-InformAction ||--}o Text : "alternateName"
-InformAction ||--}o Text : "disambiguatingDescription"
-InformAction ||--}o Text : "name"
-InformAction ||--}o URL : "sameAs"
 InformAction ||--}o Action : "potentialAction"
-InformAction ||--}o URL : "url"
 

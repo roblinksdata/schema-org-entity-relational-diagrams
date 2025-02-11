@@ -8,11 +8,16 @@ FilmAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 FilmAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ FilmAction ||--}o Thing : "result"
 FilmAction ||--}o HowTo : "actionProcess"
 FilmAction ||--}o ActionStatusType : "actionStatus"
 FilmAction ||--}o Thing : "error"
-FilmAction ||--}o Text : "alternateName"
-FilmAction ||--}o Text : "disambiguatingDescription"
-FilmAction ||--}o Text : "name"
-FilmAction ||--}o URL : "sameAs"
 FilmAction ||--}o Action : "potentialAction"
-FilmAction ||--}o URL : "url"
 

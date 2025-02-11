@@ -8,11 +8,16 @@ DisagreeAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DisagreeAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ DisagreeAction ||--}o Thing : "result"
 DisagreeAction ||--}o HowTo : "actionProcess"
 DisagreeAction ||--}o ActionStatusType : "actionStatus"
 DisagreeAction ||--}o Thing : "error"
-DisagreeAction ||--}o Text : "alternateName"
-DisagreeAction ||--}o Text : "disambiguatingDescription"
-DisagreeAction ||--}o Text : "name"
-DisagreeAction ||--}o URL : "sameAs"
 DisagreeAction ||--}o Action : "potentialAction"
-DisagreeAction ||--}o URL : "url"
 

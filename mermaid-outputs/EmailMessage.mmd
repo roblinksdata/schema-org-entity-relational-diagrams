@@ -6,6 +6,8 @@ EmailMessage {
     stringList sender  
     stringList toRecipient  
     stringList dateRead  
+    DateTimeList dateReceived  
+    DateTimeList dateSent  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -19,25 +21,46 @@ EmailMessage {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -49,25 +72,32 @@ EmailMessage {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-EmailMessage ||--}o DateTime : "dateReceived"
-EmailMessage ||--}o DateTime : "dateSent"
 EmailMessage ||--}o CreativeWork : "messageAttachment"
 EmailMessage ||--}o Thing : "about"
 EmailMessage ||--}o Place : "contentLocation"
@@ -76,43 +106,22 @@ EmailMessage ||--}o Claim : "interpretedAsClaim"
 EmailMessage ||--}o Thing : "mainEntity"
 EmailMessage ||--}o Place : "spatialCoverage"
 EmailMessage ||--}o CreativeWork : "workExample"
-EmailMessage ||--}o Text : "abstract"
-EmailMessage ||--}o Text : "accessMode"
 EmailMessage ||--}o ItemList : "accessModeSufficient"
-EmailMessage ||--}o Text : "accessibilityAPI"
-EmailMessage ||--}o Text : "accessibilityControl"
-EmailMessage ||--}o Text : "accessibilityFeature"
-EmailMessage ||--}o Text : "accessibilityHazard"
-EmailMessage ||--}o Text : "accessibilitySummary"
 EmailMessage ||--}o Person : "accountablePerson"
 EmailMessage ||--}o AggregateRating : "aggregateRating"
-EmailMessage ||--}o Text : "alternativeHeadline"
 EmailMessage ||--}o MediaObject : "associatedMedia"
 EmailMessage ||--}o Audience : "audience"
-EmailMessage ||--}o Text : "award"
-EmailMessage ||--}o Text : "awards"
 EmailMessage ||--}o Person : "character"
 EmailMessage ||--}o Comment : "comment"
-EmailMessage ||--}o Integer : "commentCount"
-EmailMessage ||--}o Text : "conditionsOfAccess"
-EmailMessage ||--}o DateTime : "contentReferenceTime"
-EmailMessage ||--}o Text : "copyrightNotice"
-EmailMessage ||--}o Number : "copyrightYear"
 EmailMessage ||--}o Country : "countryOfOrigin"
-EmailMessage ||--}o Text : "creditText"
 EmailMessage ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-EmailMessage ||--}o URL : "discussionUrl"
 EmailMessage ||--}o Person : "editor"
 EmailMessage ||--}o AlignmentObject : "educationalAlignment"
 EmailMessage ||--}o MediaObject : "encoding"
 EmailMessage ||--}o MediaObject : "encodings"
 EmailMessage ||--}o CreativeWork : "exampleOfWork"
 EmailMessage ||--}o Grant : "funding"
-EmailMessage ||--}o Text : "headline"
 EmailMessage ||--}o InteractionCounter : "interactionStatistic"
-EmailMessage ||--}o Text : "interactivityType"
-EmailMessage ||--}o Boolean : "isAccessibleForFree"
-EmailMessage ||--}o Boolean : "isFamilyFriendly"
 EmailMessage ||--}o Place : "locationCreated"
 EmailMessage ||--}o Thing : "mentions"
 EmailMessage ||--}o PublicationEvent : "publication"
@@ -121,20 +130,11 @@ EmailMessage ||--}o Event : "recordedAt"
 EmailMessage ||--}o PublicationEvent : "releasedEvent"
 EmailMessage ||--}o Review : "review"
 EmailMessage ||--}o Review : "reviews"
-EmailMessage ||--}o Date : "sdDatePublished"
 EmailMessage ||--}o Organization : "sourceOrganization"
 EmailMessage ||--}o Place : "spatial"
-EmailMessage ||--}o Text : "text"
 EmailMessage ||--}o ImageObject : "thumbnail"
-EmailMessage ||--}o URL : "thumbnailUrl"
 EmailMessage ||--}o Duration : "timeRequired"
 EmailMessage ||--}o CreativeWork : "translationOfWork"
-EmailMessage ||--}o Text : "typicalAgeRange"
 EmailMessage ||--}o CreativeWork : "workTranslation"
-EmailMessage ||--}o Text : "alternateName"
-EmailMessage ||--}o Text : "disambiguatingDescription"
-EmailMessage ||--}o Text : "name"
-EmailMessage ||--}o URL : "sameAs"
 EmailMessage ||--}o Action : "potentialAction"
-EmailMessage ||--}o URL : "url"
 

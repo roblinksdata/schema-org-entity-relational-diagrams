@@ -1,40 +1,40 @@
 erDiagram
 Flight {
+    TextList flightNumber  
     stringList seller  
     stringList aircraft  
+    TextList arrivalGate  
+    TextList arrivalTerminal  
+    TextList departureGate  
+    TextList departureTerminal  
     stringList estimatedFlightDuration  
     stringList flightDistance  
+    TextList mealService  
+    DateTimeList webCheckinTime  
     stringList arrivalTime  
     stringList departureTime  
     stringList itinerary  
     stringList offers  
     stringList provider  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Flight ||--}o Text : "flightNumber"
 Flight ||--}o Airport : "arrivalAirport"
-Flight ||--}o Text : "arrivalGate"
-Flight ||--}o Text : "arrivalTerminal"
 Flight ||--}o BoardingPolicyType : "boardingPolicy"
 Flight ||--}o Organization : "carrier"
 Flight ||--}o Airport : "departureAirport"
-Flight ||--}o Text : "departureGate"
-Flight ||--}o Text : "departureTerminal"
-Flight ||--}o Text : "mealService"
-Flight ||--}o DateTime : "webCheckinTime"
 Flight ||--}o Trip : "partOfTrip"
 Flight ||--}o Trip : "subTrip"
 Flight ||--}o Place : "tripOrigin"
-Flight ||--}o Text : "alternateName"
-Flight ||--}o Text : "disambiguatingDescription"
-Flight ||--}o Text : "name"
-Flight ||--}o URL : "sameAs"
 Flight ||--}o Action : "potentialAction"
-Flight ||--}o URL : "url"
 

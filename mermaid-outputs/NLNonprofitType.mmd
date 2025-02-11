@@ -2,17 +2,17 @@ erDiagram
 NLNonprofitType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-NLNonprofitType ||--}o Text : "alternateName"
-NLNonprofitType ||--}o Text : "disambiguatingDescription"
-NLNonprofitType ||--}o Text : "name"
-NLNonprofitType ||--}o URL : "sameAs"
 NLNonprofitType ||--}o Action : "potentialAction"
-NLNonprofitType ||--}o URL : "url"
 

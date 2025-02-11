@@ -8,11 +8,16 @@ InsertAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 InsertAction ||--}o Place : "toLocation"
@@ -24,10 +29,5 @@ InsertAction ||--}o Thing : "result"
 InsertAction ||--}o HowTo : "actionProcess"
 InsertAction ||--}o ActionStatusType : "actionStatus"
 InsertAction ||--}o Thing : "error"
-InsertAction ||--}o Text : "alternateName"
-InsertAction ||--}o Text : "disambiguatingDescription"
-InsertAction ||--}o Text : "name"
-InsertAction ||--}o URL : "sameAs"
 InsertAction ||--}o Action : "potentialAction"
-InsertAction ||--}o URL : "url"
 

@@ -13,25 +13,46 @@ CreativeWork {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ CreativeWork {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CreativeWork ||--}o Thing : "about"
@@ -67,43 +97,22 @@ CreativeWork ||--}o Claim : "interpretedAsClaim"
 CreativeWork ||--}o Thing : "mainEntity"
 CreativeWork ||--}o Place : "spatialCoverage"
 CreativeWork ||--}o CreativeWork : "workExample"
-CreativeWork ||--}o Text : "abstract"
-CreativeWork ||--}o Text : "accessMode"
 CreativeWork ||--}o ItemList : "accessModeSufficient"
-CreativeWork ||--}o Text : "accessibilityAPI"
-CreativeWork ||--}o Text : "accessibilityControl"
-CreativeWork ||--}o Text : "accessibilityFeature"
-CreativeWork ||--}o Text : "accessibilityHazard"
-CreativeWork ||--}o Text : "accessibilitySummary"
 CreativeWork ||--}o Person : "accountablePerson"
 CreativeWork ||--}o AggregateRating : "aggregateRating"
-CreativeWork ||--}o Text : "alternativeHeadline"
 CreativeWork ||--}o MediaObject : "associatedMedia"
 CreativeWork ||--}o Audience : "audience"
-CreativeWork ||--}o Text : "award"
-CreativeWork ||--}o Text : "awards"
 CreativeWork ||--}o Person : "character"
 CreativeWork ||--}o Comment : "comment"
-CreativeWork ||--}o Integer : "commentCount"
-CreativeWork ||--}o Text : "conditionsOfAccess"
-CreativeWork ||--}o DateTime : "contentReferenceTime"
-CreativeWork ||--}o Text : "copyrightNotice"
-CreativeWork ||--}o Number : "copyrightYear"
 CreativeWork ||--}o Country : "countryOfOrigin"
-CreativeWork ||--}o Text : "creditText"
 CreativeWork ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-CreativeWork ||--}o URL : "discussionUrl"
 CreativeWork ||--}o Person : "editor"
 CreativeWork ||--}o AlignmentObject : "educationalAlignment"
 CreativeWork ||--}o MediaObject : "encoding"
 CreativeWork ||--}o MediaObject : "encodings"
 CreativeWork ||--}o CreativeWork : "exampleOfWork"
 CreativeWork ||--}o Grant : "funding"
-CreativeWork ||--}o Text : "headline"
 CreativeWork ||--}o InteractionCounter : "interactionStatistic"
-CreativeWork ||--}o Text : "interactivityType"
-CreativeWork ||--}o Boolean : "isAccessibleForFree"
-CreativeWork ||--}o Boolean : "isFamilyFriendly"
 CreativeWork ||--}o Place : "locationCreated"
 CreativeWork ||--}o Thing : "mentions"
 CreativeWork ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ CreativeWork ||--}o Event : "recordedAt"
 CreativeWork ||--}o PublicationEvent : "releasedEvent"
 CreativeWork ||--}o Review : "review"
 CreativeWork ||--}o Review : "reviews"
-CreativeWork ||--}o Date : "sdDatePublished"
 CreativeWork ||--}o Organization : "sourceOrganization"
 CreativeWork ||--}o Place : "spatial"
-CreativeWork ||--}o Text : "text"
 CreativeWork ||--}o ImageObject : "thumbnail"
-CreativeWork ||--}o URL : "thumbnailUrl"
 CreativeWork ||--}o Duration : "timeRequired"
 CreativeWork ||--}o CreativeWork : "translationOfWork"
-CreativeWork ||--}o Text : "typicalAgeRange"
 CreativeWork ||--}o CreativeWork : "workTranslation"
-CreativeWork ||--}o Text : "alternateName"
-CreativeWork ||--}o Text : "disambiguatingDescription"
-CreativeWork ||--}o Text : "name"
-CreativeWork ||--}o URL : "sameAs"
 CreativeWork ||--}o Action : "potentialAction"
-CreativeWork ||--}o URL : "url"
 

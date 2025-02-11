@@ -1,6 +1,7 @@
 erDiagram
 PreOrderAction {
     stringList price  
+    TextList priceCurrency  
     stringList location  
     stringList participant  
     stringList agent  
@@ -9,14 +10,18 @@ PreOrderAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PreOrderAction ||--}o Text : "priceCurrency"
 PreOrderAction ||--}o PriceSpecification : "priceSpecification"
 PreOrderAction ||--}o Thing : "instrument"
 PreOrderAction ||--}o Thing : "object"
@@ -24,10 +29,5 @@ PreOrderAction ||--}o Thing : "result"
 PreOrderAction ||--}o HowTo : "actionProcess"
 PreOrderAction ||--}o ActionStatusType : "actionStatus"
 PreOrderAction ||--}o Thing : "error"
-PreOrderAction ||--}o Text : "alternateName"
-PreOrderAction ||--}o Text : "disambiguatingDescription"
-PreOrderAction ||--}o Text : "name"
-PreOrderAction ||--}o URL : "sameAs"
 PreOrderAction ||--}o Action : "potentialAction"
-PreOrderAction ||--}o URL : "url"
 

@@ -1,33 +1,33 @@
 erDiagram
 TaxiReservation {
     stringList partySize  
+    DateTimeList pickupTime  
     stringList bookingAgent  
+    DateTimeList bookingTime  
     stringList broker  
+    DateTimeList modifiedTime  
+    TextList priceCurrency  
     stringList provider  
+    TextList reservationId  
     stringList totalPrice  
     stringList underName  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TaxiReservation ||--}o Place : "pickupLocation"
-TaxiReservation ||--}o DateTime : "pickupTime"
-TaxiReservation ||--}o DateTime : "bookingTime"
-TaxiReservation ||--}o DateTime : "modifiedTime"
-TaxiReservation ||--}o Text : "priceCurrency"
 TaxiReservation ||--}o ProgramMembership : "programMembershipUsed"
 TaxiReservation ||--}o Thing : "reservationFor"
-TaxiReservation ||--}o Text : "reservationId"
 TaxiReservation ||--}o ReservationStatusType : "reservationStatus"
 TaxiReservation ||--}o Ticket : "reservedTicket"
-TaxiReservation ||--}o Text : "alternateName"
-TaxiReservation ||--}o Text : "disambiguatingDescription"
-TaxiReservation ||--}o Text : "name"
-TaxiReservation ||--}o URL : "sameAs"
 TaxiReservation ||--}o Action : "potentialAction"
-TaxiReservation ||--}o URL : "url"
 

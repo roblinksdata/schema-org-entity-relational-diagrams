@@ -4,58 +4,70 @@ NGO {
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-NGO ||--}o Text : "duns"
-NGO ||--}o Text : "globalLocationNumber"
-NGO ||--}o URL : "hasGS1DigitalLink"
-NGO ||--}o Text : "leiCode"
-NGO ||--}o Text : "taxID"
 NGO ||--}o InteractionCounter : "agentInteractionStatistic"
 NGO ||--}o AggregateRating : "aggregateRating"
 NGO ||--}o Person : "alumni"
-NGO ||--}o Text : "award"
-NGO ||--}o Text : "awards"
 NGO ||--}o ContactPoint : "contactPoint"
 NGO ||--}o ContactPoint : "contactPoints"
 NGO ||--}o Organization : "department"
-NGO ||--}o Date : "dissolutionDate"
-NGO ||--}o Text : "email"
 NGO ||--}o Person : "employee"
 NGO ||--}o Person : "employees"
 NGO ||--}o Event : "event"
 NGO ||--}o Event : "events"
-NGO ||--}o Text : "faxNumber"
 NGO ||--}o Person : "founders"
-NGO ||--}o Date : "foundingDate"
 NGO ||--}o Place : "foundingLocation"
 NGO ||--}o Grant : "funding"
 NGO ||--}o Certification : "hasCertification"
@@ -65,25 +77,13 @@ NGO ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 NGO ||--}o OfferCatalog : "hasOfferCatalog"
 NGO ||--}o Place : "hasPOS"
 NGO ||--}o InteractionCounter : "interactionStatistic"
-NGO ||--}o Text : "isicV4"
-NGO ||--}o Text : "iso6523Code"
-NGO ||--}o Text : "legalName"
 NGO ||--}o Offer : "makesOffer"
-NGO ||--}o Text : "naics"
 NGO ||--}o NonprofitType : "nonprofitStatus"
 NGO ||--}o QuantitativeValue : "numberOfEmployees"
 NGO ||--}o Organization : "parentOrganization"
 NGO ||--}o Review : "review"
 NGO ||--}o Review : "reviews"
 NGO ||--}o Demand : "seeks"
-NGO ||--}o Text : "slogan"
 NGO ||--}o Organization : "subOrganization"
-NGO ||--}o Text : "telephone"
-NGO ||--}o Text : "vatID"
-NGO ||--}o Text : "alternateName"
-NGO ||--}o Text : "disambiguatingDescription"
-NGO ||--}o Text : "name"
-NGO ||--}o URL : "sameAs"
 NGO ||--}o Action : "potentialAction"
-NGO ||--}o URL : "url"
 

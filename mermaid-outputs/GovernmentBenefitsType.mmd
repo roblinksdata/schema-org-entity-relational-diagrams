@@ -2,17 +2,17 @@ erDiagram
 GovernmentBenefitsType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-GovernmentBenefitsType ||--}o Text : "alternateName"
-GovernmentBenefitsType ||--}o Text : "disambiguatingDescription"
-GovernmentBenefitsType ||--}o Text : "name"
-GovernmentBenefitsType ||--}o URL : "sameAs"
 GovernmentBenefitsType ||--}o Action : "potentialAction"
-GovernmentBenefitsType ||--}o URL : "url"
 

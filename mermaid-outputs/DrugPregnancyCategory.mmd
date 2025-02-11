@@ -2,17 +2,17 @@ erDiagram
 DrugPregnancyCategory {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DrugPregnancyCategory ||--}o Text : "alternateName"
-DrugPregnancyCategory ||--}o Text : "disambiguatingDescription"
-DrugPregnancyCategory ||--}o Text : "name"
-DrugPregnancyCategory ||--}o URL : "sameAs"
 DrugPregnancyCategory ||--}o Action : "potentialAction"
-DrugPregnancyCategory ||--}o URL : "url"
 

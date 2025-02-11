@@ -1,63 +1,75 @@
 erDiagram
 Airline {
+    TextList iataCode  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Airline ||--}o BoardingPolicyType : "boardingPolicy"
-Airline ||--}o Text : "iataCode"
-Airline ||--}o Text : "duns"
-Airline ||--}o Text : "globalLocationNumber"
-Airline ||--}o URL : "hasGS1DigitalLink"
-Airline ||--}o Text : "leiCode"
-Airline ||--}o Text : "taxID"
 Airline ||--}o InteractionCounter : "agentInteractionStatistic"
 Airline ||--}o AggregateRating : "aggregateRating"
 Airline ||--}o Person : "alumni"
-Airline ||--}o Text : "award"
-Airline ||--}o Text : "awards"
 Airline ||--}o ContactPoint : "contactPoint"
 Airline ||--}o ContactPoint : "contactPoints"
 Airline ||--}o Organization : "department"
-Airline ||--}o Date : "dissolutionDate"
-Airline ||--}o Text : "email"
 Airline ||--}o Person : "employee"
 Airline ||--}o Person : "employees"
 Airline ||--}o Event : "event"
 Airline ||--}o Event : "events"
-Airline ||--}o Text : "faxNumber"
 Airline ||--}o Person : "founders"
-Airline ||--}o Date : "foundingDate"
 Airline ||--}o Place : "foundingLocation"
 Airline ||--}o Grant : "funding"
 Airline ||--}o Certification : "hasCertification"
@@ -67,25 +79,13 @@ Airline ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Airline ||--}o OfferCatalog : "hasOfferCatalog"
 Airline ||--}o Place : "hasPOS"
 Airline ||--}o InteractionCounter : "interactionStatistic"
-Airline ||--}o Text : "isicV4"
-Airline ||--}o Text : "iso6523Code"
-Airline ||--}o Text : "legalName"
 Airline ||--}o Offer : "makesOffer"
-Airline ||--}o Text : "naics"
 Airline ||--}o NonprofitType : "nonprofitStatus"
 Airline ||--}o QuantitativeValue : "numberOfEmployees"
 Airline ||--}o Organization : "parentOrganization"
 Airline ||--}o Review : "review"
 Airline ||--}o Review : "reviews"
 Airline ||--}o Demand : "seeks"
-Airline ||--}o Text : "slogan"
 Airline ||--}o Organization : "subOrganization"
-Airline ||--}o Text : "telephone"
-Airline ||--}o Text : "vatID"
-Airline ||--}o Text : "alternateName"
-Airline ||--}o Text : "disambiguatingDescription"
-Airline ||--}o Text : "name"
-Airline ||--}o URL : "sameAs"
 Airline ||--}o Action : "potentialAction"
-Airline ||--}o URL : "url"
 

@@ -1,16 +1,21 @@
 erDiagram
 MedicalConditionStage {
+    NumberList stageAsNumber  
+    TextList subStageSuffix  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicalConditionStage ||--}o Number : "stageAsNumber"
-MedicalConditionStage ||--}o Text : "subStageSuffix"
 MedicalConditionStage ||--}o MedicalCode : "code"
 MedicalConditionStage ||--}o Grant : "funding"
 MedicalConditionStage ||--}o MedicalGuideline : "guideline"
@@ -18,10 +23,5 @@ MedicalConditionStage ||--}o MedicineSystem : "medicineSystem"
 MedicalConditionStage ||--}o Organization : "recognizingAuthority"
 MedicalConditionStage ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalConditionStage ||--}o MedicalStudy : "study"
-MedicalConditionStage ||--}o Text : "alternateName"
-MedicalConditionStage ||--}o Text : "disambiguatingDescription"
-MedicalConditionStage ||--}o Text : "name"
-MedicalConditionStage ||--}o URL : "sameAs"
 MedicalConditionStage ||--}o Action : "potentialAction"
-MedicalConditionStage ||--}o URL : "url"
 

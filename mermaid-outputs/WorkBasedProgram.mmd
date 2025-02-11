@@ -2,10 +2,12 @@ erDiagram
 WorkBasedProgram {
     stringList occupationalCategory  
     stringList applicationDeadline  
+    DateList applicationStartDate  
     stringList educationalCredentialAwarded  
     stringList educationalProgramMode  
     stringList endDate  
     stringList financialAidEligible  
+    IntegerList maximumEnrollment  
     stringList numberOfCredits  
     stringList occupationalCredentialAwarded  
     stringList offers  
@@ -13,29 +15,27 @@ WorkBasedProgram {
     stringList programType  
     stringList provider  
     stringList startDate  
+    NumberList termsPerYear  
+    TextList timeOfDay  
     stringList typicalCreditsPerTerm  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 WorkBasedProgram ||--}o MonetaryAmountDistribution : "trainingSalary"
-WorkBasedProgram ||--}o Date : "applicationStartDate"
 WorkBasedProgram ||--}o DayOfWeek : "dayOfWeek"
 WorkBasedProgram ||--}o Course : "hasCourse"
-WorkBasedProgram ||--}o Integer : "maximumEnrollment"
 WorkBasedProgram ||--}o MonetaryAmountDistribution : "salaryUponCompletion"
 WorkBasedProgram ||--}o Duration : "termDuration"
-WorkBasedProgram ||--}o Number : "termsPerYear"
-WorkBasedProgram ||--}o Text : "timeOfDay"
 WorkBasedProgram ||--}o Duration : "timeToComplete"
-WorkBasedProgram ||--}o Text : "alternateName"
-WorkBasedProgram ||--}o Text : "disambiguatingDescription"
-WorkBasedProgram ||--}o Text : "name"
-WorkBasedProgram ||--}o URL : "sameAs"
 WorkBasedProgram ||--}o Action : "potentialAction"
-WorkBasedProgram ||--}o URL : "url"
 

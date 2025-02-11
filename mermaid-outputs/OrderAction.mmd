@@ -1,6 +1,7 @@
 erDiagram
 OrderAction {
     stringList price  
+    TextList priceCurrency  
     stringList location  
     stringList participant  
     stringList agent  
@@ -9,15 +10,19 @@ OrderAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 OrderAction ||--}o DeliveryMethod : "deliveryMethod"
-OrderAction ||--}o Text : "priceCurrency"
 OrderAction ||--}o PriceSpecification : "priceSpecification"
 OrderAction ||--}o Thing : "instrument"
 OrderAction ||--}o Thing : "object"
@@ -25,10 +30,5 @@ OrderAction ||--}o Thing : "result"
 OrderAction ||--}o HowTo : "actionProcess"
 OrderAction ||--}o ActionStatusType : "actionStatus"
 OrderAction ||--}o Thing : "error"
-OrderAction ||--}o Text : "alternateName"
-OrderAction ||--}o Text : "disambiguatingDescription"
-OrderAction ||--}o Text : "name"
-OrderAction ||--}o URL : "sameAs"
 OrderAction ||--}o Action : "potentialAction"
-OrderAction ||--}o URL : "url"
 

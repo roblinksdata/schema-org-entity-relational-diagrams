@@ -1,7 +1,9 @@
 erDiagram
 UserComments {
     stringList creator  
+    TextList commentText  
     stringList commentTime  
+    URLList replyToUrl  
     stringList actor  
     stringList contributor  
     stringList funder  
@@ -13,24 +15,34 @@ UserComments {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-UserComments ||--}o Text : "commentText"
 UserComments ||--}o CreativeWork : "discusses"
-UserComments ||--}o URL : "replyToUrl"
 UserComments ||--}o Thing : "about"
 UserComments ||--}o Duration : "duration"
 UserComments ||--}o CreativeWork : "workFeatured"
@@ -42,22 +54,10 @@ UserComments ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 UserComments ||--}o Schedule : "eventSchedule"
 UserComments ||--}o EventStatusType : "eventStatus"
 UserComments ||--}o Grant : "funding"
-UserComments ||--}o Boolean : "isAccessibleForFree"
-UserComments ||--}o Integer : "maximumAttendeeCapacity"
-UserComments ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-UserComments ||--}o Integer : "maximumVirtualAttendeeCapacity"
-UserComments ||--}o Date : "previousStartDate"
 UserComments ||--}o CreativeWork : "recordedIn"
-UserComments ||--}o Integer : "remainingAttendeeCapacity"
 UserComments ||--}o Review : "review"
 UserComments ||--}o Event : "subEvent"
 UserComments ||--}o Event : "subEvents"
 UserComments ||--}o Event : "superEvent"
-UserComments ||--}o Text : "typicalAgeRange"
-UserComments ||--}o Text : "alternateName"
-UserComments ||--}o Text : "disambiguatingDescription"
-UserComments ||--}o Text : "name"
-UserComments ||--}o URL : "sameAs"
 UserComments ||--}o Action : "potentialAction"
-UserComments ||--}o URL : "url"
 

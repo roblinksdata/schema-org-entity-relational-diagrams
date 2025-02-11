@@ -2,17 +2,17 @@ erDiagram
 GameAvailabilityEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-GameAvailabilityEnumeration ||--}o Text : "alternateName"
-GameAvailabilityEnumeration ||--}o Text : "disambiguatingDescription"
-GameAvailabilityEnumeration ||--}o Text : "name"
-GameAvailabilityEnumeration ||--}o URL : "sameAs"
 GameAvailabilityEnumeration ||--}o Action : "potentialAction"
-GameAvailabilityEnumeration ||--}o URL : "url"
 

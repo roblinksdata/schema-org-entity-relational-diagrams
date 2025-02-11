@@ -1,8 +1,16 @@
 erDiagram
 InternetCafe {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ InternetCafe {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 InternetCafe ||--}o Organization : "branchOf"
-InternetCafe ||--}o Text : "currenciesAccepted"
-InternetCafe ||--}o Text : "openingHours"
-InternetCafe ||--}o Text : "paymentAccepted"
-InternetCafe ||--}o Text : "priceRange"
-InternetCafe ||--}o Text : "globalLocationNumber"
-InternetCafe ||--}o URL : "hasGS1DigitalLink"
 InternetCafe ||--}o PropertyValue : "additionalProperty"
 InternetCafe ||--}o AggregateRating : "aggregateRating"
 InternetCafe ||--}o LocationFeatureSpecification : "amenityFeature"
-InternetCafe ||--}o Text : "branchCode"
 InternetCafe ||--}o Place : "containedIn"
 InternetCafe ||--}o Place : "containedInPlace"
 InternetCafe ||--}o Place : "containsPlace"
 InternetCafe ||--}o Event : "event"
 InternetCafe ||--}o Event : "events"
-InternetCafe ||--}o Text : "faxNumber"
 InternetCafe ||--}o Certification : "hasCertification"
-InternetCafe ||--}o Boolean : "hasDriveThroughService"
-InternetCafe ||--}o Boolean : "isAccessibleForFree"
-InternetCafe ||--}o Text : "isicV4"
-InternetCafe ||--}o URL : "map"
-InternetCafe ||--}o URL : "maps"
-InternetCafe ||--}o Integer : "maximumAttendeeCapacity"
 InternetCafe ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-InternetCafe ||--}o Boolean : "publicAccess"
 InternetCafe ||--}o Review : "review"
 InternetCafe ||--}o Review : "reviews"
-InternetCafe ||--}o Text : "slogan"
-InternetCafe ||--}o Boolean : "smokingAllowed"
 InternetCafe ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-InternetCafe ||--}o Text : "telephone"
-InternetCafe ||--}o URL : "tourBookingPage"
-InternetCafe ||--}o Text : "duns"
-InternetCafe ||--}o Text : "leiCode"
-InternetCafe ||--}o Text : "taxID"
 InternetCafe ||--}o InteractionCounter : "agentInteractionStatistic"
 InternetCafe ||--}o Person : "alumni"
-InternetCafe ||--}o Text : "award"
-InternetCafe ||--}o Text : "awards"
 InternetCafe ||--}o ContactPoint : "contactPoint"
 InternetCafe ||--}o ContactPoint : "contactPoints"
 InternetCafe ||--}o Organization : "department"
-InternetCafe ||--}o Date : "dissolutionDate"
-InternetCafe ||--}o Text : "email"
 InternetCafe ||--}o Person : "employee"
 InternetCafe ||--}o Person : "employees"
 InternetCafe ||--}o Person : "founders"
-InternetCafe ||--}o Date : "foundingDate"
 InternetCafe ||--}o Place : "foundingLocation"
 InternetCafe ||--}o Grant : "funding"
 InternetCafe ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ InternetCafe ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 InternetCafe ||--}o OfferCatalog : "hasOfferCatalog"
 InternetCafe ||--}o Place : "hasPOS"
 InternetCafe ||--}o InteractionCounter : "interactionStatistic"
-InternetCafe ||--}o Text : "iso6523Code"
-InternetCafe ||--}o Text : "legalName"
 InternetCafe ||--}o Offer : "makesOffer"
-InternetCafe ||--}o Text : "naics"
 InternetCafe ||--}o NonprofitType : "nonprofitStatus"
 InternetCafe ||--}o QuantitativeValue : "numberOfEmployees"
 InternetCafe ||--}o Organization : "parentOrganization"
 InternetCafe ||--}o Demand : "seeks"
 InternetCafe ||--}o Organization : "subOrganization"
-InternetCafe ||--}o Text : "vatID"
-InternetCafe ||--}o Text : "alternateName"
-InternetCafe ||--}o Text : "disambiguatingDescription"
-InternetCafe ||--}o Text : "name"
-InternetCafe ||--}o URL : "sameAs"
 InternetCafe ||--}o Action : "potentialAction"
-InternetCafe ||--}o URL : "url"
 

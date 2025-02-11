@@ -1,9 +1,18 @@
 erDiagram
 ReportageNewsArticle {
+    TextList dateline  
+    TextList printColumn  
+    TextList printEdition  
+    TextList printPage  
+    TextList printSection  
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -17,25 +26,46 @@ ReportageNewsArticle {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,32 +77,32 @@ ReportageNewsArticle {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ReportageNewsArticle ||--}o Text : "dateline"
-ReportageNewsArticle ||--}o Text : "printColumn"
-ReportageNewsArticle ||--}o Text : "printEdition"
-ReportageNewsArticle ||--}o Text : "printPage"
-ReportageNewsArticle ||--}o Text : "printSection"
-ReportageNewsArticle ||--}o Text : "articleBody"
-ReportageNewsArticle ||--}o Text : "articleSection"
-ReportageNewsArticle ||--}o Text : "pagination"
-ReportageNewsArticle ||--}o Integer : "wordCount"
 ReportageNewsArticle ||--}o Thing : "about"
 ReportageNewsArticle ||--}o Place : "contentLocation"
 ReportageNewsArticle ||--}o CreativeWork : "hasPart"
@@ -80,43 +110,22 @@ ReportageNewsArticle ||--}o Claim : "interpretedAsClaim"
 ReportageNewsArticle ||--}o Thing : "mainEntity"
 ReportageNewsArticle ||--}o Place : "spatialCoverage"
 ReportageNewsArticle ||--}o CreativeWork : "workExample"
-ReportageNewsArticle ||--}o Text : "abstract"
-ReportageNewsArticle ||--}o Text : "accessMode"
 ReportageNewsArticle ||--}o ItemList : "accessModeSufficient"
-ReportageNewsArticle ||--}o Text : "accessibilityAPI"
-ReportageNewsArticle ||--}o Text : "accessibilityControl"
-ReportageNewsArticle ||--}o Text : "accessibilityFeature"
-ReportageNewsArticle ||--}o Text : "accessibilityHazard"
-ReportageNewsArticle ||--}o Text : "accessibilitySummary"
 ReportageNewsArticle ||--}o Person : "accountablePerson"
 ReportageNewsArticle ||--}o AggregateRating : "aggregateRating"
-ReportageNewsArticle ||--}o Text : "alternativeHeadline"
 ReportageNewsArticle ||--}o MediaObject : "associatedMedia"
 ReportageNewsArticle ||--}o Audience : "audience"
-ReportageNewsArticle ||--}o Text : "award"
-ReportageNewsArticle ||--}o Text : "awards"
 ReportageNewsArticle ||--}o Person : "character"
 ReportageNewsArticle ||--}o Comment : "comment"
-ReportageNewsArticle ||--}o Integer : "commentCount"
-ReportageNewsArticle ||--}o Text : "conditionsOfAccess"
-ReportageNewsArticle ||--}o DateTime : "contentReferenceTime"
-ReportageNewsArticle ||--}o Text : "copyrightNotice"
-ReportageNewsArticle ||--}o Number : "copyrightYear"
 ReportageNewsArticle ||--}o Country : "countryOfOrigin"
-ReportageNewsArticle ||--}o Text : "creditText"
 ReportageNewsArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ReportageNewsArticle ||--}o URL : "discussionUrl"
 ReportageNewsArticle ||--}o Person : "editor"
 ReportageNewsArticle ||--}o AlignmentObject : "educationalAlignment"
 ReportageNewsArticle ||--}o MediaObject : "encoding"
 ReportageNewsArticle ||--}o MediaObject : "encodings"
 ReportageNewsArticle ||--}o CreativeWork : "exampleOfWork"
 ReportageNewsArticle ||--}o Grant : "funding"
-ReportageNewsArticle ||--}o Text : "headline"
 ReportageNewsArticle ||--}o InteractionCounter : "interactionStatistic"
-ReportageNewsArticle ||--}o Text : "interactivityType"
-ReportageNewsArticle ||--}o Boolean : "isAccessibleForFree"
-ReportageNewsArticle ||--}o Boolean : "isFamilyFriendly"
 ReportageNewsArticle ||--}o Place : "locationCreated"
 ReportageNewsArticle ||--}o Thing : "mentions"
 ReportageNewsArticle ||--}o PublicationEvent : "publication"
@@ -125,20 +134,11 @@ ReportageNewsArticle ||--}o Event : "recordedAt"
 ReportageNewsArticle ||--}o PublicationEvent : "releasedEvent"
 ReportageNewsArticle ||--}o Review : "review"
 ReportageNewsArticle ||--}o Review : "reviews"
-ReportageNewsArticle ||--}o Date : "sdDatePublished"
 ReportageNewsArticle ||--}o Organization : "sourceOrganization"
 ReportageNewsArticle ||--}o Place : "spatial"
-ReportageNewsArticle ||--}o Text : "text"
 ReportageNewsArticle ||--}o ImageObject : "thumbnail"
-ReportageNewsArticle ||--}o URL : "thumbnailUrl"
 ReportageNewsArticle ||--}o Duration : "timeRequired"
 ReportageNewsArticle ||--}o CreativeWork : "translationOfWork"
-ReportageNewsArticle ||--}o Text : "typicalAgeRange"
 ReportageNewsArticle ||--}o CreativeWork : "workTranslation"
-ReportageNewsArticle ||--}o Text : "alternateName"
-ReportageNewsArticle ||--}o Text : "disambiguatingDescription"
-ReportageNewsArticle ||--}o Text : "name"
-ReportageNewsArticle ||--}o URL : "sameAs"
 ReportageNewsArticle ||--}o Action : "potentialAction"
-ReportageNewsArticle ||--}o URL : "url"
 

@@ -1,16 +1,21 @@
 erDiagram
 Bone {
+    TextList associatedPathophysiology  
+    TextList bodyLocation  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Bone ||--}o Text : "associatedPathophysiology"
-Bone ||--}o Text : "bodyLocation"
 Bone ||--}o AnatomicalStructure : "connectedTo"
 Bone ||--}o ImageObject : "diagram"
 Bone ||--}o AnatomicalSystem : "partOfSystem"
@@ -24,10 +29,5 @@ Bone ||--}o MedicineSystem : "medicineSystem"
 Bone ||--}o Organization : "recognizingAuthority"
 Bone ||--}o MedicalSpecialty : "relevantSpecialty"
 Bone ||--}o MedicalStudy : "study"
-Bone ||--}o Text : "alternateName"
-Bone ||--}o Text : "disambiguatingDescription"
-Bone ||--}o Text : "name"
-Bone ||--}o URL : "sameAs"
 Bone ||--}o Action : "potentialAction"
-Bone ||--}o URL : "url"
 

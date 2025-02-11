@@ -11,19 +11,31 @@ UserTweets {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 UserTweets ||--}o Thing : "about"
@@ -37,22 +49,10 @@ UserTweets ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 UserTweets ||--}o Schedule : "eventSchedule"
 UserTweets ||--}o EventStatusType : "eventStatus"
 UserTweets ||--}o Grant : "funding"
-UserTweets ||--}o Boolean : "isAccessibleForFree"
-UserTweets ||--}o Integer : "maximumAttendeeCapacity"
-UserTweets ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-UserTweets ||--}o Integer : "maximumVirtualAttendeeCapacity"
-UserTweets ||--}o Date : "previousStartDate"
 UserTweets ||--}o CreativeWork : "recordedIn"
-UserTweets ||--}o Integer : "remainingAttendeeCapacity"
 UserTweets ||--}o Review : "review"
 UserTweets ||--}o Event : "subEvent"
 UserTweets ||--}o Event : "subEvents"
 UserTweets ||--}o Event : "superEvent"
-UserTweets ||--}o Text : "typicalAgeRange"
-UserTweets ||--}o Text : "alternateName"
-UserTweets ||--}o Text : "disambiguatingDescription"
-UserTweets ||--}o Text : "name"
-UserTweets ||--}o URL : "sameAs"
 UserTweets ||--}o Action : "potentialAction"
-UserTweets ||--}o URL : "url"
 

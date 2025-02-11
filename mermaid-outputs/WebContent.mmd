@@ -13,25 +13,46 @@ WebContent {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ WebContent {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 WebContent ||--}o Thing : "about"
@@ -67,43 +97,22 @@ WebContent ||--}o Claim : "interpretedAsClaim"
 WebContent ||--}o Thing : "mainEntity"
 WebContent ||--}o Place : "spatialCoverage"
 WebContent ||--}o CreativeWork : "workExample"
-WebContent ||--}o Text : "abstract"
-WebContent ||--}o Text : "accessMode"
 WebContent ||--}o ItemList : "accessModeSufficient"
-WebContent ||--}o Text : "accessibilityAPI"
-WebContent ||--}o Text : "accessibilityControl"
-WebContent ||--}o Text : "accessibilityFeature"
-WebContent ||--}o Text : "accessibilityHazard"
-WebContent ||--}o Text : "accessibilitySummary"
 WebContent ||--}o Person : "accountablePerson"
 WebContent ||--}o AggregateRating : "aggregateRating"
-WebContent ||--}o Text : "alternativeHeadline"
 WebContent ||--}o MediaObject : "associatedMedia"
 WebContent ||--}o Audience : "audience"
-WebContent ||--}o Text : "award"
-WebContent ||--}o Text : "awards"
 WebContent ||--}o Person : "character"
 WebContent ||--}o Comment : "comment"
-WebContent ||--}o Integer : "commentCount"
-WebContent ||--}o Text : "conditionsOfAccess"
-WebContent ||--}o DateTime : "contentReferenceTime"
-WebContent ||--}o Text : "copyrightNotice"
-WebContent ||--}o Number : "copyrightYear"
 WebContent ||--}o Country : "countryOfOrigin"
-WebContent ||--}o Text : "creditText"
 WebContent ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-WebContent ||--}o URL : "discussionUrl"
 WebContent ||--}o Person : "editor"
 WebContent ||--}o AlignmentObject : "educationalAlignment"
 WebContent ||--}o MediaObject : "encoding"
 WebContent ||--}o MediaObject : "encodings"
 WebContent ||--}o CreativeWork : "exampleOfWork"
 WebContent ||--}o Grant : "funding"
-WebContent ||--}o Text : "headline"
 WebContent ||--}o InteractionCounter : "interactionStatistic"
-WebContent ||--}o Text : "interactivityType"
-WebContent ||--}o Boolean : "isAccessibleForFree"
-WebContent ||--}o Boolean : "isFamilyFriendly"
 WebContent ||--}o Place : "locationCreated"
 WebContent ||--}o Thing : "mentions"
 WebContent ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ WebContent ||--}o Event : "recordedAt"
 WebContent ||--}o PublicationEvent : "releasedEvent"
 WebContent ||--}o Review : "review"
 WebContent ||--}o Review : "reviews"
-WebContent ||--}o Date : "sdDatePublished"
 WebContent ||--}o Organization : "sourceOrganization"
 WebContent ||--}o Place : "spatial"
-WebContent ||--}o Text : "text"
 WebContent ||--}o ImageObject : "thumbnail"
-WebContent ||--}o URL : "thumbnailUrl"
 WebContent ||--}o Duration : "timeRequired"
 WebContent ||--}o CreativeWork : "translationOfWork"
-WebContent ||--}o Text : "typicalAgeRange"
 WebContent ||--}o CreativeWork : "workTranslation"
-WebContent ||--}o Text : "alternateName"
-WebContent ||--}o Text : "disambiguatingDescription"
-WebContent ||--}o Text : "name"
-WebContent ||--}o URL : "sameAs"
 WebContent ||--}o Action : "potentialAction"
-WebContent ||--}o URL : "url"
 

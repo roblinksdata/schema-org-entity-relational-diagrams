@@ -1,8 +1,16 @@
 erDiagram
 BowlingAlley {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ BowlingAlley {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BowlingAlley ||--}o Organization : "branchOf"
-BowlingAlley ||--}o Text : "currenciesAccepted"
-BowlingAlley ||--}o Text : "openingHours"
-BowlingAlley ||--}o Text : "paymentAccepted"
-BowlingAlley ||--}o Text : "priceRange"
-BowlingAlley ||--}o Text : "globalLocationNumber"
-BowlingAlley ||--}o URL : "hasGS1DigitalLink"
 BowlingAlley ||--}o PropertyValue : "additionalProperty"
 BowlingAlley ||--}o AggregateRating : "aggregateRating"
 BowlingAlley ||--}o LocationFeatureSpecification : "amenityFeature"
-BowlingAlley ||--}o Text : "branchCode"
 BowlingAlley ||--}o Place : "containedIn"
 BowlingAlley ||--}o Place : "containedInPlace"
 BowlingAlley ||--}o Place : "containsPlace"
 BowlingAlley ||--}o Event : "event"
 BowlingAlley ||--}o Event : "events"
-BowlingAlley ||--}o Text : "faxNumber"
 BowlingAlley ||--}o Certification : "hasCertification"
-BowlingAlley ||--}o Boolean : "hasDriveThroughService"
-BowlingAlley ||--}o Boolean : "isAccessibleForFree"
-BowlingAlley ||--}o Text : "isicV4"
-BowlingAlley ||--}o URL : "map"
-BowlingAlley ||--}o URL : "maps"
-BowlingAlley ||--}o Integer : "maximumAttendeeCapacity"
 BowlingAlley ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-BowlingAlley ||--}o Boolean : "publicAccess"
 BowlingAlley ||--}o Review : "review"
 BowlingAlley ||--}o Review : "reviews"
-BowlingAlley ||--}o Text : "slogan"
-BowlingAlley ||--}o Boolean : "smokingAllowed"
 BowlingAlley ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-BowlingAlley ||--}o Text : "telephone"
-BowlingAlley ||--}o URL : "tourBookingPage"
-BowlingAlley ||--}o Text : "duns"
-BowlingAlley ||--}o Text : "leiCode"
-BowlingAlley ||--}o Text : "taxID"
 BowlingAlley ||--}o InteractionCounter : "agentInteractionStatistic"
 BowlingAlley ||--}o Person : "alumni"
-BowlingAlley ||--}o Text : "award"
-BowlingAlley ||--}o Text : "awards"
 BowlingAlley ||--}o ContactPoint : "contactPoint"
 BowlingAlley ||--}o ContactPoint : "contactPoints"
 BowlingAlley ||--}o Organization : "department"
-BowlingAlley ||--}o Date : "dissolutionDate"
-BowlingAlley ||--}o Text : "email"
 BowlingAlley ||--}o Person : "employee"
 BowlingAlley ||--}o Person : "employees"
 BowlingAlley ||--}o Person : "founders"
-BowlingAlley ||--}o Date : "foundingDate"
 BowlingAlley ||--}o Place : "foundingLocation"
 BowlingAlley ||--}o Grant : "funding"
 BowlingAlley ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ BowlingAlley ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 BowlingAlley ||--}o OfferCatalog : "hasOfferCatalog"
 BowlingAlley ||--}o Place : "hasPOS"
 BowlingAlley ||--}o InteractionCounter : "interactionStatistic"
-BowlingAlley ||--}o Text : "iso6523Code"
-BowlingAlley ||--}o Text : "legalName"
 BowlingAlley ||--}o Offer : "makesOffer"
-BowlingAlley ||--}o Text : "naics"
 BowlingAlley ||--}o NonprofitType : "nonprofitStatus"
 BowlingAlley ||--}o QuantitativeValue : "numberOfEmployees"
 BowlingAlley ||--}o Organization : "parentOrganization"
 BowlingAlley ||--}o Demand : "seeks"
 BowlingAlley ||--}o Organization : "subOrganization"
-BowlingAlley ||--}o Text : "vatID"
-BowlingAlley ||--}o Text : "alternateName"
-BowlingAlley ||--}o Text : "disambiguatingDescription"
-BowlingAlley ||--}o Text : "name"
-BowlingAlley ||--}o URL : "sameAs"
 BowlingAlley ||--}o Action : "potentialAction"
-BowlingAlley ||--}o URL : "url"
 

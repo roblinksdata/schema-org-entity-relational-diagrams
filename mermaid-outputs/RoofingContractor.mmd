@@ -1,8 +1,16 @@
 erDiagram
 RoofingContractor {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ RoofingContractor {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 RoofingContractor ||--}o Organization : "branchOf"
-RoofingContractor ||--}o Text : "currenciesAccepted"
-RoofingContractor ||--}o Text : "openingHours"
-RoofingContractor ||--}o Text : "paymentAccepted"
-RoofingContractor ||--}o Text : "priceRange"
-RoofingContractor ||--}o Text : "globalLocationNumber"
-RoofingContractor ||--}o URL : "hasGS1DigitalLink"
 RoofingContractor ||--}o PropertyValue : "additionalProperty"
 RoofingContractor ||--}o AggregateRating : "aggregateRating"
 RoofingContractor ||--}o LocationFeatureSpecification : "amenityFeature"
-RoofingContractor ||--}o Text : "branchCode"
 RoofingContractor ||--}o Place : "containedIn"
 RoofingContractor ||--}o Place : "containedInPlace"
 RoofingContractor ||--}o Place : "containsPlace"
 RoofingContractor ||--}o Event : "event"
 RoofingContractor ||--}o Event : "events"
-RoofingContractor ||--}o Text : "faxNumber"
 RoofingContractor ||--}o Certification : "hasCertification"
-RoofingContractor ||--}o Boolean : "hasDriveThroughService"
-RoofingContractor ||--}o Boolean : "isAccessibleForFree"
-RoofingContractor ||--}o Text : "isicV4"
-RoofingContractor ||--}o URL : "map"
-RoofingContractor ||--}o URL : "maps"
-RoofingContractor ||--}o Integer : "maximumAttendeeCapacity"
 RoofingContractor ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-RoofingContractor ||--}o Boolean : "publicAccess"
 RoofingContractor ||--}o Review : "review"
 RoofingContractor ||--}o Review : "reviews"
-RoofingContractor ||--}o Text : "slogan"
-RoofingContractor ||--}o Boolean : "smokingAllowed"
 RoofingContractor ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-RoofingContractor ||--}o Text : "telephone"
-RoofingContractor ||--}o URL : "tourBookingPage"
-RoofingContractor ||--}o Text : "duns"
-RoofingContractor ||--}o Text : "leiCode"
-RoofingContractor ||--}o Text : "taxID"
 RoofingContractor ||--}o InteractionCounter : "agentInteractionStatistic"
 RoofingContractor ||--}o Person : "alumni"
-RoofingContractor ||--}o Text : "award"
-RoofingContractor ||--}o Text : "awards"
 RoofingContractor ||--}o ContactPoint : "contactPoint"
 RoofingContractor ||--}o ContactPoint : "contactPoints"
 RoofingContractor ||--}o Organization : "department"
-RoofingContractor ||--}o Date : "dissolutionDate"
-RoofingContractor ||--}o Text : "email"
 RoofingContractor ||--}o Person : "employee"
 RoofingContractor ||--}o Person : "employees"
 RoofingContractor ||--}o Person : "founders"
-RoofingContractor ||--}o Date : "foundingDate"
 RoofingContractor ||--}o Place : "foundingLocation"
 RoofingContractor ||--}o Grant : "funding"
 RoofingContractor ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ RoofingContractor ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 RoofingContractor ||--}o OfferCatalog : "hasOfferCatalog"
 RoofingContractor ||--}o Place : "hasPOS"
 RoofingContractor ||--}o InteractionCounter : "interactionStatistic"
-RoofingContractor ||--}o Text : "iso6523Code"
-RoofingContractor ||--}o Text : "legalName"
 RoofingContractor ||--}o Offer : "makesOffer"
-RoofingContractor ||--}o Text : "naics"
 RoofingContractor ||--}o NonprofitType : "nonprofitStatus"
 RoofingContractor ||--}o QuantitativeValue : "numberOfEmployees"
 RoofingContractor ||--}o Organization : "parentOrganization"
 RoofingContractor ||--}o Demand : "seeks"
 RoofingContractor ||--}o Organization : "subOrganization"
-RoofingContractor ||--}o Text : "vatID"
-RoofingContractor ||--}o Text : "alternateName"
-RoofingContractor ||--}o Text : "disambiguatingDescription"
-RoofingContractor ||--}o Text : "name"
-RoofingContractor ||--}o URL : "sameAs"
 RoofingContractor ||--}o Action : "potentialAction"
-RoofingContractor ||--}o URL : "url"
 

@@ -8,11 +8,16 @@ RegisterAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 RegisterAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ RegisterAction ||--}o Thing : "result"
 RegisterAction ||--}o HowTo : "actionProcess"
 RegisterAction ||--}o ActionStatusType : "actionStatus"
 RegisterAction ||--}o Thing : "error"
-RegisterAction ||--}o Text : "alternateName"
-RegisterAction ||--}o Text : "disambiguatingDescription"
-RegisterAction ||--}o Text : "name"
-RegisterAction ||--}o URL : "sameAs"
 RegisterAction ||--}o Action : "potentialAction"
-RegisterAction ||--}o URL : "url"
 

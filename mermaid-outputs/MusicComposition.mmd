@@ -1,6 +1,9 @@
 erDiagram
 MusicComposition {
     stringList composer  
+    TextList iswcCode  
+    TextList musicCompositionForm  
+    TextList musicalKey  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -14,25 +17,46 @@ MusicComposition {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -44,31 +68,37 @@ MusicComposition {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MusicComposition ||--}o Event : "firstPerformance"
 MusicComposition ||--}o MusicComposition : "includedComposition"
-MusicComposition ||--}o Text : "iswcCode"
 MusicComposition ||--}o Person : "lyricist"
 MusicComposition ||--}o CreativeWork : "lyrics"
 MusicComposition ||--}o MusicComposition : "musicArrangement"
-MusicComposition ||--}o Text : "musicCompositionForm"
-MusicComposition ||--}o Text : "musicalKey"
 MusicComposition ||--}o MusicRecording : "recordedAs"
 MusicComposition ||--}o Thing : "about"
 MusicComposition ||--}o Place : "contentLocation"
@@ -77,43 +107,22 @@ MusicComposition ||--}o Claim : "interpretedAsClaim"
 MusicComposition ||--}o Thing : "mainEntity"
 MusicComposition ||--}o Place : "spatialCoverage"
 MusicComposition ||--}o CreativeWork : "workExample"
-MusicComposition ||--}o Text : "abstract"
-MusicComposition ||--}o Text : "accessMode"
 MusicComposition ||--}o ItemList : "accessModeSufficient"
-MusicComposition ||--}o Text : "accessibilityAPI"
-MusicComposition ||--}o Text : "accessibilityControl"
-MusicComposition ||--}o Text : "accessibilityFeature"
-MusicComposition ||--}o Text : "accessibilityHazard"
-MusicComposition ||--}o Text : "accessibilitySummary"
 MusicComposition ||--}o Person : "accountablePerson"
 MusicComposition ||--}o AggregateRating : "aggregateRating"
-MusicComposition ||--}o Text : "alternativeHeadline"
 MusicComposition ||--}o MediaObject : "associatedMedia"
 MusicComposition ||--}o Audience : "audience"
-MusicComposition ||--}o Text : "award"
-MusicComposition ||--}o Text : "awards"
 MusicComposition ||--}o Person : "character"
 MusicComposition ||--}o Comment : "comment"
-MusicComposition ||--}o Integer : "commentCount"
-MusicComposition ||--}o Text : "conditionsOfAccess"
-MusicComposition ||--}o DateTime : "contentReferenceTime"
-MusicComposition ||--}o Text : "copyrightNotice"
-MusicComposition ||--}o Number : "copyrightYear"
 MusicComposition ||--}o Country : "countryOfOrigin"
-MusicComposition ||--}o Text : "creditText"
 MusicComposition ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-MusicComposition ||--}o URL : "discussionUrl"
 MusicComposition ||--}o Person : "editor"
 MusicComposition ||--}o AlignmentObject : "educationalAlignment"
 MusicComposition ||--}o MediaObject : "encoding"
 MusicComposition ||--}o MediaObject : "encodings"
 MusicComposition ||--}o CreativeWork : "exampleOfWork"
 MusicComposition ||--}o Grant : "funding"
-MusicComposition ||--}o Text : "headline"
 MusicComposition ||--}o InteractionCounter : "interactionStatistic"
-MusicComposition ||--}o Text : "interactivityType"
-MusicComposition ||--}o Boolean : "isAccessibleForFree"
-MusicComposition ||--}o Boolean : "isFamilyFriendly"
 MusicComposition ||--}o Place : "locationCreated"
 MusicComposition ||--}o Thing : "mentions"
 MusicComposition ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ MusicComposition ||--}o Event : "recordedAt"
 MusicComposition ||--}o PublicationEvent : "releasedEvent"
 MusicComposition ||--}o Review : "review"
 MusicComposition ||--}o Review : "reviews"
-MusicComposition ||--}o Date : "sdDatePublished"
 MusicComposition ||--}o Organization : "sourceOrganization"
 MusicComposition ||--}o Place : "spatial"
-MusicComposition ||--}o Text : "text"
 MusicComposition ||--}o ImageObject : "thumbnail"
-MusicComposition ||--}o URL : "thumbnailUrl"
 MusicComposition ||--}o Duration : "timeRequired"
 MusicComposition ||--}o CreativeWork : "translationOfWork"
-MusicComposition ||--}o Text : "typicalAgeRange"
 MusicComposition ||--}o CreativeWork : "workTranslation"
-MusicComposition ||--}o Text : "alternateName"
-MusicComposition ||--}o Text : "disambiguatingDescription"
-MusicComposition ||--}o Text : "name"
-MusicComposition ||--}o URL : "sameAs"
 MusicComposition ||--}o Action : "potentialAction"
-MusicComposition ||--}o URL : "url"
 

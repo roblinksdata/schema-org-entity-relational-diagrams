@@ -5,21 +5,21 @@ Occupation {
     stringList experienceRequirements  
     stringList occupationalCategory  
     stringList qualifications  
+    TextList responsibilities  
     stringList skills  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Occupation ||--}o AdministrativeArea : "occupationLocation"
-Occupation ||--}o Text : "responsibilities"
-Occupation ||--}o Text : "alternateName"
-Occupation ||--}o Text : "disambiguatingDescription"
-Occupation ||--}o Text : "name"
-Occupation ||--}o URL : "sameAs"
 Occupation ||--}o Action : "potentialAction"
-Occupation ||--}o URL : "url"
 

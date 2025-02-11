@@ -1,18 +1,23 @@
 erDiagram
 Artery {
+    TextList associatedPathophysiology  
+    TextList bodyLocation  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Artery ||--}o AnatomicalStructure : "arterialBranch"
 Artery ||--}o AnatomicalStructure : "supplyTo"
-Artery ||--}o Text : "associatedPathophysiology"
-Artery ||--}o Text : "bodyLocation"
 Artery ||--}o AnatomicalStructure : "connectedTo"
 Artery ||--}o ImageObject : "diagram"
 Artery ||--}o AnatomicalSystem : "partOfSystem"
@@ -26,10 +31,5 @@ Artery ||--}o MedicineSystem : "medicineSystem"
 Artery ||--}o Organization : "recognizingAuthority"
 Artery ||--}o MedicalSpecialty : "relevantSpecialty"
 Artery ||--}o MedicalStudy : "study"
-Artery ||--}o Text : "alternateName"
-Artery ||--}o Text : "disambiguatingDescription"
-Artery ||--}o Text : "name"
-Artery ||--}o URL : "sameAs"
 Artery ||--}o Action : "potentialAction"
-Artery ||--}o URL : "url"
 

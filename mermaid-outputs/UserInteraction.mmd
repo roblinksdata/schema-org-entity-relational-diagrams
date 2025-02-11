@@ -11,19 +11,31 @@ UserInteraction {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 UserInteraction ||--}o Thing : "about"
@@ -37,22 +49,10 @@ UserInteraction ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 UserInteraction ||--}o Schedule : "eventSchedule"
 UserInteraction ||--}o EventStatusType : "eventStatus"
 UserInteraction ||--}o Grant : "funding"
-UserInteraction ||--}o Boolean : "isAccessibleForFree"
-UserInteraction ||--}o Integer : "maximumAttendeeCapacity"
-UserInteraction ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-UserInteraction ||--}o Integer : "maximumVirtualAttendeeCapacity"
-UserInteraction ||--}o Date : "previousStartDate"
 UserInteraction ||--}o CreativeWork : "recordedIn"
-UserInteraction ||--}o Integer : "remainingAttendeeCapacity"
 UserInteraction ||--}o Review : "review"
 UserInteraction ||--}o Event : "subEvent"
 UserInteraction ||--}o Event : "subEvents"
 UserInteraction ||--}o Event : "superEvent"
-UserInteraction ||--}o Text : "typicalAgeRange"
-UserInteraction ||--}o Text : "alternateName"
-UserInteraction ||--}o Text : "disambiguatingDescription"
-UserInteraction ||--}o Text : "name"
-UserInteraction ||--}o URL : "sameAs"
 UserInteraction ||--}o Action : "potentialAction"
-UserInteraction ||--}o URL : "url"
 

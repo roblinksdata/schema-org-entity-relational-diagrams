@@ -1,11 +1,19 @@
 erDiagram
 ImageObject {
     stringList caption  
+    TextList embeddedTextCaption  
     stringList exifData  
+    BooleanList representativeOfPage  
+    TextList sha256  
+    TextList bitrate  
+    TextList contentSize  
+    URLList contentUrl  
+    URLList embedUrl  
     stringList encodingFormat  
     stringList endTime  
     stringList height  
     stringList ineligibleRegion  
+    TextList playerType  
     stringList requiresSubscription  
     stringList startTime  
     stringList uploadDate  
@@ -23,24 +31,45 @@ ImageObject {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -52,35 +81,36 @@ ImageObject {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ImageObject ||--}o Text : "embeddedTextCaption"
-ImageObject ||--}o Boolean : "representativeOfPage"
 ImageObject ||--}o Duration : "duration"
 ImageObject ||--}o Claim : "interpretedAsClaim"
-ImageObject ||--}o Text : "sha256"
 ImageObject ||--}o NewsArticle : "associatedArticle"
-ImageObject ||--}o Text : "bitrate"
-ImageObject ||--}o Text : "contentSize"
-ImageObject ||--}o URL : "contentUrl"
-ImageObject ||--}o URL : "embedUrl"
 ImageObject ||--}o CreativeWork : "encodesCreativeWork"
-ImageObject ||--}o Text : "playerType"
 ImageObject ||--}o Organization : "productionCompany"
 ImageObject ||--}o Place : "regionsAllowed"
 ImageObject ||--}o Thing : "about"
@@ -89,43 +119,22 @@ ImageObject ||--}o CreativeWork : "hasPart"
 ImageObject ||--}o Thing : "mainEntity"
 ImageObject ||--}o Place : "spatialCoverage"
 ImageObject ||--}o CreativeWork : "workExample"
-ImageObject ||--}o Text : "abstract"
-ImageObject ||--}o Text : "accessMode"
 ImageObject ||--}o ItemList : "accessModeSufficient"
-ImageObject ||--}o Text : "accessibilityAPI"
-ImageObject ||--}o Text : "accessibilityControl"
-ImageObject ||--}o Text : "accessibilityFeature"
-ImageObject ||--}o Text : "accessibilityHazard"
-ImageObject ||--}o Text : "accessibilitySummary"
 ImageObject ||--}o Person : "accountablePerson"
 ImageObject ||--}o AggregateRating : "aggregateRating"
-ImageObject ||--}o Text : "alternativeHeadline"
 ImageObject ||--}o MediaObject : "associatedMedia"
 ImageObject ||--}o Audience : "audience"
-ImageObject ||--}o Text : "award"
-ImageObject ||--}o Text : "awards"
 ImageObject ||--}o Person : "character"
 ImageObject ||--}o Comment : "comment"
-ImageObject ||--}o Integer : "commentCount"
-ImageObject ||--}o Text : "conditionsOfAccess"
-ImageObject ||--}o DateTime : "contentReferenceTime"
-ImageObject ||--}o Text : "copyrightNotice"
-ImageObject ||--}o Number : "copyrightYear"
 ImageObject ||--}o Country : "countryOfOrigin"
-ImageObject ||--}o Text : "creditText"
 ImageObject ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ImageObject ||--}o URL : "discussionUrl"
 ImageObject ||--}o Person : "editor"
 ImageObject ||--}o AlignmentObject : "educationalAlignment"
 ImageObject ||--}o MediaObject : "encoding"
 ImageObject ||--}o MediaObject : "encodings"
 ImageObject ||--}o CreativeWork : "exampleOfWork"
 ImageObject ||--}o Grant : "funding"
-ImageObject ||--}o Text : "headline"
 ImageObject ||--}o InteractionCounter : "interactionStatistic"
-ImageObject ||--}o Text : "interactivityType"
-ImageObject ||--}o Boolean : "isAccessibleForFree"
-ImageObject ||--}o Boolean : "isFamilyFriendly"
 ImageObject ||--}o Place : "locationCreated"
 ImageObject ||--}o Thing : "mentions"
 ImageObject ||--}o PublicationEvent : "publication"
@@ -134,20 +143,11 @@ ImageObject ||--}o Event : "recordedAt"
 ImageObject ||--}o PublicationEvent : "releasedEvent"
 ImageObject ||--}o Review : "review"
 ImageObject ||--}o Review : "reviews"
-ImageObject ||--}o Date : "sdDatePublished"
 ImageObject ||--}o Organization : "sourceOrganization"
 ImageObject ||--}o Place : "spatial"
-ImageObject ||--}o Text : "text"
 ImageObject ||--}o ImageObject : "thumbnail"
-ImageObject ||--}o URL : "thumbnailUrl"
 ImageObject ||--}o Duration : "timeRequired"
 ImageObject ||--}o CreativeWork : "translationOfWork"
-ImageObject ||--}o Text : "typicalAgeRange"
 ImageObject ||--}o CreativeWork : "workTranslation"
-ImageObject ||--}o Text : "alternateName"
-ImageObject ||--}o Text : "disambiguatingDescription"
-ImageObject ||--}o Text : "name"
-ImageObject ||--}o URL : "sameAs"
 ImageObject ||--}o Action : "potentialAction"
-ImageObject ||--}o URL : "url"
 

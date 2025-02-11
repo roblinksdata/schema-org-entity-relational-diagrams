@@ -2,17 +2,17 @@ erDiagram
 GenderType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-GenderType ||--}o Text : "alternateName"
-GenderType ||--}o Text : "disambiguatingDescription"
-GenderType ||--}o Text : "name"
-GenderType ||--}o URL : "sameAs"
 GenderType ||--}o Action : "potentialAction"
-GenderType ||--}o URL : "url"
 

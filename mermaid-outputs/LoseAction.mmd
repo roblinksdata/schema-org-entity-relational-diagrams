@@ -8,11 +8,16 @@ LoseAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LoseAction ||--}o Person : "winner"
@@ -22,10 +27,5 @@ LoseAction ||--}o Thing : "result"
 LoseAction ||--}o HowTo : "actionProcess"
 LoseAction ||--}o ActionStatusType : "actionStatus"
 LoseAction ||--}o Thing : "error"
-LoseAction ||--}o Text : "alternateName"
-LoseAction ||--}o Text : "disambiguatingDescription"
-LoseAction ||--}o Text : "name"
-LoseAction ||--}o URL : "sameAs"
 LoseAction ||--}o Action : "potentialAction"
-LoseAction ||--}o URL : "url"
 

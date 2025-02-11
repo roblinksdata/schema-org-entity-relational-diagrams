@@ -2,17 +2,17 @@ erDiagram
 MedicalEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicalEnumeration ||--}o Text : "alternateName"
-MedicalEnumeration ||--}o Text : "disambiguatingDescription"
-MedicalEnumeration ||--}o Text : "name"
-MedicalEnumeration ||--}o URL : "sameAs"
 MedicalEnumeration ||--}o Action : "potentialAction"
-MedicalEnumeration ||--}o URL : "url"
 

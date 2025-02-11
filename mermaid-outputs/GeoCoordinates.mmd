@@ -5,19 +5,19 @@ GeoCoordinates {
     stringList elevation  
     stringList latitude  
     stringList longitude  
+    TextList postalCode  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-GeoCoordinates ||--}o Text : "postalCode"
-GeoCoordinates ||--}o Text : "alternateName"
-GeoCoordinates ||--}o Text : "disambiguatingDescription"
-GeoCoordinates ||--}o Text : "name"
-GeoCoordinates ||--}o URL : "sameAs"
 GeoCoordinates ||--}o Action : "potentialAction"
-GeoCoordinates ||--}o URL : "url"
 

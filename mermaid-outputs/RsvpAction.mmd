@@ -1,5 +1,6 @@
 erDiagram
 RsvpAction {
+    NumberList additionalNumberOfGuests  
     stringList recipient  
     stringList inLanguage  
     stringList location  
@@ -10,14 +11,18 @@ RsvpAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-RsvpAction ||--}o Number : "additionalNumberOfGuests"
 RsvpAction ||--}o Comment : "comment"
 RsvpAction ||--}o RsvpResponseType : "rsvpResponse"
 RsvpAction ||--}o Event : "event"
@@ -29,10 +34,5 @@ RsvpAction ||--}o Thing : "result"
 RsvpAction ||--}o HowTo : "actionProcess"
 RsvpAction ||--}o ActionStatusType : "actionStatus"
 RsvpAction ||--}o Thing : "error"
-RsvpAction ||--}o Text : "alternateName"
-RsvpAction ||--}o Text : "disambiguatingDescription"
-RsvpAction ||--}o Text : "name"
-RsvpAction ||--}o URL : "sameAs"
 RsvpAction ||--}o Action : "potentialAction"
-RsvpAction ||--}o URL : "url"
 

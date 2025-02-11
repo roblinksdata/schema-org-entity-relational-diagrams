@@ -1,8 +1,16 @@
 erDiagram
 Electrician {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ Electrician {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Electrician ||--}o Organization : "branchOf"
-Electrician ||--}o Text : "currenciesAccepted"
-Electrician ||--}o Text : "openingHours"
-Electrician ||--}o Text : "paymentAccepted"
-Electrician ||--}o Text : "priceRange"
-Electrician ||--}o Text : "globalLocationNumber"
-Electrician ||--}o URL : "hasGS1DigitalLink"
 Electrician ||--}o PropertyValue : "additionalProperty"
 Electrician ||--}o AggregateRating : "aggregateRating"
 Electrician ||--}o LocationFeatureSpecification : "amenityFeature"
-Electrician ||--}o Text : "branchCode"
 Electrician ||--}o Place : "containedIn"
 Electrician ||--}o Place : "containedInPlace"
 Electrician ||--}o Place : "containsPlace"
 Electrician ||--}o Event : "event"
 Electrician ||--}o Event : "events"
-Electrician ||--}o Text : "faxNumber"
 Electrician ||--}o Certification : "hasCertification"
-Electrician ||--}o Boolean : "hasDriveThroughService"
-Electrician ||--}o Boolean : "isAccessibleForFree"
-Electrician ||--}o Text : "isicV4"
-Electrician ||--}o URL : "map"
-Electrician ||--}o URL : "maps"
-Electrician ||--}o Integer : "maximumAttendeeCapacity"
 Electrician ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Electrician ||--}o Boolean : "publicAccess"
 Electrician ||--}o Review : "review"
 Electrician ||--}o Review : "reviews"
-Electrician ||--}o Text : "slogan"
-Electrician ||--}o Boolean : "smokingAllowed"
 Electrician ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Electrician ||--}o Text : "telephone"
-Electrician ||--}o URL : "tourBookingPage"
-Electrician ||--}o Text : "duns"
-Electrician ||--}o Text : "leiCode"
-Electrician ||--}o Text : "taxID"
 Electrician ||--}o InteractionCounter : "agentInteractionStatistic"
 Electrician ||--}o Person : "alumni"
-Electrician ||--}o Text : "award"
-Electrician ||--}o Text : "awards"
 Electrician ||--}o ContactPoint : "contactPoint"
 Electrician ||--}o ContactPoint : "contactPoints"
 Electrician ||--}o Organization : "department"
-Electrician ||--}o Date : "dissolutionDate"
-Electrician ||--}o Text : "email"
 Electrician ||--}o Person : "employee"
 Electrician ||--}o Person : "employees"
 Electrician ||--}o Person : "founders"
-Electrician ||--}o Date : "foundingDate"
 Electrician ||--}o Place : "foundingLocation"
 Electrician ||--}o Grant : "funding"
 Electrician ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ Electrician ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Electrician ||--}o OfferCatalog : "hasOfferCatalog"
 Electrician ||--}o Place : "hasPOS"
 Electrician ||--}o InteractionCounter : "interactionStatistic"
-Electrician ||--}o Text : "iso6523Code"
-Electrician ||--}o Text : "legalName"
 Electrician ||--}o Offer : "makesOffer"
-Electrician ||--}o Text : "naics"
 Electrician ||--}o NonprofitType : "nonprofitStatus"
 Electrician ||--}o QuantitativeValue : "numberOfEmployees"
 Electrician ||--}o Organization : "parentOrganization"
 Electrician ||--}o Demand : "seeks"
 Electrician ||--}o Organization : "subOrganization"
-Electrician ||--}o Text : "vatID"
-Electrician ||--}o Text : "alternateName"
-Electrician ||--}o Text : "disambiguatingDescription"
-Electrician ||--}o Text : "name"
-Electrician ||--}o URL : "sameAs"
 Electrician ||--}o Action : "potentialAction"
-Electrician ||--}o URL : "url"
 

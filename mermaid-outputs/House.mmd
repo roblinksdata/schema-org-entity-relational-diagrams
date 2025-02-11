@@ -1,13 +1,25 @@
 erDiagram
 House {
     stringList numberOfRooms  
+    TextList accommodationCategory  
     stringList bed  
+    TextList floorLevel  
     stringList leaseLength  
+    IntegerList numberOfBathroomsTotal  
     stringList numberOfBedrooms  
+    NumberList numberOfFullBathrooms  
+    NumberList numberOfPartialBathrooms  
+    TextList permittedUsage  
     stringList petsAllowed  
+    URLList tourBookingPage  
+    NumberList yearBuilt  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,61 +31,49 @@ House {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-House ||--}o Text : "accommodationCategory"
 House ||--}o FloorPlan : "accommodationFloorPlan"
 House ||--}o LocationFeatureSpecification : "amenityFeature"
-House ||--}o Text : "floorLevel"
 House ||--}o QuantitativeValue : "floorSize"
-House ||--}o Integer : "numberOfBathroomsTotal"
-House ||--}o Number : "numberOfFullBathrooms"
-House ||--}o Number : "numberOfPartialBathrooms"
 House ||--}o QuantitativeValue : "occupancy"
-House ||--}o Text : "permittedUsage"
-House ||--}o URL : "tourBookingPage"
-House ||--}o Number : "yearBuilt"
-House ||--}o Text : "globalLocationNumber"
-House ||--}o URL : "hasGS1DigitalLink"
 House ||--}o PropertyValue : "additionalProperty"
 House ||--}o AggregateRating : "aggregateRating"
-House ||--}o Text : "branchCode"
 House ||--}o Place : "containedIn"
 House ||--}o Place : "containedInPlace"
 House ||--}o Place : "containsPlace"
 House ||--}o Event : "event"
 House ||--}o Event : "events"
-House ||--}o Text : "faxNumber"
 House ||--}o Certification : "hasCertification"
-House ||--}o Boolean : "hasDriveThroughService"
-House ||--}o Boolean : "isAccessibleForFree"
-House ||--}o Text : "isicV4"
-House ||--}o URL : "map"
-House ||--}o URL : "maps"
-House ||--}o Integer : "maximumAttendeeCapacity"
 House ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-House ||--}o Boolean : "publicAccess"
 House ||--}o Review : "review"
 House ||--}o Review : "reviews"
-House ||--}o Text : "slogan"
-House ||--}o Boolean : "smokingAllowed"
 House ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-House ||--}o Text : "telephone"
-House ||--}o Text : "alternateName"
-House ||--}o Text : "disambiguatingDescription"
-House ||--}o Text : "name"
-House ||--}o URL : "sameAs"
 House ||--}o Action : "potentialAction"
-House ||--}o URL : "url"
 

@@ -10,11 +10,16 @@ ReplyAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ReplyAction ||--}o Comment : "resultComment"
@@ -26,10 +31,5 @@ ReplyAction ||--}o Thing : "result"
 ReplyAction ||--}o HowTo : "actionProcess"
 ReplyAction ||--}o ActionStatusType : "actionStatus"
 ReplyAction ||--}o Thing : "error"
-ReplyAction ||--}o Text : "alternateName"
-ReplyAction ||--}o Text : "disambiguatingDescription"
-ReplyAction ||--}o Text : "name"
-ReplyAction ||--}o URL : "sameAs"
 ReplyAction ||--}o Action : "potentialAction"
-ReplyAction ||--}o URL : "url"
 

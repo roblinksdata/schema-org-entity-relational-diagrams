@@ -11,19 +11,31 @@ UserCheckins {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 UserCheckins ||--}o Thing : "about"
@@ -37,22 +49,10 @@ UserCheckins ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 UserCheckins ||--}o Schedule : "eventSchedule"
 UserCheckins ||--}o EventStatusType : "eventStatus"
 UserCheckins ||--}o Grant : "funding"
-UserCheckins ||--}o Boolean : "isAccessibleForFree"
-UserCheckins ||--}o Integer : "maximumAttendeeCapacity"
-UserCheckins ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-UserCheckins ||--}o Integer : "maximumVirtualAttendeeCapacity"
-UserCheckins ||--}o Date : "previousStartDate"
 UserCheckins ||--}o CreativeWork : "recordedIn"
-UserCheckins ||--}o Integer : "remainingAttendeeCapacity"
 UserCheckins ||--}o Review : "review"
 UserCheckins ||--}o Event : "subEvent"
 UserCheckins ||--}o Event : "subEvents"
 UserCheckins ||--}o Event : "superEvent"
-UserCheckins ||--}o Text : "typicalAgeRange"
-UserCheckins ||--}o Text : "alternateName"
-UserCheckins ||--}o Text : "disambiguatingDescription"
-UserCheckins ||--}o Text : "name"
-UserCheckins ||--}o URL : "sameAs"
 UserCheckins ||--}o Action : "potentialAction"
-UserCheckins ||--}o URL : "url"
 

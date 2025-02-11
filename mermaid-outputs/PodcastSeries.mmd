@@ -2,6 +2,7 @@ erDiagram
 PodcastSeries {
     stringList actor  
     stringList webFeed  
+    TextList issn  
     stringList endDate  
     stringList startDate  
     stringList acquireLicensePage  
@@ -17,25 +18,46 @@ PodcastSeries {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,24 +69,32 @@ PodcastSeries {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PodcastSeries ||--}o Text : "issn"
 PodcastSeries ||--}o Thing : "about"
 PodcastSeries ||--}o Place : "contentLocation"
 PodcastSeries ||--}o CreativeWork : "hasPart"
@@ -72,43 +102,22 @@ PodcastSeries ||--}o Claim : "interpretedAsClaim"
 PodcastSeries ||--}o Thing : "mainEntity"
 PodcastSeries ||--}o Place : "spatialCoverage"
 PodcastSeries ||--}o CreativeWork : "workExample"
-PodcastSeries ||--}o Text : "abstract"
-PodcastSeries ||--}o Text : "accessMode"
 PodcastSeries ||--}o ItemList : "accessModeSufficient"
-PodcastSeries ||--}o Text : "accessibilityAPI"
-PodcastSeries ||--}o Text : "accessibilityControl"
-PodcastSeries ||--}o Text : "accessibilityFeature"
-PodcastSeries ||--}o Text : "accessibilityHazard"
-PodcastSeries ||--}o Text : "accessibilitySummary"
 PodcastSeries ||--}o Person : "accountablePerson"
 PodcastSeries ||--}o AggregateRating : "aggregateRating"
-PodcastSeries ||--}o Text : "alternativeHeadline"
 PodcastSeries ||--}o MediaObject : "associatedMedia"
 PodcastSeries ||--}o Audience : "audience"
-PodcastSeries ||--}o Text : "award"
-PodcastSeries ||--}o Text : "awards"
 PodcastSeries ||--}o Person : "character"
 PodcastSeries ||--}o Comment : "comment"
-PodcastSeries ||--}o Integer : "commentCount"
-PodcastSeries ||--}o Text : "conditionsOfAccess"
-PodcastSeries ||--}o DateTime : "contentReferenceTime"
-PodcastSeries ||--}o Text : "copyrightNotice"
-PodcastSeries ||--}o Number : "copyrightYear"
 PodcastSeries ||--}o Country : "countryOfOrigin"
-PodcastSeries ||--}o Text : "creditText"
 PodcastSeries ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-PodcastSeries ||--}o URL : "discussionUrl"
 PodcastSeries ||--}o Person : "editor"
 PodcastSeries ||--}o AlignmentObject : "educationalAlignment"
 PodcastSeries ||--}o MediaObject : "encoding"
 PodcastSeries ||--}o MediaObject : "encodings"
 PodcastSeries ||--}o CreativeWork : "exampleOfWork"
 PodcastSeries ||--}o Grant : "funding"
-PodcastSeries ||--}o Text : "headline"
 PodcastSeries ||--}o InteractionCounter : "interactionStatistic"
-PodcastSeries ||--}o Text : "interactivityType"
-PodcastSeries ||--}o Boolean : "isAccessibleForFree"
-PodcastSeries ||--}o Boolean : "isFamilyFriendly"
 PodcastSeries ||--}o Place : "locationCreated"
 PodcastSeries ||--}o Thing : "mentions"
 PodcastSeries ||--}o PublicationEvent : "publication"
@@ -117,20 +126,11 @@ PodcastSeries ||--}o Event : "recordedAt"
 PodcastSeries ||--}o PublicationEvent : "releasedEvent"
 PodcastSeries ||--}o Review : "review"
 PodcastSeries ||--}o Review : "reviews"
-PodcastSeries ||--}o Date : "sdDatePublished"
 PodcastSeries ||--}o Organization : "sourceOrganization"
 PodcastSeries ||--}o Place : "spatial"
-PodcastSeries ||--}o Text : "text"
 PodcastSeries ||--}o ImageObject : "thumbnail"
-PodcastSeries ||--}o URL : "thumbnailUrl"
 PodcastSeries ||--}o Duration : "timeRequired"
 PodcastSeries ||--}o CreativeWork : "translationOfWork"
-PodcastSeries ||--}o Text : "typicalAgeRange"
 PodcastSeries ||--}o CreativeWork : "workTranslation"
-PodcastSeries ||--}o Text : "alternateName"
-PodcastSeries ||--}o Text : "disambiguatingDescription"
-PodcastSeries ||--}o Text : "name"
-PodcastSeries ||--}o URL : "sameAs"
 PodcastSeries ||--}o Action : "potentialAction"
-PodcastSeries ||--}o URL : "url"
 

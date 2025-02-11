@@ -1,8 +1,16 @@
 erDiagram
 MedicalBusiness {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ MedicalBusiness {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalBusiness ||--}o Organization : "branchOf"
-MedicalBusiness ||--}o Text : "currenciesAccepted"
-MedicalBusiness ||--}o Text : "openingHours"
-MedicalBusiness ||--}o Text : "paymentAccepted"
-MedicalBusiness ||--}o Text : "priceRange"
-MedicalBusiness ||--}o Text : "globalLocationNumber"
-MedicalBusiness ||--}o URL : "hasGS1DigitalLink"
 MedicalBusiness ||--}o PropertyValue : "additionalProperty"
 MedicalBusiness ||--}o AggregateRating : "aggregateRating"
 MedicalBusiness ||--}o LocationFeatureSpecification : "amenityFeature"
-MedicalBusiness ||--}o Text : "branchCode"
 MedicalBusiness ||--}o Place : "containedIn"
 MedicalBusiness ||--}o Place : "containedInPlace"
 MedicalBusiness ||--}o Place : "containsPlace"
 MedicalBusiness ||--}o Event : "event"
 MedicalBusiness ||--}o Event : "events"
-MedicalBusiness ||--}o Text : "faxNumber"
 MedicalBusiness ||--}o Certification : "hasCertification"
-MedicalBusiness ||--}o Boolean : "hasDriveThroughService"
-MedicalBusiness ||--}o Boolean : "isAccessibleForFree"
-MedicalBusiness ||--}o Text : "isicV4"
-MedicalBusiness ||--}o URL : "map"
-MedicalBusiness ||--}o URL : "maps"
-MedicalBusiness ||--}o Integer : "maximumAttendeeCapacity"
 MedicalBusiness ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-MedicalBusiness ||--}o Boolean : "publicAccess"
 MedicalBusiness ||--}o Review : "review"
 MedicalBusiness ||--}o Review : "reviews"
-MedicalBusiness ||--}o Text : "slogan"
-MedicalBusiness ||--}o Boolean : "smokingAllowed"
 MedicalBusiness ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-MedicalBusiness ||--}o Text : "telephone"
-MedicalBusiness ||--}o URL : "tourBookingPage"
-MedicalBusiness ||--}o Text : "duns"
-MedicalBusiness ||--}o Text : "leiCode"
-MedicalBusiness ||--}o Text : "taxID"
 MedicalBusiness ||--}o InteractionCounter : "agentInteractionStatistic"
 MedicalBusiness ||--}o Person : "alumni"
-MedicalBusiness ||--}o Text : "award"
-MedicalBusiness ||--}o Text : "awards"
 MedicalBusiness ||--}o ContactPoint : "contactPoint"
 MedicalBusiness ||--}o ContactPoint : "contactPoints"
 MedicalBusiness ||--}o Organization : "department"
-MedicalBusiness ||--}o Date : "dissolutionDate"
-MedicalBusiness ||--}o Text : "email"
 MedicalBusiness ||--}o Person : "employee"
 MedicalBusiness ||--}o Person : "employees"
 MedicalBusiness ||--}o Person : "founders"
-MedicalBusiness ||--}o Date : "foundingDate"
 MedicalBusiness ||--}o Place : "foundingLocation"
 MedicalBusiness ||--}o Grant : "funding"
 MedicalBusiness ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ MedicalBusiness ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 MedicalBusiness ||--}o OfferCatalog : "hasOfferCatalog"
 MedicalBusiness ||--}o Place : "hasPOS"
 MedicalBusiness ||--}o InteractionCounter : "interactionStatistic"
-MedicalBusiness ||--}o Text : "iso6523Code"
-MedicalBusiness ||--}o Text : "legalName"
 MedicalBusiness ||--}o Offer : "makesOffer"
-MedicalBusiness ||--}o Text : "naics"
 MedicalBusiness ||--}o NonprofitType : "nonprofitStatus"
 MedicalBusiness ||--}o QuantitativeValue : "numberOfEmployees"
 MedicalBusiness ||--}o Organization : "parentOrganization"
 MedicalBusiness ||--}o Demand : "seeks"
 MedicalBusiness ||--}o Organization : "subOrganization"
-MedicalBusiness ||--}o Text : "vatID"
-MedicalBusiness ||--}o Text : "alternateName"
-MedicalBusiness ||--}o Text : "disambiguatingDescription"
-MedicalBusiness ||--}o Text : "name"
-MedicalBusiness ||--}o URL : "sameAs"
 MedicalBusiness ||--}o Action : "potentialAction"
-MedicalBusiness ||--}o URL : "url"
 

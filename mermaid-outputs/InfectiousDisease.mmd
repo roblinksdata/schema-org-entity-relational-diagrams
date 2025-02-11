@@ -1,26 +1,31 @@
 erDiagram
 InfectiousDisease {
+    TextList infectiousAgent  
+    TextList transmissionMethod  
     stringList associatedAnatomy  
+    TextList epidemiology  
+    TextList expectedPrognosis  
+    TextList naturalProgression  
+    TextList pathophysiology  
+    TextList possibleComplication  
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-InfectiousDisease ||--}o Text : "infectiousAgent"
 InfectiousDisease ||--}o InfectiousAgentClass : "infectiousAgentClass"
-InfectiousDisease ||--}o Text : "transmissionMethod"
 InfectiousDisease ||--}o DDxElement : "differentialDiagnosis"
 InfectiousDisease ||--}o Drug : "drug"
-InfectiousDisease ||--}o Text : "epidemiology"
-InfectiousDisease ||--}o Text : "expectedPrognosis"
-InfectiousDisease ||--}o Text : "naturalProgression"
-InfectiousDisease ||--}o Text : "pathophysiology"
-InfectiousDisease ||--}o Text : "possibleComplication"
 InfectiousDisease ||--}o MedicalTherapy : "possibleTreatment"
 InfectiousDisease ||--}o MedicalTherapy : "primaryPrevention"
 InfectiousDisease ||--}o MedicalRiskFactor : "riskFactor"
@@ -35,10 +40,5 @@ InfectiousDisease ||--}o MedicineSystem : "medicineSystem"
 InfectiousDisease ||--}o Organization : "recognizingAuthority"
 InfectiousDisease ||--}o MedicalSpecialty : "relevantSpecialty"
 InfectiousDisease ||--}o MedicalStudy : "study"
-InfectiousDisease ||--}o Text : "alternateName"
-InfectiousDisease ||--}o Text : "disambiguatingDescription"
-InfectiousDisease ||--}o Text : "name"
-InfectiousDisease ||--}o URL : "sameAs"
 InfectiousDisease ||--}o Action : "potentialAction"
-InfectiousDisease ||--}o URL : "url"
 

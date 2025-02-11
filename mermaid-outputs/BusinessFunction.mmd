@@ -2,17 +2,17 @@ erDiagram
 BusinessFunction {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BusinessFunction ||--}o Text : "alternateName"
-BusinessFunction ||--}o Text : "disambiguatingDescription"
-BusinessFunction ||--}o Text : "name"
-BusinessFunction ||--}o URL : "sameAs"
 BusinessFunction ||--}o Action : "potentialAction"
-BusinessFunction ||--}o URL : "url"
 

@@ -1,8 +1,16 @@
 erDiagram
 AutoRental {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ AutoRental {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AutoRental ||--}o Organization : "branchOf"
-AutoRental ||--}o Text : "currenciesAccepted"
-AutoRental ||--}o Text : "openingHours"
-AutoRental ||--}o Text : "paymentAccepted"
-AutoRental ||--}o Text : "priceRange"
-AutoRental ||--}o Text : "globalLocationNumber"
-AutoRental ||--}o URL : "hasGS1DigitalLink"
 AutoRental ||--}o PropertyValue : "additionalProperty"
 AutoRental ||--}o AggregateRating : "aggregateRating"
 AutoRental ||--}o LocationFeatureSpecification : "amenityFeature"
-AutoRental ||--}o Text : "branchCode"
 AutoRental ||--}o Place : "containedIn"
 AutoRental ||--}o Place : "containedInPlace"
 AutoRental ||--}o Place : "containsPlace"
 AutoRental ||--}o Event : "event"
 AutoRental ||--}o Event : "events"
-AutoRental ||--}o Text : "faxNumber"
 AutoRental ||--}o Certification : "hasCertification"
-AutoRental ||--}o Boolean : "hasDriveThroughService"
-AutoRental ||--}o Boolean : "isAccessibleForFree"
-AutoRental ||--}o Text : "isicV4"
-AutoRental ||--}o URL : "map"
-AutoRental ||--}o URL : "maps"
-AutoRental ||--}o Integer : "maximumAttendeeCapacity"
 AutoRental ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-AutoRental ||--}o Boolean : "publicAccess"
 AutoRental ||--}o Review : "review"
 AutoRental ||--}o Review : "reviews"
-AutoRental ||--}o Text : "slogan"
-AutoRental ||--}o Boolean : "smokingAllowed"
 AutoRental ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-AutoRental ||--}o Text : "telephone"
-AutoRental ||--}o URL : "tourBookingPage"
-AutoRental ||--}o Text : "duns"
-AutoRental ||--}o Text : "leiCode"
-AutoRental ||--}o Text : "taxID"
 AutoRental ||--}o InteractionCounter : "agentInteractionStatistic"
 AutoRental ||--}o Person : "alumni"
-AutoRental ||--}o Text : "award"
-AutoRental ||--}o Text : "awards"
 AutoRental ||--}o ContactPoint : "contactPoint"
 AutoRental ||--}o ContactPoint : "contactPoints"
 AutoRental ||--}o Organization : "department"
-AutoRental ||--}o Date : "dissolutionDate"
-AutoRental ||--}o Text : "email"
 AutoRental ||--}o Person : "employee"
 AutoRental ||--}o Person : "employees"
 AutoRental ||--}o Person : "founders"
-AutoRental ||--}o Date : "foundingDate"
 AutoRental ||--}o Place : "foundingLocation"
 AutoRental ||--}o Grant : "funding"
 AutoRental ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ AutoRental ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 AutoRental ||--}o OfferCatalog : "hasOfferCatalog"
 AutoRental ||--}o Place : "hasPOS"
 AutoRental ||--}o InteractionCounter : "interactionStatistic"
-AutoRental ||--}o Text : "iso6523Code"
-AutoRental ||--}o Text : "legalName"
 AutoRental ||--}o Offer : "makesOffer"
-AutoRental ||--}o Text : "naics"
 AutoRental ||--}o NonprofitType : "nonprofitStatus"
 AutoRental ||--}o QuantitativeValue : "numberOfEmployees"
 AutoRental ||--}o Organization : "parentOrganization"
 AutoRental ||--}o Demand : "seeks"
 AutoRental ||--}o Organization : "subOrganization"
-AutoRental ||--}o Text : "vatID"
-AutoRental ||--}o Text : "alternateName"
-AutoRental ||--}o Text : "disambiguatingDescription"
-AutoRental ||--}o Text : "name"
-AutoRental ||--}o URL : "sameAs"
 AutoRental ||--}o Action : "potentialAction"
-AutoRental ||--}o URL : "url"
 

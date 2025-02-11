@@ -8,11 +8,16 @@ DrawAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DrawAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ DrawAction ||--}o Thing : "result"
 DrawAction ||--}o HowTo : "actionProcess"
 DrawAction ||--}o ActionStatusType : "actionStatus"
 DrawAction ||--}o Thing : "error"
-DrawAction ||--}o Text : "alternateName"
-DrawAction ||--}o Text : "disambiguatingDescription"
-DrawAction ||--}o Text : "name"
-DrawAction ||--}o URL : "sameAs"
 DrawAction ||--}o Action : "potentialAction"
-DrawAction ||--}o URL : "url"
 

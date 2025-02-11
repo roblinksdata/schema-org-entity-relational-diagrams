@@ -3,19 +3,19 @@ MenuItem {
     stringList menuAddOn  
     stringList offers  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MenuItem ||--}o NutritionInformation : "nutrition"
 MenuItem ||--}o RestrictedDiet : "suitableForDiet"
-MenuItem ||--}o Text : "alternateName"
-MenuItem ||--}o Text : "disambiguatingDescription"
-MenuItem ||--}o Text : "name"
-MenuItem ||--}o URL : "sameAs"
 MenuItem ||--}o Action : "potentialAction"
-MenuItem ||--}o URL : "url"
 

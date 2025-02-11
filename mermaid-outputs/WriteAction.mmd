@@ -9,11 +9,16 @@ WriteAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 WriteAction ||--}o Language : "language"
@@ -23,10 +28,5 @@ WriteAction ||--}o Thing : "result"
 WriteAction ||--}o HowTo : "actionProcess"
 WriteAction ||--}o ActionStatusType : "actionStatus"
 WriteAction ||--}o Thing : "error"
-WriteAction ||--}o Text : "alternateName"
-WriteAction ||--}o Text : "disambiguatingDescription"
-WriteAction ||--}o Text : "name"
-WriteAction ||--}o URL : "sameAs"
 WriteAction ||--}o Action : "potentialAction"
-WriteAction ||--}o URL : "url"
 

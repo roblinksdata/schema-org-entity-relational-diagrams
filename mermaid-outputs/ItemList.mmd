@@ -2,19 +2,19 @@ erDiagram
 ItemList {
     stringList itemListElement  
     stringList itemListOrder  
+    IntegerList numberOfItems  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ItemList ||--}o Integer : "numberOfItems"
-ItemList ||--}o Text : "alternateName"
-ItemList ||--}o Text : "disambiguatingDescription"
-ItemList ||--}o Text : "name"
-ItemList ||--}o URL : "sameAs"
 ItemList ||--}o Action : "potentialAction"
-ItemList ||--}o URL : "url"
 

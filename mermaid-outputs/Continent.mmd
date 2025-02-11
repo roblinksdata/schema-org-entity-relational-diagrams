@@ -1,8 +1,12 @@
 erDiagram
 Continent {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,51 +18,47 @@ Continent {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Continent ||--}o Text : "globalLocationNumber"
-Continent ||--}o URL : "hasGS1DigitalLink"
 Continent ||--}o PropertyValue : "additionalProperty"
 Continent ||--}o AggregateRating : "aggregateRating"
 Continent ||--}o LocationFeatureSpecification : "amenityFeature"
-Continent ||--}o Text : "branchCode"
 Continent ||--}o Place : "containedIn"
 Continent ||--}o Place : "containedInPlace"
 Continent ||--}o Place : "containsPlace"
 Continent ||--}o Event : "event"
 Continent ||--}o Event : "events"
-Continent ||--}o Text : "faxNumber"
 Continent ||--}o Certification : "hasCertification"
-Continent ||--}o Boolean : "hasDriveThroughService"
-Continent ||--}o Boolean : "isAccessibleForFree"
-Continent ||--}o Text : "isicV4"
-Continent ||--}o URL : "map"
-Continent ||--}o URL : "maps"
-Continent ||--}o Integer : "maximumAttendeeCapacity"
 Continent ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Continent ||--}o Boolean : "publicAccess"
 Continent ||--}o Review : "review"
 Continent ||--}o Review : "reviews"
-Continent ||--}o Text : "slogan"
-Continent ||--}o Boolean : "smokingAllowed"
 Continent ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Continent ||--}o Text : "telephone"
-Continent ||--}o URL : "tourBookingPage"
-Continent ||--}o Text : "alternateName"
-Continent ||--}o Text : "disambiguatingDescription"
-Continent ||--}o Text : "name"
-Continent ||--}o URL : "sameAs"
 Continent ||--}o Action : "potentialAction"
-Continent ||--}o URL : "url"
 

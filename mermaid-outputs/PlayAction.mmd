@@ -8,11 +8,16 @@ PlayAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 PlayAction ||--}o Audience : "audience"
@@ -23,10 +28,5 @@ PlayAction ||--}o Thing : "result"
 PlayAction ||--}o HowTo : "actionProcess"
 PlayAction ||--}o ActionStatusType : "actionStatus"
 PlayAction ||--}o Thing : "error"
-PlayAction ||--}o Text : "alternateName"
-PlayAction ||--}o Text : "disambiguatingDescription"
-PlayAction ||--}o Text : "name"
-PlayAction ||--}o URL : "sameAs"
 PlayAction ||--}o Action : "potentialAction"
-PlayAction ||--}o URL : "url"
 

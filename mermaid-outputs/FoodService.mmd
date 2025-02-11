@@ -3,40 +3,40 @@ FoodService {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 FoodService ||--}o AggregateRating : "aggregateRating"
 FoodService ||--}o Audience : "audience"
 FoodService ||--}o ServiceChannel : "availableChannel"
-FoodService ||--}o Text : "award"
 FoodService ||--}o Certification : "hasCertification"
 FoodService ||--}o OfferCatalog : "hasOfferCatalog"
 FoodService ||--}o OpeningHoursSpecification : "hoursAvailable"
 FoodService ||--}o Thing : "produces"
-FoodService ||--}o Text : "providerMobility"
 FoodService ||--}o Review : "review"
 FoodService ||--}o Audience : "serviceAudience"
 FoodService ||--}o Thing : "serviceOutput"
-FoodService ||--}o Text : "slogan"
-FoodService ||--}o Text : "alternateName"
-FoodService ||--}o Text : "disambiguatingDescription"
-FoodService ||--}o Text : "name"
-FoodService ||--}o URL : "sameAs"
 FoodService ||--}o Action : "potentialAction"
-FoodService ||--}o URL : "url"
 

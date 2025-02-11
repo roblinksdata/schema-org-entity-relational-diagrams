@@ -1,8 +1,13 @@
 erDiagram
 PublicToilet {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ PublicToilet {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PublicToilet ||--}o Text : "openingHours"
-PublicToilet ||--}o Text : "globalLocationNumber"
-PublicToilet ||--}o URL : "hasGS1DigitalLink"
 PublicToilet ||--}o PropertyValue : "additionalProperty"
 PublicToilet ||--}o AggregateRating : "aggregateRating"
 PublicToilet ||--}o LocationFeatureSpecification : "amenityFeature"
-PublicToilet ||--}o Text : "branchCode"
 PublicToilet ||--}o Place : "containedIn"
 PublicToilet ||--}o Place : "containedInPlace"
 PublicToilet ||--}o Place : "containsPlace"
 PublicToilet ||--}o Event : "event"
 PublicToilet ||--}o Event : "events"
-PublicToilet ||--}o Text : "faxNumber"
 PublicToilet ||--}o Certification : "hasCertification"
-PublicToilet ||--}o Boolean : "hasDriveThroughService"
-PublicToilet ||--}o Boolean : "isAccessibleForFree"
-PublicToilet ||--}o Text : "isicV4"
-PublicToilet ||--}o URL : "map"
-PublicToilet ||--}o URL : "maps"
-PublicToilet ||--}o Integer : "maximumAttendeeCapacity"
 PublicToilet ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-PublicToilet ||--}o Boolean : "publicAccess"
 PublicToilet ||--}o Review : "review"
 PublicToilet ||--}o Review : "reviews"
-PublicToilet ||--}o Text : "slogan"
-PublicToilet ||--}o Boolean : "smokingAllowed"
 PublicToilet ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-PublicToilet ||--}o Text : "telephone"
-PublicToilet ||--}o URL : "tourBookingPage"
-PublicToilet ||--}o Text : "alternateName"
-PublicToilet ||--}o Text : "disambiguatingDescription"
-PublicToilet ||--}o Text : "name"
-PublicToilet ||--}o URL : "sameAs"
 PublicToilet ||--}o Action : "potentialAction"
-PublicToilet ||--}o URL : "url"
 

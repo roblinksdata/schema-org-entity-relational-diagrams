@@ -1,23 +1,23 @@
 erDiagram
 QuantitativeValueDistribution {
+    NumberList median  
+    NumberList percentile10  
+    NumberList percentile25  
+    NumberList percentile75  
+    NumberList percentile90  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 QuantitativeValueDistribution ||--}o Duration : "duration"
-QuantitativeValueDistribution ||--}o Number : "median"
-QuantitativeValueDistribution ||--}o Number : "percentile10"
-QuantitativeValueDistribution ||--}o Number : "percentile25"
-QuantitativeValueDistribution ||--}o Number : "percentile75"
-QuantitativeValueDistribution ||--}o Number : "percentile90"
-QuantitativeValueDistribution ||--}o Text : "alternateName"
-QuantitativeValueDistribution ||--}o Text : "disambiguatingDescription"
-QuantitativeValueDistribution ||--}o Text : "name"
-QuantitativeValueDistribution ||--}o URL : "sameAs"
 QuantitativeValueDistribution ||--}o Action : "potentialAction"
-QuantitativeValueDistribution ||--}o URL : "url"
 

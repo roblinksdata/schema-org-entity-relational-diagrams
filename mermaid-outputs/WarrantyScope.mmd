@@ -2,17 +2,17 @@ erDiagram
 WarrantyScope {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-WarrantyScope ||--}o Text : "alternateName"
-WarrantyScope ||--}o Text : "disambiguatingDescription"
-WarrantyScope ||--}o Text : "name"
-WarrantyScope ||--}o URL : "sameAs"
 WarrantyScope ||--}o Action : "potentialAction"
-WarrantyScope ||--}o URL : "url"
 

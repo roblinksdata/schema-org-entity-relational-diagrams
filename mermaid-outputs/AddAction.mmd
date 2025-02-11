@@ -8,11 +8,16 @@ AddAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AddAction ||--}o Thing : "collection"
@@ -23,10 +28,5 @@ AddAction ||--}o Thing : "result"
 AddAction ||--}o HowTo : "actionProcess"
 AddAction ||--}o ActionStatusType : "actionStatus"
 AddAction ||--}o Thing : "error"
-AddAction ||--}o Text : "alternateName"
-AddAction ||--}o Text : "disambiguatingDescription"
-AddAction ||--}o Text : "name"
-AddAction ||--}o URL : "sameAs"
 AddAction ||--}o Action : "potentialAction"
-AddAction ||--}o URL : "url"
 

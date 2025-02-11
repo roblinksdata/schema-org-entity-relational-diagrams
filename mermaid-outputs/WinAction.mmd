@@ -8,11 +8,16 @@ WinAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 WinAction ||--}o Person : "loser"
@@ -22,10 +27,5 @@ WinAction ||--}o Thing : "result"
 WinAction ||--}o HowTo : "actionProcess"
 WinAction ||--}o ActionStatusType : "actionStatus"
 WinAction ||--}o Thing : "error"
-WinAction ||--}o Text : "alternateName"
-WinAction ||--}o Text : "disambiguatingDescription"
-WinAction ||--}o Text : "name"
-WinAction ||--}o URL : "sameAs"
 WinAction ||--}o Action : "potentialAction"
-WinAction ||--}o URL : "url"
 

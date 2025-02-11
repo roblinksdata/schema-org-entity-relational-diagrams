@@ -4,30 +4,30 @@ FoodEstablishmentReservation {
     stringList partySize  
     stringList startTime  
     stringList bookingAgent  
+    DateTimeList bookingTime  
     stringList broker  
+    DateTimeList modifiedTime  
+    TextList priceCurrency  
     stringList provider  
+    TextList reservationId  
     stringList totalPrice  
     stringList underName  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-FoodEstablishmentReservation ||--}o DateTime : "bookingTime"
-FoodEstablishmentReservation ||--}o DateTime : "modifiedTime"
-FoodEstablishmentReservation ||--}o Text : "priceCurrency"
 FoodEstablishmentReservation ||--}o ProgramMembership : "programMembershipUsed"
 FoodEstablishmentReservation ||--}o Thing : "reservationFor"
-FoodEstablishmentReservation ||--}o Text : "reservationId"
 FoodEstablishmentReservation ||--}o ReservationStatusType : "reservationStatus"
 FoodEstablishmentReservation ||--}o Ticket : "reservedTicket"
-FoodEstablishmentReservation ||--}o Text : "alternateName"
-FoodEstablishmentReservation ||--}o Text : "disambiguatingDescription"
-FoodEstablishmentReservation ||--}o Text : "name"
-FoodEstablishmentReservation ||--}o URL : "sameAs"
 FoodEstablishmentReservation ||--}o Action : "potentialAction"
-FoodEstablishmentReservation ||--}o URL : "url"
 

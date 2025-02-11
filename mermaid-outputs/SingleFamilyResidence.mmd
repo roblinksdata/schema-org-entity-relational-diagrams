@@ -1,13 +1,25 @@
 erDiagram
 SingleFamilyResidence {
     stringList numberOfRooms  
+    TextList accommodationCategory  
     stringList bed  
+    TextList floorLevel  
     stringList leaseLength  
+    IntegerList numberOfBathroomsTotal  
     stringList numberOfBedrooms  
+    NumberList numberOfFullBathrooms  
+    NumberList numberOfPartialBathrooms  
+    TextList permittedUsage  
     stringList petsAllowed  
+    URLList tourBookingPage  
+    NumberList yearBuilt  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,61 +31,49 @@ SingleFamilyResidence {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SingleFamilyResidence ||--}o QuantitativeValue : "occupancy"
-SingleFamilyResidence ||--}o Text : "accommodationCategory"
 SingleFamilyResidence ||--}o FloorPlan : "accommodationFloorPlan"
 SingleFamilyResidence ||--}o LocationFeatureSpecification : "amenityFeature"
-SingleFamilyResidence ||--}o Text : "floorLevel"
 SingleFamilyResidence ||--}o QuantitativeValue : "floorSize"
-SingleFamilyResidence ||--}o Integer : "numberOfBathroomsTotal"
-SingleFamilyResidence ||--}o Number : "numberOfFullBathrooms"
-SingleFamilyResidence ||--}o Number : "numberOfPartialBathrooms"
-SingleFamilyResidence ||--}o Text : "permittedUsage"
-SingleFamilyResidence ||--}o URL : "tourBookingPage"
-SingleFamilyResidence ||--}o Number : "yearBuilt"
-SingleFamilyResidence ||--}o Text : "globalLocationNumber"
-SingleFamilyResidence ||--}o URL : "hasGS1DigitalLink"
 SingleFamilyResidence ||--}o PropertyValue : "additionalProperty"
 SingleFamilyResidence ||--}o AggregateRating : "aggregateRating"
-SingleFamilyResidence ||--}o Text : "branchCode"
 SingleFamilyResidence ||--}o Place : "containedIn"
 SingleFamilyResidence ||--}o Place : "containedInPlace"
 SingleFamilyResidence ||--}o Place : "containsPlace"
 SingleFamilyResidence ||--}o Event : "event"
 SingleFamilyResidence ||--}o Event : "events"
-SingleFamilyResidence ||--}o Text : "faxNumber"
 SingleFamilyResidence ||--}o Certification : "hasCertification"
-SingleFamilyResidence ||--}o Boolean : "hasDriveThroughService"
-SingleFamilyResidence ||--}o Boolean : "isAccessibleForFree"
-SingleFamilyResidence ||--}o Text : "isicV4"
-SingleFamilyResidence ||--}o URL : "map"
-SingleFamilyResidence ||--}o URL : "maps"
-SingleFamilyResidence ||--}o Integer : "maximumAttendeeCapacity"
 SingleFamilyResidence ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-SingleFamilyResidence ||--}o Boolean : "publicAccess"
 SingleFamilyResidence ||--}o Review : "review"
 SingleFamilyResidence ||--}o Review : "reviews"
-SingleFamilyResidence ||--}o Text : "slogan"
-SingleFamilyResidence ||--}o Boolean : "smokingAllowed"
 SingleFamilyResidence ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-SingleFamilyResidence ||--}o Text : "telephone"
-SingleFamilyResidence ||--}o Text : "alternateName"
-SingleFamilyResidence ||--}o Text : "disambiguatingDescription"
-SingleFamilyResidence ||--}o Text : "name"
-SingleFamilyResidence ||--}o URL : "sameAs"
 SingleFamilyResidence ||--}o Action : "potentialAction"
-SingleFamilyResidence ||--}o URL : "url"
 

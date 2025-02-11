@@ -1,8 +1,13 @@
 erDiagram
 Bridge {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ Bridge {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Bridge ||--}o Text : "openingHours"
-Bridge ||--}o Text : "globalLocationNumber"
-Bridge ||--}o URL : "hasGS1DigitalLink"
 Bridge ||--}o PropertyValue : "additionalProperty"
 Bridge ||--}o AggregateRating : "aggregateRating"
 Bridge ||--}o LocationFeatureSpecification : "amenityFeature"
-Bridge ||--}o Text : "branchCode"
 Bridge ||--}o Place : "containedIn"
 Bridge ||--}o Place : "containedInPlace"
 Bridge ||--}o Place : "containsPlace"
 Bridge ||--}o Event : "event"
 Bridge ||--}o Event : "events"
-Bridge ||--}o Text : "faxNumber"
 Bridge ||--}o Certification : "hasCertification"
-Bridge ||--}o Boolean : "hasDriveThroughService"
-Bridge ||--}o Boolean : "isAccessibleForFree"
-Bridge ||--}o Text : "isicV4"
-Bridge ||--}o URL : "map"
-Bridge ||--}o URL : "maps"
-Bridge ||--}o Integer : "maximumAttendeeCapacity"
 Bridge ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Bridge ||--}o Boolean : "publicAccess"
 Bridge ||--}o Review : "review"
 Bridge ||--}o Review : "reviews"
-Bridge ||--}o Text : "slogan"
-Bridge ||--}o Boolean : "smokingAllowed"
 Bridge ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Bridge ||--}o Text : "telephone"
-Bridge ||--}o URL : "tourBookingPage"
-Bridge ||--}o Text : "alternateName"
-Bridge ||--}o Text : "disambiguatingDescription"
-Bridge ||--}o Text : "name"
-Bridge ||--}o URL : "sameAs"
 Bridge ||--}o Action : "potentialAction"
-Bridge ||--}o URL : "url"
 

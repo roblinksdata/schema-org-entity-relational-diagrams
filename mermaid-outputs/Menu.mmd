@@ -13,25 +13,46 @@ Menu {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Menu {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Menu ||--}o MenuItem : "hasMenuItem"
@@ -69,43 +99,22 @@ Menu ||--}o Claim : "interpretedAsClaim"
 Menu ||--}o Thing : "mainEntity"
 Menu ||--}o Place : "spatialCoverage"
 Menu ||--}o CreativeWork : "workExample"
-Menu ||--}o Text : "abstract"
-Menu ||--}o Text : "accessMode"
 Menu ||--}o ItemList : "accessModeSufficient"
-Menu ||--}o Text : "accessibilityAPI"
-Menu ||--}o Text : "accessibilityControl"
-Menu ||--}o Text : "accessibilityFeature"
-Menu ||--}o Text : "accessibilityHazard"
-Menu ||--}o Text : "accessibilitySummary"
 Menu ||--}o Person : "accountablePerson"
 Menu ||--}o AggregateRating : "aggregateRating"
-Menu ||--}o Text : "alternativeHeadline"
 Menu ||--}o MediaObject : "associatedMedia"
 Menu ||--}o Audience : "audience"
-Menu ||--}o Text : "award"
-Menu ||--}o Text : "awards"
 Menu ||--}o Person : "character"
 Menu ||--}o Comment : "comment"
-Menu ||--}o Integer : "commentCount"
-Menu ||--}o Text : "conditionsOfAccess"
-Menu ||--}o DateTime : "contentReferenceTime"
-Menu ||--}o Text : "copyrightNotice"
-Menu ||--}o Number : "copyrightYear"
 Menu ||--}o Country : "countryOfOrigin"
-Menu ||--}o Text : "creditText"
 Menu ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Menu ||--}o URL : "discussionUrl"
 Menu ||--}o Person : "editor"
 Menu ||--}o AlignmentObject : "educationalAlignment"
 Menu ||--}o MediaObject : "encoding"
 Menu ||--}o MediaObject : "encodings"
 Menu ||--}o CreativeWork : "exampleOfWork"
 Menu ||--}o Grant : "funding"
-Menu ||--}o Text : "headline"
 Menu ||--}o InteractionCounter : "interactionStatistic"
-Menu ||--}o Text : "interactivityType"
-Menu ||--}o Boolean : "isAccessibleForFree"
-Menu ||--}o Boolean : "isFamilyFriendly"
 Menu ||--}o Place : "locationCreated"
 Menu ||--}o Thing : "mentions"
 Menu ||--}o PublicationEvent : "publication"
@@ -114,20 +123,11 @@ Menu ||--}o Event : "recordedAt"
 Menu ||--}o PublicationEvent : "releasedEvent"
 Menu ||--}o Review : "review"
 Menu ||--}o Review : "reviews"
-Menu ||--}o Date : "sdDatePublished"
 Menu ||--}o Organization : "sourceOrganization"
 Menu ||--}o Place : "spatial"
-Menu ||--}o Text : "text"
 Menu ||--}o ImageObject : "thumbnail"
-Menu ||--}o URL : "thumbnailUrl"
 Menu ||--}o Duration : "timeRequired"
 Menu ||--}o CreativeWork : "translationOfWork"
-Menu ||--}o Text : "typicalAgeRange"
 Menu ||--}o CreativeWork : "workTranslation"
-Menu ||--}o Text : "alternateName"
-Menu ||--}o Text : "disambiguatingDescription"
-Menu ||--}o Text : "name"
-Menu ||--}o URL : "sameAs"
 Menu ||--}o Action : "potentialAction"
-Menu ||--}o URL : "url"
 

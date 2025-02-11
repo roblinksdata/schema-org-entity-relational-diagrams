@@ -1,8 +1,13 @@
 erDiagram
 CatholicChurch {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ CatholicChurch {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-CatholicChurch ||--}o Text : "openingHours"
-CatholicChurch ||--}o Text : "globalLocationNumber"
-CatholicChurch ||--}o URL : "hasGS1DigitalLink"
 CatholicChurch ||--}o PropertyValue : "additionalProperty"
 CatholicChurch ||--}o AggregateRating : "aggregateRating"
 CatholicChurch ||--}o LocationFeatureSpecification : "amenityFeature"
-CatholicChurch ||--}o Text : "branchCode"
 CatholicChurch ||--}o Place : "containedIn"
 CatholicChurch ||--}o Place : "containedInPlace"
 CatholicChurch ||--}o Place : "containsPlace"
 CatholicChurch ||--}o Event : "event"
 CatholicChurch ||--}o Event : "events"
-CatholicChurch ||--}o Text : "faxNumber"
 CatholicChurch ||--}o Certification : "hasCertification"
-CatholicChurch ||--}o Boolean : "hasDriveThroughService"
-CatholicChurch ||--}o Boolean : "isAccessibleForFree"
-CatholicChurch ||--}o Text : "isicV4"
-CatholicChurch ||--}o URL : "map"
-CatholicChurch ||--}o URL : "maps"
-CatholicChurch ||--}o Integer : "maximumAttendeeCapacity"
 CatholicChurch ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-CatholicChurch ||--}o Boolean : "publicAccess"
 CatholicChurch ||--}o Review : "review"
 CatholicChurch ||--}o Review : "reviews"
-CatholicChurch ||--}o Text : "slogan"
-CatholicChurch ||--}o Boolean : "smokingAllowed"
 CatholicChurch ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-CatholicChurch ||--}o Text : "telephone"
-CatholicChurch ||--}o URL : "tourBookingPage"
-CatholicChurch ||--}o Text : "alternateName"
-CatholicChurch ||--}o Text : "disambiguatingDescription"
-CatholicChurch ||--}o Text : "name"
-CatholicChurch ||--}o URL : "sameAs"
 CatholicChurch ||--}o Action : "potentialAction"
-CatholicChurch ||--}o URL : "url"
 

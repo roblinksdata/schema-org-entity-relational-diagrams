@@ -8,11 +8,16 @@ WatchAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 WatchAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
@@ -23,10 +28,5 @@ WatchAction ||--}o Thing : "result"
 WatchAction ||--}o HowTo : "actionProcess"
 WatchAction ||--}o ActionStatusType : "actionStatus"
 WatchAction ||--}o Thing : "error"
-WatchAction ||--}o Text : "alternateName"
-WatchAction ||--}o Text : "disambiguatingDescription"
-WatchAction ||--}o Text : "name"
-WatchAction ||--}o URL : "sameAs"
 WatchAction ||--}o Action : "potentialAction"
-WatchAction ||--}o URL : "url"
 

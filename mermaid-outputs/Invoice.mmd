@@ -1,33 +1,33 @@
 erDiagram
 Invoice {
+    TextList accountId  
     stringList category  
+    TextList confirmationNumber  
     stringList broker  
     stringList customer  
     stringList minimumPaymentDue  
+    DateTimeList paymentDue  
     stringList paymentDueDate  
     stringList paymentMethod  
+    TextList paymentMethodId  
     stringList paymentStatus  
     stringList provider  
+    DateList scheduledPaymentDate  
     stringList totalPaymentDue  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Invoice ||--}o Text : "accountId"
-Invoice ||--}o Text : "confirmationNumber"
 Invoice ||--}o Duration : "billingPeriod"
-Invoice ||--}o DateTime : "paymentDue"
-Invoice ||--}o Text : "paymentMethodId"
 Invoice ||--}o Order : "referencesOrder"
-Invoice ||--}o Date : "scheduledPaymentDate"
-Invoice ||--}o Text : "alternateName"
-Invoice ||--}o Text : "disambiguatingDescription"
-Invoice ||--}o Text : "name"
-Invoice ||--}o URL : "sameAs"
 Invoice ||--}o Action : "potentialAction"
-Invoice ||--}o URL : "url"
 

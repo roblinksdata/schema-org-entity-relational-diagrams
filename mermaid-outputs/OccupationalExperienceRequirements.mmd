@@ -1,18 +1,18 @@
 erDiagram
 OccupationalExperienceRequirements {
+    NumberList monthsOfExperience  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-OccupationalExperienceRequirements ||--}o Number : "monthsOfExperience"
-OccupationalExperienceRequirements ||--}o Text : "alternateName"
-OccupationalExperienceRequirements ||--}o Text : "disambiguatingDescription"
-OccupationalExperienceRequirements ||--}o Text : "name"
-OccupationalExperienceRequirements ||--}o URL : "sameAs"
 OccupationalExperienceRequirements ||--}o Action : "potentialAction"
-OccupationalExperienceRequirements ||--}o URL : "url"
 

@@ -2,11 +2,21 @@ erDiagram
 VideoObject {
     stringList actor  
     stringList caption  
+    TextList embeddedTextCaption  
     stringList musicBy  
+    TextList transcript  
+    TextList videoFrameSize  
+    TextList videoQuality  
+    TextList sha256  
+    TextList bitrate  
+    TextList contentSize  
+    URLList contentUrl  
+    URLList embedUrl  
     stringList encodingFormat  
     stringList endTime  
     stringList height  
     stringList ineligibleRegion  
+    TextList playerType  
     stringList requiresSubscription  
     stringList startTime  
     stringList uploadDate  
@@ -24,24 +34,45 @@ VideoObject {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -53,40 +84,39 @@ VideoObject {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-VideoObject ||--}o Text : "embeddedTextCaption"
 VideoObject ||--}o Person : "actors"
 VideoObject ||--}o Person : "director"
 VideoObject ||--}o Person : "directors"
-VideoObject ||--}o Text : "transcript"
-VideoObject ||--}o Text : "videoFrameSize"
-VideoObject ||--}o Text : "videoQuality"
 VideoObject ||--}o Duration : "duration"
 VideoObject ||--}o Claim : "interpretedAsClaim"
-VideoObject ||--}o Text : "sha256"
 VideoObject ||--}o NewsArticle : "associatedArticle"
-VideoObject ||--}o Text : "bitrate"
-VideoObject ||--}o Text : "contentSize"
-VideoObject ||--}o URL : "contentUrl"
-VideoObject ||--}o URL : "embedUrl"
 VideoObject ||--}o CreativeWork : "encodesCreativeWork"
-VideoObject ||--}o Text : "playerType"
 VideoObject ||--}o Organization : "productionCompany"
 VideoObject ||--}o Place : "regionsAllowed"
 VideoObject ||--}o Thing : "about"
@@ -95,43 +125,22 @@ VideoObject ||--}o CreativeWork : "hasPart"
 VideoObject ||--}o Thing : "mainEntity"
 VideoObject ||--}o Place : "spatialCoverage"
 VideoObject ||--}o CreativeWork : "workExample"
-VideoObject ||--}o Text : "abstract"
-VideoObject ||--}o Text : "accessMode"
 VideoObject ||--}o ItemList : "accessModeSufficient"
-VideoObject ||--}o Text : "accessibilityAPI"
-VideoObject ||--}o Text : "accessibilityControl"
-VideoObject ||--}o Text : "accessibilityFeature"
-VideoObject ||--}o Text : "accessibilityHazard"
-VideoObject ||--}o Text : "accessibilitySummary"
 VideoObject ||--}o Person : "accountablePerson"
 VideoObject ||--}o AggregateRating : "aggregateRating"
-VideoObject ||--}o Text : "alternativeHeadline"
 VideoObject ||--}o MediaObject : "associatedMedia"
 VideoObject ||--}o Audience : "audience"
-VideoObject ||--}o Text : "award"
-VideoObject ||--}o Text : "awards"
 VideoObject ||--}o Person : "character"
 VideoObject ||--}o Comment : "comment"
-VideoObject ||--}o Integer : "commentCount"
-VideoObject ||--}o Text : "conditionsOfAccess"
-VideoObject ||--}o DateTime : "contentReferenceTime"
-VideoObject ||--}o Text : "copyrightNotice"
-VideoObject ||--}o Number : "copyrightYear"
 VideoObject ||--}o Country : "countryOfOrigin"
-VideoObject ||--}o Text : "creditText"
 VideoObject ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-VideoObject ||--}o URL : "discussionUrl"
 VideoObject ||--}o Person : "editor"
 VideoObject ||--}o AlignmentObject : "educationalAlignment"
 VideoObject ||--}o MediaObject : "encoding"
 VideoObject ||--}o MediaObject : "encodings"
 VideoObject ||--}o CreativeWork : "exampleOfWork"
 VideoObject ||--}o Grant : "funding"
-VideoObject ||--}o Text : "headline"
 VideoObject ||--}o InteractionCounter : "interactionStatistic"
-VideoObject ||--}o Text : "interactivityType"
-VideoObject ||--}o Boolean : "isAccessibleForFree"
-VideoObject ||--}o Boolean : "isFamilyFriendly"
 VideoObject ||--}o Place : "locationCreated"
 VideoObject ||--}o Thing : "mentions"
 VideoObject ||--}o PublicationEvent : "publication"
@@ -140,20 +149,11 @@ VideoObject ||--}o Event : "recordedAt"
 VideoObject ||--}o PublicationEvent : "releasedEvent"
 VideoObject ||--}o Review : "review"
 VideoObject ||--}o Review : "reviews"
-VideoObject ||--}o Date : "sdDatePublished"
 VideoObject ||--}o Organization : "sourceOrganization"
 VideoObject ||--}o Place : "spatial"
-VideoObject ||--}o Text : "text"
 VideoObject ||--}o ImageObject : "thumbnail"
-VideoObject ||--}o URL : "thumbnailUrl"
 VideoObject ||--}o Duration : "timeRequired"
 VideoObject ||--}o CreativeWork : "translationOfWork"
-VideoObject ||--}o Text : "typicalAgeRange"
 VideoObject ||--}o CreativeWork : "workTranslation"
-VideoObject ||--}o Text : "alternateName"
-VideoObject ||--}o Text : "disambiguatingDescription"
-VideoObject ||--}o Text : "name"
-VideoObject ||--}o URL : "sameAs"
 VideoObject ||--}o Action : "potentialAction"
-VideoObject ||--}o URL : "url"
 

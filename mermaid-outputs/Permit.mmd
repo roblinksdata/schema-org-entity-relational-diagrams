@@ -1,12 +1,18 @@
 erDiagram
 Permit {
     stringList validFrom  
+    DateList validUntil  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Permit ||--}o Organization : "issuedBy"
@@ -14,11 +20,5 @@ Permit ||--}o Service : "issuedThrough"
 Permit ||--}o Audience : "permitAudience"
 Permit ||--}o Duration : "validFor"
 Permit ||--}o AdministrativeArea : "validIn"
-Permit ||--}o Date : "validUntil"
-Permit ||--}o Text : "alternateName"
-Permit ||--}o Text : "disambiguatingDescription"
-Permit ||--}o Text : "name"
-Permit ||--}o URL : "sameAs"
 Permit ||--}o Action : "potentialAction"
-Permit ||--}o URL : "url"
 

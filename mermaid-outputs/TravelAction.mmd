@@ -8,11 +8,16 @@ TravelAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TravelAction ||--}o Distance : "distance"
@@ -24,10 +29,5 @@ TravelAction ||--}o Thing : "result"
 TravelAction ||--}o HowTo : "actionProcess"
 TravelAction ||--}o ActionStatusType : "actionStatus"
 TravelAction ||--}o Thing : "error"
-TravelAction ||--}o Text : "alternateName"
-TravelAction ||--}o Text : "disambiguatingDescription"
-TravelAction ||--}o Text : "name"
-TravelAction ||--}o URL : "sameAs"
 TravelAction ||--}o Action : "potentialAction"
-TravelAction ||--}o URL : "url"
 

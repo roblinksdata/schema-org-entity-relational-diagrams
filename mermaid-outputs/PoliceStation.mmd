@@ -1,8 +1,13 @@
 erDiagram
 PoliceStation {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,97 +19,96 @@ PoliceStation {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
+    TextList currenciesAccepted  
+    TextList paymentAccepted  
+    TextList priceRange  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
 }
 
-PoliceStation ||--}o Text : "openingHours"
-PoliceStation ||--}o Text : "globalLocationNumber"
-PoliceStation ||--}o URL : "hasGS1DigitalLink"
 PoliceStation ||--}o PropertyValue : "additionalProperty"
 PoliceStation ||--}o AggregateRating : "aggregateRating"
 PoliceStation ||--}o LocationFeatureSpecification : "amenityFeature"
-PoliceStation ||--}o Text : "branchCode"
 PoliceStation ||--}o Place : "containedIn"
 PoliceStation ||--}o Place : "containedInPlace"
 PoliceStation ||--}o Place : "containsPlace"
 PoliceStation ||--}o Event : "event"
 PoliceStation ||--}o Event : "events"
-PoliceStation ||--}o Text : "faxNumber"
 PoliceStation ||--}o Certification : "hasCertification"
-PoliceStation ||--}o Boolean : "hasDriveThroughService"
-PoliceStation ||--}o Boolean : "isAccessibleForFree"
-PoliceStation ||--}o Text : "isicV4"
-PoliceStation ||--}o URL : "map"
-PoliceStation ||--}o URL : "maps"
-PoliceStation ||--}o Integer : "maximumAttendeeCapacity"
 PoliceStation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-PoliceStation ||--}o Boolean : "publicAccess"
 PoliceStation ||--}o Review : "review"
 PoliceStation ||--}o Review : "reviews"
-PoliceStation ||--}o Text : "slogan"
-PoliceStation ||--}o Boolean : "smokingAllowed"
 PoliceStation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-PoliceStation ||--}o Text : "telephone"
-PoliceStation ||--}o URL : "tourBookingPage"
-PoliceStation ||--}o Text : "alternateName"
-PoliceStation ||--}o Text : "disambiguatingDescription"
-PoliceStation ||--}o Text : "name"
-PoliceStation ||--}o URL : "sameAs"
 PoliceStation ||--}o Action : "potentialAction"
-PoliceStation ||--}o URL : "url"
 PoliceStation ||--}o Organization : "branchOf"
-PoliceStation ||--}o Text : "currenciesAccepted"
-PoliceStation ||--}o Text : "paymentAccepted"
-PoliceStation ||--}o Text : "priceRange"
-PoliceStation ||--}o Text : "duns"
-PoliceStation ||--}o Text : "leiCode"
-PoliceStation ||--}o Text : "taxID"
 PoliceStation ||--}o InteractionCounter : "agentInteractionStatistic"
 PoliceStation ||--}o Person : "alumni"
-PoliceStation ||--}o Text : "award"
-PoliceStation ||--}o Text : "awards"
 PoliceStation ||--}o ContactPoint : "contactPoint"
 PoliceStation ||--}o ContactPoint : "contactPoints"
 PoliceStation ||--}o Organization : "department"
-PoliceStation ||--}o Date : "dissolutionDate"
-PoliceStation ||--}o Text : "email"
 PoliceStation ||--}o Person : "employee"
 PoliceStation ||--}o Person : "employees"
 PoliceStation ||--}o Person : "founders"
-PoliceStation ||--}o Date : "foundingDate"
 PoliceStation ||--}o Place : "foundingLocation"
 PoliceStation ||--}o Grant : "funding"
 PoliceStation ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -113,14 +117,10 @@ PoliceStation ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 PoliceStation ||--}o OfferCatalog : "hasOfferCatalog"
 PoliceStation ||--}o Place : "hasPOS"
 PoliceStation ||--}o InteractionCounter : "interactionStatistic"
-PoliceStation ||--}o Text : "iso6523Code"
-PoliceStation ||--}o Text : "legalName"
 PoliceStation ||--}o Offer : "makesOffer"
-PoliceStation ||--}o Text : "naics"
 PoliceStation ||--}o NonprofitType : "nonprofitStatus"
 PoliceStation ||--}o QuantitativeValue : "numberOfEmployees"
 PoliceStation ||--}o Organization : "parentOrganization"
 PoliceStation ||--}o Demand : "seeks"
 PoliceStation ||--}o Organization : "subOrganization"
-PoliceStation ||--}o Text : "vatID"
 

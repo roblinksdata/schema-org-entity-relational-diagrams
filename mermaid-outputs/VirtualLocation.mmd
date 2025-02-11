@@ -1,17 +1,17 @@
 erDiagram
 VirtualLocation {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-VirtualLocation ||--}o Text : "alternateName"
-VirtualLocation ||--}o Text : "disambiguatingDescription"
-VirtualLocation ||--}o Text : "name"
-VirtualLocation ||--}o URL : "sameAs"
 VirtualLocation ||--}o Action : "potentialAction"
-VirtualLocation ||--}o URL : "url"
 

@@ -2,20 +2,20 @@ erDiagram
 ListItem {
     stringList position  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ListItem ||--}o Thing : "item"
 ListItem ||--}o ListItem : "nextItem"
 ListItem ||--}o ListItem : "previousItem"
-ListItem ||--}o Text : "alternateName"
-ListItem ||--}o Text : "disambiguatingDescription"
-ListItem ||--}o Text : "name"
-ListItem ||--}o URL : "sameAs"
 ListItem ||--}o Action : "potentialAction"
-ListItem ||--}o URL : "url"
 

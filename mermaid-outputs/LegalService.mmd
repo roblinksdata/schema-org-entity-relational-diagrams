@@ -1,8 +1,16 @@
 erDiagram
 LegalService {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ LegalService {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LegalService ||--}o Organization : "branchOf"
-LegalService ||--}o Text : "currenciesAccepted"
-LegalService ||--}o Text : "openingHours"
-LegalService ||--}o Text : "paymentAccepted"
-LegalService ||--}o Text : "priceRange"
-LegalService ||--}o Text : "globalLocationNumber"
-LegalService ||--}o URL : "hasGS1DigitalLink"
 LegalService ||--}o PropertyValue : "additionalProperty"
 LegalService ||--}o AggregateRating : "aggregateRating"
 LegalService ||--}o LocationFeatureSpecification : "amenityFeature"
-LegalService ||--}o Text : "branchCode"
 LegalService ||--}o Place : "containedIn"
 LegalService ||--}o Place : "containedInPlace"
 LegalService ||--}o Place : "containsPlace"
 LegalService ||--}o Event : "event"
 LegalService ||--}o Event : "events"
-LegalService ||--}o Text : "faxNumber"
 LegalService ||--}o Certification : "hasCertification"
-LegalService ||--}o Boolean : "hasDriveThroughService"
-LegalService ||--}o Boolean : "isAccessibleForFree"
-LegalService ||--}o Text : "isicV4"
-LegalService ||--}o URL : "map"
-LegalService ||--}o URL : "maps"
-LegalService ||--}o Integer : "maximumAttendeeCapacity"
 LegalService ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-LegalService ||--}o Boolean : "publicAccess"
 LegalService ||--}o Review : "review"
 LegalService ||--}o Review : "reviews"
-LegalService ||--}o Text : "slogan"
-LegalService ||--}o Boolean : "smokingAllowed"
 LegalService ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-LegalService ||--}o Text : "telephone"
-LegalService ||--}o URL : "tourBookingPage"
-LegalService ||--}o Text : "duns"
-LegalService ||--}o Text : "leiCode"
-LegalService ||--}o Text : "taxID"
 LegalService ||--}o InteractionCounter : "agentInteractionStatistic"
 LegalService ||--}o Person : "alumni"
-LegalService ||--}o Text : "award"
-LegalService ||--}o Text : "awards"
 LegalService ||--}o ContactPoint : "contactPoint"
 LegalService ||--}o ContactPoint : "contactPoints"
 LegalService ||--}o Organization : "department"
-LegalService ||--}o Date : "dissolutionDate"
-LegalService ||--}o Text : "email"
 LegalService ||--}o Person : "employee"
 LegalService ||--}o Person : "employees"
 LegalService ||--}o Person : "founders"
-LegalService ||--}o Date : "foundingDate"
 LegalService ||--}o Place : "foundingLocation"
 LegalService ||--}o Grant : "funding"
 LegalService ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ LegalService ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 LegalService ||--}o OfferCatalog : "hasOfferCatalog"
 LegalService ||--}o Place : "hasPOS"
 LegalService ||--}o InteractionCounter : "interactionStatistic"
-LegalService ||--}o Text : "iso6523Code"
-LegalService ||--}o Text : "legalName"
 LegalService ||--}o Offer : "makesOffer"
-LegalService ||--}o Text : "naics"
 LegalService ||--}o NonprofitType : "nonprofitStatus"
 LegalService ||--}o QuantitativeValue : "numberOfEmployees"
 LegalService ||--}o Organization : "parentOrganization"
 LegalService ||--}o Demand : "seeks"
 LegalService ||--}o Organization : "subOrganization"
-LegalService ||--}o Text : "vatID"
-LegalService ||--}o Text : "alternateName"
-LegalService ||--}o Text : "disambiguatingDescription"
-LegalService ||--}o Text : "name"
-LegalService ||--}o URL : "sameAs"
 LegalService ||--}o Action : "potentialAction"
-LegalService ||--}o URL : "url"
 

@@ -3,12 +3,19 @@ ParcelDelivery {
     stringList expectedArrivalFrom  
     stringList expectedArrivalUntil  
     stringList provider  
+    TextList trackingNumber  
+    URLList trackingUrl  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ParcelDelivery ||--}o Organization : "carrier"
@@ -18,12 +25,5 @@ ParcelDelivery ||--}o DeliveryMethod : "hasDeliveryMethod"
 ParcelDelivery ||--}o Product : "itemShipped"
 ParcelDelivery ||--}o PostalAddress : "originAddress"
 ParcelDelivery ||--}o Order : "partOfOrder"
-ParcelDelivery ||--}o Text : "trackingNumber"
-ParcelDelivery ||--}o URL : "trackingUrl"
-ParcelDelivery ||--}o Text : "alternateName"
-ParcelDelivery ||--}o Text : "disambiguatingDescription"
-ParcelDelivery ||--}o Text : "name"
-ParcelDelivery ||--}o URL : "sameAs"
 ParcelDelivery ||--}o Action : "potentialAction"
-ParcelDelivery ||--}o URL : "url"
 

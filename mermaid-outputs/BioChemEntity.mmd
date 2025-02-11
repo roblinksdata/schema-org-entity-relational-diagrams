@@ -7,11 +7,16 @@ BioChemEntity {
     stringList isLocatedInSubcellularLocation  
     stringList taxonomicRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BioChemEntity ||--}o BioChemEntity : "bioChemInteraction"
@@ -21,10 +26,5 @@ BioChemEntity ||--}o Grant : "funding"
 BioChemEntity ||--}o BioChemEntity : "hasBioChemEntityPart"
 BioChemEntity ||--}o Gene : "isEncodedByBioChemEntity"
 BioChemEntity ||--}o BioChemEntity : "isPartOfBioChemEntity"
-BioChemEntity ||--}o Text : "alternateName"
-BioChemEntity ||--}o Text : "disambiguatingDescription"
-BioChemEntity ||--}o Text : "name"
-BioChemEntity ||--}o URL : "sameAs"
 BioChemEntity ||--}o Action : "potentialAction"
-BioChemEntity ||--}o URL : "url"
 

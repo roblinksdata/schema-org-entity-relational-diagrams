@@ -2,6 +2,7 @@ erDiagram
 TipAction {
     stringList recipient  
     stringList price  
+    TextList priceCurrency  
     stringList location  
     stringList participant  
     stringList agent  
@@ -10,14 +11,18 @@ TipAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-TipAction ||--}o Text : "priceCurrency"
 TipAction ||--}o PriceSpecification : "priceSpecification"
 TipAction ||--}o Thing : "instrument"
 TipAction ||--}o Thing : "object"
@@ -25,10 +30,5 @@ TipAction ||--}o Thing : "result"
 TipAction ||--}o HowTo : "actionProcess"
 TipAction ||--}o ActionStatusType : "actionStatus"
 TipAction ||--}o Thing : "error"
-TipAction ||--}o Text : "alternateName"
-TipAction ||--}o Text : "disambiguatingDescription"
-TipAction ||--}o Text : "name"
-TipAction ||--}o URL : "sameAs"
 TipAction ||--}o Action : "potentialAction"
-TipAction ||--}o URL : "url"
 

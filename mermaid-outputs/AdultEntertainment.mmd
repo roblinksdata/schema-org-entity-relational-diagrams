@@ -1,8 +1,16 @@
 erDiagram
 AdultEntertainment {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ AdultEntertainment {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AdultEntertainment ||--}o Organization : "branchOf"
-AdultEntertainment ||--}o Text : "currenciesAccepted"
-AdultEntertainment ||--}o Text : "openingHours"
-AdultEntertainment ||--}o Text : "paymentAccepted"
-AdultEntertainment ||--}o Text : "priceRange"
-AdultEntertainment ||--}o Text : "globalLocationNumber"
-AdultEntertainment ||--}o URL : "hasGS1DigitalLink"
 AdultEntertainment ||--}o PropertyValue : "additionalProperty"
 AdultEntertainment ||--}o AggregateRating : "aggregateRating"
 AdultEntertainment ||--}o LocationFeatureSpecification : "amenityFeature"
-AdultEntertainment ||--}o Text : "branchCode"
 AdultEntertainment ||--}o Place : "containedIn"
 AdultEntertainment ||--}o Place : "containedInPlace"
 AdultEntertainment ||--}o Place : "containsPlace"
 AdultEntertainment ||--}o Event : "event"
 AdultEntertainment ||--}o Event : "events"
-AdultEntertainment ||--}o Text : "faxNumber"
 AdultEntertainment ||--}o Certification : "hasCertification"
-AdultEntertainment ||--}o Boolean : "hasDriveThroughService"
-AdultEntertainment ||--}o Boolean : "isAccessibleForFree"
-AdultEntertainment ||--}o Text : "isicV4"
-AdultEntertainment ||--}o URL : "map"
-AdultEntertainment ||--}o URL : "maps"
-AdultEntertainment ||--}o Integer : "maximumAttendeeCapacity"
 AdultEntertainment ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-AdultEntertainment ||--}o Boolean : "publicAccess"
 AdultEntertainment ||--}o Review : "review"
 AdultEntertainment ||--}o Review : "reviews"
-AdultEntertainment ||--}o Text : "slogan"
-AdultEntertainment ||--}o Boolean : "smokingAllowed"
 AdultEntertainment ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-AdultEntertainment ||--}o Text : "telephone"
-AdultEntertainment ||--}o URL : "tourBookingPage"
-AdultEntertainment ||--}o Text : "duns"
-AdultEntertainment ||--}o Text : "leiCode"
-AdultEntertainment ||--}o Text : "taxID"
 AdultEntertainment ||--}o InteractionCounter : "agentInteractionStatistic"
 AdultEntertainment ||--}o Person : "alumni"
-AdultEntertainment ||--}o Text : "award"
-AdultEntertainment ||--}o Text : "awards"
 AdultEntertainment ||--}o ContactPoint : "contactPoint"
 AdultEntertainment ||--}o ContactPoint : "contactPoints"
 AdultEntertainment ||--}o Organization : "department"
-AdultEntertainment ||--}o Date : "dissolutionDate"
-AdultEntertainment ||--}o Text : "email"
 AdultEntertainment ||--}o Person : "employee"
 AdultEntertainment ||--}o Person : "employees"
 AdultEntertainment ||--}o Person : "founders"
-AdultEntertainment ||--}o Date : "foundingDate"
 AdultEntertainment ||--}o Place : "foundingLocation"
 AdultEntertainment ||--}o Grant : "funding"
 AdultEntertainment ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ AdultEntertainment ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 AdultEntertainment ||--}o OfferCatalog : "hasOfferCatalog"
 AdultEntertainment ||--}o Place : "hasPOS"
 AdultEntertainment ||--}o InteractionCounter : "interactionStatistic"
-AdultEntertainment ||--}o Text : "iso6523Code"
-AdultEntertainment ||--}o Text : "legalName"
 AdultEntertainment ||--}o Offer : "makesOffer"
-AdultEntertainment ||--}o Text : "naics"
 AdultEntertainment ||--}o NonprofitType : "nonprofitStatus"
 AdultEntertainment ||--}o QuantitativeValue : "numberOfEmployees"
 AdultEntertainment ||--}o Organization : "parentOrganization"
 AdultEntertainment ||--}o Demand : "seeks"
 AdultEntertainment ||--}o Organization : "subOrganization"
-AdultEntertainment ||--}o Text : "vatID"
-AdultEntertainment ||--}o Text : "alternateName"
-AdultEntertainment ||--}o Text : "disambiguatingDescription"
-AdultEntertainment ||--}o Text : "name"
-AdultEntertainment ||--}o URL : "sameAs"
 AdultEntertainment ||--}o Action : "potentialAction"
-AdultEntertainment ||--}o URL : "url"
 

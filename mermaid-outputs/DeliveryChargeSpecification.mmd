@@ -3,30 +3,30 @@ DeliveryChargeSpecification {
     stringList areaServed  
     stringList eligibleRegion  
     stringList ineligibleRegion  
+    NumberList maxPrice  
     stringList membershipPointsEarned  
+    NumberList minPrice  
     stringList price  
+    TextList priceCurrency  
     stringList validFrom  
     stringList validThrough  
+    BooleanList valueAddedTaxIncluded  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DeliveryChargeSpecification ||--}o DeliveryMethod : "appliesToDeliveryMethod"
 DeliveryChargeSpecification ||--}o QuantitativeValue : "eligibleQuantity"
 DeliveryChargeSpecification ||--}o PriceSpecification : "eligibleTransactionVolume"
-DeliveryChargeSpecification ||--}o Number : "maxPrice"
-DeliveryChargeSpecification ||--}o Number : "minPrice"
-DeliveryChargeSpecification ||--}o Text : "priceCurrency"
 DeliveryChargeSpecification ||--}o MemberProgramTier : "validForMemberTier"
-DeliveryChargeSpecification ||--}o Boolean : "valueAddedTaxIncluded"
-DeliveryChargeSpecification ||--}o Text : "alternateName"
-DeliveryChargeSpecification ||--}o Text : "disambiguatingDescription"
-DeliveryChargeSpecification ||--}o Text : "name"
-DeliveryChargeSpecification ||--}o URL : "sameAs"
 DeliveryChargeSpecification ||--}o Action : "potentialAction"
-DeliveryChargeSpecification ||--}o URL : "url"
 

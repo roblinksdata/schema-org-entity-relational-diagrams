@@ -1,30 +1,30 @@
 erDiagram
 BoatReservation {
     stringList bookingAgent  
+    DateTimeList bookingTime  
     stringList broker  
+    DateTimeList modifiedTime  
+    TextList priceCurrency  
     stringList provider  
+    TextList reservationId  
     stringList totalPrice  
     stringList underName  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BoatReservation ||--}o DateTime : "bookingTime"
-BoatReservation ||--}o DateTime : "modifiedTime"
-BoatReservation ||--}o Text : "priceCurrency"
 BoatReservation ||--}o ProgramMembership : "programMembershipUsed"
 BoatReservation ||--}o Thing : "reservationFor"
-BoatReservation ||--}o Text : "reservationId"
 BoatReservation ||--}o ReservationStatusType : "reservationStatus"
 BoatReservation ||--}o Ticket : "reservedTicket"
-BoatReservation ||--}o Text : "alternateName"
-BoatReservation ||--}o Text : "disambiguatingDescription"
-BoatReservation ||--}o Text : "name"
-BoatReservation ||--}o URL : "sameAs"
 BoatReservation ||--}o Action : "potentialAction"
-BoatReservation ||--}o URL : "url"
 

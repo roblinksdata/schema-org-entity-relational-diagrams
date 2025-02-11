@@ -1,7 +1,11 @@
 erDiagram
 SearchResultsPage {
     stringList breadcrumb  
+    DateList lastReviewed  
+    URLList relatedLink  
     stringList reviewedBy  
+    URLList significantLink  
+    URLList significantLinks  
     stringList speakable  
     stringList acquireLicensePage  
     stringList contributor  
@@ -16,25 +20,46 @@ SearchResultsPage {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -46,29 +71,34 @@ SearchResultsPage {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-SearchResultsPage ||--}o Date : "lastReviewed"
 SearchResultsPage ||--}o WebPageElement : "mainContentOfPage"
 SearchResultsPage ||--}o ImageObject : "primaryImageOfPage"
-SearchResultsPage ||--}o URL : "relatedLink"
-SearchResultsPage ||--}o URL : "significantLink"
-SearchResultsPage ||--}o URL : "significantLinks"
 SearchResultsPage ||--}o Specialty : "specialty"
 SearchResultsPage ||--}o Thing : "about"
 SearchResultsPage ||--}o Place : "contentLocation"
@@ -77,43 +107,22 @@ SearchResultsPage ||--}o Claim : "interpretedAsClaim"
 SearchResultsPage ||--}o Thing : "mainEntity"
 SearchResultsPage ||--}o Place : "spatialCoverage"
 SearchResultsPage ||--}o CreativeWork : "workExample"
-SearchResultsPage ||--}o Text : "abstract"
-SearchResultsPage ||--}o Text : "accessMode"
 SearchResultsPage ||--}o ItemList : "accessModeSufficient"
-SearchResultsPage ||--}o Text : "accessibilityAPI"
-SearchResultsPage ||--}o Text : "accessibilityControl"
-SearchResultsPage ||--}o Text : "accessibilityFeature"
-SearchResultsPage ||--}o Text : "accessibilityHazard"
-SearchResultsPage ||--}o Text : "accessibilitySummary"
 SearchResultsPage ||--}o Person : "accountablePerson"
 SearchResultsPage ||--}o AggregateRating : "aggregateRating"
-SearchResultsPage ||--}o Text : "alternativeHeadline"
 SearchResultsPage ||--}o MediaObject : "associatedMedia"
 SearchResultsPage ||--}o Audience : "audience"
-SearchResultsPage ||--}o Text : "award"
-SearchResultsPage ||--}o Text : "awards"
 SearchResultsPage ||--}o Person : "character"
 SearchResultsPage ||--}o Comment : "comment"
-SearchResultsPage ||--}o Integer : "commentCount"
-SearchResultsPage ||--}o Text : "conditionsOfAccess"
-SearchResultsPage ||--}o DateTime : "contentReferenceTime"
-SearchResultsPage ||--}o Text : "copyrightNotice"
-SearchResultsPage ||--}o Number : "copyrightYear"
 SearchResultsPage ||--}o Country : "countryOfOrigin"
-SearchResultsPage ||--}o Text : "creditText"
 SearchResultsPage ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-SearchResultsPage ||--}o URL : "discussionUrl"
 SearchResultsPage ||--}o Person : "editor"
 SearchResultsPage ||--}o AlignmentObject : "educationalAlignment"
 SearchResultsPage ||--}o MediaObject : "encoding"
 SearchResultsPage ||--}o MediaObject : "encodings"
 SearchResultsPage ||--}o CreativeWork : "exampleOfWork"
 SearchResultsPage ||--}o Grant : "funding"
-SearchResultsPage ||--}o Text : "headline"
 SearchResultsPage ||--}o InteractionCounter : "interactionStatistic"
-SearchResultsPage ||--}o Text : "interactivityType"
-SearchResultsPage ||--}o Boolean : "isAccessibleForFree"
-SearchResultsPage ||--}o Boolean : "isFamilyFriendly"
 SearchResultsPage ||--}o Place : "locationCreated"
 SearchResultsPage ||--}o Thing : "mentions"
 SearchResultsPage ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ SearchResultsPage ||--}o Event : "recordedAt"
 SearchResultsPage ||--}o PublicationEvent : "releasedEvent"
 SearchResultsPage ||--}o Review : "review"
 SearchResultsPage ||--}o Review : "reviews"
-SearchResultsPage ||--}o Date : "sdDatePublished"
 SearchResultsPage ||--}o Organization : "sourceOrganization"
 SearchResultsPage ||--}o Place : "spatial"
-SearchResultsPage ||--}o Text : "text"
 SearchResultsPage ||--}o ImageObject : "thumbnail"
-SearchResultsPage ||--}o URL : "thumbnailUrl"
 SearchResultsPage ||--}o Duration : "timeRequired"
 SearchResultsPage ||--}o CreativeWork : "translationOfWork"
-SearchResultsPage ||--}o Text : "typicalAgeRange"
 SearchResultsPage ||--}o CreativeWork : "workTranslation"
-SearchResultsPage ||--}o Text : "alternateName"
-SearchResultsPage ||--}o Text : "disambiguatingDescription"
-SearchResultsPage ||--}o Text : "name"
-SearchResultsPage ||--}o URL : "sameAs"
 SearchResultsPage ||--}o Action : "potentialAction"
-SearchResultsPage ||--}o URL : "url"
 

@@ -1,18 +1,18 @@
 erDiagram
 PaymentMethod {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 PaymentMethod ||--}o PaymentMethodType : "paymentMethodType"
-PaymentMethod ||--}o Text : "alternateName"
-PaymentMethod ||--}o Text : "disambiguatingDescription"
-PaymentMethod ||--}o Text : "name"
-PaymentMethod ||--}o URL : "sameAs"
 PaymentMethod ||--}o Action : "potentialAction"
-PaymentMethod ||--}o URL : "url"
 

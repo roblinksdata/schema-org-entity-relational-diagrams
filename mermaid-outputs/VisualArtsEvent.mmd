@@ -11,19 +11,31 @@ VisualArtsEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 VisualArtsEvent ||--}o Thing : "about"
@@ -37,22 +49,10 @@ VisualArtsEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 VisualArtsEvent ||--}o Schedule : "eventSchedule"
 VisualArtsEvent ||--}o EventStatusType : "eventStatus"
 VisualArtsEvent ||--}o Grant : "funding"
-VisualArtsEvent ||--}o Boolean : "isAccessibleForFree"
-VisualArtsEvent ||--}o Integer : "maximumAttendeeCapacity"
-VisualArtsEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-VisualArtsEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-VisualArtsEvent ||--}o Date : "previousStartDate"
 VisualArtsEvent ||--}o CreativeWork : "recordedIn"
-VisualArtsEvent ||--}o Integer : "remainingAttendeeCapacity"
 VisualArtsEvent ||--}o Review : "review"
 VisualArtsEvent ||--}o Event : "subEvent"
 VisualArtsEvent ||--}o Event : "subEvents"
 VisualArtsEvent ||--}o Event : "superEvent"
-VisualArtsEvent ||--}o Text : "typicalAgeRange"
-VisualArtsEvent ||--}o Text : "alternateName"
-VisualArtsEvent ||--}o Text : "disambiguatingDescription"
-VisualArtsEvent ||--}o Text : "name"
-VisualArtsEvent ||--}o URL : "sameAs"
 VisualArtsEvent ||--}o Action : "potentialAction"
-VisualArtsEvent ||--}o URL : "url"
 

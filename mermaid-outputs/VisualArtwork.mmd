@@ -21,25 +21,46 @@ VisualArtwork {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -51,21 +72,30 @@ VisualArtwork {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 VisualArtwork ||--}o Person : "artist"
@@ -81,43 +111,22 @@ VisualArtwork ||--}o Claim : "interpretedAsClaim"
 VisualArtwork ||--}o Thing : "mainEntity"
 VisualArtwork ||--}o Place : "spatialCoverage"
 VisualArtwork ||--}o CreativeWork : "workExample"
-VisualArtwork ||--}o Text : "abstract"
-VisualArtwork ||--}o Text : "accessMode"
 VisualArtwork ||--}o ItemList : "accessModeSufficient"
-VisualArtwork ||--}o Text : "accessibilityAPI"
-VisualArtwork ||--}o Text : "accessibilityControl"
-VisualArtwork ||--}o Text : "accessibilityFeature"
-VisualArtwork ||--}o Text : "accessibilityHazard"
-VisualArtwork ||--}o Text : "accessibilitySummary"
 VisualArtwork ||--}o Person : "accountablePerson"
 VisualArtwork ||--}o AggregateRating : "aggregateRating"
-VisualArtwork ||--}o Text : "alternativeHeadline"
 VisualArtwork ||--}o MediaObject : "associatedMedia"
 VisualArtwork ||--}o Audience : "audience"
-VisualArtwork ||--}o Text : "award"
-VisualArtwork ||--}o Text : "awards"
 VisualArtwork ||--}o Person : "character"
 VisualArtwork ||--}o Comment : "comment"
-VisualArtwork ||--}o Integer : "commentCount"
-VisualArtwork ||--}o Text : "conditionsOfAccess"
-VisualArtwork ||--}o DateTime : "contentReferenceTime"
-VisualArtwork ||--}o Text : "copyrightNotice"
-VisualArtwork ||--}o Number : "copyrightYear"
 VisualArtwork ||--}o Country : "countryOfOrigin"
-VisualArtwork ||--}o Text : "creditText"
 VisualArtwork ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-VisualArtwork ||--}o URL : "discussionUrl"
 VisualArtwork ||--}o Person : "editor"
 VisualArtwork ||--}o AlignmentObject : "educationalAlignment"
 VisualArtwork ||--}o MediaObject : "encoding"
 VisualArtwork ||--}o MediaObject : "encodings"
 VisualArtwork ||--}o CreativeWork : "exampleOfWork"
 VisualArtwork ||--}o Grant : "funding"
-VisualArtwork ||--}o Text : "headline"
 VisualArtwork ||--}o InteractionCounter : "interactionStatistic"
-VisualArtwork ||--}o Text : "interactivityType"
-VisualArtwork ||--}o Boolean : "isAccessibleForFree"
-VisualArtwork ||--}o Boolean : "isFamilyFriendly"
 VisualArtwork ||--}o Place : "locationCreated"
 VisualArtwork ||--}o Thing : "mentions"
 VisualArtwork ||--}o PublicationEvent : "publication"
@@ -126,20 +135,11 @@ VisualArtwork ||--}o Event : "recordedAt"
 VisualArtwork ||--}o PublicationEvent : "releasedEvent"
 VisualArtwork ||--}o Review : "review"
 VisualArtwork ||--}o Review : "reviews"
-VisualArtwork ||--}o Date : "sdDatePublished"
 VisualArtwork ||--}o Organization : "sourceOrganization"
 VisualArtwork ||--}o Place : "spatial"
-VisualArtwork ||--}o Text : "text"
 VisualArtwork ||--}o ImageObject : "thumbnail"
-VisualArtwork ||--}o URL : "thumbnailUrl"
 VisualArtwork ||--}o Duration : "timeRequired"
 VisualArtwork ||--}o CreativeWork : "translationOfWork"
-VisualArtwork ||--}o Text : "typicalAgeRange"
 VisualArtwork ||--}o CreativeWork : "workTranslation"
-VisualArtwork ||--}o Text : "alternateName"
-VisualArtwork ||--}o Text : "disambiguatingDescription"
-VisualArtwork ||--}o Text : "name"
-VisualArtwork ||--}o URL : "sameAs"
 VisualArtwork ||--}o Action : "potentialAction"
-VisualArtwork ||--}o URL : "url"
 

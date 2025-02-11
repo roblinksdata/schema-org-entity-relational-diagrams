@@ -1,38 +1,63 @@
 erDiagram
 HighSchool {
+    TextList openingHours  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
     stringList photo  
+    TextList branchCode  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -44,35 +69,31 @@ HighSchool {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    BooleanList smokingAllowed  
+    URLList tourBookingPage  
 }
 
 HighSchool ||--}o Person : "alumni"
-HighSchool ||--}o Text : "openingHours"
-HighSchool ||--}o Text : "duns"
-HighSchool ||--}o Text : "globalLocationNumber"
-HighSchool ||--}o URL : "hasGS1DigitalLink"
-HighSchool ||--}o Text : "leiCode"
-HighSchool ||--}o Text : "taxID"
 HighSchool ||--}o InteractionCounter : "agentInteractionStatistic"
 HighSchool ||--}o AggregateRating : "aggregateRating"
-HighSchool ||--}o Text : "award"
-HighSchool ||--}o Text : "awards"
 HighSchool ||--}o ContactPoint : "contactPoint"
 HighSchool ||--}o ContactPoint : "contactPoints"
 HighSchool ||--}o Organization : "department"
-HighSchool ||--}o Date : "dissolutionDate"
-HighSchool ||--}o Text : "email"
 HighSchool ||--}o Person : "employee"
 HighSchool ||--}o Person : "employees"
 HighSchool ||--}o Event : "event"
 HighSchool ||--}o Event : "events"
-HighSchool ||--}o Text : "faxNumber"
 HighSchool ||--}o Person : "founders"
-HighSchool ||--}o Date : "foundingDate"
 HighSchool ||--}o Place : "foundingLocation"
 HighSchool ||--}o Grant : "funding"
 HighSchool ||--}o Certification : "hasCertification"
@@ -82,41 +103,20 @@ HighSchool ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 HighSchool ||--}o OfferCatalog : "hasOfferCatalog"
 HighSchool ||--}o Place : "hasPOS"
 HighSchool ||--}o InteractionCounter : "interactionStatistic"
-HighSchool ||--}o Text : "isicV4"
-HighSchool ||--}o Text : "iso6523Code"
-HighSchool ||--}o Text : "legalName"
 HighSchool ||--}o Offer : "makesOffer"
-HighSchool ||--}o Text : "naics"
 HighSchool ||--}o NonprofitType : "nonprofitStatus"
 HighSchool ||--}o QuantitativeValue : "numberOfEmployees"
 HighSchool ||--}o Organization : "parentOrganization"
 HighSchool ||--}o Review : "review"
 HighSchool ||--}o Review : "reviews"
 HighSchool ||--}o Demand : "seeks"
-HighSchool ||--}o Text : "slogan"
 HighSchool ||--}o Organization : "subOrganization"
-HighSchool ||--}o Text : "telephone"
-HighSchool ||--}o Text : "vatID"
-HighSchool ||--}o Text : "alternateName"
-HighSchool ||--}o Text : "disambiguatingDescription"
-HighSchool ||--}o Text : "name"
-HighSchool ||--}o URL : "sameAs"
 HighSchool ||--}o Action : "potentialAction"
-HighSchool ||--}o URL : "url"
 HighSchool ||--}o PropertyValue : "additionalProperty"
 HighSchool ||--}o LocationFeatureSpecification : "amenityFeature"
-HighSchool ||--}o Text : "branchCode"
 HighSchool ||--}o Place : "containedIn"
 HighSchool ||--}o Place : "containedInPlace"
 HighSchool ||--}o Place : "containsPlace"
-HighSchool ||--}o Boolean : "hasDriveThroughService"
-HighSchool ||--}o Boolean : "isAccessibleForFree"
-HighSchool ||--}o URL : "map"
-HighSchool ||--}o URL : "maps"
-HighSchool ||--}o Integer : "maximumAttendeeCapacity"
 HighSchool ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-HighSchool ||--}o Boolean : "publicAccess"
-HighSchool ||--}o Boolean : "smokingAllowed"
 HighSchool ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-HighSchool ||--}o URL : "tourBookingPage"
 

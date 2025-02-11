@@ -1,8 +1,12 @@
 erDiagram
 RiverBodyOfWater {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,51 +18,47 @@ RiverBodyOfWater {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-RiverBodyOfWater ||--}o Text : "globalLocationNumber"
-RiverBodyOfWater ||--}o URL : "hasGS1DigitalLink"
 RiverBodyOfWater ||--}o PropertyValue : "additionalProperty"
 RiverBodyOfWater ||--}o AggregateRating : "aggregateRating"
 RiverBodyOfWater ||--}o LocationFeatureSpecification : "amenityFeature"
-RiverBodyOfWater ||--}o Text : "branchCode"
 RiverBodyOfWater ||--}o Place : "containedIn"
 RiverBodyOfWater ||--}o Place : "containedInPlace"
 RiverBodyOfWater ||--}o Place : "containsPlace"
 RiverBodyOfWater ||--}o Event : "event"
 RiverBodyOfWater ||--}o Event : "events"
-RiverBodyOfWater ||--}o Text : "faxNumber"
 RiverBodyOfWater ||--}o Certification : "hasCertification"
-RiverBodyOfWater ||--}o Boolean : "hasDriveThroughService"
-RiverBodyOfWater ||--}o Boolean : "isAccessibleForFree"
-RiverBodyOfWater ||--}o Text : "isicV4"
-RiverBodyOfWater ||--}o URL : "map"
-RiverBodyOfWater ||--}o URL : "maps"
-RiverBodyOfWater ||--}o Integer : "maximumAttendeeCapacity"
 RiverBodyOfWater ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-RiverBodyOfWater ||--}o Boolean : "publicAccess"
 RiverBodyOfWater ||--}o Review : "review"
 RiverBodyOfWater ||--}o Review : "reviews"
-RiverBodyOfWater ||--}o Text : "slogan"
-RiverBodyOfWater ||--}o Boolean : "smokingAllowed"
 RiverBodyOfWater ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-RiverBodyOfWater ||--}o Text : "telephone"
-RiverBodyOfWater ||--}o URL : "tourBookingPage"
-RiverBodyOfWater ||--}o Text : "alternateName"
-RiverBodyOfWater ||--}o Text : "disambiguatingDescription"
-RiverBodyOfWater ||--}o Text : "name"
-RiverBodyOfWater ||--}o URL : "sameAs"
 RiverBodyOfWater ||--}o Action : "potentialAction"
-RiverBodyOfWater ||--}o URL : "url"
 

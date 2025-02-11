@@ -5,33 +5,44 @@ OfferForPurchase {
     stringList category  
     stringList eligibleRegion  
     stringList gtin  
+    TextList gtin12  
+    TextList gtin13  
+    TextList gtin14  
+    TextList gtin8  
+    URLList hasGS1DigitalLink  
     stringList seller  
+    TextList serialNumber  
+    TextList sku  
     stringList acceptedPaymentMethod  
     stringList availabilityEnds  
     stringList availabilityStarts  
+    TextList checkoutPageURLTemplate  
     stringList ineligibleRegion  
+    BooleanList isFamilyFriendly  
     stringList itemOffered  
     stringList leaseLength  
+    TextList mobileUrl  
+    TextList mpn  
     stringList offeredBy  
     stringList price  
+    TextList priceCurrency  
+    DateList priceValidUntil  
     stringList validFrom  
     stringList validThrough  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 OfferForPurchase ||--}o Place : "availableAtOrFrom"
-OfferForPurchase ||--}o Text : "gtin12"
-OfferForPurchase ||--}o Text : "gtin13"
-OfferForPurchase ||--}o Text : "gtin14"
-OfferForPurchase ||--}o Text : "gtin8"
-OfferForPurchase ||--}o URL : "hasGS1DigitalLink"
-OfferForPurchase ||--}o Text : "serialNumber"
-OfferForPurchase ||--}o Text : "sku"
 OfferForPurchase ||--}o Offer : "addOn"
 OfferForPurchase ||--}o PropertyValue : "additionalProperty"
 OfferForPurchase ||--}o QuantitativeValue : "advanceBookingRequirement"
@@ -39,7 +50,6 @@ OfferForPurchase ||--}o AggregateRating : "aggregateRating"
 OfferForPurchase ||--}o ItemAvailability : "availability"
 OfferForPurchase ||--}o DeliveryMethod : "availableDeliveryMethod"
 OfferForPurchase ||--}o BusinessFunction : "businessFunction"
-OfferForPurchase ||--}o Text : "checkoutPageURLTemplate"
 OfferForPurchase ||--}o QuantitativeValue : "deliveryLeadTime"
 OfferForPurchase ||--}o BusinessEntityType : "eligibleCustomerType"
 OfferForPurchase ||--}o QuantitativeValue : "eligibleDuration"
@@ -50,22 +60,12 @@ OfferForPurchase ||--}o QuantitativeValue : "hasMeasurement"
 OfferForPurchase ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 OfferForPurchase ||--}o TypeAndQuantityNode : "includesObject"
 OfferForPurchase ||--}o QuantitativeValue : "inventoryLevel"
-OfferForPurchase ||--}o Boolean : "isFamilyFriendly"
 OfferForPurchase ||--}o OfferItemCondition : "itemCondition"
-OfferForPurchase ||--}o Text : "mobileUrl"
-OfferForPurchase ||--}o Text : "mpn"
-OfferForPurchase ||--}o Text : "priceCurrency"
 OfferForPurchase ||--}o PriceSpecification : "priceSpecification"
-OfferForPurchase ||--}o Date : "priceValidUntil"
 OfferForPurchase ||--}o Review : "review"
 OfferForPurchase ||--}o Review : "reviews"
 OfferForPurchase ||--}o OfferShippingDetails : "shippingDetails"
 OfferForPurchase ||--}o MemberProgramTier : "validForMemberTier"
 OfferForPurchase ||--}o WarrantyPromise : "warranty"
-OfferForPurchase ||--}o Text : "alternateName"
-OfferForPurchase ||--}o Text : "disambiguatingDescription"
-OfferForPurchase ||--}o Text : "name"
-OfferForPurchase ||--}o URL : "sameAs"
 OfferForPurchase ||--}o Action : "potentialAction"
-OfferForPurchase ||--}o URL : "url"
 

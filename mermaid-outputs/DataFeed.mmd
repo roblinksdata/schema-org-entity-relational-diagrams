@@ -1,8 +1,10 @@
 erDiagram
 DataFeed {
     stringList dataFeedElement  
+    TextList issn  
     stringList measurementMethod  
     stringList measurementTechnique  
+    DateTimeList datasetTimeInterval  
     stringList variableMeasured  
     stringList acquireLicensePage  
     stringList contributor  
@@ -17,25 +19,46 @@ DataFeed {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,26 +70,33 @@ DataFeed {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DataFeed ||--}o Text : "issn"
 DataFeed ||--}o DataCatalog : "catalog"
-DataFeed ||--}o DateTime : "datasetTimeInterval"
 DataFeed ||--}o DataDownload : "distribution"
 DataFeed ||--}o DataCatalog : "includedDataCatalog"
 DataFeed ||--}o DataCatalog : "includedInDataCatalog"
@@ -77,43 +107,22 @@ DataFeed ||--}o Claim : "interpretedAsClaim"
 DataFeed ||--}o Thing : "mainEntity"
 DataFeed ||--}o Place : "spatialCoverage"
 DataFeed ||--}o CreativeWork : "workExample"
-DataFeed ||--}o Text : "abstract"
-DataFeed ||--}o Text : "accessMode"
 DataFeed ||--}o ItemList : "accessModeSufficient"
-DataFeed ||--}o Text : "accessibilityAPI"
-DataFeed ||--}o Text : "accessibilityControl"
-DataFeed ||--}o Text : "accessibilityFeature"
-DataFeed ||--}o Text : "accessibilityHazard"
-DataFeed ||--}o Text : "accessibilitySummary"
 DataFeed ||--}o Person : "accountablePerson"
 DataFeed ||--}o AggregateRating : "aggregateRating"
-DataFeed ||--}o Text : "alternativeHeadline"
 DataFeed ||--}o MediaObject : "associatedMedia"
 DataFeed ||--}o Audience : "audience"
-DataFeed ||--}o Text : "award"
-DataFeed ||--}o Text : "awards"
 DataFeed ||--}o Person : "character"
 DataFeed ||--}o Comment : "comment"
-DataFeed ||--}o Integer : "commentCount"
-DataFeed ||--}o Text : "conditionsOfAccess"
-DataFeed ||--}o DateTime : "contentReferenceTime"
-DataFeed ||--}o Text : "copyrightNotice"
-DataFeed ||--}o Number : "copyrightYear"
 DataFeed ||--}o Country : "countryOfOrigin"
-DataFeed ||--}o Text : "creditText"
 DataFeed ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-DataFeed ||--}o URL : "discussionUrl"
 DataFeed ||--}o Person : "editor"
 DataFeed ||--}o AlignmentObject : "educationalAlignment"
 DataFeed ||--}o MediaObject : "encoding"
 DataFeed ||--}o MediaObject : "encodings"
 DataFeed ||--}o CreativeWork : "exampleOfWork"
 DataFeed ||--}o Grant : "funding"
-DataFeed ||--}o Text : "headline"
 DataFeed ||--}o InteractionCounter : "interactionStatistic"
-DataFeed ||--}o Text : "interactivityType"
-DataFeed ||--}o Boolean : "isAccessibleForFree"
-DataFeed ||--}o Boolean : "isFamilyFriendly"
 DataFeed ||--}o Place : "locationCreated"
 DataFeed ||--}o Thing : "mentions"
 DataFeed ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ DataFeed ||--}o Event : "recordedAt"
 DataFeed ||--}o PublicationEvent : "releasedEvent"
 DataFeed ||--}o Review : "review"
 DataFeed ||--}o Review : "reviews"
-DataFeed ||--}o Date : "sdDatePublished"
 DataFeed ||--}o Organization : "sourceOrganization"
 DataFeed ||--}o Place : "spatial"
-DataFeed ||--}o Text : "text"
 DataFeed ||--}o ImageObject : "thumbnail"
-DataFeed ||--}o URL : "thumbnailUrl"
 DataFeed ||--}o Duration : "timeRequired"
 DataFeed ||--}o CreativeWork : "translationOfWork"
-DataFeed ||--}o Text : "typicalAgeRange"
 DataFeed ||--}o CreativeWork : "workTranslation"
-DataFeed ||--}o Text : "alternateName"
-DataFeed ||--}o Text : "disambiguatingDescription"
-DataFeed ||--}o Text : "name"
-DataFeed ||--}o URL : "sameAs"
 DataFeed ||--}o Action : "potentialAction"
-DataFeed ||--}o URL : "url"
 

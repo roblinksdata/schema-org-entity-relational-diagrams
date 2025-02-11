@@ -8,11 +8,16 @@ SubscribeAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SubscribeAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ SubscribeAction ||--}o Thing : "result"
 SubscribeAction ||--}o HowTo : "actionProcess"
 SubscribeAction ||--}o ActionStatusType : "actionStatus"
 SubscribeAction ||--}o Thing : "error"
-SubscribeAction ||--}o Text : "alternateName"
-SubscribeAction ||--}o Text : "disambiguatingDescription"
-SubscribeAction ||--}o Text : "name"
-SubscribeAction ||--}o URL : "sameAs"
 SubscribeAction ||--}o Action : "potentialAction"
-SubscribeAction ||--}o URL : "url"
 

@@ -1,8 +1,16 @@
 erDiagram
 NailSalon {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ NailSalon {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 NailSalon ||--}o Organization : "branchOf"
-NailSalon ||--}o Text : "currenciesAccepted"
-NailSalon ||--}o Text : "openingHours"
-NailSalon ||--}o Text : "paymentAccepted"
-NailSalon ||--}o Text : "priceRange"
-NailSalon ||--}o Text : "globalLocationNumber"
-NailSalon ||--}o URL : "hasGS1DigitalLink"
 NailSalon ||--}o PropertyValue : "additionalProperty"
 NailSalon ||--}o AggregateRating : "aggregateRating"
 NailSalon ||--}o LocationFeatureSpecification : "amenityFeature"
-NailSalon ||--}o Text : "branchCode"
 NailSalon ||--}o Place : "containedIn"
 NailSalon ||--}o Place : "containedInPlace"
 NailSalon ||--}o Place : "containsPlace"
 NailSalon ||--}o Event : "event"
 NailSalon ||--}o Event : "events"
-NailSalon ||--}o Text : "faxNumber"
 NailSalon ||--}o Certification : "hasCertification"
-NailSalon ||--}o Boolean : "hasDriveThroughService"
-NailSalon ||--}o Boolean : "isAccessibleForFree"
-NailSalon ||--}o Text : "isicV4"
-NailSalon ||--}o URL : "map"
-NailSalon ||--}o URL : "maps"
-NailSalon ||--}o Integer : "maximumAttendeeCapacity"
 NailSalon ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-NailSalon ||--}o Boolean : "publicAccess"
 NailSalon ||--}o Review : "review"
 NailSalon ||--}o Review : "reviews"
-NailSalon ||--}o Text : "slogan"
-NailSalon ||--}o Boolean : "smokingAllowed"
 NailSalon ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-NailSalon ||--}o Text : "telephone"
-NailSalon ||--}o URL : "tourBookingPage"
-NailSalon ||--}o Text : "duns"
-NailSalon ||--}o Text : "leiCode"
-NailSalon ||--}o Text : "taxID"
 NailSalon ||--}o InteractionCounter : "agentInteractionStatistic"
 NailSalon ||--}o Person : "alumni"
-NailSalon ||--}o Text : "award"
-NailSalon ||--}o Text : "awards"
 NailSalon ||--}o ContactPoint : "contactPoint"
 NailSalon ||--}o ContactPoint : "contactPoints"
 NailSalon ||--}o Organization : "department"
-NailSalon ||--}o Date : "dissolutionDate"
-NailSalon ||--}o Text : "email"
 NailSalon ||--}o Person : "employee"
 NailSalon ||--}o Person : "employees"
 NailSalon ||--}o Person : "founders"
-NailSalon ||--}o Date : "foundingDate"
 NailSalon ||--}o Place : "foundingLocation"
 NailSalon ||--}o Grant : "funding"
 NailSalon ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ NailSalon ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 NailSalon ||--}o OfferCatalog : "hasOfferCatalog"
 NailSalon ||--}o Place : "hasPOS"
 NailSalon ||--}o InteractionCounter : "interactionStatistic"
-NailSalon ||--}o Text : "iso6523Code"
-NailSalon ||--}o Text : "legalName"
 NailSalon ||--}o Offer : "makesOffer"
-NailSalon ||--}o Text : "naics"
 NailSalon ||--}o NonprofitType : "nonprofitStatus"
 NailSalon ||--}o QuantitativeValue : "numberOfEmployees"
 NailSalon ||--}o Organization : "parentOrganization"
 NailSalon ||--}o Demand : "seeks"
 NailSalon ||--}o Organization : "subOrganization"
-NailSalon ||--}o Text : "vatID"
-NailSalon ||--}o Text : "alternateName"
-NailSalon ||--}o Text : "disambiguatingDescription"
-NailSalon ||--}o Text : "name"
-NailSalon ||--}o URL : "sameAs"
 NailSalon ||--}o Action : "potentialAction"
-NailSalon ||--}o URL : "url"
 

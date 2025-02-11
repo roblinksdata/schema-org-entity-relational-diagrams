@@ -4,58 +4,70 @@ OnlineBusiness {
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-OnlineBusiness ||--}o Text : "duns"
-OnlineBusiness ||--}o Text : "globalLocationNumber"
-OnlineBusiness ||--}o URL : "hasGS1DigitalLink"
-OnlineBusiness ||--}o Text : "leiCode"
-OnlineBusiness ||--}o Text : "taxID"
 OnlineBusiness ||--}o InteractionCounter : "agentInteractionStatistic"
 OnlineBusiness ||--}o AggregateRating : "aggregateRating"
 OnlineBusiness ||--}o Person : "alumni"
-OnlineBusiness ||--}o Text : "award"
-OnlineBusiness ||--}o Text : "awards"
 OnlineBusiness ||--}o ContactPoint : "contactPoint"
 OnlineBusiness ||--}o ContactPoint : "contactPoints"
 OnlineBusiness ||--}o Organization : "department"
-OnlineBusiness ||--}o Date : "dissolutionDate"
-OnlineBusiness ||--}o Text : "email"
 OnlineBusiness ||--}o Person : "employee"
 OnlineBusiness ||--}o Person : "employees"
 OnlineBusiness ||--}o Event : "event"
 OnlineBusiness ||--}o Event : "events"
-OnlineBusiness ||--}o Text : "faxNumber"
 OnlineBusiness ||--}o Person : "founders"
-OnlineBusiness ||--}o Date : "foundingDate"
 OnlineBusiness ||--}o Place : "foundingLocation"
 OnlineBusiness ||--}o Grant : "funding"
 OnlineBusiness ||--}o Certification : "hasCertification"
@@ -65,25 +77,13 @@ OnlineBusiness ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 OnlineBusiness ||--}o OfferCatalog : "hasOfferCatalog"
 OnlineBusiness ||--}o Place : "hasPOS"
 OnlineBusiness ||--}o InteractionCounter : "interactionStatistic"
-OnlineBusiness ||--}o Text : "isicV4"
-OnlineBusiness ||--}o Text : "iso6523Code"
-OnlineBusiness ||--}o Text : "legalName"
 OnlineBusiness ||--}o Offer : "makesOffer"
-OnlineBusiness ||--}o Text : "naics"
 OnlineBusiness ||--}o NonprofitType : "nonprofitStatus"
 OnlineBusiness ||--}o QuantitativeValue : "numberOfEmployees"
 OnlineBusiness ||--}o Organization : "parentOrganization"
 OnlineBusiness ||--}o Review : "review"
 OnlineBusiness ||--}o Review : "reviews"
 OnlineBusiness ||--}o Demand : "seeks"
-OnlineBusiness ||--}o Text : "slogan"
 OnlineBusiness ||--}o Organization : "subOrganization"
-OnlineBusiness ||--}o Text : "telephone"
-OnlineBusiness ||--}o Text : "vatID"
-OnlineBusiness ||--}o Text : "alternateName"
-OnlineBusiness ||--}o Text : "disambiguatingDescription"
-OnlineBusiness ||--}o Text : "name"
-OnlineBusiness ||--}o URL : "sameAs"
 OnlineBusiness ||--}o Action : "potentialAction"
-OnlineBusiness ||--}o URL : "url"
 

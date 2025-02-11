@@ -2,17 +2,17 @@ erDiagram
 Class {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Class ||--}o Text : "alternateName"
-Class ||--}o Text : "disambiguatingDescription"
-Class ||--}o Text : "name"
-Class ||--}o URL : "sameAs"
 Class ||--}o Action : "potentialAction"
-Class ||--}o URL : "url"
 

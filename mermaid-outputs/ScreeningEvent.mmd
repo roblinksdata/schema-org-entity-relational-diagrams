@@ -1,6 +1,7 @@
 erDiagram
 ScreeningEvent {
     stringList subtitleLanguage  
+    TextList videoFormat  
     stringList actor  
     stringList contributor  
     stringList funder  
@@ -12,23 +13,34 @@ ScreeningEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ScreeningEvent ||--}o Movie : "workPresented"
-ScreeningEvent ||--}o Text : "videoFormat"
 ScreeningEvent ||--}o Thing : "about"
 ScreeningEvent ||--}o Duration : "duration"
 ScreeningEvent ||--}o CreativeWork : "workFeatured"
@@ -40,22 +52,10 @@ ScreeningEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 ScreeningEvent ||--}o Schedule : "eventSchedule"
 ScreeningEvent ||--}o EventStatusType : "eventStatus"
 ScreeningEvent ||--}o Grant : "funding"
-ScreeningEvent ||--}o Boolean : "isAccessibleForFree"
-ScreeningEvent ||--}o Integer : "maximumAttendeeCapacity"
-ScreeningEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-ScreeningEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-ScreeningEvent ||--}o Date : "previousStartDate"
 ScreeningEvent ||--}o CreativeWork : "recordedIn"
-ScreeningEvent ||--}o Integer : "remainingAttendeeCapacity"
 ScreeningEvent ||--}o Review : "review"
 ScreeningEvent ||--}o Event : "subEvent"
 ScreeningEvent ||--}o Event : "subEvents"
 ScreeningEvent ||--}o Event : "superEvent"
-ScreeningEvent ||--}o Text : "typicalAgeRange"
-ScreeningEvent ||--}o Text : "alternateName"
-ScreeningEvent ||--}o Text : "disambiguatingDescription"
-ScreeningEvent ||--}o Text : "name"
-ScreeningEvent ||--}o URL : "sameAs"
 ScreeningEvent ||--}o Action : "potentialAction"
-ScreeningEvent ||--}o URL : "url"
 

@@ -1,24 +1,24 @@
 erDiagram
 EntryPoint {
     stringList actionPlatform  
+    TextList contentType  
+    TextList encodingType  
+    TextList httpMethod  
+    TextList urlTemplate  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 EntryPoint ||--}o SoftwareApplication : "actionApplication"
 EntryPoint ||--}o SoftwareApplication : "application"
-EntryPoint ||--}o Text : "contentType"
-EntryPoint ||--}o Text : "encodingType"
-EntryPoint ||--}o Text : "httpMethod"
-EntryPoint ||--}o Text : "urlTemplate"
-EntryPoint ||--}o Text : "alternateName"
-EntryPoint ||--}o Text : "disambiguatingDescription"
-EntryPoint ||--}o Text : "name"
-EntryPoint ||--}o URL : "sameAs"
 EntryPoint ||--}o Action : "potentialAction"
-EntryPoint ||--}o URL : "url"
 

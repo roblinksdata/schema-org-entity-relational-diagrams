@@ -2,11 +2,16 @@ erDiagram
 DrugClass {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DrugClass ||--}o Drug : "drug"
@@ -17,10 +22,5 @@ DrugClass ||--}o MedicineSystem : "medicineSystem"
 DrugClass ||--}o Organization : "recognizingAuthority"
 DrugClass ||--}o MedicalSpecialty : "relevantSpecialty"
 DrugClass ||--}o MedicalStudy : "study"
-DrugClass ||--}o Text : "alternateName"
-DrugClass ||--}o Text : "disambiguatingDescription"
-DrugClass ||--}o Text : "name"
-DrugClass ||--}o URL : "sameAs"
 DrugClass ||--}o Action : "potentialAction"
-DrugClass ||--}o URL : "url"
 

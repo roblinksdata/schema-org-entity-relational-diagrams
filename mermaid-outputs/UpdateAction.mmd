@@ -8,11 +8,16 @@ UpdateAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 UpdateAction ||--}o Thing : "collection"
@@ -23,10 +28,5 @@ UpdateAction ||--}o Thing : "result"
 UpdateAction ||--}o HowTo : "actionProcess"
 UpdateAction ||--}o ActionStatusType : "actionStatus"
 UpdateAction ||--}o Thing : "error"
-UpdateAction ||--}o Text : "alternateName"
-UpdateAction ||--}o Text : "disambiguatingDescription"
-UpdateAction ||--}o Text : "name"
-UpdateAction ||--}o URL : "sameAs"
 UpdateAction ||--}o Action : "potentialAction"
-UpdateAction ||--}o URL : "url"
 

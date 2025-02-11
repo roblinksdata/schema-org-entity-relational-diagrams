@@ -2,12 +2,24 @@ erDiagram
 Suite {
     stringList bed  
     stringList numberOfRooms  
+    TextList accommodationCategory  
+    TextList floorLevel  
     stringList leaseLength  
+    IntegerList numberOfBathroomsTotal  
     stringList numberOfBedrooms  
+    NumberList numberOfFullBathrooms  
+    NumberList numberOfPartialBathrooms  
+    TextList permittedUsage  
     stringList petsAllowed  
+    URLList tourBookingPage  
+    NumberList yearBuilt  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,61 +31,49 @@ Suite {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Suite ||--}o QuantitativeValue : "occupancy"
-Suite ||--}o Text : "accommodationCategory"
 Suite ||--}o FloorPlan : "accommodationFloorPlan"
 Suite ||--}o LocationFeatureSpecification : "amenityFeature"
-Suite ||--}o Text : "floorLevel"
 Suite ||--}o QuantitativeValue : "floorSize"
-Suite ||--}o Integer : "numberOfBathroomsTotal"
-Suite ||--}o Number : "numberOfFullBathrooms"
-Suite ||--}o Number : "numberOfPartialBathrooms"
-Suite ||--}o Text : "permittedUsage"
-Suite ||--}o URL : "tourBookingPage"
-Suite ||--}o Number : "yearBuilt"
-Suite ||--}o Text : "globalLocationNumber"
-Suite ||--}o URL : "hasGS1DigitalLink"
 Suite ||--}o PropertyValue : "additionalProperty"
 Suite ||--}o AggregateRating : "aggregateRating"
-Suite ||--}o Text : "branchCode"
 Suite ||--}o Place : "containedIn"
 Suite ||--}o Place : "containedInPlace"
 Suite ||--}o Place : "containsPlace"
 Suite ||--}o Event : "event"
 Suite ||--}o Event : "events"
-Suite ||--}o Text : "faxNumber"
 Suite ||--}o Certification : "hasCertification"
-Suite ||--}o Boolean : "hasDriveThroughService"
-Suite ||--}o Boolean : "isAccessibleForFree"
-Suite ||--}o Text : "isicV4"
-Suite ||--}o URL : "map"
-Suite ||--}o URL : "maps"
-Suite ||--}o Integer : "maximumAttendeeCapacity"
 Suite ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Suite ||--}o Boolean : "publicAccess"
 Suite ||--}o Review : "review"
 Suite ||--}o Review : "reviews"
-Suite ||--}o Text : "slogan"
-Suite ||--}o Boolean : "smokingAllowed"
 Suite ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Suite ||--}o Text : "telephone"
-Suite ||--}o Text : "alternateName"
-Suite ||--}o Text : "disambiguatingDescription"
-Suite ||--}o Text : "name"
-Suite ||--}o URL : "sameAs"
 Suite ||--}o Action : "potentialAction"
-Suite ||--}o URL : "url"
 

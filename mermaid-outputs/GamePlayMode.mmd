@@ -2,17 +2,17 @@ erDiagram
 GamePlayMode {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-GamePlayMode ||--}o Text : "alternateName"
-GamePlayMode ||--}o Text : "disambiguatingDescription"
-GamePlayMode ||--}o Text : "name"
-GamePlayMode ||--}o URL : "sameAs"
 GamePlayMode ||--}o Action : "potentialAction"
-GamePlayMode ||--}o URL : "url"
 

@@ -1,8 +1,16 @@
 erDiagram
 HVACBusiness {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ HVACBusiness {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 HVACBusiness ||--}o Organization : "branchOf"
-HVACBusiness ||--}o Text : "currenciesAccepted"
-HVACBusiness ||--}o Text : "openingHours"
-HVACBusiness ||--}o Text : "paymentAccepted"
-HVACBusiness ||--}o Text : "priceRange"
-HVACBusiness ||--}o Text : "globalLocationNumber"
-HVACBusiness ||--}o URL : "hasGS1DigitalLink"
 HVACBusiness ||--}o PropertyValue : "additionalProperty"
 HVACBusiness ||--}o AggregateRating : "aggregateRating"
 HVACBusiness ||--}o LocationFeatureSpecification : "amenityFeature"
-HVACBusiness ||--}o Text : "branchCode"
 HVACBusiness ||--}o Place : "containedIn"
 HVACBusiness ||--}o Place : "containedInPlace"
 HVACBusiness ||--}o Place : "containsPlace"
 HVACBusiness ||--}o Event : "event"
 HVACBusiness ||--}o Event : "events"
-HVACBusiness ||--}o Text : "faxNumber"
 HVACBusiness ||--}o Certification : "hasCertification"
-HVACBusiness ||--}o Boolean : "hasDriveThroughService"
-HVACBusiness ||--}o Boolean : "isAccessibleForFree"
-HVACBusiness ||--}o Text : "isicV4"
-HVACBusiness ||--}o URL : "map"
-HVACBusiness ||--}o URL : "maps"
-HVACBusiness ||--}o Integer : "maximumAttendeeCapacity"
 HVACBusiness ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-HVACBusiness ||--}o Boolean : "publicAccess"
 HVACBusiness ||--}o Review : "review"
 HVACBusiness ||--}o Review : "reviews"
-HVACBusiness ||--}o Text : "slogan"
-HVACBusiness ||--}o Boolean : "smokingAllowed"
 HVACBusiness ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-HVACBusiness ||--}o Text : "telephone"
-HVACBusiness ||--}o URL : "tourBookingPage"
-HVACBusiness ||--}o Text : "duns"
-HVACBusiness ||--}o Text : "leiCode"
-HVACBusiness ||--}o Text : "taxID"
 HVACBusiness ||--}o InteractionCounter : "agentInteractionStatistic"
 HVACBusiness ||--}o Person : "alumni"
-HVACBusiness ||--}o Text : "award"
-HVACBusiness ||--}o Text : "awards"
 HVACBusiness ||--}o ContactPoint : "contactPoint"
 HVACBusiness ||--}o ContactPoint : "contactPoints"
 HVACBusiness ||--}o Organization : "department"
-HVACBusiness ||--}o Date : "dissolutionDate"
-HVACBusiness ||--}o Text : "email"
 HVACBusiness ||--}o Person : "employee"
 HVACBusiness ||--}o Person : "employees"
 HVACBusiness ||--}o Person : "founders"
-HVACBusiness ||--}o Date : "foundingDate"
 HVACBusiness ||--}o Place : "foundingLocation"
 HVACBusiness ||--}o Grant : "funding"
 HVACBusiness ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ HVACBusiness ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 HVACBusiness ||--}o OfferCatalog : "hasOfferCatalog"
 HVACBusiness ||--}o Place : "hasPOS"
 HVACBusiness ||--}o InteractionCounter : "interactionStatistic"
-HVACBusiness ||--}o Text : "iso6523Code"
-HVACBusiness ||--}o Text : "legalName"
 HVACBusiness ||--}o Offer : "makesOffer"
-HVACBusiness ||--}o Text : "naics"
 HVACBusiness ||--}o NonprofitType : "nonprofitStatus"
 HVACBusiness ||--}o QuantitativeValue : "numberOfEmployees"
 HVACBusiness ||--}o Organization : "parentOrganization"
 HVACBusiness ||--}o Demand : "seeks"
 HVACBusiness ||--}o Organization : "subOrganization"
-HVACBusiness ||--}o Text : "vatID"
-HVACBusiness ||--}o Text : "alternateName"
-HVACBusiness ||--}o Text : "disambiguatingDescription"
-HVACBusiness ||--}o Text : "name"
-HVACBusiness ||--}o URL : "sameAs"
 HVACBusiness ||--}o Action : "potentialAction"
-HVACBusiness ||--}o URL : "url"
 

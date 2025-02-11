@@ -10,11 +10,16 @@ CheckInAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CheckInAction ||--}o Thing : "about"
@@ -25,10 +30,5 @@ CheckInAction ||--}o Thing : "result"
 CheckInAction ||--}o HowTo : "actionProcess"
 CheckInAction ||--}o ActionStatusType : "actionStatus"
 CheckInAction ||--}o Thing : "error"
-CheckInAction ||--}o Text : "alternateName"
-CheckInAction ||--}o Text : "disambiguatingDescription"
-CheckInAction ||--}o Text : "name"
-CheckInAction ||--}o URL : "sameAs"
 CheckInAction ||--}o Action : "potentialAction"
-CheckInAction ||--}o URL : "url"
 

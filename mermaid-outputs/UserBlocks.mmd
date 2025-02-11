@@ -11,19 +11,31 @@ UserBlocks {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 UserBlocks ||--}o Thing : "about"
@@ -37,22 +49,10 @@ UserBlocks ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 UserBlocks ||--}o Schedule : "eventSchedule"
 UserBlocks ||--}o EventStatusType : "eventStatus"
 UserBlocks ||--}o Grant : "funding"
-UserBlocks ||--}o Boolean : "isAccessibleForFree"
-UserBlocks ||--}o Integer : "maximumAttendeeCapacity"
-UserBlocks ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-UserBlocks ||--}o Integer : "maximumVirtualAttendeeCapacity"
-UserBlocks ||--}o Date : "previousStartDate"
 UserBlocks ||--}o CreativeWork : "recordedIn"
-UserBlocks ||--}o Integer : "remainingAttendeeCapacity"
 UserBlocks ||--}o Review : "review"
 UserBlocks ||--}o Event : "subEvent"
 UserBlocks ||--}o Event : "subEvents"
 UserBlocks ||--}o Event : "superEvent"
-UserBlocks ||--}o Text : "typicalAgeRange"
-UserBlocks ||--}o Text : "alternateName"
-UserBlocks ||--}o Text : "disambiguatingDescription"
-UserBlocks ||--}o Text : "name"
-UserBlocks ||--}o URL : "sameAs"
 UserBlocks ||--}o Action : "potentialAction"
-UserBlocks ||--}o URL : "url"
 

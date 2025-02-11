@@ -1,8 +1,16 @@
 erDiagram
 ComputerStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ ComputerStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ComputerStore ||--}o Organization : "branchOf"
-ComputerStore ||--}o Text : "currenciesAccepted"
-ComputerStore ||--}o Text : "openingHours"
-ComputerStore ||--}o Text : "paymentAccepted"
-ComputerStore ||--}o Text : "priceRange"
-ComputerStore ||--}o Text : "globalLocationNumber"
-ComputerStore ||--}o URL : "hasGS1DigitalLink"
 ComputerStore ||--}o PropertyValue : "additionalProperty"
 ComputerStore ||--}o AggregateRating : "aggregateRating"
 ComputerStore ||--}o LocationFeatureSpecification : "amenityFeature"
-ComputerStore ||--}o Text : "branchCode"
 ComputerStore ||--}o Place : "containedIn"
 ComputerStore ||--}o Place : "containedInPlace"
 ComputerStore ||--}o Place : "containsPlace"
 ComputerStore ||--}o Event : "event"
 ComputerStore ||--}o Event : "events"
-ComputerStore ||--}o Text : "faxNumber"
 ComputerStore ||--}o Certification : "hasCertification"
-ComputerStore ||--}o Boolean : "hasDriveThroughService"
-ComputerStore ||--}o Boolean : "isAccessibleForFree"
-ComputerStore ||--}o Text : "isicV4"
-ComputerStore ||--}o URL : "map"
-ComputerStore ||--}o URL : "maps"
-ComputerStore ||--}o Integer : "maximumAttendeeCapacity"
 ComputerStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-ComputerStore ||--}o Boolean : "publicAccess"
 ComputerStore ||--}o Review : "review"
 ComputerStore ||--}o Review : "reviews"
-ComputerStore ||--}o Text : "slogan"
-ComputerStore ||--}o Boolean : "smokingAllowed"
 ComputerStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-ComputerStore ||--}o Text : "telephone"
-ComputerStore ||--}o URL : "tourBookingPage"
-ComputerStore ||--}o Text : "duns"
-ComputerStore ||--}o Text : "leiCode"
-ComputerStore ||--}o Text : "taxID"
 ComputerStore ||--}o InteractionCounter : "agentInteractionStatistic"
 ComputerStore ||--}o Person : "alumni"
-ComputerStore ||--}o Text : "award"
-ComputerStore ||--}o Text : "awards"
 ComputerStore ||--}o ContactPoint : "contactPoint"
 ComputerStore ||--}o ContactPoint : "contactPoints"
 ComputerStore ||--}o Organization : "department"
-ComputerStore ||--}o Date : "dissolutionDate"
-ComputerStore ||--}o Text : "email"
 ComputerStore ||--}o Person : "employee"
 ComputerStore ||--}o Person : "employees"
 ComputerStore ||--}o Person : "founders"
-ComputerStore ||--}o Date : "foundingDate"
 ComputerStore ||--}o Place : "foundingLocation"
 ComputerStore ||--}o Grant : "funding"
 ComputerStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ ComputerStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 ComputerStore ||--}o OfferCatalog : "hasOfferCatalog"
 ComputerStore ||--}o Place : "hasPOS"
 ComputerStore ||--}o InteractionCounter : "interactionStatistic"
-ComputerStore ||--}o Text : "iso6523Code"
-ComputerStore ||--}o Text : "legalName"
 ComputerStore ||--}o Offer : "makesOffer"
-ComputerStore ||--}o Text : "naics"
 ComputerStore ||--}o NonprofitType : "nonprofitStatus"
 ComputerStore ||--}o QuantitativeValue : "numberOfEmployees"
 ComputerStore ||--}o Organization : "parentOrganization"
 ComputerStore ||--}o Demand : "seeks"
 ComputerStore ||--}o Organization : "subOrganization"
-ComputerStore ||--}o Text : "vatID"
-ComputerStore ||--}o Text : "alternateName"
-ComputerStore ||--}o Text : "disambiguatingDescription"
-ComputerStore ||--}o Text : "name"
-ComputerStore ||--}o URL : "sameAs"
 ComputerStore ||--}o Action : "potentialAction"
-ComputerStore ||--}o URL : "url"
 

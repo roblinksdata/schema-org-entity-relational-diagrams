@@ -3,11 +3,16 @@ MedicalTestPanel {
     stringList normalRange  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalTestPanel ||--}o MedicalTest : "subTest"
@@ -22,10 +27,5 @@ MedicalTestPanel ||--}o MedicineSystem : "medicineSystem"
 MedicalTestPanel ||--}o Organization : "recognizingAuthority"
 MedicalTestPanel ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalTestPanel ||--}o MedicalStudy : "study"
-MedicalTestPanel ||--}o Text : "alternateName"
-MedicalTestPanel ||--}o Text : "disambiguatingDescription"
-MedicalTestPanel ||--}o Text : "name"
-MedicalTestPanel ||--}o URL : "sameAs"
 MedicalTestPanel ||--}o Action : "potentialAction"
-MedicalTestPanel ||--}o URL : "url"
 

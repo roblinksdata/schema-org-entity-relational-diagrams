@@ -8,11 +8,16 @@ AssessAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AssessAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ AssessAction ||--}o Thing : "result"
 AssessAction ||--}o HowTo : "actionProcess"
 AssessAction ||--}o ActionStatusType : "actionStatus"
 AssessAction ||--}o Thing : "error"
-AssessAction ||--}o Text : "alternateName"
-AssessAction ||--}o Text : "disambiguatingDescription"
-AssessAction ||--}o Text : "name"
-AssessAction ||--}o URL : "sameAs"
 AssessAction ||--}o Action : "potentialAction"
-AssessAction ||--}o URL : "url"
 

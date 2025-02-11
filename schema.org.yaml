@@ -6602,10 +6602,6 @@ classes:
     class_uri: schema:Event
   Image:
     class_uri: http://purl.org/dc/dcmitype/Image
-  Text:
-    comments:
-    - 'Data type: Text.'
-    class_uri: schema:Text
   Issue:
     class_uri: http://purl.org/ontology/bibo/Issue
   Periodical:
@@ -7417,10 +7413,6 @@ classes:
     - An agent bookmarks/flags/labels/tags/marks an object.
     is_a: OrganizeAction
     class_uri: schema:BookmarkAction
-  Boolean:
-    comments:
-    - 'Boolean: True or False.'
-    class_uri: schema:Boolean
   BorrowAction:
     comments:
     - 'The act of obtaining an object under an agreement to return it at a later date.
@@ -8447,11 +8439,6 @@ classes:
       critic reviews that originate from third-party sources.
     is_a: Review
     class_uri: schema:CriticReview
-  CssSelectorType:
-    comments:
-    - Text representing a CSS selector.
-    is_a: Text
-    class_uri: schema:CssSelectorType
   CurrencyConversionService:
     comments:
     - A service to convert funds from one currency to another currency.
@@ -8517,15 +8504,6 @@ classes:
     - The basic data types such as Integers, Strings, etc.
     is_a: Class
     class_uri: schema:DataType
-  Date:
-    comments:
-    - A date value in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).
-    class_uri: schema:Date
-  DateTime:
-    comments:
-    - A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-      (see Chapter 5.4 of ISO 8601).
-    class_uri: schema:DateTime
   DatedMoneySpecification:
     comments:
     - A DatedMoneySpecification represents monetary values with optional start and
@@ -9476,11 +9454,6 @@ classes:
     - passengerSequenceNumber
     - securityScreening
     class_uri: schema:FlightReservation
-  Float:
-    comments:
-    - 'Data type: Floating number.'
-    is_a: Number
-    class_uri: schema:Float
   FloorPlan:
     comments:
     - 'A FloorPlan is an explicit representation of a collection of similar accommodations,
@@ -10243,11 +10216,6 @@ classes:
       such as quantities, structured values, etc.
     is_a: Thing
     class_uri: schema:Intangible
-  Integer:
-    comments:
-    - 'Data type: Integer.'
-    is_a: Number
-    class_uri: schema:Integer
   InteractAction:
     comments:
     - The act of interacting with another person or organization.
@@ -11779,14 +11747,6 @@ classes:
     - A file containing a note, primarily for the author.
     is_a: DigitalDocument
     class_uri: schema:NoteDigitalDocument
-  Number:
-    comments:
-    - 'Data type: Number.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789
-      (Unicode ''DIGIT ZERO'' (U+0030) to ''DIGIT NINE'' (U+0039)) rather than superficially
-      similar Unicode symbols.\\n* Use ''.'' (Unicode ''FULL STOP'' (U+002E)) rather
-      than '','' to indicate a decimal point. Avoid using these symbols as a readability
-      separator.'
-    class_uri: schema:Number
   Nursing:
     comments:
     - A health profession of a person formally educated and trained in the care of
@@ -12918,7 +12878,7 @@ classes:
   PronounceableText:
     comments:
     - 'Data type: PronounceableText.'
-    is_a: Text
+    # is_a: Text # But Text is a data `type` in here, not a `class`.
     slots:
     - inLanguage
     - phoneticText
@@ -14503,11 +14463,6 @@ classes:
     - An enumeration of possible benefits as part of a loyalty (members) program.
     is_a: Enumeration
     class_uri: schema:TierBenefitEnumeration
-  Time:
-    comments:
-    - A point in time recurring on multiple days in the form hh:mm:ss[Z|(+|-)hh:mm]
-      (see [XML schema for details](http://www.w3.org/TR/xmlschema-2/#time)).
-    class_uri: schema:Time
   TipAction:
     comments:
     - The act of giving money voluntarily to a beneficiary in recognition of services
@@ -14673,11 +14628,6 @@ classes:
     - 'UKNonprofitType: Non-profit organization type originating from the United Kingdom.'
     is_a: NonprofitType
     class_uri: schema:UKNonprofitType
-  URL:
-    comments:
-    - 'Data type: URL.'
-    is_a: Text
-    class_uri: schema:URL
   USNonprofitType:
     comments:
     - 'USNonprofitType: Non-profit organization type originating from the United States.'
@@ -15190,11 +15140,6 @@ classes:
     - language
     - inLanguage
     class_uri: schema:WriteAction
-  XPathType:
-    comments:
-    - Text representing an XPath (typically but not necessarily version 1.0).
-    is_a: Text
-    class_uri: schema:XPathType
   Zoo:
     comments:
     - A zoo.
@@ -22074,3 +22019,67 @@ classes:
   yearsInOperation:
     comments:
     - The age of the business.
+types: 
+  Text:
+    comments:
+    - 'Data type: Text.'
+    uri: schema:Text
+    base: str
+  CssSelectorType:
+    comments:
+    - Text representing a CSS selector.
+    typeof: Text
+    uri: schema:CssSelectorType
+  URL:
+    comments:
+    - 'Data type: URL.'
+    typeof: Text
+    uri: schema:URL
+  XPathType:
+    comments:
+    - Text representing an XPath (typically but not necessarily version 1.0).
+    typeof: Text
+    uri: schema:XPathType
+  Boolean:
+    comments:
+    - 'Boolean: True or False.'
+    uri: schema:Boolean
+    base: Bool
+  Time:
+    comments:
+    - A point in time recurring on multiple days in the form hh:mm:ss[Z|(+|-)hh:mm]
+      (see [XML schema for details](http://www.w3.org/TR/xmlschema-2/#time)).
+    uri: schema:Time
+    base: XSDTime
+  Number:
+    comments:
+    - 'Data type: Number.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789
+      (Unicode ''DIGIT ZERO'' (U+0030) to ''DIGIT NINE'' (U+0039)) rather than superficially
+      similar Unicode symbols.\\n* Use ''.'' (Unicode ''FULL STOP'' (U+002E)) rather
+      than '','' to indicate a decimal point. Avoid using these symbols as a readability
+      separator.'
+    uri: schema:Number
+    base: Decimal
+  Integer:
+    comments:
+    - 'Data type: Integer.'
+    typeof: Number
+    uri: schema:Integer
+    base: int
+  Float:
+    comments:
+    - 'Data type: Floating number.'
+    typeof: Number
+    uri: schema:Float
+    base: float
+  DateTime:
+    comments:
+    - A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+      (see Chapter 5.4 of ISO 8601).
+    uri: schema:DateTime
+    base: XSDDateTime
+  Date:
+    comments:
+    - A date value in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).
+    uri: schema:Date
+    base: XSDDate

@@ -1,8 +1,13 @@
 erDiagram
 Zoo {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ Zoo {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Zoo ||--}o Text : "openingHours"
-Zoo ||--}o Text : "globalLocationNumber"
-Zoo ||--}o URL : "hasGS1DigitalLink"
 Zoo ||--}o PropertyValue : "additionalProperty"
 Zoo ||--}o AggregateRating : "aggregateRating"
 Zoo ||--}o LocationFeatureSpecification : "amenityFeature"
-Zoo ||--}o Text : "branchCode"
 Zoo ||--}o Place : "containedIn"
 Zoo ||--}o Place : "containedInPlace"
 Zoo ||--}o Place : "containsPlace"
 Zoo ||--}o Event : "event"
 Zoo ||--}o Event : "events"
-Zoo ||--}o Text : "faxNumber"
 Zoo ||--}o Certification : "hasCertification"
-Zoo ||--}o Boolean : "hasDriveThroughService"
-Zoo ||--}o Boolean : "isAccessibleForFree"
-Zoo ||--}o Text : "isicV4"
-Zoo ||--}o URL : "map"
-Zoo ||--}o URL : "maps"
-Zoo ||--}o Integer : "maximumAttendeeCapacity"
 Zoo ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Zoo ||--}o Boolean : "publicAccess"
 Zoo ||--}o Review : "review"
 Zoo ||--}o Review : "reviews"
-Zoo ||--}o Text : "slogan"
-Zoo ||--}o Boolean : "smokingAllowed"
 Zoo ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Zoo ||--}o Text : "telephone"
-Zoo ||--}o URL : "tourBookingPage"
-Zoo ||--}o Text : "alternateName"
-Zoo ||--}o Text : "disambiguatingDescription"
-Zoo ||--}o Text : "name"
-Zoo ||--}o URL : "sameAs"
 Zoo ||--}o Action : "potentialAction"
-Zoo ||--}o URL : "url"
 

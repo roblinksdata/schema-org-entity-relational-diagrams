@@ -8,11 +8,16 @@ DeleteAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DeleteAction ||--}o Thing : "collection"
@@ -23,10 +28,5 @@ DeleteAction ||--}o Thing : "result"
 DeleteAction ||--}o HowTo : "actionProcess"
 DeleteAction ||--}o ActionStatusType : "actionStatus"
 DeleteAction ||--}o Thing : "error"
-DeleteAction ||--}o Text : "alternateName"
-DeleteAction ||--}o Text : "disambiguatingDescription"
-DeleteAction ||--}o Text : "name"
-DeleteAction ||--}o URL : "sameAs"
 DeleteAction ||--}o Action : "potentialAction"
-DeleteAction ||--}o URL : "url"
 

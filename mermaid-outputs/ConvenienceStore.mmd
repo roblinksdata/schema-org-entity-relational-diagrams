@@ -1,8 +1,16 @@
 erDiagram
 ConvenienceStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ ConvenienceStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ConvenienceStore ||--}o Organization : "branchOf"
-ConvenienceStore ||--}o Text : "currenciesAccepted"
-ConvenienceStore ||--}o Text : "openingHours"
-ConvenienceStore ||--}o Text : "paymentAccepted"
-ConvenienceStore ||--}o Text : "priceRange"
-ConvenienceStore ||--}o Text : "globalLocationNumber"
-ConvenienceStore ||--}o URL : "hasGS1DigitalLink"
 ConvenienceStore ||--}o PropertyValue : "additionalProperty"
 ConvenienceStore ||--}o AggregateRating : "aggregateRating"
 ConvenienceStore ||--}o LocationFeatureSpecification : "amenityFeature"
-ConvenienceStore ||--}o Text : "branchCode"
 ConvenienceStore ||--}o Place : "containedIn"
 ConvenienceStore ||--}o Place : "containedInPlace"
 ConvenienceStore ||--}o Place : "containsPlace"
 ConvenienceStore ||--}o Event : "event"
 ConvenienceStore ||--}o Event : "events"
-ConvenienceStore ||--}o Text : "faxNumber"
 ConvenienceStore ||--}o Certification : "hasCertification"
-ConvenienceStore ||--}o Boolean : "hasDriveThroughService"
-ConvenienceStore ||--}o Boolean : "isAccessibleForFree"
-ConvenienceStore ||--}o Text : "isicV4"
-ConvenienceStore ||--}o URL : "map"
-ConvenienceStore ||--}o URL : "maps"
-ConvenienceStore ||--}o Integer : "maximumAttendeeCapacity"
 ConvenienceStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-ConvenienceStore ||--}o Boolean : "publicAccess"
 ConvenienceStore ||--}o Review : "review"
 ConvenienceStore ||--}o Review : "reviews"
-ConvenienceStore ||--}o Text : "slogan"
-ConvenienceStore ||--}o Boolean : "smokingAllowed"
 ConvenienceStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-ConvenienceStore ||--}o Text : "telephone"
-ConvenienceStore ||--}o URL : "tourBookingPage"
-ConvenienceStore ||--}o Text : "duns"
-ConvenienceStore ||--}o Text : "leiCode"
-ConvenienceStore ||--}o Text : "taxID"
 ConvenienceStore ||--}o InteractionCounter : "agentInteractionStatistic"
 ConvenienceStore ||--}o Person : "alumni"
-ConvenienceStore ||--}o Text : "award"
-ConvenienceStore ||--}o Text : "awards"
 ConvenienceStore ||--}o ContactPoint : "contactPoint"
 ConvenienceStore ||--}o ContactPoint : "contactPoints"
 ConvenienceStore ||--}o Organization : "department"
-ConvenienceStore ||--}o Date : "dissolutionDate"
-ConvenienceStore ||--}o Text : "email"
 ConvenienceStore ||--}o Person : "employee"
 ConvenienceStore ||--}o Person : "employees"
 ConvenienceStore ||--}o Person : "founders"
-ConvenienceStore ||--}o Date : "foundingDate"
 ConvenienceStore ||--}o Place : "foundingLocation"
 ConvenienceStore ||--}o Grant : "funding"
 ConvenienceStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ ConvenienceStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 ConvenienceStore ||--}o OfferCatalog : "hasOfferCatalog"
 ConvenienceStore ||--}o Place : "hasPOS"
 ConvenienceStore ||--}o InteractionCounter : "interactionStatistic"
-ConvenienceStore ||--}o Text : "iso6523Code"
-ConvenienceStore ||--}o Text : "legalName"
 ConvenienceStore ||--}o Offer : "makesOffer"
-ConvenienceStore ||--}o Text : "naics"
 ConvenienceStore ||--}o NonprofitType : "nonprofitStatus"
 ConvenienceStore ||--}o QuantitativeValue : "numberOfEmployees"
 ConvenienceStore ||--}o Organization : "parentOrganization"
 ConvenienceStore ||--}o Demand : "seeks"
 ConvenienceStore ||--}o Organization : "subOrganization"
-ConvenienceStore ||--}o Text : "vatID"
-ConvenienceStore ||--}o Text : "alternateName"
-ConvenienceStore ||--}o Text : "disambiguatingDescription"
-ConvenienceStore ||--}o Text : "name"
-ConvenienceStore ||--}o URL : "sameAs"
 ConvenienceStore ||--}o Action : "potentialAction"
-ConvenienceStore ||--}o URL : "url"
 

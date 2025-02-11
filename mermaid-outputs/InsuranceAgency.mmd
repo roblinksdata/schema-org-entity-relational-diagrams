@@ -1,9 +1,17 @@
 erDiagram
 InsuranceAgency {
     stringList feesAndCommissionsSpecification  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -15,91 +23,92 @@ InsuranceAgency {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 InsuranceAgency ||--}o Organization : "branchOf"
-InsuranceAgency ||--}o Text : "currenciesAccepted"
-InsuranceAgency ||--}o Text : "openingHours"
-InsuranceAgency ||--}o Text : "paymentAccepted"
-InsuranceAgency ||--}o Text : "priceRange"
-InsuranceAgency ||--}o Text : "globalLocationNumber"
-InsuranceAgency ||--}o URL : "hasGS1DigitalLink"
 InsuranceAgency ||--}o PropertyValue : "additionalProperty"
 InsuranceAgency ||--}o AggregateRating : "aggregateRating"
 InsuranceAgency ||--}o LocationFeatureSpecification : "amenityFeature"
-InsuranceAgency ||--}o Text : "branchCode"
 InsuranceAgency ||--}o Place : "containedIn"
 InsuranceAgency ||--}o Place : "containedInPlace"
 InsuranceAgency ||--}o Place : "containsPlace"
 InsuranceAgency ||--}o Event : "event"
 InsuranceAgency ||--}o Event : "events"
-InsuranceAgency ||--}o Text : "faxNumber"
 InsuranceAgency ||--}o Certification : "hasCertification"
-InsuranceAgency ||--}o Boolean : "hasDriveThroughService"
-InsuranceAgency ||--}o Boolean : "isAccessibleForFree"
-InsuranceAgency ||--}o Text : "isicV4"
-InsuranceAgency ||--}o URL : "map"
-InsuranceAgency ||--}o URL : "maps"
-InsuranceAgency ||--}o Integer : "maximumAttendeeCapacity"
 InsuranceAgency ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-InsuranceAgency ||--}o Boolean : "publicAccess"
 InsuranceAgency ||--}o Review : "review"
 InsuranceAgency ||--}o Review : "reviews"
-InsuranceAgency ||--}o Text : "slogan"
-InsuranceAgency ||--}o Boolean : "smokingAllowed"
 InsuranceAgency ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-InsuranceAgency ||--}o Text : "telephone"
-InsuranceAgency ||--}o URL : "tourBookingPage"
-InsuranceAgency ||--}o Text : "duns"
-InsuranceAgency ||--}o Text : "leiCode"
-InsuranceAgency ||--}o Text : "taxID"
 InsuranceAgency ||--}o InteractionCounter : "agentInteractionStatistic"
 InsuranceAgency ||--}o Person : "alumni"
-InsuranceAgency ||--}o Text : "award"
-InsuranceAgency ||--}o Text : "awards"
 InsuranceAgency ||--}o ContactPoint : "contactPoint"
 InsuranceAgency ||--}o ContactPoint : "contactPoints"
 InsuranceAgency ||--}o Organization : "department"
-InsuranceAgency ||--}o Date : "dissolutionDate"
-InsuranceAgency ||--}o Text : "email"
 InsuranceAgency ||--}o Person : "employee"
 InsuranceAgency ||--}o Person : "employees"
 InsuranceAgency ||--}o Person : "founders"
-InsuranceAgency ||--}o Date : "foundingDate"
 InsuranceAgency ||--}o Place : "foundingLocation"
 InsuranceAgency ||--}o Grant : "funding"
 InsuranceAgency ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -108,20 +117,11 @@ InsuranceAgency ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 InsuranceAgency ||--}o OfferCatalog : "hasOfferCatalog"
 InsuranceAgency ||--}o Place : "hasPOS"
 InsuranceAgency ||--}o InteractionCounter : "interactionStatistic"
-InsuranceAgency ||--}o Text : "iso6523Code"
-InsuranceAgency ||--}o Text : "legalName"
 InsuranceAgency ||--}o Offer : "makesOffer"
-InsuranceAgency ||--}o Text : "naics"
 InsuranceAgency ||--}o NonprofitType : "nonprofitStatus"
 InsuranceAgency ||--}o QuantitativeValue : "numberOfEmployees"
 InsuranceAgency ||--}o Organization : "parentOrganization"
 InsuranceAgency ||--}o Demand : "seeks"
 InsuranceAgency ||--}o Organization : "subOrganization"
-InsuranceAgency ||--}o Text : "vatID"
-InsuranceAgency ||--}o Text : "alternateName"
-InsuranceAgency ||--}o Text : "disambiguatingDescription"
-InsuranceAgency ||--}o Text : "name"
-InsuranceAgency ||--}o URL : "sameAs"
 InsuranceAgency ||--}o Action : "potentialAction"
-InsuranceAgency ||--}o URL : "url"
 

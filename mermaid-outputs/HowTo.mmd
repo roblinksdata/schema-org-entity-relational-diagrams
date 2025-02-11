@@ -17,25 +17,46 @@ HowTo {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,21 +68,30 @@ HowTo {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 HowTo ||--}o Duration : "performTime"
@@ -76,43 +106,22 @@ HowTo ||--}o Claim : "interpretedAsClaim"
 HowTo ||--}o Thing : "mainEntity"
 HowTo ||--}o Place : "spatialCoverage"
 HowTo ||--}o CreativeWork : "workExample"
-HowTo ||--}o Text : "abstract"
-HowTo ||--}o Text : "accessMode"
 HowTo ||--}o ItemList : "accessModeSufficient"
-HowTo ||--}o Text : "accessibilityAPI"
-HowTo ||--}o Text : "accessibilityControl"
-HowTo ||--}o Text : "accessibilityFeature"
-HowTo ||--}o Text : "accessibilityHazard"
-HowTo ||--}o Text : "accessibilitySummary"
 HowTo ||--}o Person : "accountablePerson"
 HowTo ||--}o AggregateRating : "aggregateRating"
-HowTo ||--}o Text : "alternativeHeadline"
 HowTo ||--}o MediaObject : "associatedMedia"
 HowTo ||--}o Audience : "audience"
-HowTo ||--}o Text : "award"
-HowTo ||--}o Text : "awards"
 HowTo ||--}o Person : "character"
 HowTo ||--}o Comment : "comment"
-HowTo ||--}o Integer : "commentCount"
-HowTo ||--}o Text : "conditionsOfAccess"
-HowTo ||--}o DateTime : "contentReferenceTime"
-HowTo ||--}o Text : "copyrightNotice"
-HowTo ||--}o Number : "copyrightYear"
 HowTo ||--}o Country : "countryOfOrigin"
-HowTo ||--}o Text : "creditText"
 HowTo ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-HowTo ||--}o URL : "discussionUrl"
 HowTo ||--}o Person : "editor"
 HowTo ||--}o AlignmentObject : "educationalAlignment"
 HowTo ||--}o MediaObject : "encoding"
 HowTo ||--}o MediaObject : "encodings"
 HowTo ||--}o CreativeWork : "exampleOfWork"
 HowTo ||--}o Grant : "funding"
-HowTo ||--}o Text : "headline"
 HowTo ||--}o InteractionCounter : "interactionStatistic"
-HowTo ||--}o Text : "interactivityType"
-HowTo ||--}o Boolean : "isAccessibleForFree"
-HowTo ||--}o Boolean : "isFamilyFriendly"
 HowTo ||--}o Place : "locationCreated"
 HowTo ||--}o Thing : "mentions"
 HowTo ||--}o PublicationEvent : "publication"
@@ -121,20 +130,11 @@ HowTo ||--}o Event : "recordedAt"
 HowTo ||--}o PublicationEvent : "releasedEvent"
 HowTo ||--}o Review : "review"
 HowTo ||--}o Review : "reviews"
-HowTo ||--}o Date : "sdDatePublished"
 HowTo ||--}o Organization : "sourceOrganization"
 HowTo ||--}o Place : "spatial"
-HowTo ||--}o Text : "text"
 HowTo ||--}o ImageObject : "thumbnail"
-HowTo ||--}o URL : "thumbnailUrl"
 HowTo ||--}o Duration : "timeRequired"
 HowTo ||--}o CreativeWork : "translationOfWork"
-HowTo ||--}o Text : "typicalAgeRange"
 HowTo ||--}o CreativeWork : "workTranslation"
-HowTo ||--}o Text : "alternateName"
-HowTo ||--}o Text : "disambiguatingDescription"
-HowTo ||--}o Text : "name"
-HowTo ||--}o URL : "sameAs"
 HowTo ||--}o Action : "potentialAction"
-HowTo ||--}o URL : "url"
 

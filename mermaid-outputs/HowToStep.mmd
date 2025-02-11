@@ -2,6 +2,7 @@ erDiagram
 HowToStep {
     stringList itemListElement  
     stringList itemListOrder  
+    IntegerList numberOfItems  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -15,25 +16,46 @@ HowToStep {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,24 +67,32 @@ HowToStep {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-HowToStep ||--}o Integer : "numberOfItems"
 HowToStep ||--}o Thing : "about"
 HowToStep ||--}o Place : "contentLocation"
 HowToStep ||--}o CreativeWork : "hasPart"
@@ -70,43 +100,22 @@ HowToStep ||--}o Claim : "interpretedAsClaim"
 HowToStep ||--}o Thing : "mainEntity"
 HowToStep ||--}o Place : "spatialCoverage"
 HowToStep ||--}o CreativeWork : "workExample"
-HowToStep ||--}o Text : "abstract"
-HowToStep ||--}o Text : "accessMode"
 HowToStep ||--}o ItemList : "accessModeSufficient"
-HowToStep ||--}o Text : "accessibilityAPI"
-HowToStep ||--}o Text : "accessibilityControl"
-HowToStep ||--}o Text : "accessibilityFeature"
-HowToStep ||--}o Text : "accessibilityHazard"
-HowToStep ||--}o Text : "accessibilitySummary"
 HowToStep ||--}o Person : "accountablePerson"
 HowToStep ||--}o AggregateRating : "aggregateRating"
-HowToStep ||--}o Text : "alternativeHeadline"
 HowToStep ||--}o MediaObject : "associatedMedia"
 HowToStep ||--}o Audience : "audience"
-HowToStep ||--}o Text : "award"
-HowToStep ||--}o Text : "awards"
 HowToStep ||--}o Person : "character"
 HowToStep ||--}o Comment : "comment"
-HowToStep ||--}o Integer : "commentCount"
-HowToStep ||--}o Text : "conditionsOfAccess"
-HowToStep ||--}o DateTime : "contentReferenceTime"
-HowToStep ||--}o Text : "copyrightNotice"
-HowToStep ||--}o Number : "copyrightYear"
 HowToStep ||--}o Country : "countryOfOrigin"
-HowToStep ||--}o Text : "creditText"
 HowToStep ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-HowToStep ||--}o URL : "discussionUrl"
 HowToStep ||--}o Person : "editor"
 HowToStep ||--}o AlignmentObject : "educationalAlignment"
 HowToStep ||--}o MediaObject : "encoding"
 HowToStep ||--}o MediaObject : "encodings"
 HowToStep ||--}o CreativeWork : "exampleOfWork"
 HowToStep ||--}o Grant : "funding"
-HowToStep ||--}o Text : "headline"
 HowToStep ||--}o InteractionCounter : "interactionStatistic"
-HowToStep ||--}o Text : "interactivityType"
-HowToStep ||--}o Boolean : "isAccessibleForFree"
-HowToStep ||--}o Boolean : "isFamilyFriendly"
 HowToStep ||--}o Place : "locationCreated"
 HowToStep ||--}o Thing : "mentions"
 HowToStep ||--}o PublicationEvent : "publication"
@@ -115,23 +124,14 @@ HowToStep ||--}o Event : "recordedAt"
 HowToStep ||--}o PublicationEvent : "releasedEvent"
 HowToStep ||--}o Review : "review"
 HowToStep ||--}o Review : "reviews"
-HowToStep ||--}o Date : "sdDatePublished"
 HowToStep ||--}o Organization : "sourceOrganization"
 HowToStep ||--}o Place : "spatial"
-HowToStep ||--}o Text : "text"
 HowToStep ||--}o ImageObject : "thumbnail"
-HowToStep ||--}o URL : "thumbnailUrl"
 HowToStep ||--}o Duration : "timeRequired"
 HowToStep ||--}o CreativeWork : "translationOfWork"
-HowToStep ||--}o Text : "typicalAgeRange"
 HowToStep ||--}o CreativeWork : "workTranslation"
 HowToStep ||--}o Thing : "item"
 HowToStep ||--}o ListItem : "nextItem"
 HowToStep ||--}o ListItem : "previousItem"
-HowToStep ||--}o Text : "alternateName"
-HowToStep ||--}o Text : "disambiguatingDescription"
-HowToStep ||--}o Text : "name"
-HowToStep ||--}o URL : "sameAs"
 HowToStep ||--}o Action : "potentialAction"
-HowToStep ||--}o URL : "url"
 

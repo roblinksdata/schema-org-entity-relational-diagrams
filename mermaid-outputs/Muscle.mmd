@@ -1,21 +1,26 @@
 erDiagram
 Muscle {
+    TextList muscleAction  
+    TextList associatedPathophysiology  
+    TextList bodyLocation  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Muscle ||--}o Muscle : "antagonist"
 Muscle ||--}o Vessel : "bloodSupply"
 Muscle ||--}o AnatomicalStructure : "insertion"
-Muscle ||--}o Text : "muscleAction"
 Muscle ||--}o Nerve : "nerve"
-Muscle ||--}o Text : "associatedPathophysiology"
-Muscle ||--}o Text : "bodyLocation"
 Muscle ||--}o AnatomicalStructure : "connectedTo"
 Muscle ||--}o ImageObject : "diagram"
 Muscle ||--}o AnatomicalSystem : "partOfSystem"
@@ -29,10 +34,5 @@ Muscle ||--}o MedicineSystem : "medicineSystem"
 Muscle ||--}o Organization : "recognizingAuthority"
 Muscle ||--}o MedicalSpecialty : "relevantSpecialty"
 Muscle ||--}o MedicalStudy : "study"
-Muscle ||--}o Text : "alternateName"
-Muscle ||--}o Text : "disambiguatingDescription"
-Muscle ||--}o Text : "name"
-Muscle ||--}o URL : "sameAs"
 Muscle ||--}o Action : "potentialAction"
-Muscle ||--}o URL : "url"
 

@@ -15,19 +15,31 @@ SportsEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SportsEvent ||--}o Thing : "about"
@@ -41,22 +53,10 @@ SportsEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 SportsEvent ||--}o Schedule : "eventSchedule"
 SportsEvent ||--}o EventStatusType : "eventStatus"
 SportsEvent ||--}o Grant : "funding"
-SportsEvent ||--}o Boolean : "isAccessibleForFree"
-SportsEvent ||--}o Integer : "maximumAttendeeCapacity"
-SportsEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-SportsEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-SportsEvent ||--}o Date : "previousStartDate"
 SportsEvent ||--}o CreativeWork : "recordedIn"
-SportsEvent ||--}o Integer : "remainingAttendeeCapacity"
 SportsEvent ||--}o Review : "review"
 SportsEvent ||--}o Event : "subEvent"
 SportsEvent ||--}o Event : "subEvents"
 SportsEvent ||--}o Event : "superEvent"
-SportsEvent ||--}o Text : "typicalAgeRange"
-SportsEvent ||--}o Text : "alternateName"
-SportsEvent ||--}o Text : "disambiguatingDescription"
-SportsEvent ||--}o Text : "name"
-SportsEvent ||--}o URL : "sameAs"
 SportsEvent ||--}o Action : "potentialAction"
-SportsEvent ||--}o URL : "url"
 

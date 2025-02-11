@@ -8,11 +8,16 @@ RejectAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 RejectAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ RejectAction ||--}o Thing : "result"
 RejectAction ||--}o HowTo : "actionProcess"
 RejectAction ||--}o ActionStatusType : "actionStatus"
 RejectAction ||--}o Thing : "error"
-RejectAction ||--}o Text : "alternateName"
-RejectAction ||--}o Text : "disambiguatingDescription"
-RejectAction ||--}o Text : "name"
-RejectAction ||--}o URL : "sameAs"
 RejectAction ||--}o Action : "potentialAction"
-RejectAction ||--}o URL : "url"
 

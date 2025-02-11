@@ -1,9 +1,18 @@
 erDiagram
 BackgroundNewsArticle {
+    TextList dateline  
+    TextList printColumn  
+    TextList printEdition  
+    TextList printPage  
+    TextList printSection  
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -17,25 +26,46 @@ BackgroundNewsArticle {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,32 +77,32 @@ BackgroundNewsArticle {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BackgroundNewsArticle ||--}o Text : "dateline"
-BackgroundNewsArticle ||--}o Text : "printColumn"
-BackgroundNewsArticle ||--}o Text : "printEdition"
-BackgroundNewsArticle ||--}o Text : "printPage"
-BackgroundNewsArticle ||--}o Text : "printSection"
-BackgroundNewsArticle ||--}o Text : "articleBody"
-BackgroundNewsArticle ||--}o Text : "articleSection"
-BackgroundNewsArticle ||--}o Text : "pagination"
-BackgroundNewsArticle ||--}o Integer : "wordCount"
 BackgroundNewsArticle ||--}o Thing : "about"
 BackgroundNewsArticle ||--}o Place : "contentLocation"
 BackgroundNewsArticle ||--}o CreativeWork : "hasPart"
@@ -80,43 +110,22 @@ BackgroundNewsArticle ||--}o Claim : "interpretedAsClaim"
 BackgroundNewsArticle ||--}o Thing : "mainEntity"
 BackgroundNewsArticle ||--}o Place : "spatialCoverage"
 BackgroundNewsArticle ||--}o CreativeWork : "workExample"
-BackgroundNewsArticle ||--}o Text : "abstract"
-BackgroundNewsArticle ||--}o Text : "accessMode"
 BackgroundNewsArticle ||--}o ItemList : "accessModeSufficient"
-BackgroundNewsArticle ||--}o Text : "accessibilityAPI"
-BackgroundNewsArticle ||--}o Text : "accessibilityControl"
-BackgroundNewsArticle ||--}o Text : "accessibilityFeature"
-BackgroundNewsArticle ||--}o Text : "accessibilityHazard"
-BackgroundNewsArticle ||--}o Text : "accessibilitySummary"
 BackgroundNewsArticle ||--}o Person : "accountablePerson"
 BackgroundNewsArticle ||--}o AggregateRating : "aggregateRating"
-BackgroundNewsArticle ||--}o Text : "alternativeHeadline"
 BackgroundNewsArticle ||--}o MediaObject : "associatedMedia"
 BackgroundNewsArticle ||--}o Audience : "audience"
-BackgroundNewsArticle ||--}o Text : "award"
-BackgroundNewsArticle ||--}o Text : "awards"
 BackgroundNewsArticle ||--}o Person : "character"
 BackgroundNewsArticle ||--}o Comment : "comment"
-BackgroundNewsArticle ||--}o Integer : "commentCount"
-BackgroundNewsArticle ||--}o Text : "conditionsOfAccess"
-BackgroundNewsArticle ||--}o DateTime : "contentReferenceTime"
-BackgroundNewsArticle ||--}o Text : "copyrightNotice"
-BackgroundNewsArticle ||--}o Number : "copyrightYear"
 BackgroundNewsArticle ||--}o Country : "countryOfOrigin"
-BackgroundNewsArticle ||--}o Text : "creditText"
 BackgroundNewsArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-BackgroundNewsArticle ||--}o URL : "discussionUrl"
 BackgroundNewsArticle ||--}o Person : "editor"
 BackgroundNewsArticle ||--}o AlignmentObject : "educationalAlignment"
 BackgroundNewsArticle ||--}o MediaObject : "encoding"
 BackgroundNewsArticle ||--}o MediaObject : "encodings"
 BackgroundNewsArticle ||--}o CreativeWork : "exampleOfWork"
 BackgroundNewsArticle ||--}o Grant : "funding"
-BackgroundNewsArticle ||--}o Text : "headline"
 BackgroundNewsArticle ||--}o InteractionCounter : "interactionStatistic"
-BackgroundNewsArticle ||--}o Text : "interactivityType"
-BackgroundNewsArticle ||--}o Boolean : "isAccessibleForFree"
-BackgroundNewsArticle ||--}o Boolean : "isFamilyFriendly"
 BackgroundNewsArticle ||--}o Place : "locationCreated"
 BackgroundNewsArticle ||--}o Thing : "mentions"
 BackgroundNewsArticle ||--}o PublicationEvent : "publication"
@@ -125,20 +134,11 @@ BackgroundNewsArticle ||--}o Event : "recordedAt"
 BackgroundNewsArticle ||--}o PublicationEvent : "releasedEvent"
 BackgroundNewsArticle ||--}o Review : "review"
 BackgroundNewsArticle ||--}o Review : "reviews"
-BackgroundNewsArticle ||--}o Date : "sdDatePublished"
 BackgroundNewsArticle ||--}o Organization : "sourceOrganization"
 BackgroundNewsArticle ||--}o Place : "spatial"
-BackgroundNewsArticle ||--}o Text : "text"
 BackgroundNewsArticle ||--}o ImageObject : "thumbnail"
-BackgroundNewsArticle ||--}o URL : "thumbnailUrl"
 BackgroundNewsArticle ||--}o Duration : "timeRequired"
 BackgroundNewsArticle ||--}o CreativeWork : "translationOfWork"
-BackgroundNewsArticle ||--}o Text : "typicalAgeRange"
 BackgroundNewsArticle ||--}o CreativeWork : "workTranslation"
-BackgroundNewsArticle ||--}o Text : "alternateName"
-BackgroundNewsArticle ||--}o Text : "disambiguatingDescription"
-BackgroundNewsArticle ||--}o Text : "name"
-BackgroundNewsArticle ||--}o URL : "sameAs"
 BackgroundNewsArticle ||--}o Action : "potentialAction"
-BackgroundNewsArticle ||--}o URL : "url"
 

@@ -1,21 +1,21 @@
 erDiagram
 DeliveryTimeSettings {
+    BooleanList isUnlabelledFallback  
+    TextList transitTimeLabel  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DeliveryTimeSettings ||--}o ShippingDeliveryTime : "deliveryTime"
-DeliveryTimeSettings ||--}o Boolean : "isUnlabelledFallback"
 DeliveryTimeSettings ||--}o DefinedRegion : "shippingDestination"
-DeliveryTimeSettings ||--}o Text : "transitTimeLabel"
-DeliveryTimeSettings ||--}o Text : "alternateName"
-DeliveryTimeSettings ||--}o Text : "disambiguatingDescription"
-DeliveryTimeSettings ||--}o Text : "name"
-DeliveryTimeSettings ||--}o URL : "sameAs"
 DeliveryTimeSettings ||--}o Action : "potentialAction"
-DeliveryTimeSettings ||--}o URL : "url"
 

@@ -1,38 +1,63 @@
 erDiagram
 Preschool {
+    TextList openingHours  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
     stringList photo  
+    TextList branchCode  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -44,35 +69,31 @@ Preschool {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    BooleanList smokingAllowed  
+    URLList tourBookingPage  
 }
 
 Preschool ||--}o Person : "alumni"
-Preschool ||--}o Text : "openingHours"
-Preschool ||--}o Text : "duns"
-Preschool ||--}o Text : "globalLocationNumber"
-Preschool ||--}o URL : "hasGS1DigitalLink"
-Preschool ||--}o Text : "leiCode"
-Preschool ||--}o Text : "taxID"
 Preschool ||--}o InteractionCounter : "agentInteractionStatistic"
 Preschool ||--}o AggregateRating : "aggregateRating"
-Preschool ||--}o Text : "award"
-Preschool ||--}o Text : "awards"
 Preschool ||--}o ContactPoint : "contactPoint"
 Preschool ||--}o ContactPoint : "contactPoints"
 Preschool ||--}o Organization : "department"
-Preschool ||--}o Date : "dissolutionDate"
-Preschool ||--}o Text : "email"
 Preschool ||--}o Person : "employee"
 Preschool ||--}o Person : "employees"
 Preschool ||--}o Event : "event"
 Preschool ||--}o Event : "events"
-Preschool ||--}o Text : "faxNumber"
 Preschool ||--}o Person : "founders"
-Preschool ||--}o Date : "foundingDate"
 Preschool ||--}o Place : "foundingLocation"
 Preschool ||--}o Grant : "funding"
 Preschool ||--}o Certification : "hasCertification"
@@ -82,41 +103,20 @@ Preschool ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Preschool ||--}o OfferCatalog : "hasOfferCatalog"
 Preschool ||--}o Place : "hasPOS"
 Preschool ||--}o InteractionCounter : "interactionStatistic"
-Preschool ||--}o Text : "isicV4"
-Preschool ||--}o Text : "iso6523Code"
-Preschool ||--}o Text : "legalName"
 Preschool ||--}o Offer : "makesOffer"
-Preschool ||--}o Text : "naics"
 Preschool ||--}o NonprofitType : "nonprofitStatus"
 Preschool ||--}o QuantitativeValue : "numberOfEmployees"
 Preschool ||--}o Organization : "parentOrganization"
 Preschool ||--}o Review : "review"
 Preschool ||--}o Review : "reviews"
 Preschool ||--}o Demand : "seeks"
-Preschool ||--}o Text : "slogan"
 Preschool ||--}o Organization : "subOrganization"
-Preschool ||--}o Text : "telephone"
-Preschool ||--}o Text : "vatID"
-Preschool ||--}o Text : "alternateName"
-Preschool ||--}o Text : "disambiguatingDescription"
-Preschool ||--}o Text : "name"
-Preschool ||--}o URL : "sameAs"
 Preschool ||--}o Action : "potentialAction"
-Preschool ||--}o URL : "url"
 Preschool ||--}o PropertyValue : "additionalProperty"
 Preschool ||--}o LocationFeatureSpecification : "amenityFeature"
-Preschool ||--}o Text : "branchCode"
 Preschool ||--}o Place : "containedIn"
 Preschool ||--}o Place : "containedInPlace"
 Preschool ||--}o Place : "containsPlace"
-Preschool ||--}o Boolean : "hasDriveThroughService"
-Preschool ||--}o Boolean : "isAccessibleForFree"
-Preschool ||--}o URL : "map"
-Preschool ||--}o URL : "maps"
-Preschool ||--}o Integer : "maximumAttendeeCapacity"
 Preschool ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Preschool ||--}o Boolean : "publicAccess"
-Preschool ||--}o Boolean : "smokingAllowed"
 Preschool ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Preschool ||--}o URL : "tourBookingPage"
 

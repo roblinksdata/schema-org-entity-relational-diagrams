@@ -1,6 +1,7 @@
 erDiagram
 QuoteAction {
     stringList price  
+    TextList priceCurrency  
     stringList location  
     stringList participant  
     stringList agent  
@@ -9,14 +10,18 @@ QuoteAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-QuoteAction ||--}o Text : "priceCurrency"
 QuoteAction ||--}o PriceSpecification : "priceSpecification"
 QuoteAction ||--}o Thing : "instrument"
 QuoteAction ||--}o Thing : "object"
@@ -24,10 +29,5 @@ QuoteAction ||--}o Thing : "result"
 QuoteAction ||--}o HowTo : "actionProcess"
 QuoteAction ||--}o ActionStatusType : "actionStatus"
 QuoteAction ||--}o Thing : "error"
-QuoteAction ||--}o Text : "alternateName"
-QuoteAction ||--}o Text : "disambiguatingDescription"
-QuoteAction ||--}o Text : "name"
-QuoteAction ||--}o URL : "sameAs"
 QuoteAction ||--}o Action : "potentialAction"
-QuoteAction ||--}o URL : "url"
 

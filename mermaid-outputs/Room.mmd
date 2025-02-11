@@ -1,13 +1,25 @@
 erDiagram
 Room {
+    TextList accommodationCategory  
     stringList bed  
+    TextList floorLevel  
     stringList leaseLength  
+    IntegerList numberOfBathroomsTotal  
     stringList numberOfBedrooms  
+    NumberList numberOfFullBathrooms  
+    NumberList numberOfPartialBathrooms  
     stringList numberOfRooms  
+    TextList permittedUsage  
     stringList petsAllowed  
+    URLList tourBookingPage  
+    NumberList yearBuilt  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,61 +31,49 @@ Room {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Room ||--}o Text : "accommodationCategory"
 Room ||--}o FloorPlan : "accommodationFloorPlan"
 Room ||--}o LocationFeatureSpecification : "amenityFeature"
-Room ||--}o Text : "floorLevel"
 Room ||--}o QuantitativeValue : "floorSize"
-Room ||--}o Integer : "numberOfBathroomsTotal"
-Room ||--}o Number : "numberOfFullBathrooms"
-Room ||--}o Number : "numberOfPartialBathrooms"
 Room ||--}o QuantitativeValue : "occupancy"
-Room ||--}o Text : "permittedUsage"
-Room ||--}o URL : "tourBookingPage"
-Room ||--}o Number : "yearBuilt"
-Room ||--}o Text : "globalLocationNumber"
-Room ||--}o URL : "hasGS1DigitalLink"
 Room ||--}o PropertyValue : "additionalProperty"
 Room ||--}o AggregateRating : "aggregateRating"
-Room ||--}o Text : "branchCode"
 Room ||--}o Place : "containedIn"
 Room ||--}o Place : "containedInPlace"
 Room ||--}o Place : "containsPlace"
 Room ||--}o Event : "event"
 Room ||--}o Event : "events"
-Room ||--}o Text : "faxNumber"
 Room ||--}o Certification : "hasCertification"
-Room ||--}o Boolean : "hasDriveThroughService"
-Room ||--}o Boolean : "isAccessibleForFree"
-Room ||--}o Text : "isicV4"
-Room ||--}o URL : "map"
-Room ||--}o URL : "maps"
-Room ||--}o Integer : "maximumAttendeeCapacity"
 Room ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Room ||--}o Boolean : "publicAccess"
 Room ||--}o Review : "review"
 Room ||--}o Review : "reviews"
-Room ||--}o Text : "slogan"
-Room ||--}o Boolean : "smokingAllowed"
 Room ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Room ||--}o Text : "telephone"
-Room ||--}o Text : "alternateName"
-Room ||--}o Text : "disambiguatingDescription"
-Room ||--}o Text : "name"
-Room ||--}o URL : "sameAs"
 Room ||--}o Action : "potentialAction"
-Room ||--}o URL : "url"
 

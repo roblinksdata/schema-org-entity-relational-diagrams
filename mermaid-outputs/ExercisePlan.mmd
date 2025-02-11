@@ -2,6 +2,8 @@ erDiagram
 ExercisePlan {
     stringList activityDuration  
     stringList activityFrequency  
+    TextList additionalVariable  
+    TextList exerciseType  
     stringList intensity  
     stringList repetitions  
     stringList restPeriods  
@@ -19,25 +21,46 @@ ExercisePlan {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -49,28 +72,37 @@ ExercisePlan {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList category  
     stringList associatedAnatomy  
+    TextList epidemiology  
+    TextList pathophysiology  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ExercisePlan ||--}o Text : "additionalVariable"
-ExercisePlan ||--}o Text : "exerciseType"
 ExercisePlan ||--}o Thing : "about"
 ExercisePlan ||--}o Place : "contentLocation"
 ExercisePlan ||--}o CreativeWork : "hasPart"
@@ -78,43 +110,22 @@ ExercisePlan ||--}o Claim : "interpretedAsClaim"
 ExercisePlan ||--}o Thing : "mainEntity"
 ExercisePlan ||--}o Place : "spatialCoverage"
 ExercisePlan ||--}o CreativeWork : "workExample"
-ExercisePlan ||--}o Text : "abstract"
-ExercisePlan ||--}o Text : "accessMode"
 ExercisePlan ||--}o ItemList : "accessModeSufficient"
-ExercisePlan ||--}o Text : "accessibilityAPI"
-ExercisePlan ||--}o Text : "accessibilityControl"
-ExercisePlan ||--}o Text : "accessibilityFeature"
-ExercisePlan ||--}o Text : "accessibilityHazard"
-ExercisePlan ||--}o Text : "accessibilitySummary"
 ExercisePlan ||--}o Person : "accountablePerson"
 ExercisePlan ||--}o AggregateRating : "aggregateRating"
-ExercisePlan ||--}o Text : "alternativeHeadline"
 ExercisePlan ||--}o MediaObject : "associatedMedia"
 ExercisePlan ||--}o Audience : "audience"
-ExercisePlan ||--}o Text : "award"
-ExercisePlan ||--}o Text : "awards"
 ExercisePlan ||--}o Person : "character"
 ExercisePlan ||--}o Comment : "comment"
-ExercisePlan ||--}o Integer : "commentCount"
-ExercisePlan ||--}o Text : "conditionsOfAccess"
-ExercisePlan ||--}o DateTime : "contentReferenceTime"
-ExercisePlan ||--}o Text : "copyrightNotice"
-ExercisePlan ||--}o Number : "copyrightYear"
 ExercisePlan ||--}o Country : "countryOfOrigin"
-ExercisePlan ||--}o Text : "creditText"
 ExercisePlan ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ExercisePlan ||--}o URL : "discussionUrl"
 ExercisePlan ||--}o Person : "editor"
 ExercisePlan ||--}o AlignmentObject : "educationalAlignment"
 ExercisePlan ||--}o MediaObject : "encoding"
 ExercisePlan ||--}o MediaObject : "encodings"
 ExercisePlan ||--}o CreativeWork : "exampleOfWork"
 ExercisePlan ||--}o Grant : "funding"
-ExercisePlan ||--}o Text : "headline"
 ExercisePlan ||--}o InteractionCounter : "interactionStatistic"
-ExercisePlan ||--}o Text : "interactivityType"
-ExercisePlan ||--}o Boolean : "isAccessibleForFree"
-ExercisePlan ||--}o Boolean : "isFamilyFriendly"
 ExercisePlan ||--}o Place : "locationCreated"
 ExercisePlan ||--}o Thing : "mentions"
 ExercisePlan ||--}o PublicationEvent : "publication"
@@ -123,28 +134,17 @@ ExercisePlan ||--}o Event : "recordedAt"
 ExercisePlan ||--}o PublicationEvent : "releasedEvent"
 ExercisePlan ||--}o Review : "review"
 ExercisePlan ||--}o Review : "reviews"
-ExercisePlan ||--}o Date : "sdDatePublished"
 ExercisePlan ||--}o Organization : "sourceOrganization"
 ExercisePlan ||--}o Place : "spatial"
-ExercisePlan ||--}o Text : "text"
 ExercisePlan ||--}o ImageObject : "thumbnail"
-ExercisePlan ||--}o URL : "thumbnailUrl"
 ExercisePlan ||--}o Duration : "timeRequired"
 ExercisePlan ||--}o CreativeWork : "translationOfWork"
-ExercisePlan ||--}o Text : "typicalAgeRange"
 ExercisePlan ||--}o CreativeWork : "workTranslation"
-ExercisePlan ||--}o Text : "epidemiology"
-ExercisePlan ||--}o Text : "pathophysiology"
 ExercisePlan ||--}o MedicalCode : "code"
 ExercisePlan ||--}o MedicalGuideline : "guideline"
 ExercisePlan ||--}o MedicineSystem : "medicineSystem"
 ExercisePlan ||--}o Organization : "recognizingAuthority"
 ExercisePlan ||--}o MedicalSpecialty : "relevantSpecialty"
 ExercisePlan ||--}o MedicalStudy : "study"
-ExercisePlan ||--}o Text : "alternateName"
-ExercisePlan ||--}o Text : "disambiguatingDescription"
-ExercisePlan ||--}o Text : "name"
-ExercisePlan ||--}o URL : "sameAs"
 ExercisePlan ||--}o Action : "potentialAction"
-ExercisePlan ||--}o URL : "url"
 

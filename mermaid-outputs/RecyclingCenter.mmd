@@ -1,8 +1,16 @@
 erDiagram
 RecyclingCenter {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ RecyclingCenter {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 RecyclingCenter ||--}o Organization : "branchOf"
-RecyclingCenter ||--}o Text : "currenciesAccepted"
-RecyclingCenter ||--}o Text : "openingHours"
-RecyclingCenter ||--}o Text : "paymentAccepted"
-RecyclingCenter ||--}o Text : "priceRange"
-RecyclingCenter ||--}o Text : "globalLocationNumber"
-RecyclingCenter ||--}o URL : "hasGS1DigitalLink"
 RecyclingCenter ||--}o PropertyValue : "additionalProperty"
 RecyclingCenter ||--}o AggregateRating : "aggregateRating"
 RecyclingCenter ||--}o LocationFeatureSpecification : "amenityFeature"
-RecyclingCenter ||--}o Text : "branchCode"
 RecyclingCenter ||--}o Place : "containedIn"
 RecyclingCenter ||--}o Place : "containedInPlace"
 RecyclingCenter ||--}o Place : "containsPlace"
 RecyclingCenter ||--}o Event : "event"
 RecyclingCenter ||--}o Event : "events"
-RecyclingCenter ||--}o Text : "faxNumber"
 RecyclingCenter ||--}o Certification : "hasCertification"
-RecyclingCenter ||--}o Boolean : "hasDriveThroughService"
-RecyclingCenter ||--}o Boolean : "isAccessibleForFree"
-RecyclingCenter ||--}o Text : "isicV4"
-RecyclingCenter ||--}o URL : "map"
-RecyclingCenter ||--}o URL : "maps"
-RecyclingCenter ||--}o Integer : "maximumAttendeeCapacity"
 RecyclingCenter ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-RecyclingCenter ||--}o Boolean : "publicAccess"
 RecyclingCenter ||--}o Review : "review"
 RecyclingCenter ||--}o Review : "reviews"
-RecyclingCenter ||--}o Text : "slogan"
-RecyclingCenter ||--}o Boolean : "smokingAllowed"
 RecyclingCenter ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-RecyclingCenter ||--}o Text : "telephone"
-RecyclingCenter ||--}o URL : "tourBookingPage"
-RecyclingCenter ||--}o Text : "duns"
-RecyclingCenter ||--}o Text : "leiCode"
-RecyclingCenter ||--}o Text : "taxID"
 RecyclingCenter ||--}o InteractionCounter : "agentInteractionStatistic"
 RecyclingCenter ||--}o Person : "alumni"
-RecyclingCenter ||--}o Text : "award"
-RecyclingCenter ||--}o Text : "awards"
 RecyclingCenter ||--}o ContactPoint : "contactPoint"
 RecyclingCenter ||--}o ContactPoint : "contactPoints"
 RecyclingCenter ||--}o Organization : "department"
-RecyclingCenter ||--}o Date : "dissolutionDate"
-RecyclingCenter ||--}o Text : "email"
 RecyclingCenter ||--}o Person : "employee"
 RecyclingCenter ||--}o Person : "employees"
 RecyclingCenter ||--}o Person : "founders"
-RecyclingCenter ||--}o Date : "foundingDate"
 RecyclingCenter ||--}o Place : "foundingLocation"
 RecyclingCenter ||--}o Grant : "funding"
 RecyclingCenter ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ RecyclingCenter ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 RecyclingCenter ||--}o OfferCatalog : "hasOfferCatalog"
 RecyclingCenter ||--}o Place : "hasPOS"
 RecyclingCenter ||--}o InteractionCounter : "interactionStatistic"
-RecyclingCenter ||--}o Text : "iso6523Code"
-RecyclingCenter ||--}o Text : "legalName"
 RecyclingCenter ||--}o Offer : "makesOffer"
-RecyclingCenter ||--}o Text : "naics"
 RecyclingCenter ||--}o NonprofitType : "nonprofitStatus"
 RecyclingCenter ||--}o QuantitativeValue : "numberOfEmployees"
 RecyclingCenter ||--}o Organization : "parentOrganization"
 RecyclingCenter ||--}o Demand : "seeks"
 RecyclingCenter ||--}o Organization : "subOrganization"
-RecyclingCenter ||--}o Text : "vatID"
-RecyclingCenter ||--}o Text : "alternateName"
-RecyclingCenter ||--}o Text : "disambiguatingDescription"
-RecyclingCenter ||--}o Text : "name"
-RecyclingCenter ||--}o URL : "sameAs"
 RecyclingCenter ||--}o Action : "potentialAction"
-RecyclingCenter ||--}o URL : "url"
 

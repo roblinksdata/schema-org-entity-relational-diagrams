@@ -8,11 +8,16 @@ BefriendAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BefriendAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ BefriendAction ||--}o Thing : "result"
 BefriendAction ||--}o HowTo : "actionProcess"
 BefriendAction ||--}o ActionStatusType : "actionStatus"
 BefriendAction ||--}o Thing : "error"
-BefriendAction ||--}o Text : "alternateName"
-BefriendAction ||--}o Text : "disambiguatingDescription"
-BefriendAction ||--}o Text : "name"
-BefriendAction ||--}o URL : "sameAs"
 BefriendAction ||--}o Action : "potentialAction"
-BefriendAction ||--}o URL : "url"
 

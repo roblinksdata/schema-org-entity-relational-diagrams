@@ -1,8 +1,13 @@
 erDiagram
 GovernmentBuilding {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ GovernmentBuilding {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-GovernmentBuilding ||--}o Text : "openingHours"
-GovernmentBuilding ||--}o Text : "globalLocationNumber"
-GovernmentBuilding ||--}o URL : "hasGS1DigitalLink"
 GovernmentBuilding ||--}o PropertyValue : "additionalProperty"
 GovernmentBuilding ||--}o AggregateRating : "aggregateRating"
 GovernmentBuilding ||--}o LocationFeatureSpecification : "amenityFeature"
-GovernmentBuilding ||--}o Text : "branchCode"
 GovernmentBuilding ||--}o Place : "containedIn"
 GovernmentBuilding ||--}o Place : "containedInPlace"
 GovernmentBuilding ||--}o Place : "containsPlace"
 GovernmentBuilding ||--}o Event : "event"
 GovernmentBuilding ||--}o Event : "events"
-GovernmentBuilding ||--}o Text : "faxNumber"
 GovernmentBuilding ||--}o Certification : "hasCertification"
-GovernmentBuilding ||--}o Boolean : "hasDriveThroughService"
-GovernmentBuilding ||--}o Boolean : "isAccessibleForFree"
-GovernmentBuilding ||--}o Text : "isicV4"
-GovernmentBuilding ||--}o URL : "map"
-GovernmentBuilding ||--}o URL : "maps"
-GovernmentBuilding ||--}o Integer : "maximumAttendeeCapacity"
 GovernmentBuilding ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-GovernmentBuilding ||--}o Boolean : "publicAccess"
 GovernmentBuilding ||--}o Review : "review"
 GovernmentBuilding ||--}o Review : "reviews"
-GovernmentBuilding ||--}o Text : "slogan"
-GovernmentBuilding ||--}o Boolean : "smokingAllowed"
 GovernmentBuilding ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-GovernmentBuilding ||--}o Text : "telephone"
-GovernmentBuilding ||--}o URL : "tourBookingPage"
-GovernmentBuilding ||--}o Text : "alternateName"
-GovernmentBuilding ||--}o Text : "disambiguatingDescription"
-GovernmentBuilding ||--}o Text : "name"
-GovernmentBuilding ||--}o URL : "sameAs"
 GovernmentBuilding ||--}o Action : "potentialAction"
-GovernmentBuilding ||--}o URL : "url"
 

@@ -1,19 +1,19 @@
 erDiagram
 DefinedTerm {
     stringList inDefinedTermSet  
+    TextList termCode  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DefinedTerm ||--}o Text : "termCode"
-DefinedTerm ||--}o Text : "alternateName"
-DefinedTerm ||--}o Text : "disambiguatingDescription"
-DefinedTerm ||--}o Text : "name"
-DefinedTerm ||--}o URL : "sameAs"
 DefinedTerm ||--}o Action : "potentialAction"
-DefinedTerm ||--}o URL : "url"
 

@@ -1,22 +1,22 @@
 erDiagram
 DefinedRegion {
     stringList addressCountry  
+    TextList addressRegion  
+    TextList postalCode  
+    TextList postalCodePrefix  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DefinedRegion ||--}o Text : "addressRegion"
-DefinedRegion ||--}o Text : "postalCode"
-DefinedRegion ||--}o Text : "postalCodePrefix"
 DefinedRegion ||--}o PostalCodeRangeSpecification : "postalCodeRange"
-DefinedRegion ||--}o Text : "alternateName"
-DefinedRegion ||--}o Text : "disambiguatingDescription"
-DefinedRegion ||--}o Text : "name"
-DefinedRegion ||--}o URL : "sameAs"
 DefinedRegion ||--}o Action : "potentialAction"
-DefinedRegion ||--}o URL : "url"
 

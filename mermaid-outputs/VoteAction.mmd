@@ -8,11 +8,16 @@ VoteAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 VoteAction ||--}o Person : "candidate"
@@ -24,10 +29,5 @@ VoteAction ||--}o Thing : "result"
 VoteAction ||--}o HowTo : "actionProcess"
 VoteAction ||--}o ActionStatusType : "actionStatus"
 VoteAction ||--}o Thing : "error"
-VoteAction ||--}o Text : "alternateName"
-VoteAction ||--}o Text : "disambiguatingDescription"
-VoteAction ||--}o Text : "name"
-VoteAction ||--}o URL : "sameAs"
 VoteAction ||--}o Action : "potentialAction"
-VoteAction ||--}o URL : "url"
 

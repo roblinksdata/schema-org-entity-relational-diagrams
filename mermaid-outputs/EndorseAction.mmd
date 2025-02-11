@@ -9,11 +9,16 @@ EndorseAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 EndorseAction ||--}o Thing : "instrument"
@@ -22,10 +27,5 @@ EndorseAction ||--}o Thing : "result"
 EndorseAction ||--}o HowTo : "actionProcess"
 EndorseAction ||--}o ActionStatusType : "actionStatus"
 EndorseAction ||--}o Thing : "error"
-EndorseAction ||--}o Text : "alternateName"
-EndorseAction ||--}o Text : "disambiguatingDescription"
-EndorseAction ||--}o Text : "name"
-EndorseAction ||--}o URL : "sameAs"
 EndorseAction ||--}o Action : "potentialAction"
-EndorseAction ||--}o URL : "url"
 

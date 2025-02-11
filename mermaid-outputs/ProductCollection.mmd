@@ -1,31 +1,58 @@
 erDiagram
 ProductCollection {
+    IntegerList collectionSize  
     stringList asin  
     stringList category  
     stringList colorSwatch  
     stringList gtin  
+    TextList gtin12  
+    TextList gtin13  
+    TextList gtin14  
+    TextList gtin8  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList material  
+    TextList nsn  
+    TextList productID  
+    TextList sku  
+    TextList award  
+    TextList awards  
     stringList brand  
+    TextList color  
+    TextList countryOfAssembly  
+    TextList countryOfLastProcessing  
     stringList depth  
     stringList height  
+    TextList inProductGroupWithID  
+    BooleanList isFamilyFriendly  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList isVariantOf  
     stringList keywords  
+    TextList mobileUrl  
     stringList model  
+    TextList mpn  
     stringList negativeNotes  
     stringList offers  
     stringList pattern  
     stringList positiveNotes  
+    DateList productionDate  
+    DateList purchaseDate  
+    DateList releaseDate  
     stringList size  
+    TextList slogan  
     stringList width  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -38,23 +65,41 @@ ProductCollection {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
     stringList learningResourceType  
@@ -65,34 +110,24 @@ ProductCollection {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
 }
 
 ProductCollection ||--}o TypeAndQuantityNode : "includesObject"
-ProductCollection ||--}o Integer : "collectionSize"
-ProductCollection ||--}o Text : "gtin12"
-ProductCollection ||--}o Text : "gtin13"
-ProductCollection ||--}o Text : "gtin14"
-ProductCollection ||--}o Text : "gtin8"
-ProductCollection ||--}o URL : "hasGS1DigitalLink"
-ProductCollection ||--}o Text : "nsn"
-ProductCollection ||--}o Text : "productID"
-ProductCollection ||--}o Text : "sku"
 ProductCollection ||--}o PropertyValue : "additionalProperty"
 ProductCollection ||--}o AggregateRating : "aggregateRating"
 ProductCollection ||--}o Audience : "audience"
-ProductCollection ||--}o Text : "award"
-ProductCollection ||--}o Text : "awards"
-ProductCollection ||--}o Text : "color"
-ProductCollection ||--}o Text : "countryOfAssembly"
-ProductCollection ||--}o Text : "countryOfLastProcessing"
 ProductCollection ||--}o Country : "countryOfOrigin"
 ProductCollection ||--}o Grant : "funding"
 ProductCollection ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
@@ -100,27 +135,14 @@ ProductCollection ||--}o Certification : "hasCertification"
 ProductCollection ||--}o EnergyConsumptionDetails : "hasEnergyConsumptionDetails"
 ProductCollection ||--}o QuantitativeValue : "hasMeasurement"
 ProductCollection ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
-ProductCollection ||--}o Text : "inProductGroupWithID"
 ProductCollection ||--}o Product : "isAccessoryOrSparePartFor"
 ProductCollection ||--}o Product : "isConsumableFor"
-ProductCollection ||--}o Boolean : "isFamilyFriendly"
 ProductCollection ||--}o OfferItemCondition : "itemCondition"
 ProductCollection ||--}o Organization : "manufacturer"
-ProductCollection ||--}o Text : "mobileUrl"
-ProductCollection ||--}o Text : "mpn"
-ProductCollection ||--}o Date : "productionDate"
-ProductCollection ||--}o Date : "purchaseDate"
-ProductCollection ||--}o Date : "releaseDate"
 ProductCollection ||--}o Review : "review"
 ProductCollection ||--}o Review : "reviews"
-ProductCollection ||--}o Text : "slogan"
 ProductCollection ||--}o QuantitativeValue : "weight"
-ProductCollection ||--}o Text : "alternateName"
-ProductCollection ||--}o Text : "disambiguatingDescription"
-ProductCollection ||--}o Text : "name"
-ProductCollection ||--}o URL : "sameAs"
 ProductCollection ||--}o Action : "potentialAction"
-ProductCollection ||--}o URL : "url"
 ProductCollection ||--}o Thing : "about"
 ProductCollection ||--}o Place : "contentLocation"
 ProductCollection ||--}o CreativeWork : "hasPart"
@@ -128,50 +150,28 @@ ProductCollection ||--}o Claim : "interpretedAsClaim"
 ProductCollection ||--}o Thing : "mainEntity"
 ProductCollection ||--}o Place : "spatialCoverage"
 ProductCollection ||--}o CreativeWork : "workExample"
-ProductCollection ||--}o Text : "abstract"
-ProductCollection ||--}o Text : "accessMode"
 ProductCollection ||--}o ItemList : "accessModeSufficient"
-ProductCollection ||--}o Text : "accessibilityAPI"
-ProductCollection ||--}o Text : "accessibilityControl"
-ProductCollection ||--}o Text : "accessibilityFeature"
-ProductCollection ||--}o Text : "accessibilityHazard"
-ProductCollection ||--}o Text : "accessibilitySummary"
 ProductCollection ||--}o Person : "accountablePerson"
-ProductCollection ||--}o Text : "alternativeHeadline"
 ProductCollection ||--}o MediaObject : "associatedMedia"
 ProductCollection ||--}o Person : "character"
 ProductCollection ||--}o Comment : "comment"
-ProductCollection ||--}o Integer : "commentCount"
-ProductCollection ||--}o Text : "conditionsOfAccess"
-ProductCollection ||--}o DateTime : "contentReferenceTime"
-ProductCollection ||--}o Text : "copyrightNotice"
-ProductCollection ||--}o Number : "copyrightYear"
-ProductCollection ||--}o Text : "creditText"
 ProductCollection ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ProductCollection ||--}o URL : "discussionUrl"
 ProductCollection ||--}o Person : "editor"
 ProductCollection ||--}o AlignmentObject : "educationalAlignment"
 ProductCollection ||--}o MediaObject : "encoding"
 ProductCollection ||--}o MediaObject : "encodings"
 ProductCollection ||--}o CreativeWork : "exampleOfWork"
-ProductCollection ||--}o Text : "headline"
 ProductCollection ||--}o InteractionCounter : "interactionStatistic"
-ProductCollection ||--}o Text : "interactivityType"
-ProductCollection ||--}o Boolean : "isAccessibleForFree"
 ProductCollection ||--}o Place : "locationCreated"
 ProductCollection ||--}o Thing : "mentions"
 ProductCollection ||--}o PublicationEvent : "publication"
 ProductCollection ||--}o Organization : "publisherImprint"
 ProductCollection ||--}o Event : "recordedAt"
 ProductCollection ||--}o PublicationEvent : "releasedEvent"
-ProductCollection ||--}o Date : "sdDatePublished"
 ProductCollection ||--}o Organization : "sourceOrganization"
 ProductCollection ||--}o Place : "spatial"
-ProductCollection ||--}o Text : "text"
 ProductCollection ||--}o ImageObject : "thumbnail"
-ProductCollection ||--}o URL : "thumbnailUrl"
 ProductCollection ||--}o Duration : "timeRequired"
 ProductCollection ||--}o CreativeWork : "translationOfWork"
-ProductCollection ||--}o Text : "typicalAgeRange"
 ProductCollection ||--}o CreativeWork : "workTranslation"
 

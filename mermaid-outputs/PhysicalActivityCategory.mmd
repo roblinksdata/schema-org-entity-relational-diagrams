@@ -2,17 +2,17 @@ erDiagram
 PhysicalActivityCategory {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PhysicalActivityCategory ||--}o Text : "alternateName"
-PhysicalActivityCategory ||--}o Text : "disambiguatingDescription"
-PhysicalActivityCategory ||--}o Text : "name"
-PhysicalActivityCategory ||--}o URL : "sameAs"
 PhysicalActivityCategory ||--}o Action : "potentialAction"
-PhysicalActivityCategory ||--}o URL : "url"
 

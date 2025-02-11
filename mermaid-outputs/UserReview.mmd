@@ -2,6 +2,8 @@ erDiagram
 UserReview {
     stringList negativeNotes  
     stringList positiveNotes  
+    TextList reviewAspect  
+    TextList reviewBody  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -15,25 +17,46 @@ UserReview {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,29 +68,36 @@ UserReview {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 UserReview ||--}o Review : "associatedClaimReview"
 UserReview ||--}o Review : "associatedMediaReview"
 UserReview ||--}o Review : "associatedReview"
 UserReview ||--}o Thing : "itemReviewed"
-UserReview ||--}o Text : "reviewAspect"
-UserReview ||--}o Text : "reviewBody"
 UserReview ||--}o Rating : "reviewRating"
 UserReview ||--}o Thing : "about"
 UserReview ||--}o Place : "contentLocation"
@@ -76,43 +106,22 @@ UserReview ||--}o Claim : "interpretedAsClaim"
 UserReview ||--}o Thing : "mainEntity"
 UserReview ||--}o Place : "spatialCoverage"
 UserReview ||--}o CreativeWork : "workExample"
-UserReview ||--}o Text : "abstract"
-UserReview ||--}o Text : "accessMode"
 UserReview ||--}o ItemList : "accessModeSufficient"
-UserReview ||--}o Text : "accessibilityAPI"
-UserReview ||--}o Text : "accessibilityControl"
-UserReview ||--}o Text : "accessibilityFeature"
-UserReview ||--}o Text : "accessibilityHazard"
-UserReview ||--}o Text : "accessibilitySummary"
 UserReview ||--}o Person : "accountablePerson"
 UserReview ||--}o AggregateRating : "aggregateRating"
-UserReview ||--}o Text : "alternativeHeadline"
 UserReview ||--}o MediaObject : "associatedMedia"
 UserReview ||--}o Audience : "audience"
-UserReview ||--}o Text : "award"
-UserReview ||--}o Text : "awards"
 UserReview ||--}o Person : "character"
 UserReview ||--}o Comment : "comment"
-UserReview ||--}o Integer : "commentCount"
-UserReview ||--}o Text : "conditionsOfAccess"
-UserReview ||--}o DateTime : "contentReferenceTime"
-UserReview ||--}o Text : "copyrightNotice"
-UserReview ||--}o Number : "copyrightYear"
 UserReview ||--}o Country : "countryOfOrigin"
-UserReview ||--}o Text : "creditText"
 UserReview ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-UserReview ||--}o URL : "discussionUrl"
 UserReview ||--}o Person : "editor"
 UserReview ||--}o AlignmentObject : "educationalAlignment"
 UserReview ||--}o MediaObject : "encoding"
 UserReview ||--}o MediaObject : "encodings"
 UserReview ||--}o CreativeWork : "exampleOfWork"
 UserReview ||--}o Grant : "funding"
-UserReview ||--}o Text : "headline"
 UserReview ||--}o InteractionCounter : "interactionStatistic"
-UserReview ||--}o Text : "interactivityType"
-UserReview ||--}o Boolean : "isAccessibleForFree"
-UserReview ||--}o Boolean : "isFamilyFriendly"
 UserReview ||--}o Place : "locationCreated"
 UserReview ||--}o Thing : "mentions"
 UserReview ||--}o PublicationEvent : "publication"
@@ -121,20 +130,11 @@ UserReview ||--}o Event : "recordedAt"
 UserReview ||--}o PublicationEvent : "releasedEvent"
 UserReview ||--}o Review : "review"
 UserReview ||--}o Review : "reviews"
-UserReview ||--}o Date : "sdDatePublished"
 UserReview ||--}o Organization : "sourceOrganization"
 UserReview ||--}o Place : "spatial"
-UserReview ||--}o Text : "text"
 UserReview ||--}o ImageObject : "thumbnail"
-UserReview ||--}o URL : "thumbnailUrl"
 UserReview ||--}o Duration : "timeRequired"
 UserReview ||--}o CreativeWork : "translationOfWork"
-UserReview ||--}o Text : "typicalAgeRange"
 UserReview ||--}o CreativeWork : "workTranslation"
-UserReview ||--}o Text : "alternateName"
-UserReview ||--}o Text : "disambiguatingDescription"
-UserReview ||--}o Text : "name"
-UserReview ||--}o URL : "sameAs"
 UserReview ||--}o Action : "potentialAction"
-UserReview ||--}o URL : "url"
 

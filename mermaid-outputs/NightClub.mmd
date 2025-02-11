@@ -1,8 +1,16 @@
 erDiagram
 NightClub {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ NightClub {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 NightClub ||--}o Organization : "branchOf"
-NightClub ||--}o Text : "currenciesAccepted"
-NightClub ||--}o Text : "openingHours"
-NightClub ||--}o Text : "paymentAccepted"
-NightClub ||--}o Text : "priceRange"
-NightClub ||--}o Text : "globalLocationNumber"
-NightClub ||--}o URL : "hasGS1DigitalLink"
 NightClub ||--}o PropertyValue : "additionalProperty"
 NightClub ||--}o AggregateRating : "aggregateRating"
 NightClub ||--}o LocationFeatureSpecification : "amenityFeature"
-NightClub ||--}o Text : "branchCode"
 NightClub ||--}o Place : "containedIn"
 NightClub ||--}o Place : "containedInPlace"
 NightClub ||--}o Place : "containsPlace"
 NightClub ||--}o Event : "event"
 NightClub ||--}o Event : "events"
-NightClub ||--}o Text : "faxNumber"
 NightClub ||--}o Certification : "hasCertification"
-NightClub ||--}o Boolean : "hasDriveThroughService"
-NightClub ||--}o Boolean : "isAccessibleForFree"
-NightClub ||--}o Text : "isicV4"
-NightClub ||--}o URL : "map"
-NightClub ||--}o URL : "maps"
-NightClub ||--}o Integer : "maximumAttendeeCapacity"
 NightClub ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-NightClub ||--}o Boolean : "publicAccess"
 NightClub ||--}o Review : "review"
 NightClub ||--}o Review : "reviews"
-NightClub ||--}o Text : "slogan"
-NightClub ||--}o Boolean : "smokingAllowed"
 NightClub ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-NightClub ||--}o Text : "telephone"
-NightClub ||--}o URL : "tourBookingPage"
-NightClub ||--}o Text : "duns"
-NightClub ||--}o Text : "leiCode"
-NightClub ||--}o Text : "taxID"
 NightClub ||--}o InteractionCounter : "agentInteractionStatistic"
 NightClub ||--}o Person : "alumni"
-NightClub ||--}o Text : "award"
-NightClub ||--}o Text : "awards"
 NightClub ||--}o ContactPoint : "contactPoint"
 NightClub ||--}o ContactPoint : "contactPoints"
 NightClub ||--}o Organization : "department"
-NightClub ||--}o Date : "dissolutionDate"
-NightClub ||--}o Text : "email"
 NightClub ||--}o Person : "employee"
 NightClub ||--}o Person : "employees"
 NightClub ||--}o Person : "founders"
-NightClub ||--}o Date : "foundingDate"
 NightClub ||--}o Place : "foundingLocation"
 NightClub ||--}o Grant : "funding"
 NightClub ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ NightClub ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 NightClub ||--}o OfferCatalog : "hasOfferCatalog"
 NightClub ||--}o Place : "hasPOS"
 NightClub ||--}o InteractionCounter : "interactionStatistic"
-NightClub ||--}o Text : "iso6523Code"
-NightClub ||--}o Text : "legalName"
 NightClub ||--}o Offer : "makesOffer"
-NightClub ||--}o Text : "naics"
 NightClub ||--}o NonprofitType : "nonprofitStatus"
 NightClub ||--}o QuantitativeValue : "numberOfEmployees"
 NightClub ||--}o Organization : "parentOrganization"
 NightClub ||--}o Demand : "seeks"
 NightClub ||--}o Organization : "subOrganization"
-NightClub ||--}o Text : "vatID"
-NightClub ||--}o Text : "alternateName"
-NightClub ||--}o Text : "disambiguatingDescription"
-NightClub ||--}o Text : "name"
-NightClub ||--}o URL : "sameAs"
 NightClub ||--}o Action : "potentialAction"
-NightClub ||--}o URL : "url"
 

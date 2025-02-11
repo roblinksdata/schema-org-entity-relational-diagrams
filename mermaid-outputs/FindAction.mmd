@@ -8,11 +8,16 @@ FindAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 FindAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ FindAction ||--}o Thing : "result"
 FindAction ||--}o HowTo : "actionProcess"
 FindAction ||--}o ActionStatusType : "actionStatus"
 FindAction ||--}o Thing : "error"
-FindAction ||--}o Text : "alternateName"
-FindAction ||--}o Text : "disambiguatingDescription"
-FindAction ||--}o Text : "name"
-FindAction ||--}o URL : "sameAs"
 FindAction ||--}o Action : "potentialAction"
-FindAction ||--}o URL : "url"
 

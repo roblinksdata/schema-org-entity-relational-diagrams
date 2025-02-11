@@ -1,8 +1,16 @@
 erDiagram
 EmergencyService {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ EmergencyService {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 EmergencyService ||--}o Organization : "branchOf"
-EmergencyService ||--}o Text : "currenciesAccepted"
-EmergencyService ||--}o Text : "openingHours"
-EmergencyService ||--}o Text : "paymentAccepted"
-EmergencyService ||--}o Text : "priceRange"
-EmergencyService ||--}o Text : "globalLocationNumber"
-EmergencyService ||--}o URL : "hasGS1DigitalLink"
 EmergencyService ||--}o PropertyValue : "additionalProperty"
 EmergencyService ||--}o AggregateRating : "aggregateRating"
 EmergencyService ||--}o LocationFeatureSpecification : "amenityFeature"
-EmergencyService ||--}o Text : "branchCode"
 EmergencyService ||--}o Place : "containedIn"
 EmergencyService ||--}o Place : "containedInPlace"
 EmergencyService ||--}o Place : "containsPlace"
 EmergencyService ||--}o Event : "event"
 EmergencyService ||--}o Event : "events"
-EmergencyService ||--}o Text : "faxNumber"
 EmergencyService ||--}o Certification : "hasCertification"
-EmergencyService ||--}o Boolean : "hasDriveThroughService"
-EmergencyService ||--}o Boolean : "isAccessibleForFree"
-EmergencyService ||--}o Text : "isicV4"
-EmergencyService ||--}o URL : "map"
-EmergencyService ||--}o URL : "maps"
-EmergencyService ||--}o Integer : "maximumAttendeeCapacity"
 EmergencyService ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-EmergencyService ||--}o Boolean : "publicAccess"
 EmergencyService ||--}o Review : "review"
 EmergencyService ||--}o Review : "reviews"
-EmergencyService ||--}o Text : "slogan"
-EmergencyService ||--}o Boolean : "smokingAllowed"
 EmergencyService ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-EmergencyService ||--}o Text : "telephone"
-EmergencyService ||--}o URL : "tourBookingPage"
-EmergencyService ||--}o Text : "duns"
-EmergencyService ||--}o Text : "leiCode"
-EmergencyService ||--}o Text : "taxID"
 EmergencyService ||--}o InteractionCounter : "agentInteractionStatistic"
 EmergencyService ||--}o Person : "alumni"
-EmergencyService ||--}o Text : "award"
-EmergencyService ||--}o Text : "awards"
 EmergencyService ||--}o ContactPoint : "contactPoint"
 EmergencyService ||--}o ContactPoint : "contactPoints"
 EmergencyService ||--}o Organization : "department"
-EmergencyService ||--}o Date : "dissolutionDate"
-EmergencyService ||--}o Text : "email"
 EmergencyService ||--}o Person : "employee"
 EmergencyService ||--}o Person : "employees"
 EmergencyService ||--}o Person : "founders"
-EmergencyService ||--}o Date : "foundingDate"
 EmergencyService ||--}o Place : "foundingLocation"
 EmergencyService ||--}o Grant : "funding"
 EmergencyService ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ EmergencyService ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 EmergencyService ||--}o OfferCatalog : "hasOfferCatalog"
 EmergencyService ||--}o Place : "hasPOS"
 EmergencyService ||--}o InteractionCounter : "interactionStatistic"
-EmergencyService ||--}o Text : "iso6523Code"
-EmergencyService ||--}o Text : "legalName"
 EmergencyService ||--}o Offer : "makesOffer"
-EmergencyService ||--}o Text : "naics"
 EmergencyService ||--}o NonprofitType : "nonprofitStatus"
 EmergencyService ||--}o QuantitativeValue : "numberOfEmployees"
 EmergencyService ||--}o Organization : "parentOrganization"
 EmergencyService ||--}o Demand : "seeks"
 EmergencyService ||--}o Organization : "subOrganization"
-EmergencyService ||--}o Text : "vatID"
-EmergencyService ||--}o Text : "alternateName"
-EmergencyService ||--}o Text : "disambiguatingDescription"
-EmergencyService ||--}o Text : "name"
-EmergencyService ||--}o URL : "sameAs"
 EmergencyService ||--}o Action : "potentialAction"
-EmergencyService ||--}o URL : "url"
 

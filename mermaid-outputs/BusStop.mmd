@@ -1,8 +1,13 @@
 erDiagram
 BusStop {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ BusStop {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BusStop ||--}o Text : "openingHours"
-BusStop ||--}o Text : "globalLocationNumber"
-BusStop ||--}o URL : "hasGS1DigitalLink"
 BusStop ||--}o PropertyValue : "additionalProperty"
 BusStop ||--}o AggregateRating : "aggregateRating"
 BusStop ||--}o LocationFeatureSpecification : "amenityFeature"
-BusStop ||--}o Text : "branchCode"
 BusStop ||--}o Place : "containedIn"
 BusStop ||--}o Place : "containedInPlace"
 BusStop ||--}o Place : "containsPlace"
 BusStop ||--}o Event : "event"
 BusStop ||--}o Event : "events"
-BusStop ||--}o Text : "faxNumber"
 BusStop ||--}o Certification : "hasCertification"
-BusStop ||--}o Boolean : "hasDriveThroughService"
-BusStop ||--}o Boolean : "isAccessibleForFree"
-BusStop ||--}o Text : "isicV4"
-BusStop ||--}o URL : "map"
-BusStop ||--}o URL : "maps"
-BusStop ||--}o Integer : "maximumAttendeeCapacity"
 BusStop ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-BusStop ||--}o Boolean : "publicAccess"
 BusStop ||--}o Review : "review"
 BusStop ||--}o Review : "reviews"
-BusStop ||--}o Text : "slogan"
-BusStop ||--}o Boolean : "smokingAllowed"
 BusStop ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-BusStop ||--}o Text : "telephone"
-BusStop ||--}o URL : "tourBookingPage"
-BusStop ||--}o Text : "alternateName"
-BusStop ||--}o Text : "disambiguatingDescription"
-BusStop ||--}o Text : "name"
-BusStop ||--}o URL : "sameAs"
 BusStop ||--}o Action : "potentialAction"
-BusStop ||--}o URL : "url"
 

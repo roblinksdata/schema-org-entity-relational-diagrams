@@ -1,5 +1,6 @@
 erDiagram
 Newspaper {
+    TextList issn  
     stringList endDate  
     stringList startDate  
     stringList acquireLicensePage  
@@ -15,25 +16,46 @@ Newspaper {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,24 +67,32 @@ Newspaper {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Newspaper ||--}o Text : "issn"
 Newspaper ||--}o Thing : "about"
 Newspaper ||--}o Place : "contentLocation"
 Newspaper ||--}o CreativeWork : "hasPart"
@@ -70,43 +100,22 @@ Newspaper ||--}o Claim : "interpretedAsClaim"
 Newspaper ||--}o Thing : "mainEntity"
 Newspaper ||--}o Place : "spatialCoverage"
 Newspaper ||--}o CreativeWork : "workExample"
-Newspaper ||--}o Text : "abstract"
-Newspaper ||--}o Text : "accessMode"
 Newspaper ||--}o ItemList : "accessModeSufficient"
-Newspaper ||--}o Text : "accessibilityAPI"
-Newspaper ||--}o Text : "accessibilityControl"
-Newspaper ||--}o Text : "accessibilityFeature"
-Newspaper ||--}o Text : "accessibilityHazard"
-Newspaper ||--}o Text : "accessibilitySummary"
 Newspaper ||--}o Person : "accountablePerson"
 Newspaper ||--}o AggregateRating : "aggregateRating"
-Newspaper ||--}o Text : "alternativeHeadline"
 Newspaper ||--}o MediaObject : "associatedMedia"
 Newspaper ||--}o Audience : "audience"
-Newspaper ||--}o Text : "award"
-Newspaper ||--}o Text : "awards"
 Newspaper ||--}o Person : "character"
 Newspaper ||--}o Comment : "comment"
-Newspaper ||--}o Integer : "commentCount"
-Newspaper ||--}o Text : "conditionsOfAccess"
-Newspaper ||--}o DateTime : "contentReferenceTime"
-Newspaper ||--}o Text : "copyrightNotice"
-Newspaper ||--}o Number : "copyrightYear"
 Newspaper ||--}o Country : "countryOfOrigin"
-Newspaper ||--}o Text : "creditText"
 Newspaper ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Newspaper ||--}o URL : "discussionUrl"
 Newspaper ||--}o Person : "editor"
 Newspaper ||--}o AlignmentObject : "educationalAlignment"
 Newspaper ||--}o MediaObject : "encoding"
 Newspaper ||--}o MediaObject : "encodings"
 Newspaper ||--}o CreativeWork : "exampleOfWork"
 Newspaper ||--}o Grant : "funding"
-Newspaper ||--}o Text : "headline"
 Newspaper ||--}o InteractionCounter : "interactionStatistic"
-Newspaper ||--}o Text : "interactivityType"
-Newspaper ||--}o Boolean : "isAccessibleForFree"
-Newspaper ||--}o Boolean : "isFamilyFriendly"
 Newspaper ||--}o Place : "locationCreated"
 Newspaper ||--}o Thing : "mentions"
 Newspaper ||--}o PublicationEvent : "publication"
@@ -115,20 +124,11 @@ Newspaper ||--}o Event : "recordedAt"
 Newspaper ||--}o PublicationEvent : "releasedEvent"
 Newspaper ||--}o Review : "review"
 Newspaper ||--}o Review : "reviews"
-Newspaper ||--}o Date : "sdDatePublished"
 Newspaper ||--}o Organization : "sourceOrganization"
 Newspaper ||--}o Place : "spatial"
-Newspaper ||--}o Text : "text"
 Newspaper ||--}o ImageObject : "thumbnail"
-Newspaper ||--}o URL : "thumbnailUrl"
 Newspaper ||--}o Duration : "timeRequired"
 Newspaper ||--}o CreativeWork : "translationOfWork"
-Newspaper ||--}o Text : "typicalAgeRange"
 Newspaper ||--}o CreativeWork : "workTranslation"
-Newspaper ||--}o Text : "alternateName"
-Newspaper ||--}o Text : "disambiguatingDescription"
-Newspaper ||--}o Text : "name"
-Newspaper ||--}o URL : "sameAs"
 Newspaper ||--}o Action : "potentialAction"
-Newspaper ||--}o URL : "url"
 

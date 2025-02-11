@@ -1,8 +1,16 @@
 erDiagram
 GovernmentOffice {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ GovernmentOffice {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 GovernmentOffice ||--}o Organization : "branchOf"
-GovernmentOffice ||--}o Text : "currenciesAccepted"
-GovernmentOffice ||--}o Text : "openingHours"
-GovernmentOffice ||--}o Text : "paymentAccepted"
-GovernmentOffice ||--}o Text : "priceRange"
-GovernmentOffice ||--}o Text : "globalLocationNumber"
-GovernmentOffice ||--}o URL : "hasGS1DigitalLink"
 GovernmentOffice ||--}o PropertyValue : "additionalProperty"
 GovernmentOffice ||--}o AggregateRating : "aggregateRating"
 GovernmentOffice ||--}o LocationFeatureSpecification : "amenityFeature"
-GovernmentOffice ||--}o Text : "branchCode"
 GovernmentOffice ||--}o Place : "containedIn"
 GovernmentOffice ||--}o Place : "containedInPlace"
 GovernmentOffice ||--}o Place : "containsPlace"
 GovernmentOffice ||--}o Event : "event"
 GovernmentOffice ||--}o Event : "events"
-GovernmentOffice ||--}o Text : "faxNumber"
 GovernmentOffice ||--}o Certification : "hasCertification"
-GovernmentOffice ||--}o Boolean : "hasDriveThroughService"
-GovernmentOffice ||--}o Boolean : "isAccessibleForFree"
-GovernmentOffice ||--}o Text : "isicV4"
-GovernmentOffice ||--}o URL : "map"
-GovernmentOffice ||--}o URL : "maps"
-GovernmentOffice ||--}o Integer : "maximumAttendeeCapacity"
 GovernmentOffice ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-GovernmentOffice ||--}o Boolean : "publicAccess"
 GovernmentOffice ||--}o Review : "review"
 GovernmentOffice ||--}o Review : "reviews"
-GovernmentOffice ||--}o Text : "slogan"
-GovernmentOffice ||--}o Boolean : "smokingAllowed"
 GovernmentOffice ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-GovernmentOffice ||--}o Text : "telephone"
-GovernmentOffice ||--}o URL : "tourBookingPage"
-GovernmentOffice ||--}o Text : "duns"
-GovernmentOffice ||--}o Text : "leiCode"
-GovernmentOffice ||--}o Text : "taxID"
 GovernmentOffice ||--}o InteractionCounter : "agentInteractionStatistic"
 GovernmentOffice ||--}o Person : "alumni"
-GovernmentOffice ||--}o Text : "award"
-GovernmentOffice ||--}o Text : "awards"
 GovernmentOffice ||--}o ContactPoint : "contactPoint"
 GovernmentOffice ||--}o ContactPoint : "contactPoints"
 GovernmentOffice ||--}o Organization : "department"
-GovernmentOffice ||--}o Date : "dissolutionDate"
-GovernmentOffice ||--}o Text : "email"
 GovernmentOffice ||--}o Person : "employee"
 GovernmentOffice ||--}o Person : "employees"
 GovernmentOffice ||--}o Person : "founders"
-GovernmentOffice ||--}o Date : "foundingDate"
 GovernmentOffice ||--}o Place : "foundingLocation"
 GovernmentOffice ||--}o Grant : "funding"
 GovernmentOffice ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ GovernmentOffice ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 GovernmentOffice ||--}o OfferCatalog : "hasOfferCatalog"
 GovernmentOffice ||--}o Place : "hasPOS"
 GovernmentOffice ||--}o InteractionCounter : "interactionStatistic"
-GovernmentOffice ||--}o Text : "iso6523Code"
-GovernmentOffice ||--}o Text : "legalName"
 GovernmentOffice ||--}o Offer : "makesOffer"
-GovernmentOffice ||--}o Text : "naics"
 GovernmentOffice ||--}o NonprofitType : "nonprofitStatus"
 GovernmentOffice ||--}o QuantitativeValue : "numberOfEmployees"
 GovernmentOffice ||--}o Organization : "parentOrganization"
 GovernmentOffice ||--}o Demand : "seeks"
 GovernmentOffice ||--}o Organization : "subOrganization"
-GovernmentOffice ||--}o Text : "vatID"
-GovernmentOffice ||--}o Text : "alternateName"
-GovernmentOffice ||--}o Text : "disambiguatingDescription"
-GovernmentOffice ||--}o Text : "name"
-GovernmentOffice ||--}o URL : "sameAs"
 GovernmentOffice ||--}o Action : "potentialAction"
-GovernmentOffice ||--}o URL : "url"
 

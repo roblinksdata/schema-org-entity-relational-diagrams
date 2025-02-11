@@ -1,8 +1,13 @@
 erDiagram
 Beach {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ Beach {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Beach ||--}o Text : "openingHours"
-Beach ||--}o Text : "globalLocationNumber"
-Beach ||--}o URL : "hasGS1DigitalLink"
 Beach ||--}o PropertyValue : "additionalProperty"
 Beach ||--}o AggregateRating : "aggregateRating"
 Beach ||--}o LocationFeatureSpecification : "amenityFeature"
-Beach ||--}o Text : "branchCode"
 Beach ||--}o Place : "containedIn"
 Beach ||--}o Place : "containedInPlace"
 Beach ||--}o Place : "containsPlace"
 Beach ||--}o Event : "event"
 Beach ||--}o Event : "events"
-Beach ||--}o Text : "faxNumber"
 Beach ||--}o Certification : "hasCertification"
-Beach ||--}o Boolean : "hasDriveThroughService"
-Beach ||--}o Boolean : "isAccessibleForFree"
-Beach ||--}o Text : "isicV4"
-Beach ||--}o URL : "map"
-Beach ||--}o URL : "maps"
-Beach ||--}o Integer : "maximumAttendeeCapacity"
 Beach ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Beach ||--}o Boolean : "publicAccess"
 Beach ||--}o Review : "review"
 Beach ||--}o Review : "reviews"
-Beach ||--}o Text : "slogan"
-Beach ||--}o Boolean : "smokingAllowed"
 Beach ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Beach ||--}o Text : "telephone"
-Beach ||--}o URL : "tourBookingPage"
-Beach ||--}o Text : "alternateName"
-Beach ||--}o Text : "disambiguatingDescription"
-Beach ||--}o Text : "name"
-Beach ||--}o URL : "sameAs"
 Beach ||--}o Action : "potentialAction"
-Beach ||--}o URL : "url"
 

@@ -13,25 +13,46 @@ Photograph {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Photograph {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Photograph ||--}o Thing : "about"
@@ -67,43 +97,22 @@ Photograph ||--}o Claim : "interpretedAsClaim"
 Photograph ||--}o Thing : "mainEntity"
 Photograph ||--}o Place : "spatialCoverage"
 Photograph ||--}o CreativeWork : "workExample"
-Photograph ||--}o Text : "abstract"
-Photograph ||--}o Text : "accessMode"
 Photograph ||--}o ItemList : "accessModeSufficient"
-Photograph ||--}o Text : "accessibilityAPI"
-Photograph ||--}o Text : "accessibilityControl"
-Photograph ||--}o Text : "accessibilityFeature"
-Photograph ||--}o Text : "accessibilityHazard"
-Photograph ||--}o Text : "accessibilitySummary"
 Photograph ||--}o Person : "accountablePerson"
 Photograph ||--}o AggregateRating : "aggregateRating"
-Photograph ||--}o Text : "alternativeHeadline"
 Photograph ||--}o MediaObject : "associatedMedia"
 Photograph ||--}o Audience : "audience"
-Photograph ||--}o Text : "award"
-Photograph ||--}o Text : "awards"
 Photograph ||--}o Person : "character"
 Photograph ||--}o Comment : "comment"
-Photograph ||--}o Integer : "commentCount"
-Photograph ||--}o Text : "conditionsOfAccess"
-Photograph ||--}o DateTime : "contentReferenceTime"
-Photograph ||--}o Text : "copyrightNotice"
-Photograph ||--}o Number : "copyrightYear"
 Photograph ||--}o Country : "countryOfOrigin"
-Photograph ||--}o Text : "creditText"
 Photograph ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Photograph ||--}o URL : "discussionUrl"
 Photograph ||--}o Person : "editor"
 Photograph ||--}o AlignmentObject : "educationalAlignment"
 Photograph ||--}o MediaObject : "encoding"
 Photograph ||--}o MediaObject : "encodings"
 Photograph ||--}o CreativeWork : "exampleOfWork"
 Photograph ||--}o Grant : "funding"
-Photograph ||--}o Text : "headline"
 Photograph ||--}o InteractionCounter : "interactionStatistic"
-Photograph ||--}o Text : "interactivityType"
-Photograph ||--}o Boolean : "isAccessibleForFree"
-Photograph ||--}o Boolean : "isFamilyFriendly"
 Photograph ||--}o Place : "locationCreated"
 Photograph ||--}o Thing : "mentions"
 Photograph ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ Photograph ||--}o Event : "recordedAt"
 Photograph ||--}o PublicationEvent : "releasedEvent"
 Photograph ||--}o Review : "review"
 Photograph ||--}o Review : "reviews"
-Photograph ||--}o Date : "sdDatePublished"
 Photograph ||--}o Organization : "sourceOrganization"
 Photograph ||--}o Place : "spatial"
-Photograph ||--}o Text : "text"
 Photograph ||--}o ImageObject : "thumbnail"
-Photograph ||--}o URL : "thumbnailUrl"
 Photograph ||--}o Duration : "timeRequired"
 Photograph ||--}o CreativeWork : "translationOfWork"
-Photograph ||--}o Text : "typicalAgeRange"
 Photograph ||--}o CreativeWork : "workTranslation"
-Photograph ||--}o Text : "alternateName"
-Photograph ||--}o Text : "disambiguatingDescription"
-Photograph ||--}o Text : "name"
-Photograph ||--}o URL : "sameAs"
 Photograph ||--}o Action : "potentialAction"
-Photograph ||--}o URL : "url"
 

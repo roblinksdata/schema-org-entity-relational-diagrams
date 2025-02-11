@@ -1,9 +1,17 @@
 erDiagram
 AccountingService {
     stringList feesAndCommissionsSpecification  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -15,91 +23,92 @@ AccountingService {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AccountingService ||--}o Organization : "branchOf"
-AccountingService ||--}o Text : "currenciesAccepted"
-AccountingService ||--}o Text : "openingHours"
-AccountingService ||--}o Text : "paymentAccepted"
-AccountingService ||--}o Text : "priceRange"
-AccountingService ||--}o Text : "globalLocationNumber"
-AccountingService ||--}o URL : "hasGS1DigitalLink"
 AccountingService ||--}o PropertyValue : "additionalProperty"
 AccountingService ||--}o AggregateRating : "aggregateRating"
 AccountingService ||--}o LocationFeatureSpecification : "amenityFeature"
-AccountingService ||--}o Text : "branchCode"
 AccountingService ||--}o Place : "containedIn"
 AccountingService ||--}o Place : "containedInPlace"
 AccountingService ||--}o Place : "containsPlace"
 AccountingService ||--}o Event : "event"
 AccountingService ||--}o Event : "events"
-AccountingService ||--}o Text : "faxNumber"
 AccountingService ||--}o Certification : "hasCertification"
-AccountingService ||--}o Boolean : "hasDriveThroughService"
-AccountingService ||--}o Boolean : "isAccessibleForFree"
-AccountingService ||--}o Text : "isicV4"
-AccountingService ||--}o URL : "map"
-AccountingService ||--}o URL : "maps"
-AccountingService ||--}o Integer : "maximumAttendeeCapacity"
 AccountingService ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-AccountingService ||--}o Boolean : "publicAccess"
 AccountingService ||--}o Review : "review"
 AccountingService ||--}o Review : "reviews"
-AccountingService ||--}o Text : "slogan"
-AccountingService ||--}o Boolean : "smokingAllowed"
 AccountingService ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-AccountingService ||--}o Text : "telephone"
-AccountingService ||--}o URL : "tourBookingPage"
-AccountingService ||--}o Text : "duns"
-AccountingService ||--}o Text : "leiCode"
-AccountingService ||--}o Text : "taxID"
 AccountingService ||--}o InteractionCounter : "agentInteractionStatistic"
 AccountingService ||--}o Person : "alumni"
-AccountingService ||--}o Text : "award"
-AccountingService ||--}o Text : "awards"
 AccountingService ||--}o ContactPoint : "contactPoint"
 AccountingService ||--}o ContactPoint : "contactPoints"
 AccountingService ||--}o Organization : "department"
-AccountingService ||--}o Date : "dissolutionDate"
-AccountingService ||--}o Text : "email"
 AccountingService ||--}o Person : "employee"
 AccountingService ||--}o Person : "employees"
 AccountingService ||--}o Person : "founders"
-AccountingService ||--}o Date : "foundingDate"
 AccountingService ||--}o Place : "foundingLocation"
 AccountingService ||--}o Grant : "funding"
 AccountingService ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -108,20 +117,11 @@ AccountingService ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 AccountingService ||--}o OfferCatalog : "hasOfferCatalog"
 AccountingService ||--}o Place : "hasPOS"
 AccountingService ||--}o InteractionCounter : "interactionStatistic"
-AccountingService ||--}o Text : "iso6523Code"
-AccountingService ||--}o Text : "legalName"
 AccountingService ||--}o Offer : "makesOffer"
-AccountingService ||--}o Text : "naics"
 AccountingService ||--}o NonprofitType : "nonprofitStatus"
 AccountingService ||--}o QuantitativeValue : "numberOfEmployees"
 AccountingService ||--}o Organization : "parentOrganization"
 AccountingService ||--}o Demand : "seeks"
 AccountingService ||--}o Organization : "subOrganization"
-AccountingService ||--}o Text : "vatID"
-AccountingService ||--}o Text : "alternateName"
-AccountingService ||--}o Text : "disambiguatingDescription"
-AccountingService ||--}o Text : "name"
-AccountingService ||--}o URL : "sameAs"
 AccountingService ||--}o Action : "potentialAction"
-AccountingService ||--}o URL : "url"
 

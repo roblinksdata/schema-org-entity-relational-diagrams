@@ -1,8 +1,12 @@
 erDiagram
 Reservoir {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,51 +18,47 @@ Reservoir {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Reservoir ||--}o Text : "globalLocationNumber"
-Reservoir ||--}o URL : "hasGS1DigitalLink"
 Reservoir ||--}o PropertyValue : "additionalProperty"
 Reservoir ||--}o AggregateRating : "aggregateRating"
 Reservoir ||--}o LocationFeatureSpecification : "amenityFeature"
-Reservoir ||--}o Text : "branchCode"
 Reservoir ||--}o Place : "containedIn"
 Reservoir ||--}o Place : "containedInPlace"
 Reservoir ||--}o Place : "containsPlace"
 Reservoir ||--}o Event : "event"
 Reservoir ||--}o Event : "events"
-Reservoir ||--}o Text : "faxNumber"
 Reservoir ||--}o Certification : "hasCertification"
-Reservoir ||--}o Boolean : "hasDriveThroughService"
-Reservoir ||--}o Boolean : "isAccessibleForFree"
-Reservoir ||--}o Text : "isicV4"
-Reservoir ||--}o URL : "map"
-Reservoir ||--}o URL : "maps"
-Reservoir ||--}o Integer : "maximumAttendeeCapacity"
 Reservoir ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Reservoir ||--}o Boolean : "publicAccess"
 Reservoir ||--}o Review : "review"
 Reservoir ||--}o Review : "reviews"
-Reservoir ||--}o Text : "slogan"
-Reservoir ||--}o Boolean : "smokingAllowed"
 Reservoir ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Reservoir ||--}o Text : "telephone"
-Reservoir ||--}o URL : "tourBookingPage"
-Reservoir ||--}o Text : "alternateName"
-Reservoir ||--}o Text : "disambiguatingDescription"
-Reservoir ||--}o Text : "name"
-Reservoir ||--}o URL : "sameAs"
 Reservoir ||--}o Action : "potentialAction"
-Reservoir ||--}o URL : "url"
 

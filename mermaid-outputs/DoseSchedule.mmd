@@ -1,18 +1,23 @@
 erDiagram
 DoseSchedule {
+    TextList frequency  
+    TextList doseUnit  
     stringList doseValue  
+    TextList targetPopulation  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DoseSchedule ||--}o Text : "frequency"
-DoseSchedule ||--}o Text : "doseUnit"
-DoseSchedule ||--}o Text : "targetPopulation"
 DoseSchedule ||--}o MedicalCode : "code"
 DoseSchedule ||--}o Grant : "funding"
 DoseSchedule ||--}o MedicalGuideline : "guideline"
@@ -20,10 +25,5 @@ DoseSchedule ||--}o MedicineSystem : "medicineSystem"
 DoseSchedule ||--}o Organization : "recognizingAuthority"
 DoseSchedule ||--}o MedicalSpecialty : "relevantSpecialty"
 DoseSchedule ||--}o MedicalStudy : "study"
-DoseSchedule ||--}o Text : "alternateName"
-DoseSchedule ||--}o Text : "disambiguatingDescription"
-DoseSchedule ||--}o Text : "name"
-DoseSchedule ||--}o URL : "sameAs"
 DoseSchedule ||--}o Action : "potentialAction"
-DoseSchedule ||--}o URL : "url"
 

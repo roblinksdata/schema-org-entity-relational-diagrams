@@ -1,8 +1,16 @@
 erDiagram
 HairSalon {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ HairSalon {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 HairSalon ||--}o Organization : "branchOf"
-HairSalon ||--}o Text : "currenciesAccepted"
-HairSalon ||--}o Text : "openingHours"
-HairSalon ||--}o Text : "paymentAccepted"
-HairSalon ||--}o Text : "priceRange"
-HairSalon ||--}o Text : "globalLocationNumber"
-HairSalon ||--}o URL : "hasGS1DigitalLink"
 HairSalon ||--}o PropertyValue : "additionalProperty"
 HairSalon ||--}o AggregateRating : "aggregateRating"
 HairSalon ||--}o LocationFeatureSpecification : "amenityFeature"
-HairSalon ||--}o Text : "branchCode"
 HairSalon ||--}o Place : "containedIn"
 HairSalon ||--}o Place : "containedInPlace"
 HairSalon ||--}o Place : "containsPlace"
 HairSalon ||--}o Event : "event"
 HairSalon ||--}o Event : "events"
-HairSalon ||--}o Text : "faxNumber"
 HairSalon ||--}o Certification : "hasCertification"
-HairSalon ||--}o Boolean : "hasDriveThroughService"
-HairSalon ||--}o Boolean : "isAccessibleForFree"
-HairSalon ||--}o Text : "isicV4"
-HairSalon ||--}o URL : "map"
-HairSalon ||--}o URL : "maps"
-HairSalon ||--}o Integer : "maximumAttendeeCapacity"
 HairSalon ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-HairSalon ||--}o Boolean : "publicAccess"
 HairSalon ||--}o Review : "review"
 HairSalon ||--}o Review : "reviews"
-HairSalon ||--}o Text : "slogan"
-HairSalon ||--}o Boolean : "smokingAllowed"
 HairSalon ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-HairSalon ||--}o Text : "telephone"
-HairSalon ||--}o URL : "tourBookingPage"
-HairSalon ||--}o Text : "duns"
-HairSalon ||--}o Text : "leiCode"
-HairSalon ||--}o Text : "taxID"
 HairSalon ||--}o InteractionCounter : "agentInteractionStatistic"
 HairSalon ||--}o Person : "alumni"
-HairSalon ||--}o Text : "award"
-HairSalon ||--}o Text : "awards"
 HairSalon ||--}o ContactPoint : "contactPoint"
 HairSalon ||--}o ContactPoint : "contactPoints"
 HairSalon ||--}o Organization : "department"
-HairSalon ||--}o Date : "dissolutionDate"
-HairSalon ||--}o Text : "email"
 HairSalon ||--}o Person : "employee"
 HairSalon ||--}o Person : "employees"
 HairSalon ||--}o Person : "founders"
-HairSalon ||--}o Date : "foundingDate"
 HairSalon ||--}o Place : "foundingLocation"
 HairSalon ||--}o Grant : "funding"
 HairSalon ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ HairSalon ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 HairSalon ||--}o OfferCatalog : "hasOfferCatalog"
 HairSalon ||--}o Place : "hasPOS"
 HairSalon ||--}o InteractionCounter : "interactionStatistic"
-HairSalon ||--}o Text : "iso6523Code"
-HairSalon ||--}o Text : "legalName"
 HairSalon ||--}o Offer : "makesOffer"
-HairSalon ||--}o Text : "naics"
 HairSalon ||--}o NonprofitType : "nonprofitStatus"
 HairSalon ||--}o QuantitativeValue : "numberOfEmployees"
 HairSalon ||--}o Organization : "parentOrganization"
 HairSalon ||--}o Demand : "seeks"
 HairSalon ||--}o Organization : "subOrganization"
-HairSalon ||--}o Text : "vatID"
-HairSalon ||--}o Text : "alternateName"
-HairSalon ||--}o Text : "disambiguatingDescription"
-HairSalon ||--}o Text : "name"
-HairSalon ||--}o URL : "sameAs"
 HairSalon ||--}o Action : "potentialAction"
-HairSalon ||--}o URL : "url"
 

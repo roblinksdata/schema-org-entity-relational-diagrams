@@ -2,17 +2,17 @@ erDiagram
 DrugCostCategory {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DrugCostCategory ||--}o Text : "alternateName"
-DrugCostCategory ||--}o Text : "disambiguatingDescription"
-DrugCostCategory ||--}o Text : "name"
-DrugCostCategory ||--}o URL : "sameAs"
 DrugCostCategory ||--}o Action : "potentialAction"
-DrugCostCategory ||--}o URL : "url"
 

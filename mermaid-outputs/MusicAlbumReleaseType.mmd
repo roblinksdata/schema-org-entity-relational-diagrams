@@ -2,17 +2,17 @@ erDiagram
 MusicAlbumReleaseType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MusicAlbumReleaseType ||--}o Text : "alternateName"
-MusicAlbumReleaseType ||--}o Text : "disambiguatingDescription"
-MusicAlbumReleaseType ||--}o Text : "name"
-MusicAlbumReleaseType ||--}o URL : "sameAs"
 MusicAlbumReleaseType ||--}o Action : "potentialAction"
-MusicAlbumReleaseType ||--}o URL : "url"
 

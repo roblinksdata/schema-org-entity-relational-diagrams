@@ -6,62 +6,74 @@ MusicGroup {
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MusicGroup ||--}o MusicAlbum : "album"
 MusicGroup ||--}o MusicAlbum : "albums"
 MusicGroup ||--}o Person : "musicGroupMember"
 MusicGroup ||--}o MusicRecording : "tracks"
-MusicGroup ||--}o Text : "duns"
-MusicGroup ||--}o Text : "globalLocationNumber"
-MusicGroup ||--}o URL : "hasGS1DigitalLink"
-MusicGroup ||--}o Text : "leiCode"
-MusicGroup ||--}o Text : "taxID"
 MusicGroup ||--}o InteractionCounter : "agentInteractionStatistic"
 MusicGroup ||--}o AggregateRating : "aggregateRating"
 MusicGroup ||--}o Person : "alumni"
-MusicGroup ||--}o Text : "award"
-MusicGroup ||--}o Text : "awards"
 MusicGroup ||--}o ContactPoint : "contactPoint"
 MusicGroup ||--}o ContactPoint : "contactPoints"
 MusicGroup ||--}o Organization : "department"
-MusicGroup ||--}o Date : "dissolutionDate"
-MusicGroup ||--}o Text : "email"
 MusicGroup ||--}o Person : "employee"
 MusicGroup ||--}o Person : "employees"
 MusicGroup ||--}o Event : "event"
 MusicGroup ||--}o Event : "events"
-MusicGroup ||--}o Text : "faxNumber"
 MusicGroup ||--}o Person : "founders"
-MusicGroup ||--}o Date : "foundingDate"
 MusicGroup ||--}o Place : "foundingLocation"
 MusicGroup ||--}o Grant : "funding"
 MusicGroup ||--}o Certification : "hasCertification"
@@ -71,25 +83,13 @@ MusicGroup ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 MusicGroup ||--}o OfferCatalog : "hasOfferCatalog"
 MusicGroup ||--}o Place : "hasPOS"
 MusicGroup ||--}o InteractionCounter : "interactionStatistic"
-MusicGroup ||--}o Text : "isicV4"
-MusicGroup ||--}o Text : "iso6523Code"
-MusicGroup ||--}o Text : "legalName"
 MusicGroup ||--}o Offer : "makesOffer"
-MusicGroup ||--}o Text : "naics"
 MusicGroup ||--}o NonprofitType : "nonprofitStatus"
 MusicGroup ||--}o QuantitativeValue : "numberOfEmployees"
 MusicGroup ||--}o Organization : "parentOrganization"
 MusicGroup ||--}o Review : "review"
 MusicGroup ||--}o Review : "reviews"
 MusicGroup ||--}o Demand : "seeks"
-MusicGroup ||--}o Text : "slogan"
 MusicGroup ||--}o Organization : "subOrganization"
-MusicGroup ||--}o Text : "telephone"
-MusicGroup ||--}o Text : "vatID"
-MusicGroup ||--}o Text : "alternateName"
-MusicGroup ||--}o Text : "disambiguatingDescription"
-MusicGroup ||--}o Text : "name"
-MusicGroup ||--}o URL : "sameAs"
 MusicGroup ||--}o Action : "potentialAction"
-MusicGroup ||--}o URL : "url"
 

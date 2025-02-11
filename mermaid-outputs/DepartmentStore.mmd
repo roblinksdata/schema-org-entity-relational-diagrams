@@ -1,8 +1,16 @@
 erDiagram
 DepartmentStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ DepartmentStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DepartmentStore ||--}o Organization : "branchOf"
-DepartmentStore ||--}o Text : "currenciesAccepted"
-DepartmentStore ||--}o Text : "openingHours"
-DepartmentStore ||--}o Text : "paymentAccepted"
-DepartmentStore ||--}o Text : "priceRange"
-DepartmentStore ||--}o Text : "globalLocationNumber"
-DepartmentStore ||--}o URL : "hasGS1DigitalLink"
 DepartmentStore ||--}o PropertyValue : "additionalProperty"
 DepartmentStore ||--}o AggregateRating : "aggregateRating"
 DepartmentStore ||--}o LocationFeatureSpecification : "amenityFeature"
-DepartmentStore ||--}o Text : "branchCode"
 DepartmentStore ||--}o Place : "containedIn"
 DepartmentStore ||--}o Place : "containedInPlace"
 DepartmentStore ||--}o Place : "containsPlace"
 DepartmentStore ||--}o Event : "event"
 DepartmentStore ||--}o Event : "events"
-DepartmentStore ||--}o Text : "faxNumber"
 DepartmentStore ||--}o Certification : "hasCertification"
-DepartmentStore ||--}o Boolean : "hasDriveThroughService"
-DepartmentStore ||--}o Boolean : "isAccessibleForFree"
-DepartmentStore ||--}o Text : "isicV4"
-DepartmentStore ||--}o URL : "map"
-DepartmentStore ||--}o URL : "maps"
-DepartmentStore ||--}o Integer : "maximumAttendeeCapacity"
 DepartmentStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-DepartmentStore ||--}o Boolean : "publicAccess"
 DepartmentStore ||--}o Review : "review"
 DepartmentStore ||--}o Review : "reviews"
-DepartmentStore ||--}o Text : "slogan"
-DepartmentStore ||--}o Boolean : "smokingAllowed"
 DepartmentStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-DepartmentStore ||--}o Text : "telephone"
-DepartmentStore ||--}o URL : "tourBookingPage"
-DepartmentStore ||--}o Text : "duns"
-DepartmentStore ||--}o Text : "leiCode"
-DepartmentStore ||--}o Text : "taxID"
 DepartmentStore ||--}o InteractionCounter : "agentInteractionStatistic"
 DepartmentStore ||--}o Person : "alumni"
-DepartmentStore ||--}o Text : "award"
-DepartmentStore ||--}o Text : "awards"
 DepartmentStore ||--}o ContactPoint : "contactPoint"
 DepartmentStore ||--}o ContactPoint : "contactPoints"
 DepartmentStore ||--}o Organization : "department"
-DepartmentStore ||--}o Date : "dissolutionDate"
-DepartmentStore ||--}o Text : "email"
 DepartmentStore ||--}o Person : "employee"
 DepartmentStore ||--}o Person : "employees"
 DepartmentStore ||--}o Person : "founders"
-DepartmentStore ||--}o Date : "foundingDate"
 DepartmentStore ||--}o Place : "foundingLocation"
 DepartmentStore ||--}o Grant : "funding"
 DepartmentStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ DepartmentStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 DepartmentStore ||--}o OfferCatalog : "hasOfferCatalog"
 DepartmentStore ||--}o Place : "hasPOS"
 DepartmentStore ||--}o InteractionCounter : "interactionStatistic"
-DepartmentStore ||--}o Text : "iso6523Code"
-DepartmentStore ||--}o Text : "legalName"
 DepartmentStore ||--}o Offer : "makesOffer"
-DepartmentStore ||--}o Text : "naics"
 DepartmentStore ||--}o NonprofitType : "nonprofitStatus"
 DepartmentStore ||--}o QuantitativeValue : "numberOfEmployees"
 DepartmentStore ||--}o Organization : "parentOrganization"
 DepartmentStore ||--}o Demand : "seeks"
 DepartmentStore ||--}o Organization : "subOrganization"
-DepartmentStore ||--}o Text : "vatID"
-DepartmentStore ||--}o Text : "alternateName"
-DepartmentStore ||--}o Text : "disambiguatingDescription"
-DepartmentStore ||--}o Text : "name"
-DepartmentStore ||--}o URL : "sameAs"
 DepartmentStore ||--}o Action : "potentialAction"
-DepartmentStore ||--}o URL : "url"
 

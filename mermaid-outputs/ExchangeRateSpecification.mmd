@@ -1,20 +1,20 @@
 erDiagram
 ExchangeRateSpecification {
+    TextList currency  
     stringList exchangeRateSpread  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ExchangeRateSpecification ||--}o Text : "currency"
 ExchangeRateSpecification ||--}o UnitPriceSpecification : "currentExchangeRate"
-ExchangeRateSpecification ||--}o Text : "alternateName"
-ExchangeRateSpecification ||--}o Text : "disambiguatingDescription"
-ExchangeRateSpecification ||--}o Text : "name"
-ExchangeRateSpecification ||--}o URL : "sameAs"
 ExchangeRateSpecification ||--}o Action : "potentialAction"
-ExchangeRateSpecification ||--}o URL : "url"
 

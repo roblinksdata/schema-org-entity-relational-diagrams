@@ -1,8 +1,16 @@
 erDiagram
 AutoBodyShop {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ AutoBodyShop {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AutoBodyShop ||--}o Organization : "branchOf"
-AutoBodyShop ||--}o Text : "currenciesAccepted"
-AutoBodyShop ||--}o Text : "openingHours"
-AutoBodyShop ||--}o Text : "paymentAccepted"
-AutoBodyShop ||--}o Text : "priceRange"
-AutoBodyShop ||--}o Text : "globalLocationNumber"
-AutoBodyShop ||--}o URL : "hasGS1DigitalLink"
 AutoBodyShop ||--}o PropertyValue : "additionalProperty"
 AutoBodyShop ||--}o AggregateRating : "aggregateRating"
 AutoBodyShop ||--}o LocationFeatureSpecification : "amenityFeature"
-AutoBodyShop ||--}o Text : "branchCode"
 AutoBodyShop ||--}o Place : "containedIn"
 AutoBodyShop ||--}o Place : "containedInPlace"
 AutoBodyShop ||--}o Place : "containsPlace"
 AutoBodyShop ||--}o Event : "event"
 AutoBodyShop ||--}o Event : "events"
-AutoBodyShop ||--}o Text : "faxNumber"
 AutoBodyShop ||--}o Certification : "hasCertification"
-AutoBodyShop ||--}o Boolean : "hasDriveThroughService"
-AutoBodyShop ||--}o Boolean : "isAccessibleForFree"
-AutoBodyShop ||--}o Text : "isicV4"
-AutoBodyShop ||--}o URL : "map"
-AutoBodyShop ||--}o URL : "maps"
-AutoBodyShop ||--}o Integer : "maximumAttendeeCapacity"
 AutoBodyShop ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-AutoBodyShop ||--}o Boolean : "publicAccess"
 AutoBodyShop ||--}o Review : "review"
 AutoBodyShop ||--}o Review : "reviews"
-AutoBodyShop ||--}o Text : "slogan"
-AutoBodyShop ||--}o Boolean : "smokingAllowed"
 AutoBodyShop ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-AutoBodyShop ||--}o Text : "telephone"
-AutoBodyShop ||--}o URL : "tourBookingPage"
-AutoBodyShop ||--}o Text : "duns"
-AutoBodyShop ||--}o Text : "leiCode"
-AutoBodyShop ||--}o Text : "taxID"
 AutoBodyShop ||--}o InteractionCounter : "agentInteractionStatistic"
 AutoBodyShop ||--}o Person : "alumni"
-AutoBodyShop ||--}o Text : "award"
-AutoBodyShop ||--}o Text : "awards"
 AutoBodyShop ||--}o ContactPoint : "contactPoint"
 AutoBodyShop ||--}o ContactPoint : "contactPoints"
 AutoBodyShop ||--}o Organization : "department"
-AutoBodyShop ||--}o Date : "dissolutionDate"
-AutoBodyShop ||--}o Text : "email"
 AutoBodyShop ||--}o Person : "employee"
 AutoBodyShop ||--}o Person : "employees"
 AutoBodyShop ||--}o Person : "founders"
-AutoBodyShop ||--}o Date : "foundingDate"
 AutoBodyShop ||--}o Place : "foundingLocation"
 AutoBodyShop ||--}o Grant : "funding"
 AutoBodyShop ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ AutoBodyShop ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 AutoBodyShop ||--}o OfferCatalog : "hasOfferCatalog"
 AutoBodyShop ||--}o Place : "hasPOS"
 AutoBodyShop ||--}o InteractionCounter : "interactionStatistic"
-AutoBodyShop ||--}o Text : "iso6523Code"
-AutoBodyShop ||--}o Text : "legalName"
 AutoBodyShop ||--}o Offer : "makesOffer"
-AutoBodyShop ||--}o Text : "naics"
 AutoBodyShop ||--}o NonprofitType : "nonprofitStatus"
 AutoBodyShop ||--}o QuantitativeValue : "numberOfEmployees"
 AutoBodyShop ||--}o Organization : "parentOrganization"
 AutoBodyShop ||--}o Demand : "seeks"
 AutoBodyShop ||--}o Organization : "subOrganization"
-AutoBodyShop ||--}o Text : "vatID"
-AutoBodyShop ||--}o Text : "alternateName"
-AutoBodyShop ||--}o Text : "disambiguatingDescription"
-AutoBodyShop ||--}o Text : "name"
-AutoBodyShop ||--}o URL : "sameAs"
 AutoBodyShop ||--}o Action : "potentialAction"
-AutoBodyShop ||--}o URL : "url"
 

@@ -8,11 +8,16 @@ ListenAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ListenAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
@@ -23,10 +28,5 @@ ListenAction ||--}o Thing : "result"
 ListenAction ||--}o HowTo : "actionProcess"
 ListenAction ||--}o ActionStatusType : "actionStatus"
 ListenAction ||--}o Thing : "error"
-ListenAction ||--}o Text : "alternateName"
-ListenAction ||--}o Text : "disambiguatingDescription"
-ListenAction ||--}o Text : "name"
-ListenAction ||--}o URL : "sameAs"
 ListenAction ||--}o Action : "potentialAction"
-ListenAction ||--}o URL : "url"
 

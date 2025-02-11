@@ -10,11 +10,16 @@ AskAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AskAction ||--}o Question : "question"
@@ -26,10 +31,5 @@ AskAction ||--}o Thing : "result"
 AskAction ||--}o HowTo : "actionProcess"
 AskAction ||--}o ActionStatusType : "actionStatus"
 AskAction ||--}o Thing : "error"
-AskAction ||--}o Text : "alternateName"
-AskAction ||--}o Text : "disambiguatingDescription"
-AskAction ||--}o Text : "name"
-AskAction ||--}o URL : "sameAs"
 AskAction ||--}o Action : "potentialAction"
-AskAction ||--}o URL : "url"
 

@@ -15,25 +15,46 @@ DataCatalog {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,21 +66,30 @@ DataCatalog {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DataCatalog ||--}o Dataset : "dataset"
@@ -70,43 +100,22 @@ DataCatalog ||--}o Claim : "interpretedAsClaim"
 DataCatalog ||--}o Thing : "mainEntity"
 DataCatalog ||--}o Place : "spatialCoverage"
 DataCatalog ||--}o CreativeWork : "workExample"
-DataCatalog ||--}o Text : "abstract"
-DataCatalog ||--}o Text : "accessMode"
 DataCatalog ||--}o ItemList : "accessModeSufficient"
-DataCatalog ||--}o Text : "accessibilityAPI"
-DataCatalog ||--}o Text : "accessibilityControl"
-DataCatalog ||--}o Text : "accessibilityFeature"
-DataCatalog ||--}o Text : "accessibilityHazard"
-DataCatalog ||--}o Text : "accessibilitySummary"
 DataCatalog ||--}o Person : "accountablePerson"
 DataCatalog ||--}o AggregateRating : "aggregateRating"
-DataCatalog ||--}o Text : "alternativeHeadline"
 DataCatalog ||--}o MediaObject : "associatedMedia"
 DataCatalog ||--}o Audience : "audience"
-DataCatalog ||--}o Text : "award"
-DataCatalog ||--}o Text : "awards"
 DataCatalog ||--}o Person : "character"
 DataCatalog ||--}o Comment : "comment"
-DataCatalog ||--}o Integer : "commentCount"
-DataCatalog ||--}o Text : "conditionsOfAccess"
-DataCatalog ||--}o DateTime : "contentReferenceTime"
-DataCatalog ||--}o Text : "copyrightNotice"
-DataCatalog ||--}o Number : "copyrightYear"
 DataCatalog ||--}o Country : "countryOfOrigin"
-DataCatalog ||--}o Text : "creditText"
 DataCatalog ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-DataCatalog ||--}o URL : "discussionUrl"
 DataCatalog ||--}o Person : "editor"
 DataCatalog ||--}o AlignmentObject : "educationalAlignment"
 DataCatalog ||--}o MediaObject : "encoding"
 DataCatalog ||--}o MediaObject : "encodings"
 DataCatalog ||--}o CreativeWork : "exampleOfWork"
 DataCatalog ||--}o Grant : "funding"
-DataCatalog ||--}o Text : "headline"
 DataCatalog ||--}o InteractionCounter : "interactionStatistic"
-DataCatalog ||--}o Text : "interactivityType"
-DataCatalog ||--}o Boolean : "isAccessibleForFree"
-DataCatalog ||--}o Boolean : "isFamilyFriendly"
 DataCatalog ||--}o Place : "locationCreated"
 DataCatalog ||--}o Thing : "mentions"
 DataCatalog ||--}o PublicationEvent : "publication"
@@ -115,20 +124,11 @@ DataCatalog ||--}o Event : "recordedAt"
 DataCatalog ||--}o PublicationEvent : "releasedEvent"
 DataCatalog ||--}o Review : "review"
 DataCatalog ||--}o Review : "reviews"
-DataCatalog ||--}o Date : "sdDatePublished"
 DataCatalog ||--}o Organization : "sourceOrganization"
 DataCatalog ||--}o Place : "spatial"
-DataCatalog ||--}o Text : "text"
 DataCatalog ||--}o ImageObject : "thumbnail"
-DataCatalog ||--}o URL : "thumbnailUrl"
 DataCatalog ||--}o Duration : "timeRequired"
 DataCatalog ||--}o CreativeWork : "translationOfWork"
-DataCatalog ||--}o Text : "typicalAgeRange"
 DataCatalog ||--}o CreativeWork : "workTranslation"
-DataCatalog ||--}o Text : "alternateName"
-DataCatalog ||--}o Text : "disambiguatingDescription"
-DataCatalog ||--}o Text : "name"
-DataCatalog ||--}o URL : "sameAs"
 DataCatalog ||--}o Action : "potentialAction"
-DataCatalog ||--}o URL : "url"
 

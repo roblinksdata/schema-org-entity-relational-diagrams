@@ -1,5 +1,10 @@
 erDiagram
 MolecularEntity {
+    TextList inChI  
+    TextList inChIKey  
+    TextList smiles  
+    TextList iupacName  
+    TextList molecularFormula  
     stringList molecularWeight  
     stringList monoisotopicMolecularWeight  
     stringList hasRepresentation  
@@ -9,19 +14,19 @@ MolecularEntity {
     stringList isLocatedInSubcellularLocation  
     stringList taxonomicRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MolecularEntity ||--}o Text : "inChI"
-MolecularEntity ||--}o Text : "inChIKey"
-MolecularEntity ||--}o Text : "smiles"
 MolecularEntity ||--}o DefinedTerm : "chemicalRole"
-MolecularEntity ||--}o Text : "iupacName"
-MolecularEntity ||--}o Text : "molecularFormula"
 MolecularEntity ||--}o DefinedTerm : "potentialUse"
 MolecularEntity ||--}o BioChemEntity : "bioChemInteraction"
 MolecularEntity ||--}o BioChemEntity : "bioChemSimilarity"
@@ -30,10 +35,5 @@ MolecularEntity ||--}o Grant : "funding"
 MolecularEntity ||--}o BioChemEntity : "hasBioChemEntityPart"
 MolecularEntity ||--}o Gene : "isEncodedByBioChemEntity"
 MolecularEntity ||--}o BioChemEntity : "isPartOfBioChemEntity"
-MolecularEntity ||--}o Text : "alternateName"
-MolecularEntity ||--}o Text : "disambiguatingDescription"
-MolecularEntity ||--}o Text : "name"
-MolecularEntity ||--}o URL : "sameAs"
 MolecularEntity ||--}o Action : "potentialAction"
-MolecularEntity ||--}o URL : "url"
 

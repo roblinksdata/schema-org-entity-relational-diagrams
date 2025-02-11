@@ -2,11 +2,16 @@ erDiagram
 DrugLegalStatus {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DrugLegalStatus ||--}o AdministrativeArea : "applicableLocation"
@@ -17,10 +22,5 @@ DrugLegalStatus ||--}o MedicineSystem : "medicineSystem"
 DrugLegalStatus ||--}o Organization : "recognizingAuthority"
 DrugLegalStatus ||--}o MedicalSpecialty : "relevantSpecialty"
 DrugLegalStatus ||--}o MedicalStudy : "study"
-DrugLegalStatus ||--}o Text : "alternateName"
-DrugLegalStatus ||--}o Text : "disambiguatingDescription"
-DrugLegalStatus ||--}o Text : "name"
-DrugLegalStatus ||--}o URL : "sameAs"
 DrugLegalStatus ||--}o Action : "potentialAction"
-DrugLegalStatus ||--}o URL : "url"
 

@@ -2,6 +2,9 @@ erDiagram
 RadioSeries {
     stringList actor  
     stringList musicBy  
+    IntegerList numberOfEpisodes  
+    IntegerList numberOfSeasons  
+    TextList issn  
     stringList endDate  
     stringList startDate  
     stringList acquireLicensePage  
@@ -17,25 +20,46 @@ RadioSeries {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,21 +71,30 @@ RadioSeries {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 RadioSeries ||--}o CreativeWorkSeason : "containsSeason"
@@ -71,12 +104,9 @@ RadioSeries ||--}o Person : "actors"
 RadioSeries ||--}o Person : "director"
 RadioSeries ||--}o Person : "directors"
 RadioSeries ||--}o Episode : "episodes"
-RadioSeries ||--}o Integer : "numberOfEpisodes"
-RadioSeries ||--}o Integer : "numberOfSeasons"
 RadioSeries ||--}o Organization : "productionCompany"
 RadioSeries ||--}o CreativeWorkSeason : "seasons"
 RadioSeries ||--}o VideoObject : "trailer"
-RadioSeries ||--}o Text : "issn"
 RadioSeries ||--}o Thing : "about"
 RadioSeries ||--}o Place : "contentLocation"
 RadioSeries ||--}o CreativeWork : "hasPart"
@@ -84,43 +114,22 @@ RadioSeries ||--}o Claim : "interpretedAsClaim"
 RadioSeries ||--}o Thing : "mainEntity"
 RadioSeries ||--}o Place : "spatialCoverage"
 RadioSeries ||--}o CreativeWork : "workExample"
-RadioSeries ||--}o Text : "abstract"
-RadioSeries ||--}o Text : "accessMode"
 RadioSeries ||--}o ItemList : "accessModeSufficient"
-RadioSeries ||--}o Text : "accessibilityAPI"
-RadioSeries ||--}o Text : "accessibilityControl"
-RadioSeries ||--}o Text : "accessibilityFeature"
-RadioSeries ||--}o Text : "accessibilityHazard"
-RadioSeries ||--}o Text : "accessibilitySummary"
 RadioSeries ||--}o Person : "accountablePerson"
 RadioSeries ||--}o AggregateRating : "aggregateRating"
-RadioSeries ||--}o Text : "alternativeHeadline"
 RadioSeries ||--}o MediaObject : "associatedMedia"
 RadioSeries ||--}o Audience : "audience"
-RadioSeries ||--}o Text : "award"
-RadioSeries ||--}o Text : "awards"
 RadioSeries ||--}o Person : "character"
 RadioSeries ||--}o Comment : "comment"
-RadioSeries ||--}o Integer : "commentCount"
-RadioSeries ||--}o Text : "conditionsOfAccess"
-RadioSeries ||--}o DateTime : "contentReferenceTime"
-RadioSeries ||--}o Text : "copyrightNotice"
-RadioSeries ||--}o Number : "copyrightYear"
 RadioSeries ||--}o Country : "countryOfOrigin"
-RadioSeries ||--}o Text : "creditText"
 RadioSeries ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-RadioSeries ||--}o URL : "discussionUrl"
 RadioSeries ||--}o Person : "editor"
 RadioSeries ||--}o AlignmentObject : "educationalAlignment"
 RadioSeries ||--}o MediaObject : "encoding"
 RadioSeries ||--}o MediaObject : "encodings"
 RadioSeries ||--}o CreativeWork : "exampleOfWork"
 RadioSeries ||--}o Grant : "funding"
-RadioSeries ||--}o Text : "headline"
 RadioSeries ||--}o InteractionCounter : "interactionStatistic"
-RadioSeries ||--}o Text : "interactivityType"
-RadioSeries ||--}o Boolean : "isAccessibleForFree"
-RadioSeries ||--}o Boolean : "isFamilyFriendly"
 RadioSeries ||--}o Place : "locationCreated"
 RadioSeries ||--}o Thing : "mentions"
 RadioSeries ||--}o PublicationEvent : "publication"
@@ -129,20 +138,11 @@ RadioSeries ||--}o Event : "recordedAt"
 RadioSeries ||--}o PublicationEvent : "releasedEvent"
 RadioSeries ||--}o Review : "review"
 RadioSeries ||--}o Review : "reviews"
-RadioSeries ||--}o Date : "sdDatePublished"
 RadioSeries ||--}o Organization : "sourceOrganization"
 RadioSeries ||--}o Place : "spatial"
-RadioSeries ||--}o Text : "text"
 RadioSeries ||--}o ImageObject : "thumbnail"
-RadioSeries ||--}o URL : "thumbnailUrl"
 RadioSeries ||--}o Duration : "timeRequired"
 RadioSeries ||--}o CreativeWork : "translationOfWork"
-RadioSeries ||--}o Text : "typicalAgeRange"
 RadioSeries ||--}o CreativeWork : "workTranslation"
-RadioSeries ||--}o Text : "alternateName"
-RadioSeries ||--}o Text : "disambiguatingDescription"
-RadioSeries ||--}o Text : "name"
-RadioSeries ||--}o URL : "sameAs"
 RadioSeries ||--}o Action : "potentialAction"
-RadioSeries ||--}o URL : "url"
 

@@ -1,6 +1,7 @@
 erDiagram
 TradeAction {
     stringList price  
+    TextList priceCurrency  
     stringList location  
     stringList participant  
     stringList agent  
@@ -9,14 +10,18 @@ TradeAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-TradeAction ||--}o Text : "priceCurrency"
 TradeAction ||--}o PriceSpecification : "priceSpecification"
 TradeAction ||--}o Thing : "instrument"
 TradeAction ||--}o Thing : "object"
@@ -24,10 +29,5 @@ TradeAction ||--}o Thing : "result"
 TradeAction ||--}o HowTo : "actionProcess"
 TradeAction ||--}o ActionStatusType : "actionStatus"
 TradeAction ||--}o Thing : "error"
-TradeAction ||--}o Text : "alternateName"
-TradeAction ||--}o Text : "disambiguatingDescription"
-TradeAction ||--}o Text : "name"
-TradeAction ||--}o URL : "sameAs"
 TradeAction ||--}o Action : "potentialAction"
-TradeAction ||--}o URL : "url"
 

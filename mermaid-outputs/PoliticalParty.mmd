@@ -4,58 +4,70 @@ PoliticalParty {
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PoliticalParty ||--}o Text : "duns"
-PoliticalParty ||--}o Text : "globalLocationNumber"
-PoliticalParty ||--}o URL : "hasGS1DigitalLink"
-PoliticalParty ||--}o Text : "leiCode"
-PoliticalParty ||--}o Text : "taxID"
 PoliticalParty ||--}o InteractionCounter : "agentInteractionStatistic"
 PoliticalParty ||--}o AggregateRating : "aggregateRating"
 PoliticalParty ||--}o Person : "alumni"
-PoliticalParty ||--}o Text : "award"
-PoliticalParty ||--}o Text : "awards"
 PoliticalParty ||--}o ContactPoint : "contactPoint"
 PoliticalParty ||--}o ContactPoint : "contactPoints"
 PoliticalParty ||--}o Organization : "department"
-PoliticalParty ||--}o Date : "dissolutionDate"
-PoliticalParty ||--}o Text : "email"
 PoliticalParty ||--}o Person : "employee"
 PoliticalParty ||--}o Person : "employees"
 PoliticalParty ||--}o Event : "event"
 PoliticalParty ||--}o Event : "events"
-PoliticalParty ||--}o Text : "faxNumber"
 PoliticalParty ||--}o Person : "founders"
-PoliticalParty ||--}o Date : "foundingDate"
 PoliticalParty ||--}o Place : "foundingLocation"
 PoliticalParty ||--}o Grant : "funding"
 PoliticalParty ||--}o Certification : "hasCertification"
@@ -65,25 +77,13 @@ PoliticalParty ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 PoliticalParty ||--}o OfferCatalog : "hasOfferCatalog"
 PoliticalParty ||--}o Place : "hasPOS"
 PoliticalParty ||--}o InteractionCounter : "interactionStatistic"
-PoliticalParty ||--}o Text : "isicV4"
-PoliticalParty ||--}o Text : "iso6523Code"
-PoliticalParty ||--}o Text : "legalName"
 PoliticalParty ||--}o Offer : "makesOffer"
-PoliticalParty ||--}o Text : "naics"
 PoliticalParty ||--}o NonprofitType : "nonprofitStatus"
 PoliticalParty ||--}o QuantitativeValue : "numberOfEmployees"
 PoliticalParty ||--}o Organization : "parentOrganization"
 PoliticalParty ||--}o Review : "review"
 PoliticalParty ||--}o Review : "reviews"
 PoliticalParty ||--}o Demand : "seeks"
-PoliticalParty ||--}o Text : "slogan"
 PoliticalParty ||--}o Organization : "subOrganization"
-PoliticalParty ||--}o Text : "telephone"
-PoliticalParty ||--}o Text : "vatID"
-PoliticalParty ||--}o Text : "alternateName"
-PoliticalParty ||--}o Text : "disambiguatingDescription"
-PoliticalParty ||--}o Text : "name"
-PoliticalParty ||--}o URL : "sameAs"
 PoliticalParty ||--}o Action : "potentialAction"
-PoliticalParty ||--}o URL : "url"
 

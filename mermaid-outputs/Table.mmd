@@ -1,5 +1,7 @@
 erDiagram
 Table {
+    CssSelectorTypeList cssSelector  
+    XPathTypeList xpath  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -13,25 +15,46 @@ Table {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,25 +66,32 @@ Table {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Table ||--}o CssSelectorType : "cssSelector"
-Table ||--}o XPathType : "xpath"
 Table ||--}o Thing : "about"
 Table ||--}o Place : "contentLocation"
 Table ||--}o CreativeWork : "hasPart"
@@ -69,43 +99,22 @@ Table ||--}o Claim : "interpretedAsClaim"
 Table ||--}o Thing : "mainEntity"
 Table ||--}o Place : "spatialCoverage"
 Table ||--}o CreativeWork : "workExample"
-Table ||--}o Text : "abstract"
-Table ||--}o Text : "accessMode"
 Table ||--}o ItemList : "accessModeSufficient"
-Table ||--}o Text : "accessibilityAPI"
-Table ||--}o Text : "accessibilityControl"
-Table ||--}o Text : "accessibilityFeature"
-Table ||--}o Text : "accessibilityHazard"
-Table ||--}o Text : "accessibilitySummary"
 Table ||--}o Person : "accountablePerson"
 Table ||--}o AggregateRating : "aggregateRating"
-Table ||--}o Text : "alternativeHeadline"
 Table ||--}o MediaObject : "associatedMedia"
 Table ||--}o Audience : "audience"
-Table ||--}o Text : "award"
-Table ||--}o Text : "awards"
 Table ||--}o Person : "character"
 Table ||--}o Comment : "comment"
-Table ||--}o Integer : "commentCount"
-Table ||--}o Text : "conditionsOfAccess"
-Table ||--}o DateTime : "contentReferenceTime"
-Table ||--}o Text : "copyrightNotice"
-Table ||--}o Number : "copyrightYear"
 Table ||--}o Country : "countryOfOrigin"
-Table ||--}o Text : "creditText"
 Table ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Table ||--}o URL : "discussionUrl"
 Table ||--}o Person : "editor"
 Table ||--}o AlignmentObject : "educationalAlignment"
 Table ||--}o MediaObject : "encoding"
 Table ||--}o MediaObject : "encodings"
 Table ||--}o CreativeWork : "exampleOfWork"
 Table ||--}o Grant : "funding"
-Table ||--}o Text : "headline"
 Table ||--}o InteractionCounter : "interactionStatistic"
-Table ||--}o Text : "interactivityType"
-Table ||--}o Boolean : "isAccessibleForFree"
-Table ||--}o Boolean : "isFamilyFriendly"
 Table ||--}o Place : "locationCreated"
 Table ||--}o Thing : "mentions"
 Table ||--}o PublicationEvent : "publication"
@@ -114,20 +123,11 @@ Table ||--}o Event : "recordedAt"
 Table ||--}o PublicationEvent : "releasedEvent"
 Table ||--}o Review : "review"
 Table ||--}o Review : "reviews"
-Table ||--}o Date : "sdDatePublished"
 Table ||--}o Organization : "sourceOrganization"
 Table ||--}o Place : "spatial"
-Table ||--}o Text : "text"
 Table ||--}o ImageObject : "thumbnail"
-Table ||--}o URL : "thumbnailUrl"
 Table ||--}o Duration : "timeRequired"
 Table ||--}o CreativeWork : "translationOfWork"
-Table ||--}o Text : "typicalAgeRange"
 Table ||--}o CreativeWork : "workTranslation"
-Table ||--}o Text : "alternateName"
-Table ||--}o Text : "disambiguatingDescription"
-Table ||--}o Text : "name"
-Table ||--}o URL : "sameAs"
 Table ||--}o Action : "potentialAction"
-Table ||--}o URL : "url"
 

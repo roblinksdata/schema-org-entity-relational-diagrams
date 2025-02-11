@@ -1,9 +1,15 @@
 erDiagram
 MusicVideoObject {
+    TextList sha256  
+    TextList bitrate  
+    TextList contentSize  
+    URLList contentUrl  
+    URLList embedUrl  
     stringList encodingFormat  
     stringList endTime  
     stringList height  
     stringList ineligibleRegion  
+    TextList playerType  
     stringList requiresSubscription  
     stringList startTime  
     stringList uploadDate  
@@ -21,24 +27,45 @@ MusicVideoObject {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -50,33 +77,36 @@ MusicVideoObject {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MusicVideoObject ||--}o Duration : "duration"
 MusicVideoObject ||--}o Claim : "interpretedAsClaim"
-MusicVideoObject ||--}o Text : "sha256"
 MusicVideoObject ||--}o NewsArticle : "associatedArticle"
-MusicVideoObject ||--}o Text : "bitrate"
-MusicVideoObject ||--}o Text : "contentSize"
-MusicVideoObject ||--}o URL : "contentUrl"
-MusicVideoObject ||--}o URL : "embedUrl"
 MusicVideoObject ||--}o CreativeWork : "encodesCreativeWork"
-MusicVideoObject ||--}o Text : "playerType"
 MusicVideoObject ||--}o Organization : "productionCompany"
 MusicVideoObject ||--}o Place : "regionsAllowed"
 MusicVideoObject ||--}o Thing : "about"
@@ -85,43 +115,22 @@ MusicVideoObject ||--}o CreativeWork : "hasPart"
 MusicVideoObject ||--}o Thing : "mainEntity"
 MusicVideoObject ||--}o Place : "spatialCoverage"
 MusicVideoObject ||--}o CreativeWork : "workExample"
-MusicVideoObject ||--}o Text : "abstract"
-MusicVideoObject ||--}o Text : "accessMode"
 MusicVideoObject ||--}o ItemList : "accessModeSufficient"
-MusicVideoObject ||--}o Text : "accessibilityAPI"
-MusicVideoObject ||--}o Text : "accessibilityControl"
-MusicVideoObject ||--}o Text : "accessibilityFeature"
-MusicVideoObject ||--}o Text : "accessibilityHazard"
-MusicVideoObject ||--}o Text : "accessibilitySummary"
 MusicVideoObject ||--}o Person : "accountablePerson"
 MusicVideoObject ||--}o AggregateRating : "aggregateRating"
-MusicVideoObject ||--}o Text : "alternativeHeadline"
 MusicVideoObject ||--}o MediaObject : "associatedMedia"
 MusicVideoObject ||--}o Audience : "audience"
-MusicVideoObject ||--}o Text : "award"
-MusicVideoObject ||--}o Text : "awards"
 MusicVideoObject ||--}o Person : "character"
 MusicVideoObject ||--}o Comment : "comment"
-MusicVideoObject ||--}o Integer : "commentCount"
-MusicVideoObject ||--}o Text : "conditionsOfAccess"
-MusicVideoObject ||--}o DateTime : "contentReferenceTime"
-MusicVideoObject ||--}o Text : "copyrightNotice"
-MusicVideoObject ||--}o Number : "copyrightYear"
 MusicVideoObject ||--}o Country : "countryOfOrigin"
-MusicVideoObject ||--}o Text : "creditText"
 MusicVideoObject ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-MusicVideoObject ||--}o URL : "discussionUrl"
 MusicVideoObject ||--}o Person : "editor"
 MusicVideoObject ||--}o AlignmentObject : "educationalAlignment"
 MusicVideoObject ||--}o MediaObject : "encoding"
 MusicVideoObject ||--}o MediaObject : "encodings"
 MusicVideoObject ||--}o CreativeWork : "exampleOfWork"
 MusicVideoObject ||--}o Grant : "funding"
-MusicVideoObject ||--}o Text : "headline"
 MusicVideoObject ||--}o InteractionCounter : "interactionStatistic"
-MusicVideoObject ||--}o Text : "interactivityType"
-MusicVideoObject ||--}o Boolean : "isAccessibleForFree"
-MusicVideoObject ||--}o Boolean : "isFamilyFriendly"
 MusicVideoObject ||--}o Place : "locationCreated"
 MusicVideoObject ||--}o Thing : "mentions"
 MusicVideoObject ||--}o PublicationEvent : "publication"
@@ -130,20 +139,11 @@ MusicVideoObject ||--}o Event : "recordedAt"
 MusicVideoObject ||--}o PublicationEvent : "releasedEvent"
 MusicVideoObject ||--}o Review : "review"
 MusicVideoObject ||--}o Review : "reviews"
-MusicVideoObject ||--}o Date : "sdDatePublished"
 MusicVideoObject ||--}o Organization : "sourceOrganization"
 MusicVideoObject ||--}o Place : "spatial"
-MusicVideoObject ||--}o Text : "text"
 MusicVideoObject ||--}o ImageObject : "thumbnail"
-MusicVideoObject ||--}o URL : "thumbnailUrl"
 MusicVideoObject ||--}o Duration : "timeRequired"
 MusicVideoObject ||--}o CreativeWork : "translationOfWork"
-MusicVideoObject ||--}o Text : "typicalAgeRange"
 MusicVideoObject ||--}o CreativeWork : "workTranslation"
-MusicVideoObject ||--}o Text : "alternateName"
-MusicVideoObject ||--}o Text : "disambiguatingDescription"
-MusicVideoObject ||--}o Text : "name"
-MusicVideoObject ||--}o URL : "sameAs"
 MusicVideoObject ||--}o Action : "potentialAction"
-MusicVideoObject ||--}o URL : "url"
 

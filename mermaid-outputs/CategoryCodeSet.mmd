@@ -13,25 +13,46 @@ CategoryCodeSet {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ CategoryCodeSet {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CategoryCodeSet ||--}o CategoryCode : "hasCategoryCode"
@@ -69,43 +99,22 @@ CategoryCodeSet ||--}o Claim : "interpretedAsClaim"
 CategoryCodeSet ||--}o Thing : "mainEntity"
 CategoryCodeSet ||--}o Place : "spatialCoverage"
 CategoryCodeSet ||--}o CreativeWork : "workExample"
-CategoryCodeSet ||--}o Text : "abstract"
-CategoryCodeSet ||--}o Text : "accessMode"
 CategoryCodeSet ||--}o ItemList : "accessModeSufficient"
-CategoryCodeSet ||--}o Text : "accessibilityAPI"
-CategoryCodeSet ||--}o Text : "accessibilityControl"
-CategoryCodeSet ||--}o Text : "accessibilityFeature"
-CategoryCodeSet ||--}o Text : "accessibilityHazard"
-CategoryCodeSet ||--}o Text : "accessibilitySummary"
 CategoryCodeSet ||--}o Person : "accountablePerson"
 CategoryCodeSet ||--}o AggregateRating : "aggregateRating"
-CategoryCodeSet ||--}o Text : "alternativeHeadline"
 CategoryCodeSet ||--}o MediaObject : "associatedMedia"
 CategoryCodeSet ||--}o Audience : "audience"
-CategoryCodeSet ||--}o Text : "award"
-CategoryCodeSet ||--}o Text : "awards"
 CategoryCodeSet ||--}o Person : "character"
 CategoryCodeSet ||--}o Comment : "comment"
-CategoryCodeSet ||--}o Integer : "commentCount"
-CategoryCodeSet ||--}o Text : "conditionsOfAccess"
-CategoryCodeSet ||--}o DateTime : "contentReferenceTime"
-CategoryCodeSet ||--}o Text : "copyrightNotice"
-CategoryCodeSet ||--}o Number : "copyrightYear"
 CategoryCodeSet ||--}o Country : "countryOfOrigin"
-CategoryCodeSet ||--}o Text : "creditText"
 CategoryCodeSet ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-CategoryCodeSet ||--}o URL : "discussionUrl"
 CategoryCodeSet ||--}o Person : "editor"
 CategoryCodeSet ||--}o AlignmentObject : "educationalAlignment"
 CategoryCodeSet ||--}o MediaObject : "encoding"
 CategoryCodeSet ||--}o MediaObject : "encodings"
 CategoryCodeSet ||--}o CreativeWork : "exampleOfWork"
 CategoryCodeSet ||--}o Grant : "funding"
-CategoryCodeSet ||--}o Text : "headline"
 CategoryCodeSet ||--}o InteractionCounter : "interactionStatistic"
-CategoryCodeSet ||--}o Text : "interactivityType"
-CategoryCodeSet ||--}o Boolean : "isAccessibleForFree"
-CategoryCodeSet ||--}o Boolean : "isFamilyFriendly"
 CategoryCodeSet ||--}o Place : "locationCreated"
 CategoryCodeSet ||--}o Thing : "mentions"
 CategoryCodeSet ||--}o PublicationEvent : "publication"
@@ -114,20 +123,11 @@ CategoryCodeSet ||--}o Event : "recordedAt"
 CategoryCodeSet ||--}o PublicationEvent : "releasedEvent"
 CategoryCodeSet ||--}o Review : "review"
 CategoryCodeSet ||--}o Review : "reviews"
-CategoryCodeSet ||--}o Date : "sdDatePublished"
 CategoryCodeSet ||--}o Organization : "sourceOrganization"
 CategoryCodeSet ||--}o Place : "spatial"
-CategoryCodeSet ||--}o Text : "text"
 CategoryCodeSet ||--}o ImageObject : "thumbnail"
-CategoryCodeSet ||--}o URL : "thumbnailUrl"
 CategoryCodeSet ||--}o Duration : "timeRequired"
 CategoryCodeSet ||--}o CreativeWork : "translationOfWork"
-CategoryCodeSet ||--}o Text : "typicalAgeRange"
 CategoryCodeSet ||--}o CreativeWork : "workTranslation"
-CategoryCodeSet ||--}o Text : "alternateName"
-CategoryCodeSet ||--}o Text : "disambiguatingDescription"
-CategoryCodeSet ||--}o Text : "name"
-CategoryCodeSet ||--}o URL : "sameAs"
 CategoryCodeSet ||--}o Action : "potentialAction"
-CategoryCodeSet ||--}o URL : "url"
 

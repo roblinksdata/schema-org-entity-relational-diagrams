@@ -4,40 +4,40 @@ WebAPI {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 WebAPI ||--}o AggregateRating : "aggregateRating"
 WebAPI ||--}o Audience : "audience"
 WebAPI ||--}o ServiceChannel : "availableChannel"
-WebAPI ||--}o Text : "award"
 WebAPI ||--}o Certification : "hasCertification"
 WebAPI ||--}o OfferCatalog : "hasOfferCatalog"
 WebAPI ||--}o OpeningHoursSpecification : "hoursAvailable"
 WebAPI ||--}o Thing : "produces"
-WebAPI ||--}o Text : "providerMobility"
 WebAPI ||--}o Review : "review"
 WebAPI ||--}o Audience : "serviceAudience"
 WebAPI ||--}o Thing : "serviceOutput"
-WebAPI ||--}o Text : "slogan"
-WebAPI ||--}o Text : "alternateName"
-WebAPI ||--}o Text : "disambiguatingDescription"
-WebAPI ||--}o Text : "name"
-WebAPI ||--}o URL : "sameAs"
 WebAPI ||--}o Action : "potentialAction"
-WebAPI ||--}o URL : "url"
 

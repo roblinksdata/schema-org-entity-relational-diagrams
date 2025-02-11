@@ -1,10 +1,18 @@
 erDiagram
 AudioObject {
     stringList caption  
+    TextList embeddedTextCaption  
+    TextList transcript  
+    TextList sha256  
+    TextList bitrate  
+    TextList contentSize  
+    URLList contentUrl  
+    URLList embedUrl  
     stringList encodingFormat  
     stringList endTime  
     stringList height  
     stringList ineligibleRegion  
+    TextList playerType  
     stringList requiresSubscription  
     stringList startTime  
     stringList uploadDate  
@@ -22,24 +30,45 @@ AudioObject {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -51,35 +80,36 @@ AudioObject {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-AudioObject ||--}o Text : "embeddedTextCaption"
-AudioObject ||--}o Text : "transcript"
 AudioObject ||--}o Duration : "duration"
 AudioObject ||--}o Claim : "interpretedAsClaim"
-AudioObject ||--}o Text : "sha256"
 AudioObject ||--}o NewsArticle : "associatedArticle"
-AudioObject ||--}o Text : "bitrate"
-AudioObject ||--}o Text : "contentSize"
-AudioObject ||--}o URL : "contentUrl"
-AudioObject ||--}o URL : "embedUrl"
 AudioObject ||--}o CreativeWork : "encodesCreativeWork"
-AudioObject ||--}o Text : "playerType"
 AudioObject ||--}o Organization : "productionCompany"
 AudioObject ||--}o Place : "regionsAllowed"
 AudioObject ||--}o Thing : "about"
@@ -88,43 +118,22 @@ AudioObject ||--}o CreativeWork : "hasPart"
 AudioObject ||--}o Thing : "mainEntity"
 AudioObject ||--}o Place : "spatialCoverage"
 AudioObject ||--}o CreativeWork : "workExample"
-AudioObject ||--}o Text : "abstract"
-AudioObject ||--}o Text : "accessMode"
 AudioObject ||--}o ItemList : "accessModeSufficient"
-AudioObject ||--}o Text : "accessibilityAPI"
-AudioObject ||--}o Text : "accessibilityControl"
-AudioObject ||--}o Text : "accessibilityFeature"
-AudioObject ||--}o Text : "accessibilityHazard"
-AudioObject ||--}o Text : "accessibilitySummary"
 AudioObject ||--}o Person : "accountablePerson"
 AudioObject ||--}o AggregateRating : "aggregateRating"
-AudioObject ||--}o Text : "alternativeHeadline"
 AudioObject ||--}o MediaObject : "associatedMedia"
 AudioObject ||--}o Audience : "audience"
-AudioObject ||--}o Text : "award"
-AudioObject ||--}o Text : "awards"
 AudioObject ||--}o Person : "character"
 AudioObject ||--}o Comment : "comment"
-AudioObject ||--}o Integer : "commentCount"
-AudioObject ||--}o Text : "conditionsOfAccess"
-AudioObject ||--}o DateTime : "contentReferenceTime"
-AudioObject ||--}o Text : "copyrightNotice"
-AudioObject ||--}o Number : "copyrightYear"
 AudioObject ||--}o Country : "countryOfOrigin"
-AudioObject ||--}o Text : "creditText"
 AudioObject ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-AudioObject ||--}o URL : "discussionUrl"
 AudioObject ||--}o Person : "editor"
 AudioObject ||--}o AlignmentObject : "educationalAlignment"
 AudioObject ||--}o MediaObject : "encoding"
 AudioObject ||--}o MediaObject : "encodings"
 AudioObject ||--}o CreativeWork : "exampleOfWork"
 AudioObject ||--}o Grant : "funding"
-AudioObject ||--}o Text : "headline"
 AudioObject ||--}o InteractionCounter : "interactionStatistic"
-AudioObject ||--}o Text : "interactivityType"
-AudioObject ||--}o Boolean : "isAccessibleForFree"
-AudioObject ||--}o Boolean : "isFamilyFriendly"
 AudioObject ||--}o Place : "locationCreated"
 AudioObject ||--}o Thing : "mentions"
 AudioObject ||--}o PublicationEvent : "publication"
@@ -133,20 +142,11 @@ AudioObject ||--}o Event : "recordedAt"
 AudioObject ||--}o PublicationEvent : "releasedEvent"
 AudioObject ||--}o Review : "review"
 AudioObject ||--}o Review : "reviews"
-AudioObject ||--}o Date : "sdDatePublished"
 AudioObject ||--}o Organization : "sourceOrganization"
 AudioObject ||--}o Place : "spatial"
-AudioObject ||--}o Text : "text"
 AudioObject ||--}o ImageObject : "thumbnail"
-AudioObject ||--}o URL : "thumbnailUrl"
 AudioObject ||--}o Duration : "timeRequired"
 AudioObject ||--}o CreativeWork : "translationOfWork"
-AudioObject ||--}o Text : "typicalAgeRange"
 AudioObject ||--}o CreativeWork : "workTranslation"
-AudioObject ||--}o Text : "alternateName"
-AudioObject ||--}o Text : "disambiguatingDescription"
-AudioObject ||--}o Text : "name"
-AudioObject ||--}o URL : "sameAs"
 AudioObject ||--}o Action : "potentialAction"
-AudioObject ||--}o URL : "url"
 

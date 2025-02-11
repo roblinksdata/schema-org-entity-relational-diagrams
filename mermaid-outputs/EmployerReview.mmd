@@ -2,6 +2,8 @@ erDiagram
 EmployerReview {
     stringList negativeNotes  
     stringList positiveNotes  
+    TextList reviewAspect  
+    TextList reviewBody  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -15,25 +17,46 @@ EmployerReview {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,29 +68,36 @@ EmployerReview {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 EmployerReview ||--}o Review : "associatedClaimReview"
 EmployerReview ||--}o Review : "associatedMediaReview"
 EmployerReview ||--}o Review : "associatedReview"
 EmployerReview ||--}o Thing : "itemReviewed"
-EmployerReview ||--}o Text : "reviewAspect"
-EmployerReview ||--}o Text : "reviewBody"
 EmployerReview ||--}o Rating : "reviewRating"
 EmployerReview ||--}o Thing : "about"
 EmployerReview ||--}o Place : "contentLocation"
@@ -76,43 +106,22 @@ EmployerReview ||--}o Claim : "interpretedAsClaim"
 EmployerReview ||--}o Thing : "mainEntity"
 EmployerReview ||--}o Place : "spatialCoverage"
 EmployerReview ||--}o CreativeWork : "workExample"
-EmployerReview ||--}o Text : "abstract"
-EmployerReview ||--}o Text : "accessMode"
 EmployerReview ||--}o ItemList : "accessModeSufficient"
-EmployerReview ||--}o Text : "accessibilityAPI"
-EmployerReview ||--}o Text : "accessibilityControl"
-EmployerReview ||--}o Text : "accessibilityFeature"
-EmployerReview ||--}o Text : "accessibilityHazard"
-EmployerReview ||--}o Text : "accessibilitySummary"
 EmployerReview ||--}o Person : "accountablePerson"
 EmployerReview ||--}o AggregateRating : "aggregateRating"
-EmployerReview ||--}o Text : "alternativeHeadline"
 EmployerReview ||--}o MediaObject : "associatedMedia"
 EmployerReview ||--}o Audience : "audience"
-EmployerReview ||--}o Text : "award"
-EmployerReview ||--}o Text : "awards"
 EmployerReview ||--}o Person : "character"
 EmployerReview ||--}o Comment : "comment"
-EmployerReview ||--}o Integer : "commentCount"
-EmployerReview ||--}o Text : "conditionsOfAccess"
-EmployerReview ||--}o DateTime : "contentReferenceTime"
-EmployerReview ||--}o Text : "copyrightNotice"
-EmployerReview ||--}o Number : "copyrightYear"
 EmployerReview ||--}o Country : "countryOfOrigin"
-EmployerReview ||--}o Text : "creditText"
 EmployerReview ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-EmployerReview ||--}o URL : "discussionUrl"
 EmployerReview ||--}o Person : "editor"
 EmployerReview ||--}o AlignmentObject : "educationalAlignment"
 EmployerReview ||--}o MediaObject : "encoding"
 EmployerReview ||--}o MediaObject : "encodings"
 EmployerReview ||--}o CreativeWork : "exampleOfWork"
 EmployerReview ||--}o Grant : "funding"
-EmployerReview ||--}o Text : "headline"
 EmployerReview ||--}o InteractionCounter : "interactionStatistic"
-EmployerReview ||--}o Text : "interactivityType"
-EmployerReview ||--}o Boolean : "isAccessibleForFree"
-EmployerReview ||--}o Boolean : "isFamilyFriendly"
 EmployerReview ||--}o Place : "locationCreated"
 EmployerReview ||--}o Thing : "mentions"
 EmployerReview ||--}o PublicationEvent : "publication"
@@ -121,20 +130,11 @@ EmployerReview ||--}o Event : "recordedAt"
 EmployerReview ||--}o PublicationEvent : "releasedEvent"
 EmployerReview ||--}o Review : "review"
 EmployerReview ||--}o Review : "reviews"
-EmployerReview ||--}o Date : "sdDatePublished"
 EmployerReview ||--}o Organization : "sourceOrganization"
 EmployerReview ||--}o Place : "spatial"
-EmployerReview ||--}o Text : "text"
 EmployerReview ||--}o ImageObject : "thumbnail"
-EmployerReview ||--}o URL : "thumbnailUrl"
 EmployerReview ||--}o Duration : "timeRequired"
 EmployerReview ||--}o CreativeWork : "translationOfWork"
-EmployerReview ||--}o Text : "typicalAgeRange"
 EmployerReview ||--}o CreativeWork : "workTranslation"
-EmployerReview ||--}o Text : "alternateName"
-EmployerReview ||--}o Text : "disambiguatingDescription"
-EmployerReview ||--}o Text : "name"
-EmployerReview ||--}o URL : "sameAs"
 EmployerReview ||--}o Action : "potentialAction"
-EmployerReview ||--}o URL : "url"
 

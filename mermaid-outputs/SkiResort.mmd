@@ -5,9 +5,17 @@ SkiResort {
     stringList checkoutTime  
     stringList numberOfRooms  
     stringList petsAllowed  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,93 +27,94 @@ SkiResort {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SkiResort ||--}o LocationFeatureSpecification : "amenityFeature"
 SkiResort ||--}o Audience : "audience"
 SkiResort ||--}o Rating : "starRating"
 SkiResort ||--}o Organization : "branchOf"
-SkiResort ||--}o Text : "currenciesAccepted"
-SkiResort ||--}o Text : "openingHours"
-SkiResort ||--}o Text : "paymentAccepted"
-SkiResort ||--}o Text : "priceRange"
-SkiResort ||--}o Text : "globalLocationNumber"
-SkiResort ||--}o URL : "hasGS1DigitalLink"
 SkiResort ||--}o PropertyValue : "additionalProperty"
 SkiResort ||--}o AggregateRating : "aggregateRating"
-SkiResort ||--}o Text : "branchCode"
 SkiResort ||--}o Place : "containedIn"
 SkiResort ||--}o Place : "containedInPlace"
 SkiResort ||--}o Place : "containsPlace"
 SkiResort ||--}o Event : "event"
 SkiResort ||--}o Event : "events"
-SkiResort ||--}o Text : "faxNumber"
 SkiResort ||--}o Certification : "hasCertification"
-SkiResort ||--}o Boolean : "hasDriveThroughService"
-SkiResort ||--}o Boolean : "isAccessibleForFree"
-SkiResort ||--}o Text : "isicV4"
-SkiResort ||--}o URL : "map"
-SkiResort ||--}o URL : "maps"
-SkiResort ||--}o Integer : "maximumAttendeeCapacity"
 SkiResort ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-SkiResort ||--}o Boolean : "publicAccess"
 SkiResort ||--}o Review : "review"
 SkiResort ||--}o Review : "reviews"
-SkiResort ||--}o Text : "slogan"
-SkiResort ||--}o Boolean : "smokingAllowed"
 SkiResort ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-SkiResort ||--}o Text : "telephone"
-SkiResort ||--}o URL : "tourBookingPage"
-SkiResort ||--}o Text : "duns"
-SkiResort ||--}o Text : "leiCode"
-SkiResort ||--}o Text : "taxID"
 SkiResort ||--}o InteractionCounter : "agentInteractionStatistic"
 SkiResort ||--}o Person : "alumni"
-SkiResort ||--}o Text : "award"
-SkiResort ||--}o Text : "awards"
 SkiResort ||--}o ContactPoint : "contactPoint"
 SkiResort ||--}o ContactPoint : "contactPoints"
 SkiResort ||--}o Organization : "department"
-SkiResort ||--}o Date : "dissolutionDate"
-SkiResort ||--}o Text : "email"
 SkiResort ||--}o Person : "employee"
 SkiResort ||--}o Person : "employees"
 SkiResort ||--}o Person : "founders"
-SkiResort ||--}o Date : "foundingDate"
 SkiResort ||--}o Place : "foundingLocation"
 SkiResort ||--}o Grant : "funding"
 SkiResort ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -114,20 +123,11 @@ SkiResort ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 SkiResort ||--}o OfferCatalog : "hasOfferCatalog"
 SkiResort ||--}o Place : "hasPOS"
 SkiResort ||--}o InteractionCounter : "interactionStatistic"
-SkiResort ||--}o Text : "iso6523Code"
-SkiResort ||--}o Text : "legalName"
 SkiResort ||--}o Offer : "makesOffer"
-SkiResort ||--}o Text : "naics"
 SkiResort ||--}o NonprofitType : "nonprofitStatus"
 SkiResort ||--}o QuantitativeValue : "numberOfEmployees"
 SkiResort ||--}o Organization : "parentOrganization"
 SkiResort ||--}o Demand : "seeks"
 SkiResort ||--}o Organization : "subOrganization"
-SkiResort ||--}o Text : "vatID"
-SkiResort ||--}o Text : "alternateName"
-SkiResort ||--}o Text : "disambiguatingDescription"
-SkiResort ||--}o Text : "name"
-SkiResort ||--}o URL : "sameAs"
 SkiResort ||--}o Action : "potentialAction"
-SkiResort ||--}o URL : "url"
 

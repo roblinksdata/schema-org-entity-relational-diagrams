@@ -2,17 +2,17 @@ erDiagram
 MeasurementTypeEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MeasurementTypeEnumeration ||--}o Text : "alternateName"
-MeasurementTypeEnumeration ||--}o Text : "disambiguatingDescription"
-MeasurementTypeEnumeration ||--}o Text : "name"
-MeasurementTypeEnumeration ||--}o URL : "sameAs"
 MeasurementTypeEnumeration ||--}o Action : "potentialAction"
-MeasurementTypeEnumeration ||--}o URL : "url"
 

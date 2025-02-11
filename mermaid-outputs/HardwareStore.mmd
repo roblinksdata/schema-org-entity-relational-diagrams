@@ -1,8 +1,16 @@
 erDiagram
 HardwareStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ HardwareStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 HardwareStore ||--}o Organization : "branchOf"
-HardwareStore ||--}o Text : "currenciesAccepted"
-HardwareStore ||--}o Text : "openingHours"
-HardwareStore ||--}o Text : "paymentAccepted"
-HardwareStore ||--}o Text : "priceRange"
-HardwareStore ||--}o Text : "globalLocationNumber"
-HardwareStore ||--}o URL : "hasGS1DigitalLink"
 HardwareStore ||--}o PropertyValue : "additionalProperty"
 HardwareStore ||--}o AggregateRating : "aggregateRating"
 HardwareStore ||--}o LocationFeatureSpecification : "amenityFeature"
-HardwareStore ||--}o Text : "branchCode"
 HardwareStore ||--}o Place : "containedIn"
 HardwareStore ||--}o Place : "containedInPlace"
 HardwareStore ||--}o Place : "containsPlace"
 HardwareStore ||--}o Event : "event"
 HardwareStore ||--}o Event : "events"
-HardwareStore ||--}o Text : "faxNumber"
 HardwareStore ||--}o Certification : "hasCertification"
-HardwareStore ||--}o Boolean : "hasDriveThroughService"
-HardwareStore ||--}o Boolean : "isAccessibleForFree"
-HardwareStore ||--}o Text : "isicV4"
-HardwareStore ||--}o URL : "map"
-HardwareStore ||--}o URL : "maps"
-HardwareStore ||--}o Integer : "maximumAttendeeCapacity"
 HardwareStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-HardwareStore ||--}o Boolean : "publicAccess"
 HardwareStore ||--}o Review : "review"
 HardwareStore ||--}o Review : "reviews"
-HardwareStore ||--}o Text : "slogan"
-HardwareStore ||--}o Boolean : "smokingAllowed"
 HardwareStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-HardwareStore ||--}o Text : "telephone"
-HardwareStore ||--}o URL : "tourBookingPage"
-HardwareStore ||--}o Text : "duns"
-HardwareStore ||--}o Text : "leiCode"
-HardwareStore ||--}o Text : "taxID"
 HardwareStore ||--}o InteractionCounter : "agentInteractionStatistic"
 HardwareStore ||--}o Person : "alumni"
-HardwareStore ||--}o Text : "award"
-HardwareStore ||--}o Text : "awards"
 HardwareStore ||--}o ContactPoint : "contactPoint"
 HardwareStore ||--}o ContactPoint : "contactPoints"
 HardwareStore ||--}o Organization : "department"
-HardwareStore ||--}o Date : "dissolutionDate"
-HardwareStore ||--}o Text : "email"
 HardwareStore ||--}o Person : "employee"
 HardwareStore ||--}o Person : "employees"
 HardwareStore ||--}o Person : "founders"
-HardwareStore ||--}o Date : "foundingDate"
 HardwareStore ||--}o Place : "foundingLocation"
 HardwareStore ||--}o Grant : "funding"
 HardwareStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ HardwareStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 HardwareStore ||--}o OfferCatalog : "hasOfferCatalog"
 HardwareStore ||--}o Place : "hasPOS"
 HardwareStore ||--}o InteractionCounter : "interactionStatistic"
-HardwareStore ||--}o Text : "iso6523Code"
-HardwareStore ||--}o Text : "legalName"
 HardwareStore ||--}o Offer : "makesOffer"
-HardwareStore ||--}o Text : "naics"
 HardwareStore ||--}o NonprofitType : "nonprofitStatus"
 HardwareStore ||--}o QuantitativeValue : "numberOfEmployees"
 HardwareStore ||--}o Organization : "parentOrganization"
 HardwareStore ||--}o Demand : "seeks"
 HardwareStore ||--}o Organization : "subOrganization"
-HardwareStore ||--}o Text : "vatID"
-HardwareStore ||--}o Text : "alternateName"
-HardwareStore ||--}o Text : "disambiguatingDescription"
-HardwareStore ||--}o Text : "name"
-HardwareStore ||--}o URL : "sameAs"
 HardwareStore ||--}o Action : "potentialAction"
-HardwareStore ||--}o URL : "url"
 

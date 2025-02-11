@@ -2,11 +2,16 @@ erDiagram
 MedicalContraindication {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalContraindication ||--}o MedicalCode : "code"
@@ -16,10 +21,5 @@ MedicalContraindication ||--}o MedicineSystem : "medicineSystem"
 MedicalContraindication ||--}o Organization : "recognizingAuthority"
 MedicalContraindication ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalContraindication ||--}o MedicalStudy : "study"
-MedicalContraindication ||--}o Text : "alternateName"
-MedicalContraindication ||--}o Text : "disambiguatingDescription"
-MedicalContraindication ||--}o Text : "name"
-MedicalContraindication ||--}o URL : "sameAs"
 MedicalContraindication ||--}o Action : "potentialAction"
-MedicalContraindication ||--}o URL : "url"
 

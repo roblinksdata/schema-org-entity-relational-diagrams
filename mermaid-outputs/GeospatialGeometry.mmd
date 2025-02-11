@@ -11,17 +11,17 @@ GeospatialGeometry {
     stringList geoTouches  
     stringList geoWithin  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-GeospatialGeometry ||--}o Text : "alternateName"
-GeospatialGeometry ||--}o Text : "disambiguatingDescription"
-GeospatialGeometry ||--}o Text : "name"
-GeospatialGeometry ||--}o URL : "sameAs"
 GeospatialGeometry ||--}o Action : "potentialAction"
-GeospatialGeometry ||--}o URL : "url"
 

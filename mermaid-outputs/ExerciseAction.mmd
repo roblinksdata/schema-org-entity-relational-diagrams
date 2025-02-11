@@ -1,5 +1,6 @@
 erDiagram
 ExerciseAction {
+    TextList exerciseType  
     stringList location  
     stringList participant  
     stringList agent  
@@ -8,11 +9,16 @@ ExerciseAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ExerciseAction ||--}o Place : "course"
@@ -27,7 +33,6 @@ ExerciseAction ||--}o SportsEvent : "sportsEvent"
 ExerciseAction ||--}o SportsTeam : "sportsTeam"
 ExerciseAction ||--}o Place : "toLocation"
 ExerciseAction ||--}o Distance : "distance"
-ExerciseAction ||--}o Text : "exerciseType"
 ExerciseAction ||--}o Audience : "audience"
 ExerciseAction ||--}o Event : "event"
 ExerciseAction ||--}o Thing : "instrument"
@@ -36,10 +41,5 @@ ExerciseAction ||--}o Thing : "result"
 ExerciseAction ||--}o HowTo : "actionProcess"
 ExerciseAction ||--}o ActionStatusType : "actionStatus"
 ExerciseAction ||--}o Thing : "error"
-ExerciseAction ||--}o Text : "alternateName"
-ExerciseAction ||--}o Text : "disambiguatingDescription"
-ExerciseAction ||--}o Text : "name"
-ExerciseAction ||--}o URL : "sameAs"
 ExerciseAction ||--}o Action : "potentialAction"
-ExerciseAction ||--}o URL : "url"
 

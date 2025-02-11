@@ -21,25 +21,46 @@ CoverArt {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -51,21 +72,30 @@ CoverArt {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CoverArt ||--}o Person : "artist"
@@ -81,43 +111,22 @@ CoverArt ||--}o Claim : "interpretedAsClaim"
 CoverArt ||--}o Thing : "mainEntity"
 CoverArt ||--}o Place : "spatialCoverage"
 CoverArt ||--}o CreativeWork : "workExample"
-CoverArt ||--}o Text : "abstract"
-CoverArt ||--}o Text : "accessMode"
 CoverArt ||--}o ItemList : "accessModeSufficient"
-CoverArt ||--}o Text : "accessibilityAPI"
-CoverArt ||--}o Text : "accessibilityControl"
-CoverArt ||--}o Text : "accessibilityFeature"
-CoverArt ||--}o Text : "accessibilityHazard"
-CoverArt ||--}o Text : "accessibilitySummary"
 CoverArt ||--}o Person : "accountablePerson"
 CoverArt ||--}o AggregateRating : "aggregateRating"
-CoverArt ||--}o Text : "alternativeHeadline"
 CoverArt ||--}o MediaObject : "associatedMedia"
 CoverArt ||--}o Audience : "audience"
-CoverArt ||--}o Text : "award"
-CoverArt ||--}o Text : "awards"
 CoverArt ||--}o Person : "character"
 CoverArt ||--}o Comment : "comment"
-CoverArt ||--}o Integer : "commentCount"
-CoverArt ||--}o Text : "conditionsOfAccess"
-CoverArt ||--}o DateTime : "contentReferenceTime"
-CoverArt ||--}o Text : "copyrightNotice"
-CoverArt ||--}o Number : "copyrightYear"
 CoverArt ||--}o Country : "countryOfOrigin"
-CoverArt ||--}o Text : "creditText"
 CoverArt ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-CoverArt ||--}o URL : "discussionUrl"
 CoverArt ||--}o Person : "editor"
 CoverArt ||--}o AlignmentObject : "educationalAlignment"
 CoverArt ||--}o MediaObject : "encoding"
 CoverArt ||--}o MediaObject : "encodings"
 CoverArt ||--}o CreativeWork : "exampleOfWork"
 CoverArt ||--}o Grant : "funding"
-CoverArt ||--}o Text : "headline"
 CoverArt ||--}o InteractionCounter : "interactionStatistic"
-CoverArt ||--}o Text : "interactivityType"
-CoverArt ||--}o Boolean : "isAccessibleForFree"
-CoverArt ||--}o Boolean : "isFamilyFriendly"
 CoverArt ||--}o Place : "locationCreated"
 CoverArt ||--}o Thing : "mentions"
 CoverArt ||--}o PublicationEvent : "publication"
@@ -126,20 +135,11 @@ CoverArt ||--}o Event : "recordedAt"
 CoverArt ||--}o PublicationEvent : "releasedEvent"
 CoverArt ||--}o Review : "review"
 CoverArt ||--}o Review : "reviews"
-CoverArt ||--}o Date : "sdDatePublished"
 CoverArt ||--}o Organization : "sourceOrganization"
 CoverArt ||--}o Place : "spatial"
-CoverArt ||--}o Text : "text"
 CoverArt ||--}o ImageObject : "thumbnail"
-CoverArt ||--}o URL : "thumbnailUrl"
 CoverArt ||--}o Duration : "timeRequired"
 CoverArt ||--}o CreativeWork : "translationOfWork"
-CoverArt ||--}o Text : "typicalAgeRange"
 CoverArt ||--}o CreativeWork : "workTranslation"
-CoverArt ||--}o Text : "alternateName"
-CoverArt ||--}o Text : "disambiguatingDescription"
-CoverArt ||--}o Text : "name"
-CoverArt ||--}o URL : "sameAs"
 CoverArt ||--}o Action : "potentialAction"
-CoverArt ||--}o URL : "url"
 

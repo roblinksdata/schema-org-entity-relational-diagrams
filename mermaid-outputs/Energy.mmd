@@ -1,17 +1,17 @@
 erDiagram
 Energy {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Energy ||--}o Text : "alternateName"
-Energy ||--}o Text : "disambiguatingDescription"
-Energy ||--}o Text : "name"
-Energy ||--}o URL : "sameAs"
 Energy ||--}o Action : "potentialAction"
-Energy ||--}o URL : "url"
 

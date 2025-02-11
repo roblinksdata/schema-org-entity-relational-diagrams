@@ -11,19 +11,31 @@ Hackathon {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Hackathon ||--}o Thing : "about"
@@ -37,22 +49,10 @@ Hackathon ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 Hackathon ||--}o Schedule : "eventSchedule"
 Hackathon ||--}o EventStatusType : "eventStatus"
 Hackathon ||--}o Grant : "funding"
-Hackathon ||--}o Boolean : "isAccessibleForFree"
-Hackathon ||--}o Integer : "maximumAttendeeCapacity"
-Hackathon ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-Hackathon ||--}o Integer : "maximumVirtualAttendeeCapacity"
-Hackathon ||--}o Date : "previousStartDate"
 Hackathon ||--}o CreativeWork : "recordedIn"
-Hackathon ||--}o Integer : "remainingAttendeeCapacity"
 Hackathon ||--}o Review : "review"
 Hackathon ||--}o Event : "subEvent"
 Hackathon ||--}o Event : "subEvents"
 Hackathon ||--}o Event : "superEvent"
-Hackathon ||--}o Text : "typicalAgeRange"
-Hackathon ||--}o Text : "alternateName"
-Hackathon ||--}o Text : "disambiguatingDescription"
-Hackathon ||--}o Text : "name"
-Hackathon ||--}o URL : "sameAs"
 Hackathon ||--}o Action : "potentialAction"
-Hackathon ||--}o URL : "url"
 

@@ -2,17 +2,17 @@ erDiagram
 DataType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DataType ||--}o Text : "alternateName"
-DataType ||--}o Text : "disambiguatingDescription"
-DataType ||--}o Text : "name"
-DataType ||--}o URL : "sameAs"
 DataType ||--}o Action : "potentialAction"
-DataType ||--}o URL : "url"
 

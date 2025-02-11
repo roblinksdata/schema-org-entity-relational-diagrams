@@ -3,11 +3,16 @@ MedicalTest {
     stringList normalRange  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalTest ||--}o Drug : "affectedBy"
@@ -21,10 +26,5 @@ MedicalTest ||--}o MedicineSystem : "medicineSystem"
 MedicalTest ||--}o Organization : "recognizingAuthority"
 MedicalTest ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalTest ||--}o MedicalStudy : "study"
-MedicalTest ||--}o Text : "alternateName"
-MedicalTest ||--}o Text : "disambiguatingDescription"
-MedicalTest ||--}o Text : "name"
-MedicalTest ||--}o URL : "sameAs"
 MedicalTest ||--}o Action : "potentialAction"
-MedicalTest ||--}o URL : "url"
 

@@ -1,8 +1,16 @@
 erDiagram
 AutoRepair {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ AutoRepair {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AutoRepair ||--}o Organization : "branchOf"
-AutoRepair ||--}o Text : "currenciesAccepted"
-AutoRepair ||--}o Text : "openingHours"
-AutoRepair ||--}o Text : "paymentAccepted"
-AutoRepair ||--}o Text : "priceRange"
-AutoRepair ||--}o Text : "globalLocationNumber"
-AutoRepair ||--}o URL : "hasGS1DigitalLink"
 AutoRepair ||--}o PropertyValue : "additionalProperty"
 AutoRepair ||--}o AggregateRating : "aggregateRating"
 AutoRepair ||--}o LocationFeatureSpecification : "amenityFeature"
-AutoRepair ||--}o Text : "branchCode"
 AutoRepair ||--}o Place : "containedIn"
 AutoRepair ||--}o Place : "containedInPlace"
 AutoRepair ||--}o Place : "containsPlace"
 AutoRepair ||--}o Event : "event"
 AutoRepair ||--}o Event : "events"
-AutoRepair ||--}o Text : "faxNumber"
 AutoRepair ||--}o Certification : "hasCertification"
-AutoRepair ||--}o Boolean : "hasDriveThroughService"
-AutoRepair ||--}o Boolean : "isAccessibleForFree"
-AutoRepair ||--}o Text : "isicV4"
-AutoRepair ||--}o URL : "map"
-AutoRepair ||--}o URL : "maps"
-AutoRepair ||--}o Integer : "maximumAttendeeCapacity"
 AutoRepair ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-AutoRepair ||--}o Boolean : "publicAccess"
 AutoRepair ||--}o Review : "review"
 AutoRepair ||--}o Review : "reviews"
-AutoRepair ||--}o Text : "slogan"
-AutoRepair ||--}o Boolean : "smokingAllowed"
 AutoRepair ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-AutoRepair ||--}o Text : "telephone"
-AutoRepair ||--}o URL : "tourBookingPage"
-AutoRepair ||--}o Text : "duns"
-AutoRepair ||--}o Text : "leiCode"
-AutoRepair ||--}o Text : "taxID"
 AutoRepair ||--}o InteractionCounter : "agentInteractionStatistic"
 AutoRepair ||--}o Person : "alumni"
-AutoRepair ||--}o Text : "award"
-AutoRepair ||--}o Text : "awards"
 AutoRepair ||--}o ContactPoint : "contactPoint"
 AutoRepair ||--}o ContactPoint : "contactPoints"
 AutoRepair ||--}o Organization : "department"
-AutoRepair ||--}o Date : "dissolutionDate"
-AutoRepair ||--}o Text : "email"
 AutoRepair ||--}o Person : "employee"
 AutoRepair ||--}o Person : "employees"
 AutoRepair ||--}o Person : "founders"
-AutoRepair ||--}o Date : "foundingDate"
 AutoRepair ||--}o Place : "foundingLocation"
 AutoRepair ||--}o Grant : "funding"
 AutoRepair ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ AutoRepair ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 AutoRepair ||--}o OfferCatalog : "hasOfferCatalog"
 AutoRepair ||--}o Place : "hasPOS"
 AutoRepair ||--}o InteractionCounter : "interactionStatistic"
-AutoRepair ||--}o Text : "iso6523Code"
-AutoRepair ||--}o Text : "legalName"
 AutoRepair ||--}o Offer : "makesOffer"
-AutoRepair ||--}o Text : "naics"
 AutoRepair ||--}o NonprofitType : "nonprofitStatus"
 AutoRepair ||--}o QuantitativeValue : "numberOfEmployees"
 AutoRepair ||--}o Organization : "parentOrganization"
 AutoRepair ||--}o Demand : "seeks"
 AutoRepair ||--}o Organization : "subOrganization"
-AutoRepair ||--}o Text : "vatID"
-AutoRepair ||--}o Text : "alternateName"
-AutoRepair ||--}o Text : "disambiguatingDescription"
-AutoRepair ||--}o Text : "name"
-AutoRepair ||--}o URL : "sameAs"
 AutoRepair ||--}o Action : "potentialAction"
-AutoRepair ||--}o URL : "url"
 

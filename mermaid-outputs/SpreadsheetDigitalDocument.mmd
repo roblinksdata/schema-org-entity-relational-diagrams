@@ -13,25 +13,46 @@ SpreadsheetDigitalDocument {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ SpreadsheetDigitalDocument {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SpreadsheetDigitalDocument ||--}o DigitalDocumentPermission : "hasDigitalDocumentPermission"
@@ -68,43 +98,22 @@ SpreadsheetDigitalDocument ||--}o Claim : "interpretedAsClaim"
 SpreadsheetDigitalDocument ||--}o Thing : "mainEntity"
 SpreadsheetDigitalDocument ||--}o Place : "spatialCoverage"
 SpreadsheetDigitalDocument ||--}o CreativeWork : "workExample"
-SpreadsheetDigitalDocument ||--}o Text : "abstract"
-SpreadsheetDigitalDocument ||--}o Text : "accessMode"
 SpreadsheetDigitalDocument ||--}o ItemList : "accessModeSufficient"
-SpreadsheetDigitalDocument ||--}o Text : "accessibilityAPI"
-SpreadsheetDigitalDocument ||--}o Text : "accessibilityControl"
-SpreadsheetDigitalDocument ||--}o Text : "accessibilityFeature"
-SpreadsheetDigitalDocument ||--}o Text : "accessibilityHazard"
-SpreadsheetDigitalDocument ||--}o Text : "accessibilitySummary"
 SpreadsheetDigitalDocument ||--}o Person : "accountablePerson"
 SpreadsheetDigitalDocument ||--}o AggregateRating : "aggregateRating"
-SpreadsheetDigitalDocument ||--}o Text : "alternativeHeadline"
 SpreadsheetDigitalDocument ||--}o MediaObject : "associatedMedia"
 SpreadsheetDigitalDocument ||--}o Audience : "audience"
-SpreadsheetDigitalDocument ||--}o Text : "award"
-SpreadsheetDigitalDocument ||--}o Text : "awards"
 SpreadsheetDigitalDocument ||--}o Person : "character"
 SpreadsheetDigitalDocument ||--}o Comment : "comment"
-SpreadsheetDigitalDocument ||--}o Integer : "commentCount"
-SpreadsheetDigitalDocument ||--}o Text : "conditionsOfAccess"
-SpreadsheetDigitalDocument ||--}o DateTime : "contentReferenceTime"
-SpreadsheetDigitalDocument ||--}o Text : "copyrightNotice"
-SpreadsheetDigitalDocument ||--}o Number : "copyrightYear"
 SpreadsheetDigitalDocument ||--}o Country : "countryOfOrigin"
-SpreadsheetDigitalDocument ||--}o Text : "creditText"
 SpreadsheetDigitalDocument ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-SpreadsheetDigitalDocument ||--}o URL : "discussionUrl"
 SpreadsheetDigitalDocument ||--}o Person : "editor"
 SpreadsheetDigitalDocument ||--}o AlignmentObject : "educationalAlignment"
 SpreadsheetDigitalDocument ||--}o MediaObject : "encoding"
 SpreadsheetDigitalDocument ||--}o MediaObject : "encodings"
 SpreadsheetDigitalDocument ||--}o CreativeWork : "exampleOfWork"
 SpreadsheetDigitalDocument ||--}o Grant : "funding"
-SpreadsheetDigitalDocument ||--}o Text : "headline"
 SpreadsheetDigitalDocument ||--}o InteractionCounter : "interactionStatistic"
-SpreadsheetDigitalDocument ||--}o Text : "interactivityType"
-SpreadsheetDigitalDocument ||--}o Boolean : "isAccessibleForFree"
-SpreadsheetDigitalDocument ||--}o Boolean : "isFamilyFriendly"
 SpreadsheetDigitalDocument ||--}o Place : "locationCreated"
 SpreadsheetDigitalDocument ||--}o Thing : "mentions"
 SpreadsheetDigitalDocument ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ SpreadsheetDigitalDocument ||--}o Event : "recordedAt"
 SpreadsheetDigitalDocument ||--}o PublicationEvent : "releasedEvent"
 SpreadsheetDigitalDocument ||--}o Review : "review"
 SpreadsheetDigitalDocument ||--}o Review : "reviews"
-SpreadsheetDigitalDocument ||--}o Date : "sdDatePublished"
 SpreadsheetDigitalDocument ||--}o Organization : "sourceOrganization"
 SpreadsheetDigitalDocument ||--}o Place : "spatial"
-SpreadsheetDigitalDocument ||--}o Text : "text"
 SpreadsheetDigitalDocument ||--}o ImageObject : "thumbnail"
-SpreadsheetDigitalDocument ||--}o URL : "thumbnailUrl"
 SpreadsheetDigitalDocument ||--}o Duration : "timeRequired"
 SpreadsheetDigitalDocument ||--}o CreativeWork : "translationOfWork"
-SpreadsheetDigitalDocument ||--}o Text : "typicalAgeRange"
 SpreadsheetDigitalDocument ||--}o CreativeWork : "workTranslation"
-SpreadsheetDigitalDocument ||--}o Text : "alternateName"
-SpreadsheetDigitalDocument ||--}o Text : "disambiguatingDescription"
-SpreadsheetDigitalDocument ||--}o Text : "name"
-SpreadsheetDigitalDocument ||--}o URL : "sameAs"
 SpreadsheetDigitalDocument ||--}o Action : "potentialAction"
-SpreadsheetDigitalDocument ||--}o URL : "url"
 

@@ -4,58 +4,70 @@ SearchRescueOrganization {
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-SearchRescueOrganization ||--}o Text : "duns"
-SearchRescueOrganization ||--}o Text : "globalLocationNumber"
-SearchRescueOrganization ||--}o URL : "hasGS1DigitalLink"
-SearchRescueOrganization ||--}o Text : "leiCode"
-SearchRescueOrganization ||--}o Text : "taxID"
 SearchRescueOrganization ||--}o InteractionCounter : "agentInteractionStatistic"
 SearchRescueOrganization ||--}o AggregateRating : "aggregateRating"
 SearchRescueOrganization ||--}o Person : "alumni"
-SearchRescueOrganization ||--}o Text : "award"
-SearchRescueOrganization ||--}o Text : "awards"
 SearchRescueOrganization ||--}o ContactPoint : "contactPoint"
 SearchRescueOrganization ||--}o ContactPoint : "contactPoints"
 SearchRescueOrganization ||--}o Organization : "department"
-SearchRescueOrganization ||--}o Date : "dissolutionDate"
-SearchRescueOrganization ||--}o Text : "email"
 SearchRescueOrganization ||--}o Person : "employee"
 SearchRescueOrganization ||--}o Person : "employees"
 SearchRescueOrganization ||--}o Event : "event"
 SearchRescueOrganization ||--}o Event : "events"
-SearchRescueOrganization ||--}o Text : "faxNumber"
 SearchRescueOrganization ||--}o Person : "founders"
-SearchRescueOrganization ||--}o Date : "foundingDate"
 SearchRescueOrganization ||--}o Place : "foundingLocation"
 SearchRescueOrganization ||--}o Grant : "funding"
 SearchRescueOrganization ||--}o Certification : "hasCertification"
@@ -65,25 +77,13 @@ SearchRescueOrganization ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 SearchRescueOrganization ||--}o OfferCatalog : "hasOfferCatalog"
 SearchRescueOrganization ||--}o Place : "hasPOS"
 SearchRescueOrganization ||--}o InteractionCounter : "interactionStatistic"
-SearchRescueOrganization ||--}o Text : "isicV4"
-SearchRescueOrganization ||--}o Text : "iso6523Code"
-SearchRescueOrganization ||--}o Text : "legalName"
 SearchRescueOrganization ||--}o Offer : "makesOffer"
-SearchRescueOrganization ||--}o Text : "naics"
 SearchRescueOrganization ||--}o NonprofitType : "nonprofitStatus"
 SearchRescueOrganization ||--}o QuantitativeValue : "numberOfEmployees"
 SearchRescueOrganization ||--}o Organization : "parentOrganization"
 SearchRescueOrganization ||--}o Review : "review"
 SearchRescueOrganization ||--}o Review : "reviews"
 SearchRescueOrganization ||--}o Demand : "seeks"
-SearchRescueOrganization ||--}o Text : "slogan"
 SearchRescueOrganization ||--}o Organization : "subOrganization"
-SearchRescueOrganization ||--}o Text : "telephone"
-SearchRescueOrganization ||--}o Text : "vatID"
-SearchRescueOrganization ||--}o Text : "alternateName"
-SearchRescueOrganization ||--}o Text : "disambiguatingDescription"
-SearchRescueOrganization ||--}o Text : "name"
-SearchRescueOrganization ||--}o URL : "sameAs"
 SearchRescueOrganization ||--}o Action : "potentialAction"
-SearchRescueOrganization ||--}o URL : "url"
 

@@ -2,19 +2,19 @@ erDiagram
 OfferCatalog {
     stringList itemListElement  
     stringList itemListOrder  
+    IntegerList numberOfItems  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-OfferCatalog ||--}o Integer : "numberOfItems"
-OfferCatalog ||--}o Text : "alternateName"
-OfferCatalog ||--}o Text : "disambiguatingDescription"
-OfferCatalog ||--}o Text : "name"
-OfferCatalog ||--}o URL : "sameAs"
 OfferCatalog ||--}o Action : "potentialAction"
-OfferCatalog ||--}o URL : "url"
 

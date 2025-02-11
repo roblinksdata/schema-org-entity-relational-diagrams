@@ -3,20 +3,20 @@ HowToTool {
     stringList requiredQuantity  
     stringList position  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 HowToTool ||--}o Thing : "item"
 HowToTool ||--}o ListItem : "nextItem"
 HowToTool ||--}o ListItem : "previousItem"
-HowToTool ||--}o Text : "alternateName"
-HowToTool ||--}o Text : "disambiguatingDescription"
-HowToTool ||--}o Text : "name"
-HowToTool ||--}o URL : "sameAs"
 HowToTool ||--}o Action : "potentialAction"
-HowToTool ||--}o URL : "url"
 

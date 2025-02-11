@@ -12,54 +12,66 @@ NewsMediaOrganization {
     stringList diversityPolicy  
     stringList ethicsPolicy  
     stringList areaServed  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
+    TextList email  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-NewsMediaOrganization ||--}o Text : "duns"
-NewsMediaOrganization ||--}o Text : "globalLocationNumber"
-NewsMediaOrganization ||--}o URL : "hasGS1DigitalLink"
-NewsMediaOrganization ||--}o Text : "leiCode"
-NewsMediaOrganization ||--}o Text : "taxID"
 NewsMediaOrganization ||--}o InteractionCounter : "agentInteractionStatistic"
 NewsMediaOrganization ||--}o AggregateRating : "aggregateRating"
 NewsMediaOrganization ||--}o Person : "alumni"
-NewsMediaOrganization ||--}o Text : "award"
-NewsMediaOrganization ||--}o Text : "awards"
 NewsMediaOrganization ||--}o ContactPoint : "contactPoint"
 NewsMediaOrganization ||--}o ContactPoint : "contactPoints"
 NewsMediaOrganization ||--}o Organization : "department"
-NewsMediaOrganization ||--}o Date : "dissolutionDate"
-NewsMediaOrganization ||--}o Text : "email"
 NewsMediaOrganization ||--}o Person : "employee"
 NewsMediaOrganization ||--}o Person : "employees"
 NewsMediaOrganization ||--}o Event : "event"
 NewsMediaOrganization ||--}o Event : "events"
-NewsMediaOrganization ||--}o Text : "faxNumber"
 NewsMediaOrganization ||--}o Person : "founders"
-NewsMediaOrganization ||--}o Date : "foundingDate"
 NewsMediaOrganization ||--}o Place : "foundingLocation"
 NewsMediaOrganization ||--}o Grant : "funding"
 NewsMediaOrganization ||--}o Certification : "hasCertification"
@@ -69,25 +81,13 @@ NewsMediaOrganization ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 NewsMediaOrganization ||--}o OfferCatalog : "hasOfferCatalog"
 NewsMediaOrganization ||--}o Place : "hasPOS"
 NewsMediaOrganization ||--}o InteractionCounter : "interactionStatistic"
-NewsMediaOrganization ||--}o Text : "isicV4"
-NewsMediaOrganization ||--}o Text : "iso6523Code"
-NewsMediaOrganization ||--}o Text : "legalName"
 NewsMediaOrganization ||--}o Offer : "makesOffer"
-NewsMediaOrganization ||--}o Text : "naics"
 NewsMediaOrganization ||--}o NonprofitType : "nonprofitStatus"
 NewsMediaOrganization ||--}o QuantitativeValue : "numberOfEmployees"
 NewsMediaOrganization ||--}o Organization : "parentOrganization"
 NewsMediaOrganization ||--}o Review : "review"
 NewsMediaOrganization ||--}o Review : "reviews"
 NewsMediaOrganization ||--}o Demand : "seeks"
-NewsMediaOrganization ||--}o Text : "slogan"
 NewsMediaOrganization ||--}o Organization : "subOrganization"
-NewsMediaOrganization ||--}o Text : "telephone"
-NewsMediaOrganization ||--}o Text : "vatID"
-NewsMediaOrganization ||--}o Text : "alternateName"
-NewsMediaOrganization ||--}o Text : "disambiguatingDescription"
-NewsMediaOrganization ||--}o Text : "name"
-NewsMediaOrganization ||--}o URL : "sameAs"
 NewsMediaOrganization ||--}o Action : "potentialAction"
-NewsMediaOrganization ||--}o URL : "url"
 

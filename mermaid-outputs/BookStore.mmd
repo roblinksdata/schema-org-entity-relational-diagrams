@@ -1,8 +1,16 @@
 erDiagram
 BookStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ BookStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BookStore ||--}o Organization : "branchOf"
-BookStore ||--}o Text : "currenciesAccepted"
-BookStore ||--}o Text : "openingHours"
-BookStore ||--}o Text : "paymentAccepted"
-BookStore ||--}o Text : "priceRange"
-BookStore ||--}o Text : "globalLocationNumber"
-BookStore ||--}o URL : "hasGS1DigitalLink"
 BookStore ||--}o PropertyValue : "additionalProperty"
 BookStore ||--}o AggregateRating : "aggregateRating"
 BookStore ||--}o LocationFeatureSpecification : "amenityFeature"
-BookStore ||--}o Text : "branchCode"
 BookStore ||--}o Place : "containedIn"
 BookStore ||--}o Place : "containedInPlace"
 BookStore ||--}o Place : "containsPlace"
 BookStore ||--}o Event : "event"
 BookStore ||--}o Event : "events"
-BookStore ||--}o Text : "faxNumber"
 BookStore ||--}o Certification : "hasCertification"
-BookStore ||--}o Boolean : "hasDriveThroughService"
-BookStore ||--}o Boolean : "isAccessibleForFree"
-BookStore ||--}o Text : "isicV4"
-BookStore ||--}o URL : "map"
-BookStore ||--}o URL : "maps"
-BookStore ||--}o Integer : "maximumAttendeeCapacity"
 BookStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-BookStore ||--}o Boolean : "publicAccess"
 BookStore ||--}o Review : "review"
 BookStore ||--}o Review : "reviews"
-BookStore ||--}o Text : "slogan"
-BookStore ||--}o Boolean : "smokingAllowed"
 BookStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-BookStore ||--}o Text : "telephone"
-BookStore ||--}o URL : "tourBookingPage"
-BookStore ||--}o Text : "duns"
-BookStore ||--}o Text : "leiCode"
-BookStore ||--}o Text : "taxID"
 BookStore ||--}o InteractionCounter : "agentInteractionStatistic"
 BookStore ||--}o Person : "alumni"
-BookStore ||--}o Text : "award"
-BookStore ||--}o Text : "awards"
 BookStore ||--}o ContactPoint : "contactPoint"
 BookStore ||--}o ContactPoint : "contactPoints"
 BookStore ||--}o Organization : "department"
-BookStore ||--}o Date : "dissolutionDate"
-BookStore ||--}o Text : "email"
 BookStore ||--}o Person : "employee"
 BookStore ||--}o Person : "employees"
 BookStore ||--}o Person : "founders"
-BookStore ||--}o Date : "foundingDate"
 BookStore ||--}o Place : "foundingLocation"
 BookStore ||--}o Grant : "funding"
 BookStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ BookStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 BookStore ||--}o OfferCatalog : "hasOfferCatalog"
 BookStore ||--}o Place : "hasPOS"
 BookStore ||--}o InteractionCounter : "interactionStatistic"
-BookStore ||--}o Text : "iso6523Code"
-BookStore ||--}o Text : "legalName"
 BookStore ||--}o Offer : "makesOffer"
-BookStore ||--}o Text : "naics"
 BookStore ||--}o NonprofitType : "nonprofitStatus"
 BookStore ||--}o QuantitativeValue : "numberOfEmployees"
 BookStore ||--}o Organization : "parentOrganization"
 BookStore ||--}o Demand : "seeks"
 BookStore ||--}o Organization : "subOrganization"
-BookStore ||--}o Text : "vatID"
-BookStore ||--}o Text : "alternateName"
-BookStore ||--}o Text : "disambiguatingDescription"
-BookStore ||--}o Text : "name"
-BookStore ||--}o URL : "sameAs"
 BookStore ||--}o Action : "potentialAction"
-BookStore ||--}o URL : "url"
 

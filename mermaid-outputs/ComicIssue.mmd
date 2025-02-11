@@ -1,8 +1,10 @@
 erDiagram
 ComicIssue {
+    TextList variantCover  
     stringList issueNumber  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -16,25 +18,46 @@ ComicIssue {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -46,21 +69,30 @@ ComicIssue {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ComicIssue ||--}o Person : "artist"
@@ -68,8 +100,6 @@ ComicIssue ||--}o Person : "colorist"
 ComicIssue ||--}o Person : "inker"
 ComicIssue ||--}o Person : "letterer"
 ComicIssue ||--}o Person : "penciler"
-ComicIssue ||--}o Text : "variantCover"
-ComicIssue ||--}o Text : "pagination"
 ComicIssue ||--}o Thing : "about"
 ComicIssue ||--}o Place : "contentLocation"
 ComicIssue ||--}o CreativeWork : "hasPart"
@@ -77,43 +107,22 @@ ComicIssue ||--}o Claim : "interpretedAsClaim"
 ComicIssue ||--}o Thing : "mainEntity"
 ComicIssue ||--}o Place : "spatialCoverage"
 ComicIssue ||--}o CreativeWork : "workExample"
-ComicIssue ||--}o Text : "abstract"
-ComicIssue ||--}o Text : "accessMode"
 ComicIssue ||--}o ItemList : "accessModeSufficient"
-ComicIssue ||--}o Text : "accessibilityAPI"
-ComicIssue ||--}o Text : "accessibilityControl"
-ComicIssue ||--}o Text : "accessibilityFeature"
-ComicIssue ||--}o Text : "accessibilityHazard"
-ComicIssue ||--}o Text : "accessibilitySummary"
 ComicIssue ||--}o Person : "accountablePerson"
 ComicIssue ||--}o AggregateRating : "aggregateRating"
-ComicIssue ||--}o Text : "alternativeHeadline"
 ComicIssue ||--}o MediaObject : "associatedMedia"
 ComicIssue ||--}o Audience : "audience"
-ComicIssue ||--}o Text : "award"
-ComicIssue ||--}o Text : "awards"
 ComicIssue ||--}o Person : "character"
 ComicIssue ||--}o Comment : "comment"
-ComicIssue ||--}o Integer : "commentCount"
-ComicIssue ||--}o Text : "conditionsOfAccess"
-ComicIssue ||--}o DateTime : "contentReferenceTime"
-ComicIssue ||--}o Text : "copyrightNotice"
-ComicIssue ||--}o Number : "copyrightYear"
 ComicIssue ||--}o Country : "countryOfOrigin"
-ComicIssue ||--}o Text : "creditText"
 ComicIssue ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ComicIssue ||--}o URL : "discussionUrl"
 ComicIssue ||--}o Person : "editor"
 ComicIssue ||--}o AlignmentObject : "educationalAlignment"
 ComicIssue ||--}o MediaObject : "encoding"
 ComicIssue ||--}o MediaObject : "encodings"
 ComicIssue ||--}o CreativeWork : "exampleOfWork"
 ComicIssue ||--}o Grant : "funding"
-ComicIssue ||--}o Text : "headline"
 ComicIssue ||--}o InteractionCounter : "interactionStatistic"
-ComicIssue ||--}o Text : "interactivityType"
-ComicIssue ||--}o Boolean : "isAccessibleForFree"
-ComicIssue ||--}o Boolean : "isFamilyFriendly"
 ComicIssue ||--}o Place : "locationCreated"
 ComicIssue ||--}o Thing : "mentions"
 ComicIssue ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ ComicIssue ||--}o Event : "recordedAt"
 ComicIssue ||--}o PublicationEvent : "releasedEvent"
 ComicIssue ||--}o Review : "review"
 ComicIssue ||--}o Review : "reviews"
-ComicIssue ||--}o Date : "sdDatePublished"
 ComicIssue ||--}o Organization : "sourceOrganization"
 ComicIssue ||--}o Place : "spatial"
-ComicIssue ||--}o Text : "text"
 ComicIssue ||--}o ImageObject : "thumbnail"
-ComicIssue ||--}o URL : "thumbnailUrl"
 ComicIssue ||--}o Duration : "timeRequired"
 ComicIssue ||--}o CreativeWork : "translationOfWork"
-ComicIssue ||--}o Text : "typicalAgeRange"
 ComicIssue ||--}o CreativeWork : "workTranslation"
-ComicIssue ||--}o Text : "alternateName"
-ComicIssue ||--}o Text : "disambiguatingDescription"
-ComicIssue ||--}o Text : "name"
-ComicIssue ||--}o URL : "sameAs"
 ComicIssue ||--}o Action : "potentialAction"
-ComicIssue ||--}o URL : "url"
 

@@ -1,13 +1,25 @@
 erDiagram
 Accommodation {
+    TextList accommodationCategory  
     stringList bed  
+    TextList floorLevel  
     stringList leaseLength  
+    IntegerList numberOfBathroomsTotal  
     stringList numberOfBedrooms  
+    NumberList numberOfFullBathrooms  
+    NumberList numberOfPartialBathrooms  
     stringList numberOfRooms  
+    TextList permittedUsage  
     stringList petsAllowed  
+    URLList tourBookingPage  
+    NumberList yearBuilt  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,61 +31,49 @@ Accommodation {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Accommodation ||--}o Text : "accommodationCategory"
 Accommodation ||--}o FloorPlan : "accommodationFloorPlan"
 Accommodation ||--}o LocationFeatureSpecification : "amenityFeature"
-Accommodation ||--}o Text : "floorLevel"
 Accommodation ||--}o QuantitativeValue : "floorSize"
-Accommodation ||--}o Integer : "numberOfBathroomsTotal"
-Accommodation ||--}o Number : "numberOfFullBathrooms"
-Accommodation ||--}o Number : "numberOfPartialBathrooms"
 Accommodation ||--}o QuantitativeValue : "occupancy"
-Accommodation ||--}o Text : "permittedUsage"
-Accommodation ||--}o URL : "tourBookingPage"
-Accommodation ||--}o Number : "yearBuilt"
-Accommodation ||--}o Text : "globalLocationNumber"
-Accommodation ||--}o URL : "hasGS1DigitalLink"
 Accommodation ||--}o PropertyValue : "additionalProperty"
 Accommodation ||--}o AggregateRating : "aggregateRating"
-Accommodation ||--}o Text : "branchCode"
 Accommodation ||--}o Place : "containedIn"
 Accommodation ||--}o Place : "containedInPlace"
 Accommodation ||--}o Place : "containsPlace"
 Accommodation ||--}o Event : "event"
 Accommodation ||--}o Event : "events"
-Accommodation ||--}o Text : "faxNumber"
 Accommodation ||--}o Certification : "hasCertification"
-Accommodation ||--}o Boolean : "hasDriveThroughService"
-Accommodation ||--}o Boolean : "isAccessibleForFree"
-Accommodation ||--}o Text : "isicV4"
-Accommodation ||--}o URL : "map"
-Accommodation ||--}o URL : "maps"
-Accommodation ||--}o Integer : "maximumAttendeeCapacity"
 Accommodation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Accommodation ||--}o Boolean : "publicAccess"
 Accommodation ||--}o Review : "review"
 Accommodation ||--}o Review : "reviews"
-Accommodation ||--}o Text : "slogan"
-Accommodation ||--}o Boolean : "smokingAllowed"
 Accommodation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Accommodation ||--}o Text : "telephone"
-Accommodation ||--}o Text : "alternateName"
-Accommodation ||--}o Text : "disambiguatingDescription"
-Accommodation ||--}o Text : "name"
-Accommodation ||--}o URL : "sameAs"
 Accommodation ||--}o Action : "potentialAction"
-Accommodation ||--}o URL : "url"
 

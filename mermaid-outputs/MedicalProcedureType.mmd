@@ -2,17 +2,17 @@ erDiagram
 MedicalProcedureType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicalProcedureType ||--}o Text : "alternateName"
-MedicalProcedureType ||--}o Text : "disambiguatingDescription"
-MedicalProcedureType ||--}o Text : "name"
-MedicalProcedureType ||--}o URL : "sameAs"
 MedicalProcedureType ||--}o Action : "potentialAction"
-MedicalProcedureType ||--}o URL : "url"
 

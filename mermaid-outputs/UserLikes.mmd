@@ -11,19 +11,31 @@ UserLikes {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 UserLikes ||--}o Thing : "about"
@@ -37,22 +49,10 @@ UserLikes ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 UserLikes ||--}o Schedule : "eventSchedule"
 UserLikes ||--}o EventStatusType : "eventStatus"
 UserLikes ||--}o Grant : "funding"
-UserLikes ||--}o Boolean : "isAccessibleForFree"
-UserLikes ||--}o Integer : "maximumAttendeeCapacity"
-UserLikes ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-UserLikes ||--}o Integer : "maximumVirtualAttendeeCapacity"
-UserLikes ||--}o Date : "previousStartDate"
 UserLikes ||--}o CreativeWork : "recordedIn"
-UserLikes ||--}o Integer : "remainingAttendeeCapacity"
 UserLikes ||--}o Review : "review"
 UserLikes ||--}o Event : "subEvent"
 UserLikes ||--}o Event : "subEvents"
 UserLikes ||--}o Event : "superEvent"
-UserLikes ||--}o Text : "typicalAgeRange"
-UserLikes ||--}o Text : "alternateName"
-UserLikes ||--}o Text : "disambiguatingDescription"
-UserLikes ||--}o Text : "name"
-UserLikes ||--}o URL : "sameAs"
 UserLikes ||--}o Action : "potentialAction"
-UserLikes ||--}o URL : "url"
 

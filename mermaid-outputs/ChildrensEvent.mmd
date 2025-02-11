@@ -11,19 +11,31 @@ ChildrensEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ChildrensEvent ||--}o Thing : "about"
@@ -37,22 +49,10 @@ ChildrensEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 ChildrensEvent ||--}o Schedule : "eventSchedule"
 ChildrensEvent ||--}o EventStatusType : "eventStatus"
 ChildrensEvent ||--}o Grant : "funding"
-ChildrensEvent ||--}o Boolean : "isAccessibleForFree"
-ChildrensEvent ||--}o Integer : "maximumAttendeeCapacity"
-ChildrensEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-ChildrensEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-ChildrensEvent ||--}o Date : "previousStartDate"
 ChildrensEvent ||--}o CreativeWork : "recordedIn"
-ChildrensEvent ||--}o Integer : "remainingAttendeeCapacity"
 ChildrensEvent ||--}o Review : "review"
 ChildrensEvent ||--}o Event : "subEvent"
 ChildrensEvent ||--}o Event : "subEvents"
 ChildrensEvent ||--}o Event : "superEvent"
-ChildrensEvent ||--}o Text : "typicalAgeRange"
-ChildrensEvent ||--}o Text : "alternateName"
-ChildrensEvent ||--}o Text : "disambiguatingDescription"
-ChildrensEvent ||--}o Text : "name"
-ChildrensEvent ||--}o URL : "sameAs"
 ChildrensEvent ||--}o Action : "potentialAction"
-ChildrensEvent ||--}o URL : "url"
 

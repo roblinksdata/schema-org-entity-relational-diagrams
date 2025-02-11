@@ -1,8 +1,13 @@
 erDiagram
 EventVenue {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ EventVenue {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-EventVenue ||--}o Text : "openingHours"
-EventVenue ||--}o Text : "globalLocationNumber"
-EventVenue ||--}o URL : "hasGS1DigitalLink"
 EventVenue ||--}o PropertyValue : "additionalProperty"
 EventVenue ||--}o AggregateRating : "aggregateRating"
 EventVenue ||--}o LocationFeatureSpecification : "amenityFeature"
-EventVenue ||--}o Text : "branchCode"
 EventVenue ||--}o Place : "containedIn"
 EventVenue ||--}o Place : "containedInPlace"
 EventVenue ||--}o Place : "containsPlace"
 EventVenue ||--}o Event : "event"
 EventVenue ||--}o Event : "events"
-EventVenue ||--}o Text : "faxNumber"
 EventVenue ||--}o Certification : "hasCertification"
-EventVenue ||--}o Boolean : "hasDriveThroughService"
-EventVenue ||--}o Boolean : "isAccessibleForFree"
-EventVenue ||--}o Text : "isicV4"
-EventVenue ||--}o URL : "map"
-EventVenue ||--}o URL : "maps"
-EventVenue ||--}o Integer : "maximumAttendeeCapacity"
 EventVenue ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-EventVenue ||--}o Boolean : "publicAccess"
 EventVenue ||--}o Review : "review"
 EventVenue ||--}o Review : "reviews"
-EventVenue ||--}o Text : "slogan"
-EventVenue ||--}o Boolean : "smokingAllowed"
 EventVenue ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-EventVenue ||--}o Text : "telephone"
-EventVenue ||--}o URL : "tourBookingPage"
-EventVenue ||--}o Text : "alternateName"
-EventVenue ||--}o Text : "disambiguatingDescription"
-EventVenue ||--}o Text : "name"
-EventVenue ||--}o URL : "sameAs"
 EventVenue ||--}o Action : "potentialAction"
-EventVenue ||--}o URL : "url"
 

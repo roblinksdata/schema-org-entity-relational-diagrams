@@ -1,5 +1,6 @@
 erDiagram
 ComicSeries {
+    TextList issn  
     stringList endDate  
     stringList startDate  
     stringList acquireLicensePage  
@@ -15,25 +16,46 @@ ComicSeries {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,24 +67,32 @@ ComicSeries {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ComicSeries ||--}o Text : "issn"
 ComicSeries ||--}o Thing : "about"
 ComicSeries ||--}o Place : "contentLocation"
 ComicSeries ||--}o CreativeWork : "hasPart"
@@ -70,43 +100,22 @@ ComicSeries ||--}o Claim : "interpretedAsClaim"
 ComicSeries ||--}o Thing : "mainEntity"
 ComicSeries ||--}o Place : "spatialCoverage"
 ComicSeries ||--}o CreativeWork : "workExample"
-ComicSeries ||--}o Text : "abstract"
-ComicSeries ||--}o Text : "accessMode"
 ComicSeries ||--}o ItemList : "accessModeSufficient"
-ComicSeries ||--}o Text : "accessibilityAPI"
-ComicSeries ||--}o Text : "accessibilityControl"
-ComicSeries ||--}o Text : "accessibilityFeature"
-ComicSeries ||--}o Text : "accessibilityHazard"
-ComicSeries ||--}o Text : "accessibilitySummary"
 ComicSeries ||--}o Person : "accountablePerson"
 ComicSeries ||--}o AggregateRating : "aggregateRating"
-ComicSeries ||--}o Text : "alternativeHeadline"
 ComicSeries ||--}o MediaObject : "associatedMedia"
 ComicSeries ||--}o Audience : "audience"
-ComicSeries ||--}o Text : "award"
-ComicSeries ||--}o Text : "awards"
 ComicSeries ||--}o Person : "character"
 ComicSeries ||--}o Comment : "comment"
-ComicSeries ||--}o Integer : "commentCount"
-ComicSeries ||--}o Text : "conditionsOfAccess"
-ComicSeries ||--}o DateTime : "contentReferenceTime"
-ComicSeries ||--}o Text : "copyrightNotice"
-ComicSeries ||--}o Number : "copyrightYear"
 ComicSeries ||--}o Country : "countryOfOrigin"
-ComicSeries ||--}o Text : "creditText"
 ComicSeries ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ComicSeries ||--}o URL : "discussionUrl"
 ComicSeries ||--}o Person : "editor"
 ComicSeries ||--}o AlignmentObject : "educationalAlignment"
 ComicSeries ||--}o MediaObject : "encoding"
 ComicSeries ||--}o MediaObject : "encodings"
 ComicSeries ||--}o CreativeWork : "exampleOfWork"
 ComicSeries ||--}o Grant : "funding"
-ComicSeries ||--}o Text : "headline"
 ComicSeries ||--}o InteractionCounter : "interactionStatistic"
-ComicSeries ||--}o Text : "interactivityType"
-ComicSeries ||--}o Boolean : "isAccessibleForFree"
-ComicSeries ||--}o Boolean : "isFamilyFriendly"
 ComicSeries ||--}o Place : "locationCreated"
 ComicSeries ||--}o Thing : "mentions"
 ComicSeries ||--}o PublicationEvent : "publication"
@@ -115,20 +124,11 @@ ComicSeries ||--}o Event : "recordedAt"
 ComicSeries ||--}o PublicationEvent : "releasedEvent"
 ComicSeries ||--}o Review : "review"
 ComicSeries ||--}o Review : "reviews"
-ComicSeries ||--}o Date : "sdDatePublished"
 ComicSeries ||--}o Organization : "sourceOrganization"
 ComicSeries ||--}o Place : "spatial"
-ComicSeries ||--}o Text : "text"
 ComicSeries ||--}o ImageObject : "thumbnail"
-ComicSeries ||--}o URL : "thumbnailUrl"
 ComicSeries ||--}o Duration : "timeRequired"
 ComicSeries ||--}o CreativeWork : "translationOfWork"
-ComicSeries ||--}o Text : "typicalAgeRange"
 ComicSeries ||--}o CreativeWork : "workTranslation"
-ComicSeries ||--}o Text : "alternateName"
-ComicSeries ||--}o Text : "disambiguatingDescription"
-ComicSeries ||--}o Text : "name"
-ComicSeries ||--}o URL : "sameAs"
 ComicSeries ||--}o Action : "potentialAction"
-ComicSeries ||--}o URL : "url"
 

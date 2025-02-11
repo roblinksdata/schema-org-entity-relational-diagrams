@@ -1,8 +1,12 @@
 erDiagram
 City {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,51 +18,47 @@ City {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-City ||--}o Text : "globalLocationNumber"
-City ||--}o URL : "hasGS1DigitalLink"
 City ||--}o PropertyValue : "additionalProperty"
 City ||--}o AggregateRating : "aggregateRating"
 City ||--}o LocationFeatureSpecification : "amenityFeature"
-City ||--}o Text : "branchCode"
 City ||--}o Place : "containedIn"
 City ||--}o Place : "containedInPlace"
 City ||--}o Place : "containsPlace"
 City ||--}o Event : "event"
 City ||--}o Event : "events"
-City ||--}o Text : "faxNumber"
 City ||--}o Certification : "hasCertification"
-City ||--}o Boolean : "hasDriveThroughService"
-City ||--}o Boolean : "isAccessibleForFree"
-City ||--}o Text : "isicV4"
-City ||--}o URL : "map"
-City ||--}o URL : "maps"
-City ||--}o Integer : "maximumAttendeeCapacity"
 City ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-City ||--}o Boolean : "publicAccess"
 City ||--}o Review : "review"
 City ||--}o Review : "reviews"
-City ||--}o Text : "slogan"
-City ||--}o Boolean : "smokingAllowed"
 City ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-City ||--}o Text : "telephone"
-City ||--}o URL : "tourBookingPage"
-City ||--}o Text : "alternateName"
-City ||--}o Text : "disambiguatingDescription"
-City ||--}o Text : "name"
-City ||--}o URL : "sameAs"
 City ||--}o Action : "potentialAction"
-City ||--}o URL : "url"
 

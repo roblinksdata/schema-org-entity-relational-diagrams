@@ -1,19 +1,19 @@
 erDiagram
 Researcher {
+    TextList audienceType  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Researcher ||--}o Text : "audienceType"
 Researcher ||--}o AdministrativeArea : "geographicArea"
-Researcher ||--}o Text : "alternateName"
-Researcher ||--}o Text : "disambiguatingDescription"
-Researcher ||--}o Text : "name"
-Researcher ||--}o URL : "sameAs"
 Researcher ||--}o Action : "potentialAction"
-Researcher ||--}o URL : "url"
 

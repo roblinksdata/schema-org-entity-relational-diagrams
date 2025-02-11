@@ -8,11 +8,16 @@ ArriveAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ArriveAction ||--}o Place : "fromLocation"
@@ -23,10 +28,5 @@ ArriveAction ||--}o Thing : "result"
 ArriveAction ||--}o HowTo : "actionProcess"
 ArriveAction ||--}o ActionStatusType : "actionStatus"
 ArriveAction ||--}o Thing : "error"
-ArriveAction ||--}o Text : "alternateName"
-ArriveAction ||--}o Text : "disambiguatingDescription"
-ArriveAction ||--}o Text : "name"
-ArriveAction ||--}o URL : "sameAs"
 ArriveAction ||--}o Action : "potentialAction"
-ArriveAction ||--}o URL : "url"
 

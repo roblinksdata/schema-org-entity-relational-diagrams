@@ -1,10 +1,21 @@
 erDiagram
 Physician {
+    TextList usNPI  
     stringList availableService  
     stringList occupationalCategory  
+    TextList healthPlanNetworkId  
+    BooleanList isAcceptingNewPatients  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -16,96 +27,94 @@ Physician {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Physician ||--}o Text : "usNPI"
 Physician ||--}o Hospital : "hospitalAffiliation"
 Physician ||--}o MedicalSpecialty : "medicalSpecialty"
-Physician ||--}o Text : "healthPlanNetworkId"
-Physician ||--}o Boolean : "isAcceptingNewPatients"
 Physician ||--}o Organization : "branchOf"
-Physician ||--}o Text : "currenciesAccepted"
-Physician ||--}o Text : "openingHours"
-Physician ||--}o Text : "paymentAccepted"
-Physician ||--}o Text : "priceRange"
-Physician ||--}o Text : "globalLocationNumber"
-Physician ||--}o URL : "hasGS1DigitalLink"
 Physician ||--}o PropertyValue : "additionalProperty"
 Physician ||--}o AggregateRating : "aggregateRating"
 Physician ||--}o LocationFeatureSpecification : "amenityFeature"
-Physician ||--}o Text : "branchCode"
 Physician ||--}o Place : "containedIn"
 Physician ||--}o Place : "containedInPlace"
 Physician ||--}o Place : "containsPlace"
 Physician ||--}o Event : "event"
 Physician ||--}o Event : "events"
-Physician ||--}o Text : "faxNumber"
 Physician ||--}o Certification : "hasCertification"
-Physician ||--}o Boolean : "hasDriveThroughService"
-Physician ||--}o Boolean : "isAccessibleForFree"
-Physician ||--}o Text : "isicV4"
-Physician ||--}o URL : "map"
-Physician ||--}o URL : "maps"
-Physician ||--}o Integer : "maximumAttendeeCapacity"
 Physician ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Physician ||--}o Boolean : "publicAccess"
 Physician ||--}o Review : "review"
 Physician ||--}o Review : "reviews"
-Physician ||--}o Text : "slogan"
-Physician ||--}o Boolean : "smokingAllowed"
 Physician ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Physician ||--}o Text : "telephone"
-Physician ||--}o URL : "tourBookingPage"
-Physician ||--}o Text : "duns"
-Physician ||--}o Text : "leiCode"
-Physician ||--}o Text : "taxID"
 Physician ||--}o InteractionCounter : "agentInteractionStatistic"
 Physician ||--}o Person : "alumni"
-Physician ||--}o Text : "award"
-Physician ||--}o Text : "awards"
 Physician ||--}o ContactPoint : "contactPoint"
 Physician ||--}o ContactPoint : "contactPoints"
 Physician ||--}o Organization : "department"
-Physician ||--}o Date : "dissolutionDate"
-Physician ||--}o Text : "email"
 Physician ||--}o Person : "employee"
 Physician ||--}o Person : "employees"
 Physician ||--}o Person : "founders"
-Physician ||--}o Date : "foundingDate"
 Physician ||--}o Place : "foundingLocation"
 Physician ||--}o Grant : "funding"
 Physician ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -114,20 +123,11 @@ Physician ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Physician ||--}o OfferCatalog : "hasOfferCatalog"
 Physician ||--}o Place : "hasPOS"
 Physician ||--}o InteractionCounter : "interactionStatistic"
-Physician ||--}o Text : "iso6523Code"
-Physician ||--}o Text : "legalName"
 Physician ||--}o Offer : "makesOffer"
-Physician ||--}o Text : "naics"
 Physician ||--}o NonprofitType : "nonprofitStatus"
 Physician ||--}o QuantitativeValue : "numberOfEmployees"
 Physician ||--}o Organization : "parentOrganization"
 Physician ||--}o Demand : "seeks"
 Physician ||--}o Organization : "subOrganization"
-Physician ||--}o Text : "vatID"
-Physician ||--}o Text : "alternateName"
-Physician ||--}o Text : "disambiguatingDescription"
-Physician ||--}o Text : "name"
-Physician ||--}o URL : "sameAs"
 Physician ||--}o Action : "potentialAction"
-Physician ||--}o URL : "url"
 

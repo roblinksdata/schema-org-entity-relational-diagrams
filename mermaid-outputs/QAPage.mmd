@@ -1,7 +1,11 @@
 erDiagram
 QAPage {
     stringList breadcrumb  
+    DateList lastReviewed  
+    URLList relatedLink  
     stringList reviewedBy  
+    URLList significantLink  
+    URLList significantLinks  
     stringList speakable  
     stringList acquireLicensePage  
     stringList contributor  
@@ -16,25 +20,46 @@ QAPage {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -46,29 +71,34 @@ QAPage {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-QAPage ||--}o Date : "lastReviewed"
 QAPage ||--}o WebPageElement : "mainContentOfPage"
 QAPage ||--}o ImageObject : "primaryImageOfPage"
-QAPage ||--}o URL : "relatedLink"
-QAPage ||--}o URL : "significantLink"
-QAPage ||--}o URL : "significantLinks"
 QAPage ||--}o Specialty : "specialty"
 QAPage ||--}o Thing : "about"
 QAPage ||--}o Place : "contentLocation"
@@ -77,43 +107,22 @@ QAPage ||--}o Claim : "interpretedAsClaim"
 QAPage ||--}o Thing : "mainEntity"
 QAPage ||--}o Place : "spatialCoverage"
 QAPage ||--}o CreativeWork : "workExample"
-QAPage ||--}o Text : "abstract"
-QAPage ||--}o Text : "accessMode"
 QAPage ||--}o ItemList : "accessModeSufficient"
-QAPage ||--}o Text : "accessibilityAPI"
-QAPage ||--}o Text : "accessibilityControl"
-QAPage ||--}o Text : "accessibilityFeature"
-QAPage ||--}o Text : "accessibilityHazard"
-QAPage ||--}o Text : "accessibilitySummary"
 QAPage ||--}o Person : "accountablePerson"
 QAPage ||--}o AggregateRating : "aggregateRating"
-QAPage ||--}o Text : "alternativeHeadline"
 QAPage ||--}o MediaObject : "associatedMedia"
 QAPage ||--}o Audience : "audience"
-QAPage ||--}o Text : "award"
-QAPage ||--}o Text : "awards"
 QAPage ||--}o Person : "character"
 QAPage ||--}o Comment : "comment"
-QAPage ||--}o Integer : "commentCount"
-QAPage ||--}o Text : "conditionsOfAccess"
-QAPage ||--}o DateTime : "contentReferenceTime"
-QAPage ||--}o Text : "copyrightNotice"
-QAPage ||--}o Number : "copyrightYear"
 QAPage ||--}o Country : "countryOfOrigin"
-QAPage ||--}o Text : "creditText"
 QAPage ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-QAPage ||--}o URL : "discussionUrl"
 QAPage ||--}o Person : "editor"
 QAPage ||--}o AlignmentObject : "educationalAlignment"
 QAPage ||--}o MediaObject : "encoding"
 QAPage ||--}o MediaObject : "encodings"
 QAPage ||--}o CreativeWork : "exampleOfWork"
 QAPage ||--}o Grant : "funding"
-QAPage ||--}o Text : "headline"
 QAPage ||--}o InteractionCounter : "interactionStatistic"
-QAPage ||--}o Text : "interactivityType"
-QAPage ||--}o Boolean : "isAccessibleForFree"
-QAPage ||--}o Boolean : "isFamilyFriendly"
 QAPage ||--}o Place : "locationCreated"
 QAPage ||--}o Thing : "mentions"
 QAPage ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ QAPage ||--}o Event : "recordedAt"
 QAPage ||--}o PublicationEvent : "releasedEvent"
 QAPage ||--}o Review : "review"
 QAPage ||--}o Review : "reviews"
-QAPage ||--}o Date : "sdDatePublished"
 QAPage ||--}o Organization : "sourceOrganization"
 QAPage ||--}o Place : "spatial"
-QAPage ||--}o Text : "text"
 QAPage ||--}o ImageObject : "thumbnail"
-QAPage ||--}o URL : "thumbnailUrl"
 QAPage ||--}o Duration : "timeRequired"
 QAPage ||--}o CreativeWork : "translationOfWork"
-QAPage ||--}o Text : "typicalAgeRange"
 QAPage ||--}o CreativeWork : "workTranslation"
-QAPage ||--}o Text : "alternateName"
-QAPage ||--}o Text : "disambiguatingDescription"
-QAPage ||--}o Text : "name"
-QAPage ||--}o URL : "sameAs"
 QAPage ||--}o Action : "potentialAction"
-QAPage ||--}o URL : "url"
 

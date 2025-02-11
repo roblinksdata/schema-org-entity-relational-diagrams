@@ -16,25 +16,46 @@ Episode {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -46,21 +67,30 @@ Episode {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Episode ||--}o Duration : "duration"
@@ -78,43 +108,22 @@ Episode ||--}o Claim : "interpretedAsClaim"
 Episode ||--}o Thing : "mainEntity"
 Episode ||--}o Place : "spatialCoverage"
 Episode ||--}o CreativeWork : "workExample"
-Episode ||--}o Text : "abstract"
-Episode ||--}o Text : "accessMode"
 Episode ||--}o ItemList : "accessModeSufficient"
-Episode ||--}o Text : "accessibilityAPI"
-Episode ||--}o Text : "accessibilityControl"
-Episode ||--}o Text : "accessibilityFeature"
-Episode ||--}o Text : "accessibilityHazard"
-Episode ||--}o Text : "accessibilitySummary"
 Episode ||--}o Person : "accountablePerson"
 Episode ||--}o AggregateRating : "aggregateRating"
-Episode ||--}o Text : "alternativeHeadline"
 Episode ||--}o MediaObject : "associatedMedia"
 Episode ||--}o Audience : "audience"
-Episode ||--}o Text : "award"
-Episode ||--}o Text : "awards"
 Episode ||--}o Person : "character"
 Episode ||--}o Comment : "comment"
-Episode ||--}o Integer : "commentCount"
-Episode ||--}o Text : "conditionsOfAccess"
-Episode ||--}o DateTime : "contentReferenceTime"
-Episode ||--}o Text : "copyrightNotice"
-Episode ||--}o Number : "copyrightYear"
 Episode ||--}o Country : "countryOfOrigin"
-Episode ||--}o Text : "creditText"
 Episode ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Episode ||--}o URL : "discussionUrl"
 Episode ||--}o Person : "editor"
 Episode ||--}o AlignmentObject : "educationalAlignment"
 Episode ||--}o MediaObject : "encoding"
 Episode ||--}o MediaObject : "encodings"
 Episode ||--}o CreativeWork : "exampleOfWork"
 Episode ||--}o Grant : "funding"
-Episode ||--}o Text : "headline"
 Episode ||--}o InteractionCounter : "interactionStatistic"
-Episode ||--}o Text : "interactivityType"
-Episode ||--}o Boolean : "isAccessibleForFree"
-Episode ||--}o Boolean : "isFamilyFriendly"
 Episode ||--}o Place : "locationCreated"
 Episode ||--}o Thing : "mentions"
 Episode ||--}o PublicationEvent : "publication"
@@ -123,20 +132,11 @@ Episode ||--}o Event : "recordedAt"
 Episode ||--}o PublicationEvent : "releasedEvent"
 Episode ||--}o Review : "review"
 Episode ||--}o Review : "reviews"
-Episode ||--}o Date : "sdDatePublished"
 Episode ||--}o Organization : "sourceOrganization"
 Episode ||--}o Place : "spatial"
-Episode ||--}o Text : "text"
 Episode ||--}o ImageObject : "thumbnail"
-Episode ||--}o URL : "thumbnailUrl"
 Episode ||--}o Duration : "timeRequired"
 Episode ||--}o CreativeWork : "translationOfWork"
-Episode ||--}o Text : "typicalAgeRange"
 Episode ||--}o CreativeWork : "workTranslation"
-Episode ||--}o Text : "alternateName"
-Episode ||--}o Text : "disambiguatingDescription"
-Episode ||--}o Text : "name"
-Episode ||--}o URL : "sameAs"
 Episode ||--}o Action : "potentialAction"
-Episode ||--}o URL : "url"
 

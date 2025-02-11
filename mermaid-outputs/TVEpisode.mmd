@@ -18,25 +18,46 @@ TVEpisode {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -48,21 +69,30 @@ TVEpisode {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TVEpisode ||--}o TVSeries : "partOfTVSeries"
@@ -82,42 +112,21 @@ TVEpisode ||--}o Claim : "interpretedAsClaim"
 TVEpisode ||--}o Thing : "mainEntity"
 TVEpisode ||--}o Place : "spatialCoverage"
 TVEpisode ||--}o CreativeWork : "workExample"
-TVEpisode ||--}o Text : "abstract"
-TVEpisode ||--}o Text : "accessMode"
 TVEpisode ||--}o ItemList : "accessModeSufficient"
-TVEpisode ||--}o Text : "accessibilityAPI"
-TVEpisode ||--}o Text : "accessibilityControl"
-TVEpisode ||--}o Text : "accessibilityFeature"
-TVEpisode ||--}o Text : "accessibilityHazard"
-TVEpisode ||--}o Text : "accessibilitySummary"
 TVEpisode ||--}o Person : "accountablePerson"
 TVEpisode ||--}o AggregateRating : "aggregateRating"
-TVEpisode ||--}o Text : "alternativeHeadline"
 TVEpisode ||--}o MediaObject : "associatedMedia"
 TVEpisode ||--}o Audience : "audience"
-TVEpisode ||--}o Text : "award"
-TVEpisode ||--}o Text : "awards"
 TVEpisode ||--}o Person : "character"
 TVEpisode ||--}o Comment : "comment"
-TVEpisode ||--}o Integer : "commentCount"
-TVEpisode ||--}o Text : "conditionsOfAccess"
-TVEpisode ||--}o DateTime : "contentReferenceTime"
-TVEpisode ||--}o Text : "copyrightNotice"
-TVEpisode ||--}o Number : "copyrightYear"
-TVEpisode ||--}o Text : "creditText"
 TVEpisode ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-TVEpisode ||--}o URL : "discussionUrl"
 TVEpisode ||--}o Person : "editor"
 TVEpisode ||--}o AlignmentObject : "educationalAlignment"
 TVEpisode ||--}o MediaObject : "encoding"
 TVEpisode ||--}o MediaObject : "encodings"
 TVEpisode ||--}o CreativeWork : "exampleOfWork"
 TVEpisode ||--}o Grant : "funding"
-TVEpisode ||--}o Text : "headline"
 TVEpisode ||--}o InteractionCounter : "interactionStatistic"
-TVEpisode ||--}o Text : "interactivityType"
-TVEpisode ||--}o Boolean : "isAccessibleForFree"
-TVEpisode ||--}o Boolean : "isFamilyFriendly"
 TVEpisode ||--}o Place : "locationCreated"
 TVEpisode ||--}o Thing : "mentions"
 TVEpisode ||--}o PublicationEvent : "publication"
@@ -126,20 +135,11 @@ TVEpisode ||--}o Event : "recordedAt"
 TVEpisode ||--}o PublicationEvent : "releasedEvent"
 TVEpisode ||--}o Review : "review"
 TVEpisode ||--}o Review : "reviews"
-TVEpisode ||--}o Date : "sdDatePublished"
 TVEpisode ||--}o Organization : "sourceOrganization"
 TVEpisode ||--}o Place : "spatial"
-TVEpisode ||--}o Text : "text"
 TVEpisode ||--}o ImageObject : "thumbnail"
-TVEpisode ||--}o URL : "thumbnailUrl"
 TVEpisode ||--}o Duration : "timeRequired"
 TVEpisode ||--}o CreativeWork : "translationOfWork"
-TVEpisode ||--}o Text : "typicalAgeRange"
 TVEpisode ||--}o CreativeWork : "workTranslation"
-TVEpisode ||--}o Text : "alternateName"
-TVEpisode ||--}o Text : "disambiguatingDescription"
-TVEpisode ||--}o Text : "name"
-TVEpisode ||--}o URL : "sameAs"
 TVEpisode ||--}o Action : "potentialAction"
-TVEpisode ||--}o URL : "url"
 

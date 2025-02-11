@@ -1,5 +1,6 @@
 erDiagram
 Collection {
+    IntegerList collectionSize  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -13,25 +14,46 @@ Collection {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,24 +65,32 @@ Collection {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Collection ||--}o Integer : "collectionSize"
 Collection ||--}o Thing : "about"
 Collection ||--}o Place : "contentLocation"
 Collection ||--}o CreativeWork : "hasPart"
@@ -68,43 +98,22 @@ Collection ||--}o Claim : "interpretedAsClaim"
 Collection ||--}o Thing : "mainEntity"
 Collection ||--}o Place : "spatialCoverage"
 Collection ||--}o CreativeWork : "workExample"
-Collection ||--}o Text : "abstract"
-Collection ||--}o Text : "accessMode"
 Collection ||--}o ItemList : "accessModeSufficient"
-Collection ||--}o Text : "accessibilityAPI"
-Collection ||--}o Text : "accessibilityControl"
-Collection ||--}o Text : "accessibilityFeature"
-Collection ||--}o Text : "accessibilityHazard"
-Collection ||--}o Text : "accessibilitySummary"
 Collection ||--}o Person : "accountablePerson"
 Collection ||--}o AggregateRating : "aggregateRating"
-Collection ||--}o Text : "alternativeHeadline"
 Collection ||--}o MediaObject : "associatedMedia"
 Collection ||--}o Audience : "audience"
-Collection ||--}o Text : "award"
-Collection ||--}o Text : "awards"
 Collection ||--}o Person : "character"
 Collection ||--}o Comment : "comment"
-Collection ||--}o Integer : "commentCount"
-Collection ||--}o Text : "conditionsOfAccess"
-Collection ||--}o DateTime : "contentReferenceTime"
-Collection ||--}o Text : "copyrightNotice"
-Collection ||--}o Number : "copyrightYear"
 Collection ||--}o Country : "countryOfOrigin"
-Collection ||--}o Text : "creditText"
 Collection ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Collection ||--}o URL : "discussionUrl"
 Collection ||--}o Person : "editor"
 Collection ||--}o AlignmentObject : "educationalAlignment"
 Collection ||--}o MediaObject : "encoding"
 Collection ||--}o MediaObject : "encodings"
 Collection ||--}o CreativeWork : "exampleOfWork"
 Collection ||--}o Grant : "funding"
-Collection ||--}o Text : "headline"
 Collection ||--}o InteractionCounter : "interactionStatistic"
-Collection ||--}o Text : "interactivityType"
-Collection ||--}o Boolean : "isAccessibleForFree"
-Collection ||--}o Boolean : "isFamilyFriendly"
 Collection ||--}o Place : "locationCreated"
 Collection ||--}o Thing : "mentions"
 Collection ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ Collection ||--}o Event : "recordedAt"
 Collection ||--}o PublicationEvent : "releasedEvent"
 Collection ||--}o Review : "review"
 Collection ||--}o Review : "reviews"
-Collection ||--}o Date : "sdDatePublished"
 Collection ||--}o Organization : "sourceOrganization"
 Collection ||--}o Place : "spatial"
-Collection ||--}o Text : "text"
 Collection ||--}o ImageObject : "thumbnail"
-Collection ||--}o URL : "thumbnailUrl"
 Collection ||--}o Duration : "timeRequired"
 Collection ||--}o CreativeWork : "translationOfWork"
-Collection ||--}o Text : "typicalAgeRange"
 Collection ||--}o CreativeWork : "workTranslation"
-Collection ||--}o Text : "alternateName"
-Collection ||--}o Text : "disambiguatingDescription"
-Collection ||--}o Text : "name"
-Collection ||--}o URL : "sameAs"
 Collection ||--}o Action : "potentialAction"
-Collection ||--}o URL : "url"
 

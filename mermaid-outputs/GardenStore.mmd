@@ -1,8 +1,16 @@
 erDiagram
 GardenStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ GardenStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 GardenStore ||--}o Organization : "branchOf"
-GardenStore ||--}o Text : "currenciesAccepted"
-GardenStore ||--}o Text : "openingHours"
-GardenStore ||--}o Text : "paymentAccepted"
-GardenStore ||--}o Text : "priceRange"
-GardenStore ||--}o Text : "globalLocationNumber"
-GardenStore ||--}o URL : "hasGS1DigitalLink"
 GardenStore ||--}o PropertyValue : "additionalProperty"
 GardenStore ||--}o AggregateRating : "aggregateRating"
 GardenStore ||--}o LocationFeatureSpecification : "amenityFeature"
-GardenStore ||--}o Text : "branchCode"
 GardenStore ||--}o Place : "containedIn"
 GardenStore ||--}o Place : "containedInPlace"
 GardenStore ||--}o Place : "containsPlace"
 GardenStore ||--}o Event : "event"
 GardenStore ||--}o Event : "events"
-GardenStore ||--}o Text : "faxNumber"
 GardenStore ||--}o Certification : "hasCertification"
-GardenStore ||--}o Boolean : "hasDriveThroughService"
-GardenStore ||--}o Boolean : "isAccessibleForFree"
-GardenStore ||--}o Text : "isicV4"
-GardenStore ||--}o URL : "map"
-GardenStore ||--}o URL : "maps"
-GardenStore ||--}o Integer : "maximumAttendeeCapacity"
 GardenStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-GardenStore ||--}o Boolean : "publicAccess"
 GardenStore ||--}o Review : "review"
 GardenStore ||--}o Review : "reviews"
-GardenStore ||--}o Text : "slogan"
-GardenStore ||--}o Boolean : "smokingAllowed"
 GardenStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-GardenStore ||--}o Text : "telephone"
-GardenStore ||--}o URL : "tourBookingPage"
-GardenStore ||--}o Text : "duns"
-GardenStore ||--}o Text : "leiCode"
-GardenStore ||--}o Text : "taxID"
 GardenStore ||--}o InteractionCounter : "agentInteractionStatistic"
 GardenStore ||--}o Person : "alumni"
-GardenStore ||--}o Text : "award"
-GardenStore ||--}o Text : "awards"
 GardenStore ||--}o ContactPoint : "contactPoint"
 GardenStore ||--}o ContactPoint : "contactPoints"
 GardenStore ||--}o Organization : "department"
-GardenStore ||--}o Date : "dissolutionDate"
-GardenStore ||--}o Text : "email"
 GardenStore ||--}o Person : "employee"
 GardenStore ||--}o Person : "employees"
 GardenStore ||--}o Person : "founders"
-GardenStore ||--}o Date : "foundingDate"
 GardenStore ||--}o Place : "foundingLocation"
 GardenStore ||--}o Grant : "funding"
 GardenStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ GardenStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 GardenStore ||--}o OfferCatalog : "hasOfferCatalog"
 GardenStore ||--}o Place : "hasPOS"
 GardenStore ||--}o InteractionCounter : "interactionStatistic"
-GardenStore ||--}o Text : "iso6523Code"
-GardenStore ||--}o Text : "legalName"
 GardenStore ||--}o Offer : "makesOffer"
-GardenStore ||--}o Text : "naics"
 GardenStore ||--}o NonprofitType : "nonprofitStatus"
 GardenStore ||--}o QuantitativeValue : "numberOfEmployees"
 GardenStore ||--}o Organization : "parentOrganization"
 GardenStore ||--}o Demand : "seeks"
 GardenStore ||--}o Organization : "subOrganization"
-GardenStore ||--}o Text : "vatID"
-GardenStore ||--}o Text : "alternateName"
-GardenStore ||--}o Text : "disambiguatingDescription"
-GardenStore ||--}o Text : "name"
-GardenStore ||--}o URL : "sameAs"
 GardenStore ||--}o Action : "potentialAction"
-GardenStore ||--}o URL : "url"
 

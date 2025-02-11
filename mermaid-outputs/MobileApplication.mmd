@@ -1,13 +1,26 @@
 erDiagram
 MobileApplication {
+    TextList carrierRequirements  
     stringList applicationCategory  
     stringList applicationSubCategory  
+    TextList applicationSuite  
+    TextList availableOnDevice  
+    TextList countriesNotSupported  
+    TextList countriesSupported  
+    TextList device  
+    URLList downloadUrl  
     stringList featureList  
+    TextList fileSize  
+    URLList installUrl  
     stringList memoryRequirements  
+    TextList operatingSystem  
+    TextList permissions  
+    TextList processorRequirements  
     stringList releaseNotes  
     stringList requirements  
     stringList screenshot  
     stringList softwareRequirements  
+    TextList softwareVersion  
     stringList storageRequirements  
     stringList acquireLicensePage  
     stringList contributor  
@@ -22,25 +35,46 @@ MobileApplication {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -52,38 +86,34 @@ MobileApplication {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MobileApplication ||--}o Text : "carrierRequirements"
-MobileApplication ||--}o Text : "applicationSuite"
-MobileApplication ||--}o Text : "availableOnDevice"
-MobileApplication ||--}o Text : "countriesNotSupported"
-MobileApplication ||--}o Text : "countriesSupported"
-MobileApplication ||--}o Text : "device"
-MobileApplication ||--}o URL : "downloadUrl"
-MobileApplication ||--}o Text : "fileSize"
-MobileApplication ||--}o URL : "installUrl"
-MobileApplication ||--}o Text : "operatingSystem"
-MobileApplication ||--}o Text : "permissions"
-MobileApplication ||--}o Text : "processorRequirements"
 MobileApplication ||--}o SoftwareApplication : "softwareAddOn"
 MobileApplication ||--}o CreativeWork : "softwareHelp"
-MobileApplication ||--}o Text : "softwareVersion"
 MobileApplication ||--}o DataFeed : "supportingData"
 MobileApplication ||--}o Thing : "about"
 MobileApplication ||--}o Place : "contentLocation"
@@ -92,43 +122,22 @@ MobileApplication ||--}o Claim : "interpretedAsClaim"
 MobileApplication ||--}o Thing : "mainEntity"
 MobileApplication ||--}o Place : "spatialCoverage"
 MobileApplication ||--}o CreativeWork : "workExample"
-MobileApplication ||--}o Text : "abstract"
-MobileApplication ||--}o Text : "accessMode"
 MobileApplication ||--}o ItemList : "accessModeSufficient"
-MobileApplication ||--}o Text : "accessibilityAPI"
-MobileApplication ||--}o Text : "accessibilityControl"
-MobileApplication ||--}o Text : "accessibilityFeature"
-MobileApplication ||--}o Text : "accessibilityHazard"
-MobileApplication ||--}o Text : "accessibilitySummary"
 MobileApplication ||--}o Person : "accountablePerson"
 MobileApplication ||--}o AggregateRating : "aggregateRating"
-MobileApplication ||--}o Text : "alternativeHeadline"
 MobileApplication ||--}o MediaObject : "associatedMedia"
 MobileApplication ||--}o Audience : "audience"
-MobileApplication ||--}o Text : "award"
-MobileApplication ||--}o Text : "awards"
 MobileApplication ||--}o Person : "character"
 MobileApplication ||--}o Comment : "comment"
-MobileApplication ||--}o Integer : "commentCount"
-MobileApplication ||--}o Text : "conditionsOfAccess"
-MobileApplication ||--}o DateTime : "contentReferenceTime"
-MobileApplication ||--}o Text : "copyrightNotice"
-MobileApplication ||--}o Number : "copyrightYear"
 MobileApplication ||--}o Country : "countryOfOrigin"
-MobileApplication ||--}o Text : "creditText"
 MobileApplication ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-MobileApplication ||--}o URL : "discussionUrl"
 MobileApplication ||--}o Person : "editor"
 MobileApplication ||--}o AlignmentObject : "educationalAlignment"
 MobileApplication ||--}o MediaObject : "encoding"
 MobileApplication ||--}o MediaObject : "encodings"
 MobileApplication ||--}o CreativeWork : "exampleOfWork"
 MobileApplication ||--}o Grant : "funding"
-MobileApplication ||--}o Text : "headline"
 MobileApplication ||--}o InteractionCounter : "interactionStatistic"
-MobileApplication ||--}o Text : "interactivityType"
-MobileApplication ||--}o Boolean : "isAccessibleForFree"
-MobileApplication ||--}o Boolean : "isFamilyFriendly"
 MobileApplication ||--}o Place : "locationCreated"
 MobileApplication ||--}o Thing : "mentions"
 MobileApplication ||--}o PublicationEvent : "publication"
@@ -137,20 +146,11 @@ MobileApplication ||--}o Event : "recordedAt"
 MobileApplication ||--}o PublicationEvent : "releasedEvent"
 MobileApplication ||--}o Review : "review"
 MobileApplication ||--}o Review : "reviews"
-MobileApplication ||--}o Date : "sdDatePublished"
 MobileApplication ||--}o Organization : "sourceOrganization"
 MobileApplication ||--}o Place : "spatial"
-MobileApplication ||--}o Text : "text"
 MobileApplication ||--}o ImageObject : "thumbnail"
-MobileApplication ||--}o URL : "thumbnailUrl"
 MobileApplication ||--}o Duration : "timeRequired"
 MobileApplication ||--}o CreativeWork : "translationOfWork"
-MobileApplication ||--}o Text : "typicalAgeRange"
 MobileApplication ||--}o CreativeWork : "workTranslation"
-MobileApplication ||--}o Text : "alternateName"
-MobileApplication ||--}o Text : "disambiguatingDescription"
-MobileApplication ||--}o Text : "name"
-MobileApplication ||--}o URL : "sameAs"
 MobileApplication ||--}o Action : "potentialAction"
-MobileApplication ||--}o URL : "url"
 

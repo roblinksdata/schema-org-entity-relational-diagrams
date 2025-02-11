@@ -1,8 +1,16 @@
 erDiagram
 ElectronicsStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ ElectronicsStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ElectronicsStore ||--}o Organization : "branchOf"
-ElectronicsStore ||--}o Text : "currenciesAccepted"
-ElectronicsStore ||--}o Text : "openingHours"
-ElectronicsStore ||--}o Text : "paymentAccepted"
-ElectronicsStore ||--}o Text : "priceRange"
-ElectronicsStore ||--}o Text : "globalLocationNumber"
-ElectronicsStore ||--}o URL : "hasGS1DigitalLink"
 ElectronicsStore ||--}o PropertyValue : "additionalProperty"
 ElectronicsStore ||--}o AggregateRating : "aggregateRating"
 ElectronicsStore ||--}o LocationFeatureSpecification : "amenityFeature"
-ElectronicsStore ||--}o Text : "branchCode"
 ElectronicsStore ||--}o Place : "containedIn"
 ElectronicsStore ||--}o Place : "containedInPlace"
 ElectronicsStore ||--}o Place : "containsPlace"
 ElectronicsStore ||--}o Event : "event"
 ElectronicsStore ||--}o Event : "events"
-ElectronicsStore ||--}o Text : "faxNumber"
 ElectronicsStore ||--}o Certification : "hasCertification"
-ElectronicsStore ||--}o Boolean : "hasDriveThroughService"
-ElectronicsStore ||--}o Boolean : "isAccessibleForFree"
-ElectronicsStore ||--}o Text : "isicV4"
-ElectronicsStore ||--}o URL : "map"
-ElectronicsStore ||--}o URL : "maps"
-ElectronicsStore ||--}o Integer : "maximumAttendeeCapacity"
 ElectronicsStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-ElectronicsStore ||--}o Boolean : "publicAccess"
 ElectronicsStore ||--}o Review : "review"
 ElectronicsStore ||--}o Review : "reviews"
-ElectronicsStore ||--}o Text : "slogan"
-ElectronicsStore ||--}o Boolean : "smokingAllowed"
 ElectronicsStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-ElectronicsStore ||--}o Text : "telephone"
-ElectronicsStore ||--}o URL : "tourBookingPage"
-ElectronicsStore ||--}o Text : "duns"
-ElectronicsStore ||--}o Text : "leiCode"
-ElectronicsStore ||--}o Text : "taxID"
 ElectronicsStore ||--}o InteractionCounter : "agentInteractionStatistic"
 ElectronicsStore ||--}o Person : "alumni"
-ElectronicsStore ||--}o Text : "award"
-ElectronicsStore ||--}o Text : "awards"
 ElectronicsStore ||--}o ContactPoint : "contactPoint"
 ElectronicsStore ||--}o ContactPoint : "contactPoints"
 ElectronicsStore ||--}o Organization : "department"
-ElectronicsStore ||--}o Date : "dissolutionDate"
-ElectronicsStore ||--}o Text : "email"
 ElectronicsStore ||--}o Person : "employee"
 ElectronicsStore ||--}o Person : "employees"
 ElectronicsStore ||--}o Person : "founders"
-ElectronicsStore ||--}o Date : "foundingDate"
 ElectronicsStore ||--}o Place : "foundingLocation"
 ElectronicsStore ||--}o Grant : "funding"
 ElectronicsStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ ElectronicsStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 ElectronicsStore ||--}o OfferCatalog : "hasOfferCatalog"
 ElectronicsStore ||--}o Place : "hasPOS"
 ElectronicsStore ||--}o InteractionCounter : "interactionStatistic"
-ElectronicsStore ||--}o Text : "iso6523Code"
-ElectronicsStore ||--}o Text : "legalName"
 ElectronicsStore ||--}o Offer : "makesOffer"
-ElectronicsStore ||--}o Text : "naics"
 ElectronicsStore ||--}o NonprofitType : "nonprofitStatus"
 ElectronicsStore ||--}o QuantitativeValue : "numberOfEmployees"
 ElectronicsStore ||--}o Organization : "parentOrganization"
 ElectronicsStore ||--}o Demand : "seeks"
 ElectronicsStore ||--}o Organization : "subOrganization"
-ElectronicsStore ||--}o Text : "vatID"
-ElectronicsStore ||--}o Text : "alternateName"
-ElectronicsStore ||--}o Text : "disambiguatingDescription"
-ElectronicsStore ||--}o Text : "name"
-ElectronicsStore ||--}o URL : "sameAs"
 ElectronicsStore ||--}o Action : "potentialAction"
-ElectronicsStore ||--}o URL : "url"
 

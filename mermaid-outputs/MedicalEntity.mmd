@@ -2,11 +2,16 @@ erDiagram
 MedicalEntity {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalEntity ||--}o MedicalCode : "code"
@@ -16,10 +21,5 @@ MedicalEntity ||--}o MedicineSystem : "medicineSystem"
 MedicalEntity ||--}o Organization : "recognizingAuthority"
 MedicalEntity ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalEntity ||--}o MedicalStudy : "study"
-MedicalEntity ||--}o Text : "alternateName"
-MedicalEntity ||--}o Text : "disambiguatingDescription"
-MedicalEntity ||--}o Text : "name"
-MedicalEntity ||--}o URL : "sameAs"
 MedicalEntity ||--}o Action : "potentialAction"
-MedicalEntity ||--}o URL : "url"
 

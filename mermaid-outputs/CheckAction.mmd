@@ -8,11 +8,16 @@ CheckAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CheckAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ CheckAction ||--}o Thing : "result"
 CheckAction ||--}o HowTo : "actionProcess"
 CheckAction ||--}o ActionStatusType : "actionStatus"
 CheckAction ||--}o Thing : "error"
-CheckAction ||--}o Text : "alternateName"
-CheckAction ||--}o Text : "disambiguatingDescription"
-CheckAction ||--}o Text : "name"
-CheckAction ||--}o URL : "sameAs"
 CheckAction ||--}o Action : "potentialAction"
-CheckAction ||--}o URL : "url"
 

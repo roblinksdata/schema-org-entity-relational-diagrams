@@ -1,7 +1,11 @@
 erDiagram
 WebPage {
     stringList breadcrumb  
+    DateList lastReviewed  
+    URLList relatedLink  
     stringList reviewedBy  
+    URLList significantLink  
+    URLList significantLinks  
     stringList speakable  
     stringList acquireLicensePage  
     stringList contributor  
@@ -16,25 +20,46 @@ WebPage {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -46,29 +71,34 @@ WebPage {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-WebPage ||--}o Date : "lastReviewed"
 WebPage ||--}o WebPageElement : "mainContentOfPage"
 WebPage ||--}o ImageObject : "primaryImageOfPage"
-WebPage ||--}o URL : "relatedLink"
-WebPage ||--}o URL : "significantLink"
-WebPage ||--}o URL : "significantLinks"
 WebPage ||--}o Specialty : "specialty"
 WebPage ||--}o Thing : "about"
 WebPage ||--}o Place : "contentLocation"
@@ -77,43 +107,22 @@ WebPage ||--}o Claim : "interpretedAsClaim"
 WebPage ||--}o Thing : "mainEntity"
 WebPage ||--}o Place : "spatialCoverage"
 WebPage ||--}o CreativeWork : "workExample"
-WebPage ||--}o Text : "abstract"
-WebPage ||--}o Text : "accessMode"
 WebPage ||--}o ItemList : "accessModeSufficient"
-WebPage ||--}o Text : "accessibilityAPI"
-WebPage ||--}o Text : "accessibilityControl"
-WebPage ||--}o Text : "accessibilityFeature"
-WebPage ||--}o Text : "accessibilityHazard"
-WebPage ||--}o Text : "accessibilitySummary"
 WebPage ||--}o Person : "accountablePerson"
 WebPage ||--}o AggregateRating : "aggregateRating"
-WebPage ||--}o Text : "alternativeHeadline"
 WebPage ||--}o MediaObject : "associatedMedia"
 WebPage ||--}o Audience : "audience"
-WebPage ||--}o Text : "award"
-WebPage ||--}o Text : "awards"
 WebPage ||--}o Person : "character"
 WebPage ||--}o Comment : "comment"
-WebPage ||--}o Integer : "commentCount"
-WebPage ||--}o Text : "conditionsOfAccess"
-WebPage ||--}o DateTime : "contentReferenceTime"
-WebPage ||--}o Text : "copyrightNotice"
-WebPage ||--}o Number : "copyrightYear"
 WebPage ||--}o Country : "countryOfOrigin"
-WebPage ||--}o Text : "creditText"
 WebPage ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-WebPage ||--}o URL : "discussionUrl"
 WebPage ||--}o Person : "editor"
 WebPage ||--}o AlignmentObject : "educationalAlignment"
 WebPage ||--}o MediaObject : "encoding"
 WebPage ||--}o MediaObject : "encodings"
 WebPage ||--}o CreativeWork : "exampleOfWork"
 WebPage ||--}o Grant : "funding"
-WebPage ||--}o Text : "headline"
 WebPage ||--}o InteractionCounter : "interactionStatistic"
-WebPage ||--}o Text : "interactivityType"
-WebPage ||--}o Boolean : "isAccessibleForFree"
-WebPage ||--}o Boolean : "isFamilyFriendly"
 WebPage ||--}o Place : "locationCreated"
 WebPage ||--}o Thing : "mentions"
 WebPage ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ WebPage ||--}o Event : "recordedAt"
 WebPage ||--}o PublicationEvent : "releasedEvent"
 WebPage ||--}o Review : "review"
 WebPage ||--}o Review : "reviews"
-WebPage ||--}o Date : "sdDatePublished"
 WebPage ||--}o Organization : "sourceOrganization"
 WebPage ||--}o Place : "spatial"
-WebPage ||--}o Text : "text"
 WebPage ||--}o ImageObject : "thumbnail"
-WebPage ||--}o URL : "thumbnailUrl"
 WebPage ||--}o Duration : "timeRequired"
 WebPage ||--}o CreativeWork : "translationOfWork"
-WebPage ||--}o Text : "typicalAgeRange"
 WebPage ||--}o CreativeWork : "workTranslation"
-WebPage ||--}o Text : "alternateName"
-WebPage ||--}o Text : "disambiguatingDescription"
-WebPage ||--}o Text : "name"
-WebPage ||--}o URL : "sameAs"
 WebPage ||--}o Action : "potentialAction"
-WebPage ||--}o URL : "url"
 

@@ -1,21 +1,21 @@
 erDiagram
 Brand {
     stringList logo  
+    TextList slogan  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Brand ||--}o AggregateRating : "aggregateRating"
 Brand ||--}o Review : "review"
-Brand ||--}o Text : "slogan"
-Brand ||--}o Text : "alternateName"
-Brand ||--}o Text : "disambiguatingDescription"
-Brand ||--}o Text : "name"
-Brand ||--}o URL : "sameAs"
 Brand ||--}o Action : "potentialAction"
-Brand ||--}o URL : "url"
 

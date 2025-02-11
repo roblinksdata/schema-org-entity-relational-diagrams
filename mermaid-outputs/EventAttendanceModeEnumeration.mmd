@@ -2,17 +2,17 @@ erDiagram
 EventAttendanceModeEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-EventAttendanceModeEnumeration ||--}o Text : "alternateName"
-EventAttendanceModeEnumeration ||--}o Text : "disambiguatingDescription"
-EventAttendanceModeEnumeration ||--}o Text : "name"
-EventAttendanceModeEnumeration ||--}o URL : "sameAs"
 EventAttendanceModeEnumeration ||--}o Action : "potentialAction"
-EventAttendanceModeEnumeration ||--}o URL : "url"
 

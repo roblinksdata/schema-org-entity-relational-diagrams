@@ -11,19 +11,31 @@ BusinessEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BusinessEvent ||--}o Thing : "about"
@@ -37,22 +49,10 @@ BusinessEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 BusinessEvent ||--}o Schedule : "eventSchedule"
 BusinessEvent ||--}o EventStatusType : "eventStatus"
 BusinessEvent ||--}o Grant : "funding"
-BusinessEvent ||--}o Boolean : "isAccessibleForFree"
-BusinessEvent ||--}o Integer : "maximumAttendeeCapacity"
-BusinessEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-BusinessEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-BusinessEvent ||--}o Date : "previousStartDate"
 BusinessEvent ||--}o CreativeWork : "recordedIn"
-BusinessEvent ||--}o Integer : "remainingAttendeeCapacity"
 BusinessEvent ||--}o Review : "review"
 BusinessEvent ||--}o Event : "subEvent"
 BusinessEvent ||--}o Event : "subEvents"
 BusinessEvent ||--}o Event : "superEvent"
-BusinessEvent ||--}o Text : "typicalAgeRange"
-BusinessEvent ||--}o Text : "alternateName"
-BusinessEvent ||--}o Text : "disambiguatingDescription"
-BusinessEvent ||--}o Text : "name"
-BusinessEvent ||--}o URL : "sameAs"
 BusinessEvent ||--}o Action : "potentialAction"
-BusinessEvent ||--}o URL : "url"
 

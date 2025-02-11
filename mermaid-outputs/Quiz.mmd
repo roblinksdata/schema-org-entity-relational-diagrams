@@ -19,22 +19,43 @@ Quiz {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList license  
     stringList maintainer  
@@ -45,20 +66,29 @@ Quiz {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Quiz ||--}o AlignmentObject : "educationalAlignment"
@@ -69,42 +99,21 @@ Quiz ||--}o Claim : "interpretedAsClaim"
 Quiz ||--}o Thing : "mainEntity"
 Quiz ||--}o Place : "spatialCoverage"
 Quiz ||--}o CreativeWork : "workExample"
-Quiz ||--}o Text : "abstract"
-Quiz ||--}o Text : "accessMode"
 Quiz ||--}o ItemList : "accessModeSufficient"
-Quiz ||--}o Text : "accessibilityAPI"
-Quiz ||--}o Text : "accessibilityControl"
-Quiz ||--}o Text : "accessibilityFeature"
-Quiz ||--}o Text : "accessibilityHazard"
-Quiz ||--}o Text : "accessibilitySummary"
 Quiz ||--}o Person : "accountablePerson"
 Quiz ||--}o AggregateRating : "aggregateRating"
-Quiz ||--}o Text : "alternativeHeadline"
 Quiz ||--}o MediaObject : "associatedMedia"
 Quiz ||--}o Audience : "audience"
-Quiz ||--}o Text : "award"
-Quiz ||--}o Text : "awards"
 Quiz ||--}o Person : "character"
 Quiz ||--}o Comment : "comment"
-Quiz ||--}o Integer : "commentCount"
-Quiz ||--}o Text : "conditionsOfAccess"
-Quiz ||--}o DateTime : "contentReferenceTime"
-Quiz ||--}o Text : "copyrightNotice"
-Quiz ||--}o Number : "copyrightYear"
 Quiz ||--}o Country : "countryOfOrigin"
-Quiz ||--}o Text : "creditText"
 Quiz ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Quiz ||--}o URL : "discussionUrl"
 Quiz ||--}o Person : "editor"
 Quiz ||--}o MediaObject : "encoding"
 Quiz ||--}o MediaObject : "encodings"
 Quiz ||--}o CreativeWork : "exampleOfWork"
 Quiz ||--}o Grant : "funding"
-Quiz ||--}o Text : "headline"
 Quiz ||--}o InteractionCounter : "interactionStatistic"
-Quiz ||--}o Text : "interactivityType"
-Quiz ||--}o Boolean : "isAccessibleForFree"
-Quiz ||--}o Boolean : "isFamilyFriendly"
 Quiz ||--}o Place : "locationCreated"
 Quiz ||--}o Thing : "mentions"
 Quiz ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ Quiz ||--}o Event : "recordedAt"
 Quiz ||--}o PublicationEvent : "releasedEvent"
 Quiz ||--}o Review : "review"
 Quiz ||--}o Review : "reviews"
-Quiz ||--}o Date : "sdDatePublished"
 Quiz ||--}o Organization : "sourceOrganization"
 Quiz ||--}o Place : "spatial"
-Quiz ||--}o Text : "text"
 Quiz ||--}o ImageObject : "thumbnail"
-Quiz ||--}o URL : "thumbnailUrl"
 Quiz ||--}o Duration : "timeRequired"
 Quiz ||--}o CreativeWork : "translationOfWork"
-Quiz ||--}o Text : "typicalAgeRange"
 Quiz ||--}o CreativeWork : "workTranslation"
-Quiz ||--}o Text : "alternateName"
-Quiz ||--}o Text : "disambiguatingDescription"
-Quiz ||--}o Text : "name"
-Quiz ||--}o URL : "sameAs"
 Quiz ||--}o Action : "potentialAction"
-Quiz ||--}o URL : "url"
 

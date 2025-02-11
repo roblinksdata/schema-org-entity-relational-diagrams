@@ -2,17 +2,17 @@ erDiagram
 MedicineSystem {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicineSystem ||--}o Text : "alternateName"
-MedicineSystem ||--}o Text : "disambiguatingDescription"
-MedicineSystem ||--}o Text : "name"
-MedicineSystem ||--}o URL : "sameAs"
 MedicineSystem ||--}o Action : "potentialAction"
-MedicineSystem ||--}o URL : "url"
 

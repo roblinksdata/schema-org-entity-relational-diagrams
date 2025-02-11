@@ -11,19 +11,31 @@ ComedyEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ComedyEvent ||--}o Thing : "about"
@@ -37,22 +49,10 @@ ComedyEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 ComedyEvent ||--}o Schedule : "eventSchedule"
 ComedyEvent ||--}o EventStatusType : "eventStatus"
 ComedyEvent ||--}o Grant : "funding"
-ComedyEvent ||--}o Boolean : "isAccessibleForFree"
-ComedyEvent ||--}o Integer : "maximumAttendeeCapacity"
-ComedyEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-ComedyEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-ComedyEvent ||--}o Date : "previousStartDate"
 ComedyEvent ||--}o CreativeWork : "recordedIn"
-ComedyEvent ||--}o Integer : "remainingAttendeeCapacity"
 ComedyEvent ||--}o Review : "review"
 ComedyEvent ||--}o Event : "subEvent"
 ComedyEvent ||--}o Event : "subEvents"
 ComedyEvent ||--}o Event : "superEvent"
-ComedyEvent ||--}o Text : "typicalAgeRange"
-ComedyEvent ||--}o Text : "alternateName"
-ComedyEvent ||--}o Text : "disambiguatingDescription"
-ComedyEvent ||--}o Text : "name"
-ComedyEvent ||--}o URL : "sameAs"
 ComedyEvent ||--}o Action : "potentialAction"
-ComedyEvent ||--}o URL : "url"
 

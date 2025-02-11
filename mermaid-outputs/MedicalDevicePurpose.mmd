@@ -2,17 +2,17 @@ erDiagram
 MedicalDevicePurpose {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicalDevicePurpose ||--}o Text : "alternateName"
-MedicalDevicePurpose ||--}o Text : "disambiguatingDescription"
-MedicalDevicePurpose ||--}o Text : "name"
-MedicalDevicePurpose ||--}o URL : "sameAs"
 MedicalDevicePurpose ||--}o Action : "potentialAction"
-MedicalDevicePurpose ||--}o URL : "url"
 

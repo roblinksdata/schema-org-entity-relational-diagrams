@@ -2,24 +2,24 @@ erDiagram
 GeoShape {
     stringList address  
     stringList addressCountry  
+    TextList box  
+    TextList circle  
     stringList elevation  
+    TextList line  
+    TextList polygon  
+    TextList postalCode  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-GeoShape ||--}o Text : "box"
-GeoShape ||--}o Text : "circle"
-GeoShape ||--}o Text : "line"
-GeoShape ||--}o Text : "polygon"
-GeoShape ||--}o Text : "postalCode"
-GeoShape ||--}o Text : "alternateName"
-GeoShape ||--}o Text : "disambiguatingDescription"
-GeoShape ||--}o Text : "name"
-GeoShape ||--}o URL : "sameAs"
 GeoShape ||--}o Action : "potentialAction"
-GeoShape ||--}o URL : "url"
 

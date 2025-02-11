@@ -2,19 +2,19 @@ erDiagram
 BroadcastFrequencySpecification {
     stringList broadcastFrequencyValue  
     stringList broadcastSignalModulation  
+    TextList broadcastSubChannel  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BroadcastFrequencySpecification ||--}o Text : "broadcastSubChannel"
-BroadcastFrequencySpecification ||--}o Text : "alternateName"
-BroadcastFrequencySpecification ||--}o Text : "disambiguatingDescription"
-BroadcastFrequencySpecification ||--}o Text : "name"
-BroadcastFrequencySpecification ||--}o URL : "sameAs"
 BroadcastFrequencySpecification ||--}o Action : "potentialAction"
-BroadcastFrequencySpecification ||--}o URL : "url"
 

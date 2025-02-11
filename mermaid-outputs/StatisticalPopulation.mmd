@@ -1,18 +1,18 @@
 erDiagram
 StatisticalPopulation {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 StatisticalPopulation ||--}o Class : "populationType"
-StatisticalPopulation ||--}o Text : "alternateName"
-StatisticalPopulation ||--}o Text : "disambiguatingDescription"
-StatisticalPopulation ||--}o Text : "name"
-StatisticalPopulation ||--}o URL : "sameAs"
 StatisticalPopulation ||--}o Action : "potentialAction"
-StatisticalPopulation ||--}o URL : "url"
 

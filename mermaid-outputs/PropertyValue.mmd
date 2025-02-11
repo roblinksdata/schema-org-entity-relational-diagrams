@@ -2,25 +2,25 @@ erDiagram
 PropertyValue {
     stringList measurementMethod  
     stringList measurementTechnique  
+    NumberList maxValue  
+    NumberList minValue  
     stringList propertyID  
     stringList unitCode  
+    TextList unitText  
     stringList value  
     stringList valueReference  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PropertyValue ||--}o Number : "maxValue"
-PropertyValue ||--}o Number : "minValue"
-PropertyValue ||--}o Text : "unitText"
-PropertyValue ||--}o Text : "alternateName"
-PropertyValue ||--}o Text : "disambiguatingDescription"
-PropertyValue ||--}o Text : "name"
-PropertyValue ||--}o URL : "sameAs"
 PropertyValue ||--}o Action : "potentialAction"
-PropertyValue ||--}o URL : "url"
 

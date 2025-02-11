@@ -1,23 +1,23 @@
 erDiagram
 MonetaryAmount {
+    TextList currency  
+    NumberList maxValue  
+    NumberList minValue  
     stringList validFrom  
     stringList validThrough  
     stringList value  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MonetaryAmount ||--}o Text : "currency"
-MonetaryAmount ||--}o Number : "maxValue"
-MonetaryAmount ||--}o Number : "minValue"
-MonetaryAmount ||--}o Text : "alternateName"
-MonetaryAmount ||--}o Text : "disambiguatingDescription"
-MonetaryAmount ||--}o Text : "name"
-MonetaryAmount ||--}o URL : "sameAs"
 MonetaryAmount ||--}o Action : "potentialAction"
-MonetaryAmount ||--}o URL : "url"
 

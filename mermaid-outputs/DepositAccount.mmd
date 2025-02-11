@@ -8,21 +8,29 @@ DepositAccount {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DepositAccount ||--}o MonetaryAmount : "accountMinimumInflow"
@@ -30,20 +38,12 @@ DepositAccount ||--}o MonetaryAmount : "accountOverdraftLimit"
 DepositAccount ||--}o AggregateRating : "aggregateRating"
 DepositAccount ||--}o Audience : "audience"
 DepositAccount ||--}o ServiceChannel : "availableChannel"
-DepositAccount ||--}o Text : "award"
 DepositAccount ||--}o Certification : "hasCertification"
 DepositAccount ||--}o OfferCatalog : "hasOfferCatalog"
 DepositAccount ||--}o OpeningHoursSpecification : "hoursAvailable"
 DepositAccount ||--}o Thing : "produces"
-DepositAccount ||--}o Text : "providerMobility"
 DepositAccount ||--}o Review : "review"
 DepositAccount ||--}o Audience : "serviceAudience"
 DepositAccount ||--}o Thing : "serviceOutput"
-DepositAccount ||--}o Text : "slogan"
-DepositAccount ||--}o Text : "alternateName"
-DepositAccount ||--}o Text : "disambiguatingDescription"
-DepositAccount ||--}o Text : "name"
-DepositAccount ||--}o URL : "sameAs"
 DepositAccount ||--}o Action : "potentialAction"
-DepositAccount ||--}o URL : "url"
 

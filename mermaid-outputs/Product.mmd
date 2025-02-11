@@ -4,46 +4,59 @@ Product {
     stringList category  
     stringList colorSwatch  
     stringList gtin  
+    TextList gtin12  
+    TextList gtin13  
+    TextList gtin14  
+    TextList gtin8  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList material  
+    TextList nsn  
+    TextList productID  
+    TextList sku  
+    TextList award  
+    TextList awards  
     stringList brand  
+    TextList color  
+    TextList countryOfAssembly  
+    TextList countryOfLastProcessing  
     stringList depth  
     stringList height  
+    TextList inProductGroupWithID  
+    BooleanList isFamilyFriendly  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList isVariantOf  
     stringList keywords  
+    TextList mobileUrl  
     stringList model  
+    TextList mpn  
     stringList negativeNotes  
     stringList offers  
     stringList pattern  
     stringList positiveNotes  
+    DateList productionDate  
+    DateList purchaseDate  
+    DateList releaseDate  
     stringList size  
+    TextList slogan  
     stringList width  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Product ||--}o Text : "gtin12"
-Product ||--}o Text : "gtin13"
-Product ||--}o Text : "gtin14"
-Product ||--}o Text : "gtin8"
-Product ||--}o URL : "hasGS1DigitalLink"
-Product ||--}o Text : "nsn"
-Product ||--}o Text : "productID"
-Product ||--}o Text : "sku"
 Product ||--}o PropertyValue : "additionalProperty"
 Product ||--}o AggregateRating : "aggregateRating"
 Product ||--}o Audience : "audience"
-Product ||--}o Text : "award"
-Product ||--}o Text : "awards"
-Product ||--}o Text : "color"
-Product ||--}o Text : "countryOfAssembly"
-Product ||--}o Text : "countryOfLastProcessing"
 Product ||--}o Country : "countryOfOrigin"
 Product ||--}o Grant : "funding"
 Product ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
@@ -51,25 +64,12 @@ Product ||--}o Certification : "hasCertification"
 Product ||--}o EnergyConsumptionDetails : "hasEnergyConsumptionDetails"
 Product ||--}o QuantitativeValue : "hasMeasurement"
 Product ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
-Product ||--}o Text : "inProductGroupWithID"
 Product ||--}o Product : "isAccessoryOrSparePartFor"
 Product ||--}o Product : "isConsumableFor"
-Product ||--}o Boolean : "isFamilyFriendly"
 Product ||--}o OfferItemCondition : "itemCondition"
 Product ||--}o Organization : "manufacturer"
-Product ||--}o Text : "mobileUrl"
-Product ||--}o Text : "mpn"
-Product ||--}o Date : "productionDate"
-Product ||--}o Date : "purchaseDate"
-Product ||--}o Date : "releaseDate"
 Product ||--}o Review : "review"
 Product ||--}o Review : "reviews"
-Product ||--}o Text : "slogan"
 Product ||--}o QuantitativeValue : "weight"
-Product ||--}o Text : "alternateName"
-Product ||--}o Text : "disambiguatingDescription"
-Product ||--}o Text : "name"
-Product ||--}o URL : "sameAs"
 Product ||--}o Action : "potentialAction"
-Product ||--}o URL : "url"
 

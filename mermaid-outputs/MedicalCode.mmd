@@ -1,25 +1,25 @@
 erDiagram
 MedicalCode {
+    TextList codeValue  
+    TextList codingSystem  
     stringList inCodeSet  
     stringList inDefinedTermSet  
+    TextList termCode  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
     stringList legalStatus  
 }
 
-MedicalCode ||--}o Text : "codeValue"
-MedicalCode ||--}o Text : "codingSystem"
-MedicalCode ||--}o Text : "termCode"
-MedicalCode ||--}o Text : "alternateName"
-MedicalCode ||--}o Text : "disambiguatingDescription"
-MedicalCode ||--}o Text : "name"
-MedicalCode ||--}o URL : "sameAs"
 MedicalCode ||--}o Action : "potentialAction"
-MedicalCode ||--}o URL : "url"
 MedicalCode ||--}o MedicalCode : "code"
 MedicalCode ||--}o Grant : "funding"
 MedicalCode ||--}o MedicalGuideline : "guideline"

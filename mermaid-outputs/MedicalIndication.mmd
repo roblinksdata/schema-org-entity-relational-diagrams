@@ -2,11 +2,16 @@ erDiagram
 MedicalIndication {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalIndication ||--}o MedicalCode : "code"
@@ -16,10 +21,5 @@ MedicalIndication ||--}o MedicineSystem : "medicineSystem"
 MedicalIndication ||--}o Organization : "recognizingAuthority"
 MedicalIndication ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalIndication ||--}o MedicalStudy : "study"
-MedicalIndication ||--}o Text : "alternateName"
-MedicalIndication ||--}o Text : "disambiguatingDescription"
-MedicalIndication ||--}o Text : "name"
-MedicalIndication ||--}o URL : "sameAs"
 MedicalIndication ||--}o Action : "potentialAction"
-MedicalIndication ||--}o URL : "url"
 

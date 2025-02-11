@@ -2,11 +2,16 @@ erDiagram
 MedicalCause {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalCause ||--}o MedicalEntity : "causeOf"
@@ -17,10 +22,5 @@ MedicalCause ||--}o MedicineSystem : "medicineSystem"
 MedicalCause ||--}o Organization : "recognizingAuthority"
 MedicalCause ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalCause ||--}o MedicalStudy : "study"
-MedicalCause ||--}o Text : "alternateName"
-MedicalCause ||--}o Text : "disambiguatingDescription"
-MedicalCause ||--}o Text : "name"
-MedicalCause ||--}o URL : "sameAs"
 MedicalCause ||--}o Action : "potentialAction"
-MedicalCause ||--}o URL : "url"
 

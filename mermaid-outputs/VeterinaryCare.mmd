@@ -1,64 +1,76 @@
 erDiagram
 VeterinaryCare {
+    TextList healthPlanNetworkId  
+    BooleanList isAcceptingNewPatients  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-VeterinaryCare ||--}o Text : "healthPlanNetworkId"
-VeterinaryCare ||--}o Boolean : "isAcceptingNewPatients"
 VeterinaryCare ||--}o MedicalSpecialty : "medicalSpecialty"
-VeterinaryCare ||--}o Text : "duns"
-VeterinaryCare ||--}o Text : "globalLocationNumber"
-VeterinaryCare ||--}o URL : "hasGS1DigitalLink"
-VeterinaryCare ||--}o Text : "leiCode"
-VeterinaryCare ||--}o Text : "taxID"
 VeterinaryCare ||--}o InteractionCounter : "agentInteractionStatistic"
 VeterinaryCare ||--}o AggregateRating : "aggregateRating"
 VeterinaryCare ||--}o Person : "alumni"
-VeterinaryCare ||--}o Text : "award"
-VeterinaryCare ||--}o Text : "awards"
 VeterinaryCare ||--}o ContactPoint : "contactPoint"
 VeterinaryCare ||--}o ContactPoint : "contactPoints"
 VeterinaryCare ||--}o Organization : "department"
-VeterinaryCare ||--}o Date : "dissolutionDate"
-VeterinaryCare ||--}o Text : "email"
 VeterinaryCare ||--}o Person : "employee"
 VeterinaryCare ||--}o Person : "employees"
 VeterinaryCare ||--}o Event : "event"
 VeterinaryCare ||--}o Event : "events"
-VeterinaryCare ||--}o Text : "faxNumber"
 VeterinaryCare ||--}o Person : "founders"
-VeterinaryCare ||--}o Date : "foundingDate"
 VeterinaryCare ||--}o Place : "foundingLocation"
 VeterinaryCare ||--}o Grant : "funding"
 VeterinaryCare ||--}o Certification : "hasCertification"
@@ -68,25 +80,13 @@ VeterinaryCare ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 VeterinaryCare ||--}o OfferCatalog : "hasOfferCatalog"
 VeterinaryCare ||--}o Place : "hasPOS"
 VeterinaryCare ||--}o InteractionCounter : "interactionStatistic"
-VeterinaryCare ||--}o Text : "isicV4"
-VeterinaryCare ||--}o Text : "iso6523Code"
-VeterinaryCare ||--}o Text : "legalName"
 VeterinaryCare ||--}o Offer : "makesOffer"
-VeterinaryCare ||--}o Text : "naics"
 VeterinaryCare ||--}o NonprofitType : "nonprofitStatus"
 VeterinaryCare ||--}o QuantitativeValue : "numberOfEmployees"
 VeterinaryCare ||--}o Organization : "parentOrganization"
 VeterinaryCare ||--}o Review : "review"
 VeterinaryCare ||--}o Review : "reviews"
 VeterinaryCare ||--}o Demand : "seeks"
-VeterinaryCare ||--}o Text : "slogan"
 VeterinaryCare ||--}o Organization : "subOrganization"
-VeterinaryCare ||--}o Text : "telephone"
-VeterinaryCare ||--}o Text : "vatID"
-VeterinaryCare ||--}o Text : "alternateName"
-VeterinaryCare ||--}o Text : "disambiguatingDescription"
-VeterinaryCare ||--}o Text : "name"
-VeterinaryCare ||--}o URL : "sameAs"
 VeterinaryCare ||--}o Action : "potentialAction"
-VeterinaryCare ||--}o URL : "url"
 

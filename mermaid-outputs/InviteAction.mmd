@@ -10,11 +10,16 @@ InviteAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 InviteAction ||--}o Event : "event"
@@ -26,10 +31,5 @@ InviteAction ||--}o Thing : "result"
 InviteAction ||--}o HowTo : "actionProcess"
 InviteAction ||--}o ActionStatusType : "actionStatus"
 InviteAction ||--}o Thing : "error"
-InviteAction ||--}o Text : "alternateName"
-InviteAction ||--}o Text : "disambiguatingDescription"
-InviteAction ||--}o Text : "name"
-InviteAction ||--}o URL : "sameAs"
 InviteAction ||--}o Action : "potentialAction"
-InviteAction ||--}o URL : "url"
 

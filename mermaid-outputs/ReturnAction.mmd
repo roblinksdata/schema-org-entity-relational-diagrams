@@ -9,11 +9,16 @@ ReturnAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ReturnAction ||--}o Place : "fromLocation"
@@ -24,10 +29,5 @@ ReturnAction ||--}o Thing : "result"
 ReturnAction ||--}o HowTo : "actionProcess"
 ReturnAction ||--}o ActionStatusType : "actionStatus"
 ReturnAction ||--}o Thing : "error"
-ReturnAction ||--}o Text : "alternateName"
-ReturnAction ||--}o Text : "disambiguatingDescription"
-ReturnAction ||--}o Text : "name"
-ReturnAction ||--}o URL : "sameAs"
 ReturnAction ||--}o Action : "potentialAction"
-ReturnAction ||--}o URL : "url"
 

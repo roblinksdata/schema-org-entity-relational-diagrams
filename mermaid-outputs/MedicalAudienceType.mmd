@@ -2,17 +2,17 @@ erDiagram
 MedicalAudienceType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicalAudienceType ||--}o Text : "alternateName"
-MedicalAudienceType ||--}o Text : "disambiguatingDescription"
-MedicalAudienceType ||--}o Text : "name"
-MedicalAudienceType ||--}o URL : "sameAs"
 MedicalAudienceType ||--}o Action : "potentialAction"
-MedicalAudienceType ||--}o URL : "url"
 

@@ -2,17 +2,17 @@ erDiagram
 MedicalImagingTechnique {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicalImagingTechnique ||--}o Text : "alternateName"
-MedicalImagingTechnique ||--}o Text : "disambiguatingDescription"
-MedicalImagingTechnique ||--}o Text : "name"
-MedicalImagingTechnique ||--}o URL : "sameAs"
 MedicalImagingTechnique ||--}o Action : "potentialAction"
-MedicalImagingTechnique ||--}o URL : "url"
 

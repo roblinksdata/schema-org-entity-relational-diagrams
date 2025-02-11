@@ -8,11 +8,16 @@ PhotographAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 PhotographAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ PhotographAction ||--}o Thing : "result"
 PhotographAction ||--}o HowTo : "actionProcess"
 PhotographAction ||--}o ActionStatusType : "actionStatus"
 PhotographAction ||--}o Thing : "error"
-PhotographAction ||--}o Text : "alternateName"
-PhotographAction ||--}o Text : "disambiguatingDescription"
-PhotographAction ||--}o Text : "name"
-PhotographAction ||--}o URL : "sameAs"
 PhotographAction ||--}o Action : "potentialAction"
-PhotographAction ||--}o URL : "url"
 

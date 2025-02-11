@@ -2,19 +2,19 @@ erDiagram
 BreadcrumbList {
     stringList itemListElement  
     stringList itemListOrder  
+    IntegerList numberOfItems  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BreadcrumbList ||--}o Integer : "numberOfItems"
-BreadcrumbList ||--}o Text : "alternateName"
-BreadcrumbList ||--}o Text : "disambiguatingDescription"
-BreadcrumbList ||--}o Text : "name"
-BreadcrumbList ||--}o URL : "sameAs"
 BreadcrumbList ||--}o Action : "potentialAction"
-BreadcrumbList ||--}o URL : "url"
 

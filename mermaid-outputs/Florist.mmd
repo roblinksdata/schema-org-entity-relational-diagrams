@@ -1,8 +1,16 @@
 erDiagram
 Florist {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ Florist {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Florist ||--}o Organization : "branchOf"
-Florist ||--}o Text : "currenciesAccepted"
-Florist ||--}o Text : "openingHours"
-Florist ||--}o Text : "paymentAccepted"
-Florist ||--}o Text : "priceRange"
-Florist ||--}o Text : "globalLocationNumber"
-Florist ||--}o URL : "hasGS1DigitalLink"
 Florist ||--}o PropertyValue : "additionalProperty"
 Florist ||--}o AggregateRating : "aggregateRating"
 Florist ||--}o LocationFeatureSpecification : "amenityFeature"
-Florist ||--}o Text : "branchCode"
 Florist ||--}o Place : "containedIn"
 Florist ||--}o Place : "containedInPlace"
 Florist ||--}o Place : "containsPlace"
 Florist ||--}o Event : "event"
 Florist ||--}o Event : "events"
-Florist ||--}o Text : "faxNumber"
 Florist ||--}o Certification : "hasCertification"
-Florist ||--}o Boolean : "hasDriveThroughService"
-Florist ||--}o Boolean : "isAccessibleForFree"
-Florist ||--}o Text : "isicV4"
-Florist ||--}o URL : "map"
-Florist ||--}o URL : "maps"
-Florist ||--}o Integer : "maximumAttendeeCapacity"
 Florist ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Florist ||--}o Boolean : "publicAccess"
 Florist ||--}o Review : "review"
 Florist ||--}o Review : "reviews"
-Florist ||--}o Text : "slogan"
-Florist ||--}o Boolean : "smokingAllowed"
 Florist ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Florist ||--}o Text : "telephone"
-Florist ||--}o URL : "tourBookingPage"
-Florist ||--}o Text : "duns"
-Florist ||--}o Text : "leiCode"
-Florist ||--}o Text : "taxID"
 Florist ||--}o InteractionCounter : "agentInteractionStatistic"
 Florist ||--}o Person : "alumni"
-Florist ||--}o Text : "award"
-Florist ||--}o Text : "awards"
 Florist ||--}o ContactPoint : "contactPoint"
 Florist ||--}o ContactPoint : "contactPoints"
 Florist ||--}o Organization : "department"
-Florist ||--}o Date : "dissolutionDate"
-Florist ||--}o Text : "email"
 Florist ||--}o Person : "employee"
 Florist ||--}o Person : "employees"
 Florist ||--}o Person : "founders"
-Florist ||--}o Date : "foundingDate"
 Florist ||--}o Place : "foundingLocation"
 Florist ||--}o Grant : "funding"
 Florist ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ Florist ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Florist ||--}o OfferCatalog : "hasOfferCatalog"
 Florist ||--}o Place : "hasPOS"
 Florist ||--}o InteractionCounter : "interactionStatistic"
-Florist ||--}o Text : "iso6523Code"
-Florist ||--}o Text : "legalName"
 Florist ||--}o Offer : "makesOffer"
-Florist ||--}o Text : "naics"
 Florist ||--}o NonprofitType : "nonprofitStatus"
 Florist ||--}o QuantitativeValue : "numberOfEmployees"
 Florist ||--}o Organization : "parentOrganization"
 Florist ||--}o Demand : "seeks"
 Florist ||--}o Organization : "subOrganization"
-Florist ||--}o Text : "vatID"
-Florist ||--}o Text : "alternateName"
-Florist ||--}o Text : "disambiguatingDescription"
-Florist ||--}o Text : "name"
-Florist ||--}o URL : "sameAs"
 Florist ||--}o Action : "potentialAction"
-Florist ||--}o URL : "url"
 

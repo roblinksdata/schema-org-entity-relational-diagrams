@@ -1,23 +1,23 @@
 erDiagram
 ShippingRateSettings {
+    BooleanList doesNotShip  
     stringList freeShippingThreshold  
+    BooleanList isUnlabelledFallback  
+    TextList shippingLabel  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ShippingRateSettings ||--}o Boolean : "doesNotShip"
-ShippingRateSettings ||--}o Boolean : "isUnlabelledFallback"
 ShippingRateSettings ||--}o DefinedRegion : "shippingDestination"
-ShippingRateSettings ||--}o Text : "shippingLabel"
 ShippingRateSettings ||--}o MonetaryAmount : "shippingRate"
-ShippingRateSettings ||--}o Text : "alternateName"
-ShippingRateSettings ||--}o Text : "disambiguatingDescription"
-ShippingRateSettings ||--}o Text : "name"
-ShippingRateSettings ||--}o URL : "sameAs"
 ShippingRateSettings ||--}o Action : "potentialAction"
-ShippingRateSettings ||--}o URL : "url"
 

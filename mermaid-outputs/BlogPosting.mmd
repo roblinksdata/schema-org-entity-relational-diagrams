@@ -1,9 +1,13 @@
 erDiagram
 BlogPosting {
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -17,25 +21,46 @@ BlogPosting {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,28 +72,33 @@ BlogPosting {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BlogPosting ||--}o CreativeWork : "sharedContent"
-BlogPosting ||--}o Text : "articleBody"
-BlogPosting ||--}o Text : "articleSection"
-BlogPosting ||--}o Text : "pagination"
-BlogPosting ||--}o Integer : "wordCount"
 BlogPosting ||--}o Thing : "about"
 BlogPosting ||--}o Place : "contentLocation"
 BlogPosting ||--}o CreativeWork : "hasPart"
@@ -76,43 +106,22 @@ BlogPosting ||--}o Claim : "interpretedAsClaim"
 BlogPosting ||--}o Thing : "mainEntity"
 BlogPosting ||--}o Place : "spatialCoverage"
 BlogPosting ||--}o CreativeWork : "workExample"
-BlogPosting ||--}o Text : "abstract"
-BlogPosting ||--}o Text : "accessMode"
 BlogPosting ||--}o ItemList : "accessModeSufficient"
-BlogPosting ||--}o Text : "accessibilityAPI"
-BlogPosting ||--}o Text : "accessibilityControl"
-BlogPosting ||--}o Text : "accessibilityFeature"
-BlogPosting ||--}o Text : "accessibilityHazard"
-BlogPosting ||--}o Text : "accessibilitySummary"
 BlogPosting ||--}o Person : "accountablePerson"
 BlogPosting ||--}o AggregateRating : "aggregateRating"
-BlogPosting ||--}o Text : "alternativeHeadline"
 BlogPosting ||--}o MediaObject : "associatedMedia"
 BlogPosting ||--}o Audience : "audience"
-BlogPosting ||--}o Text : "award"
-BlogPosting ||--}o Text : "awards"
 BlogPosting ||--}o Person : "character"
 BlogPosting ||--}o Comment : "comment"
-BlogPosting ||--}o Integer : "commentCount"
-BlogPosting ||--}o Text : "conditionsOfAccess"
-BlogPosting ||--}o DateTime : "contentReferenceTime"
-BlogPosting ||--}o Text : "copyrightNotice"
-BlogPosting ||--}o Number : "copyrightYear"
 BlogPosting ||--}o Country : "countryOfOrigin"
-BlogPosting ||--}o Text : "creditText"
 BlogPosting ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-BlogPosting ||--}o URL : "discussionUrl"
 BlogPosting ||--}o Person : "editor"
 BlogPosting ||--}o AlignmentObject : "educationalAlignment"
 BlogPosting ||--}o MediaObject : "encoding"
 BlogPosting ||--}o MediaObject : "encodings"
 BlogPosting ||--}o CreativeWork : "exampleOfWork"
 BlogPosting ||--}o Grant : "funding"
-BlogPosting ||--}o Text : "headline"
 BlogPosting ||--}o InteractionCounter : "interactionStatistic"
-BlogPosting ||--}o Text : "interactivityType"
-BlogPosting ||--}o Boolean : "isAccessibleForFree"
-BlogPosting ||--}o Boolean : "isFamilyFriendly"
 BlogPosting ||--}o Place : "locationCreated"
 BlogPosting ||--}o Thing : "mentions"
 BlogPosting ||--}o PublicationEvent : "publication"
@@ -121,20 +130,11 @@ BlogPosting ||--}o Event : "recordedAt"
 BlogPosting ||--}o PublicationEvent : "releasedEvent"
 BlogPosting ||--}o Review : "review"
 BlogPosting ||--}o Review : "reviews"
-BlogPosting ||--}o Date : "sdDatePublished"
 BlogPosting ||--}o Organization : "sourceOrganization"
 BlogPosting ||--}o Place : "spatial"
-BlogPosting ||--}o Text : "text"
 BlogPosting ||--}o ImageObject : "thumbnail"
-BlogPosting ||--}o URL : "thumbnailUrl"
 BlogPosting ||--}o Duration : "timeRequired"
 BlogPosting ||--}o CreativeWork : "translationOfWork"
-BlogPosting ||--}o Text : "typicalAgeRange"
 BlogPosting ||--}o CreativeWork : "workTranslation"
-BlogPosting ||--}o Text : "alternateName"
-BlogPosting ||--}o Text : "disambiguatingDescription"
-BlogPosting ||--}o Text : "name"
-BlogPosting ||--}o URL : "sameAs"
 BlogPosting ||--}o Action : "potentialAction"
-BlogPosting ||--}o URL : "url"
 

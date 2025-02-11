@@ -4,6 +4,7 @@ TVSeason {
     stringList actor  
     stringList seasonNumber  
     stringList endDate  
+    IntegerList numberOfEpisodes  
     stringList startDate  
     stringList acquireLicensePage  
     stringList contributor  
@@ -18,25 +19,46 @@ TVSeason {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -48,21 +70,30 @@ TVSeason {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TVSeason ||--}o TVSeries : "partOfTVSeries"
@@ -71,7 +102,6 @@ TVSeason ||--}o Episode : "episode"
 TVSeason ||--}o CreativeWorkSeries : "partOfSeries"
 TVSeason ||--}o Person : "director"
 TVSeason ||--}o Episode : "episodes"
-TVSeason ||--}o Integer : "numberOfEpisodes"
 TVSeason ||--}o Organization : "productionCompany"
 TVSeason ||--}o VideoObject : "trailer"
 TVSeason ||--}o Thing : "about"
@@ -81,42 +111,21 @@ TVSeason ||--}o Claim : "interpretedAsClaim"
 TVSeason ||--}o Thing : "mainEntity"
 TVSeason ||--}o Place : "spatialCoverage"
 TVSeason ||--}o CreativeWork : "workExample"
-TVSeason ||--}o Text : "abstract"
-TVSeason ||--}o Text : "accessMode"
 TVSeason ||--}o ItemList : "accessModeSufficient"
-TVSeason ||--}o Text : "accessibilityAPI"
-TVSeason ||--}o Text : "accessibilityControl"
-TVSeason ||--}o Text : "accessibilityFeature"
-TVSeason ||--}o Text : "accessibilityHazard"
-TVSeason ||--}o Text : "accessibilitySummary"
 TVSeason ||--}o Person : "accountablePerson"
 TVSeason ||--}o AggregateRating : "aggregateRating"
-TVSeason ||--}o Text : "alternativeHeadline"
 TVSeason ||--}o MediaObject : "associatedMedia"
 TVSeason ||--}o Audience : "audience"
-TVSeason ||--}o Text : "award"
-TVSeason ||--}o Text : "awards"
 TVSeason ||--}o Person : "character"
 TVSeason ||--}o Comment : "comment"
-TVSeason ||--}o Integer : "commentCount"
-TVSeason ||--}o Text : "conditionsOfAccess"
-TVSeason ||--}o DateTime : "contentReferenceTime"
-TVSeason ||--}o Text : "copyrightNotice"
-TVSeason ||--}o Number : "copyrightYear"
-TVSeason ||--}o Text : "creditText"
 TVSeason ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-TVSeason ||--}o URL : "discussionUrl"
 TVSeason ||--}o Person : "editor"
 TVSeason ||--}o AlignmentObject : "educationalAlignment"
 TVSeason ||--}o MediaObject : "encoding"
 TVSeason ||--}o MediaObject : "encodings"
 TVSeason ||--}o CreativeWork : "exampleOfWork"
 TVSeason ||--}o Grant : "funding"
-TVSeason ||--}o Text : "headline"
 TVSeason ||--}o InteractionCounter : "interactionStatistic"
-TVSeason ||--}o Text : "interactivityType"
-TVSeason ||--}o Boolean : "isAccessibleForFree"
-TVSeason ||--}o Boolean : "isFamilyFriendly"
 TVSeason ||--}o Place : "locationCreated"
 TVSeason ||--}o Thing : "mentions"
 TVSeason ||--}o PublicationEvent : "publication"
@@ -125,20 +134,11 @@ TVSeason ||--}o Event : "recordedAt"
 TVSeason ||--}o PublicationEvent : "releasedEvent"
 TVSeason ||--}o Review : "review"
 TVSeason ||--}o Review : "reviews"
-TVSeason ||--}o Date : "sdDatePublished"
 TVSeason ||--}o Organization : "sourceOrganization"
 TVSeason ||--}o Place : "spatial"
-TVSeason ||--}o Text : "text"
 TVSeason ||--}o ImageObject : "thumbnail"
-TVSeason ||--}o URL : "thumbnailUrl"
 TVSeason ||--}o Duration : "timeRequired"
 TVSeason ||--}o CreativeWork : "translationOfWork"
-TVSeason ||--}o Text : "typicalAgeRange"
 TVSeason ||--}o CreativeWork : "workTranslation"
-TVSeason ||--}o Text : "alternateName"
-TVSeason ||--}o Text : "disambiguatingDescription"
-TVSeason ||--}o Text : "name"
-TVSeason ||--}o URL : "sameAs"
 TVSeason ||--}o Action : "potentialAction"
-TVSeason ||--}o URL : "url"
 

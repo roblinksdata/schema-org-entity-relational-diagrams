@@ -1,19 +1,19 @@
 erDiagram
 BedDetails {
+    NumberList numberOfBeds  
     stringList typeOfBed  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BedDetails ||--}o Number : "numberOfBeds"
-BedDetails ||--}o Text : "alternateName"
-BedDetails ||--}o Text : "disambiguatingDescription"
-BedDetails ||--}o Text : "name"
-BedDetails ||--}o URL : "sameAs"
 BedDetails ||--}o Action : "potentialAction"
-BedDetails ||--}o URL : "url"
 

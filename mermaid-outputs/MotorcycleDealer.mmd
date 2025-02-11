@@ -1,8 +1,16 @@
 erDiagram
 MotorcycleDealer {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ MotorcycleDealer {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MotorcycleDealer ||--}o Organization : "branchOf"
-MotorcycleDealer ||--}o Text : "currenciesAccepted"
-MotorcycleDealer ||--}o Text : "openingHours"
-MotorcycleDealer ||--}o Text : "paymentAccepted"
-MotorcycleDealer ||--}o Text : "priceRange"
-MotorcycleDealer ||--}o Text : "globalLocationNumber"
-MotorcycleDealer ||--}o URL : "hasGS1DigitalLink"
 MotorcycleDealer ||--}o PropertyValue : "additionalProperty"
 MotorcycleDealer ||--}o AggregateRating : "aggregateRating"
 MotorcycleDealer ||--}o LocationFeatureSpecification : "amenityFeature"
-MotorcycleDealer ||--}o Text : "branchCode"
 MotorcycleDealer ||--}o Place : "containedIn"
 MotorcycleDealer ||--}o Place : "containedInPlace"
 MotorcycleDealer ||--}o Place : "containsPlace"
 MotorcycleDealer ||--}o Event : "event"
 MotorcycleDealer ||--}o Event : "events"
-MotorcycleDealer ||--}o Text : "faxNumber"
 MotorcycleDealer ||--}o Certification : "hasCertification"
-MotorcycleDealer ||--}o Boolean : "hasDriveThroughService"
-MotorcycleDealer ||--}o Boolean : "isAccessibleForFree"
-MotorcycleDealer ||--}o Text : "isicV4"
-MotorcycleDealer ||--}o URL : "map"
-MotorcycleDealer ||--}o URL : "maps"
-MotorcycleDealer ||--}o Integer : "maximumAttendeeCapacity"
 MotorcycleDealer ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-MotorcycleDealer ||--}o Boolean : "publicAccess"
 MotorcycleDealer ||--}o Review : "review"
 MotorcycleDealer ||--}o Review : "reviews"
-MotorcycleDealer ||--}o Text : "slogan"
-MotorcycleDealer ||--}o Boolean : "smokingAllowed"
 MotorcycleDealer ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-MotorcycleDealer ||--}o Text : "telephone"
-MotorcycleDealer ||--}o URL : "tourBookingPage"
-MotorcycleDealer ||--}o Text : "duns"
-MotorcycleDealer ||--}o Text : "leiCode"
-MotorcycleDealer ||--}o Text : "taxID"
 MotorcycleDealer ||--}o InteractionCounter : "agentInteractionStatistic"
 MotorcycleDealer ||--}o Person : "alumni"
-MotorcycleDealer ||--}o Text : "award"
-MotorcycleDealer ||--}o Text : "awards"
 MotorcycleDealer ||--}o ContactPoint : "contactPoint"
 MotorcycleDealer ||--}o ContactPoint : "contactPoints"
 MotorcycleDealer ||--}o Organization : "department"
-MotorcycleDealer ||--}o Date : "dissolutionDate"
-MotorcycleDealer ||--}o Text : "email"
 MotorcycleDealer ||--}o Person : "employee"
 MotorcycleDealer ||--}o Person : "employees"
 MotorcycleDealer ||--}o Person : "founders"
-MotorcycleDealer ||--}o Date : "foundingDate"
 MotorcycleDealer ||--}o Place : "foundingLocation"
 MotorcycleDealer ||--}o Grant : "funding"
 MotorcycleDealer ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ MotorcycleDealer ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 MotorcycleDealer ||--}o OfferCatalog : "hasOfferCatalog"
 MotorcycleDealer ||--}o Place : "hasPOS"
 MotorcycleDealer ||--}o InteractionCounter : "interactionStatistic"
-MotorcycleDealer ||--}o Text : "iso6523Code"
-MotorcycleDealer ||--}o Text : "legalName"
 MotorcycleDealer ||--}o Offer : "makesOffer"
-MotorcycleDealer ||--}o Text : "naics"
 MotorcycleDealer ||--}o NonprofitType : "nonprofitStatus"
 MotorcycleDealer ||--}o QuantitativeValue : "numberOfEmployees"
 MotorcycleDealer ||--}o Organization : "parentOrganization"
 MotorcycleDealer ||--}o Demand : "seeks"
 MotorcycleDealer ||--}o Organization : "subOrganization"
-MotorcycleDealer ||--}o Text : "vatID"
-MotorcycleDealer ||--}o Text : "alternateName"
-MotorcycleDealer ||--}o Text : "disambiguatingDescription"
-MotorcycleDealer ||--}o Text : "name"
-MotorcycleDealer ||--}o URL : "sameAs"
 MotorcycleDealer ||--}o Action : "potentialAction"
-MotorcycleDealer ||--}o URL : "url"
 

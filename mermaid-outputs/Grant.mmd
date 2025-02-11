@@ -4,17 +4,17 @@ Grant {
     stringList sponsor  
     stringList fundedItem  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Grant ||--}o Text : "alternateName"
-Grant ||--}o Text : "disambiguatingDescription"
-Grant ||--}o Text : "name"
-Grant ||--}o URL : "sameAs"
 Grant ||--}o Action : "potentialAction"
-Grant ||--}o URL : "url"
 

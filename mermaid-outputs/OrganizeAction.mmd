@@ -8,11 +8,16 @@ OrganizeAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 OrganizeAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ OrganizeAction ||--}o Thing : "result"
 OrganizeAction ||--}o HowTo : "actionProcess"
 OrganizeAction ||--}o ActionStatusType : "actionStatus"
 OrganizeAction ||--}o Thing : "error"
-OrganizeAction ||--}o Text : "alternateName"
-OrganizeAction ||--}o Text : "disambiguatingDescription"
-OrganizeAction ||--}o Text : "name"
-OrganizeAction ||--}o URL : "sameAs"
 OrganizeAction ||--}o Action : "potentialAction"
-OrganizeAction ||--}o URL : "url"
 

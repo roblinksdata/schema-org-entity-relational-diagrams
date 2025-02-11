@@ -3,11 +3,16 @@ ImagingTest {
     stringList normalRange  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ImagingTest ||--}o MedicalImagingTechnique : "imagingTechnique"
@@ -22,10 +27,5 @@ ImagingTest ||--}o MedicineSystem : "medicineSystem"
 ImagingTest ||--}o Organization : "recognizingAuthority"
 ImagingTest ||--}o MedicalSpecialty : "relevantSpecialty"
 ImagingTest ||--}o MedicalStudy : "study"
-ImagingTest ||--}o Text : "alternateName"
-ImagingTest ||--}o Text : "disambiguatingDescription"
-ImagingTest ||--}o Text : "name"
-ImagingTest ||--}o URL : "sameAs"
 ImagingTest ||--}o Action : "potentialAction"
-ImagingTest ||--}o URL : "url"
 

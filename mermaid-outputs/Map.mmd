@@ -13,25 +13,46 @@ Map {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Map {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Map ||--}o MapCategoryType : "mapType"
@@ -68,43 +98,22 @@ Map ||--}o Claim : "interpretedAsClaim"
 Map ||--}o Thing : "mainEntity"
 Map ||--}o Place : "spatialCoverage"
 Map ||--}o CreativeWork : "workExample"
-Map ||--}o Text : "abstract"
-Map ||--}o Text : "accessMode"
 Map ||--}o ItemList : "accessModeSufficient"
-Map ||--}o Text : "accessibilityAPI"
-Map ||--}o Text : "accessibilityControl"
-Map ||--}o Text : "accessibilityFeature"
-Map ||--}o Text : "accessibilityHazard"
-Map ||--}o Text : "accessibilitySummary"
 Map ||--}o Person : "accountablePerson"
 Map ||--}o AggregateRating : "aggregateRating"
-Map ||--}o Text : "alternativeHeadline"
 Map ||--}o MediaObject : "associatedMedia"
 Map ||--}o Audience : "audience"
-Map ||--}o Text : "award"
-Map ||--}o Text : "awards"
 Map ||--}o Person : "character"
 Map ||--}o Comment : "comment"
-Map ||--}o Integer : "commentCount"
-Map ||--}o Text : "conditionsOfAccess"
-Map ||--}o DateTime : "contentReferenceTime"
-Map ||--}o Text : "copyrightNotice"
-Map ||--}o Number : "copyrightYear"
 Map ||--}o Country : "countryOfOrigin"
-Map ||--}o Text : "creditText"
 Map ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Map ||--}o URL : "discussionUrl"
 Map ||--}o Person : "editor"
 Map ||--}o AlignmentObject : "educationalAlignment"
 Map ||--}o MediaObject : "encoding"
 Map ||--}o MediaObject : "encodings"
 Map ||--}o CreativeWork : "exampleOfWork"
 Map ||--}o Grant : "funding"
-Map ||--}o Text : "headline"
 Map ||--}o InteractionCounter : "interactionStatistic"
-Map ||--}o Text : "interactivityType"
-Map ||--}o Boolean : "isAccessibleForFree"
-Map ||--}o Boolean : "isFamilyFriendly"
 Map ||--}o Place : "locationCreated"
 Map ||--}o Thing : "mentions"
 Map ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ Map ||--}o Event : "recordedAt"
 Map ||--}o PublicationEvent : "releasedEvent"
 Map ||--}o Review : "review"
 Map ||--}o Review : "reviews"
-Map ||--}o Date : "sdDatePublished"
 Map ||--}o Organization : "sourceOrganization"
 Map ||--}o Place : "spatial"
-Map ||--}o Text : "text"
 Map ||--}o ImageObject : "thumbnail"
-Map ||--}o URL : "thumbnailUrl"
 Map ||--}o Duration : "timeRequired"
 Map ||--}o CreativeWork : "translationOfWork"
-Map ||--}o Text : "typicalAgeRange"
 Map ||--}o CreativeWork : "workTranslation"
-Map ||--}o Text : "alternateName"
-Map ||--}o Text : "disambiguatingDescription"
-Map ||--}o Text : "name"
-Map ||--}o URL : "sameAs"
 Map ||--}o Action : "potentialAction"
-Map ||--}o URL : "url"
 

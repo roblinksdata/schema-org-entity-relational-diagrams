@@ -1,6 +1,7 @@
 erDiagram
 MusicRecording {
     stringList byArtist  
+    TextList isrcCode  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -14,25 +15,46 @@ MusicRecording {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -44,27 +66,35 @@ MusicRecording {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MusicRecording ||--}o Duration : "duration"
 MusicRecording ||--}o MusicAlbum : "inAlbum"
 MusicRecording ||--}o MusicPlaylist : "inPlaylist"
-MusicRecording ||--}o Text : "isrcCode"
 MusicRecording ||--}o MusicComposition : "recordingOf"
 MusicRecording ||--}o Thing : "about"
 MusicRecording ||--}o Place : "contentLocation"
@@ -73,43 +103,22 @@ MusicRecording ||--}o Claim : "interpretedAsClaim"
 MusicRecording ||--}o Thing : "mainEntity"
 MusicRecording ||--}o Place : "spatialCoverage"
 MusicRecording ||--}o CreativeWork : "workExample"
-MusicRecording ||--}o Text : "abstract"
-MusicRecording ||--}o Text : "accessMode"
 MusicRecording ||--}o ItemList : "accessModeSufficient"
-MusicRecording ||--}o Text : "accessibilityAPI"
-MusicRecording ||--}o Text : "accessibilityControl"
-MusicRecording ||--}o Text : "accessibilityFeature"
-MusicRecording ||--}o Text : "accessibilityHazard"
-MusicRecording ||--}o Text : "accessibilitySummary"
 MusicRecording ||--}o Person : "accountablePerson"
 MusicRecording ||--}o AggregateRating : "aggregateRating"
-MusicRecording ||--}o Text : "alternativeHeadline"
 MusicRecording ||--}o MediaObject : "associatedMedia"
 MusicRecording ||--}o Audience : "audience"
-MusicRecording ||--}o Text : "award"
-MusicRecording ||--}o Text : "awards"
 MusicRecording ||--}o Person : "character"
 MusicRecording ||--}o Comment : "comment"
-MusicRecording ||--}o Integer : "commentCount"
-MusicRecording ||--}o Text : "conditionsOfAccess"
-MusicRecording ||--}o DateTime : "contentReferenceTime"
-MusicRecording ||--}o Text : "copyrightNotice"
-MusicRecording ||--}o Number : "copyrightYear"
 MusicRecording ||--}o Country : "countryOfOrigin"
-MusicRecording ||--}o Text : "creditText"
 MusicRecording ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-MusicRecording ||--}o URL : "discussionUrl"
 MusicRecording ||--}o Person : "editor"
 MusicRecording ||--}o AlignmentObject : "educationalAlignment"
 MusicRecording ||--}o MediaObject : "encoding"
 MusicRecording ||--}o MediaObject : "encodings"
 MusicRecording ||--}o CreativeWork : "exampleOfWork"
 MusicRecording ||--}o Grant : "funding"
-MusicRecording ||--}o Text : "headline"
 MusicRecording ||--}o InteractionCounter : "interactionStatistic"
-MusicRecording ||--}o Text : "interactivityType"
-MusicRecording ||--}o Boolean : "isAccessibleForFree"
-MusicRecording ||--}o Boolean : "isFamilyFriendly"
 MusicRecording ||--}o Place : "locationCreated"
 MusicRecording ||--}o Thing : "mentions"
 MusicRecording ||--}o PublicationEvent : "publication"
@@ -118,20 +127,11 @@ MusicRecording ||--}o Event : "recordedAt"
 MusicRecording ||--}o PublicationEvent : "releasedEvent"
 MusicRecording ||--}o Review : "review"
 MusicRecording ||--}o Review : "reviews"
-MusicRecording ||--}o Date : "sdDatePublished"
 MusicRecording ||--}o Organization : "sourceOrganization"
 MusicRecording ||--}o Place : "spatial"
-MusicRecording ||--}o Text : "text"
 MusicRecording ||--}o ImageObject : "thumbnail"
-MusicRecording ||--}o URL : "thumbnailUrl"
 MusicRecording ||--}o Duration : "timeRequired"
 MusicRecording ||--}o CreativeWork : "translationOfWork"
-MusicRecording ||--}o Text : "typicalAgeRange"
 MusicRecording ||--}o CreativeWork : "workTranslation"
-MusicRecording ||--}o Text : "alternateName"
-MusicRecording ||--}o Text : "disambiguatingDescription"
-MusicRecording ||--}o Text : "name"
-MusicRecording ||--}o URL : "sameAs"
 MusicRecording ||--}o Action : "potentialAction"
-MusicRecording ||--}o URL : "url"
 

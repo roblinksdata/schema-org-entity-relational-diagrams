@@ -11,19 +11,31 @@ ExhibitionEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ExhibitionEvent ||--}o Thing : "about"
@@ -37,22 +49,10 @@ ExhibitionEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 ExhibitionEvent ||--}o Schedule : "eventSchedule"
 ExhibitionEvent ||--}o EventStatusType : "eventStatus"
 ExhibitionEvent ||--}o Grant : "funding"
-ExhibitionEvent ||--}o Boolean : "isAccessibleForFree"
-ExhibitionEvent ||--}o Integer : "maximumAttendeeCapacity"
-ExhibitionEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-ExhibitionEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-ExhibitionEvent ||--}o Date : "previousStartDate"
 ExhibitionEvent ||--}o CreativeWork : "recordedIn"
-ExhibitionEvent ||--}o Integer : "remainingAttendeeCapacity"
 ExhibitionEvent ||--}o Review : "review"
 ExhibitionEvent ||--}o Event : "subEvent"
 ExhibitionEvent ||--}o Event : "subEvents"
 ExhibitionEvent ||--}o Event : "superEvent"
-ExhibitionEvent ||--}o Text : "typicalAgeRange"
-ExhibitionEvent ||--}o Text : "alternateName"
-ExhibitionEvent ||--}o Text : "disambiguatingDescription"
-ExhibitionEvent ||--}o Text : "name"
-ExhibitionEvent ||--}o URL : "sameAs"
 ExhibitionEvent ||--}o Action : "potentialAction"
-ExhibitionEvent ||--}o URL : "url"
 

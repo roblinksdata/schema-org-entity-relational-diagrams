@@ -10,11 +10,16 @@ CheckOutAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CheckOutAction ||--}o Thing : "about"
@@ -25,10 +30,5 @@ CheckOutAction ||--}o Thing : "result"
 CheckOutAction ||--}o HowTo : "actionProcess"
 CheckOutAction ||--}o ActionStatusType : "actionStatus"
 CheckOutAction ||--}o Thing : "error"
-CheckOutAction ||--}o Text : "alternateName"
-CheckOutAction ||--}o Text : "disambiguatingDescription"
-CheckOutAction ||--}o Text : "name"
-CheckOutAction ||--}o URL : "sameAs"
 CheckOutAction ||--}o Action : "potentialAction"
-CheckOutAction ||--}o URL : "url"
 

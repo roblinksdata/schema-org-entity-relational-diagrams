@@ -9,11 +9,16 @@ BorrowAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BorrowAction ||--}o Place : "fromLocation"
@@ -24,10 +29,5 @@ BorrowAction ||--}o Thing : "result"
 BorrowAction ||--}o HowTo : "actionProcess"
 BorrowAction ||--}o ActionStatusType : "actionStatus"
 BorrowAction ||--}o Thing : "error"
-BorrowAction ||--}o Text : "alternateName"
-BorrowAction ||--}o Text : "disambiguatingDescription"
-BorrowAction ||--}o Text : "name"
-BorrowAction ||--}o URL : "sameAs"
 BorrowAction ||--}o Action : "potentialAction"
-BorrowAction ||--}o URL : "url"
 

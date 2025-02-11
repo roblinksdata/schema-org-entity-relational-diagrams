@@ -1,9 +1,19 @@
 erDiagram
 CovidTestingFacility {
     stringList availableService  
+    TextList healthPlanNetworkId  
+    BooleanList isAcceptingNewPatients  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -15,94 +25,93 @@ CovidTestingFacility {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CovidTestingFacility ||--}o MedicalSpecialty : "medicalSpecialty"
-CovidTestingFacility ||--}o Text : "healthPlanNetworkId"
-CovidTestingFacility ||--}o Boolean : "isAcceptingNewPatients"
 CovidTestingFacility ||--}o Organization : "branchOf"
-CovidTestingFacility ||--}o Text : "currenciesAccepted"
-CovidTestingFacility ||--}o Text : "openingHours"
-CovidTestingFacility ||--}o Text : "paymentAccepted"
-CovidTestingFacility ||--}o Text : "priceRange"
-CovidTestingFacility ||--}o Text : "globalLocationNumber"
-CovidTestingFacility ||--}o URL : "hasGS1DigitalLink"
 CovidTestingFacility ||--}o PropertyValue : "additionalProperty"
 CovidTestingFacility ||--}o AggregateRating : "aggregateRating"
 CovidTestingFacility ||--}o LocationFeatureSpecification : "amenityFeature"
-CovidTestingFacility ||--}o Text : "branchCode"
 CovidTestingFacility ||--}o Place : "containedIn"
 CovidTestingFacility ||--}o Place : "containedInPlace"
 CovidTestingFacility ||--}o Place : "containsPlace"
 CovidTestingFacility ||--}o Event : "event"
 CovidTestingFacility ||--}o Event : "events"
-CovidTestingFacility ||--}o Text : "faxNumber"
 CovidTestingFacility ||--}o Certification : "hasCertification"
-CovidTestingFacility ||--}o Boolean : "hasDriveThroughService"
-CovidTestingFacility ||--}o Boolean : "isAccessibleForFree"
-CovidTestingFacility ||--}o Text : "isicV4"
-CovidTestingFacility ||--}o URL : "map"
-CovidTestingFacility ||--}o URL : "maps"
-CovidTestingFacility ||--}o Integer : "maximumAttendeeCapacity"
 CovidTestingFacility ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-CovidTestingFacility ||--}o Boolean : "publicAccess"
 CovidTestingFacility ||--}o Review : "review"
 CovidTestingFacility ||--}o Review : "reviews"
-CovidTestingFacility ||--}o Text : "slogan"
-CovidTestingFacility ||--}o Boolean : "smokingAllowed"
 CovidTestingFacility ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-CovidTestingFacility ||--}o Text : "telephone"
-CovidTestingFacility ||--}o URL : "tourBookingPage"
-CovidTestingFacility ||--}o Text : "duns"
-CovidTestingFacility ||--}o Text : "leiCode"
-CovidTestingFacility ||--}o Text : "taxID"
 CovidTestingFacility ||--}o InteractionCounter : "agentInteractionStatistic"
 CovidTestingFacility ||--}o Person : "alumni"
-CovidTestingFacility ||--}o Text : "award"
-CovidTestingFacility ||--}o Text : "awards"
 CovidTestingFacility ||--}o ContactPoint : "contactPoint"
 CovidTestingFacility ||--}o ContactPoint : "contactPoints"
 CovidTestingFacility ||--}o Organization : "department"
-CovidTestingFacility ||--}o Date : "dissolutionDate"
-CovidTestingFacility ||--}o Text : "email"
 CovidTestingFacility ||--}o Person : "employee"
 CovidTestingFacility ||--}o Person : "employees"
 CovidTestingFacility ||--}o Person : "founders"
-CovidTestingFacility ||--}o Date : "foundingDate"
 CovidTestingFacility ||--}o Place : "foundingLocation"
 CovidTestingFacility ||--}o Grant : "funding"
 CovidTestingFacility ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -111,20 +120,11 @@ CovidTestingFacility ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 CovidTestingFacility ||--}o OfferCatalog : "hasOfferCatalog"
 CovidTestingFacility ||--}o Place : "hasPOS"
 CovidTestingFacility ||--}o InteractionCounter : "interactionStatistic"
-CovidTestingFacility ||--}o Text : "iso6523Code"
-CovidTestingFacility ||--}o Text : "legalName"
 CovidTestingFacility ||--}o Offer : "makesOffer"
-CovidTestingFacility ||--}o Text : "naics"
 CovidTestingFacility ||--}o NonprofitType : "nonprofitStatus"
 CovidTestingFacility ||--}o QuantitativeValue : "numberOfEmployees"
 CovidTestingFacility ||--}o Organization : "parentOrganization"
 CovidTestingFacility ||--}o Demand : "seeks"
 CovidTestingFacility ||--}o Organization : "subOrganization"
-CovidTestingFacility ||--}o Text : "vatID"
-CovidTestingFacility ||--}o Text : "alternateName"
-CovidTestingFacility ||--}o Text : "disambiguatingDescription"
-CovidTestingFacility ||--}o Text : "name"
-CovidTestingFacility ||--}o URL : "sameAs"
 CovidTestingFacility ||--}o Action : "potentialAction"
-CovidTestingFacility ||--}o URL : "url"
 

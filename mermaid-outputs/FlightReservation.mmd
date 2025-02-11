@@ -1,34 +1,34 @@
 erDiagram
 FlightReservation {
+    TextList boardingGroup  
     stringList passengerPriorityStatus  
+    TextList passengerSequenceNumber  
+    TextList securityScreening  
     stringList bookingAgent  
+    DateTimeList bookingTime  
     stringList broker  
+    DateTimeList modifiedTime  
+    TextList priceCurrency  
     stringList provider  
+    TextList reservationId  
     stringList totalPrice  
     stringList underName  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-FlightReservation ||--}o Text : "boardingGroup"
-FlightReservation ||--}o Text : "passengerSequenceNumber"
-FlightReservation ||--}o Text : "securityScreening"
-FlightReservation ||--}o DateTime : "bookingTime"
-FlightReservation ||--}o DateTime : "modifiedTime"
-FlightReservation ||--}o Text : "priceCurrency"
 FlightReservation ||--}o ProgramMembership : "programMembershipUsed"
 FlightReservation ||--}o Thing : "reservationFor"
-FlightReservation ||--}o Text : "reservationId"
 FlightReservation ||--}o ReservationStatusType : "reservationStatus"
 FlightReservation ||--}o Ticket : "reservedTicket"
-FlightReservation ||--}o Text : "alternateName"
-FlightReservation ||--}o Text : "disambiguatingDescription"
-FlightReservation ||--}o Text : "name"
-FlightReservation ||--}o URL : "sameAs"
 FlightReservation ||--}o Action : "potentialAction"
-FlightReservation ||--}o URL : "url"
 

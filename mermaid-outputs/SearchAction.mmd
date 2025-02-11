@@ -1,5 +1,6 @@
 erDiagram
 SearchAction {
+    TextList query  
     stringList location  
     stringList participant  
     stringList agent  
@@ -8,24 +9,23 @@ SearchAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-SearchAction ||--}o Text : "query"
 SearchAction ||--}o Thing : "instrument"
 SearchAction ||--}o Thing : "object"
 SearchAction ||--}o Thing : "result"
 SearchAction ||--}o HowTo : "actionProcess"
 SearchAction ||--}o ActionStatusType : "actionStatus"
 SearchAction ||--}o Thing : "error"
-SearchAction ||--}o Text : "alternateName"
-SearchAction ||--}o Text : "disambiguatingDescription"
-SearchAction ||--}o Text : "name"
-SearchAction ||--}o URL : "sameAs"
 SearchAction ||--}o Action : "potentialAction"
-SearchAction ||--}o URL : "url"
 

@@ -1,21 +1,21 @@
 erDiagram
 DatedMoneySpecification {
     stringList amount  
+    TextList currency  
     stringList endDate  
     stringList startDate  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DatedMoneySpecification ||--}o Text : "currency"
-DatedMoneySpecification ||--}o Text : "alternateName"
-DatedMoneySpecification ||--}o Text : "disambiguatingDescription"
-DatedMoneySpecification ||--}o Text : "name"
-DatedMoneySpecification ||--}o URL : "sameAs"
 DatedMoneySpecification ||--}o Action : "potentialAction"
-DatedMoneySpecification ||--}o URL : "url"
 

@@ -5,9 +5,17 @@ LodgingBusiness {
     stringList checkoutTime  
     stringList numberOfRooms  
     stringList petsAllowed  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,93 +27,94 @@ LodgingBusiness {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LodgingBusiness ||--}o LocationFeatureSpecification : "amenityFeature"
 LodgingBusiness ||--}o Audience : "audience"
 LodgingBusiness ||--}o Rating : "starRating"
 LodgingBusiness ||--}o Organization : "branchOf"
-LodgingBusiness ||--}o Text : "currenciesAccepted"
-LodgingBusiness ||--}o Text : "openingHours"
-LodgingBusiness ||--}o Text : "paymentAccepted"
-LodgingBusiness ||--}o Text : "priceRange"
-LodgingBusiness ||--}o Text : "globalLocationNumber"
-LodgingBusiness ||--}o URL : "hasGS1DigitalLink"
 LodgingBusiness ||--}o PropertyValue : "additionalProperty"
 LodgingBusiness ||--}o AggregateRating : "aggregateRating"
-LodgingBusiness ||--}o Text : "branchCode"
 LodgingBusiness ||--}o Place : "containedIn"
 LodgingBusiness ||--}o Place : "containedInPlace"
 LodgingBusiness ||--}o Place : "containsPlace"
 LodgingBusiness ||--}o Event : "event"
 LodgingBusiness ||--}o Event : "events"
-LodgingBusiness ||--}o Text : "faxNumber"
 LodgingBusiness ||--}o Certification : "hasCertification"
-LodgingBusiness ||--}o Boolean : "hasDriveThroughService"
-LodgingBusiness ||--}o Boolean : "isAccessibleForFree"
-LodgingBusiness ||--}o Text : "isicV4"
-LodgingBusiness ||--}o URL : "map"
-LodgingBusiness ||--}o URL : "maps"
-LodgingBusiness ||--}o Integer : "maximumAttendeeCapacity"
 LodgingBusiness ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-LodgingBusiness ||--}o Boolean : "publicAccess"
 LodgingBusiness ||--}o Review : "review"
 LodgingBusiness ||--}o Review : "reviews"
-LodgingBusiness ||--}o Text : "slogan"
-LodgingBusiness ||--}o Boolean : "smokingAllowed"
 LodgingBusiness ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-LodgingBusiness ||--}o Text : "telephone"
-LodgingBusiness ||--}o URL : "tourBookingPage"
-LodgingBusiness ||--}o Text : "duns"
-LodgingBusiness ||--}o Text : "leiCode"
-LodgingBusiness ||--}o Text : "taxID"
 LodgingBusiness ||--}o InteractionCounter : "agentInteractionStatistic"
 LodgingBusiness ||--}o Person : "alumni"
-LodgingBusiness ||--}o Text : "award"
-LodgingBusiness ||--}o Text : "awards"
 LodgingBusiness ||--}o ContactPoint : "contactPoint"
 LodgingBusiness ||--}o ContactPoint : "contactPoints"
 LodgingBusiness ||--}o Organization : "department"
-LodgingBusiness ||--}o Date : "dissolutionDate"
-LodgingBusiness ||--}o Text : "email"
 LodgingBusiness ||--}o Person : "employee"
 LodgingBusiness ||--}o Person : "employees"
 LodgingBusiness ||--}o Person : "founders"
-LodgingBusiness ||--}o Date : "foundingDate"
 LodgingBusiness ||--}o Place : "foundingLocation"
 LodgingBusiness ||--}o Grant : "funding"
 LodgingBusiness ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -114,20 +123,11 @@ LodgingBusiness ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 LodgingBusiness ||--}o OfferCatalog : "hasOfferCatalog"
 LodgingBusiness ||--}o Place : "hasPOS"
 LodgingBusiness ||--}o InteractionCounter : "interactionStatistic"
-LodgingBusiness ||--}o Text : "iso6523Code"
-LodgingBusiness ||--}o Text : "legalName"
 LodgingBusiness ||--}o Offer : "makesOffer"
-LodgingBusiness ||--}o Text : "naics"
 LodgingBusiness ||--}o NonprofitType : "nonprofitStatus"
 LodgingBusiness ||--}o QuantitativeValue : "numberOfEmployees"
 LodgingBusiness ||--}o Organization : "parentOrganization"
 LodgingBusiness ||--}o Demand : "seeks"
 LodgingBusiness ||--}o Organization : "subOrganization"
-LodgingBusiness ||--}o Text : "vatID"
-LodgingBusiness ||--}o Text : "alternateName"
-LodgingBusiness ||--}o Text : "disambiguatingDescription"
-LodgingBusiness ||--}o Text : "name"
-LodgingBusiness ||--}o URL : "sameAs"
 LodgingBusiness ||--}o Action : "potentialAction"
-LodgingBusiness ||--}o URL : "url"
 

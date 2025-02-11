@@ -8,11 +8,16 @@ UnRegisterAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 UnRegisterAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ UnRegisterAction ||--}o Thing : "result"
 UnRegisterAction ||--}o HowTo : "actionProcess"
 UnRegisterAction ||--}o ActionStatusType : "actionStatus"
 UnRegisterAction ||--}o Thing : "error"
-UnRegisterAction ||--}o Text : "alternateName"
-UnRegisterAction ||--}o Text : "disambiguatingDescription"
-UnRegisterAction ||--}o Text : "name"
-UnRegisterAction ||--}o URL : "sameAs"
 UnRegisterAction ||--}o Action : "potentialAction"
-UnRegisterAction ||--}o URL : "url"
 

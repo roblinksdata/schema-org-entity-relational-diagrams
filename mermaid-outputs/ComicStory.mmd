@@ -13,25 +13,46 @@ ComicStory {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ ComicStory {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ComicStory ||--}o Person : "artist"
@@ -72,43 +102,22 @@ ComicStory ||--}o Claim : "interpretedAsClaim"
 ComicStory ||--}o Thing : "mainEntity"
 ComicStory ||--}o Place : "spatialCoverage"
 ComicStory ||--}o CreativeWork : "workExample"
-ComicStory ||--}o Text : "abstract"
-ComicStory ||--}o Text : "accessMode"
 ComicStory ||--}o ItemList : "accessModeSufficient"
-ComicStory ||--}o Text : "accessibilityAPI"
-ComicStory ||--}o Text : "accessibilityControl"
-ComicStory ||--}o Text : "accessibilityFeature"
-ComicStory ||--}o Text : "accessibilityHazard"
-ComicStory ||--}o Text : "accessibilitySummary"
 ComicStory ||--}o Person : "accountablePerson"
 ComicStory ||--}o AggregateRating : "aggregateRating"
-ComicStory ||--}o Text : "alternativeHeadline"
 ComicStory ||--}o MediaObject : "associatedMedia"
 ComicStory ||--}o Audience : "audience"
-ComicStory ||--}o Text : "award"
-ComicStory ||--}o Text : "awards"
 ComicStory ||--}o Person : "character"
 ComicStory ||--}o Comment : "comment"
-ComicStory ||--}o Integer : "commentCount"
-ComicStory ||--}o Text : "conditionsOfAccess"
-ComicStory ||--}o DateTime : "contentReferenceTime"
-ComicStory ||--}o Text : "copyrightNotice"
-ComicStory ||--}o Number : "copyrightYear"
 ComicStory ||--}o Country : "countryOfOrigin"
-ComicStory ||--}o Text : "creditText"
 ComicStory ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ComicStory ||--}o URL : "discussionUrl"
 ComicStory ||--}o Person : "editor"
 ComicStory ||--}o AlignmentObject : "educationalAlignment"
 ComicStory ||--}o MediaObject : "encoding"
 ComicStory ||--}o MediaObject : "encodings"
 ComicStory ||--}o CreativeWork : "exampleOfWork"
 ComicStory ||--}o Grant : "funding"
-ComicStory ||--}o Text : "headline"
 ComicStory ||--}o InteractionCounter : "interactionStatistic"
-ComicStory ||--}o Text : "interactivityType"
-ComicStory ||--}o Boolean : "isAccessibleForFree"
-ComicStory ||--}o Boolean : "isFamilyFriendly"
 ComicStory ||--}o Place : "locationCreated"
 ComicStory ||--}o Thing : "mentions"
 ComicStory ||--}o PublicationEvent : "publication"
@@ -117,20 +126,11 @@ ComicStory ||--}o Event : "recordedAt"
 ComicStory ||--}o PublicationEvent : "releasedEvent"
 ComicStory ||--}o Review : "review"
 ComicStory ||--}o Review : "reviews"
-ComicStory ||--}o Date : "sdDatePublished"
 ComicStory ||--}o Organization : "sourceOrganization"
 ComicStory ||--}o Place : "spatial"
-ComicStory ||--}o Text : "text"
 ComicStory ||--}o ImageObject : "thumbnail"
-ComicStory ||--}o URL : "thumbnailUrl"
 ComicStory ||--}o Duration : "timeRequired"
 ComicStory ||--}o CreativeWork : "translationOfWork"
-ComicStory ||--}o Text : "typicalAgeRange"
 ComicStory ||--}o CreativeWork : "workTranslation"
-ComicStory ||--}o Text : "alternateName"
-ComicStory ||--}o Text : "disambiguatingDescription"
-ComicStory ||--}o Text : "name"
-ComicStory ||--}o URL : "sameAs"
 ComicStory ||--}o Action : "potentialAction"
-ComicStory ||--}o URL : "url"
 

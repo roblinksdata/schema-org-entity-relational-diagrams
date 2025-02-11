@@ -3,40 +3,40 @@ Taxi {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Taxi ||--}o AggregateRating : "aggregateRating"
 Taxi ||--}o Audience : "audience"
 Taxi ||--}o ServiceChannel : "availableChannel"
-Taxi ||--}o Text : "award"
 Taxi ||--}o Certification : "hasCertification"
 Taxi ||--}o OfferCatalog : "hasOfferCatalog"
 Taxi ||--}o OpeningHoursSpecification : "hoursAvailable"
 Taxi ||--}o Thing : "produces"
-Taxi ||--}o Text : "providerMobility"
 Taxi ||--}o Review : "review"
 Taxi ||--}o Audience : "serviceAudience"
 Taxi ||--}o Thing : "serviceOutput"
-Taxi ||--}o Text : "slogan"
-Taxi ||--}o Text : "alternateName"
-Taxi ||--}o Text : "disambiguatingDescription"
-Taxi ||--}o Text : "name"
-Taxi ||--}o URL : "sameAs"
 Taxi ||--}o Action : "potentialAction"
-Taxi ||--}o URL : "url"
 

@@ -1,24 +1,24 @@
 erDiagram
 MonetaryAmountDistribution {
+    TextList currency  
+    NumberList median  
+    NumberList percentile10  
+    NumberList percentile25  
+    NumberList percentile75  
+    NumberList percentile90  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MonetaryAmountDistribution ||--}o Text : "currency"
 MonetaryAmountDistribution ||--}o Duration : "duration"
-MonetaryAmountDistribution ||--}o Number : "median"
-MonetaryAmountDistribution ||--}o Number : "percentile10"
-MonetaryAmountDistribution ||--}o Number : "percentile25"
-MonetaryAmountDistribution ||--}o Number : "percentile75"
-MonetaryAmountDistribution ||--}o Number : "percentile90"
-MonetaryAmountDistribution ||--}o Text : "alternateName"
-MonetaryAmountDistribution ||--}o Text : "disambiguatingDescription"
-MonetaryAmountDistribution ||--}o Text : "name"
-MonetaryAmountDistribution ||--}o URL : "sameAs"
 MonetaryAmountDistribution ||--}o Action : "potentialAction"
-MonetaryAmountDistribution ||--}o URL : "url"
 

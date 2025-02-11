@@ -3,6 +3,8 @@ Recommendation {
     stringList category  
     stringList negativeNotes  
     stringList positiveNotes  
+    TextList reviewAspect  
+    TextList reviewBody  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -16,25 +18,46 @@ Recommendation {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -46,29 +69,36 @@ Recommendation {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Recommendation ||--}o Review : "associatedClaimReview"
 Recommendation ||--}o Review : "associatedMediaReview"
 Recommendation ||--}o Review : "associatedReview"
 Recommendation ||--}o Thing : "itemReviewed"
-Recommendation ||--}o Text : "reviewAspect"
-Recommendation ||--}o Text : "reviewBody"
 Recommendation ||--}o Rating : "reviewRating"
 Recommendation ||--}o Thing : "about"
 Recommendation ||--}o Place : "contentLocation"
@@ -77,43 +107,22 @@ Recommendation ||--}o Claim : "interpretedAsClaim"
 Recommendation ||--}o Thing : "mainEntity"
 Recommendation ||--}o Place : "spatialCoverage"
 Recommendation ||--}o CreativeWork : "workExample"
-Recommendation ||--}o Text : "abstract"
-Recommendation ||--}o Text : "accessMode"
 Recommendation ||--}o ItemList : "accessModeSufficient"
-Recommendation ||--}o Text : "accessibilityAPI"
-Recommendation ||--}o Text : "accessibilityControl"
-Recommendation ||--}o Text : "accessibilityFeature"
-Recommendation ||--}o Text : "accessibilityHazard"
-Recommendation ||--}o Text : "accessibilitySummary"
 Recommendation ||--}o Person : "accountablePerson"
 Recommendation ||--}o AggregateRating : "aggregateRating"
-Recommendation ||--}o Text : "alternativeHeadline"
 Recommendation ||--}o MediaObject : "associatedMedia"
 Recommendation ||--}o Audience : "audience"
-Recommendation ||--}o Text : "award"
-Recommendation ||--}o Text : "awards"
 Recommendation ||--}o Person : "character"
 Recommendation ||--}o Comment : "comment"
-Recommendation ||--}o Integer : "commentCount"
-Recommendation ||--}o Text : "conditionsOfAccess"
-Recommendation ||--}o DateTime : "contentReferenceTime"
-Recommendation ||--}o Text : "copyrightNotice"
-Recommendation ||--}o Number : "copyrightYear"
 Recommendation ||--}o Country : "countryOfOrigin"
-Recommendation ||--}o Text : "creditText"
 Recommendation ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Recommendation ||--}o URL : "discussionUrl"
 Recommendation ||--}o Person : "editor"
 Recommendation ||--}o AlignmentObject : "educationalAlignment"
 Recommendation ||--}o MediaObject : "encoding"
 Recommendation ||--}o MediaObject : "encodings"
 Recommendation ||--}o CreativeWork : "exampleOfWork"
 Recommendation ||--}o Grant : "funding"
-Recommendation ||--}o Text : "headline"
 Recommendation ||--}o InteractionCounter : "interactionStatistic"
-Recommendation ||--}o Text : "interactivityType"
-Recommendation ||--}o Boolean : "isAccessibleForFree"
-Recommendation ||--}o Boolean : "isFamilyFriendly"
 Recommendation ||--}o Place : "locationCreated"
 Recommendation ||--}o Thing : "mentions"
 Recommendation ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ Recommendation ||--}o Event : "recordedAt"
 Recommendation ||--}o PublicationEvent : "releasedEvent"
 Recommendation ||--}o Review : "review"
 Recommendation ||--}o Review : "reviews"
-Recommendation ||--}o Date : "sdDatePublished"
 Recommendation ||--}o Organization : "sourceOrganization"
 Recommendation ||--}o Place : "spatial"
-Recommendation ||--}o Text : "text"
 Recommendation ||--}o ImageObject : "thumbnail"
-Recommendation ||--}o URL : "thumbnailUrl"
 Recommendation ||--}o Duration : "timeRequired"
 Recommendation ||--}o CreativeWork : "translationOfWork"
-Recommendation ||--}o Text : "typicalAgeRange"
 Recommendation ||--}o CreativeWork : "workTranslation"
-Recommendation ||--}o Text : "alternateName"
-Recommendation ||--}o Text : "disambiguatingDescription"
-Recommendation ||--}o Text : "name"
-Recommendation ||--}o URL : "sameAs"
 Recommendation ||--}o Action : "potentialAction"
-Recommendation ||--}o URL : "url"
 

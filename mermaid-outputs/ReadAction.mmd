@@ -8,11 +8,16 @@ ReadAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ReadAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
@@ -23,10 +28,5 @@ ReadAction ||--}o Thing : "result"
 ReadAction ||--}o HowTo : "actionProcess"
 ReadAction ||--}o ActionStatusType : "actionStatus"
 ReadAction ||--}o Thing : "error"
-ReadAction ||--}o Text : "alternateName"
-ReadAction ||--}o Text : "disambiguatingDescription"
-ReadAction ||--}o Text : "name"
-ReadAction ||--}o URL : "sameAs"
 ReadAction ||--}o Action : "potentialAction"
-ReadAction ||--}o URL : "url"
 

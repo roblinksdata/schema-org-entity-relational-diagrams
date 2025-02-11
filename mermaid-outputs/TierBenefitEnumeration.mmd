@@ -2,17 +2,17 @@ erDiagram
 TierBenefitEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-TierBenefitEnumeration ||--}o Text : "alternateName"
-TierBenefitEnumeration ||--}o Text : "disambiguatingDescription"
-TierBenefitEnumeration ||--}o Text : "name"
-TierBenefitEnumeration ||--}o URL : "sameAs"
 TierBenefitEnumeration ||--}o Action : "potentialAction"
-TierBenefitEnumeration ||--}o URL : "url"
 

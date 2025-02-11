@@ -9,11 +9,16 @@ ReserveAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ReserveAction ||--}o Thing : "instrument"
@@ -22,10 +27,5 @@ ReserveAction ||--}o Thing : "result"
 ReserveAction ||--}o HowTo : "actionProcess"
 ReserveAction ||--}o ActionStatusType : "actionStatus"
 ReserveAction ||--}o Thing : "error"
-ReserveAction ||--}o Text : "alternateName"
-ReserveAction ||--}o Text : "disambiguatingDescription"
-ReserveAction ||--}o Text : "name"
-ReserveAction ||--}o URL : "sameAs"
 ReserveAction ||--}o Action : "potentialAction"
-ReserveAction ||--}o URL : "url"
 

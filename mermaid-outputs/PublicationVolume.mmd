@@ -3,6 +3,7 @@ PublicationVolume {
     stringList volumeNumber  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -16,25 +17,46 @@ PublicationVolume {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -46,24 +68,32 @@ PublicationVolume {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PublicationVolume ||--}o Text : "pagination"
 PublicationVolume ||--}o Thing : "about"
 PublicationVolume ||--}o Place : "contentLocation"
 PublicationVolume ||--}o CreativeWork : "hasPart"
@@ -71,43 +101,22 @@ PublicationVolume ||--}o Claim : "interpretedAsClaim"
 PublicationVolume ||--}o Thing : "mainEntity"
 PublicationVolume ||--}o Place : "spatialCoverage"
 PublicationVolume ||--}o CreativeWork : "workExample"
-PublicationVolume ||--}o Text : "abstract"
-PublicationVolume ||--}o Text : "accessMode"
 PublicationVolume ||--}o ItemList : "accessModeSufficient"
-PublicationVolume ||--}o Text : "accessibilityAPI"
-PublicationVolume ||--}o Text : "accessibilityControl"
-PublicationVolume ||--}o Text : "accessibilityFeature"
-PublicationVolume ||--}o Text : "accessibilityHazard"
-PublicationVolume ||--}o Text : "accessibilitySummary"
 PublicationVolume ||--}o Person : "accountablePerson"
 PublicationVolume ||--}o AggregateRating : "aggregateRating"
-PublicationVolume ||--}o Text : "alternativeHeadline"
 PublicationVolume ||--}o MediaObject : "associatedMedia"
 PublicationVolume ||--}o Audience : "audience"
-PublicationVolume ||--}o Text : "award"
-PublicationVolume ||--}o Text : "awards"
 PublicationVolume ||--}o Person : "character"
 PublicationVolume ||--}o Comment : "comment"
-PublicationVolume ||--}o Integer : "commentCount"
-PublicationVolume ||--}o Text : "conditionsOfAccess"
-PublicationVolume ||--}o DateTime : "contentReferenceTime"
-PublicationVolume ||--}o Text : "copyrightNotice"
-PublicationVolume ||--}o Number : "copyrightYear"
 PublicationVolume ||--}o Country : "countryOfOrigin"
-PublicationVolume ||--}o Text : "creditText"
 PublicationVolume ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-PublicationVolume ||--}o URL : "discussionUrl"
 PublicationVolume ||--}o Person : "editor"
 PublicationVolume ||--}o AlignmentObject : "educationalAlignment"
 PublicationVolume ||--}o MediaObject : "encoding"
 PublicationVolume ||--}o MediaObject : "encodings"
 PublicationVolume ||--}o CreativeWork : "exampleOfWork"
 PublicationVolume ||--}o Grant : "funding"
-PublicationVolume ||--}o Text : "headline"
 PublicationVolume ||--}o InteractionCounter : "interactionStatistic"
-PublicationVolume ||--}o Text : "interactivityType"
-PublicationVolume ||--}o Boolean : "isAccessibleForFree"
-PublicationVolume ||--}o Boolean : "isFamilyFriendly"
 PublicationVolume ||--}o Place : "locationCreated"
 PublicationVolume ||--}o Thing : "mentions"
 PublicationVolume ||--}o PublicationEvent : "publication"
@@ -116,20 +125,11 @@ PublicationVolume ||--}o Event : "recordedAt"
 PublicationVolume ||--}o PublicationEvent : "releasedEvent"
 PublicationVolume ||--}o Review : "review"
 PublicationVolume ||--}o Review : "reviews"
-PublicationVolume ||--}o Date : "sdDatePublished"
 PublicationVolume ||--}o Organization : "sourceOrganization"
 PublicationVolume ||--}o Place : "spatial"
-PublicationVolume ||--}o Text : "text"
 PublicationVolume ||--}o ImageObject : "thumbnail"
-PublicationVolume ||--}o URL : "thumbnailUrl"
 PublicationVolume ||--}o Duration : "timeRequired"
 PublicationVolume ||--}o CreativeWork : "translationOfWork"
-PublicationVolume ||--}o Text : "typicalAgeRange"
 PublicationVolume ||--}o CreativeWork : "workTranslation"
-PublicationVolume ||--}o Text : "alternateName"
-PublicationVolume ||--}o Text : "disambiguatingDescription"
-PublicationVolume ||--}o Text : "name"
-PublicationVolume ||--}o URL : "sameAs"
 PublicationVolume ||--}o Action : "potentialAction"
-PublicationVolume ||--}o URL : "url"
 

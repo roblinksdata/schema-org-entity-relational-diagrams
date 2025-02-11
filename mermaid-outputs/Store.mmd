@@ -1,8 +1,16 @@
 erDiagram
 Store {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ Store {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Store ||--}o Organization : "branchOf"
-Store ||--}o Text : "currenciesAccepted"
-Store ||--}o Text : "openingHours"
-Store ||--}o Text : "paymentAccepted"
-Store ||--}o Text : "priceRange"
-Store ||--}o Text : "globalLocationNumber"
-Store ||--}o URL : "hasGS1DigitalLink"
 Store ||--}o PropertyValue : "additionalProperty"
 Store ||--}o AggregateRating : "aggregateRating"
 Store ||--}o LocationFeatureSpecification : "amenityFeature"
-Store ||--}o Text : "branchCode"
 Store ||--}o Place : "containedIn"
 Store ||--}o Place : "containedInPlace"
 Store ||--}o Place : "containsPlace"
 Store ||--}o Event : "event"
 Store ||--}o Event : "events"
-Store ||--}o Text : "faxNumber"
 Store ||--}o Certification : "hasCertification"
-Store ||--}o Boolean : "hasDriveThroughService"
-Store ||--}o Boolean : "isAccessibleForFree"
-Store ||--}o Text : "isicV4"
-Store ||--}o URL : "map"
-Store ||--}o URL : "maps"
-Store ||--}o Integer : "maximumAttendeeCapacity"
 Store ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Store ||--}o Boolean : "publicAccess"
 Store ||--}o Review : "review"
 Store ||--}o Review : "reviews"
-Store ||--}o Text : "slogan"
-Store ||--}o Boolean : "smokingAllowed"
 Store ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Store ||--}o Text : "telephone"
-Store ||--}o URL : "tourBookingPage"
-Store ||--}o Text : "duns"
-Store ||--}o Text : "leiCode"
-Store ||--}o Text : "taxID"
 Store ||--}o InteractionCounter : "agentInteractionStatistic"
 Store ||--}o Person : "alumni"
-Store ||--}o Text : "award"
-Store ||--}o Text : "awards"
 Store ||--}o ContactPoint : "contactPoint"
 Store ||--}o ContactPoint : "contactPoints"
 Store ||--}o Organization : "department"
-Store ||--}o Date : "dissolutionDate"
-Store ||--}o Text : "email"
 Store ||--}o Person : "employee"
 Store ||--}o Person : "employees"
 Store ||--}o Person : "founders"
-Store ||--}o Date : "foundingDate"
 Store ||--}o Place : "foundingLocation"
 Store ||--}o Grant : "funding"
 Store ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ Store ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Store ||--}o OfferCatalog : "hasOfferCatalog"
 Store ||--}o Place : "hasPOS"
 Store ||--}o InteractionCounter : "interactionStatistic"
-Store ||--}o Text : "iso6523Code"
-Store ||--}o Text : "legalName"
 Store ||--}o Offer : "makesOffer"
-Store ||--}o Text : "naics"
 Store ||--}o NonprofitType : "nonprofitStatus"
 Store ||--}o QuantitativeValue : "numberOfEmployees"
 Store ||--}o Organization : "parentOrganization"
 Store ||--}o Demand : "seeks"
 Store ||--}o Organization : "subOrganization"
-Store ||--}o Text : "vatID"
-Store ||--}o Text : "alternateName"
-Store ||--}o Text : "disambiguatingDescription"
-Store ||--}o Text : "name"
-Store ||--}o URL : "sameAs"
 Store ||--}o Action : "potentialAction"
-Store ||--}o URL : "url"
 

@@ -2,22 +2,22 @@ erDiagram
 Rating {
     stringList author  
     stringList bestRating  
+    TextList ratingExplanation  
     stringList ratingValue  
+    TextList reviewAspect  
     stringList worstRating  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Rating ||--}o Text : "ratingExplanation"
-Rating ||--}o Text : "reviewAspect"
-Rating ||--}o Text : "alternateName"
-Rating ||--}o Text : "disambiguatingDescription"
-Rating ||--}o Text : "name"
-Rating ||--}o URL : "sameAs"
 Rating ||--}o Action : "potentialAction"
-Rating ||--}o URL : "url"
 

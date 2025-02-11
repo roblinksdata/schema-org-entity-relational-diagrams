@@ -8,11 +8,16 @@ WearAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 WearAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
@@ -23,10 +28,5 @@ WearAction ||--}o Thing : "result"
 WearAction ||--}o HowTo : "actionProcess"
 WearAction ||--}o ActionStatusType : "actionStatus"
 WearAction ||--}o Thing : "error"
-WearAction ||--}o Text : "alternateName"
-WearAction ||--}o Text : "disambiguatingDescription"
-WearAction ||--}o Text : "name"
-WearAction ||--}o URL : "sameAs"
 WearAction ||--}o Action : "potentialAction"
-WearAction ||--}o URL : "url"
 

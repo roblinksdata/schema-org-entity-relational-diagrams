@@ -18,25 +18,46 @@ TVClip {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -48,21 +69,30 @@ TVClip {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TVClip ||--}o TVSeries : "partOfTVSeries"
@@ -79,43 +109,22 @@ TVClip ||--}o Claim : "interpretedAsClaim"
 TVClip ||--}o Thing : "mainEntity"
 TVClip ||--}o Place : "spatialCoverage"
 TVClip ||--}o CreativeWork : "workExample"
-TVClip ||--}o Text : "abstract"
-TVClip ||--}o Text : "accessMode"
 TVClip ||--}o ItemList : "accessModeSufficient"
-TVClip ||--}o Text : "accessibilityAPI"
-TVClip ||--}o Text : "accessibilityControl"
-TVClip ||--}o Text : "accessibilityFeature"
-TVClip ||--}o Text : "accessibilityHazard"
-TVClip ||--}o Text : "accessibilitySummary"
 TVClip ||--}o Person : "accountablePerson"
 TVClip ||--}o AggregateRating : "aggregateRating"
-TVClip ||--}o Text : "alternativeHeadline"
 TVClip ||--}o MediaObject : "associatedMedia"
 TVClip ||--}o Audience : "audience"
-TVClip ||--}o Text : "award"
-TVClip ||--}o Text : "awards"
 TVClip ||--}o Person : "character"
 TVClip ||--}o Comment : "comment"
-TVClip ||--}o Integer : "commentCount"
-TVClip ||--}o Text : "conditionsOfAccess"
-TVClip ||--}o DateTime : "contentReferenceTime"
-TVClip ||--}o Text : "copyrightNotice"
-TVClip ||--}o Number : "copyrightYear"
 TVClip ||--}o Country : "countryOfOrigin"
-TVClip ||--}o Text : "creditText"
 TVClip ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-TVClip ||--}o URL : "discussionUrl"
 TVClip ||--}o Person : "editor"
 TVClip ||--}o AlignmentObject : "educationalAlignment"
 TVClip ||--}o MediaObject : "encoding"
 TVClip ||--}o MediaObject : "encodings"
 TVClip ||--}o CreativeWork : "exampleOfWork"
 TVClip ||--}o Grant : "funding"
-TVClip ||--}o Text : "headline"
 TVClip ||--}o InteractionCounter : "interactionStatistic"
-TVClip ||--}o Text : "interactivityType"
-TVClip ||--}o Boolean : "isAccessibleForFree"
-TVClip ||--}o Boolean : "isFamilyFriendly"
 TVClip ||--}o Place : "locationCreated"
 TVClip ||--}o Thing : "mentions"
 TVClip ||--}o PublicationEvent : "publication"
@@ -124,20 +133,11 @@ TVClip ||--}o Event : "recordedAt"
 TVClip ||--}o PublicationEvent : "releasedEvent"
 TVClip ||--}o Review : "review"
 TVClip ||--}o Review : "reviews"
-TVClip ||--}o Date : "sdDatePublished"
 TVClip ||--}o Organization : "sourceOrganization"
 TVClip ||--}o Place : "spatial"
-TVClip ||--}o Text : "text"
 TVClip ||--}o ImageObject : "thumbnail"
-TVClip ||--}o URL : "thumbnailUrl"
 TVClip ||--}o Duration : "timeRequired"
 TVClip ||--}o CreativeWork : "translationOfWork"
-TVClip ||--}o Text : "typicalAgeRange"
 TVClip ||--}o CreativeWork : "workTranslation"
-TVClip ||--}o Text : "alternateName"
-TVClip ||--}o Text : "disambiguatingDescription"
-TVClip ||--}o Text : "name"
-TVClip ||--}o URL : "sameAs"
 TVClip ||--}o Action : "potentialAction"
-TVClip ||--}o URL : "url"
 

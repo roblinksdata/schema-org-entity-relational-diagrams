@@ -8,11 +8,16 @@ DrinkAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DrinkAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
@@ -23,10 +28,5 @@ DrinkAction ||--}o Thing : "result"
 DrinkAction ||--}o HowTo : "actionProcess"
 DrinkAction ||--}o ActionStatusType : "actionStatus"
 DrinkAction ||--}o Thing : "error"
-DrinkAction ||--}o Text : "alternateName"
-DrinkAction ||--}o Text : "disambiguatingDescription"
-DrinkAction ||--}o Text : "name"
-DrinkAction ||--}o URL : "sameAs"
 DrinkAction ||--}o Action : "potentialAction"
-DrinkAction ||--}o URL : "url"
 

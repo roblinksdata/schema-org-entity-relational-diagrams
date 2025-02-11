@@ -3,9 +3,18 @@ FastFoodRestaurant {
     stringList acceptsReservations  
     stringList hasMenu  
     stringList menu  
+    TextList servesCuisine  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -17,93 +26,93 @@ FastFoodRestaurant {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-FastFoodRestaurant ||--}o Text : "servesCuisine"
 FastFoodRestaurant ||--}o Rating : "starRating"
 FastFoodRestaurant ||--}o Organization : "branchOf"
-FastFoodRestaurant ||--}o Text : "currenciesAccepted"
-FastFoodRestaurant ||--}o Text : "openingHours"
-FastFoodRestaurant ||--}o Text : "paymentAccepted"
-FastFoodRestaurant ||--}o Text : "priceRange"
-FastFoodRestaurant ||--}o Text : "globalLocationNumber"
-FastFoodRestaurant ||--}o URL : "hasGS1DigitalLink"
 FastFoodRestaurant ||--}o PropertyValue : "additionalProperty"
 FastFoodRestaurant ||--}o AggregateRating : "aggregateRating"
 FastFoodRestaurant ||--}o LocationFeatureSpecification : "amenityFeature"
-FastFoodRestaurant ||--}o Text : "branchCode"
 FastFoodRestaurant ||--}o Place : "containedIn"
 FastFoodRestaurant ||--}o Place : "containedInPlace"
 FastFoodRestaurant ||--}o Place : "containsPlace"
 FastFoodRestaurant ||--}o Event : "event"
 FastFoodRestaurant ||--}o Event : "events"
-FastFoodRestaurant ||--}o Text : "faxNumber"
 FastFoodRestaurant ||--}o Certification : "hasCertification"
-FastFoodRestaurant ||--}o Boolean : "hasDriveThroughService"
-FastFoodRestaurant ||--}o Boolean : "isAccessibleForFree"
-FastFoodRestaurant ||--}o Text : "isicV4"
-FastFoodRestaurant ||--}o URL : "map"
-FastFoodRestaurant ||--}o URL : "maps"
-FastFoodRestaurant ||--}o Integer : "maximumAttendeeCapacity"
 FastFoodRestaurant ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-FastFoodRestaurant ||--}o Boolean : "publicAccess"
 FastFoodRestaurant ||--}o Review : "review"
 FastFoodRestaurant ||--}o Review : "reviews"
-FastFoodRestaurant ||--}o Text : "slogan"
-FastFoodRestaurant ||--}o Boolean : "smokingAllowed"
 FastFoodRestaurant ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-FastFoodRestaurant ||--}o Text : "telephone"
-FastFoodRestaurant ||--}o URL : "tourBookingPage"
-FastFoodRestaurant ||--}o Text : "duns"
-FastFoodRestaurant ||--}o Text : "leiCode"
-FastFoodRestaurant ||--}o Text : "taxID"
 FastFoodRestaurant ||--}o InteractionCounter : "agentInteractionStatistic"
 FastFoodRestaurant ||--}o Person : "alumni"
-FastFoodRestaurant ||--}o Text : "award"
-FastFoodRestaurant ||--}o Text : "awards"
 FastFoodRestaurant ||--}o ContactPoint : "contactPoint"
 FastFoodRestaurant ||--}o ContactPoint : "contactPoints"
 FastFoodRestaurant ||--}o Organization : "department"
-FastFoodRestaurant ||--}o Date : "dissolutionDate"
-FastFoodRestaurant ||--}o Text : "email"
 FastFoodRestaurant ||--}o Person : "employee"
 FastFoodRestaurant ||--}o Person : "employees"
 FastFoodRestaurant ||--}o Person : "founders"
-FastFoodRestaurant ||--}o Date : "foundingDate"
 FastFoodRestaurant ||--}o Place : "foundingLocation"
 FastFoodRestaurant ||--}o Grant : "funding"
 FastFoodRestaurant ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -112,20 +121,11 @@ FastFoodRestaurant ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 FastFoodRestaurant ||--}o OfferCatalog : "hasOfferCatalog"
 FastFoodRestaurant ||--}o Place : "hasPOS"
 FastFoodRestaurant ||--}o InteractionCounter : "interactionStatistic"
-FastFoodRestaurant ||--}o Text : "iso6523Code"
-FastFoodRestaurant ||--}o Text : "legalName"
 FastFoodRestaurant ||--}o Offer : "makesOffer"
-FastFoodRestaurant ||--}o Text : "naics"
 FastFoodRestaurant ||--}o NonprofitType : "nonprofitStatus"
 FastFoodRestaurant ||--}o QuantitativeValue : "numberOfEmployees"
 FastFoodRestaurant ||--}o Organization : "parentOrganization"
 FastFoodRestaurant ||--}o Demand : "seeks"
 FastFoodRestaurant ||--}o Organization : "subOrganization"
-FastFoodRestaurant ||--}o Text : "vatID"
-FastFoodRestaurant ||--}o Text : "alternateName"
-FastFoodRestaurant ||--}o Text : "disambiguatingDescription"
-FastFoodRestaurant ||--}o Text : "name"
-FastFoodRestaurant ||--}o URL : "sameAs"
 FastFoodRestaurant ||--}o Action : "potentialAction"
-FastFoodRestaurant ||--}o URL : "url"
 

@@ -1,8 +1,12 @@
 erDiagram
 LandmarksOrHistoricalBuildings {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,51 +18,47 @@ LandmarksOrHistoricalBuildings {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-LandmarksOrHistoricalBuildings ||--}o Text : "globalLocationNumber"
-LandmarksOrHistoricalBuildings ||--}o URL : "hasGS1DigitalLink"
 LandmarksOrHistoricalBuildings ||--}o PropertyValue : "additionalProperty"
 LandmarksOrHistoricalBuildings ||--}o AggregateRating : "aggregateRating"
 LandmarksOrHistoricalBuildings ||--}o LocationFeatureSpecification : "amenityFeature"
-LandmarksOrHistoricalBuildings ||--}o Text : "branchCode"
 LandmarksOrHistoricalBuildings ||--}o Place : "containedIn"
 LandmarksOrHistoricalBuildings ||--}o Place : "containedInPlace"
 LandmarksOrHistoricalBuildings ||--}o Place : "containsPlace"
 LandmarksOrHistoricalBuildings ||--}o Event : "event"
 LandmarksOrHistoricalBuildings ||--}o Event : "events"
-LandmarksOrHistoricalBuildings ||--}o Text : "faxNumber"
 LandmarksOrHistoricalBuildings ||--}o Certification : "hasCertification"
-LandmarksOrHistoricalBuildings ||--}o Boolean : "hasDriveThroughService"
-LandmarksOrHistoricalBuildings ||--}o Boolean : "isAccessibleForFree"
-LandmarksOrHistoricalBuildings ||--}o Text : "isicV4"
-LandmarksOrHistoricalBuildings ||--}o URL : "map"
-LandmarksOrHistoricalBuildings ||--}o URL : "maps"
-LandmarksOrHistoricalBuildings ||--}o Integer : "maximumAttendeeCapacity"
 LandmarksOrHistoricalBuildings ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-LandmarksOrHistoricalBuildings ||--}o Boolean : "publicAccess"
 LandmarksOrHistoricalBuildings ||--}o Review : "review"
 LandmarksOrHistoricalBuildings ||--}o Review : "reviews"
-LandmarksOrHistoricalBuildings ||--}o Text : "slogan"
-LandmarksOrHistoricalBuildings ||--}o Boolean : "smokingAllowed"
 LandmarksOrHistoricalBuildings ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-LandmarksOrHistoricalBuildings ||--}o Text : "telephone"
-LandmarksOrHistoricalBuildings ||--}o URL : "tourBookingPage"
-LandmarksOrHistoricalBuildings ||--}o Text : "alternateName"
-LandmarksOrHistoricalBuildings ||--}o Text : "disambiguatingDescription"
-LandmarksOrHistoricalBuildings ||--}o Text : "name"
-LandmarksOrHistoricalBuildings ||--}o URL : "sameAs"
 LandmarksOrHistoricalBuildings ||--}o Action : "potentialAction"
-LandmarksOrHistoricalBuildings ||--}o URL : "url"
 

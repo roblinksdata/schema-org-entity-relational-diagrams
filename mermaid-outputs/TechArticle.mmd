@@ -1,9 +1,15 @@
 erDiagram
 TechArticle {
+    TextList dependencies  
+    TextList proficiencyLevel  
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -17,25 +23,46 @@ TechArticle {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,29 +74,32 @@ TechArticle {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-TechArticle ||--}o Text : "dependencies"
-TechArticle ||--}o Text : "proficiencyLevel"
-TechArticle ||--}o Text : "articleBody"
-TechArticle ||--}o Text : "articleSection"
-TechArticle ||--}o Text : "pagination"
-TechArticle ||--}o Integer : "wordCount"
 TechArticle ||--}o Thing : "about"
 TechArticle ||--}o Place : "contentLocation"
 TechArticle ||--}o CreativeWork : "hasPart"
@@ -77,43 +107,22 @@ TechArticle ||--}o Claim : "interpretedAsClaim"
 TechArticle ||--}o Thing : "mainEntity"
 TechArticle ||--}o Place : "spatialCoverage"
 TechArticle ||--}o CreativeWork : "workExample"
-TechArticle ||--}o Text : "abstract"
-TechArticle ||--}o Text : "accessMode"
 TechArticle ||--}o ItemList : "accessModeSufficient"
-TechArticle ||--}o Text : "accessibilityAPI"
-TechArticle ||--}o Text : "accessibilityControl"
-TechArticle ||--}o Text : "accessibilityFeature"
-TechArticle ||--}o Text : "accessibilityHazard"
-TechArticle ||--}o Text : "accessibilitySummary"
 TechArticle ||--}o Person : "accountablePerson"
 TechArticle ||--}o AggregateRating : "aggregateRating"
-TechArticle ||--}o Text : "alternativeHeadline"
 TechArticle ||--}o MediaObject : "associatedMedia"
 TechArticle ||--}o Audience : "audience"
-TechArticle ||--}o Text : "award"
-TechArticle ||--}o Text : "awards"
 TechArticle ||--}o Person : "character"
 TechArticle ||--}o Comment : "comment"
-TechArticle ||--}o Integer : "commentCount"
-TechArticle ||--}o Text : "conditionsOfAccess"
-TechArticle ||--}o DateTime : "contentReferenceTime"
-TechArticle ||--}o Text : "copyrightNotice"
-TechArticle ||--}o Number : "copyrightYear"
 TechArticle ||--}o Country : "countryOfOrigin"
-TechArticle ||--}o Text : "creditText"
 TechArticle ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-TechArticle ||--}o URL : "discussionUrl"
 TechArticle ||--}o Person : "editor"
 TechArticle ||--}o AlignmentObject : "educationalAlignment"
 TechArticle ||--}o MediaObject : "encoding"
 TechArticle ||--}o MediaObject : "encodings"
 TechArticle ||--}o CreativeWork : "exampleOfWork"
 TechArticle ||--}o Grant : "funding"
-TechArticle ||--}o Text : "headline"
 TechArticle ||--}o InteractionCounter : "interactionStatistic"
-TechArticle ||--}o Text : "interactivityType"
-TechArticle ||--}o Boolean : "isAccessibleForFree"
-TechArticle ||--}o Boolean : "isFamilyFriendly"
 TechArticle ||--}o Place : "locationCreated"
 TechArticle ||--}o Thing : "mentions"
 TechArticle ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ TechArticle ||--}o Event : "recordedAt"
 TechArticle ||--}o PublicationEvent : "releasedEvent"
 TechArticle ||--}o Review : "review"
 TechArticle ||--}o Review : "reviews"
-TechArticle ||--}o Date : "sdDatePublished"
 TechArticle ||--}o Organization : "sourceOrganization"
 TechArticle ||--}o Place : "spatial"
-TechArticle ||--}o Text : "text"
 TechArticle ||--}o ImageObject : "thumbnail"
-TechArticle ||--}o URL : "thumbnailUrl"
 TechArticle ||--}o Duration : "timeRequired"
 TechArticle ||--}o CreativeWork : "translationOfWork"
-TechArticle ||--}o Text : "typicalAgeRange"
 TechArticle ||--}o CreativeWork : "workTranslation"
-TechArticle ||--}o Text : "alternateName"
-TechArticle ||--}o Text : "disambiguatingDescription"
-TechArticle ||--}o Text : "name"
-TechArticle ||--}o URL : "sameAs"
 TechArticle ||--}o Action : "potentialAction"
-TechArticle ||--}o URL : "url"
 

@@ -1,8 +1,16 @@
 erDiagram
 TelevisionStation {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ TelevisionStation {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TelevisionStation ||--}o Organization : "branchOf"
-TelevisionStation ||--}o Text : "currenciesAccepted"
-TelevisionStation ||--}o Text : "openingHours"
-TelevisionStation ||--}o Text : "paymentAccepted"
-TelevisionStation ||--}o Text : "priceRange"
-TelevisionStation ||--}o Text : "globalLocationNumber"
-TelevisionStation ||--}o URL : "hasGS1DigitalLink"
 TelevisionStation ||--}o PropertyValue : "additionalProperty"
 TelevisionStation ||--}o AggregateRating : "aggregateRating"
 TelevisionStation ||--}o LocationFeatureSpecification : "amenityFeature"
-TelevisionStation ||--}o Text : "branchCode"
 TelevisionStation ||--}o Place : "containedIn"
 TelevisionStation ||--}o Place : "containedInPlace"
 TelevisionStation ||--}o Place : "containsPlace"
 TelevisionStation ||--}o Event : "event"
 TelevisionStation ||--}o Event : "events"
-TelevisionStation ||--}o Text : "faxNumber"
 TelevisionStation ||--}o Certification : "hasCertification"
-TelevisionStation ||--}o Boolean : "hasDriveThroughService"
-TelevisionStation ||--}o Boolean : "isAccessibleForFree"
-TelevisionStation ||--}o Text : "isicV4"
-TelevisionStation ||--}o URL : "map"
-TelevisionStation ||--}o URL : "maps"
-TelevisionStation ||--}o Integer : "maximumAttendeeCapacity"
 TelevisionStation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-TelevisionStation ||--}o Boolean : "publicAccess"
 TelevisionStation ||--}o Review : "review"
 TelevisionStation ||--}o Review : "reviews"
-TelevisionStation ||--}o Text : "slogan"
-TelevisionStation ||--}o Boolean : "smokingAllowed"
 TelevisionStation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-TelevisionStation ||--}o Text : "telephone"
-TelevisionStation ||--}o URL : "tourBookingPage"
-TelevisionStation ||--}o Text : "duns"
-TelevisionStation ||--}o Text : "leiCode"
-TelevisionStation ||--}o Text : "taxID"
 TelevisionStation ||--}o InteractionCounter : "agentInteractionStatistic"
 TelevisionStation ||--}o Person : "alumni"
-TelevisionStation ||--}o Text : "award"
-TelevisionStation ||--}o Text : "awards"
 TelevisionStation ||--}o ContactPoint : "contactPoint"
 TelevisionStation ||--}o ContactPoint : "contactPoints"
 TelevisionStation ||--}o Organization : "department"
-TelevisionStation ||--}o Date : "dissolutionDate"
-TelevisionStation ||--}o Text : "email"
 TelevisionStation ||--}o Person : "employee"
 TelevisionStation ||--}o Person : "employees"
 TelevisionStation ||--}o Person : "founders"
-TelevisionStation ||--}o Date : "foundingDate"
 TelevisionStation ||--}o Place : "foundingLocation"
 TelevisionStation ||--}o Grant : "funding"
 TelevisionStation ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ TelevisionStation ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 TelevisionStation ||--}o OfferCatalog : "hasOfferCatalog"
 TelevisionStation ||--}o Place : "hasPOS"
 TelevisionStation ||--}o InteractionCounter : "interactionStatistic"
-TelevisionStation ||--}o Text : "iso6523Code"
-TelevisionStation ||--}o Text : "legalName"
 TelevisionStation ||--}o Offer : "makesOffer"
-TelevisionStation ||--}o Text : "naics"
 TelevisionStation ||--}o NonprofitType : "nonprofitStatus"
 TelevisionStation ||--}o QuantitativeValue : "numberOfEmployees"
 TelevisionStation ||--}o Organization : "parentOrganization"
 TelevisionStation ||--}o Demand : "seeks"
 TelevisionStation ||--}o Organization : "subOrganization"
-TelevisionStation ||--}o Text : "vatID"
-TelevisionStation ||--}o Text : "alternateName"
-TelevisionStation ||--}o Text : "disambiguatingDescription"
-TelevisionStation ||--}o Text : "name"
-TelevisionStation ||--}o URL : "sameAs"
 TelevisionStation ||--}o Action : "potentialAction"
-TelevisionStation ||--}o URL : "url"
 

@@ -1,8 +1,16 @@
 erDiagram
 LocalBusiness {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ LocalBusiness {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LocalBusiness ||--}o Organization : "branchOf"
-LocalBusiness ||--}o Text : "currenciesAccepted"
-LocalBusiness ||--}o Text : "openingHours"
-LocalBusiness ||--}o Text : "paymentAccepted"
-LocalBusiness ||--}o Text : "priceRange"
-LocalBusiness ||--}o Text : "globalLocationNumber"
-LocalBusiness ||--}o URL : "hasGS1DigitalLink"
 LocalBusiness ||--}o PropertyValue : "additionalProperty"
 LocalBusiness ||--}o AggregateRating : "aggregateRating"
 LocalBusiness ||--}o LocationFeatureSpecification : "amenityFeature"
-LocalBusiness ||--}o Text : "branchCode"
 LocalBusiness ||--}o Place : "containedIn"
 LocalBusiness ||--}o Place : "containedInPlace"
 LocalBusiness ||--}o Place : "containsPlace"
 LocalBusiness ||--}o Event : "event"
 LocalBusiness ||--}o Event : "events"
-LocalBusiness ||--}o Text : "faxNumber"
 LocalBusiness ||--}o Certification : "hasCertification"
-LocalBusiness ||--}o Boolean : "hasDriveThroughService"
-LocalBusiness ||--}o Boolean : "isAccessibleForFree"
-LocalBusiness ||--}o Text : "isicV4"
-LocalBusiness ||--}o URL : "map"
-LocalBusiness ||--}o URL : "maps"
-LocalBusiness ||--}o Integer : "maximumAttendeeCapacity"
 LocalBusiness ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-LocalBusiness ||--}o Boolean : "publicAccess"
 LocalBusiness ||--}o Review : "review"
 LocalBusiness ||--}o Review : "reviews"
-LocalBusiness ||--}o Text : "slogan"
-LocalBusiness ||--}o Boolean : "smokingAllowed"
 LocalBusiness ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-LocalBusiness ||--}o Text : "telephone"
-LocalBusiness ||--}o URL : "tourBookingPage"
-LocalBusiness ||--}o Text : "duns"
-LocalBusiness ||--}o Text : "leiCode"
-LocalBusiness ||--}o Text : "taxID"
 LocalBusiness ||--}o InteractionCounter : "agentInteractionStatistic"
 LocalBusiness ||--}o Person : "alumni"
-LocalBusiness ||--}o Text : "award"
-LocalBusiness ||--}o Text : "awards"
 LocalBusiness ||--}o ContactPoint : "contactPoint"
 LocalBusiness ||--}o ContactPoint : "contactPoints"
 LocalBusiness ||--}o Organization : "department"
-LocalBusiness ||--}o Date : "dissolutionDate"
-LocalBusiness ||--}o Text : "email"
 LocalBusiness ||--}o Person : "employee"
 LocalBusiness ||--}o Person : "employees"
 LocalBusiness ||--}o Person : "founders"
-LocalBusiness ||--}o Date : "foundingDate"
 LocalBusiness ||--}o Place : "foundingLocation"
 LocalBusiness ||--}o Grant : "funding"
 LocalBusiness ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ LocalBusiness ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 LocalBusiness ||--}o OfferCatalog : "hasOfferCatalog"
 LocalBusiness ||--}o Place : "hasPOS"
 LocalBusiness ||--}o InteractionCounter : "interactionStatistic"
-LocalBusiness ||--}o Text : "iso6523Code"
-LocalBusiness ||--}o Text : "legalName"
 LocalBusiness ||--}o Offer : "makesOffer"
-LocalBusiness ||--}o Text : "naics"
 LocalBusiness ||--}o NonprofitType : "nonprofitStatus"
 LocalBusiness ||--}o QuantitativeValue : "numberOfEmployees"
 LocalBusiness ||--}o Organization : "parentOrganization"
 LocalBusiness ||--}o Demand : "seeks"
 LocalBusiness ||--}o Organization : "subOrganization"
-LocalBusiness ||--}o Text : "vatID"
-LocalBusiness ||--}o Text : "alternateName"
-LocalBusiness ||--}o Text : "disambiguatingDescription"
-LocalBusiness ||--}o Text : "name"
-LocalBusiness ||--}o URL : "sameAs"
 LocalBusiness ||--}o Action : "potentialAction"
-LocalBusiness ||--}o URL : "url"
 

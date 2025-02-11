@@ -13,25 +13,46 @@ Drawing {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Drawing {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Drawing ||--}o Thing : "about"
@@ -67,43 +97,22 @@ Drawing ||--}o Claim : "interpretedAsClaim"
 Drawing ||--}o Thing : "mainEntity"
 Drawing ||--}o Place : "spatialCoverage"
 Drawing ||--}o CreativeWork : "workExample"
-Drawing ||--}o Text : "abstract"
-Drawing ||--}o Text : "accessMode"
 Drawing ||--}o ItemList : "accessModeSufficient"
-Drawing ||--}o Text : "accessibilityAPI"
-Drawing ||--}o Text : "accessibilityControl"
-Drawing ||--}o Text : "accessibilityFeature"
-Drawing ||--}o Text : "accessibilityHazard"
-Drawing ||--}o Text : "accessibilitySummary"
 Drawing ||--}o Person : "accountablePerson"
 Drawing ||--}o AggregateRating : "aggregateRating"
-Drawing ||--}o Text : "alternativeHeadline"
 Drawing ||--}o MediaObject : "associatedMedia"
 Drawing ||--}o Audience : "audience"
-Drawing ||--}o Text : "award"
-Drawing ||--}o Text : "awards"
 Drawing ||--}o Person : "character"
 Drawing ||--}o Comment : "comment"
-Drawing ||--}o Integer : "commentCount"
-Drawing ||--}o Text : "conditionsOfAccess"
-Drawing ||--}o DateTime : "contentReferenceTime"
-Drawing ||--}o Text : "copyrightNotice"
-Drawing ||--}o Number : "copyrightYear"
 Drawing ||--}o Country : "countryOfOrigin"
-Drawing ||--}o Text : "creditText"
 Drawing ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Drawing ||--}o URL : "discussionUrl"
 Drawing ||--}o Person : "editor"
 Drawing ||--}o AlignmentObject : "educationalAlignment"
 Drawing ||--}o MediaObject : "encoding"
 Drawing ||--}o MediaObject : "encodings"
 Drawing ||--}o CreativeWork : "exampleOfWork"
 Drawing ||--}o Grant : "funding"
-Drawing ||--}o Text : "headline"
 Drawing ||--}o InteractionCounter : "interactionStatistic"
-Drawing ||--}o Text : "interactivityType"
-Drawing ||--}o Boolean : "isAccessibleForFree"
-Drawing ||--}o Boolean : "isFamilyFriendly"
 Drawing ||--}o Place : "locationCreated"
 Drawing ||--}o Thing : "mentions"
 Drawing ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ Drawing ||--}o Event : "recordedAt"
 Drawing ||--}o PublicationEvent : "releasedEvent"
 Drawing ||--}o Review : "review"
 Drawing ||--}o Review : "reviews"
-Drawing ||--}o Date : "sdDatePublished"
 Drawing ||--}o Organization : "sourceOrganization"
 Drawing ||--}o Place : "spatial"
-Drawing ||--}o Text : "text"
 Drawing ||--}o ImageObject : "thumbnail"
-Drawing ||--}o URL : "thumbnailUrl"
 Drawing ||--}o Duration : "timeRequired"
 Drawing ||--}o CreativeWork : "translationOfWork"
-Drawing ||--}o Text : "typicalAgeRange"
 Drawing ||--}o CreativeWork : "workTranslation"
-Drawing ||--}o Text : "alternateName"
-Drawing ||--}o Text : "disambiguatingDescription"
-Drawing ||--}o Text : "name"
-Drawing ||--}o URL : "sameAs"
 Drawing ||--}o Action : "potentialAction"
-Drawing ||--}o URL : "url"
 

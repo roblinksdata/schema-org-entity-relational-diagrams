@@ -14,25 +14,46 @@ Quotation {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -44,21 +65,30 @@ Quotation {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Quotation ||--}o Thing : "about"
@@ -68,43 +98,22 @@ Quotation ||--}o Claim : "interpretedAsClaim"
 Quotation ||--}o Thing : "mainEntity"
 Quotation ||--}o Place : "spatialCoverage"
 Quotation ||--}o CreativeWork : "workExample"
-Quotation ||--}o Text : "abstract"
-Quotation ||--}o Text : "accessMode"
 Quotation ||--}o ItemList : "accessModeSufficient"
-Quotation ||--}o Text : "accessibilityAPI"
-Quotation ||--}o Text : "accessibilityControl"
-Quotation ||--}o Text : "accessibilityFeature"
-Quotation ||--}o Text : "accessibilityHazard"
-Quotation ||--}o Text : "accessibilitySummary"
 Quotation ||--}o Person : "accountablePerson"
 Quotation ||--}o AggregateRating : "aggregateRating"
-Quotation ||--}o Text : "alternativeHeadline"
 Quotation ||--}o MediaObject : "associatedMedia"
 Quotation ||--}o Audience : "audience"
-Quotation ||--}o Text : "award"
-Quotation ||--}o Text : "awards"
 Quotation ||--}o Person : "character"
 Quotation ||--}o Comment : "comment"
-Quotation ||--}o Integer : "commentCount"
-Quotation ||--}o Text : "conditionsOfAccess"
-Quotation ||--}o DateTime : "contentReferenceTime"
-Quotation ||--}o Text : "copyrightNotice"
-Quotation ||--}o Number : "copyrightYear"
 Quotation ||--}o Country : "countryOfOrigin"
-Quotation ||--}o Text : "creditText"
 Quotation ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Quotation ||--}o URL : "discussionUrl"
 Quotation ||--}o Person : "editor"
 Quotation ||--}o AlignmentObject : "educationalAlignment"
 Quotation ||--}o MediaObject : "encoding"
 Quotation ||--}o MediaObject : "encodings"
 Quotation ||--}o CreativeWork : "exampleOfWork"
 Quotation ||--}o Grant : "funding"
-Quotation ||--}o Text : "headline"
 Quotation ||--}o InteractionCounter : "interactionStatistic"
-Quotation ||--}o Text : "interactivityType"
-Quotation ||--}o Boolean : "isAccessibleForFree"
-Quotation ||--}o Boolean : "isFamilyFriendly"
 Quotation ||--}o Place : "locationCreated"
 Quotation ||--}o Thing : "mentions"
 Quotation ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ Quotation ||--}o Event : "recordedAt"
 Quotation ||--}o PublicationEvent : "releasedEvent"
 Quotation ||--}o Review : "review"
 Quotation ||--}o Review : "reviews"
-Quotation ||--}o Date : "sdDatePublished"
 Quotation ||--}o Organization : "sourceOrganization"
 Quotation ||--}o Place : "spatial"
-Quotation ||--}o Text : "text"
 Quotation ||--}o ImageObject : "thumbnail"
-Quotation ||--}o URL : "thumbnailUrl"
 Quotation ||--}o Duration : "timeRequired"
 Quotation ||--}o CreativeWork : "translationOfWork"
-Quotation ||--}o Text : "typicalAgeRange"
 Quotation ||--}o CreativeWork : "workTranslation"
-Quotation ||--}o Text : "alternateName"
-Quotation ||--}o Text : "disambiguatingDescription"
-Quotation ||--}o Text : "name"
-Quotation ||--}o URL : "sameAs"
 Quotation ||--}o Action : "potentialAction"
-Quotation ||--}o URL : "url"
 

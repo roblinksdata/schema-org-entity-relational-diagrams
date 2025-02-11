@@ -8,11 +8,16 @@ PerformAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 PerformAction ||--}o EntertainmentBusiness : "entertainmentBusiness"
@@ -24,10 +29,5 @@ PerformAction ||--}o Thing : "result"
 PerformAction ||--}o HowTo : "actionProcess"
 PerformAction ||--}o ActionStatusType : "actionStatus"
 PerformAction ||--}o Thing : "error"
-PerformAction ||--}o Text : "alternateName"
-PerformAction ||--}o Text : "disambiguatingDescription"
-PerformAction ||--}o Text : "name"
-PerformAction ||--}o URL : "sameAs"
 PerformAction ||--}o Action : "potentialAction"
-PerformAction ||--}o URL : "url"
 

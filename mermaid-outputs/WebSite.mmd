@@ -1,5 +1,6 @@
 erDiagram
 WebSite {
+    TextList issn  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -13,25 +14,46 @@ WebSite {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,24 +65,32 @@ WebSite {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-WebSite ||--}o Text : "issn"
 WebSite ||--}o Thing : "about"
 WebSite ||--}o Place : "contentLocation"
 WebSite ||--}o CreativeWork : "hasPart"
@@ -68,43 +98,22 @@ WebSite ||--}o Claim : "interpretedAsClaim"
 WebSite ||--}o Thing : "mainEntity"
 WebSite ||--}o Place : "spatialCoverage"
 WebSite ||--}o CreativeWork : "workExample"
-WebSite ||--}o Text : "abstract"
-WebSite ||--}o Text : "accessMode"
 WebSite ||--}o ItemList : "accessModeSufficient"
-WebSite ||--}o Text : "accessibilityAPI"
-WebSite ||--}o Text : "accessibilityControl"
-WebSite ||--}o Text : "accessibilityFeature"
-WebSite ||--}o Text : "accessibilityHazard"
-WebSite ||--}o Text : "accessibilitySummary"
 WebSite ||--}o Person : "accountablePerson"
 WebSite ||--}o AggregateRating : "aggregateRating"
-WebSite ||--}o Text : "alternativeHeadline"
 WebSite ||--}o MediaObject : "associatedMedia"
 WebSite ||--}o Audience : "audience"
-WebSite ||--}o Text : "award"
-WebSite ||--}o Text : "awards"
 WebSite ||--}o Person : "character"
 WebSite ||--}o Comment : "comment"
-WebSite ||--}o Integer : "commentCount"
-WebSite ||--}o Text : "conditionsOfAccess"
-WebSite ||--}o DateTime : "contentReferenceTime"
-WebSite ||--}o Text : "copyrightNotice"
-WebSite ||--}o Number : "copyrightYear"
 WebSite ||--}o Country : "countryOfOrigin"
-WebSite ||--}o Text : "creditText"
 WebSite ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-WebSite ||--}o URL : "discussionUrl"
 WebSite ||--}o Person : "editor"
 WebSite ||--}o AlignmentObject : "educationalAlignment"
 WebSite ||--}o MediaObject : "encoding"
 WebSite ||--}o MediaObject : "encodings"
 WebSite ||--}o CreativeWork : "exampleOfWork"
 WebSite ||--}o Grant : "funding"
-WebSite ||--}o Text : "headline"
 WebSite ||--}o InteractionCounter : "interactionStatistic"
-WebSite ||--}o Text : "interactivityType"
-WebSite ||--}o Boolean : "isAccessibleForFree"
-WebSite ||--}o Boolean : "isFamilyFriendly"
 WebSite ||--}o Place : "locationCreated"
 WebSite ||--}o Thing : "mentions"
 WebSite ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ WebSite ||--}o Event : "recordedAt"
 WebSite ||--}o PublicationEvent : "releasedEvent"
 WebSite ||--}o Review : "review"
 WebSite ||--}o Review : "reviews"
-WebSite ||--}o Date : "sdDatePublished"
 WebSite ||--}o Organization : "sourceOrganization"
 WebSite ||--}o Place : "spatial"
-WebSite ||--}o Text : "text"
 WebSite ||--}o ImageObject : "thumbnail"
-WebSite ||--}o URL : "thumbnailUrl"
 WebSite ||--}o Duration : "timeRequired"
 WebSite ||--}o CreativeWork : "translationOfWork"
-WebSite ||--}o Text : "typicalAgeRange"
 WebSite ||--}o CreativeWork : "workTranslation"
-WebSite ||--}o Text : "alternateName"
-WebSite ||--}o Text : "disambiguatingDescription"
-WebSite ||--}o Text : "name"
-WebSite ||--}o URL : "sameAs"
 WebSite ||--}o Action : "potentialAction"
-WebSite ||--}o URL : "url"
 

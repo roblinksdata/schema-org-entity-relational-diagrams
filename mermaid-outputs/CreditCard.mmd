@@ -1,9 +1,13 @@
 erDiagram
 CreditCard {
     stringList cashBack  
+    BooleanList contactlessPayment  
     stringList monthlyMinimumRepaymentAmount  
     stringList amount  
+    TextList currency  
     stringList loanType  
+    BooleanList recourseLoan  
+    BooleanList renegotiableLoan  
     stringList requiredCollateral  
     stringList annualPercentageRate  
     stringList feesAndCommissionsSpecification  
@@ -11,49 +15,45 @@ CreditCard {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-CreditCard ||--}o Boolean : "contactlessPayment"
 CreditCard ||--}o MonetaryAmount : "floorLimit"
 CreditCard ||--}o QuantitativeValue : "loanTerm"
-CreditCard ||--}o Text : "currency"
 CreditCard ||--}o Duration : "gracePeriod"
 CreditCard ||--}o RepaymentSpecification : "loanRepaymentForm"
-CreditCard ||--}o Boolean : "recourseLoan"
-CreditCard ||--}o Boolean : "renegotiableLoan"
 CreditCard ||--}o AggregateRating : "aggregateRating"
 CreditCard ||--}o Audience : "audience"
 CreditCard ||--}o ServiceChannel : "availableChannel"
-CreditCard ||--}o Text : "award"
 CreditCard ||--}o Certification : "hasCertification"
 CreditCard ||--}o OfferCatalog : "hasOfferCatalog"
 CreditCard ||--}o OpeningHoursSpecification : "hoursAvailable"
 CreditCard ||--}o Thing : "produces"
-CreditCard ||--}o Text : "providerMobility"
 CreditCard ||--}o Review : "review"
 CreditCard ||--}o Audience : "serviceAudience"
 CreditCard ||--}o Thing : "serviceOutput"
-CreditCard ||--}o Text : "slogan"
-CreditCard ||--}o Text : "alternateName"
-CreditCard ||--}o Text : "disambiguatingDescription"
-CreditCard ||--}o Text : "name"
-CreditCard ||--}o URL : "sameAs"
 CreditCard ||--}o Action : "potentialAction"
-CreditCard ||--}o URL : "url"
 CreditCard ||--}o PaymentMethodType : "paymentMethodType"
 

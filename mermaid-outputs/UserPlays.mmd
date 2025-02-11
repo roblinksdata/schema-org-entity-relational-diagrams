@@ -11,19 +11,31 @@ UserPlays {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 UserPlays ||--}o Thing : "about"
@@ -37,22 +49,10 @@ UserPlays ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 UserPlays ||--}o Schedule : "eventSchedule"
 UserPlays ||--}o EventStatusType : "eventStatus"
 UserPlays ||--}o Grant : "funding"
-UserPlays ||--}o Boolean : "isAccessibleForFree"
-UserPlays ||--}o Integer : "maximumAttendeeCapacity"
-UserPlays ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-UserPlays ||--}o Integer : "maximumVirtualAttendeeCapacity"
-UserPlays ||--}o Date : "previousStartDate"
 UserPlays ||--}o CreativeWork : "recordedIn"
-UserPlays ||--}o Integer : "remainingAttendeeCapacity"
 UserPlays ||--}o Review : "review"
 UserPlays ||--}o Event : "subEvent"
 UserPlays ||--}o Event : "subEvents"
 UserPlays ||--}o Event : "superEvent"
-UserPlays ||--}o Text : "typicalAgeRange"
-UserPlays ||--}o Text : "alternateName"
-UserPlays ||--}o Text : "disambiguatingDescription"
-UserPlays ||--}o Text : "name"
-UserPlays ||--}o URL : "sameAs"
 UserPlays ||--}o Action : "potentialAction"
-UserPlays ||--}o URL : "url"
 

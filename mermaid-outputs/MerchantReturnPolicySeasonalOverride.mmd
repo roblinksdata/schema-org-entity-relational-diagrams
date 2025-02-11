@@ -5,11 +5,16 @@ MerchantReturnPolicySeasonalOverride {
     stringList restockingFee  
     stringList startDate  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MerchantReturnPolicySeasonalOverride ||--}o RefundTypeEnumeration : "refundType"
@@ -17,10 +22,5 @@ MerchantReturnPolicySeasonalOverride ||--}o ReturnFeesEnumeration : "returnFees"
 MerchantReturnPolicySeasonalOverride ||--}o ReturnMethodEnumeration : "returnMethod"
 MerchantReturnPolicySeasonalOverride ||--}o MerchantReturnEnumeration : "returnPolicyCategory"
 MerchantReturnPolicySeasonalOverride ||--}o MonetaryAmount : "returnShippingFeesAmount"
-MerchantReturnPolicySeasonalOverride ||--}o Text : "alternateName"
-MerchantReturnPolicySeasonalOverride ||--}o Text : "disambiguatingDescription"
-MerchantReturnPolicySeasonalOverride ||--}o Text : "name"
-MerchantReturnPolicySeasonalOverride ||--}o URL : "sameAs"
 MerchantReturnPolicySeasonalOverride ||--}o Action : "potentialAction"
-MerchantReturnPolicySeasonalOverride ||--}o URL : "url"
 

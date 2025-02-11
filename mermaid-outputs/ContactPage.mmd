@@ -1,7 +1,11 @@
 erDiagram
 ContactPage {
     stringList breadcrumb  
+    DateList lastReviewed  
+    URLList relatedLink  
     stringList reviewedBy  
+    URLList significantLink  
+    URLList significantLinks  
     stringList speakable  
     stringList acquireLicensePage  
     stringList contributor  
@@ -16,25 +20,46 @@ ContactPage {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -46,29 +71,34 @@ ContactPage {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ContactPage ||--}o Date : "lastReviewed"
 ContactPage ||--}o WebPageElement : "mainContentOfPage"
 ContactPage ||--}o ImageObject : "primaryImageOfPage"
-ContactPage ||--}o URL : "relatedLink"
-ContactPage ||--}o URL : "significantLink"
-ContactPage ||--}o URL : "significantLinks"
 ContactPage ||--}o Specialty : "specialty"
 ContactPage ||--}o Thing : "about"
 ContactPage ||--}o Place : "contentLocation"
@@ -77,43 +107,22 @@ ContactPage ||--}o Claim : "interpretedAsClaim"
 ContactPage ||--}o Thing : "mainEntity"
 ContactPage ||--}o Place : "spatialCoverage"
 ContactPage ||--}o CreativeWork : "workExample"
-ContactPage ||--}o Text : "abstract"
-ContactPage ||--}o Text : "accessMode"
 ContactPage ||--}o ItemList : "accessModeSufficient"
-ContactPage ||--}o Text : "accessibilityAPI"
-ContactPage ||--}o Text : "accessibilityControl"
-ContactPage ||--}o Text : "accessibilityFeature"
-ContactPage ||--}o Text : "accessibilityHazard"
-ContactPage ||--}o Text : "accessibilitySummary"
 ContactPage ||--}o Person : "accountablePerson"
 ContactPage ||--}o AggregateRating : "aggregateRating"
-ContactPage ||--}o Text : "alternativeHeadline"
 ContactPage ||--}o MediaObject : "associatedMedia"
 ContactPage ||--}o Audience : "audience"
-ContactPage ||--}o Text : "award"
-ContactPage ||--}o Text : "awards"
 ContactPage ||--}o Person : "character"
 ContactPage ||--}o Comment : "comment"
-ContactPage ||--}o Integer : "commentCount"
-ContactPage ||--}o Text : "conditionsOfAccess"
-ContactPage ||--}o DateTime : "contentReferenceTime"
-ContactPage ||--}o Text : "copyrightNotice"
-ContactPage ||--}o Number : "copyrightYear"
 ContactPage ||--}o Country : "countryOfOrigin"
-ContactPage ||--}o Text : "creditText"
 ContactPage ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ContactPage ||--}o URL : "discussionUrl"
 ContactPage ||--}o Person : "editor"
 ContactPage ||--}o AlignmentObject : "educationalAlignment"
 ContactPage ||--}o MediaObject : "encoding"
 ContactPage ||--}o MediaObject : "encodings"
 ContactPage ||--}o CreativeWork : "exampleOfWork"
 ContactPage ||--}o Grant : "funding"
-ContactPage ||--}o Text : "headline"
 ContactPage ||--}o InteractionCounter : "interactionStatistic"
-ContactPage ||--}o Text : "interactivityType"
-ContactPage ||--}o Boolean : "isAccessibleForFree"
-ContactPage ||--}o Boolean : "isFamilyFriendly"
 ContactPage ||--}o Place : "locationCreated"
 ContactPage ||--}o Thing : "mentions"
 ContactPage ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ ContactPage ||--}o Event : "recordedAt"
 ContactPage ||--}o PublicationEvent : "releasedEvent"
 ContactPage ||--}o Review : "review"
 ContactPage ||--}o Review : "reviews"
-ContactPage ||--}o Date : "sdDatePublished"
 ContactPage ||--}o Organization : "sourceOrganization"
 ContactPage ||--}o Place : "spatial"
-ContactPage ||--}o Text : "text"
 ContactPage ||--}o ImageObject : "thumbnail"
-ContactPage ||--}o URL : "thumbnailUrl"
 ContactPage ||--}o Duration : "timeRequired"
 ContactPage ||--}o CreativeWork : "translationOfWork"
-ContactPage ||--}o Text : "typicalAgeRange"
 ContactPage ||--}o CreativeWork : "workTranslation"
-ContactPage ||--}o Text : "alternateName"
-ContactPage ||--}o Text : "disambiguatingDescription"
-ContactPage ||--}o Text : "name"
-ContactPage ||--}o URL : "sameAs"
 ContactPage ||--}o Action : "potentialAction"
-ContactPage ||--}o URL : "url"
 

@@ -2,17 +2,17 @@ erDiagram
 CertificationStatusEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-CertificationStatusEnumeration ||--}o Text : "alternateName"
-CertificationStatusEnumeration ||--}o Text : "disambiguatingDescription"
-CertificationStatusEnumeration ||--}o Text : "name"
-CertificationStatusEnumeration ||--}o URL : "sameAs"
 CertificationStatusEnumeration ||--}o Action : "potentialAction"
-CertificationStatusEnumeration ||--}o URL : "url"
 

@@ -1,8 +1,16 @@
 erDiagram
 GolfCourse {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ GolfCourse {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 GolfCourse ||--}o Organization : "branchOf"
-GolfCourse ||--}o Text : "currenciesAccepted"
-GolfCourse ||--}o Text : "openingHours"
-GolfCourse ||--}o Text : "paymentAccepted"
-GolfCourse ||--}o Text : "priceRange"
-GolfCourse ||--}o Text : "globalLocationNumber"
-GolfCourse ||--}o URL : "hasGS1DigitalLink"
 GolfCourse ||--}o PropertyValue : "additionalProperty"
 GolfCourse ||--}o AggregateRating : "aggregateRating"
 GolfCourse ||--}o LocationFeatureSpecification : "amenityFeature"
-GolfCourse ||--}o Text : "branchCode"
 GolfCourse ||--}o Place : "containedIn"
 GolfCourse ||--}o Place : "containedInPlace"
 GolfCourse ||--}o Place : "containsPlace"
 GolfCourse ||--}o Event : "event"
 GolfCourse ||--}o Event : "events"
-GolfCourse ||--}o Text : "faxNumber"
 GolfCourse ||--}o Certification : "hasCertification"
-GolfCourse ||--}o Boolean : "hasDriveThroughService"
-GolfCourse ||--}o Boolean : "isAccessibleForFree"
-GolfCourse ||--}o Text : "isicV4"
-GolfCourse ||--}o URL : "map"
-GolfCourse ||--}o URL : "maps"
-GolfCourse ||--}o Integer : "maximumAttendeeCapacity"
 GolfCourse ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-GolfCourse ||--}o Boolean : "publicAccess"
 GolfCourse ||--}o Review : "review"
 GolfCourse ||--}o Review : "reviews"
-GolfCourse ||--}o Text : "slogan"
-GolfCourse ||--}o Boolean : "smokingAllowed"
 GolfCourse ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-GolfCourse ||--}o Text : "telephone"
-GolfCourse ||--}o URL : "tourBookingPage"
-GolfCourse ||--}o Text : "duns"
-GolfCourse ||--}o Text : "leiCode"
-GolfCourse ||--}o Text : "taxID"
 GolfCourse ||--}o InteractionCounter : "agentInteractionStatistic"
 GolfCourse ||--}o Person : "alumni"
-GolfCourse ||--}o Text : "award"
-GolfCourse ||--}o Text : "awards"
 GolfCourse ||--}o ContactPoint : "contactPoint"
 GolfCourse ||--}o ContactPoint : "contactPoints"
 GolfCourse ||--}o Organization : "department"
-GolfCourse ||--}o Date : "dissolutionDate"
-GolfCourse ||--}o Text : "email"
 GolfCourse ||--}o Person : "employee"
 GolfCourse ||--}o Person : "employees"
 GolfCourse ||--}o Person : "founders"
-GolfCourse ||--}o Date : "foundingDate"
 GolfCourse ||--}o Place : "foundingLocation"
 GolfCourse ||--}o Grant : "funding"
 GolfCourse ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ GolfCourse ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 GolfCourse ||--}o OfferCatalog : "hasOfferCatalog"
 GolfCourse ||--}o Place : "hasPOS"
 GolfCourse ||--}o InteractionCounter : "interactionStatistic"
-GolfCourse ||--}o Text : "iso6523Code"
-GolfCourse ||--}o Text : "legalName"
 GolfCourse ||--}o Offer : "makesOffer"
-GolfCourse ||--}o Text : "naics"
 GolfCourse ||--}o NonprofitType : "nonprofitStatus"
 GolfCourse ||--}o QuantitativeValue : "numberOfEmployees"
 GolfCourse ||--}o Organization : "parentOrganization"
 GolfCourse ||--}o Demand : "seeks"
 GolfCourse ||--}o Organization : "subOrganization"
-GolfCourse ||--}o Text : "vatID"
-GolfCourse ||--}o Text : "alternateName"
-GolfCourse ||--}o Text : "disambiguatingDescription"
-GolfCourse ||--}o Text : "name"
-GolfCourse ||--}o URL : "sameAs"
 GolfCourse ||--}o Action : "potentialAction"
-GolfCourse ||--}o URL : "url"
 

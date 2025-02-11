@@ -1,19 +1,24 @@
 erDiagram
 DiagnosticProcedure {
+    TextList bodyLocation  
+    TextList followup  
+    TextList howPerformed  
     stringList preparation  
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DiagnosticProcedure ||--}o Text : "bodyLocation"
-DiagnosticProcedure ||--}o Text : "followup"
-DiagnosticProcedure ||--}o Text : "howPerformed"
 DiagnosticProcedure ||--}o MedicalProcedureType : "procedureType"
 DiagnosticProcedure ||--}o MedicalCode : "code"
 DiagnosticProcedure ||--}o Grant : "funding"
@@ -22,10 +27,5 @@ DiagnosticProcedure ||--}o MedicineSystem : "medicineSystem"
 DiagnosticProcedure ||--}o Organization : "recognizingAuthority"
 DiagnosticProcedure ||--}o MedicalSpecialty : "relevantSpecialty"
 DiagnosticProcedure ||--}o MedicalStudy : "study"
-DiagnosticProcedure ||--}o Text : "alternateName"
-DiagnosticProcedure ||--}o Text : "disambiguatingDescription"
-DiagnosticProcedure ||--}o Text : "name"
-DiagnosticProcedure ||--}o URL : "sameAs"
 DiagnosticProcedure ||--}o Action : "potentialAction"
-DiagnosticProcedure ||--}o URL : "url"
 

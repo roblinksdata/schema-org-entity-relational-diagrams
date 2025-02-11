@@ -1,28 +1,28 @@
 erDiagram
 PropertyValueSpecification {
     stringList defaultValue  
+    NumberList maxValue  
+    NumberList minValue  
+    BooleanList multipleValues  
+    BooleanList readonlyValue  
+    NumberList stepValue  
+    NumberList valueMaxLength  
+    NumberList valueMinLength  
+    TextList valueName  
+    TextList valuePattern  
+    BooleanList valueRequired  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PropertyValueSpecification ||--}o Number : "maxValue"
-PropertyValueSpecification ||--}o Number : "minValue"
-PropertyValueSpecification ||--}o Boolean : "multipleValues"
-PropertyValueSpecification ||--}o Boolean : "readonlyValue"
-PropertyValueSpecification ||--}o Number : "stepValue"
-PropertyValueSpecification ||--}o Number : "valueMaxLength"
-PropertyValueSpecification ||--}o Number : "valueMinLength"
-PropertyValueSpecification ||--}o Text : "valueName"
-PropertyValueSpecification ||--}o Text : "valuePattern"
-PropertyValueSpecification ||--}o Boolean : "valueRequired"
-PropertyValueSpecification ||--}o Text : "alternateName"
-PropertyValueSpecification ||--}o Text : "disambiguatingDescription"
-PropertyValueSpecification ||--}o Text : "name"
-PropertyValueSpecification ||--}o URL : "sameAs"
 PropertyValueSpecification ||--}o Action : "potentialAction"
-PropertyValueSpecification ||--}o URL : "url"
 

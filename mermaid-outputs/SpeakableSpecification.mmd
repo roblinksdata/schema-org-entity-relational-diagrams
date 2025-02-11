@@ -1,19 +1,19 @@
 erDiagram
 SpeakableSpecification {
+    CssSelectorTypeList cssSelector  
+    XPathTypeList xpath  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-SpeakableSpecification ||--}o CssSelectorType : "cssSelector"
-SpeakableSpecification ||--}o XPathType : "xpath"
-SpeakableSpecification ||--}o Text : "alternateName"
-SpeakableSpecification ||--}o Text : "disambiguatingDescription"
-SpeakableSpecification ||--}o Text : "name"
-SpeakableSpecification ||--}o URL : "sameAs"
 SpeakableSpecification ||--}o Action : "potentialAction"
-SpeakableSpecification ||--}o URL : "url"
 

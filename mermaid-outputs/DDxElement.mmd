@@ -2,11 +2,16 @@ erDiagram
 DDxElement {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DDxElement ||--}o MedicalCondition : "diagnosis"
@@ -18,10 +23,5 @@ DDxElement ||--}o MedicineSystem : "medicineSystem"
 DDxElement ||--}o Organization : "recognizingAuthority"
 DDxElement ||--}o MedicalSpecialty : "relevantSpecialty"
 DDxElement ||--}o MedicalStudy : "study"
-DDxElement ||--}o Text : "alternateName"
-DDxElement ||--}o Text : "disambiguatingDescription"
-DDxElement ||--}o Text : "name"
-DDxElement ||--}o URL : "sameAs"
 DDxElement ||--}o Action : "potentialAction"
-DDxElement ||--}o URL : "url"
 

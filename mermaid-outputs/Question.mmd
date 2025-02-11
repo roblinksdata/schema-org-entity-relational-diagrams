@@ -2,7 +2,11 @@ erDiagram
 Question {
     stringList acceptedAnswer  
     stringList suggestedAnswer  
+    IntegerList answerCount  
+    TextList eduQuestionType  
     stringList parentItem  
+    IntegerList downvoteCount  
+    IntegerList upvoteCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -16,25 +20,46 @@ Question {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -46,28 +71,33 @@ Question {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Question ||--}o Integer : "answerCount"
-Question ||--}o Text : "eduQuestionType"
-Question ||--}o Integer : "downvoteCount"
 Question ||--}o CreativeWork : "sharedContent"
-Question ||--}o Integer : "upvoteCount"
 Question ||--}o Thing : "about"
 Question ||--}o Place : "contentLocation"
 Question ||--}o CreativeWork : "hasPart"
@@ -75,43 +105,22 @@ Question ||--}o Claim : "interpretedAsClaim"
 Question ||--}o Thing : "mainEntity"
 Question ||--}o Place : "spatialCoverage"
 Question ||--}o CreativeWork : "workExample"
-Question ||--}o Text : "abstract"
-Question ||--}o Text : "accessMode"
 Question ||--}o ItemList : "accessModeSufficient"
-Question ||--}o Text : "accessibilityAPI"
-Question ||--}o Text : "accessibilityControl"
-Question ||--}o Text : "accessibilityFeature"
-Question ||--}o Text : "accessibilityHazard"
-Question ||--}o Text : "accessibilitySummary"
 Question ||--}o Person : "accountablePerson"
 Question ||--}o AggregateRating : "aggregateRating"
-Question ||--}o Text : "alternativeHeadline"
 Question ||--}o MediaObject : "associatedMedia"
 Question ||--}o Audience : "audience"
-Question ||--}o Text : "award"
-Question ||--}o Text : "awards"
 Question ||--}o Person : "character"
 Question ||--}o Comment : "comment"
-Question ||--}o Integer : "commentCount"
-Question ||--}o Text : "conditionsOfAccess"
-Question ||--}o DateTime : "contentReferenceTime"
-Question ||--}o Text : "copyrightNotice"
-Question ||--}o Number : "copyrightYear"
 Question ||--}o Country : "countryOfOrigin"
-Question ||--}o Text : "creditText"
 Question ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Question ||--}o URL : "discussionUrl"
 Question ||--}o Person : "editor"
 Question ||--}o AlignmentObject : "educationalAlignment"
 Question ||--}o MediaObject : "encoding"
 Question ||--}o MediaObject : "encodings"
 Question ||--}o CreativeWork : "exampleOfWork"
 Question ||--}o Grant : "funding"
-Question ||--}o Text : "headline"
 Question ||--}o InteractionCounter : "interactionStatistic"
-Question ||--}o Text : "interactivityType"
-Question ||--}o Boolean : "isAccessibleForFree"
-Question ||--}o Boolean : "isFamilyFriendly"
 Question ||--}o Place : "locationCreated"
 Question ||--}o Thing : "mentions"
 Question ||--}o PublicationEvent : "publication"
@@ -120,20 +129,11 @@ Question ||--}o Event : "recordedAt"
 Question ||--}o PublicationEvent : "releasedEvent"
 Question ||--}o Review : "review"
 Question ||--}o Review : "reviews"
-Question ||--}o Date : "sdDatePublished"
 Question ||--}o Organization : "sourceOrganization"
 Question ||--}o Place : "spatial"
-Question ||--}o Text : "text"
 Question ||--}o ImageObject : "thumbnail"
-Question ||--}o URL : "thumbnailUrl"
 Question ||--}o Duration : "timeRequired"
 Question ||--}o CreativeWork : "translationOfWork"
-Question ||--}o Text : "typicalAgeRange"
 Question ||--}o CreativeWork : "workTranslation"
-Question ||--}o Text : "alternateName"
-Question ||--}o Text : "disambiguatingDescription"
-Question ||--}o Text : "name"
-Question ||--}o URL : "sameAs"
 Question ||--}o Action : "potentialAction"
-Question ||--}o URL : "url"
 

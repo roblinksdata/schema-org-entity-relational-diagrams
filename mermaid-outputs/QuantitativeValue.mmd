@@ -1,24 +1,24 @@
 erDiagram
 QuantitativeValue {
+    NumberList maxValue  
+    NumberList minValue  
     stringList unitCode  
+    TextList unitText  
     stringList value  
     stringList valueReference  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 QuantitativeValue ||--}o PropertyValue : "additionalProperty"
-QuantitativeValue ||--}o Number : "maxValue"
-QuantitativeValue ||--}o Number : "minValue"
-QuantitativeValue ||--}o Text : "unitText"
-QuantitativeValue ||--}o Text : "alternateName"
-QuantitativeValue ||--}o Text : "disambiguatingDescription"
-QuantitativeValue ||--}o Text : "name"
-QuantitativeValue ||--}o URL : "sameAs"
 QuantitativeValue ||--}o Action : "potentialAction"
-QuantitativeValue ||--}o URL : "url"
 

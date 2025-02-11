@@ -4,41 +4,41 @@ GovernmentService {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 GovernmentService ||--}o Organization : "serviceOperator"
 GovernmentService ||--}o AggregateRating : "aggregateRating"
 GovernmentService ||--}o Audience : "audience"
 GovernmentService ||--}o ServiceChannel : "availableChannel"
-GovernmentService ||--}o Text : "award"
 GovernmentService ||--}o Certification : "hasCertification"
 GovernmentService ||--}o OfferCatalog : "hasOfferCatalog"
 GovernmentService ||--}o OpeningHoursSpecification : "hoursAvailable"
 GovernmentService ||--}o Thing : "produces"
-GovernmentService ||--}o Text : "providerMobility"
 GovernmentService ||--}o Review : "review"
 GovernmentService ||--}o Audience : "serviceAudience"
 GovernmentService ||--}o Thing : "serviceOutput"
-GovernmentService ||--}o Text : "slogan"
-GovernmentService ||--}o Text : "alternateName"
-GovernmentService ||--}o Text : "disambiguatingDescription"
-GovernmentService ||--}o Text : "name"
-GovernmentService ||--}o URL : "sameAs"
 GovernmentService ||--}o Action : "potentialAction"
-GovernmentService ||--}o URL : "url"
 

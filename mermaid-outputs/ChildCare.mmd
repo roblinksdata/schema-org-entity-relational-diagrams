@@ -1,8 +1,16 @@
 erDiagram
 ChildCare {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ ChildCare {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ChildCare ||--}o Organization : "branchOf"
-ChildCare ||--}o Text : "currenciesAccepted"
-ChildCare ||--}o Text : "openingHours"
-ChildCare ||--}o Text : "paymentAccepted"
-ChildCare ||--}o Text : "priceRange"
-ChildCare ||--}o Text : "globalLocationNumber"
-ChildCare ||--}o URL : "hasGS1DigitalLink"
 ChildCare ||--}o PropertyValue : "additionalProperty"
 ChildCare ||--}o AggregateRating : "aggregateRating"
 ChildCare ||--}o LocationFeatureSpecification : "amenityFeature"
-ChildCare ||--}o Text : "branchCode"
 ChildCare ||--}o Place : "containedIn"
 ChildCare ||--}o Place : "containedInPlace"
 ChildCare ||--}o Place : "containsPlace"
 ChildCare ||--}o Event : "event"
 ChildCare ||--}o Event : "events"
-ChildCare ||--}o Text : "faxNumber"
 ChildCare ||--}o Certification : "hasCertification"
-ChildCare ||--}o Boolean : "hasDriveThroughService"
-ChildCare ||--}o Boolean : "isAccessibleForFree"
-ChildCare ||--}o Text : "isicV4"
-ChildCare ||--}o URL : "map"
-ChildCare ||--}o URL : "maps"
-ChildCare ||--}o Integer : "maximumAttendeeCapacity"
 ChildCare ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-ChildCare ||--}o Boolean : "publicAccess"
 ChildCare ||--}o Review : "review"
 ChildCare ||--}o Review : "reviews"
-ChildCare ||--}o Text : "slogan"
-ChildCare ||--}o Boolean : "smokingAllowed"
 ChildCare ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-ChildCare ||--}o Text : "telephone"
-ChildCare ||--}o URL : "tourBookingPage"
-ChildCare ||--}o Text : "duns"
-ChildCare ||--}o Text : "leiCode"
-ChildCare ||--}o Text : "taxID"
 ChildCare ||--}o InteractionCounter : "agentInteractionStatistic"
 ChildCare ||--}o Person : "alumni"
-ChildCare ||--}o Text : "award"
-ChildCare ||--}o Text : "awards"
 ChildCare ||--}o ContactPoint : "contactPoint"
 ChildCare ||--}o ContactPoint : "contactPoints"
 ChildCare ||--}o Organization : "department"
-ChildCare ||--}o Date : "dissolutionDate"
-ChildCare ||--}o Text : "email"
 ChildCare ||--}o Person : "employee"
 ChildCare ||--}o Person : "employees"
 ChildCare ||--}o Person : "founders"
-ChildCare ||--}o Date : "foundingDate"
 ChildCare ||--}o Place : "foundingLocation"
 ChildCare ||--}o Grant : "funding"
 ChildCare ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ ChildCare ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 ChildCare ||--}o OfferCatalog : "hasOfferCatalog"
 ChildCare ||--}o Place : "hasPOS"
 ChildCare ||--}o InteractionCounter : "interactionStatistic"
-ChildCare ||--}o Text : "iso6523Code"
-ChildCare ||--}o Text : "legalName"
 ChildCare ||--}o Offer : "makesOffer"
-ChildCare ||--}o Text : "naics"
 ChildCare ||--}o NonprofitType : "nonprofitStatus"
 ChildCare ||--}o QuantitativeValue : "numberOfEmployees"
 ChildCare ||--}o Organization : "parentOrganization"
 ChildCare ||--}o Demand : "seeks"
 ChildCare ||--}o Organization : "subOrganization"
-ChildCare ||--}o Text : "vatID"
-ChildCare ||--}o Text : "alternateName"
-ChildCare ||--}o Text : "disambiguatingDescription"
-ChildCare ||--}o Text : "name"
-ChildCare ||--}o URL : "sameAs"
 ChildCare ||--}o Action : "potentialAction"
-ChildCare ||--}o URL : "url"
 

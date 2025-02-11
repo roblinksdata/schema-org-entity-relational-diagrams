@@ -9,11 +9,16 @@ SendAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SendAction ||--}o DeliveryMethod : "deliveryMethod"
@@ -25,10 +30,5 @@ SendAction ||--}o Thing : "result"
 SendAction ||--}o HowTo : "actionProcess"
 SendAction ||--}o ActionStatusType : "actionStatus"
 SendAction ||--}o Thing : "error"
-SendAction ||--}o Text : "alternateName"
-SendAction ||--}o Text : "disambiguatingDescription"
-SendAction ||--}o Text : "name"
-SendAction ||--}o URL : "sameAs"
 SendAction ||--}o Action : "potentialAction"
-SendAction ||--}o URL : "url"
 

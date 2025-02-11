@@ -3,9 +3,18 @@ IceCreamShop {
     stringList acceptsReservations  
     stringList hasMenu  
     stringList menu  
+    TextList servesCuisine  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -17,93 +26,93 @@ IceCreamShop {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-IceCreamShop ||--}o Text : "servesCuisine"
 IceCreamShop ||--}o Rating : "starRating"
 IceCreamShop ||--}o Organization : "branchOf"
-IceCreamShop ||--}o Text : "currenciesAccepted"
-IceCreamShop ||--}o Text : "openingHours"
-IceCreamShop ||--}o Text : "paymentAccepted"
-IceCreamShop ||--}o Text : "priceRange"
-IceCreamShop ||--}o Text : "globalLocationNumber"
-IceCreamShop ||--}o URL : "hasGS1DigitalLink"
 IceCreamShop ||--}o PropertyValue : "additionalProperty"
 IceCreamShop ||--}o AggregateRating : "aggregateRating"
 IceCreamShop ||--}o LocationFeatureSpecification : "amenityFeature"
-IceCreamShop ||--}o Text : "branchCode"
 IceCreamShop ||--}o Place : "containedIn"
 IceCreamShop ||--}o Place : "containedInPlace"
 IceCreamShop ||--}o Place : "containsPlace"
 IceCreamShop ||--}o Event : "event"
 IceCreamShop ||--}o Event : "events"
-IceCreamShop ||--}o Text : "faxNumber"
 IceCreamShop ||--}o Certification : "hasCertification"
-IceCreamShop ||--}o Boolean : "hasDriveThroughService"
-IceCreamShop ||--}o Boolean : "isAccessibleForFree"
-IceCreamShop ||--}o Text : "isicV4"
-IceCreamShop ||--}o URL : "map"
-IceCreamShop ||--}o URL : "maps"
-IceCreamShop ||--}o Integer : "maximumAttendeeCapacity"
 IceCreamShop ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-IceCreamShop ||--}o Boolean : "publicAccess"
 IceCreamShop ||--}o Review : "review"
 IceCreamShop ||--}o Review : "reviews"
-IceCreamShop ||--}o Text : "slogan"
-IceCreamShop ||--}o Boolean : "smokingAllowed"
 IceCreamShop ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-IceCreamShop ||--}o Text : "telephone"
-IceCreamShop ||--}o URL : "tourBookingPage"
-IceCreamShop ||--}o Text : "duns"
-IceCreamShop ||--}o Text : "leiCode"
-IceCreamShop ||--}o Text : "taxID"
 IceCreamShop ||--}o InteractionCounter : "agentInteractionStatistic"
 IceCreamShop ||--}o Person : "alumni"
-IceCreamShop ||--}o Text : "award"
-IceCreamShop ||--}o Text : "awards"
 IceCreamShop ||--}o ContactPoint : "contactPoint"
 IceCreamShop ||--}o ContactPoint : "contactPoints"
 IceCreamShop ||--}o Organization : "department"
-IceCreamShop ||--}o Date : "dissolutionDate"
-IceCreamShop ||--}o Text : "email"
 IceCreamShop ||--}o Person : "employee"
 IceCreamShop ||--}o Person : "employees"
 IceCreamShop ||--}o Person : "founders"
-IceCreamShop ||--}o Date : "foundingDate"
 IceCreamShop ||--}o Place : "foundingLocation"
 IceCreamShop ||--}o Grant : "funding"
 IceCreamShop ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -112,20 +121,11 @@ IceCreamShop ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 IceCreamShop ||--}o OfferCatalog : "hasOfferCatalog"
 IceCreamShop ||--}o Place : "hasPOS"
 IceCreamShop ||--}o InteractionCounter : "interactionStatistic"
-IceCreamShop ||--}o Text : "iso6523Code"
-IceCreamShop ||--}o Text : "legalName"
 IceCreamShop ||--}o Offer : "makesOffer"
-IceCreamShop ||--}o Text : "naics"
 IceCreamShop ||--}o NonprofitType : "nonprofitStatus"
 IceCreamShop ||--}o QuantitativeValue : "numberOfEmployees"
 IceCreamShop ||--}o Organization : "parentOrganization"
 IceCreamShop ||--}o Demand : "seeks"
 IceCreamShop ||--}o Organization : "subOrganization"
-IceCreamShop ||--}o Text : "vatID"
-IceCreamShop ||--}o Text : "alternateName"
-IceCreamShop ||--}o Text : "disambiguatingDescription"
-IceCreamShop ||--}o Text : "name"
-IceCreamShop ||--}o URL : "sameAs"
 IceCreamShop ||--}o Action : "potentialAction"
-IceCreamShop ||--}o URL : "url"
 

@@ -8,11 +8,16 @@ MarryAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MarryAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ MarryAction ||--}o Thing : "result"
 MarryAction ||--}o HowTo : "actionProcess"
 MarryAction ||--}o ActionStatusType : "actionStatus"
 MarryAction ||--}o Thing : "error"
-MarryAction ||--}o Text : "alternateName"
-MarryAction ||--}o Text : "disambiguatingDescription"
-MarryAction ||--}o Text : "name"
-MarryAction ||--}o URL : "sameAs"
 MarryAction ||--}o Action : "potentialAction"
-MarryAction ||--}o URL : "url"
 

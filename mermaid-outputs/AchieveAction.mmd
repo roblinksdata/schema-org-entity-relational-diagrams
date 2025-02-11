@@ -8,11 +8,16 @@ AchieveAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AchieveAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ AchieveAction ||--}o Thing : "result"
 AchieveAction ||--}o HowTo : "actionProcess"
 AchieveAction ||--}o ActionStatusType : "actionStatus"
 AchieveAction ||--}o Thing : "error"
-AchieveAction ||--}o Text : "alternateName"
-AchieveAction ||--}o Text : "disambiguatingDescription"
-AchieveAction ||--}o Text : "name"
-AchieveAction ||--}o URL : "sameAs"
 AchieveAction ||--}o Action : "potentialAction"
-AchieveAction ||--}o URL : "url"
 

@@ -8,11 +8,16 @@ LikeAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LikeAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ LikeAction ||--}o Thing : "result"
 LikeAction ||--}o HowTo : "actionProcess"
 LikeAction ||--}o ActionStatusType : "actionStatus"
 LikeAction ||--}o Thing : "error"
-LikeAction ||--}o Text : "alternateName"
-LikeAction ||--}o Text : "disambiguatingDescription"
-LikeAction ||--}o Text : "name"
-LikeAction ||--}o URL : "sameAs"
 LikeAction ||--}o Action : "potentialAction"
-LikeAction ||--}o URL : "url"
 

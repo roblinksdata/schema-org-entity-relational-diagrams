@@ -1,17 +1,17 @@
 erDiagram
 Series {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Series ||--}o Text : "alternateName"
-Series ||--}o Text : "disambiguatingDescription"
-Series ||--}o Text : "name"
-Series ||--}o URL : "sameAs"
 Series ||--}o Action : "potentialAction"
-Series ||--}o URL : "url"
 

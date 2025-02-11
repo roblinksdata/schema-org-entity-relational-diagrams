@@ -2,17 +2,17 @@ erDiagram
 DrugPrescriptionStatus {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-DrugPrescriptionStatus ||--}o Text : "alternateName"
-DrugPrescriptionStatus ||--}o Text : "disambiguatingDescription"
-DrugPrescriptionStatus ||--}o Text : "name"
-DrugPrescriptionStatus ||--}o URL : "sameAs"
 DrugPrescriptionStatus ||--}o Action : "potentialAction"
-DrugPrescriptionStatus ||--}o URL : "url"
 

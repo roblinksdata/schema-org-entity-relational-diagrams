@@ -9,11 +9,16 @@ ReceiveAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ReceiveAction ||--}o DeliveryMethod : "deliveryMethod"
@@ -25,10 +30,5 @@ ReceiveAction ||--}o Thing : "result"
 ReceiveAction ||--}o HowTo : "actionProcess"
 ReceiveAction ||--}o ActionStatusType : "actionStatus"
 ReceiveAction ||--}o Thing : "error"
-ReceiveAction ||--}o Text : "alternateName"
-ReceiveAction ||--}o Text : "disambiguatingDescription"
-ReceiveAction ||--}o Text : "name"
-ReceiveAction ||--}o URL : "sameAs"
 ReceiveAction ||--}o Action : "potentialAction"
-ReceiveAction ||--}o URL : "url"
 

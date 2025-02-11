@@ -1,30 +1,30 @@
 erDiagram
 Schedule {
+    TextList repeatFrequency  
     stringList byDay  
+    IntegerList byMonth  
+    IntegerList byMonthDay  
+    IntegerList byMonthWeek  
     stringList endDate  
     stringList endTime  
     stringList exceptDate  
+    IntegerList repeatCount  
+    TextList scheduleTimezone  
     stringList startDate  
     stringList startTime  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Schedule ||--}o Duration : "duration"
-Schedule ||--}o Text : "repeatFrequency"
-Schedule ||--}o Integer : "byMonth"
-Schedule ||--}o Integer : "byMonthDay"
-Schedule ||--}o Integer : "byMonthWeek"
-Schedule ||--}o Integer : "repeatCount"
-Schedule ||--}o Text : "scheduleTimezone"
-Schedule ||--}o Text : "alternateName"
-Schedule ||--}o Text : "disambiguatingDescription"
-Schedule ||--}o Text : "name"
-Schedule ||--}o URL : "sameAs"
 Schedule ||--}o Action : "potentialAction"
-Schedule ||--}o URL : "url"
 

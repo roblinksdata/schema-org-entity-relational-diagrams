@@ -5,17 +5,17 @@ Role {
     stringList roleName  
     stringList startDate  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Role ||--}o Text : "alternateName"
-Role ||--}o Text : "disambiguatingDescription"
-Role ||--}o Text : "name"
-Role ||--}o URL : "sameAs"
 Role ||--}o Action : "potentialAction"
-Role ||--}o URL : "url"
 

@@ -2,11 +2,16 @@ erDiagram
 MedicalIntangible {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalIntangible ||--}o MedicalCode : "code"
@@ -16,10 +21,5 @@ MedicalIntangible ||--}o MedicineSystem : "medicineSystem"
 MedicalIntangible ||--}o Organization : "recognizingAuthority"
 MedicalIntangible ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalIntangible ||--}o MedicalStudy : "study"
-MedicalIntangible ||--}o Text : "alternateName"
-MedicalIntangible ||--}o Text : "disambiguatingDescription"
-MedicalIntangible ||--}o Text : "name"
-MedicalIntangible ||--}o URL : "sameAs"
 MedicalIntangible ||--}o Action : "potentialAction"
-MedicalIntangible ||--}o URL : "url"
 

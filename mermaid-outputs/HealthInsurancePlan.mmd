@@ -1,26 +1,26 @@
 erDiagram
 HealthInsurancePlan {
+    URLList benefitsSummaryUrl  
+    TextList healthPlanDrugOption  
+    TextList healthPlanDrugTier  
+    TextList healthPlanId  
+    URLList healthPlanMarketingUrl  
     stringList usesHealthPlanIdStandard  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-HealthInsurancePlan ||--}o URL : "benefitsSummaryUrl"
 HealthInsurancePlan ||--}o ContactPoint : "contactPoint"
-HealthInsurancePlan ||--}o Text : "healthPlanDrugOption"
-HealthInsurancePlan ||--}o Text : "healthPlanDrugTier"
-HealthInsurancePlan ||--}o Text : "healthPlanId"
-HealthInsurancePlan ||--}o URL : "healthPlanMarketingUrl"
 HealthInsurancePlan ||--}o HealthPlanFormulary : "includesHealthPlanFormulary"
 HealthInsurancePlan ||--}o HealthPlanNetwork : "includesHealthPlanNetwork"
-HealthInsurancePlan ||--}o Text : "alternateName"
-HealthInsurancePlan ||--}o Text : "disambiguatingDescription"
-HealthInsurancePlan ||--}o Text : "name"
-HealthInsurancePlan ||--}o URL : "sameAs"
 HealthInsurancePlan ||--}o Action : "potentialAction"
-HealthInsurancePlan ||--}o URL : "url"
 

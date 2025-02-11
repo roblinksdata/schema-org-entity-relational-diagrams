@@ -5,9 +5,17 @@ Hotel {
     stringList checkoutTime  
     stringList numberOfRooms  
     stringList petsAllowed  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,93 +27,94 @@ Hotel {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Hotel ||--}o LocationFeatureSpecification : "amenityFeature"
 Hotel ||--}o Audience : "audience"
 Hotel ||--}o Rating : "starRating"
 Hotel ||--}o Organization : "branchOf"
-Hotel ||--}o Text : "currenciesAccepted"
-Hotel ||--}o Text : "openingHours"
-Hotel ||--}o Text : "paymentAccepted"
-Hotel ||--}o Text : "priceRange"
-Hotel ||--}o Text : "globalLocationNumber"
-Hotel ||--}o URL : "hasGS1DigitalLink"
 Hotel ||--}o PropertyValue : "additionalProperty"
 Hotel ||--}o AggregateRating : "aggregateRating"
-Hotel ||--}o Text : "branchCode"
 Hotel ||--}o Place : "containedIn"
 Hotel ||--}o Place : "containedInPlace"
 Hotel ||--}o Place : "containsPlace"
 Hotel ||--}o Event : "event"
 Hotel ||--}o Event : "events"
-Hotel ||--}o Text : "faxNumber"
 Hotel ||--}o Certification : "hasCertification"
-Hotel ||--}o Boolean : "hasDriveThroughService"
-Hotel ||--}o Boolean : "isAccessibleForFree"
-Hotel ||--}o Text : "isicV4"
-Hotel ||--}o URL : "map"
-Hotel ||--}o URL : "maps"
-Hotel ||--}o Integer : "maximumAttendeeCapacity"
 Hotel ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Hotel ||--}o Boolean : "publicAccess"
 Hotel ||--}o Review : "review"
 Hotel ||--}o Review : "reviews"
-Hotel ||--}o Text : "slogan"
-Hotel ||--}o Boolean : "smokingAllowed"
 Hotel ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Hotel ||--}o Text : "telephone"
-Hotel ||--}o URL : "tourBookingPage"
-Hotel ||--}o Text : "duns"
-Hotel ||--}o Text : "leiCode"
-Hotel ||--}o Text : "taxID"
 Hotel ||--}o InteractionCounter : "agentInteractionStatistic"
 Hotel ||--}o Person : "alumni"
-Hotel ||--}o Text : "award"
-Hotel ||--}o Text : "awards"
 Hotel ||--}o ContactPoint : "contactPoint"
 Hotel ||--}o ContactPoint : "contactPoints"
 Hotel ||--}o Organization : "department"
-Hotel ||--}o Date : "dissolutionDate"
-Hotel ||--}o Text : "email"
 Hotel ||--}o Person : "employee"
 Hotel ||--}o Person : "employees"
 Hotel ||--}o Person : "founders"
-Hotel ||--}o Date : "foundingDate"
 Hotel ||--}o Place : "foundingLocation"
 Hotel ||--}o Grant : "funding"
 Hotel ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -114,20 +123,11 @@ Hotel ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Hotel ||--}o OfferCatalog : "hasOfferCatalog"
 Hotel ||--}o Place : "hasPOS"
 Hotel ||--}o InteractionCounter : "interactionStatistic"
-Hotel ||--}o Text : "iso6523Code"
-Hotel ||--}o Text : "legalName"
 Hotel ||--}o Offer : "makesOffer"
-Hotel ||--}o Text : "naics"
 Hotel ||--}o NonprofitType : "nonprofitStatus"
 Hotel ||--}o QuantitativeValue : "numberOfEmployees"
 Hotel ||--}o Organization : "parentOrganization"
 Hotel ||--}o Demand : "seeks"
 Hotel ||--}o Organization : "subOrganization"
-Hotel ||--}o Text : "vatID"
-Hotel ||--}o Text : "alternateName"
-Hotel ||--}o Text : "disambiguatingDescription"
-Hotel ||--}o Text : "name"
-Hotel ||--}o URL : "sameAs"
 Hotel ||--}o Action : "potentialAction"
-Hotel ||--}o URL : "url"
 

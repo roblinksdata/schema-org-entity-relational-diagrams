@@ -1,27 +1,32 @@
 erDiagram
 MerchantReturnPolicy {
     stringList applicableCountry  
+    BooleanList inStoreReturnsOffered  
     stringList merchantReturnDays  
+    URLList merchantReturnLink  
     stringList restockingFee  
     stringList returnPolicyCountry  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MerchantReturnPolicy ||--}o PropertyValue : "additionalProperty"
 MerchantReturnPolicy ||--}o ReturnFeesEnumeration : "customerRemorseReturnFees"
 MerchantReturnPolicy ||--}o ReturnLabelSourceEnumeration : "customerRemorseReturnLabelSource"
 MerchantReturnPolicy ||--}o MonetaryAmount : "customerRemorseReturnShippingFeesAmount"
-MerchantReturnPolicy ||--}o Boolean : "inStoreReturnsOffered"
 MerchantReturnPolicy ||--}o OfferItemCondition : "itemCondition"
 MerchantReturnPolicy ||--}o ReturnFeesEnumeration : "itemDefectReturnFees"
 MerchantReturnPolicy ||--}o ReturnLabelSourceEnumeration : "itemDefectReturnLabelSource"
 MerchantReturnPolicy ||--}o MonetaryAmount : "itemDefectReturnShippingFeesAmount"
-MerchantReturnPolicy ||--}o URL : "merchantReturnLink"
 MerchantReturnPolicy ||--}o RefundTypeEnumeration : "refundType"
 MerchantReturnPolicy ||--}o ReturnFeesEnumeration : "returnFees"
 MerchantReturnPolicy ||--}o ReturnLabelSourceEnumeration : "returnLabelSource"
@@ -30,10 +35,5 @@ MerchantReturnPolicy ||--}o MerchantReturnEnumeration : "returnPolicyCategory"
 MerchantReturnPolicy ||--}o MerchantReturnPolicySeasonalOverride : "returnPolicySeasonalOverride"
 MerchantReturnPolicy ||--}o MonetaryAmount : "returnShippingFeesAmount"
 MerchantReturnPolicy ||--}o MemberProgramTier : "validForMemberTier"
-MerchantReturnPolicy ||--}o Text : "alternateName"
-MerchantReturnPolicy ||--}o Text : "disambiguatingDescription"
-MerchantReturnPolicy ||--}o Text : "name"
-MerchantReturnPolicy ||--}o URL : "sameAs"
 MerchantReturnPolicy ||--}o Action : "potentialAction"
-MerchantReturnPolicy ||--}o URL : "url"
 

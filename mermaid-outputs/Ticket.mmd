@@ -1,25 +1,25 @@
 erDiagram
 Ticket {
     stringList dateIssued  
+    TextList priceCurrency  
+    TextList ticketNumber  
     stringList ticketToken  
     stringList totalPrice  
     stringList underName  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Ticket ||--}o Organization : "issuedBy"
-Ticket ||--}o Text : "priceCurrency"
-Ticket ||--}o Text : "ticketNumber"
 Ticket ||--}o Seat : "ticketedSeat"
-Ticket ||--}o Text : "alternateName"
-Ticket ||--}o Text : "disambiguatingDescription"
-Ticket ||--}o Text : "name"
-Ticket ||--}o URL : "sameAs"
 Ticket ||--}o Action : "potentialAction"
-Ticket ||--}o URL : "url"
 

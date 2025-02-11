@@ -11,19 +11,31 @@ UserPageVisits {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 UserPageVisits ||--}o Thing : "about"
@@ -37,22 +49,10 @@ UserPageVisits ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 UserPageVisits ||--}o Schedule : "eventSchedule"
 UserPageVisits ||--}o EventStatusType : "eventStatus"
 UserPageVisits ||--}o Grant : "funding"
-UserPageVisits ||--}o Boolean : "isAccessibleForFree"
-UserPageVisits ||--}o Integer : "maximumAttendeeCapacity"
-UserPageVisits ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-UserPageVisits ||--}o Integer : "maximumVirtualAttendeeCapacity"
-UserPageVisits ||--}o Date : "previousStartDate"
 UserPageVisits ||--}o CreativeWork : "recordedIn"
-UserPageVisits ||--}o Integer : "remainingAttendeeCapacity"
 UserPageVisits ||--}o Review : "review"
 UserPageVisits ||--}o Event : "subEvent"
 UserPageVisits ||--}o Event : "subEvents"
 UserPageVisits ||--}o Event : "superEvent"
-UserPageVisits ||--}o Text : "typicalAgeRange"
-UserPageVisits ||--}o Text : "alternateName"
-UserPageVisits ||--}o Text : "disambiguatingDescription"
-UserPageVisits ||--}o Text : "name"
-UserPageVisits ||--}o URL : "sameAs"
 UserPageVisits ||--}o Action : "potentialAction"
-UserPageVisits ||--}o URL : "url"
 

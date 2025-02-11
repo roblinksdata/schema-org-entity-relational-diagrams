@@ -1,6 +1,10 @@
 erDiagram
 Diet {
+    TextList dietFeatures  
     stringList endorsers  
+    TextList expertConsiderations  
+    TextList physiologicalBenefits  
+    TextList risks  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -14,25 +18,46 @@ Diet {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -44,28 +69,33 @@ Diet {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
     stringList legalStatus  
 }
 
-Diet ||--}o Text : "dietFeatures"
-Diet ||--}o Text : "expertConsiderations"
-Diet ||--}o Text : "physiologicalBenefits"
-Diet ||--}o Text : "risks"
 Diet ||--}o Thing : "about"
 Diet ||--}o Place : "contentLocation"
 Diet ||--}o CreativeWork : "hasPart"
@@ -73,43 +103,22 @@ Diet ||--}o Claim : "interpretedAsClaim"
 Diet ||--}o Thing : "mainEntity"
 Diet ||--}o Place : "spatialCoverage"
 Diet ||--}o CreativeWork : "workExample"
-Diet ||--}o Text : "abstract"
-Diet ||--}o Text : "accessMode"
 Diet ||--}o ItemList : "accessModeSufficient"
-Diet ||--}o Text : "accessibilityAPI"
-Diet ||--}o Text : "accessibilityControl"
-Diet ||--}o Text : "accessibilityFeature"
-Diet ||--}o Text : "accessibilityHazard"
-Diet ||--}o Text : "accessibilitySummary"
 Diet ||--}o Person : "accountablePerson"
 Diet ||--}o AggregateRating : "aggregateRating"
-Diet ||--}o Text : "alternativeHeadline"
 Diet ||--}o MediaObject : "associatedMedia"
 Diet ||--}o Audience : "audience"
-Diet ||--}o Text : "award"
-Diet ||--}o Text : "awards"
 Diet ||--}o Person : "character"
 Diet ||--}o Comment : "comment"
-Diet ||--}o Integer : "commentCount"
-Diet ||--}o Text : "conditionsOfAccess"
-Diet ||--}o DateTime : "contentReferenceTime"
-Diet ||--}o Text : "copyrightNotice"
-Diet ||--}o Number : "copyrightYear"
 Diet ||--}o Country : "countryOfOrigin"
-Diet ||--}o Text : "creditText"
 Diet ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Diet ||--}o URL : "discussionUrl"
 Diet ||--}o Person : "editor"
 Diet ||--}o AlignmentObject : "educationalAlignment"
 Diet ||--}o MediaObject : "encoding"
 Diet ||--}o MediaObject : "encodings"
 Diet ||--}o CreativeWork : "exampleOfWork"
 Diet ||--}o Grant : "funding"
-Diet ||--}o Text : "headline"
 Diet ||--}o InteractionCounter : "interactionStatistic"
-Diet ||--}o Text : "interactivityType"
-Diet ||--}o Boolean : "isAccessibleForFree"
-Diet ||--}o Boolean : "isFamilyFriendly"
 Diet ||--}o Place : "locationCreated"
 Diet ||--}o Thing : "mentions"
 Diet ||--}o PublicationEvent : "publication"
@@ -118,22 +127,13 @@ Diet ||--}o Event : "recordedAt"
 Diet ||--}o PublicationEvent : "releasedEvent"
 Diet ||--}o Review : "review"
 Diet ||--}o Review : "reviews"
-Diet ||--}o Date : "sdDatePublished"
 Diet ||--}o Organization : "sourceOrganization"
 Diet ||--}o Place : "spatial"
-Diet ||--}o Text : "text"
 Diet ||--}o ImageObject : "thumbnail"
-Diet ||--}o URL : "thumbnailUrl"
 Diet ||--}o Duration : "timeRequired"
 Diet ||--}o CreativeWork : "translationOfWork"
-Diet ||--}o Text : "typicalAgeRange"
 Diet ||--}o CreativeWork : "workTranslation"
-Diet ||--}o Text : "alternateName"
-Diet ||--}o Text : "disambiguatingDescription"
-Diet ||--}o Text : "name"
-Diet ||--}o URL : "sameAs"
 Diet ||--}o Action : "potentialAction"
-Diet ||--}o URL : "url"
 Diet ||--}o MedicalCode : "code"
 Diet ||--}o MedicalGuideline : "guideline"
 Diet ||--}o MedicineSystem : "medicineSystem"

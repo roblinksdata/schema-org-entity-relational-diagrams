@@ -2,17 +2,17 @@ erDiagram
 BoardingPolicyType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BoardingPolicyType ||--}o Text : "alternateName"
-BoardingPolicyType ||--}o Text : "disambiguatingDescription"
-BoardingPolicyType ||--}o Text : "name"
-BoardingPolicyType ||--}o URL : "sameAs"
 BoardingPolicyType ||--}o Action : "potentialAction"
-BoardingPolicyType ||--}o URL : "url"
 

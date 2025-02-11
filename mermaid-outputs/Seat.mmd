@@ -1,21 +1,21 @@
 erDiagram
 Seat {
+    TextList seatNumber  
+    TextList seatRow  
+    TextList seatSection  
     stringList seatingType  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Seat ||--}o Text : "seatNumber"
-Seat ||--}o Text : "seatRow"
-Seat ||--}o Text : "seatSection"
-Seat ||--}o Text : "alternateName"
-Seat ||--}o Text : "disambiguatingDescription"
-Seat ||--}o Text : "name"
-Seat ||--}o URL : "sameAs"
 Seat ||--}o Action : "potentialAction"
-Seat ||--}o URL : "url"
 

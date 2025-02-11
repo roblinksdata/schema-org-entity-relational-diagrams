@@ -2,26 +2,26 @@ erDiagram
 ContactPoint {
     stringList areaServed  
     stringList availableLanguage  
+    TextList contactType  
+    TextList email  
+    TextList faxNumber  
     stringList productSupported  
     stringList serviceArea  
+    TextList telephone  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ContactPoint ||--}o ContactPointOption : "contactOption"
-ContactPoint ||--}o Text : "contactType"
-ContactPoint ||--}o Text : "email"
-ContactPoint ||--}o Text : "faxNumber"
 ContactPoint ||--}o OpeningHoursSpecification : "hoursAvailable"
-ContactPoint ||--}o Text : "telephone"
-ContactPoint ||--}o Text : "alternateName"
-ContactPoint ||--}o Text : "disambiguatingDescription"
-ContactPoint ||--}o Text : "name"
-ContactPoint ||--}o URL : "sameAs"
 ContactPoint ||--}o Action : "potentialAction"
-ContactPoint ||--}o URL : "url"
 

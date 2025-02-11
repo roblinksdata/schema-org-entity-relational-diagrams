@@ -1,8 +1,13 @@
 erDiagram
 Crematorium {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ Crematorium {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Crematorium ||--}o Text : "openingHours"
-Crematorium ||--}o Text : "globalLocationNumber"
-Crematorium ||--}o URL : "hasGS1DigitalLink"
 Crematorium ||--}o PropertyValue : "additionalProperty"
 Crematorium ||--}o AggregateRating : "aggregateRating"
 Crematorium ||--}o LocationFeatureSpecification : "amenityFeature"
-Crematorium ||--}o Text : "branchCode"
 Crematorium ||--}o Place : "containedIn"
 Crematorium ||--}o Place : "containedInPlace"
 Crematorium ||--}o Place : "containsPlace"
 Crematorium ||--}o Event : "event"
 Crematorium ||--}o Event : "events"
-Crematorium ||--}o Text : "faxNumber"
 Crematorium ||--}o Certification : "hasCertification"
-Crematorium ||--}o Boolean : "hasDriveThroughService"
-Crematorium ||--}o Boolean : "isAccessibleForFree"
-Crematorium ||--}o Text : "isicV4"
-Crematorium ||--}o URL : "map"
-Crematorium ||--}o URL : "maps"
-Crematorium ||--}o Integer : "maximumAttendeeCapacity"
 Crematorium ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Crematorium ||--}o Boolean : "publicAccess"
 Crematorium ||--}o Review : "review"
 Crematorium ||--}o Review : "reviews"
-Crematorium ||--}o Text : "slogan"
-Crematorium ||--}o Boolean : "smokingAllowed"
 Crematorium ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Crematorium ||--}o Text : "telephone"
-Crematorium ||--}o URL : "tourBookingPage"
-Crematorium ||--}o Text : "alternateName"
-Crematorium ||--}o Text : "disambiguatingDescription"
-Crematorium ||--}o Text : "name"
-Crematorium ||--}o URL : "sameAs"
 Crematorium ||--}o Action : "potentialAction"
-Crematorium ||--}o URL : "url"
 

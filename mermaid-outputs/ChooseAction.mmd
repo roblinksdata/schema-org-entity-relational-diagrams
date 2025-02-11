@@ -8,11 +8,16 @@ ChooseAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ChooseAction ||--}o Thing : "actionOption"
@@ -23,10 +28,5 @@ ChooseAction ||--}o Thing : "result"
 ChooseAction ||--}o HowTo : "actionProcess"
 ChooseAction ||--}o ActionStatusType : "actionStatus"
 ChooseAction ||--}o Thing : "error"
-ChooseAction ||--}o Text : "alternateName"
-ChooseAction ||--}o Text : "disambiguatingDescription"
-ChooseAction ||--}o Text : "name"
-ChooseAction ||--}o URL : "sameAs"
 ChooseAction ||--}o Action : "potentialAction"
-ChooseAction ||--}o URL : "url"
 

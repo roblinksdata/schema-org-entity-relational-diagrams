@@ -1,15 +1,23 @@
 erDiagram
 RadiationTherapy {
     stringList contraindication  
+    TextList bodyLocation  
+    TextList followup  
+    TextList howPerformed  
     stringList preparation  
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 RadiationTherapy ||--}o MedicalTherapy : "duplicateTherapy"
@@ -17,9 +25,6 @@ RadiationTherapy ||--}o MedicalEntity : "seriousAdverseOutcome"
 RadiationTherapy ||--}o MedicalEntity : "adverseOutcome"
 RadiationTherapy ||--}o DoseSchedule : "doseSchedule"
 RadiationTherapy ||--}o Drug : "drug"
-RadiationTherapy ||--}o Text : "bodyLocation"
-RadiationTherapy ||--}o Text : "followup"
-RadiationTherapy ||--}o Text : "howPerformed"
 RadiationTherapy ||--}o MedicalProcedureType : "procedureType"
 RadiationTherapy ||--}o MedicalCode : "code"
 RadiationTherapy ||--}o Grant : "funding"
@@ -28,10 +33,5 @@ RadiationTherapy ||--}o MedicineSystem : "medicineSystem"
 RadiationTherapy ||--}o Organization : "recognizingAuthority"
 RadiationTherapy ||--}o MedicalSpecialty : "relevantSpecialty"
 RadiationTherapy ||--}o MedicalStudy : "study"
-RadiationTherapy ||--}o Text : "alternateName"
-RadiationTherapy ||--}o Text : "disambiguatingDescription"
-RadiationTherapy ||--}o Text : "name"
-RadiationTherapy ||--}o URL : "sameAs"
 RadiationTherapy ||--}o Action : "potentialAction"
-RadiationTherapy ||--}o URL : "url"
 

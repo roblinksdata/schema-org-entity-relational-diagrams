@@ -9,11 +9,16 @@ CookAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CookAction ||--}o FoodEvent : "foodEvent"
@@ -24,10 +29,5 @@ CookAction ||--}o Thing : "result"
 CookAction ||--}o HowTo : "actionProcess"
 CookAction ||--}o ActionStatusType : "actionStatus"
 CookAction ||--}o Thing : "error"
-CookAction ||--}o Text : "alternateName"
-CookAction ||--}o Text : "disambiguatingDescription"
-CookAction ||--}o Text : "name"
-CookAction ||--}o URL : "sameAs"
 CookAction ||--}o Action : "potentialAction"
-CookAction ||--}o URL : "url"
 

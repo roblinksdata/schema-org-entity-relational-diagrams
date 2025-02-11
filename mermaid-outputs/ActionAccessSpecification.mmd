@@ -7,18 +7,18 @@ ActionAccessSpecification {
     stringList ineligibleRegion  
     stringList requiresSubscription  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ActionAccessSpecification ||--}o Offer : "expectsAcceptanceOf"
-ActionAccessSpecification ||--}o Text : "alternateName"
-ActionAccessSpecification ||--}o Text : "disambiguatingDescription"
-ActionAccessSpecification ||--}o Text : "name"
-ActionAccessSpecification ||--}o URL : "sameAs"
 ActionAccessSpecification ||--}o Action : "potentialAction"
-ActionAccessSpecification ||--}o URL : "url"
 

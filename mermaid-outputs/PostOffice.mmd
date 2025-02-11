@@ -1,8 +1,16 @@
 erDiagram
 PostOffice {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ PostOffice {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 PostOffice ||--}o Organization : "branchOf"
-PostOffice ||--}o Text : "currenciesAccepted"
-PostOffice ||--}o Text : "openingHours"
-PostOffice ||--}o Text : "paymentAccepted"
-PostOffice ||--}o Text : "priceRange"
-PostOffice ||--}o Text : "globalLocationNumber"
-PostOffice ||--}o URL : "hasGS1DigitalLink"
 PostOffice ||--}o PropertyValue : "additionalProperty"
 PostOffice ||--}o AggregateRating : "aggregateRating"
 PostOffice ||--}o LocationFeatureSpecification : "amenityFeature"
-PostOffice ||--}o Text : "branchCode"
 PostOffice ||--}o Place : "containedIn"
 PostOffice ||--}o Place : "containedInPlace"
 PostOffice ||--}o Place : "containsPlace"
 PostOffice ||--}o Event : "event"
 PostOffice ||--}o Event : "events"
-PostOffice ||--}o Text : "faxNumber"
 PostOffice ||--}o Certification : "hasCertification"
-PostOffice ||--}o Boolean : "hasDriveThroughService"
-PostOffice ||--}o Boolean : "isAccessibleForFree"
-PostOffice ||--}o Text : "isicV4"
-PostOffice ||--}o URL : "map"
-PostOffice ||--}o URL : "maps"
-PostOffice ||--}o Integer : "maximumAttendeeCapacity"
 PostOffice ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-PostOffice ||--}o Boolean : "publicAccess"
 PostOffice ||--}o Review : "review"
 PostOffice ||--}o Review : "reviews"
-PostOffice ||--}o Text : "slogan"
-PostOffice ||--}o Boolean : "smokingAllowed"
 PostOffice ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-PostOffice ||--}o Text : "telephone"
-PostOffice ||--}o URL : "tourBookingPage"
-PostOffice ||--}o Text : "duns"
-PostOffice ||--}o Text : "leiCode"
-PostOffice ||--}o Text : "taxID"
 PostOffice ||--}o InteractionCounter : "agentInteractionStatistic"
 PostOffice ||--}o Person : "alumni"
-PostOffice ||--}o Text : "award"
-PostOffice ||--}o Text : "awards"
 PostOffice ||--}o ContactPoint : "contactPoint"
 PostOffice ||--}o ContactPoint : "contactPoints"
 PostOffice ||--}o Organization : "department"
-PostOffice ||--}o Date : "dissolutionDate"
-PostOffice ||--}o Text : "email"
 PostOffice ||--}o Person : "employee"
 PostOffice ||--}o Person : "employees"
 PostOffice ||--}o Person : "founders"
-PostOffice ||--}o Date : "foundingDate"
 PostOffice ||--}o Place : "foundingLocation"
 PostOffice ||--}o Grant : "funding"
 PostOffice ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ PostOffice ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 PostOffice ||--}o OfferCatalog : "hasOfferCatalog"
 PostOffice ||--}o Place : "hasPOS"
 PostOffice ||--}o InteractionCounter : "interactionStatistic"
-PostOffice ||--}o Text : "iso6523Code"
-PostOffice ||--}o Text : "legalName"
 PostOffice ||--}o Offer : "makesOffer"
-PostOffice ||--}o Text : "naics"
 PostOffice ||--}o NonprofitType : "nonprofitStatus"
 PostOffice ||--}o QuantitativeValue : "numberOfEmployees"
 PostOffice ||--}o Organization : "parentOrganization"
 PostOffice ||--}o Demand : "seeks"
 PostOffice ||--}o Organization : "subOrganization"
-PostOffice ||--}o Text : "vatID"
-PostOffice ||--}o Text : "alternateName"
-PostOffice ||--}o Text : "disambiguatingDescription"
-PostOffice ||--}o Text : "name"
-PostOffice ||--}o URL : "sameAs"
 PostOffice ||--}o Action : "potentialAction"
-PostOffice ||--}o URL : "url"
 

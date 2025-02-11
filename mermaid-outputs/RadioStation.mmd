@@ -1,8 +1,16 @@
 erDiagram
 RadioStation {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ RadioStation {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 RadioStation ||--}o Organization : "branchOf"
-RadioStation ||--}o Text : "currenciesAccepted"
-RadioStation ||--}o Text : "openingHours"
-RadioStation ||--}o Text : "paymentAccepted"
-RadioStation ||--}o Text : "priceRange"
-RadioStation ||--}o Text : "globalLocationNumber"
-RadioStation ||--}o URL : "hasGS1DigitalLink"
 RadioStation ||--}o PropertyValue : "additionalProperty"
 RadioStation ||--}o AggregateRating : "aggregateRating"
 RadioStation ||--}o LocationFeatureSpecification : "amenityFeature"
-RadioStation ||--}o Text : "branchCode"
 RadioStation ||--}o Place : "containedIn"
 RadioStation ||--}o Place : "containedInPlace"
 RadioStation ||--}o Place : "containsPlace"
 RadioStation ||--}o Event : "event"
 RadioStation ||--}o Event : "events"
-RadioStation ||--}o Text : "faxNumber"
 RadioStation ||--}o Certification : "hasCertification"
-RadioStation ||--}o Boolean : "hasDriveThroughService"
-RadioStation ||--}o Boolean : "isAccessibleForFree"
-RadioStation ||--}o Text : "isicV4"
-RadioStation ||--}o URL : "map"
-RadioStation ||--}o URL : "maps"
-RadioStation ||--}o Integer : "maximumAttendeeCapacity"
 RadioStation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-RadioStation ||--}o Boolean : "publicAccess"
 RadioStation ||--}o Review : "review"
 RadioStation ||--}o Review : "reviews"
-RadioStation ||--}o Text : "slogan"
-RadioStation ||--}o Boolean : "smokingAllowed"
 RadioStation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-RadioStation ||--}o Text : "telephone"
-RadioStation ||--}o URL : "tourBookingPage"
-RadioStation ||--}o Text : "duns"
-RadioStation ||--}o Text : "leiCode"
-RadioStation ||--}o Text : "taxID"
 RadioStation ||--}o InteractionCounter : "agentInteractionStatistic"
 RadioStation ||--}o Person : "alumni"
-RadioStation ||--}o Text : "award"
-RadioStation ||--}o Text : "awards"
 RadioStation ||--}o ContactPoint : "contactPoint"
 RadioStation ||--}o ContactPoint : "contactPoints"
 RadioStation ||--}o Organization : "department"
-RadioStation ||--}o Date : "dissolutionDate"
-RadioStation ||--}o Text : "email"
 RadioStation ||--}o Person : "employee"
 RadioStation ||--}o Person : "employees"
 RadioStation ||--}o Person : "founders"
-RadioStation ||--}o Date : "foundingDate"
 RadioStation ||--}o Place : "foundingLocation"
 RadioStation ||--}o Grant : "funding"
 RadioStation ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ RadioStation ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 RadioStation ||--}o OfferCatalog : "hasOfferCatalog"
 RadioStation ||--}o Place : "hasPOS"
 RadioStation ||--}o InteractionCounter : "interactionStatistic"
-RadioStation ||--}o Text : "iso6523Code"
-RadioStation ||--}o Text : "legalName"
 RadioStation ||--}o Offer : "makesOffer"
-RadioStation ||--}o Text : "naics"
 RadioStation ||--}o NonprofitType : "nonprofitStatus"
 RadioStation ||--}o QuantitativeValue : "numberOfEmployees"
 RadioStation ||--}o Organization : "parentOrganization"
 RadioStation ||--}o Demand : "seeks"
 RadioStation ||--}o Organization : "subOrganization"
-RadioStation ||--}o Text : "vatID"
-RadioStation ||--}o Text : "alternateName"
-RadioStation ||--}o Text : "disambiguatingDescription"
-RadioStation ||--}o Text : "name"
-RadioStation ||--}o URL : "sameAs"
 RadioStation ||--}o Action : "potentialAction"
-RadioStation ||--}o URL : "url"
 

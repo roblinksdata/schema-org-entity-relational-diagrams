@@ -2,17 +2,17 @@ erDiagram
 LegalValueLevel {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-LegalValueLevel ||--}o Text : "alternateName"
-LegalValueLevel ||--}o Text : "disambiguatingDescription"
-LegalValueLevel ||--}o Text : "name"
-LegalValueLevel ||--}o URL : "sameAs"
 LegalValueLevel ||--}o Action : "potentialAction"
-LegalValueLevel ||--}o URL : "url"
 

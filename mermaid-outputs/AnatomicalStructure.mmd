@@ -1,16 +1,21 @@
 erDiagram
 AnatomicalStructure {
+    TextList associatedPathophysiology  
+    TextList bodyLocation  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-AnatomicalStructure ||--}o Text : "associatedPathophysiology"
-AnatomicalStructure ||--}o Text : "bodyLocation"
 AnatomicalStructure ||--}o AnatomicalStructure : "connectedTo"
 AnatomicalStructure ||--}o ImageObject : "diagram"
 AnatomicalStructure ||--}o AnatomicalSystem : "partOfSystem"
@@ -24,10 +29,5 @@ AnatomicalStructure ||--}o MedicineSystem : "medicineSystem"
 AnatomicalStructure ||--}o Organization : "recognizingAuthority"
 AnatomicalStructure ||--}o MedicalSpecialty : "relevantSpecialty"
 AnatomicalStructure ||--}o MedicalStudy : "study"
-AnatomicalStructure ||--}o Text : "alternateName"
-AnatomicalStructure ||--}o Text : "disambiguatingDescription"
-AnatomicalStructure ||--}o Text : "name"
-AnatomicalStructure ||--}o URL : "sameAs"
 AnatomicalStructure ||--}o Action : "potentialAction"
-AnatomicalStructure ||--}o URL : "url"
 

@@ -1,8 +1,16 @@
 erDiagram
 EntertainmentBusiness {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ EntertainmentBusiness {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 EntertainmentBusiness ||--}o Organization : "branchOf"
-EntertainmentBusiness ||--}o Text : "currenciesAccepted"
-EntertainmentBusiness ||--}o Text : "openingHours"
-EntertainmentBusiness ||--}o Text : "paymentAccepted"
-EntertainmentBusiness ||--}o Text : "priceRange"
-EntertainmentBusiness ||--}o Text : "globalLocationNumber"
-EntertainmentBusiness ||--}o URL : "hasGS1DigitalLink"
 EntertainmentBusiness ||--}o PropertyValue : "additionalProperty"
 EntertainmentBusiness ||--}o AggregateRating : "aggregateRating"
 EntertainmentBusiness ||--}o LocationFeatureSpecification : "amenityFeature"
-EntertainmentBusiness ||--}o Text : "branchCode"
 EntertainmentBusiness ||--}o Place : "containedIn"
 EntertainmentBusiness ||--}o Place : "containedInPlace"
 EntertainmentBusiness ||--}o Place : "containsPlace"
 EntertainmentBusiness ||--}o Event : "event"
 EntertainmentBusiness ||--}o Event : "events"
-EntertainmentBusiness ||--}o Text : "faxNumber"
 EntertainmentBusiness ||--}o Certification : "hasCertification"
-EntertainmentBusiness ||--}o Boolean : "hasDriveThroughService"
-EntertainmentBusiness ||--}o Boolean : "isAccessibleForFree"
-EntertainmentBusiness ||--}o Text : "isicV4"
-EntertainmentBusiness ||--}o URL : "map"
-EntertainmentBusiness ||--}o URL : "maps"
-EntertainmentBusiness ||--}o Integer : "maximumAttendeeCapacity"
 EntertainmentBusiness ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-EntertainmentBusiness ||--}o Boolean : "publicAccess"
 EntertainmentBusiness ||--}o Review : "review"
 EntertainmentBusiness ||--}o Review : "reviews"
-EntertainmentBusiness ||--}o Text : "slogan"
-EntertainmentBusiness ||--}o Boolean : "smokingAllowed"
 EntertainmentBusiness ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-EntertainmentBusiness ||--}o Text : "telephone"
-EntertainmentBusiness ||--}o URL : "tourBookingPage"
-EntertainmentBusiness ||--}o Text : "duns"
-EntertainmentBusiness ||--}o Text : "leiCode"
-EntertainmentBusiness ||--}o Text : "taxID"
 EntertainmentBusiness ||--}o InteractionCounter : "agentInteractionStatistic"
 EntertainmentBusiness ||--}o Person : "alumni"
-EntertainmentBusiness ||--}o Text : "award"
-EntertainmentBusiness ||--}o Text : "awards"
 EntertainmentBusiness ||--}o ContactPoint : "contactPoint"
 EntertainmentBusiness ||--}o ContactPoint : "contactPoints"
 EntertainmentBusiness ||--}o Organization : "department"
-EntertainmentBusiness ||--}o Date : "dissolutionDate"
-EntertainmentBusiness ||--}o Text : "email"
 EntertainmentBusiness ||--}o Person : "employee"
 EntertainmentBusiness ||--}o Person : "employees"
 EntertainmentBusiness ||--}o Person : "founders"
-EntertainmentBusiness ||--}o Date : "foundingDate"
 EntertainmentBusiness ||--}o Place : "foundingLocation"
 EntertainmentBusiness ||--}o Grant : "funding"
 EntertainmentBusiness ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ EntertainmentBusiness ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 EntertainmentBusiness ||--}o OfferCatalog : "hasOfferCatalog"
 EntertainmentBusiness ||--}o Place : "hasPOS"
 EntertainmentBusiness ||--}o InteractionCounter : "interactionStatistic"
-EntertainmentBusiness ||--}o Text : "iso6523Code"
-EntertainmentBusiness ||--}o Text : "legalName"
 EntertainmentBusiness ||--}o Offer : "makesOffer"
-EntertainmentBusiness ||--}o Text : "naics"
 EntertainmentBusiness ||--}o NonprofitType : "nonprofitStatus"
 EntertainmentBusiness ||--}o QuantitativeValue : "numberOfEmployees"
 EntertainmentBusiness ||--}o Organization : "parentOrganization"
 EntertainmentBusiness ||--}o Demand : "seeks"
 EntertainmentBusiness ||--}o Organization : "subOrganization"
-EntertainmentBusiness ||--}o Text : "vatID"
-EntertainmentBusiness ||--}o Text : "alternateName"
-EntertainmentBusiness ||--}o Text : "disambiguatingDescription"
-EntertainmentBusiness ||--}o Text : "name"
-EntertainmentBusiness ||--}o URL : "sameAs"
 EntertainmentBusiness ||--}o Action : "potentialAction"
-EntertainmentBusiness ||--}o URL : "url"
 

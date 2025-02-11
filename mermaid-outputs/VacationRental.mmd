@@ -5,9 +5,17 @@ VacationRental {
     stringList checkoutTime  
     stringList numberOfRooms  
     stringList petsAllowed  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,93 +27,94 @@ VacationRental {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 VacationRental ||--}o LocationFeatureSpecification : "amenityFeature"
 VacationRental ||--}o Audience : "audience"
 VacationRental ||--}o Rating : "starRating"
 VacationRental ||--}o Organization : "branchOf"
-VacationRental ||--}o Text : "currenciesAccepted"
-VacationRental ||--}o Text : "openingHours"
-VacationRental ||--}o Text : "paymentAccepted"
-VacationRental ||--}o Text : "priceRange"
-VacationRental ||--}o Text : "globalLocationNumber"
-VacationRental ||--}o URL : "hasGS1DigitalLink"
 VacationRental ||--}o PropertyValue : "additionalProperty"
 VacationRental ||--}o AggregateRating : "aggregateRating"
-VacationRental ||--}o Text : "branchCode"
 VacationRental ||--}o Place : "containedIn"
 VacationRental ||--}o Place : "containedInPlace"
 VacationRental ||--}o Place : "containsPlace"
 VacationRental ||--}o Event : "event"
 VacationRental ||--}o Event : "events"
-VacationRental ||--}o Text : "faxNumber"
 VacationRental ||--}o Certification : "hasCertification"
-VacationRental ||--}o Boolean : "hasDriveThroughService"
-VacationRental ||--}o Boolean : "isAccessibleForFree"
-VacationRental ||--}o Text : "isicV4"
-VacationRental ||--}o URL : "map"
-VacationRental ||--}o URL : "maps"
-VacationRental ||--}o Integer : "maximumAttendeeCapacity"
 VacationRental ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-VacationRental ||--}o Boolean : "publicAccess"
 VacationRental ||--}o Review : "review"
 VacationRental ||--}o Review : "reviews"
-VacationRental ||--}o Text : "slogan"
-VacationRental ||--}o Boolean : "smokingAllowed"
 VacationRental ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-VacationRental ||--}o Text : "telephone"
-VacationRental ||--}o URL : "tourBookingPage"
-VacationRental ||--}o Text : "duns"
-VacationRental ||--}o Text : "leiCode"
-VacationRental ||--}o Text : "taxID"
 VacationRental ||--}o InteractionCounter : "agentInteractionStatistic"
 VacationRental ||--}o Person : "alumni"
-VacationRental ||--}o Text : "award"
-VacationRental ||--}o Text : "awards"
 VacationRental ||--}o ContactPoint : "contactPoint"
 VacationRental ||--}o ContactPoint : "contactPoints"
 VacationRental ||--}o Organization : "department"
-VacationRental ||--}o Date : "dissolutionDate"
-VacationRental ||--}o Text : "email"
 VacationRental ||--}o Person : "employee"
 VacationRental ||--}o Person : "employees"
 VacationRental ||--}o Person : "founders"
-VacationRental ||--}o Date : "foundingDate"
 VacationRental ||--}o Place : "foundingLocation"
 VacationRental ||--}o Grant : "funding"
 VacationRental ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -114,20 +123,11 @@ VacationRental ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 VacationRental ||--}o OfferCatalog : "hasOfferCatalog"
 VacationRental ||--}o Place : "hasPOS"
 VacationRental ||--}o InteractionCounter : "interactionStatistic"
-VacationRental ||--}o Text : "iso6523Code"
-VacationRental ||--}o Text : "legalName"
 VacationRental ||--}o Offer : "makesOffer"
-VacationRental ||--}o Text : "naics"
 VacationRental ||--}o NonprofitType : "nonprofitStatus"
 VacationRental ||--}o QuantitativeValue : "numberOfEmployees"
 VacationRental ||--}o Organization : "parentOrganization"
 VacationRental ||--}o Demand : "seeks"
 VacationRental ||--}o Organization : "subOrganization"
-VacationRental ||--}o Text : "vatID"
-VacationRental ||--}o Text : "alternateName"
-VacationRental ||--}o Text : "disambiguatingDescription"
-VacationRental ||--}o Text : "name"
-VacationRental ||--}o URL : "sameAs"
 VacationRental ||--}o Action : "potentialAction"
-VacationRental ||--}o URL : "url"
 

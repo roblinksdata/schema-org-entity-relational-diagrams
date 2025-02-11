@@ -2,17 +2,17 @@ erDiagram
 OrderStatus {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-OrderStatus ||--}o Text : "alternateName"
-OrderStatus ||--}o Text : "disambiguatingDescription"
-OrderStatus ||--}o Text : "name"
-OrderStatus ||--}o URL : "sameAs"
 OrderStatus ||--}o Action : "potentialAction"
-OrderStatus ||--}o URL : "url"
 

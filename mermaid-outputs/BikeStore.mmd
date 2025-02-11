@@ -1,8 +1,16 @@
 erDiagram
 BikeStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ BikeStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BikeStore ||--}o Organization : "branchOf"
-BikeStore ||--}o Text : "currenciesAccepted"
-BikeStore ||--}o Text : "openingHours"
-BikeStore ||--}o Text : "paymentAccepted"
-BikeStore ||--}o Text : "priceRange"
-BikeStore ||--}o Text : "globalLocationNumber"
-BikeStore ||--}o URL : "hasGS1DigitalLink"
 BikeStore ||--}o PropertyValue : "additionalProperty"
 BikeStore ||--}o AggregateRating : "aggregateRating"
 BikeStore ||--}o LocationFeatureSpecification : "amenityFeature"
-BikeStore ||--}o Text : "branchCode"
 BikeStore ||--}o Place : "containedIn"
 BikeStore ||--}o Place : "containedInPlace"
 BikeStore ||--}o Place : "containsPlace"
 BikeStore ||--}o Event : "event"
 BikeStore ||--}o Event : "events"
-BikeStore ||--}o Text : "faxNumber"
 BikeStore ||--}o Certification : "hasCertification"
-BikeStore ||--}o Boolean : "hasDriveThroughService"
-BikeStore ||--}o Boolean : "isAccessibleForFree"
-BikeStore ||--}o Text : "isicV4"
-BikeStore ||--}o URL : "map"
-BikeStore ||--}o URL : "maps"
-BikeStore ||--}o Integer : "maximumAttendeeCapacity"
 BikeStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-BikeStore ||--}o Boolean : "publicAccess"
 BikeStore ||--}o Review : "review"
 BikeStore ||--}o Review : "reviews"
-BikeStore ||--}o Text : "slogan"
-BikeStore ||--}o Boolean : "smokingAllowed"
 BikeStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-BikeStore ||--}o Text : "telephone"
-BikeStore ||--}o URL : "tourBookingPage"
-BikeStore ||--}o Text : "duns"
-BikeStore ||--}o Text : "leiCode"
-BikeStore ||--}o Text : "taxID"
 BikeStore ||--}o InteractionCounter : "agentInteractionStatistic"
 BikeStore ||--}o Person : "alumni"
-BikeStore ||--}o Text : "award"
-BikeStore ||--}o Text : "awards"
 BikeStore ||--}o ContactPoint : "contactPoint"
 BikeStore ||--}o ContactPoint : "contactPoints"
 BikeStore ||--}o Organization : "department"
-BikeStore ||--}o Date : "dissolutionDate"
-BikeStore ||--}o Text : "email"
 BikeStore ||--}o Person : "employee"
 BikeStore ||--}o Person : "employees"
 BikeStore ||--}o Person : "founders"
-BikeStore ||--}o Date : "foundingDate"
 BikeStore ||--}o Place : "foundingLocation"
 BikeStore ||--}o Grant : "funding"
 BikeStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ BikeStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 BikeStore ||--}o OfferCatalog : "hasOfferCatalog"
 BikeStore ||--}o Place : "hasPOS"
 BikeStore ||--}o InteractionCounter : "interactionStatistic"
-BikeStore ||--}o Text : "iso6523Code"
-BikeStore ||--}o Text : "legalName"
 BikeStore ||--}o Offer : "makesOffer"
-BikeStore ||--}o Text : "naics"
 BikeStore ||--}o NonprofitType : "nonprofitStatus"
 BikeStore ||--}o QuantitativeValue : "numberOfEmployees"
 BikeStore ||--}o Organization : "parentOrganization"
 BikeStore ||--}o Demand : "seeks"
 BikeStore ||--}o Organization : "subOrganization"
-BikeStore ||--}o Text : "vatID"
-BikeStore ||--}o Text : "alternateName"
-BikeStore ||--}o Text : "disambiguatingDescription"
-BikeStore ||--}o Text : "name"
-BikeStore ||--}o URL : "sameAs"
 BikeStore ||--}o Action : "potentialAction"
-BikeStore ||--}o URL : "url"
 

@@ -9,11 +9,16 @@ GiveAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 GiveAction ||--}o Place : "fromLocation"
@@ -24,10 +29,5 @@ GiveAction ||--}o Thing : "result"
 GiveAction ||--}o HowTo : "actionProcess"
 GiveAction ||--}o ActionStatusType : "actionStatus"
 GiveAction ||--}o Thing : "error"
-GiveAction ||--}o Text : "alternateName"
-GiveAction ||--}o Text : "disambiguatingDescription"
-GiveAction ||--}o Text : "name"
-GiveAction ||--}o URL : "sameAs"
 GiveAction ||--}o Action : "potentialAction"
-GiveAction ||--}o URL : "url"
 

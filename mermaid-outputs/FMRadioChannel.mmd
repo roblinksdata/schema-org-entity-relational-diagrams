@@ -1,23 +1,23 @@
 erDiagram
 FMRadioChannel {
     stringList genre  
+    TextList broadcastChannelId  
     stringList broadcastFrequency  
+    TextList broadcastServiceTier  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-FMRadioChannel ||--}o Text : "broadcastChannelId"
-FMRadioChannel ||--}o Text : "broadcastServiceTier"
 FMRadioChannel ||--}o CableOrSatelliteService : "inBroadcastLineup"
 FMRadioChannel ||--}o BroadcastService : "providesBroadcastService"
-FMRadioChannel ||--}o Text : "alternateName"
-FMRadioChannel ||--}o Text : "disambiguatingDescription"
-FMRadioChannel ||--}o Text : "name"
-FMRadioChannel ||--}o URL : "sameAs"
 FMRadioChannel ||--}o Action : "potentialAction"
-FMRadioChannel ||--}o URL : "url"
 

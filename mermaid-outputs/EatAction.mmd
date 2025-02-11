@@ -8,11 +8,16 @@ EatAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 EatAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
@@ -23,10 +28,5 @@ EatAction ||--}o Thing : "result"
 EatAction ||--}o HowTo : "actionProcess"
 EatAction ||--}o ActionStatusType : "actionStatus"
 EatAction ||--}o Thing : "error"
-EatAction ||--}o Text : "alternateName"
-EatAction ||--}o Text : "disambiguatingDescription"
-EatAction ||--}o Text : "name"
-EatAction ||--}o URL : "sameAs"
 EatAction ||--}o Action : "potentialAction"
-EatAction ||--}o URL : "url"
 

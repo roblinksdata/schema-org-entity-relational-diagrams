@@ -1,62 +1,74 @@
 erDiagram
 Corporation {
+    TextList tickerSymbol  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Corporation ||--}o Text : "tickerSymbol"
-Corporation ||--}o Text : "duns"
-Corporation ||--}o Text : "globalLocationNumber"
-Corporation ||--}o URL : "hasGS1DigitalLink"
-Corporation ||--}o Text : "leiCode"
-Corporation ||--}o Text : "taxID"
 Corporation ||--}o InteractionCounter : "agentInteractionStatistic"
 Corporation ||--}o AggregateRating : "aggregateRating"
 Corporation ||--}o Person : "alumni"
-Corporation ||--}o Text : "award"
-Corporation ||--}o Text : "awards"
 Corporation ||--}o ContactPoint : "contactPoint"
 Corporation ||--}o ContactPoint : "contactPoints"
 Corporation ||--}o Organization : "department"
-Corporation ||--}o Date : "dissolutionDate"
-Corporation ||--}o Text : "email"
 Corporation ||--}o Person : "employee"
 Corporation ||--}o Person : "employees"
 Corporation ||--}o Event : "event"
 Corporation ||--}o Event : "events"
-Corporation ||--}o Text : "faxNumber"
 Corporation ||--}o Person : "founders"
-Corporation ||--}o Date : "foundingDate"
 Corporation ||--}o Place : "foundingLocation"
 Corporation ||--}o Grant : "funding"
 Corporation ||--}o Certification : "hasCertification"
@@ -66,25 +78,13 @@ Corporation ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Corporation ||--}o OfferCatalog : "hasOfferCatalog"
 Corporation ||--}o Place : "hasPOS"
 Corporation ||--}o InteractionCounter : "interactionStatistic"
-Corporation ||--}o Text : "isicV4"
-Corporation ||--}o Text : "iso6523Code"
-Corporation ||--}o Text : "legalName"
 Corporation ||--}o Offer : "makesOffer"
-Corporation ||--}o Text : "naics"
 Corporation ||--}o NonprofitType : "nonprofitStatus"
 Corporation ||--}o QuantitativeValue : "numberOfEmployees"
 Corporation ||--}o Organization : "parentOrganization"
 Corporation ||--}o Review : "review"
 Corporation ||--}o Review : "reviews"
 Corporation ||--}o Demand : "seeks"
-Corporation ||--}o Text : "slogan"
 Corporation ||--}o Organization : "subOrganization"
-Corporation ||--}o Text : "telephone"
-Corporation ||--}o Text : "vatID"
-Corporation ||--}o Text : "alternateName"
-Corporation ||--}o Text : "disambiguatingDescription"
-Corporation ||--}o Text : "name"
-Corporation ||--}o URL : "sameAs"
 Corporation ||--}o Action : "potentialAction"
-Corporation ||--}o URL : "url"
 

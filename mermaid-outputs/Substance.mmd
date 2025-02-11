@@ -1,15 +1,20 @@
 erDiagram
 Substance {
+    TextList activeIngredient  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Substance ||--}o Text : "activeIngredient"
 Substance ||--}o MaximumDoseSchedule : "maximumIntake"
 Substance ||--}o MedicalCode : "code"
 Substance ||--}o Grant : "funding"
@@ -18,10 +23,5 @@ Substance ||--}o MedicineSystem : "medicineSystem"
 Substance ||--}o Organization : "recognizingAuthority"
 Substance ||--}o MedicalSpecialty : "relevantSpecialty"
 Substance ||--}o MedicalStudy : "study"
-Substance ||--}o Text : "alternateName"
-Substance ||--}o Text : "disambiguatingDescription"
-Substance ||--}o Text : "name"
-Substance ||--}o URL : "sameAs"
 Substance ||--}o Action : "potentialAction"
-Substance ||--}o URL : "url"
 

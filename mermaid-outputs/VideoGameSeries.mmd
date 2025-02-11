@@ -4,6 +4,9 @@ VideoGameSeries {
     stringList gameLocation  
     stringList gamePlatform  
     stringList musicBy  
+    IntegerList numberOfEpisodes  
+    IntegerList numberOfSeasons  
+    TextList issn  
     stringList endDate  
     stringList startDate  
     stringList acquireLicensePage  
@@ -19,25 +22,46 @@ VideoGameSeries {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -49,21 +73,30 @@ VideoGameSeries {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 VideoGameSeries ||--}o CreativeWorkSeason : "containsSeason"
@@ -76,15 +109,12 @@ VideoGameSeries ||--}o Person : "director"
 VideoGameSeries ||--}o Person : "directors"
 VideoGameSeries ||--}o Episode : "episodes"
 VideoGameSeries ||--}o Thing : "gameItem"
-VideoGameSeries ||--}o Integer : "numberOfEpisodes"
 VideoGameSeries ||--}o QuantitativeValue : "numberOfPlayers"
-VideoGameSeries ||--}o Integer : "numberOfSeasons"
 VideoGameSeries ||--}o GamePlayMode : "playMode"
 VideoGameSeries ||--}o Organization : "productionCompany"
 VideoGameSeries ||--}o Thing : "quest"
 VideoGameSeries ||--}o CreativeWorkSeason : "seasons"
 VideoGameSeries ||--}o VideoObject : "trailer"
-VideoGameSeries ||--}o Text : "issn"
 VideoGameSeries ||--}o Thing : "about"
 VideoGameSeries ||--}o Place : "contentLocation"
 VideoGameSeries ||--}o CreativeWork : "hasPart"
@@ -92,43 +122,22 @@ VideoGameSeries ||--}o Claim : "interpretedAsClaim"
 VideoGameSeries ||--}o Thing : "mainEntity"
 VideoGameSeries ||--}o Place : "spatialCoverage"
 VideoGameSeries ||--}o CreativeWork : "workExample"
-VideoGameSeries ||--}o Text : "abstract"
-VideoGameSeries ||--}o Text : "accessMode"
 VideoGameSeries ||--}o ItemList : "accessModeSufficient"
-VideoGameSeries ||--}o Text : "accessibilityAPI"
-VideoGameSeries ||--}o Text : "accessibilityControl"
-VideoGameSeries ||--}o Text : "accessibilityFeature"
-VideoGameSeries ||--}o Text : "accessibilityHazard"
-VideoGameSeries ||--}o Text : "accessibilitySummary"
 VideoGameSeries ||--}o Person : "accountablePerson"
 VideoGameSeries ||--}o AggregateRating : "aggregateRating"
-VideoGameSeries ||--}o Text : "alternativeHeadline"
 VideoGameSeries ||--}o MediaObject : "associatedMedia"
 VideoGameSeries ||--}o Audience : "audience"
-VideoGameSeries ||--}o Text : "award"
-VideoGameSeries ||--}o Text : "awards"
 VideoGameSeries ||--}o Person : "character"
 VideoGameSeries ||--}o Comment : "comment"
-VideoGameSeries ||--}o Integer : "commentCount"
-VideoGameSeries ||--}o Text : "conditionsOfAccess"
-VideoGameSeries ||--}o DateTime : "contentReferenceTime"
-VideoGameSeries ||--}o Text : "copyrightNotice"
-VideoGameSeries ||--}o Number : "copyrightYear"
 VideoGameSeries ||--}o Country : "countryOfOrigin"
-VideoGameSeries ||--}o Text : "creditText"
 VideoGameSeries ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-VideoGameSeries ||--}o URL : "discussionUrl"
 VideoGameSeries ||--}o Person : "editor"
 VideoGameSeries ||--}o AlignmentObject : "educationalAlignment"
 VideoGameSeries ||--}o MediaObject : "encoding"
 VideoGameSeries ||--}o MediaObject : "encodings"
 VideoGameSeries ||--}o CreativeWork : "exampleOfWork"
 VideoGameSeries ||--}o Grant : "funding"
-VideoGameSeries ||--}o Text : "headline"
 VideoGameSeries ||--}o InteractionCounter : "interactionStatistic"
-VideoGameSeries ||--}o Text : "interactivityType"
-VideoGameSeries ||--}o Boolean : "isAccessibleForFree"
-VideoGameSeries ||--}o Boolean : "isFamilyFriendly"
 VideoGameSeries ||--}o Place : "locationCreated"
 VideoGameSeries ||--}o Thing : "mentions"
 VideoGameSeries ||--}o PublicationEvent : "publication"
@@ -137,20 +146,11 @@ VideoGameSeries ||--}o Event : "recordedAt"
 VideoGameSeries ||--}o PublicationEvent : "releasedEvent"
 VideoGameSeries ||--}o Review : "review"
 VideoGameSeries ||--}o Review : "reviews"
-VideoGameSeries ||--}o Date : "sdDatePublished"
 VideoGameSeries ||--}o Organization : "sourceOrganization"
 VideoGameSeries ||--}o Place : "spatial"
-VideoGameSeries ||--}o Text : "text"
 VideoGameSeries ||--}o ImageObject : "thumbnail"
-VideoGameSeries ||--}o URL : "thumbnailUrl"
 VideoGameSeries ||--}o Duration : "timeRequired"
 VideoGameSeries ||--}o CreativeWork : "translationOfWork"
-VideoGameSeries ||--}o Text : "typicalAgeRange"
 VideoGameSeries ||--}o CreativeWork : "workTranslation"
-VideoGameSeries ||--}o Text : "alternateName"
-VideoGameSeries ||--}o Text : "disambiguatingDescription"
-VideoGameSeries ||--}o Text : "name"
-VideoGameSeries ||--}o URL : "sameAs"
 VideoGameSeries ||--}o Action : "potentialAction"
-VideoGameSeries ||--}o URL : "url"
 

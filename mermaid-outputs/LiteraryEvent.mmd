@@ -11,19 +11,31 @@ LiteraryEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LiteraryEvent ||--}o Thing : "about"
@@ -37,22 +49,10 @@ LiteraryEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 LiteraryEvent ||--}o Schedule : "eventSchedule"
 LiteraryEvent ||--}o EventStatusType : "eventStatus"
 LiteraryEvent ||--}o Grant : "funding"
-LiteraryEvent ||--}o Boolean : "isAccessibleForFree"
-LiteraryEvent ||--}o Integer : "maximumAttendeeCapacity"
-LiteraryEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-LiteraryEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-LiteraryEvent ||--}o Date : "previousStartDate"
 LiteraryEvent ||--}o CreativeWork : "recordedIn"
-LiteraryEvent ||--}o Integer : "remainingAttendeeCapacity"
 LiteraryEvent ||--}o Review : "review"
 LiteraryEvent ||--}o Event : "subEvent"
 LiteraryEvent ||--}o Event : "subEvents"
 LiteraryEvent ||--}o Event : "superEvent"
-LiteraryEvent ||--}o Text : "typicalAgeRange"
-LiteraryEvent ||--}o Text : "alternateName"
-LiteraryEvent ||--}o Text : "disambiguatingDescription"
-LiteraryEvent ||--}o Text : "name"
-LiteraryEvent ||--}o URL : "sameAs"
 LiteraryEvent ||--}o Action : "potentialAction"
-LiteraryEvent ||--}o URL : "url"
 

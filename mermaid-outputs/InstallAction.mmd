@@ -8,11 +8,16 @@ InstallAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 InstallAction ||--}o ActionAccessSpecification : "actionAccessibilityRequirement"
@@ -23,10 +28,5 @@ InstallAction ||--}o Thing : "result"
 InstallAction ||--}o HowTo : "actionProcess"
 InstallAction ||--}o ActionStatusType : "actionStatus"
 InstallAction ||--}o Thing : "error"
-InstallAction ||--}o Text : "alternateName"
-InstallAction ||--}o Text : "disambiguatingDescription"
-InstallAction ||--}o Text : "name"
-InstallAction ||--}o URL : "sameAs"
 InstallAction ||--}o Action : "potentialAction"
-InstallAction ||--}o URL : "url"
 

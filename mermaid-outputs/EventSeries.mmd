@@ -11,19 +11,31 @@ EventSeries {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 EventSeries ||--}o Thing : "about"
@@ -37,22 +49,10 @@ EventSeries ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 EventSeries ||--}o Schedule : "eventSchedule"
 EventSeries ||--}o EventStatusType : "eventStatus"
 EventSeries ||--}o Grant : "funding"
-EventSeries ||--}o Boolean : "isAccessibleForFree"
-EventSeries ||--}o Integer : "maximumAttendeeCapacity"
-EventSeries ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-EventSeries ||--}o Integer : "maximumVirtualAttendeeCapacity"
-EventSeries ||--}o Date : "previousStartDate"
 EventSeries ||--}o CreativeWork : "recordedIn"
-EventSeries ||--}o Integer : "remainingAttendeeCapacity"
 EventSeries ||--}o Review : "review"
 EventSeries ||--}o Event : "subEvent"
 EventSeries ||--}o Event : "subEvents"
 EventSeries ||--}o Event : "superEvent"
-EventSeries ||--}o Text : "typicalAgeRange"
-EventSeries ||--}o Text : "alternateName"
-EventSeries ||--}o Text : "disambiguatingDescription"
-EventSeries ||--}o Text : "name"
-EventSeries ||--}o URL : "sameAs"
 EventSeries ||--}o Action : "potentialAction"
-EventSeries ||--}o URL : "url"
 

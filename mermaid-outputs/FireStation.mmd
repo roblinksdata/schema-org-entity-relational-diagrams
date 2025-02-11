@@ -1,8 +1,13 @@
 erDiagram
 FireStation {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,97 +19,96 @@ FireStation {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
+    TextList currenciesAccepted  
+    TextList paymentAccepted  
+    TextList priceRange  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
 }
 
-FireStation ||--}o Text : "openingHours"
-FireStation ||--}o Text : "globalLocationNumber"
-FireStation ||--}o URL : "hasGS1DigitalLink"
 FireStation ||--}o PropertyValue : "additionalProperty"
 FireStation ||--}o AggregateRating : "aggregateRating"
 FireStation ||--}o LocationFeatureSpecification : "amenityFeature"
-FireStation ||--}o Text : "branchCode"
 FireStation ||--}o Place : "containedIn"
 FireStation ||--}o Place : "containedInPlace"
 FireStation ||--}o Place : "containsPlace"
 FireStation ||--}o Event : "event"
 FireStation ||--}o Event : "events"
-FireStation ||--}o Text : "faxNumber"
 FireStation ||--}o Certification : "hasCertification"
-FireStation ||--}o Boolean : "hasDriveThroughService"
-FireStation ||--}o Boolean : "isAccessibleForFree"
-FireStation ||--}o Text : "isicV4"
-FireStation ||--}o URL : "map"
-FireStation ||--}o URL : "maps"
-FireStation ||--}o Integer : "maximumAttendeeCapacity"
 FireStation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-FireStation ||--}o Boolean : "publicAccess"
 FireStation ||--}o Review : "review"
 FireStation ||--}o Review : "reviews"
-FireStation ||--}o Text : "slogan"
-FireStation ||--}o Boolean : "smokingAllowed"
 FireStation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-FireStation ||--}o Text : "telephone"
-FireStation ||--}o URL : "tourBookingPage"
-FireStation ||--}o Text : "alternateName"
-FireStation ||--}o Text : "disambiguatingDescription"
-FireStation ||--}o Text : "name"
-FireStation ||--}o URL : "sameAs"
 FireStation ||--}o Action : "potentialAction"
-FireStation ||--}o URL : "url"
 FireStation ||--}o Organization : "branchOf"
-FireStation ||--}o Text : "currenciesAccepted"
-FireStation ||--}o Text : "paymentAccepted"
-FireStation ||--}o Text : "priceRange"
-FireStation ||--}o Text : "duns"
-FireStation ||--}o Text : "leiCode"
-FireStation ||--}o Text : "taxID"
 FireStation ||--}o InteractionCounter : "agentInteractionStatistic"
 FireStation ||--}o Person : "alumni"
-FireStation ||--}o Text : "award"
-FireStation ||--}o Text : "awards"
 FireStation ||--}o ContactPoint : "contactPoint"
 FireStation ||--}o ContactPoint : "contactPoints"
 FireStation ||--}o Organization : "department"
-FireStation ||--}o Date : "dissolutionDate"
-FireStation ||--}o Text : "email"
 FireStation ||--}o Person : "employee"
 FireStation ||--}o Person : "employees"
 FireStation ||--}o Person : "founders"
-FireStation ||--}o Date : "foundingDate"
 FireStation ||--}o Place : "foundingLocation"
 FireStation ||--}o Grant : "funding"
 FireStation ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -113,14 +117,10 @@ FireStation ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 FireStation ||--}o OfferCatalog : "hasOfferCatalog"
 FireStation ||--}o Place : "hasPOS"
 FireStation ||--}o InteractionCounter : "interactionStatistic"
-FireStation ||--}o Text : "iso6523Code"
-FireStation ||--}o Text : "legalName"
 FireStation ||--}o Offer : "makesOffer"
-FireStation ||--}o Text : "naics"
 FireStation ||--}o NonprofitType : "nonprofitStatus"
 FireStation ||--}o QuantitativeValue : "numberOfEmployees"
 FireStation ||--}o Organization : "parentOrganization"
 FireStation ||--}o Demand : "seeks"
 FireStation ||--}o Organization : "subOrganization"
-FireStation ||--}o Text : "vatID"
 

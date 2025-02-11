@@ -1,5 +1,6 @@
 erDiagram
 MusicPlaylist {
+    IntegerList numTracks  
     stringList track  
     stringList acquireLicensePage  
     stringList contributor  
@@ -14,25 +15,46 @@ MusicPlaylist {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -44,24 +66,32 @@ MusicPlaylist {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MusicPlaylist ||--}o Integer : "numTracks"
 MusicPlaylist ||--}o MusicRecording : "tracks"
 MusicPlaylist ||--}o Thing : "about"
 MusicPlaylist ||--}o Place : "contentLocation"
@@ -70,43 +100,22 @@ MusicPlaylist ||--}o Claim : "interpretedAsClaim"
 MusicPlaylist ||--}o Thing : "mainEntity"
 MusicPlaylist ||--}o Place : "spatialCoverage"
 MusicPlaylist ||--}o CreativeWork : "workExample"
-MusicPlaylist ||--}o Text : "abstract"
-MusicPlaylist ||--}o Text : "accessMode"
 MusicPlaylist ||--}o ItemList : "accessModeSufficient"
-MusicPlaylist ||--}o Text : "accessibilityAPI"
-MusicPlaylist ||--}o Text : "accessibilityControl"
-MusicPlaylist ||--}o Text : "accessibilityFeature"
-MusicPlaylist ||--}o Text : "accessibilityHazard"
-MusicPlaylist ||--}o Text : "accessibilitySummary"
 MusicPlaylist ||--}o Person : "accountablePerson"
 MusicPlaylist ||--}o AggregateRating : "aggregateRating"
-MusicPlaylist ||--}o Text : "alternativeHeadline"
 MusicPlaylist ||--}o MediaObject : "associatedMedia"
 MusicPlaylist ||--}o Audience : "audience"
-MusicPlaylist ||--}o Text : "award"
-MusicPlaylist ||--}o Text : "awards"
 MusicPlaylist ||--}o Person : "character"
 MusicPlaylist ||--}o Comment : "comment"
-MusicPlaylist ||--}o Integer : "commentCount"
-MusicPlaylist ||--}o Text : "conditionsOfAccess"
-MusicPlaylist ||--}o DateTime : "contentReferenceTime"
-MusicPlaylist ||--}o Text : "copyrightNotice"
-MusicPlaylist ||--}o Number : "copyrightYear"
 MusicPlaylist ||--}o Country : "countryOfOrigin"
-MusicPlaylist ||--}o Text : "creditText"
 MusicPlaylist ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-MusicPlaylist ||--}o URL : "discussionUrl"
 MusicPlaylist ||--}o Person : "editor"
 MusicPlaylist ||--}o AlignmentObject : "educationalAlignment"
 MusicPlaylist ||--}o MediaObject : "encoding"
 MusicPlaylist ||--}o MediaObject : "encodings"
 MusicPlaylist ||--}o CreativeWork : "exampleOfWork"
 MusicPlaylist ||--}o Grant : "funding"
-MusicPlaylist ||--}o Text : "headline"
 MusicPlaylist ||--}o InteractionCounter : "interactionStatistic"
-MusicPlaylist ||--}o Text : "interactivityType"
-MusicPlaylist ||--}o Boolean : "isAccessibleForFree"
-MusicPlaylist ||--}o Boolean : "isFamilyFriendly"
 MusicPlaylist ||--}o Place : "locationCreated"
 MusicPlaylist ||--}o Thing : "mentions"
 MusicPlaylist ||--}o PublicationEvent : "publication"
@@ -115,20 +124,11 @@ MusicPlaylist ||--}o Event : "recordedAt"
 MusicPlaylist ||--}o PublicationEvent : "releasedEvent"
 MusicPlaylist ||--}o Review : "review"
 MusicPlaylist ||--}o Review : "reviews"
-MusicPlaylist ||--}o Date : "sdDatePublished"
 MusicPlaylist ||--}o Organization : "sourceOrganization"
 MusicPlaylist ||--}o Place : "spatial"
-MusicPlaylist ||--}o Text : "text"
 MusicPlaylist ||--}o ImageObject : "thumbnail"
-MusicPlaylist ||--}o URL : "thumbnailUrl"
 MusicPlaylist ||--}o Duration : "timeRequired"
 MusicPlaylist ||--}o CreativeWork : "translationOfWork"
-MusicPlaylist ||--}o Text : "typicalAgeRange"
 MusicPlaylist ||--}o CreativeWork : "workTranslation"
-MusicPlaylist ||--}o Text : "alternateName"
-MusicPlaylist ||--}o Text : "disambiguatingDescription"
-MusicPlaylist ||--}o Text : "name"
-MusicPlaylist ||--}o URL : "sameAs"
 MusicPlaylist ||--}o Action : "potentialAction"
-MusicPlaylist ||--}o URL : "url"
 

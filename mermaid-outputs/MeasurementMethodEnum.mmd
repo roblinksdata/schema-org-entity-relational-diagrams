@@ -2,17 +2,17 @@ erDiagram
 MeasurementMethodEnum {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MeasurementMethodEnum ||--}o Text : "alternateName"
-MeasurementMethodEnum ||--}o Text : "disambiguatingDescription"
-MeasurementMethodEnum ||--}o Text : "name"
-MeasurementMethodEnum ||--}o URL : "sameAs"
 MeasurementMethodEnum ||--}o Action : "potentialAction"
-MeasurementMethodEnum ||--}o URL : "url"
 

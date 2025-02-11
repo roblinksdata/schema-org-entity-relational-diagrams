@@ -1,20 +1,25 @@
 erDiagram
 PhysicalExam {
+    TextList bodyLocation  
+    TextList followup  
+    TextList howPerformed  
     stringList preparation  
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
     stringList supersededBy  
 }
 
-PhysicalExam ||--}o Text : "bodyLocation"
-PhysicalExam ||--}o Text : "followup"
-PhysicalExam ||--}o Text : "howPerformed"
 PhysicalExam ||--}o MedicalProcedureType : "procedureType"
 PhysicalExam ||--}o MedicalCode : "code"
 PhysicalExam ||--}o Grant : "funding"
@@ -23,10 +28,5 @@ PhysicalExam ||--}o MedicineSystem : "medicineSystem"
 PhysicalExam ||--}o Organization : "recognizingAuthority"
 PhysicalExam ||--}o MedicalSpecialty : "relevantSpecialty"
 PhysicalExam ||--}o MedicalStudy : "study"
-PhysicalExam ||--}o Text : "alternateName"
-PhysicalExam ||--}o Text : "disambiguatingDescription"
-PhysicalExam ||--}o Text : "name"
-PhysicalExam ||--}o URL : "sameAs"
 PhysicalExam ||--}o Action : "potentialAction"
-PhysicalExam ||--}o URL : "url"
 

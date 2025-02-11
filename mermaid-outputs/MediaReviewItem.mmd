@@ -13,25 +13,46 @@ MediaReviewItem {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ MediaReviewItem {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MediaReviewItem ||--}o MediaObject : "mediaItemAppearance"
@@ -68,43 +98,22 @@ MediaReviewItem ||--}o Claim : "interpretedAsClaim"
 MediaReviewItem ||--}o Thing : "mainEntity"
 MediaReviewItem ||--}o Place : "spatialCoverage"
 MediaReviewItem ||--}o CreativeWork : "workExample"
-MediaReviewItem ||--}o Text : "abstract"
-MediaReviewItem ||--}o Text : "accessMode"
 MediaReviewItem ||--}o ItemList : "accessModeSufficient"
-MediaReviewItem ||--}o Text : "accessibilityAPI"
-MediaReviewItem ||--}o Text : "accessibilityControl"
-MediaReviewItem ||--}o Text : "accessibilityFeature"
-MediaReviewItem ||--}o Text : "accessibilityHazard"
-MediaReviewItem ||--}o Text : "accessibilitySummary"
 MediaReviewItem ||--}o Person : "accountablePerson"
 MediaReviewItem ||--}o AggregateRating : "aggregateRating"
-MediaReviewItem ||--}o Text : "alternativeHeadline"
 MediaReviewItem ||--}o MediaObject : "associatedMedia"
 MediaReviewItem ||--}o Audience : "audience"
-MediaReviewItem ||--}o Text : "award"
-MediaReviewItem ||--}o Text : "awards"
 MediaReviewItem ||--}o Person : "character"
 MediaReviewItem ||--}o Comment : "comment"
-MediaReviewItem ||--}o Integer : "commentCount"
-MediaReviewItem ||--}o Text : "conditionsOfAccess"
-MediaReviewItem ||--}o DateTime : "contentReferenceTime"
-MediaReviewItem ||--}o Text : "copyrightNotice"
-MediaReviewItem ||--}o Number : "copyrightYear"
 MediaReviewItem ||--}o Country : "countryOfOrigin"
-MediaReviewItem ||--}o Text : "creditText"
 MediaReviewItem ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-MediaReviewItem ||--}o URL : "discussionUrl"
 MediaReviewItem ||--}o Person : "editor"
 MediaReviewItem ||--}o AlignmentObject : "educationalAlignment"
 MediaReviewItem ||--}o MediaObject : "encoding"
 MediaReviewItem ||--}o MediaObject : "encodings"
 MediaReviewItem ||--}o CreativeWork : "exampleOfWork"
 MediaReviewItem ||--}o Grant : "funding"
-MediaReviewItem ||--}o Text : "headline"
 MediaReviewItem ||--}o InteractionCounter : "interactionStatistic"
-MediaReviewItem ||--}o Text : "interactivityType"
-MediaReviewItem ||--}o Boolean : "isAccessibleForFree"
-MediaReviewItem ||--}o Boolean : "isFamilyFriendly"
 MediaReviewItem ||--}o Place : "locationCreated"
 MediaReviewItem ||--}o Thing : "mentions"
 MediaReviewItem ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ MediaReviewItem ||--}o Event : "recordedAt"
 MediaReviewItem ||--}o PublicationEvent : "releasedEvent"
 MediaReviewItem ||--}o Review : "review"
 MediaReviewItem ||--}o Review : "reviews"
-MediaReviewItem ||--}o Date : "sdDatePublished"
 MediaReviewItem ||--}o Organization : "sourceOrganization"
 MediaReviewItem ||--}o Place : "spatial"
-MediaReviewItem ||--}o Text : "text"
 MediaReviewItem ||--}o ImageObject : "thumbnail"
-MediaReviewItem ||--}o URL : "thumbnailUrl"
 MediaReviewItem ||--}o Duration : "timeRequired"
 MediaReviewItem ||--}o CreativeWork : "translationOfWork"
-MediaReviewItem ||--}o Text : "typicalAgeRange"
 MediaReviewItem ||--}o CreativeWork : "workTranslation"
-MediaReviewItem ||--}o Text : "alternateName"
-MediaReviewItem ||--}o Text : "disambiguatingDescription"
-MediaReviewItem ||--}o Text : "name"
-MediaReviewItem ||--}o URL : "sameAs"
 MediaReviewItem ||--}o Action : "potentialAction"
-MediaReviewItem ||--}o URL : "url"
 

@@ -1,22 +1,22 @@
 erDiagram
 AlignmentObject {
+    TextList alignmentType  
+    TextList educationalFramework  
+    TextList targetDescription  
+    TextList targetName  
+    URLList targetUrl  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-AlignmentObject ||--}o Text : "alignmentType"
-AlignmentObject ||--}o Text : "educationalFramework"
-AlignmentObject ||--}o Text : "targetDescription"
-AlignmentObject ||--}o Text : "targetName"
-AlignmentObject ||--}o URL : "targetUrl"
-AlignmentObject ||--}o Text : "alternateName"
-AlignmentObject ||--}o Text : "disambiguatingDescription"
-AlignmentObject ||--}o Text : "name"
-AlignmentObject ||--}o URL : "sameAs"
 AlignmentObject ||--}o Action : "potentialAction"
-AlignmentObject ||--}o URL : "url"
 

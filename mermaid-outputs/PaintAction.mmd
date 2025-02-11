@@ -8,11 +8,16 @@ PaintAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 PaintAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ PaintAction ||--}o Thing : "result"
 PaintAction ||--}o HowTo : "actionProcess"
 PaintAction ||--}o ActionStatusType : "actionStatus"
 PaintAction ||--}o Thing : "error"
-PaintAction ||--}o Text : "alternateName"
-PaintAction ||--}o Text : "disambiguatingDescription"
-PaintAction ||--}o Text : "name"
-PaintAction ||--}o URL : "sameAs"
 PaintAction ||--}o Action : "potentialAction"
-PaintAction ||--}o URL : "url"
 

@@ -1,13 +1,25 @@
 erDiagram
 HotelRoom {
     stringList bed  
+    TextList accommodationCategory  
+    TextList floorLevel  
     stringList leaseLength  
+    IntegerList numberOfBathroomsTotal  
     stringList numberOfBedrooms  
+    NumberList numberOfFullBathrooms  
+    NumberList numberOfPartialBathrooms  
     stringList numberOfRooms  
+    TextList permittedUsage  
     stringList petsAllowed  
+    URLList tourBookingPage  
+    NumberList yearBuilt  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,61 +31,49 @@ HotelRoom {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 HotelRoom ||--}o QuantitativeValue : "occupancy"
-HotelRoom ||--}o Text : "accommodationCategory"
 HotelRoom ||--}o FloorPlan : "accommodationFloorPlan"
 HotelRoom ||--}o LocationFeatureSpecification : "amenityFeature"
-HotelRoom ||--}o Text : "floorLevel"
 HotelRoom ||--}o QuantitativeValue : "floorSize"
-HotelRoom ||--}o Integer : "numberOfBathroomsTotal"
-HotelRoom ||--}o Number : "numberOfFullBathrooms"
-HotelRoom ||--}o Number : "numberOfPartialBathrooms"
-HotelRoom ||--}o Text : "permittedUsage"
-HotelRoom ||--}o URL : "tourBookingPage"
-HotelRoom ||--}o Number : "yearBuilt"
-HotelRoom ||--}o Text : "globalLocationNumber"
-HotelRoom ||--}o URL : "hasGS1DigitalLink"
 HotelRoom ||--}o PropertyValue : "additionalProperty"
 HotelRoom ||--}o AggregateRating : "aggregateRating"
-HotelRoom ||--}o Text : "branchCode"
 HotelRoom ||--}o Place : "containedIn"
 HotelRoom ||--}o Place : "containedInPlace"
 HotelRoom ||--}o Place : "containsPlace"
 HotelRoom ||--}o Event : "event"
 HotelRoom ||--}o Event : "events"
-HotelRoom ||--}o Text : "faxNumber"
 HotelRoom ||--}o Certification : "hasCertification"
-HotelRoom ||--}o Boolean : "hasDriveThroughService"
-HotelRoom ||--}o Boolean : "isAccessibleForFree"
-HotelRoom ||--}o Text : "isicV4"
-HotelRoom ||--}o URL : "map"
-HotelRoom ||--}o URL : "maps"
-HotelRoom ||--}o Integer : "maximumAttendeeCapacity"
 HotelRoom ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-HotelRoom ||--}o Boolean : "publicAccess"
 HotelRoom ||--}o Review : "review"
 HotelRoom ||--}o Review : "reviews"
-HotelRoom ||--}o Text : "slogan"
-HotelRoom ||--}o Boolean : "smokingAllowed"
 HotelRoom ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-HotelRoom ||--}o Text : "telephone"
-HotelRoom ||--}o Text : "alternateName"
-HotelRoom ||--}o Text : "disambiguatingDescription"
-HotelRoom ||--}o Text : "name"
-HotelRoom ||--}o URL : "sameAs"
 HotelRoom ||--}o Action : "potentialAction"
-HotelRoom ||--}o URL : "url"
 

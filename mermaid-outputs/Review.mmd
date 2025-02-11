@@ -2,6 +2,8 @@ erDiagram
 Review {
     stringList negativeNotes  
     stringList positiveNotes  
+    TextList reviewAspect  
+    TextList reviewBody  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -15,25 +17,46 @@ Review {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,29 +68,36 @@ Review {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Review ||--}o Review : "associatedClaimReview"
 Review ||--}o Review : "associatedMediaReview"
 Review ||--}o Review : "associatedReview"
 Review ||--}o Thing : "itemReviewed"
-Review ||--}o Text : "reviewAspect"
-Review ||--}o Text : "reviewBody"
 Review ||--}o Rating : "reviewRating"
 Review ||--}o Thing : "about"
 Review ||--}o Place : "contentLocation"
@@ -76,43 +106,22 @@ Review ||--}o Claim : "interpretedAsClaim"
 Review ||--}o Thing : "mainEntity"
 Review ||--}o Place : "spatialCoverage"
 Review ||--}o CreativeWork : "workExample"
-Review ||--}o Text : "abstract"
-Review ||--}o Text : "accessMode"
 Review ||--}o ItemList : "accessModeSufficient"
-Review ||--}o Text : "accessibilityAPI"
-Review ||--}o Text : "accessibilityControl"
-Review ||--}o Text : "accessibilityFeature"
-Review ||--}o Text : "accessibilityHazard"
-Review ||--}o Text : "accessibilitySummary"
 Review ||--}o Person : "accountablePerson"
 Review ||--}o AggregateRating : "aggregateRating"
-Review ||--}o Text : "alternativeHeadline"
 Review ||--}o MediaObject : "associatedMedia"
 Review ||--}o Audience : "audience"
-Review ||--}o Text : "award"
-Review ||--}o Text : "awards"
 Review ||--}o Person : "character"
 Review ||--}o Comment : "comment"
-Review ||--}o Integer : "commentCount"
-Review ||--}o Text : "conditionsOfAccess"
-Review ||--}o DateTime : "contentReferenceTime"
-Review ||--}o Text : "copyrightNotice"
-Review ||--}o Number : "copyrightYear"
 Review ||--}o Country : "countryOfOrigin"
-Review ||--}o Text : "creditText"
 Review ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Review ||--}o URL : "discussionUrl"
 Review ||--}o Person : "editor"
 Review ||--}o AlignmentObject : "educationalAlignment"
 Review ||--}o MediaObject : "encoding"
 Review ||--}o MediaObject : "encodings"
 Review ||--}o CreativeWork : "exampleOfWork"
 Review ||--}o Grant : "funding"
-Review ||--}o Text : "headline"
 Review ||--}o InteractionCounter : "interactionStatistic"
-Review ||--}o Text : "interactivityType"
-Review ||--}o Boolean : "isAccessibleForFree"
-Review ||--}o Boolean : "isFamilyFriendly"
 Review ||--}o Place : "locationCreated"
 Review ||--}o Thing : "mentions"
 Review ||--}o PublicationEvent : "publication"
@@ -121,20 +130,11 @@ Review ||--}o Event : "recordedAt"
 Review ||--}o PublicationEvent : "releasedEvent"
 Review ||--}o Review : "review"
 Review ||--}o Review : "reviews"
-Review ||--}o Date : "sdDatePublished"
 Review ||--}o Organization : "sourceOrganization"
 Review ||--}o Place : "spatial"
-Review ||--}o Text : "text"
 Review ||--}o ImageObject : "thumbnail"
-Review ||--}o URL : "thumbnailUrl"
 Review ||--}o Duration : "timeRequired"
 Review ||--}o CreativeWork : "translationOfWork"
-Review ||--}o Text : "typicalAgeRange"
 Review ||--}o CreativeWork : "workTranslation"
-Review ||--}o Text : "alternateName"
-Review ||--}o Text : "disambiguatingDescription"
-Review ||--}o Text : "name"
-Review ||--}o URL : "sameAs"
 Review ||--}o Action : "potentialAction"
-Review ||--}o URL : "url"
 

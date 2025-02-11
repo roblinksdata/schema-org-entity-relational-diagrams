@@ -1,15 +1,23 @@
 erDiagram
 FloorPlan {
     stringList layoutImage  
+    IntegerList numberOfBathroomsTotal  
     stringList numberOfBedrooms  
+    NumberList numberOfFullBathrooms  
+    NumberList numberOfPartialBathrooms  
     stringList numberOfRooms  
     stringList petsAllowed  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 FloorPlan ||--}o LocationFeatureSpecification : "amenityFeature"
@@ -17,13 +25,5 @@ FloorPlan ||--}o QuantitativeValue : "floorSize"
 FloorPlan ||--}o Accommodation : "isPlanForApartment"
 FloorPlan ||--}o QuantitativeValue : "numberOfAccommodationUnits"
 FloorPlan ||--}o QuantitativeValue : "numberOfAvailableAccommodationUnits"
-FloorPlan ||--}o Integer : "numberOfBathroomsTotal"
-FloorPlan ||--}o Number : "numberOfFullBathrooms"
-FloorPlan ||--}o Number : "numberOfPartialBathrooms"
-FloorPlan ||--}o Text : "alternateName"
-FloorPlan ||--}o Text : "disambiguatingDescription"
-FloorPlan ||--}o Text : "name"
-FloorPlan ||--}o URL : "sameAs"
 FloorPlan ||--}o Action : "potentialAction"
-FloorPlan ||--}o URL : "url"
 

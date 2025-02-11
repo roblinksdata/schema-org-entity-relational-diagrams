@@ -1,26 +1,26 @@
 erDiagram
 AggregateRating {
+    IntegerList ratingCount  
+    IntegerList reviewCount  
     stringList author  
     stringList bestRating  
+    TextList ratingExplanation  
     stringList ratingValue  
+    TextList reviewAspect  
     stringList worstRating  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AggregateRating ||--}o Thing : "itemReviewed"
-AggregateRating ||--}o Integer : "ratingCount"
-AggregateRating ||--}o Integer : "reviewCount"
-AggregateRating ||--}o Text : "ratingExplanation"
-AggregateRating ||--}o Text : "reviewAspect"
-AggregateRating ||--}o Text : "alternateName"
-AggregateRating ||--}o Text : "disambiguatingDescription"
-AggregateRating ||--}o Text : "name"
-AggregateRating ||--}o URL : "sameAs"
 AggregateRating ||--}o Action : "potentialAction"
-AggregateRating ||--}o URL : "url"
 

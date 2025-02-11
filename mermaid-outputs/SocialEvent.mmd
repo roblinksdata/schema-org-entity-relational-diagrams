@@ -11,19 +11,31 @@ SocialEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SocialEvent ||--}o Thing : "about"
@@ -37,22 +49,10 @@ SocialEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 SocialEvent ||--}o Schedule : "eventSchedule"
 SocialEvent ||--}o EventStatusType : "eventStatus"
 SocialEvent ||--}o Grant : "funding"
-SocialEvent ||--}o Boolean : "isAccessibleForFree"
-SocialEvent ||--}o Integer : "maximumAttendeeCapacity"
-SocialEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-SocialEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-SocialEvent ||--}o Date : "previousStartDate"
 SocialEvent ||--}o CreativeWork : "recordedIn"
-SocialEvent ||--}o Integer : "remainingAttendeeCapacity"
 SocialEvent ||--}o Review : "review"
 SocialEvent ||--}o Event : "subEvent"
 SocialEvent ||--}o Event : "subEvents"
 SocialEvent ||--}o Event : "superEvent"
-SocialEvent ||--}o Text : "typicalAgeRange"
-SocialEvent ||--}o Text : "alternateName"
-SocialEvent ||--}o Text : "disambiguatingDescription"
-SocialEvent ||--}o Text : "name"
-SocialEvent ||--}o URL : "sameAs"
 SocialEvent ||--}o Action : "potentialAction"
-SocialEvent ||--}o URL : "url"
 

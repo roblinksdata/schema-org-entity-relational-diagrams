@@ -6,6 +6,8 @@ Message {
     stringList sender  
     stringList toRecipient  
     stringList dateRead  
+    DateTimeList dateReceived  
+    DateTimeList dateSent  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -19,25 +21,46 @@ Message {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -49,25 +72,32 @@ Message {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Message ||--}o DateTime : "dateReceived"
-Message ||--}o DateTime : "dateSent"
 Message ||--}o CreativeWork : "messageAttachment"
 Message ||--}o Thing : "about"
 Message ||--}o Place : "contentLocation"
@@ -76,43 +106,22 @@ Message ||--}o Claim : "interpretedAsClaim"
 Message ||--}o Thing : "mainEntity"
 Message ||--}o Place : "spatialCoverage"
 Message ||--}o CreativeWork : "workExample"
-Message ||--}o Text : "abstract"
-Message ||--}o Text : "accessMode"
 Message ||--}o ItemList : "accessModeSufficient"
-Message ||--}o Text : "accessibilityAPI"
-Message ||--}o Text : "accessibilityControl"
-Message ||--}o Text : "accessibilityFeature"
-Message ||--}o Text : "accessibilityHazard"
-Message ||--}o Text : "accessibilitySummary"
 Message ||--}o Person : "accountablePerson"
 Message ||--}o AggregateRating : "aggregateRating"
-Message ||--}o Text : "alternativeHeadline"
 Message ||--}o MediaObject : "associatedMedia"
 Message ||--}o Audience : "audience"
-Message ||--}o Text : "award"
-Message ||--}o Text : "awards"
 Message ||--}o Person : "character"
 Message ||--}o Comment : "comment"
-Message ||--}o Integer : "commentCount"
-Message ||--}o Text : "conditionsOfAccess"
-Message ||--}o DateTime : "contentReferenceTime"
-Message ||--}o Text : "copyrightNotice"
-Message ||--}o Number : "copyrightYear"
 Message ||--}o Country : "countryOfOrigin"
-Message ||--}o Text : "creditText"
 Message ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Message ||--}o URL : "discussionUrl"
 Message ||--}o Person : "editor"
 Message ||--}o AlignmentObject : "educationalAlignment"
 Message ||--}o MediaObject : "encoding"
 Message ||--}o MediaObject : "encodings"
 Message ||--}o CreativeWork : "exampleOfWork"
 Message ||--}o Grant : "funding"
-Message ||--}o Text : "headline"
 Message ||--}o InteractionCounter : "interactionStatistic"
-Message ||--}o Text : "interactivityType"
-Message ||--}o Boolean : "isAccessibleForFree"
-Message ||--}o Boolean : "isFamilyFriendly"
 Message ||--}o Place : "locationCreated"
 Message ||--}o Thing : "mentions"
 Message ||--}o PublicationEvent : "publication"
@@ -121,20 +130,11 @@ Message ||--}o Event : "recordedAt"
 Message ||--}o PublicationEvent : "releasedEvent"
 Message ||--}o Review : "review"
 Message ||--}o Review : "reviews"
-Message ||--}o Date : "sdDatePublished"
 Message ||--}o Organization : "sourceOrganization"
 Message ||--}o Place : "spatial"
-Message ||--}o Text : "text"
 Message ||--}o ImageObject : "thumbnail"
-Message ||--}o URL : "thumbnailUrl"
 Message ||--}o Duration : "timeRequired"
 Message ||--}o CreativeWork : "translationOfWork"
-Message ||--}o Text : "typicalAgeRange"
 Message ||--}o CreativeWork : "workTranslation"
-Message ||--}o Text : "alternateName"
-Message ||--}o Text : "disambiguatingDescription"
-Message ||--}o Text : "name"
-Message ||--}o URL : "sameAs"
 Message ||--}o Action : "potentialAction"
-Message ||--}o URL : "url"
 

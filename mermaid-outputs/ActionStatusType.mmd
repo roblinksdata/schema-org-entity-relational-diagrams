@@ -2,17 +2,17 @@ erDiagram
 ActionStatusType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ActionStatusType ||--}o Text : "alternateName"
-ActionStatusType ||--}o Text : "disambiguatingDescription"
-ActionStatusType ||--}o Text : "name"
-ActionStatusType ||--}o URL : "sameAs"
 ActionStatusType ||--}o Action : "potentialAction"
-ActionStatusType ||--}o URL : "url"
 

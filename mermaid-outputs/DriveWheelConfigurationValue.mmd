@@ -3,11 +3,16 @@ DriveWheelConfigurationValue {
     stringList valueReference  
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DriveWheelConfigurationValue ||--}o PropertyValue : "additionalProperty"
@@ -17,10 +22,5 @@ DriveWheelConfigurationValue ||--}o QualitativeValue : "greaterOrEqual"
 DriveWheelConfigurationValue ||--}o QualitativeValue : "lesser"
 DriveWheelConfigurationValue ||--}o QualitativeValue : "lesserOrEqual"
 DriveWheelConfigurationValue ||--}o QualitativeValue : "nonEqual"
-DriveWheelConfigurationValue ||--}o Text : "alternateName"
-DriveWheelConfigurationValue ||--}o Text : "disambiguatingDescription"
-DriveWheelConfigurationValue ||--}o Text : "name"
-DriveWheelConfigurationValue ||--}o URL : "sameAs"
 DriveWheelConfigurationValue ||--}o Action : "potentialAction"
-DriveWheelConfigurationValue ||--}o URL : "url"
 

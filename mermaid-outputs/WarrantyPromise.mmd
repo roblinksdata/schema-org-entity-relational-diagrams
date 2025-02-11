@@ -1,19 +1,19 @@
 erDiagram
 WarrantyPromise {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 WarrantyPromise ||--}o QuantitativeValue : "durationOfWarranty"
 WarrantyPromise ||--}o WarrantyScope : "warrantyScope"
-WarrantyPromise ||--}o Text : "alternateName"
-WarrantyPromise ||--}o Text : "disambiguatingDescription"
-WarrantyPromise ||--}o Text : "name"
-WarrantyPromise ||--}o URL : "sameAs"
 WarrantyPromise ||--}o Action : "potentialAction"
-WarrantyPromise ||--}o URL : "url"
 

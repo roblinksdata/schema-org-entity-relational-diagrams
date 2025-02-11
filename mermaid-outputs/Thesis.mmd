@@ -1,5 +1,6 @@
 erDiagram
 Thesis {
+    TextList inSupportOf  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -13,25 +14,46 @@ Thesis {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,24 +65,32 @@ Thesis {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Thesis ||--}o Text : "inSupportOf"
 Thesis ||--}o Thing : "about"
 Thesis ||--}o Place : "contentLocation"
 Thesis ||--}o CreativeWork : "hasPart"
@@ -68,43 +98,22 @@ Thesis ||--}o Claim : "interpretedAsClaim"
 Thesis ||--}o Thing : "mainEntity"
 Thesis ||--}o Place : "spatialCoverage"
 Thesis ||--}o CreativeWork : "workExample"
-Thesis ||--}o Text : "abstract"
-Thesis ||--}o Text : "accessMode"
 Thesis ||--}o ItemList : "accessModeSufficient"
-Thesis ||--}o Text : "accessibilityAPI"
-Thesis ||--}o Text : "accessibilityControl"
-Thesis ||--}o Text : "accessibilityFeature"
-Thesis ||--}o Text : "accessibilityHazard"
-Thesis ||--}o Text : "accessibilitySummary"
 Thesis ||--}o Person : "accountablePerson"
 Thesis ||--}o AggregateRating : "aggregateRating"
-Thesis ||--}o Text : "alternativeHeadline"
 Thesis ||--}o MediaObject : "associatedMedia"
 Thesis ||--}o Audience : "audience"
-Thesis ||--}o Text : "award"
-Thesis ||--}o Text : "awards"
 Thesis ||--}o Person : "character"
 Thesis ||--}o Comment : "comment"
-Thesis ||--}o Integer : "commentCount"
-Thesis ||--}o Text : "conditionsOfAccess"
-Thesis ||--}o DateTime : "contentReferenceTime"
-Thesis ||--}o Text : "copyrightNotice"
-Thesis ||--}o Number : "copyrightYear"
 Thesis ||--}o Country : "countryOfOrigin"
-Thesis ||--}o Text : "creditText"
 Thesis ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Thesis ||--}o URL : "discussionUrl"
 Thesis ||--}o Person : "editor"
 Thesis ||--}o AlignmentObject : "educationalAlignment"
 Thesis ||--}o MediaObject : "encoding"
 Thesis ||--}o MediaObject : "encodings"
 Thesis ||--}o CreativeWork : "exampleOfWork"
 Thesis ||--}o Grant : "funding"
-Thesis ||--}o Text : "headline"
 Thesis ||--}o InteractionCounter : "interactionStatistic"
-Thesis ||--}o Text : "interactivityType"
-Thesis ||--}o Boolean : "isAccessibleForFree"
-Thesis ||--}o Boolean : "isFamilyFriendly"
 Thesis ||--}o Place : "locationCreated"
 Thesis ||--}o Thing : "mentions"
 Thesis ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ Thesis ||--}o Event : "recordedAt"
 Thesis ||--}o PublicationEvent : "releasedEvent"
 Thesis ||--}o Review : "review"
 Thesis ||--}o Review : "reviews"
-Thesis ||--}o Date : "sdDatePublished"
 Thesis ||--}o Organization : "sourceOrganization"
 Thesis ||--}o Place : "spatial"
-Thesis ||--}o Text : "text"
 Thesis ||--}o ImageObject : "thumbnail"
-Thesis ||--}o URL : "thumbnailUrl"
 Thesis ||--}o Duration : "timeRequired"
 Thesis ||--}o CreativeWork : "translationOfWork"
-Thesis ||--}o Text : "typicalAgeRange"
 Thesis ||--}o CreativeWork : "workTranslation"
-Thesis ||--}o Text : "alternateName"
-Thesis ||--}o Text : "disambiguatingDescription"
-Thesis ||--}o Text : "name"
-Thesis ||--}o URL : "sameAs"
 Thesis ||--}o Action : "potentialAction"
-Thesis ||--}o URL : "url"
 

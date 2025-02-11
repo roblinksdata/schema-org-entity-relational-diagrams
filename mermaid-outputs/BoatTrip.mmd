@@ -6,11 +6,16 @@ BoatTrip {
     stringList offers  
     stringList provider  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BoatTrip ||--}o BoatTerminal : "arrivalBoatTerminal"
@@ -18,10 +23,5 @@ BoatTrip ||--}o BoatTerminal : "departureBoatTerminal"
 BoatTrip ||--}o Trip : "partOfTrip"
 BoatTrip ||--}o Trip : "subTrip"
 BoatTrip ||--}o Place : "tripOrigin"
-BoatTrip ||--}o Text : "alternateName"
-BoatTrip ||--}o Text : "disambiguatingDescription"
-BoatTrip ||--}o Text : "name"
-BoatTrip ||--}o URL : "sameAs"
 BoatTrip ||--}o Action : "potentialAction"
-BoatTrip ||--}o URL : "url"
 

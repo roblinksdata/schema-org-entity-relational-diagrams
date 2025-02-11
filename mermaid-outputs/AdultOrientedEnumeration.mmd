@@ -2,17 +2,17 @@ erDiagram
 AdultOrientedEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-AdultOrientedEnumeration ||--}o Text : "alternateName"
-AdultOrientedEnumeration ||--}o Text : "disambiguatingDescription"
-AdultOrientedEnumeration ||--}o Text : "name"
-AdultOrientedEnumeration ||--}o URL : "sameAs"
 AdultOrientedEnumeration ||--}o Action : "potentialAction"
-AdultOrientedEnumeration ||--}o URL : "url"
 

@@ -3,40 +3,40 @@ TaxiService {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TaxiService ||--}o AggregateRating : "aggregateRating"
 TaxiService ||--}o Audience : "audience"
 TaxiService ||--}o ServiceChannel : "availableChannel"
-TaxiService ||--}o Text : "award"
 TaxiService ||--}o Certification : "hasCertification"
 TaxiService ||--}o OfferCatalog : "hasOfferCatalog"
 TaxiService ||--}o OpeningHoursSpecification : "hoursAvailable"
 TaxiService ||--}o Thing : "produces"
-TaxiService ||--}o Text : "providerMobility"
 TaxiService ||--}o Review : "review"
 TaxiService ||--}o Audience : "serviceAudience"
 TaxiService ||--}o Thing : "serviceOutput"
-TaxiService ||--}o Text : "slogan"
-TaxiService ||--}o Text : "alternateName"
-TaxiService ||--}o Text : "disambiguatingDescription"
-TaxiService ||--}o Text : "name"
-TaxiService ||--}o URL : "sameAs"
 TaxiService ||--}o Action : "potentialAction"
-TaxiService ||--}o URL : "url"
 

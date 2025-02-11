@@ -4,20 +4,20 @@ InteractionCounter {
     stringList endTime  
     stringList interactionService  
     stringList startTime  
+    IntegerList userInteractionCount  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 InteractionCounter ||--}o Action : "interactionType"
-InteractionCounter ||--}o Integer : "userInteractionCount"
-InteractionCounter ||--}o Text : "alternateName"
-InteractionCounter ||--}o Text : "disambiguatingDescription"
-InteractionCounter ||--}o Text : "name"
-InteractionCounter ||--}o URL : "sameAs"
 InteractionCounter ||--}o Action : "potentialAction"
-InteractionCounter ||--}o URL : "url"
 

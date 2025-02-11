@@ -1,8 +1,16 @@
 erDiagram
 Optician {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ Optician {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Optician ||--}o Organization : "branchOf"
-Optician ||--}o Text : "currenciesAccepted"
-Optician ||--}o Text : "openingHours"
-Optician ||--}o Text : "paymentAccepted"
-Optician ||--}o Text : "priceRange"
-Optician ||--}o Text : "globalLocationNumber"
-Optician ||--}o URL : "hasGS1DigitalLink"
 Optician ||--}o PropertyValue : "additionalProperty"
 Optician ||--}o AggregateRating : "aggregateRating"
 Optician ||--}o LocationFeatureSpecification : "amenityFeature"
-Optician ||--}o Text : "branchCode"
 Optician ||--}o Place : "containedIn"
 Optician ||--}o Place : "containedInPlace"
 Optician ||--}o Place : "containsPlace"
 Optician ||--}o Event : "event"
 Optician ||--}o Event : "events"
-Optician ||--}o Text : "faxNumber"
 Optician ||--}o Certification : "hasCertification"
-Optician ||--}o Boolean : "hasDriveThroughService"
-Optician ||--}o Boolean : "isAccessibleForFree"
-Optician ||--}o Text : "isicV4"
-Optician ||--}o URL : "map"
-Optician ||--}o URL : "maps"
-Optician ||--}o Integer : "maximumAttendeeCapacity"
 Optician ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Optician ||--}o Boolean : "publicAccess"
 Optician ||--}o Review : "review"
 Optician ||--}o Review : "reviews"
-Optician ||--}o Text : "slogan"
-Optician ||--}o Boolean : "smokingAllowed"
 Optician ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Optician ||--}o Text : "telephone"
-Optician ||--}o URL : "tourBookingPage"
-Optician ||--}o Text : "duns"
-Optician ||--}o Text : "leiCode"
-Optician ||--}o Text : "taxID"
 Optician ||--}o InteractionCounter : "agentInteractionStatistic"
 Optician ||--}o Person : "alumni"
-Optician ||--}o Text : "award"
-Optician ||--}o Text : "awards"
 Optician ||--}o ContactPoint : "contactPoint"
 Optician ||--}o ContactPoint : "contactPoints"
 Optician ||--}o Organization : "department"
-Optician ||--}o Date : "dissolutionDate"
-Optician ||--}o Text : "email"
 Optician ||--}o Person : "employee"
 Optician ||--}o Person : "employees"
 Optician ||--}o Person : "founders"
-Optician ||--}o Date : "foundingDate"
 Optician ||--}o Place : "foundingLocation"
 Optician ||--}o Grant : "funding"
 Optician ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ Optician ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Optician ||--}o OfferCatalog : "hasOfferCatalog"
 Optician ||--}o Place : "hasPOS"
 Optician ||--}o InteractionCounter : "interactionStatistic"
-Optician ||--}o Text : "iso6523Code"
-Optician ||--}o Text : "legalName"
 Optician ||--}o Offer : "makesOffer"
-Optician ||--}o Text : "naics"
 Optician ||--}o NonprofitType : "nonprofitStatus"
 Optician ||--}o QuantitativeValue : "numberOfEmployees"
 Optician ||--}o Organization : "parentOrganization"
 Optician ||--}o Demand : "seeks"
 Optician ||--}o Organization : "subOrganization"
-Optician ||--}o Text : "vatID"
-Optician ||--}o Text : "alternateName"
-Optician ||--}o Text : "disambiguatingDescription"
-Optician ||--}o Text : "name"
-Optician ||--}o URL : "sameAs"
 Optician ||--}o Action : "potentialAction"
-Optician ||--}o URL : "url"
 

@@ -4,11 +4,16 @@ MedicalObservationalStudy {
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalObservationalStudy ||--}o MedicalObservationalStudyDesign : "studyDesign"
@@ -22,10 +27,5 @@ MedicalObservationalStudy ||--}o MedicineSystem : "medicineSystem"
 MedicalObservationalStudy ||--}o Organization : "recognizingAuthority"
 MedicalObservationalStudy ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalObservationalStudy ||--}o MedicalStudy : "study"
-MedicalObservationalStudy ||--}o Text : "alternateName"
-MedicalObservationalStudy ||--}o Text : "disambiguatingDescription"
-MedicalObservationalStudy ||--}o Text : "name"
-MedicalObservationalStudy ||--}o URL : "sameAs"
 MedicalObservationalStudy ||--}o Action : "potentialAction"
-MedicalObservationalStudy ||--}o URL : "url"
 

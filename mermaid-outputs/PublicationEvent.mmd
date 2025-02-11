@@ -1,5 +1,6 @@
 erDiagram
 PublicationEvent {
+    BooleanList free  
     stringList publishedBy  
     stringList actor  
     stringList contributor  
@@ -12,22 +13,33 @@ PublicationEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PublicationEvent ||--}o Boolean : "free"
 PublicationEvent ||--}o BroadcastService : "publishedOn"
 PublicationEvent ||--}o Thing : "about"
 PublicationEvent ||--}o Duration : "duration"
@@ -40,22 +52,10 @@ PublicationEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 PublicationEvent ||--}o Schedule : "eventSchedule"
 PublicationEvent ||--}o EventStatusType : "eventStatus"
 PublicationEvent ||--}o Grant : "funding"
-PublicationEvent ||--}o Boolean : "isAccessibleForFree"
-PublicationEvent ||--}o Integer : "maximumAttendeeCapacity"
-PublicationEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-PublicationEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-PublicationEvent ||--}o Date : "previousStartDate"
 PublicationEvent ||--}o CreativeWork : "recordedIn"
-PublicationEvent ||--}o Integer : "remainingAttendeeCapacity"
 PublicationEvent ||--}o Review : "review"
 PublicationEvent ||--}o Event : "subEvent"
 PublicationEvent ||--}o Event : "subEvents"
 PublicationEvent ||--}o Event : "superEvent"
-PublicationEvent ||--}o Text : "typicalAgeRange"
-PublicationEvent ||--}o Text : "alternateName"
-PublicationEvent ||--}o Text : "disambiguatingDescription"
-PublicationEvent ||--}o Text : "name"
-PublicationEvent ||--}o URL : "sameAs"
 PublicationEvent ||--}o Action : "potentialAction"
-PublicationEvent ||--}o URL : "url"
 

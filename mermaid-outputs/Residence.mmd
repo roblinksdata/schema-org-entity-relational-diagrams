@@ -1,8 +1,12 @@
 erDiagram
 Residence {
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +18,48 @@ Residence {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Residence ||--}o FloorPlan : "accommodationFloorPlan"
-Residence ||--}o Text : "globalLocationNumber"
-Residence ||--}o URL : "hasGS1DigitalLink"
 Residence ||--}o PropertyValue : "additionalProperty"
 Residence ||--}o AggregateRating : "aggregateRating"
 Residence ||--}o LocationFeatureSpecification : "amenityFeature"
-Residence ||--}o Text : "branchCode"
 Residence ||--}o Place : "containedIn"
 Residence ||--}o Place : "containedInPlace"
 Residence ||--}o Place : "containsPlace"
 Residence ||--}o Event : "event"
 Residence ||--}o Event : "events"
-Residence ||--}o Text : "faxNumber"
 Residence ||--}o Certification : "hasCertification"
-Residence ||--}o Boolean : "hasDriveThroughService"
-Residence ||--}o Boolean : "isAccessibleForFree"
-Residence ||--}o Text : "isicV4"
-Residence ||--}o URL : "map"
-Residence ||--}o URL : "maps"
-Residence ||--}o Integer : "maximumAttendeeCapacity"
 Residence ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Residence ||--}o Boolean : "publicAccess"
 Residence ||--}o Review : "review"
 Residence ||--}o Review : "reviews"
-Residence ||--}o Text : "slogan"
-Residence ||--}o Boolean : "smokingAllowed"
 Residence ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Residence ||--}o Text : "telephone"
-Residence ||--}o URL : "tourBookingPage"
-Residence ||--}o Text : "alternateName"
-Residence ||--}o Text : "disambiguatingDescription"
-Residence ||--}o Text : "name"
-Residence ||--}o URL : "sameAs"
 Residence ||--}o Action : "potentialAction"
-Residence ||--}o URL : "url"
 

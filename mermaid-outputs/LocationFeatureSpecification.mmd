@@ -4,26 +4,26 @@ LocationFeatureSpecification {
     stringList validThrough  
     stringList measurementMethod  
     stringList measurementTechnique  
+    NumberList maxValue  
+    NumberList minValue  
     stringList propertyID  
     stringList unitCode  
+    TextList unitText  
     stringList value  
     stringList valueReference  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LocationFeatureSpecification ||--}o OpeningHoursSpecification : "hoursAvailable"
-LocationFeatureSpecification ||--}o Number : "maxValue"
-LocationFeatureSpecification ||--}o Number : "minValue"
-LocationFeatureSpecification ||--}o Text : "unitText"
-LocationFeatureSpecification ||--}o Text : "alternateName"
-LocationFeatureSpecification ||--}o Text : "disambiguatingDescription"
-LocationFeatureSpecification ||--}o Text : "name"
-LocationFeatureSpecification ||--}o URL : "sameAs"
 LocationFeatureSpecification ||--}o Action : "potentialAction"
-LocationFeatureSpecification ||--}o URL : "url"
 

@@ -8,11 +8,16 @@ JoinAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 JoinAction ||--}o Event : "event"
@@ -22,10 +27,5 @@ JoinAction ||--}o Thing : "result"
 JoinAction ||--}o HowTo : "actionProcess"
 JoinAction ||--}o ActionStatusType : "actionStatus"
 JoinAction ||--}o Thing : "error"
-JoinAction ||--}o Text : "alternateName"
-JoinAction ||--}o Text : "disambiguatingDescription"
-JoinAction ||--}o Text : "name"
-JoinAction ||--}o URL : "sameAs"
 JoinAction ||--}o Action : "potentialAction"
-JoinAction ||--}o URL : "url"
 

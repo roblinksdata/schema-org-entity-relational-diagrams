@@ -1,5 +1,6 @@
 erDiagram
 ChemicalSubstance {
+    TextList chemicalComposition  
     stringList hasRepresentation  
     stringList associatedDisease  
     stringList hasMolecularFunction  
@@ -7,14 +8,18 @@ ChemicalSubstance {
     stringList isLocatedInSubcellularLocation  
     stringList taxonomicRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ChemicalSubstance ||--}o Text : "chemicalComposition"
 ChemicalSubstance ||--}o DefinedTerm : "chemicalRole"
 ChemicalSubstance ||--}o DefinedTerm : "potentialUse"
 ChemicalSubstance ||--}o BioChemEntity : "bioChemInteraction"
@@ -24,10 +29,5 @@ ChemicalSubstance ||--}o Grant : "funding"
 ChemicalSubstance ||--}o BioChemEntity : "hasBioChemEntityPart"
 ChemicalSubstance ||--}o Gene : "isEncodedByBioChemEntity"
 ChemicalSubstance ||--}o BioChemEntity : "isPartOfBioChemEntity"
-ChemicalSubstance ||--}o Text : "alternateName"
-ChemicalSubstance ||--}o Text : "disambiguatingDescription"
-ChemicalSubstance ||--}o Text : "name"
-ChemicalSubstance ||--}o URL : "sameAs"
 ChemicalSubstance ||--}o Action : "potentialAction"
-ChemicalSubstance ||--}o URL : "url"
 

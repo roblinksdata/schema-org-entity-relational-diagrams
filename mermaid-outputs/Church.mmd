@@ -1,8 +1,13 @@
 erDiagram
 Church {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ Church {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Church ||--}o Text : "openingHours"
-Church ||--}o Text : "globalLocationNumber"
-Church ||--}o URL : "hasGS1DigitalLink"
 Church ||--}o PropertyValue : "additionalProperty"
 Church ||--}o AggregateRating : "aggregateRating"
 Church ||--}o LocationFeatureSpecification : "amenityFeature"
-Church ||--}o Text : "branchCode"
 Church ||--}o Place : "containedIn"
 Church ||--}o Place : "containedInPlace"
 Church ||--}o Place : "containsPlace"
 Church ||--}o Event : "event"
 Church ||--}o Event : "events"
-Church ||--}o Text : "faxNumber"
 Church ||--}o Certification : "hasCertification"
-Church ||--}o Boolean : "hasDriveThroughService"
-Church ||--}o Boolean : "isAccessibleForFree"
-Church ||--}o Text : "isicV4"
-Church ||--}o URL : "map"
-Church ||--}o URL : "maps"
-Church ||--}o Integer : "maximumAttendeeCapacity"
 Church ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Church ||--}o Boolean : "publicAccess"
 Church ||--}o Review : "review"
 Church ||--}o Review : "reviews"
-Church ||--}o Text : "slogan"
-Church ||--}o Boolean : "smokingAllowed"
 Church ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Church ||--}o Text : "telephone"
-Church ||--}o URL : "tourBookingPage"
-Church ||--}o Text : "alternateName"
-Church ||--}o Text : "disambiguatingDescription"
-Church ||--}o Text : "name"
-Church ||--}o URL : "sameAs"
 Church ||--}o Action : "potentialAction"
-Church ||--}o URL : "url"
 

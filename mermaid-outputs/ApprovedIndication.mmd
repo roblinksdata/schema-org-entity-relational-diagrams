@@ -2,11 +2,16 @@ erDiagram
 ApprovedIndication {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ApprovedIndication ||--}o MedicalCode : "code"
@@ -16,10 +21,5 @@ ApprovedIndication ||--}o MedicineSystem : "medicineSystem"
 ApprovedIndication ||--}o Organization : "recognizingAuthority"
 ApprovedIndication ||--}o MedicalSpecialty : "relevantSpecialty"
 ApprovedIndication ||--}o MedicalStudy : "study"
-ApprovedIndication ||--}o Text : "alternateName"
-ApprovedIndication ||--}o Text : "disambiguatingDescription"
-ApprovedIndication ||--}o Text : "name"
-ApprovedIndication ||--}o URL : "sameAs"
 ApprovedIndication ||--}o Action : "potentialAction"
-ApprovedIndication ||--}o URL : "url"
 

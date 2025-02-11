@@ -2,17 +2,17 @@ erDiagram
 LegalForceStatus {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-LegalForceStatus ||--}o Text : "alternateName"
-LegalForceStatus ||--}o Text : "disambiguatingDescription"
-LegalForceStatus ||--}o Text : "name"
-LegalForceStatus ||--}o URL : "sameAs"
 LegalForceStatus ||--}o Action : "potentialAction"
-LegalForceStatus ||--}o URL : "url"
 

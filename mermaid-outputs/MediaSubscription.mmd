@@ -1,19 +1,19 @@
 erDiagram
 MediaSubscription {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MediaSubscription ||--}o Organization : "authenticator"
 MediaSubscription ||--}o Offer : "expectsAcceptanceOf"
-MediaSubscription ||--}o Text : "alternateName"
-MediaSubscription ||--}o Text : "disambiguatingDescription"
-MediaSubscription ||--}o Text : "name"
-MediaSubscription ||--}o URL : "sameAs"
 MediaSubscription ||--}o Action : "potentialAction"
-MediaSubscription ||--}o URL : "url"
 

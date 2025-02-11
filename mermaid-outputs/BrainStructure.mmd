@@ -1,16 +1,21 @@
 erDiagram
 BrainStructure {
+    TextList associatedPathophysiology  
+    TextList bodyLocation  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BrainStructure ||--}o Text : "associatedPathophysiology"
-BrainStructure ||--}o Text : "bodyLocation"
 BrainStructure ||--}o AnatomicalStructure : "connectedTo"
 BrainStructure ||--}o ImageObject : "diagram"
 BrainStructure ||--}o AnatomicalSystem : "partOfSystem"
@@ -24,10 +29,5 @@ BrainStructure ||--}o MedicineSystem : "medicineSystem"
 BrainStructure ||--}o Organization : "recognizingAuthority"
 BrainStructure ||--}o MedicalSpecialty : "relevantSpecialty"
 BrainStructure ||--}o MedicalStudy : "study"
-BrainStructure ||--}o Text : "alternateName"
-BrainStructure ||--}o Text : "disambiguatingDescription"
-BrainStructure ||--}o Text : "name"
-BrainStructure ||--}o URL : "sameAs"
 BrainStructure ||--}o Action : "potentialAction"
-BrainStructure ||--}o URL : "url"
 

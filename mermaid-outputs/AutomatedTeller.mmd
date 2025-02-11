@@ -1,9 +1,17 @@
 erDiagram
 AutomatedTeller {
     stringList feesAndCommissionsSpecification  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -15,91 +23,92 @@ AutomatedTeller {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AutomatedTeller ||--}o Organization : "branchOf"
-AutomatedTeller ||--}o Text : "currenciesAccepted"
-AutomatedTeller ||--}o Text : "openingHours"
-AutomatedTeller ||--}o Text : "paymentAccepted"
-AutomatedTeller ||--}o Text : "priceRange"
-AutomatedTeller ||--}o Text : "globalLocationNumber"
-AutomatedTeller ||--}o URL : "hasGS1DigitalLink"
 AutomatedTeller ||--}o PropertyValue : "additionalProperty"
 AutomatedTeller ||--}o AggregateRating : "aggregateRating"
 AutomatedTeller ||--}o LocationFeatureSpecification : "amenityFeature"
-AutomatedTeller ||--}o Text : "branchCode"
 AutomatedTeller ||--}o Place : "containedIn"
 AutomatedTeller ||--}o Place : "containedInPlace"
 AutomatedTeller ||--}o Place : "containsPlace"
 AutomatedTeller ||--}o Event : "event"
 AutomatedTeller ||--}o Event : "events"
-AutomatedTeller ||--}o Text : "faxNumber"
 AutomatedTeller ||--}o Certification : "hasCertification"
-AutomatedTeller ||--}o Boolean : "hasDriveThroughService"
-AutomatedTeller ||--}o Boolean : "isAccessibleForFree"
-AutomatedTeller ||--}o Text : "isicV4"
-AutomatedTeller ||--}o URL : "map"
-AutomatedTeller ||--}o URL : "maps"
-AutomatedTeller ||--}o Integer : "maximumAttendeeCapacity"
 AutomatedTeller ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-AutomatedTeller ||--}o Boolean : "publicAccess"
 AutomatedTeller ||--}o Review : "review"
 AutomatedTeller ||--}o Review : "reviews"
-AutomatedTeller ||--}o Text : "slogan"
-AutomatedTeller ||--}o Boolean : "smokingAllowed"
 AutomatedTeller ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-AutomatedTeller ||--}o Text : "telephone"
-AutomatedTeller ||--}o URL : "tourBookingPage"
-AutomatedTeller ||--}o Text : "duns"
-AutomatedTeller ||--}o Text : "leiCode"
-AutomatedTeller ||--}o Text : "taxID"
 AutomatedTeller ||--}o InteractionCounter : "agentInteractionStatistic"
 AutomatedTeller ||--}o Person : "alumni"
-AutomatedTeller ||--}o Text : "award"
-AutomatedTeller ||--}o Text : "awards"
 AutomatedTeller ||--}o ContactPoint : "contactPoint"
 AutomatedTeller ||--}o ContactPoint : "contactPoints"
 AutomatedTeller ||--}o Organization : "department"
-AutomatedTeller ||--}o Date : "dissolutionDate"
-AutomatedTeller ||--}o Text : "email"
 AutomatedTeller ||--}o Person : "employee"
 AutomatedTeller ||--}o Person : "employees"
 AutomatedTeller ||--}o Person : "founders"
-AutomatedTeller ||--}o Date : "foundingDate"
 AutomatedTeller ||--}o Place : "foundingLocation"
 AutomatedTeller ||--}o Grant : "funding"
 AutomatedTeller ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -108,20 +117,11 @@ AutomatedTeller ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 AutomatedTeller ||--}o OfferCatalog : "hasOfferCatalog"
 AutomatedTeller ||--}o Place : "hasPOS"
 AutomatedTeller ||--}o InteractionCounter : "interactionStatistic"
-AutomatedTeller ||--}o Text : "iso6523Code"
-AutomatedTeller ||--}o Text : "legalName"
 AutomatedTeller ||--}o Offer : "makesOffer"
-AutomatedTeller ||--}o Text : "naics"
 AutomatedTeller ||--}o NonprofitType : "nonprofitStatus"
 AutomatedTeller ||--}o QuantitativeValue : "numberOfEmployees"
 AutomatedTeller ||--}o Organization : "parentOrganization"
 AutomatedTeller ||--}o Demand : "seeks"
 AutomatedTeller ||--}o Organization : "subOrganization"
-AutomatedTeller ||--}o Text : "vatID"
-AutomatedTeller ||--}o Text : "alternateName"
-AutomatedTeller ||--}o Text : "disambiguatingDescription"
-AutomatedTeller ||--}o Text : "name"
-AutomatedTeller ||--}o URL : "sameAs"
 AutomatedTeller ||--}o Action : "potentialAction"
-AutomatedTeller ||--}o URL : "url"
 

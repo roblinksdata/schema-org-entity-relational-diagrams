@@ -1,6 +1,11 @@
 erDiagram
 SoftwareSourceCode {
+    URLList codeRepository  
+    TextList codeSampleType  
     stringList programmingLanguage  
+    TextList runtime  
+    TextList runtimePlatform  
+    TextList sampleType  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -14,25 +19,46 @@ SoftwareSourceCode {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -44,28 +70,32 @@ SoftwareSourceCode {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-SoftwareSourceCode ||--}o URL : "codeRepository"
-SoftwareSourceCode ||--}o Text : "codeSampleType"
-SoftwareSourceCode ||--}o Text : "runtime"
-SoftwareSourceCode ||--}o Text : "runtimePlatform"
-SoftwareSourceCode ||--}o Text : "sampleType"
 SoftwareSourceCode ||--}o SoftwareApplication : "targetProduct"
 SoftwareSourceCode ||--}o Thing : "about"
 SoftwareSourceCode ||--}o Place : "contentLocation"
@@ -74,43 +104,22 @@ SoftwareSourceCode ||--}o Claim : "interpretedAsClaim"
 SoftwareSourceCode ||--}o Thing : "mainEntity"
 SoftwareSourceCode ||--}o Place : "spatialCoverage"
 SoftwareSourceCode ||--}o CreativeWork : "workExample"
-SoftwareSourceCode ||--}o Text : "abstract"
-SoftwareSourceCode ||--}o Text : "accessMode"
 SoftwareSourceCode ||--}o ItemList : "accessModeSufficient"
-SoftwareSourceCode ||--}o Text : "accessibilityAPI"
-SoftwareSourceCode ||--}o Text : "accessibilityControl"
-SoftwareSourceCode ||--}o Text : "accessibilityFeature"
-SoftwareSourceCode ||--}o Text : "accessibilityHazard"
-SoftwareSourceCode ||--}o Text : "accessibilitySummary"
 SoftwareSourceCode ||--}o Person : "accountablePerson"
 SoftwareSourceCode ||--}o AggregateRating : "aggregateRating"
-SoftwareSourceCode ||--}o Text : "alternativeHeadline"
 SoftwareSourceCode ||--}o MediaObject : "associatedMedia"
 SoftwareSourceCode ||--}o Audience : "audience"
-SoftwareSourceCode ||--}o Text : "award"
-SoftwareSourceCode ||--}o Text : "awards"
 SoftwareSourceCode ||--}o Person : "character"
 SoftwareSourceCode ||--}o Comment : "comment"
-SoftwareSourceCode ||--}o Integer : "commentCount"
-SoftwareSourceCode ||--}o Text : "conditionsOfAccess"
-SoftwareSourceCode ||--}o DateTime : "contentReferenceTime"
-SoftwareSourceCode ||--}o Text : "copyrightNotice"
-SoftwareSourceCode ||--}o Number : "copyrightYear"
 SoftwareSourceCode ||--}o Country : "countryOfOrigin"
-SoftwareSourceCode ||--}o Text : "creditText"
 SoftwareSourceCode ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-SoftwareSourceCode ||--}o URL : "discussionUrl"
 SoftwareSourceCode ||--}o Person : "editor"
 SoftwareSourceCode ||--}o AlignmentObject : "educationalAlignment"
 SoftwareSourceCode ||--}o MediaObject : "encoding"
 SoftwareSourceCode ||--}o MediaObject : "encodings"
 SoftwareSourceCode ||--}o CreativeWork : "exampleOfWork"
 SoftwareSourceCode ||--}o Grant : "funding"
-SoftwareSourceCode ||--}o Text : "headline"
 SoftwareSourceCode ||--}o InteractionCounter : "interactionStatistic"
-SoftwareSourceCode ||--}o Text : "interactivityType"
-SoftwareSourceCode ||--}o Boolean : "isAccessibleForFree"
-SoftwareSourceCode ||--}o Boolean : "isFamilyFriendly"
 SoftwareSourceCode ||--}o Place : "locationCreated"
 SoftwareSourceCode ||--}o Thing : "mentions"
 SoftwareSourceCode ||--}o PublicationEvent : "publication"
@@ -119,20 +128,11 @@ SoftwareSourceCode ||--}o Event : "recordedAt"
 SoftwareSourceCode ||--}o PublicationEvent : "releasedEvent"
 SoftwareSourceCode ||--}o Review : "review"
 SoftwareSourceCode ||--}o Review : "reviews"
-SoftwareSourceCode ||--}o Date : "sdDatePublished"
 SoftwareSourceCode ||--}o Organization : "sourceOrganization"
 SoftwareSourceCode ||--}o Place : "spatial"
-SoftwareSourceCode ||--}o Text : "text"
 SoftwareSourceCode ||--}o ImageObject : "thumbnail"
-SoftwareSourceCode ||--}o URL : "thumbnailUrl"
 SoftwareSourceCode ||--}o Duration : "timeRequired"
 SoftwareSourceCode ||--}o CreativeWork : "translationOfWork"
-SoftwareSourceCode ||--}o Text : "typicalAgeRange"
 SoftwareSourceCode ||--}o CreativeWork : "workTranslation"
-SoftwareSourceCode ||--}o Text : "alternateName"
-SoftwareSourceCode ||--}o Text : "disambiguatingDescription"
-SoftwareSourceCode ||--}o Text : "name"
-SoftwareSourceCode ||--}o URL : "sameAs"
 SoftwareSourceCode ||--}o Action : "potentialAction"
-SoftwareSourceCode ||--}o URL : "url"
 

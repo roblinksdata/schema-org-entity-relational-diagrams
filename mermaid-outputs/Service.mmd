@@ -3,40 +3,40 @@ Service {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Service ||--}o AggregateRating : "aggregateRating"
 Service ||--}o Audience : "audience"
 Service ||--}o ServiceChannel : "availableChannel"
-Service ||--}o Text : "award"
 Service ||--}o Certification : "hasCertification"
 Service ||--}o OfferCatalog : "hasOfferCatalog"
 Service ||--}o OpeningHoursSpecification : "hoursAvailable"
 Service ||--}o Thing : "produces"
-Service ||--}o Text : "providerMobility"
 Service ||--}o Review : "review"
 Service ||--}o Audience : "serviceAudience"
 Service ||--}o Thing : "serviceOutput"
-Service ||--}o Text : "slogan"
-Service ||--}o Text : "alternateName"
-Service ||--}o Text : "disambiguatingDescription"
-Service ||--}o Text : "name"
-Service ||--}o URL : "sameAs"
 Service ||--}o Action : "potentialAction"
-Service ||--}o URL : "url"
 

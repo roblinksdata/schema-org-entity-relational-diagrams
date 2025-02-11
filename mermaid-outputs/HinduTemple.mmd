@@ -1,8 +1,13 @@
 erDiagram
 HinduTemple {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ HinduTemple {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-HinduTemple ||--}o Text : "openingHours"
-HinduTemple ||--}o Text : "globalLocationNumber"
-HinduTemple ||--}o URL : "hasGS1DigitalLink"
 HinduTemple ||--}o PropertyValue : "additionalProperty"
 HinduTemple ||--}o AggregateRating : "aggregateRating"
 HinduTemple ||--}o LocationFeatureSpecification : "amenityFeature"
-HinduTemple ||--}o Text : "branchCode"
 HinduTemple ||--}o Place : "containedIn"
 HinduTemple ||--}o Place : "containedInPlace"
 HinduTemple ||--}o Place : "containsPlace"
 HinduTemple ||--}o Event : "event"
 HinduTemple ||--}o Event : "events"
-HinduTemple ||--}o Text : "faxNumber"
 HinduTemple ||--}o Certification : "hasCertification"
-HinduTemple ||--}o Boolean : "hasDriveThroughService"
-HinduTemple ||--}o Boolean : "isAccessibleForFree"
-HinduTemple ||--}o Text : "isicV4"
-HinduTemple ||--}o URL : "map"
-HinduTemple ||--}o URL : "maps"
-HinduTemple ||--}o Integer : "maximumAttendeeCapacity"
 HinduTemple ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-HinduTemple ||--}o Boolean : "publicAccess"
 HinduTemple ||--}o Review : "review"
 HinduTemple ||--}o Review : "reviews"
-HinduTemple ||--}o Text : "slogan"
-HinduTemple ||--}o Boolean : "smokingAllowed"
 HinduTemple ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-HinduTemple ||--}o Text : "telephone"
-HinduTemple ||--}o URL : "tourBookingPage"
-HinduTemple ||--}o Text : "alternateName"
-HinduTemple ||--}o Text : "disambiguatingDescription"
-HinduTemple ||--}o Text : "name"
-HinduTemple ||--}o URL : "sameAs"
 HinduTemple ||--}o Action : "potentialAction"
-HinduTemple ||--}o URL : "url"
 

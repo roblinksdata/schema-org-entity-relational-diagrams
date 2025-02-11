@@ -14,25 +14,46 @@ Game {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -44,21 +65,30 @@ Game {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Game ||--}o Thing : "characterAttribute"
@@ -72,43 +102,22 @@ Game ||--}o Claim : "interpretedAsClaim"
 Game ||--}o Thing : "mainEntity"
 Game ||--}o Place : "spatialCoverage"
 Game ||--}o CreativeWork : "workExample"
-Game ||--}o Text : "abstract"
-Game ||--}o Text : "accessMode"
 Game ||--}o ItemList : "accessModeSufficient"
-Game ||--}o Text : "accessibilityAPI"
-Game ||--}o Text : "accessibilityControl"
-Game ||--}o Text : "accessibilityFeature"
-Game ||--}o Text : "accessibilityHazard"
-Game ||--}o Text : "accessibilitySummary"
 Game ||--}o Person : "accountablePerson"
 Game ||--}o AggregateRating : "aggregateRating"
-Game ||--}o Text : "alternativeHeadline"
 Game ||--}o MediaObject : "associatedMedia"
 Game ||--}o Audience : "audience"
-Game ||--}o Text : "award"
-Game ||--}o Text : "awards"
 Game ||--}o Person : "character"
 Game ||--}o Comment : "comment"
-Game ||--}o Integer : "commentCount"
-Game ||--}o Text : "conditionsOfAccess"
-Game ||--}o DateTime : "contentReferenceTime"
-Game ||--}o Text : "copyrightNotice"
-Game ||--}o Number : "copyrightYear"
 Game ||--}o Country : "countryOfOrigin"
-Game ||--}o Text : "creditText"
 Game ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Game ||--}o URL : "discussionUrl"
 Game ||--}o Person : "editor"
 Game ||--}o AlignmentObject : "educationalAlignment"
 Game ||--}o MediaObject : "encoding"
 Game ||--}o MediaObject : "encodings"
 Game ||--}o CreativeWork : "exampleOfWork"
 Game ||--}o Grant : "funding"
-Game ||--}o Text : "headline"
 Game ||--}o InteractionCounter : "interactionStatistic"
-Game ||--}o Text : "interactivityType"
-Game ||--}o Boolean : "isAccessibleForFree"
-Game ||--}o Boolean : "isFamilyFriendly"
 Game ||--}o Place : "locationCreated"
 Game ||--}o Thing : "mentions"
 Game ||--}o PublicationEvent : "publication"
@@ -117,20 +126,11 @@ Game ||--}o Event : "recordedAt"
 Game ||--}o PublicationEvent : "releasedEvent"
 Game ||--}o Review : "review"
 Game ||--}o Review : "reviews"
-Game ||--}o Date : "sdDatePublished"
 Game ||--}o Organization : "sourceOrganization"
 Game ||--}o Place : "spatial"
-Game ||--}o Text : "text"
 Game ||--}o ImageObject : "thumbnail"
-Game ||--}o URL : "thumbnailUrl"
 Game ||--}o Duration : "timeRequired"
 Game ||--}o CreativeWork : "translationOfWork"
-Game ||--}o Text : "typicalAgeRange"
 Game ||--}o CreativeWork : "workTranslation"
-Game ||--}o Text : "alternateName"
-Game ||--}o Text : "disambiguatingDescription"
-Game ||--}o Text : "name"
-Game ||--}o URL : "sameAs"
 Game ||--}o Action : "potentialAction"
-Game ||--}o URL : "url"
 

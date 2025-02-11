@@ -1,8 +1,15 @@
 erDiagram
 Airport {
+    TextList iataCode  
+    TextList icaoCode  
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,54 +21,47 @@ Airport {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Airport ||--}o Text : "iataCode"
-Airport ||--}o Text : "icaoCode"
-Airport ||--}o Text : "openingHours"
-Airport ||--}o Text : "globalLocationNumber"
-Airport ||--}o URL : "hasGS1DigitalLink"
 Airport ||--}o PropertyValue : "additionalProperty"
 Airport ||--}o AggregateRating : "aggregateRating"
 Airport ||--}o LocationFeatureSpecification : "amenityFeature"
-Airport ||--}o Text : "branchCode"
 Airport ||--}o Place : "containedIn"
 Airport ||--}o Place : "containedInPlace"
 Airport ||--}o Place : "containsPlace"
 Airport ||--}o Event : "event"
 Airport ||--}o Event : "events"
-Airport ||--}o Text : "faxNumber"
 Airport ||--}o Certification : "hasCertification"
-Airport ||--}o Boolean : "hasDriveThroughService"
-Airport ||--}o Boolean : "isAccessibleForFree"
-Airport ||--}o Text : "isicV4"
-Airport ||--}o URL : "map"
-Airport ||--}o URL : "maps"
-Airport ||--}o Integer : "maximumAttendeeCapacity"
 Airport ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Airport ||--}o Boolean : "publicAccess"
 Airport ||--}o Review : "review"
 Airport ||--}o Review : "reviews"
-Airport ||--}o Text : "slogan"
-Airport ||--}o Boolean : "smokingAllowed"
 Airport ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Airport ||--}o Text : "telephone"
-Airport ||--}o URL : "tourBookingPage"
-Airport ||--}o Text : "alternateName"
-Airport ||--}o Text : "disambiguatingDescription"
-Airport ||--}o Text : "name"
-Airport ||--}o URL : "sameAs"
 Airport ||--}o Action : "potentialAction"
-Airport ||--}o URL : "url"
 

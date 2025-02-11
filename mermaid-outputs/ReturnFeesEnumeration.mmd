@@ -2,17 +2,17 @@ erDiagram
 ReturnFeesEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ReturnFeesEnumeration ||--}o Text : "alternateName"
-ReturnFeesEnumeration ||--}o Text : "disambiguatingDescription"
-ReturnFeesEnumeration ||--}o Text : "name"
-ReturnFeesEnumeration ||--}o URL : "sameAs"
 ReturnFeesEnumeration ||--}o Action : "potentialAction"
-ReturnFeesEnumeration ||--}o URL : "url"
 

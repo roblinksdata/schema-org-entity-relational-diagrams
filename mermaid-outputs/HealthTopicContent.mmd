@@ -13,25 +13,46 @@ HealthTopicContent {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ HealthTopicContent {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 HealthTopicContent ||--}o HealthAspectEnumeration : "hasHealthAspect"
@@ -68,43 +98,22 @@ HealthTopicContent ||--}o Claim : "interpretedAsClaim"
 HealthTopicContent ||--}o Thing : "mainEntity"
 HealthTopicContent ||--}o Place : "spatialCoverage"
 HealthTopicContent ||--}o CreativeWork : "workExample"
-HealthTopicContent ||--}o Text : "abstract"
-HealthTopicContent ||--}o Text : "accessMode"
 HealthTopicContent ||--}o ItemList : "accessModeSufficient"
-HealthTopicContent ||--}o Text : "accessibilityAPI"
-HealthTopicContent ||--}o Text : "accessibilityControl"
-HealthTopicContent ||--}o Text : "accessibilityFeature"
-HealthTopicContent ||--}o Text : "accessibilityHazard"
-HealthTopicContent ||--}o Text : "accessibilitySummary"
 HealthTopicContent ||--}o Person : "accountablePerson"
 HealthTopicContent ||--}o AggregateRating : "aggregateRating"
-HealthTopicContent ||--}o Text : "alternativeHeadline"
 HealthTopicContent ||--}o MediaObject : "associatedMedia"
 HealthTopicContent ||--}o Audience : "audience"
-HealthTopicContent ||--}o Text : "award"
-HealthTopicContent ||--}o Text : "awards"
 HealthTopicContent ||--}o Person : "character"
 HealthTopicContent ||--}o Comment : "comment"
-HealthTopicContent ||--}o Integer : "commentCount"
-HealthTopicContent ||--}o Text : "conditionsOfAccess"
-HealthTopicContent ||--}o DateTime : "contentReferenceTime"
-HealthTopicContent ||--}o Text : "copyrightNotice"
-HealthTopicContent ||--}o Number : "copyrightYear"
 HealthTopicContent ||--}o Country : "countryOfOrigin"
-HealthTopicContent ||--}o Text : "creditText"
 HealthTopicContent ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-HealthTopicContent ||--}o URL : "discussionUrl"
 HealthTopicContent ||--}o Person : "editor"
 HealthTopicContent ||--}o AlignmentObject : "educationalAlignment"
 HealthTopicContent ||--}o MediaObject : "encoding"
 HealthTopicContent ||--}o MediaObject : "encodings"
 HealthTopicContent ||--}o CreativeWork : "exampleOfWork"
 HealthTopicContent ||--}o Grant : "funding"
-HealthTopicContent ||--}o Text : "headline"
 HealthTopicContent ||--}o InteractionCounter : "interactionStatistic"
-HealthTopicContent ||--}o Text : "interactivityType"
-HealthTopicContent ||--}o Boolean : "isAccessibleForFree"
-HealthTopicContent ||--}o Boolean : "isFamilyFriendly"
 HealthTopicContent ||--}o Place : "locationCreated"
 HealthTopicContent ||--}o Thing : "mentions"
 HealthTopicContent ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ HealthTopicContent ||--}o Event : "recordedAt"
 HealthTopicContent ||--}o PublicationEvent : "releasedEvent"
 HealthTopicContent ||--}o Review : "review"
 HealthTopicContent ||--}o Review : "reviews"
-HealthTopicContent ||--}o Date : "sdDatePublished"
 HealthTopicContent ||--}o Organization : "sourceOrganization"
 HealthTopicContent ||--}o Place : "spatial"
-HealthTopicContent ||--}o Text : "text"
 HealthTopicContent ||--}o ImageObject : "thumbnail"
-HealthTopicContent ||--}o URL : "thumbnailUrl"
 HealthTopicContent ||--}o Duration : "timeRequired"
 HealthTopicContent ||--}o CreativeWork : "translationOfWork"
-HealthTopicContent ||--}o Text : "typicalAgeRange"
 HealthTopicContent ||--}o CreativeWork : "workTranslation"
-HealthTopicContent ||--}o Text : "alternateName"
-HealthTopicContent ||--}o Text : "disambiguatingDescription"
-HealthTopicContent ||--}o Text : "name"
-HealthTopicContent ||--}o URL : "sameAs"
 HealthTopicContent ||--}o Action : "potentialAction"
-HealthTopicContent ||--}o URL : "url"
 

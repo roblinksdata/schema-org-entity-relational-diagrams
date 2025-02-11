@@ -1,7 +1,11 @@
 erDiagram
 MortgageLoan {
+    BooleanList domiciledMortgage  
     stringList amount  
+    TextList currency  
     stringList loanType  
+    BooleanList recourseLoan  
+    BooleanList renegotiableLoan  
     stringList requiredCollateral  
     stringList annualPercentageRate  
     stringList feesAndCommissionsSpecification  
@@ -9,48 +13,44 @@ MortgageLoan {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MortgageLoan ||--}o Boolean : "domiciledMortgage"
 MortgageLoan ||--}o MonetaryAmount : "loanMortgageMandateAmount"
 MortgageLoan ||--}o QuantitativeValue : "loanTerm"
-MortgageLoan ||--}o Text : "currency"
 MortgageLoan ||--}o Duration : "gracePeriod"
 MortgageLoan ||--}o RepaymentSpecification : "loanRepaymentForm"
-MortgageLoan ||--}o Boolean : "recourseLoan"
-MortgageLoan ||--}o Boolean : "renegotiableLoan"
 MortgageLoan ||--}o AggregateRating : "aggregateRating"
 MortgageLoan ||--}o Audience : "audience"
 MortgageLoan ||--}o ServiceChannel : "availableChannel"
-MortgageLoan ||--}o Text : "award"
 MortgageLoan ||--}o Certification : "hasCertification"
 MortgageLoan ||--}o OfferCatalog : "hasOfferCatalog"
 MortgageLoan ||--}o OpeningHoursSpecification : "hoursAvailable"
 MortgageLoan ||--}o Thing : "produces"
-MortgageLoan ||--}o Text : "providerMobility"
 MortgageLoan ||--}o Review : "review"
 MortgageLoan ||--}o Audience : "serviceAudience"
 MortgageLoan ||--}o Thing : "serviceOutput"
-MortgageLoan ||--}o Text : "slogan"
-MortgageLoan ||--}o Text : "alternateName"
-MortgageLoan ||--}o Text : "disambiguatingDescription"
-MortgageLoan ||--}o Text : "name"
-MortgageLoan ||--}o URL : "sameAs"
 MortgageLoan ||--}o Action : "potentialAction"
-MortgageLoan ||--}o URL : "url"
 

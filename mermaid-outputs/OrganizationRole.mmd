@@ -1,22 +1,22 @@
 erDiagram
 OrganizationRole {
+    NumberList numberedPosition  
     stringList endDate  
     stringList namedPosition  
     stringList roleName  
     stringList startDate  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-OrganizationRole ||--}o Number : "numberedPosition"
-OrganizationRole ||--}o Text : "alternateName"
-OrganizationRole ||--}o Text : "disambiguatingDescription"
-OrganizationRole ||--}o Text : "name"
-OrganizationRole ||--}o URL : "sameAs"
 OrganizationRole ||--}o Action : "potentialAction"
-OrganizationRole ||--}o URL : "url"
 

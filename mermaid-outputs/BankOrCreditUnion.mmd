@@ -1,9 +1,17 @@
 erDiagram
 BankOrCreditUnion {
     stringList feesAndCommissionsSpecification  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -15,91 +23,92 @@ BankOrCreditUnion {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BankOrCreditUnion ||--}o Organization : "branchOf"
-BankOrCreditUnion ||--}o Text : "currenciesAccepted"
-BankOrCreditUnion ||--}o Text : "openingHours"
-BankOrCreditUnion ||--}o Text : "paymentAccepted"
-BankOrCreditUnion ||--}o Text : "priceRange"
-BankOrCreditUnion ||--}o Text : "globalLocationNumber"
-BankOrCreditUnion ||--}o URL : "hasGS1DigitalLink"
 BankOrCreditUnion ||--}o PropertyValue : "additionalProperty"
 BankOrCreditUnion ||--}o AggregateRating : "aggregateRating"
 BankOrCreditUnion ||--}o LocationFeatureSpecification : "amenityFeature"
-BankOrCreditUnion ||--}o Text : "branchCode"
 BankOrCreditUnion ||--}o Place : "containedIn"
 BankOrCreditUnion ||--}o Place : "containedInPlace"
 BankOrCreditUnion ||--}o Place : "containsPlace"
 BankOrCreditUnion ||--}o Event : "event"
 BankOrCreditUnion ||--}o Event : "events"
-BankOrCreditUnion ||--}o Text : "faxNumber"
 BankOrCreditUnion ||--}o Certification : "hasCertification"
-BankOrCreditUnion ||--}o Boolean : "hasDriveThroughService"
-BankOrCreditUnion ||--}o Boolean : "isAccessibleForFree"
-BankOrCreditUnion ||--}o Text : "isicV4"
-BankOrCreditUnion ||--}o URL : "map"
-BankOrCreditUnion ||--}o URL : "maps"
-BankOrCreditUnion ||--}o Integer : "maximumAttendeeCapacity"
 BankOrCreditUnion ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-BankOrCreditUnion ||--}o Boolean : "publicAccess"
 BankOrCreditUnion ||--}o Review : "review"
 BankOrCreditUnion ||--}o Review : "reviews"
-BankOrCreditUnion ||--}o Text : "slogan"
-BankOrCreditUnion ||--}o Boolean : "smokingAllowed"
 BankOrCreditUnion ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-BankOrCreditUnion ||--}o Text : "telephone"
-BankOrCreditUnion ||--}o URL : "tourBookingPage"
-BankOrCreditUnion ||--}o Text : "duns"
-BankOrCreditUnion ||--}o Text : "leiCode"
-BankOrCreditUnion ||--}o Text : "taxID"
 BankOrCreditUnion ||--}o InteractionCounter : "agentInteractionStatistic"
 BankOrCreditUnion ||--}o Person : "alumni"
-BankOrCreditUnion ||--}o Text : "award"
-BankOrCreditUnion ||--}o Text : "awards"
 BankOrCreditUnion ||--}o ContactPoint : "contactPoint"
 BankOrCreditUnion ||--}o ContactPoint : "contactPoints"
 BankOrCreditUnion ||--}o Organization : "department"
-BankOrCreditUnion ||--}o Date : "dissolutionDate"
-BankOrCreditUnion ||--}o Text : "email"
 BankOrCreditUnion ||--}o Person : "employee"
 BankOrCreditUnion ||--}o Person : "employees"
 BankOrCreditUnion ||--}o Person : "founders"
-BankOrCreditUnion ||--}o Date : "foundingDate"
 BankOrCreditUnion ||--}o Place : "foundingLocation"
 BankOrCreditUnion ||--}o Grant : "funding"
 BankOrCreditUnion ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -108,20 +117,11 @@ BankOrCreditUnion ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 BankOrCreditUnion ||--}o OfferCatalog : "hasOfferCatalog"
 BankOrCreditUnion ||--}o Place : "hasPOS"
 BankOrCreditUnion ||--}o InteractionCounter : "interactionStatistic"
-BankOrCreditUnion ||--}o Text : "iso6523Code"
-BankOrCreditUnion ||--}o Text : "legalName"
 BankOrCreditUnion ||--}o Offer : "makesOffer"
-BankOrCreditUnion ||--}o Text : "naics"
 BankOrCreditUnion ||--}o NonprofitType : "nonprofitStatus"
 BankOrCreditUnion ||--}o QuantitativeValue : "numberOfEmployees"
 BankOrCreditUnion ||--}o Organization : "parentOrganization"
 BankOrCreditUnion ||--}o Demand : "seeks"
 BankOrCreditUnion ||--}o Organization : "subOrganization"
-BankOrCreditUnion ||--}o Text : "vatID"
-BankOrCreditUnion ||--}o Text : "alternateName"
-BankOrCreditUnion ||--}o Text : "disambiguatingDescription"
-BankOrCreditUnion ||--}o Text : "name"
-BankOrCreditUnion ||--}o URL : "sameAs"
 BankOrCreditUnion ||--}o Action : "potentialAction"
-BankOrCreditUnion ||--}o URL : "url"
 

@@ -2,17 +2,17 @@ erDiagram
 MapCategoryType {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MapCategoryType ||--}o Text : "alternateName"
-MapCategoryType ||--}o Text : "disambiguatingDescription"
-MapCategoryType ||--}o Text : "name"
-MapCategoryType ||--}o URL : "sameAs"
 MapCategoryType ||--}o Action : "potentialAction"
-MapCategoryType ||--}o URL : "url"
 

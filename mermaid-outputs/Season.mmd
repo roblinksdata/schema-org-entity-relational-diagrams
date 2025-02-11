@@ -13,25 +13,46 @@ Season {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ Season {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Season ||--}o Thing : "about"
@@ -67,43 +97,22 @@ Season ||--}o Claim : "interpretedAsClaim"
 Season ||--}o Thing : "mainEntity"
 Season ||--}o Place : "spatialCoverage"
 Season ||--}o CreativeWork : "workExample"
-Season ||--}o Text : "abstract"
-Season ||--}o Text : "accessMode"
 Season ||--}o ItemList : "accessModeSufficient"
-Season ||--}o Text : "accessibilityAPI"
-Season ||--}o Text : "accessibilityControl"
-Season ||--}o Text : "accessibilityFeature"
-Season ||--}o Text : "accessibilityHazard"
-Season ||--}o Text : "accessibilitySummary"
 Season ||--}o Person : "accountablePerson"
 Season ||--}o AggregateRating : "aggregateRating"
-Season ||--}o Text : "alternativeHeadline"
 Season ||--}o MediaObject : "associatedMedia"
 Season ||--}o Audience : "audience"
-Season ||--}o Text : "award"
-Season ||--}o Text : "awards"
 Season ||--}o Person : "character"
 Season ||--}o Comment : "comment"
-Season ||--}o Integer : "commentCount"
-Season ||--}o Text : "conditionsOfAccess"
-Season ||--}o DateTime : "contentReferenceTime"
-Season ||--}o Text : "copyrightNotice"
-Season ||--}o Number : "copyrightYear"
 Season ||--}o Country : "countryOfOrigin"
-Season ||--}o Text : "creditText"
 Season ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Season ||--}o URL : "discussionUrl"
 Season ||--}o Person : "editor"
 Season ||--}o AlignmentObject : "educationalAlignment"
 Season ||--}o MediaObject : "encoding"
 Season ||--}o MediaObject : "encodings"
 Season ||--}o CreativeWork : "exampleOfWork"
 Season ||--}o Grant : "funding"
-Season ||--}o Text : "headline"
 Season ||--}o InteractionCounter : "interactionStatistic"
-Season ||--}o Text : "interactivityType"
-Season ||--}o Boolean : "isAccessibleForFree"
-Season ||--}o Boolean : "isFamilyFriendly"
 Season ||--}o Place : "locationCreated"
 Season ||--}o Thing : "mentions"
 Season ||--}o PublicationEvent : "publication"
@@ -112,20 +121,11 @@ Season ||--}o Event : "recordedAt"
 Season ||--}o PublicationEvent : "releasedEvent"
 Season ||--}o Review : "review"
 Season ||--}o Review : "reviews"
-Season ||--}o Date : "sdDatePublished"
 Season ||--}o Organization : "sourceOrganization"
 Season ||--}o Place : "spatial"
-Season ||--}o Text : "text"
 Season ||--}o ImageObject : "thumbnail"
-Season ||--}o URL : "thumbnailUrl"
 Season ||--}o Duration : "timeRequired"
 Season ||--}o CreativeWork : "translationOfWork"
-Season ||--}o Text : "typicalAgeRange"
 Season ||--}o CreativeWork : "workTranslation"
-Season ||--}o Text : "alternateName"
-Season ||--}o Text : "disambiguatingDescription"
-Season ||--}o Text : "name"
-Season ||--}o URL : "sameAs"
 Season ||--}o Action : "potentialAction"
-Season ||--}o URL : "url"
 

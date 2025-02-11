@@ -1,8 +1,13 @@
 erDiagram
 Museum {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ Museum {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Museum ||--}o Text : "openingHours"
-Museum ||--}o Text : "globalLocationNumber"
-Museum ||--}o URL : "hasGS1DigitalLink"
 Museum ||--}o PropertyValue : "additionalProperty"
 Museum ||--}o AggregateRating : "aggregateRating"
 Museum ||--}o LocationFeatureSpecification : "amenityFeature"
-Museum ||--}o Text : "branchCode"
 Museum ||--}o Place : "containedIn"
 Museum ||--}o Place : "containedInPlace"
 Museum ||--}o Place : "containsPlace"
 Museum ||--}o Event : "event"
 Museum ||--}o Event : "events"
-Museum ||--}o Text : "faxNumber"
 Museum ||--}o Certification : "hasCertification"
-Museum ||--}o Boolean : "hasDriveThroughService"
-Museum ||--}o Boolean : "isAccessibleForFree"
-Museum ||--}o Text : "isicV4"
-Museum ||--}o URL : "map"
-Museum ||--}o URL : "maps"
-Museum ||--}o Integer : "maximumAttendeeCapacity"
 Museum ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Museum ||--}o Boolean : "publicAccess"
 Museum ||--}o Review : "review"
 Museum ||--}o Review : "reviews"
-Museum ||--}o Text : "slogan"
-Museum ||--}o Boolean : "smokingAllowed"
 Museum ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Museum ||--}o Text : "telephone"
-Museum ||--}o URL : "tourBookingPage"
-Museum ||--}o Text : "alternateName"
-Museum ||--}o Text : "disambiguatingDescription"
-Museum ||--}o Text : "name"
-Museum ||--}o URL : "sameAs"
 Museum ||--}o Action : "potentialAction"
-Museum ||--}o URL : "url"
 

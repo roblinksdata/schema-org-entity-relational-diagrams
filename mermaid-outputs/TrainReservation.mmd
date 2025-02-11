@@ -1,30 +1,30 @@
 erDiagram
 TrainReservation {
     stringList bookingAgent  
+    DateTimeList bookingTime  
     stringList broker  
+    DateTimeList modifiedTime  
+    TextList priceCurrency  
     stringList provider  
+    TextList reservationId  
     stringList totalPrice  
     stringList underName  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-TrainReservation ||--}o DateTime : "bookingTime"
-TrainReservation ||--}o DateTime : "modifiedTime"
-TrainReservation ||--}o Text : "priceCurrency"
 TrainReservation ||--}o ProgramMembership : "programMembershipUsed"
 TrainReservation ||--}o Thing : "reservationFor"
-TrainReservation ||--}o Text : "reservationId"
 TrainReservation ||--}o ReservationStatusType : "reservationStatus"
 TrainReservation ||--}o Ticket : "reservedTicket"
-TrainReservation ||--}o Text : "alternateName"
-TrainReservation ||--}o Text : "disambiguatingDescription"
-TrainReservation ||--}o Text : "name"
-TrainReservation ||--}o URL : "sameAs"
 TrainReservation ||--}o Action : "potentialAction"
-TrainReservation ||--}o URL : "url"
 

@@ -13,25 +13,46 @@ PresentationDigitalDocument {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,21 +64,30 @@ PresentationDigitalDocument {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 PresentationDigitalDocument ||--}o DigitalDocumentPermission : "hasDigitalDocumentPermission"
@@ -68,43 +98,22 @@ PresentationDigitalDocument ||--}o Claim : "interpretedAsClaim"
 PresentationDigitalDocument ||--}o Thing : "mainEntity"
 PresentationDigitalDocument ||--}o Place : "spatialCoverage"
 PresentationDigitalDocument ||--}o CreativeWork : "workExample"
-PresentationDigitalDocument ||--}o Text : "abstract"
-PresentationDigitalDocument ||--}o Text : "accessMode"
 PresentationDigitalDocument ||--}o ItemList : "accessModeSufficient"
-PresentationDigitalDocument ||--}o Text : "accessibilityAPI"
-PresentationDigitalDocument ||--}o Text : "accessibilityControl"
-PresentationDigitalDocument ||--}o Text : "accessibilityFeature"
-PresentationDigitalDocument ||--}o Text : "accessibilityHazard"
-PresentationDigitalDocument ||--}o Text : "accessibilitySummary"
 PresentationDigitalDocument ||--}o Person : "accountablePerson"
 PresentationDigitalDocument ||--}o AggregateRating : "aggregateRating"
-PresentationDigitalDocument ||--}o Text : "alternativeHeadline"
 PresentationDigitalDocument ||--}o MediaObject : "associatedMedia"
 PresentationDigitalDocument ||--}o Audience : "audience"
-PresentationDigitalDocument ||--}o Text : "award"
-PresentationDigitalDocument ||--}o Text : "awards"
 PresentationDigitalDocument ||--}o Person : "character"
 PresentationDigitalDocument ||--}o Comment : "comment"
-PresentationDigitalDocument ||--}o Integer : "commentCount"
-PresentationDigitalDocument ||--}o Text : "conditionsOfAccess"
-PresentationDigitalDocument ||--}o DateTime : "contentReferenceTime"
-PresentationDigitalDocument ||--}o Text : "copyrightNotice"
-PresentationDigitalDocument ||--}o Number : "copyrightYear"
 PresentationDigitalDocument ||--}o Country : "countryOfOrigin"
-PresentationDigitalDocument ||--}o Text : "creditText"
 PresentationDigitalDocument ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-PresentationDigitalDocument ||--}o URL : "discussionUrl"
 PresentationDigitalDocument ||--}o Person : "editor"
 PresentationDigitalDocument ||--}o AlignmentObject : "educationalAlignment"
 PresentationDigitalDocument ||--}o MediaObject : "encoding"
 PresentationDigitalDocument ||--}o MediaObject : "encodings"
 PresentationDigitalDocument ||--}o CreativeWork : "exampleOfWork"
 PresentationDigitalDocument ||--}o Grant : "funding"
-PresentationDigitalDocument ||--}o Text : "headline"
 PresentationDigitalDocument ||--}o InteractionCounter : "interactionStatistic"
-PresentationDigitalDocument ||--}o Text : "interactivityType"
-PresentationDigitalDocument ||--}o Boolean : "isAccessibleForFree"
-PresentationDigitalDocument ||--}o Boolean : "isFamilyFriendly"
 PresentationDigitalDocument ||--}o Place : "locationCreated"
 PresentationDigitalDocument ||--}o Thing : "mentions"
 PresentationDigitalDocument ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ PresentationDigitalDocument ||--}o Event : "recordedAt"
 PresentationDigitalDocument ||--}o PublicationEvent : "releasedEvent"
 PresentationDigitalDocument ||--}o Review : "review"
 PresentationDigitalDocument ||--}o Review : "reviews"
-PresentationDigitalDocument ||--}o Date : "sdDatePublished"
 PresentationDigitalDocument ||--}o Organization : "sourceOrganization"
 PresentationDigitalDocument ||--}o Place : "spatial"
-PresentationDigitalDocument ||--}o Text : "text"
 PresentationDigitalDocument ||--}o ImageObject : "thumbnail"
-PresentationDigitalDocument ||--}o URL : "thumbnailUrl"
 PresentationDigitalDocument ||--}o Duration : "timeRequired"
 PresentationDigitalDocument ||--}o CreativeWork : "translationOfWork"
-PresentationDigitalDocument ||--}o Text : "typicalAgeRange"
 PresentationDigitalDocument ||--}o CreativeWork : "workTranslation"
-PresentationDigitalDocument ||--}o Text : "alternateName"
-PresentationDigitalDocument ||--}o Text : "disambiguatingDescription"
-PresentationDigitalDocument ||--}o Text : "name"
-PresentationDigitalDocument ||--}o URL : "sameAs"
 PresentationDigitalDocument ||--}o Action : "potentialAction"
-PresentationDigitalDocument ||--}o URL : "url"
 

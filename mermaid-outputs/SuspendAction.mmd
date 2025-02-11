@@ -8,11 +8,16 @@ SuspendAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SuspendAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ SuspendAction ||--}o Thing : "result"
 SuspendAction ||--}o HowTo : "actionProcess"
 SuspendAction ||--}o ActionStatusType : "actionStatus"
 SuspendAction ||--}o Thing : "error"
-SuspendAction ||--}o Text : "alternateName"
-SuspendAction ||--}o Text : "disambiguatingDescription"
-SuspendAction ||--}o Text : "name"
-SuspendAction ||--}o URL : "sameAs"
 SuspendAction ||--}o Action : "potentialAction"
-SuspendAction ||--}o URL : "url"
 

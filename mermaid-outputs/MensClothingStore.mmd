@@ -1,8 +1,16 @@
 erDiagram
 MensClothingStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ MensClothingStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MensClothingStore ||--}o Organization : "branchOf"
-MensClothingStore ||--}o Text : "currenciesAccepted"
-MensClothingStore ||--}o Text : "openingHours"
-MensClothingStore ||--}o Text : "paymentAccepted"
-MensClothingStore ||--}o Text : "priceRange"
-MensClothingStore ||--}o Text : "globalLocationNumber"
-MensClothingStore ||--}o URL : "hasGS1DigitalLink"
 MensClothingStore ||--}o PropertyValue : "additionalProperty"
 MensClothingStore ||--}o AggregateRating : "aggregateRating"
 MensClothingStore ||--}o LocationFeatureSpecification : "amenityFeature"
-MensClothingStore ||--}o Text : "branchCode"
 MensClothingStore ||--}o Place : "containedIn"
 MensClothingStore ||--}o Place : "containedInPlace"
 MensClothingStore ||--}o Place : "containsPlace"
 MensClothingStore ||--}o Event : "event"
 MensClothingStore ||--}o Event : "events"
-MensClothingStore ||--}o Text : "faxNumber"
 MensClothingStore ||--}o Certification : "hasCertification"
-MensClothingStore ||--}o Boolean : "hasDriveThroughService"
-MensClothingStore ||--}o Boolean : "isAccessibleForFree"
-MensClothingStore ||--}o Text : "isicV4"
-MensClothingStore ||--}o URL : "map"
-MensClothingStore ||--}o URL : "maps"
-MensClothingStore ||--}o Integer : "maximumAttendeeCapacity"
 MensClothingStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-MensClothingStore ||--}o Boolean : "publicAccess"
 MensClothingStore ||--}o Review : "review"
 MensClothingStore ||--}o Review : "reviews"
-MensClothingStore ||--}o Text : "slogan"
-MensClothingStore ||--}o Boolean : "smokingAllowed"
 MensClothingStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-MensClothingStore ||--}o Text : "telephone"
-MensClothingStore ||--}o URL : "tourBookingPage"
-MensClothingStore ||--}o Text : "duns"
-MensClothingStore ||--}o Text : "leiCode"
-MensClothingStore ||--}o Text : "taxID"
 MensClothingStore ||--}o InteractionCounter : "agentInteractionStatistic"
 MensClothingStore ||--}o Person : "alumni"
-MensClothingStore ||--}o Text : "award"
-MensClothingStore ||--}o Text : "awards"
 MensClothingStore ||--}o ContactPoint : "contactPoint"
 MensClothingStore ||--}o ContactPoint : "contactPoints"
 MensClothingStore ||--}o Organization : "department"
-MensClothingStore ||--}o Date : "dissolutionDate"
-MensClothingStore ||--}o Text : "email"
 MensClothingStore ||--}o Person : "employee"
 MensClothingStore ||--}o Person : "employees"
 MensClothingStore ||--}o Person : "founders"
-MensClothingStore ||--}o Date : "foundingDate"
 MensClothingStore ||--}o Place : "foundingLocation"
 MensClothingStore ||--}o Grant : "funding"
 MensClothingStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ MensClothingStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 MensClothingStore ||--}o OfferCatalog : "hasOfferCatalog"
 MensClothingStore ||--}o Place : "hasPOS"
 MensClothingStore ||--}o InteractionCounter : "interactionStatistic"
-MensClothingStore ||--}o Text : "iso6523Code"
-MensClothingStore ||--}o Text : "legalName"
 MensClothingStore ||--}o Offer : "makesOffer"
-MensClothingStore ||--}o Text : "naics"
 MensClothingStore ||--}o NonprofitType : "nonprofitStatus"
 MensClothingStore ||--}o QuantitativeValue : "numberOfEmployees"
 MensClothingStore ||--}o Organization : "parentOrganization"
 MensClothingStore ||--}o Demand : "seeks"
 MensClothingStore ||--}o Organization : "subOrganization"
-MensClothingStore ||--}o Text : "vatID"
-MensClothingStore ||--}o Text : "alternateName"
-MensClothingStore ||--}o Text : "disambiguatingDescription"
-MensClothingStore ||--}o Text : "name"
-MensClothingStore ||--}o URL : "sameAs"
 MensClothingStore ||--}o Action : "potentialAction"
-MensClothingStore ||--}o URL : "url"
 

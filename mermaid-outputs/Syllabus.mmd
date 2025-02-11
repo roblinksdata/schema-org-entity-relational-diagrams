@@ -19,22 +19,43 @@ Syllabus {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList license  
     stringList maintainer  
@@ -45,20 +66,29 @@ Syllabus {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Syllabus ||--}o AlignmentObject : "educationalAlignment"
@@ -69,42 +99,21 @@ Syllabus ||--}o Claim : "interpretedAsClaim"
 Syllabus ||--}o Thing : "mainEntity"
 Syllabus ||--}o Place : "spatialCoverage"
 Syllabus ||--}o CreativeWork : "workExample"
-Syllabus ||--}o Text : "abstract"
-Syllabus ||--}o Text : "accessMode"
 Syllabus ||--}o ItemList : "accessModeSufficient"
-Syllabus ||--}o Text : "accessibilityAPI"
-Syllabus ||--}o Text : "accessibilityControl"
-Syllabus ||--}o Text : "accessibilityFeature"
-Syllabus ||--}o Text : "accessibilityHazard"
-Syllabus ||--}o Text : "accessibilitySummary"
 Syllabus ||--}o Person : "accountablePerson"
 Syllabus ||--}o AggregateRating : "aggregateRating"
-Syllabus ||--}o Text : "alternativeHeadline"
 Syllabus ||--}o MediaObject : "associatedMedia"
 Syllabus ||--}o Audience : "audience"
-Syllabus ||--}o Text : "award"
-Syllabus ||--}o Text : "awards"
 Syllabus ||--}o Person : "character"
 Syllabus ||--}o Comment : "comment"
-Syllabus ||--}o Integer : "commentCount"
-Syllabus ||--}o Text : "conditionsOfAccess"
-Syllabus ||--}o DateTime : "contentReferenceTime"
-Syllabus ||--}o Text : "copyrightNotice"
-Syllabus ||--}o Number : "copyrightYear"
 Syllabus ||--}o Country : "countryOfOrigin"
-Syllabus ||--}o Text : "creditText"
 Syllabus ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-Syllabus ||--}o URL : "discussionUrl"
 Syllabus ||--}o Person : "editor"
 Syllabus ||--}o MediaObject : "encoding"
 Syllabus ||--}o MediaObject : "encodings"
 Syllabus ||--}o CreativeWork : "exampleOfWork"
 Syllabus ||--}o Grant : "funding"
-Syllabus ||--}o Text : "headline"
 Syllabus ||--}o InteractionCounter : "interactionStatistic"
-Syllabus ||--}o Text : "interactivityType"
-Syllabus ||--}o Boolean : "isAccessibleForFree"
-Syllabus ||--}o Boolean : "isFamilyFriendly"
 Syllabus ||--}o Place : "locationCreated"
 Syllabus ||--}o Thing : "mentions"
 Syllabus ||--}o PublicationEvent : "publication"
@@ -113,20 +122,11 @@ Syllabus ||--}o Event : "recordedAt"
 Syllabus ||--}o PublicationEvent : "releasedEvent"
 Syllabus ||--}o Review : "review"
 Syllabus ||--}o Review : "reviews"
-Syllabus ||--}o Date : "sdDatePublished"
 Syllabus ||--}o Organization : "sourceOrganization"
 Syllabus ||--}o Place : "spatial"
-Syllabus ||--}o Text : "text"
 Syllabus ||--}o ImageObject : "thumbnail"
-Syllabus ||--}o URL : "thumbnailUrl"
 Syllabus ||--}o Duration : "timeRequired"
 Syllabus ||--}o CreativeWork : "translationOfWork"
-Syllabus ||--}o Text : "typicalAgeRange"
 Syllabus ||--}o CreativeWork : "workTranslation"
-Syllabus ||--}o Text : "alternateName"
-Syllabus ||--}o Text : "disambiguatingDescription"
-Syllabus ||--}o Text : "name"
-Syllabus ||--}o URL : "sameAs"
 Syllabus ||--}o Action : "potentialAction"
-Syllabus ||--}o URL : "url"
 

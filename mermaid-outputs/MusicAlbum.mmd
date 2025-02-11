@@ -1,6 +1,7 @@
 erDiagram
 MusicAlbum {
     stringList byArtist  
+    IntegerList numTracks  
     stringList track  
     stringList acquireLicensePage  
     stringList contributor  
@@ -15,25 +16,46 @@ MusicAlbum {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,27 +67,35 @@ MusicAlbum {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MusicAlbum ||--}o MusicAlbumProductionType : "albumProductionType"
 MusicAlbum ||--}o MusicRelease : "albumRelease"
 MusicAlbum ||--}o MusicAlbumReleaseType : "albumReleaseType"
-MusicAlbum ||--}o Integer : "numTracks"
 MusicAlbum ||--}o MusicRecording : "tracks"
 MusicAlbum ||--}o Thing : "about"
 MusicAlbum ||--}o Place : "contentLocation"
@@ -74,43 +104,22 @@ MusicAlbum ||--}o Claim : "interpretedAsClaim"
 MusicAlbum ||--}o Thing : "mainEntity"
 MusicAlbum ||--}o Place : "spatialCoverage"
 MusicAlbum ||--}o CreativeWork : "workExample"
-MusicAlbum ||--}o Text : "abstract"
-MusicAlbum ||--}o Text : "accessMode"
 MusicAlbum ||--}o ItemList : "accessModeSufficient"
-MusicAlbum ||--}o Text : "accessibilityAPI"
-MusicAlbum ||--}o Text : "accessibilityControl"
-MusicAlbum ||--}o Text : "accessibilityFeature"
-MusicAlbum ||--}o Text : "accessibilityHazard"
-MusicAlbum ||--}o Text : "accessibilitySummary"
 MusicAlbum ||--}o Person : "accountablePerson"
 MusicAlbum ||--}o AggregateRating : "aggregateRating"
-MusicAlbum ||--}o Text : "alternativeHeadline"
 MusicAlbum ||--}o MediaObject : "associatedMedia"
 MusicAlbum ||--}o Audience : "audience"
-MusicAlbum ||--}o Text : "award"
-MusicAlbum ||--}o Text : "awards"
 MusicAlbum ||--}o Person : "character"
 MusicAlbum ||--}o Comment : "comment"
-MusicAlbum ||--}o Integer : "commentCount"
-MusicAlbum ||--}o Text : "conditionsOfAccess"
-MusicAlbum ||--}o DateTime : "contentReferenceTime"
-MusicAlbum ||--}o Text : "copyrightNotice"
-MusicAlbum ||--}o Number : "copyrightYear"
 MusicAlbum ||--}o Country : "countryOfOrigin"
-MusicAlbum ||--}o Text : "creditText"
 MusicAlbum ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-MusicAlbum ||--}o URL : "discussionUrl"
 MusicAlbum ||--}o Person : "editor"
 MusicAlbum ||--}o AlignmentObject : "educationalAlignment"
 MusicAlbum ||--}o MediaObject : "encoding"
 MusicAlbum ||--}o MediaObject : "encodings"
 MusicAlbum ||--}o CreativeWork : "exampleOfWork"
 MusicAlbum ||--}o Grant : "funding"
-MusicAlbum ||--}o Text : "headline"
 MusicAlbum ||--}o InteractionCounter : "interactionStatistic"
-MusicAlbum ||--}o Text : "interactivityType"
-MusicAlbum ||--}o Boolean : "isAccessibleForFree"
-MusicAlbum ||--}o Boolean : "isFamilyFriendly"
 MusicAlbum ||--}o Place : "locationCreated"
 MusicAlbum ||--}o Thing : "mentions"
 MusicAlbum ||--}o PublicationEvent : "publication"
@@ -119,20 +128,11 @@ MusicAlbum ||--}o Event : "recordedAt"
 MusicAlbum ||--}o PublicationEvent : "releasedEvent"
 MusicAlbum ||--}o Review : "review"
 MusicAlbum ||--}o Review : "reviews"
-MusicAlbum ||--}o Date : "sdDatePublished"
 MusicAlbum ||--}o Organization : "sourceOrganization"
 MusicAlbum ||--}o Place : "spatial"
-MusicAlbum ||--}o Text : "text"
 MusicAlbum ||--}o ImageObject : "thumbnail"
-MusicAlbum ||--}o URL : "thumbnailUrl"
 MusicAlbum ||--}o Duration : "timeRequired"
 MusicAlbum ||--}o CreativeWork : "translationOfWork"
-MusicAlbum ||--}o Text : "typicalAgeRange"
 MusicAlbum ||--}o CreativeWork : "workTranslation"
-MusicAlbum ||--}o Text : "alternateName"
-MusicAlbum ||--}o Text : "disambiguatingDescription"
-MusicAlbum ||--}o Text : "name"
-MusicAlbum ||--}o URL : "sameAs"
 MusicAlbum ||--}o Action : "potentialAction"
-MusicAlbum ||--}o URL : "url"
 

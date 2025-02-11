@@ -1,8 +1,16 @@
 erDiagram
 SelfStorage {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ SelfStorage {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SelfStorage ||--}o Organization : "branchOf"
-SelfStorage ||--}o Text : "currenciesAccepted"
-SelfStorage ||--}o Text : "openingHours"
-SelfStorage ||--}o Text : "paymentAccepted"
-SelfStorage ||--}o Text : "priceRange"
-SelfStorage ||--}o Text : "globalLocationNumber"
-SelfStorage ||--}o URL : "hasGS1DigitalLink"
 SelfStorage ||--}o PropertyValue : "additionalProperty"
 SelfStorage ||--}o AggregateRating : "aggregateRating"
 SelfStorage ||--}o LocationFeatureSpecification : "amenityFeature"
-SelfStorage ||--}o Text : "branchCode"
 SelfStorage ||--}o Place : "containedIn"
 SelfStorage ||--}o Place : "containedInPlace"
 SelfStorage ||--}o Place : "containsPlace"
 SelfStorage ||--}o Event : "event"
 SelfStorage ||--}o Event : "events"
-SelfStorage ||--}o Text : "faxNumber"
 SelfStorage ||--}o Certification : "hasCertification"
-SelfStorage ||--}o Boolean : "hasDriveThroughService"
-SelfStorage ||--}o Boolean : "isAccessibleForFree"
-SelfStorage ||--}o Text : "isicV4"
-SelfStorage ||--}o URL : "map"
-SelfStorage ||--}o URL : "maps"
-SelfStorage ||--}o Integer : "maximumAttendeeCapacity"
 SelfStorage ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-SelfStorage ||--}o Boolean : "publicAccess"
 SelfStorage ||--}o Review : "review"
 SelfStorage ||--}o Review : "reviews"
-SelfStorage ||--}o Text : "slogan"
-SelfStorage ||--}o Boolean : "smokingAllowed"
 SelfStorage ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-SelfStorage ||--}o Text : "telephone"
-SelfStorage ||--}o URL : "tourBookingPage"
-SelfStorage ||--}o Text : "duns"
-SelfStorage ||--}o Text : "leiCode"
-SelfStorage ||--}o Text : "taxID"
 SelfStorage ||--}o InteractionCounter : "agentInteractionStatistic"
 SelfStorage ||--}o Person : "alumni"
-SelfStorage ||--}o Text : "award"
-SelfStorage ||--}o Text : "awards"
 SelfStorage ||--}o ContactPoint : "contactPoint"
 SelfStorage ||--}o ContactPoint : "contactPoints"
 SelfStorage ||--}o Organization : "department"
-SelfStorage ||--}o Date : "dissolutionDate"
-SelfStorage ||--}o Text : "email"
 SelfStorage ||--}o Person : "employee"
 SelfStorage ||--}o Person : "employees"
 SelfStorage ||--}o Person : "founders"
-SelfStorage ||--}o Date : "foundingDate"
 SelfStorage ||--}o Place : "foundingLocation"
 SelfStorage ||--}o Grant : "funding"
 SelfStorage ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ SelfStorage ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 SelfStorage ||--}o OfferCatalog : "hasOfferCatalog"
 SelfStorage ||--}o Place : "hasPOS"
 SelfStorage ||--}o InteractionCounter : "interactionStatistic"
-SelfStorage ||--}o Text : "iso6523Code"
-SelfStorage ||--}o Text : "legalName"
 SelfStorage ||--}o Offer : "makesOffer"
-SelfStorage ||--}o Text : "naics"
 SelfStorage ||--}o NonprofitType : "nonprofitStatus"
 SelfStorage ||--}o QuantitativeValue : "numberOfEmployees"
 SelfStorage ||--}o Organization : "parentOrganization"
 SelfStorage ||--}o Demand : "seeks"
 SelfStorage ||--}o Organization : "subOrganization"
-SelfStorage ||--}o Text : "vatID"
-SelfStorage ||--}o Text : "alternateName"
-SelfStorage ||--}o Text : "disambiguatingDescription"
-SelfStorage ||--}o Text : "name"
-SelfStorage ||--}o URL : "sameAs"
 SelfStorage ||--}o Action : "potentialAction"
-SelfStorage ||--}o URL : "url"
 

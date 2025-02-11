@@ -5,9 +5,17 @@ Hostel {
     stringList checkoutTime  
     stringList numberOfRooms  
     stringList petsAllowed  
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -19,93 +27,94 @@ Hostel {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Hostel ||--}o LocationFeatureSpecification : "amenityFeature"
 Hostel ||--}o Audience : "audience"
 Hostel ||--}o Rating : "starRating"
 Hostel ||--}o Organization : "branchOf"
-Hostel ||--}o Text : "currenciesAccepted"
-Hostel ||--}o Text : "openingHours"
-Hostel ||--}o Text : "paymentAccepted"
-Hostel ||--}o Text : "priceRange"
-Hostel ||--}o Text : "globalLocationNumber"
-Hostel ||--}o URL : "hasGS1DigitalLink"
 Hostel ||--}o PropertyValue : "additionalProperty"
 Hostel ||--}o AggregateRating : "aggregateRating"
-Hostel ||--}o Text : "branchCode"
 Hostel ||--}o Place : "containedIn"
 Hostel ||--}o Place : "containedInPlace"
 Hostel ||--}o Place : "containsPlace"
 Hostel ||--}o Event : "event"
 Hostel ||--}o Event : "events"
-Hostel ||--}o Text : "faxNumber"
 Hostel ||--}o Certification : "hasCertification"
-Hostel ||--}o Boolean : "hasDriveThroughService"
-Hostel ||--}o Boolean : "isAccessibleForFree"
-Hostel ||--}o Text : "isicV4"
-Hostel ||--}o URL : "map"
-Hostel ||--}o URL : "maps"
-Hostel ||--}o Integer : "maximumAttendeeCapacity"
 Hostel ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Hostel ||--}o Boolean : "publicAccess"
 Hostel ||--}o Review : "review"
 Hostel ||--}o Review : "reviews"
-Hostel ||--}o Text : "slogan"
-Hostel ||--}o Boolean : "smokingAllowed"
 Hostel ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Hostel ||--}o Text : "telephone"
-Hostel ||--}o URL : "tourBookingPage"
-Hostel ||--}o Text : "duns"
-Hostel ||--}o Text : "leiCode"
-Hostel ||--}o Text : "taxID"
 Hostel ||--}o InteractionCounter : "agentInteractionStatistic"
 Hostel ||--}o Person : "alumni"
-Hostel ||--}o Text : "award"
-Hostel ||--}o Text : "awards"
 Hostel ||--}o ContactPoint : "contactPoint"
 Hostel ||--}o ContactPoint : "contactPoints"
 Hostel ||--}o Organization : "department"
-Hostel ||--}o Date : "dissolutionDate"
-Hostel ||--}o Text : "email"
 Hostel ||--}o Person : "employee"
 Hostel ||--}o Person : "employees"
 Hostel ||--}o Person : "founders"
-Hostel ||--}o Date : "foundingDate"
 Hostel ||--}o Place : "foundingLocation"
 Hostel ||--}o Grant : "funding"
 Hostel ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -114,20 +123,11 @@ Hostel ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Hostel ||--}o OfferCatalog : "hasOfferCatalog"
 Hostel ||--}o Place : "hasPOS"
 Hostel ||--}o InteractionCounter : "interactionStatistic"
-Hostel ||--}o Text : "iso6523Code"
-Hostel ||--}o Text : "legalName"
 Hostel ||--}o Offer : "makesOffer"
-Hostel ||--}o Text : "naics"
 Hostel ||--}o NonprofitType : "nonprofitStatus"
 Hostel ||--}o QuantitativeValue : "numberOfEmployees"
 Hostel ||--}o Organization : "parentOrganization"
 Hostel ||--}o Demand : "seeks"
 Hostel ||--}o Organization : "subOrganization"
-Hostel ||--}o Text : "vatID"
-Hostel ||--}o Text : "alternateName"
-Hostel ||--}o Text : "disambiguatingDescription"
-Hostel ||--}o Text : "name"
-Hostel ||--}o URL : "sameAs"
 Hostel ||--}o Action : "potentialAction"
-Hostel ||--}o URL : "url"
 

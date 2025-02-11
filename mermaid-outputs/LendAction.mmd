@@ -8,11 +8,16 @@ LendAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LendAction ||--}o Person : "borrower"
@@ -24,10 +29,5 @@ LendAction ||--}o Thing : "result"
 LendAction ||--}o HowTo : "actionProcess"
 LendAction ||--}o ActionStatusType : "actionStatus"
 LendAction ||--}o Thing : "error"
-LendAction ||--}o Text : "alternateName"
-LendAction ||--}o Text : "disambiguatingDescription"
-LendAction ||--}o Text : "name"
-LendAction ||--}o URL : "sameAs"
 LendAction ||--}o Action : "potentialAction"
-LendAction ||--}o URL : "url"
 

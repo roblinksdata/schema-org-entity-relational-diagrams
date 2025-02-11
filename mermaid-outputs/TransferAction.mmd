@@ -8,11 +8,16 @@ TransferAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TransferAction ||--}o Place : "fromLocation"
@@ -23,10 +28,5 @@ TransferAction ||--}o Thing : "result"
 TransferAction ||--}o HowTo : "actionProcess"
 TransferAction ||--}o ActionStatusType : "actionStatus"
 TransferAction ||--}o Thing : "error"
-TransferAction ||--}o Text : "alternateName"
-TransferAction ||--}o Text : "disambiguatingDescription"
-TransferAction ||--}o Text : "name"
-TransferAction ||--}o URL : "sameAs"
 TransferAction ||--}o Action : "potentialAction"
-TransferAction ||--}o URL : "url"
 

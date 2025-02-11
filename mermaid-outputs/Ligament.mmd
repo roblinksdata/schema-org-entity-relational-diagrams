@@ -1,16 +1,21 @@
 erDiagram
 Ligament {
+    TextList associatedPathophysiology  
+    TextList bodyLocation  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Ligament ||--}o Text : "associatedPathophysiology"
-Ligament ||--}o Text : "bodyLocation"
 Ligament ||--}o AnatomicalStructure : "connectedTo"
 Ligament ||--}o ImageObject : "diagram"
 Ligament ||--}o AnatomicalSystem : "partOfSystem"
@@ -24,10 +29,5 @@ Ligament ||--}o MedicineSystem : "medicineSystem"
 Ligament ||--}o Organization : "recognizingAuthority"
 Ligament ||--}o MedicalSpecialty : "relevantSpecialty"
 Ligament ||--}o MedicalStudy : "study"
-Ligament ||--}o Text : "alternateName"
-Ligament ||--}o Text : "disambiguatingDescription"
-Ligament ||--}o Text : "name"
-Ligament ||--}o URL : "sameAs"
 Ligament ||--}o Action : "potentialAction"
-Ligament ||--}o URL : "url"
 

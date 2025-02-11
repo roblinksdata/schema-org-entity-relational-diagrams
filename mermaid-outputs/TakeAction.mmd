@@ -8,11 +8,16 @@ TakeAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TakeAction ||--}o Place : "fromLocation"
@@ -23,10 +28,5 @@ TakeAction ||--}o Thing : "result"
 TakeAction ||--}o HowTo : "actionProcess"
 TakeAction ||--}o ActionStatusType : "actionStatus"
 TakeAction ||--}o Thing : "error"
-TakeAction ||--}o Text : "alternateName"
-TakeAction ||--}o Text : "disambiguatingDescription"
-TakeAction ||--}o Text : "name"
-TakeAction ||--}o URL : "sameAs"
 TakeAction ||--}o Action : "potentialAction"
-TakeAction ||--}o URL : "url"
 

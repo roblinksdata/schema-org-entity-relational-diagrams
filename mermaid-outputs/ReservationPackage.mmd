@@ -1,31 +1,31 @@
 erDiagram
 ReservationPackage {
     stringList bookingAgent  
+    DateTimeList bookingTime  
     stringList broker  
+    DateTimeList modifiedTime  
+    TextList priceCurrency  
     stringList provider  
+    TextList reservationId  
     stringList totalPrice  
     stringList underName  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ReservationPackage ||--}o Reservation : "subReservation"
-ReservationPackage ||--}o DateTime : "bookingTime"
-ReservationPackage ||--}o DateTime : "modifiedTime"
-ReservationPackage ||--}o Text : "priceCurrency"
 ReservationPackage ||--}o ProgramMembership : "programMembershipUsed"
 ReservationPackage ||--}o Thing : "reservationFor"
-ReservationPackage ||--}o Text : "reservationId"
 ReservationPackage ||--}o ReservationStatusType : "reservationStatus"
 ReservationPackage ||--}o Ticket : "reservedTicket"
-ReservationPackage ||--}o Text : "alternateName"
-ReservationPackage ||--}o Text : "disambiguatingDescription"
-ReservationPackage ||--}o Text : "name"
-ReservationPackage ||--}o URL : "sameAs"
 ReservationPackage ||--}o Action : "potentialAction"
-ReservationPackage ||--}o URL : "url"
 

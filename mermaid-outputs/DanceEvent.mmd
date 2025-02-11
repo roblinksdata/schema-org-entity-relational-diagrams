@@ -11,19 +11,31 @@ DanceEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DanceEvent ||--}o Thing : "about"
@@ -37,22 +49,10 @@ DanceEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 DanceEvent ||--}o Schedule : "eventSchedule"
 DanceEvent ||--}o EventStatusType : "eventStatus"
 DanceEvent ||--}o Grant : "funding"
-DanceEvent ||--}o Boolean : "isAccessibleForFree"
-DanceEvent ||--}o Integer : "maximumAttendeeCapacity"
-DanceEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-DanceEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-DanceEvent ||--}o Date : "previousStartDate"
 DanceEvent ||--}o CreativeWork : "recordedIn"
-DanceEvent ||--}o Integer : "remainingAttendeeCapacity"
 DanceEvent ||--}o Review : "review"
 DanceEvent ||--}o Event : "subEvent"
 DanceEvent ||--}o Event : "subEvents"
 DanceEvent ||--}o Event : "superEvent"
-DanceEvent ||--}o Text : "typicalAgeRange"
-DanceEvent ||--}o Text : "alternateName"
-DanceEvent ||--}o Text : "disambiguatingDescription"
-DanceEvent ||--}o Text : "name"
-DanceEvent ||--}o URL : "sameAs"
 DanceEvent ||--}o Action : "potentialAction"
-DanceEvent ||--}o URL : "url"
 

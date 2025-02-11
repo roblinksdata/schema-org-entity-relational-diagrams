@@ -2,12 +2,24 @@ erDiagram
 SoftwareApplication {
     stringList applicationCategory  
     stringList applicationSubCategory  
+    TextList applicationSuite  
+    TextList availableOnDevice  
+    TextList countriesNotSupported  
+    TextList countriesSupported  
+    TextList device  
+    URLList downloadUrl  
     stringList featureList  
+    TextList fileSize  
+    URLList installUrl  
     stringList memoryRequirements  
+    TextList operatingSystem  
+    TextList permissions  
+    TextList processorRequirements  
     stringList releaseNotes  
     stringList requirements  
     stringList screenshot  
     stringList softwareRequirements  
+    TextList softwareVersion  
     stringList storageRequirements  
     stringList acquireLicensePage  
     stringList contributor  
@@ -22,25 +34,46 @@ SoftwareApplication {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -52,37 +85,34 @@ SoftwareApplication {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-SoftwareApplication ||--}o Text : "applicationSuite"
-SoftwareApplication ||--}o Text : "availableOnDevice"
-SoftwareApplication ||--}o Text : "countriesNotSupported"
-SoftwareApplication ||--}o Text : "countriesSupported"
-SoftwareApplication ||--}o Text : "device"
-SoftwareApplication ||--}o URL : "downloadUrl"
-SoftwareApplication ||--}o Text : "fileSize"
-SoftwareApplication ||--}o URL : "installUrl"
-SoftwareApplication ||--}o Text : "operatingSystem"
-SoftwareApplication ||--}o Text : "permissions"
-SoftwareApplication ||--}o Text : "processorRequirements"
 SoftwareApplication ||--}o SoftwareApplication : "softwareAddOn"
 SoftwareApplication ||--}o CreativeWork : "softwareHelp"
-SoftwareApplication ||--}o Text : "softwareVersion"
 SoftwareApplication ||--}o DataFeed : "supportingData"
 SoftwareApplication ||--}o Thing : "about"
 SoftwareApplication ||--}o Place : "contentLocation"
@@ -91,43 +121,22 @@ SoftwareApplication ||--}o Claim : "interpretedAsClaim"
 SoftwareApplication ||--}o Thing : "mainEntity"
 SoftwareApplication ||--}o Place : "spatialCoverage"
 SoftwareApplication ||--}o CreativeWork : "workExample"
-SoftwareApplication ||--}o Text : "abstract"
-SoftwareApplication ||--}o Text : "accessMode"
 SoftwareApplication ||--}o ItemList : "accessModeSufficient"
-SoftwareApplication ||--}o Text : "accessibilityAPI"
-SoftwareApplication ||--}o Text : "accessibilityControl"
-SoftwareApplication ||--}o Text : "accessibilityFeature"
-SoftwareApplication ||--}o Text : "accessibilityHazard"
-SoftwareApplication ||--}o Text : "accessibilitySummary"
 SoftwareApplication ||--}o Person : "accountablePerson"
 SoftwareApplication ||--}o AggregateRating : "aggregateRating"
-SoftwareApplication ||--}o Text : "alternativeHeadline"
 SoftwareApplication ||--}o MediaObject : "associatedMedia"
 SoftwareApplication ||--}o Audience : "audience"
-SoftwareApplication ||--}o Text : "award"
-SoftwareApplication ||--}o Text : "awards"
 SoftwareApplication ||--}o Person : "character"
 SoftwareApplication ||--}o Comment : "comment"
-SoftwareApplication ||--}o Integer : "commentCount"
-SoftwareApplication ||--}o Text : "conditionsOfAccess"
-SoftwareApplication ||--}o DateTime : "contentReferenceTime"
-SoftwareApplication ||--}o Text : "copyrightNotice"
-SoftwareApplication ||--}o Number : "copyrightYear"
 SoftwareApplication ||--}o Country : "countryOfOrigin"
-SoftwareApplication ||--}o Text : "creditText"
 SoftwareApplication ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-SoftwareApplication ||--}o URL : "discussionUrl"
 SoftwareApplication ||--}o Person : "editor"
 SoftwareApplication ||--}o AlignmentObject : "educationalAlignment"
 SoftwareApplication ||--}o MediaObject : "encoding"
 SoftwareApplication ||--}o MediaObject : "encodings"
 SoftwareApplication ||--}o CreativeWork : "exampleOfWork"
 SoftwareApplication ||--}o Grant : "funding"
-SoftwareApplication ||--}o Text : "headline"
 SoftwareApplication ||--}o InteractionCounter : "interactionStatistic"
-SoftwareApplication ||--}o Text : "interactivityType"
-SoftwareApplication ||--}o Boolean : "isAccessibleForFree"
-SoftwareApplication ||--}o Boolean : "isFamilyFriendly"
 SoftwareApplication ||--}o Place : "locationCreated"
 SoftwareApplication ||--}o Thing : "mentions"
 SoftwareApplication ||--}o PublicationEvent : "publication"
@@ -136,20 +145,11 @@ SoftwareApplication ||--}o Event : "recordedAt"
 SoftwareApplication ||--}o PublicationEvent : "releasedEvent"
 SoftwareApplication ||--}o Review : "review"
 SoftwareApplication ||--}o Review : "reviews"
-SoftwareApplication ||--}o Date : "sdDatePublished"
 SoftwareApplication ||--}o Organization : "sourceOrganization"
 SoftwareApplication ||--}o Place : "spatial"
-SoftwareApplication ||--}o Text : "text"
 SoftwareApplication ||--}o ImageObject : "thumbnail"
-SoftwareApplication ||--}o URL : "thumbnailUrl"
 SoftwareApplication ||--}o Duration : "timeRequired"
 SoftwareApplication ||--}o CreativeWork : "translationOfWork"
-SoftwareApplication ||--}o Text : "typicalAgeRange"
 SoftwareApplication ||--}o CreativeWork : "workTranslation"
-SoftwareApplication ||--}o Text : "alternateName"
-SoftwareApplication ||--}o Text : "disambiguatingDescription"
-SoftwareApplication ||--}o Text : "name"
-SoftwareApplication ||--}o URL : "sameAs"
 SoftwareApplication ||--}o Action : "potentialAction"
-SoftwareApplication ||--}o URL : "url"
 

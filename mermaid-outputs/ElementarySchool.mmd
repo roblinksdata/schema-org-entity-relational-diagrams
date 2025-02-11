@@ -1,38 +1,63 @@
 erDiagram
 ElementarySchool {
+    TextList openingHours  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
     stringList photo  
+    TextList branchCode  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -44,35 +69,31 @@ ElementarySchool {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    BooleanList smokingAllowed  
+    URLList tourBookingPage  
 }
 
 ElementarySchool ||--}o Person : "alumni"
-ElementarySchool ||--}o Text : "openingHours"
-ElementarySchool ||--}o Text : "duns"
-ElementarySchool ||--}o Text : "globalLocationNumber"
-ElementarySchool ||--}o URL : "hasGS1DigitalLink"
-ElementarySchool ||--}o Text : "leiCode"
-ElementarySchool ||--}o Text : "taxID"
 ElementarySchool ||--}o InteractionCounter : "agentInteractionStatistic"
 ElementarySchool ||--}o AggregateRating : "aggregateRating"
-ElementarySchool ||--}o Text : "award"
-ElementarySchool ||--}o Text : "awards"
 ElementarySchool ||--}o ContactPoint : "contactPoint"
 ElementarySchool ||--}o ContactPoint : "contactPoints"
 ElementarySchool ||--}o Organization : "department"
-ElementarySchool ||--}o Date : "dissolutionDate"
-ElementarySchool ||--}o Text : "email"
 ElementarySchool ||--}o Person : "employee"
 ElementarySchool ||--}o Person : "employees"
 ElementarySchool ||--}o Event : "event"
 ElementarySchool ||--}o Event : "events"
-ElementarySchool ||--}o Text : "faxNumber"
 ElementarySchool ||--}o Person : "founders"
-ElementarySchool ||--}o Date : "foundingDate"
 ElementarySchool ||--}o Place : "foundingLocation"
 ElementarySchool ||--}o Grant : "funding"
 ElementarySchool ||--}o Certification : "hasCertification"
@@ -82,41 +103,20 @@ ElementarySchool ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 ElementarySchool ||--}o OfferCatalog : "hasOfferCatalog"
 ElementarySchool ||--}o Place : "hasPOS"
 ElementarySchool ||--}o InteractionCounter : "interactionStatistic"
-ElementarySchool ||--}o Text : "isicV4"
-ElementarySchool ||--}o Text : "iso6523Code"
-ElementarySchool ||--}o Text : "legalName"
 ElementarySchool ||--}o Offer : "makesOffer"
-ElementarySchool ||--}o Text : "naics"
 ElementarySchool ||--}o NonprofitType : "nonprofitStatus"
 ElementarySchool ||--}o QuantitativeValue : "numberOfEmployees"
 ElementarySchool ||--}o Organization : "parentOrganization"
 ElementarySchool ||--}o Review : "review"
 ElementarySchool ||--}o Review : "reviews"
 ElementarySchool ||--}o Demand : "seeks"
-ElementarySchool ||--}o Text : "slogan"
 ElementarySchool ||--}o Organization : "subOrganization"
-ElementarySchool ||--}o Text : "telephone"
-ElementarySchool ||--}o Text : "vatID"
-ElementarySchool ||--}o Text : "alternateName"
-ElementarySchool ||--}o Text : "disambiguatingDescription"
-ElementarySchool ||--}o Text : "name"
-ElementarySchool ||--}o URL : "sameAs"
 ElementarySchool ||--}o Action : "potentialAction"
-ElementarySchool ||--}o URL : "url"
 ElementarySchool ||--}o PropertyValue : "additionalProperty"
 ElementarySchool ||--}o LocationFeatureSpecification : "amenityFeature"
-ElementarySchool ||--}o Text : "branchCode"
 ElementarySchool ||--}o Place : "containedIn"
 ElementarySchool ||--}o Place : "containedInPlace"
 ElementarySchool ||--}o Place : "containsPlace"
-ElementarySchool ||--}o Boolean : "hasDriveThroughService"
-ElementarySchool ||--}o Boolean : "isAccessibleForFree"
-ElementarySchool ||--}o URL : "map"
-ElementarySchool ||--}o URL : "maps"
-ElementarySchool ||--}o Integer : "maximumAttendeeCapacity"
 ElementarySchool ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-ElementarySchool ||--}o Boolean : "publicAccess"
-ElementarySchool ||--}o Boolean : "smokingAllowed"
 ElementarySchool ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-ElementarySchool ||--}o URL : "tourBookingPage"
 

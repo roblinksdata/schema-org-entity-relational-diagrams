@@ -13,25 +13,46 @@ AmpStory {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,28 +64,43 @@ AmpStory {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
+    TextList sha256  
+    TextList bitrate  
+    TextList contentSize  
+    URLList contentUrl  
+    URLList embedUrl  
     stringList endTime  
     stringList height  
     stringList ineligibleRegion  
+    TextList playerType  
     stringList requiresSubscription  
     stringList startTime  
     stringList uploadDate  
     stringList width  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 AmpStory ||--}o Thing : "about"
@@ -74,43 +110,22 @@ AmpStory ||--}o Claim : "interpretedAsClaim"
 AmpStory ||--}o Thing : "mainEntity"
 AmpStory ||--}o Place : "spatialCoverage"
 AmpStory ||--}o CreativeWork : "workExample"
-AmpStory ||--}o Text : "abstract"
-AmpStory ||--}o Text : "accessMode"
 AmpStory ||--}o ItemList : "accessModeSufficient"
-AmpStory ||--}o Text : "accessibilityAPI"
-AmpStory ||--}o Text : "accessibilityControl"
-AmpStory ||--}o Text : "accessibilityFeature"
-AmpStory ||--}o Text : "accessibilityHazard"
-AmpStory ||--}o Text : "accessibilitySummary"
 AmpStory ||--}o Person : "accountablePerson"
 AmpStory ||--}o AggregateRating : "aggregateRating"
-AmpStory ||--}o Text : "alternativeHeadline"
 AmpStory ||--}o MediaObject : "associatedMedia"
 AmpStory ||--}o Audience : "audience"
-AmpStory ||--}o Text : "award"
-AmpStory ||--}o Text : "awards"
 AmpStory ||--}o Person : "character"
 AmpStory ||--}o Comment : "comment"
-AmpStory ||--}o Integer : "commentCount"
-AmpStory ||--}o Text : "conditionsOfAccess"
-AmpStory ||--}o DateTime : "contentReferenceTime"
-AmpStory ||--}o Text : "copyrightNotice"
-AmpStory ||--}o Number : "copyrightYear"
 AmpStory ||--}o Country : "countryOfOrigin"
-AmpStory ||--}o Text : "creditText"
 AmpStory ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-AmpStory ||--}o URL : "discussionUrl"
 AmpStory ||--}o Person : "editor"
 AmpStory ||--}o AlignmentObject : "educationalAlignment"
 AmpStory ||--}o MediaObject : "encoding"
 AmpStory ||--}o MediaObject : "encodings"
 AmpStory ||--}o CreativeWork : "exampleOfWork"
 AmpStory ||--}o Grant : "funding"
-AmpStory ||--}o Text : "headline"
 AmpStory ||--}o InteractionCounter : "interactionStatistic"
-AmpStory ||--}o Text : "interactivityType"
-AmpStory ||--}o Boolean : "isAccessibleForFree"
-AmpStory ||--}o Boolean : "isFamilyFriendly"
 AmpStory ||--}o Place : "locationCreated"
 AmpStory ||--}o Thing : "mentions"
 AmpStory ||--}o PublicationEvent : "publication"
@@ -119,31 +134,16 @@ AmpStory ||--}o Event : "recordedAt"
 AmpStory ||--}o PublicationEvent : "releasedEvent"
 AmpStory ||--}o Review : "review"
 AmpStory ||--}o Review : "reviews"
-AmpStory ||--}o Date : "sdDatePublished"
 AmpStory ||--}o Organization : "sourceOrganization"
 AmpStory ||--}o Place : "spatial"
-AmpStory ||--}o Text : "text"
 AmpStory ||--}o ImageObject : "thumbnail"
-AmpStory ||--}o URL : "thumbnailUrl"
 AmpStory ||--}o Duration : "timeRequired"
 AmpStory ||--}o CreativeWork : "translationOfWork"
-AmpStory ||--}o Text : "typicalAgeRange"
 AmpStory ||--}o CreativeWork : "workTranslation"
 AmpStory ||--}o Duration : "duration"
-AmpStory ||--}o Text : "sha256"
 AmpStory ||--}o NewsArticle : "associatedArticle"
-AmpStory ||--}o Text : "bitrate"
-AmpStory ||--}o Text : "contentSize"
-AmpStory ||--}o URL : "contentUrl"
-AmpStory ||--}o URL : "embedUrl"
 AmpStory ||--}o CreativeWork : "encodesCreativeWork"
-AmpStory ||--}o Text : "playerType"
 AmpStory ||--}o Organization : "productionCompany"
 AmpStory ||--}o Place : "regionsAllowed"
-AmpStory ||--}o Text : "alternateName"
-AmpStory ||--}o Text : "disambiguatingDescription"
-AmpStory ||--}o Text : "name"
-AmpStory ||--}o URL : "sameAs"
 AmpStory ||--}o Action : "potentialAction"
-AmpStory ||--}o URL : "url"
 

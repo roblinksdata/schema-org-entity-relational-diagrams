@@ -1,8 +1,13 @@
 erDiagram
 SubwayStation {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ SubwayStation {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-SubwayStation ||--}o Text : "openingHours"
-SubwayStation ||--}o Text : "globalLocationNumber"
-SubwayStation ||--}o URL : "hasGS1DigitalLink"
 SubwayStation ||--}o PropertyValue : "additionalProperty"
 SubwayStation ||--}o AggregateRating : "aggregateRating"
 SubwayStation ||--}o LocationFeatureSpecification : "amenityFeature"
-SubwayStation ||--}o Text : "branchCode"
 SubwayStation ||--}o Place : "containedIn"
 SubwayStation ||--}o Place : "containedInPlace"
 SubwayStation ||--}o Place : "containsPlace"
 SubwayStation ||--}o Event : "event"
 SubwayStation ||--}o Event : "events"
-SubwayStation ||--}o Text : "faxNumber"
 SubwayStation ||--}o Certification : "hasCertification"
-SubwayStation ||--}o Boolean : "hasDriveThroughService"
-SubwayStation ||--}o Boolean : "isAccessibleForFree"
-SubwayStation ||--}o Text : "isicV4"
-SubwayStation ||--}o URL : "map"
-SubwayStation ||--}o URL : "maps"
-SubwayStation ||--}o Integer : "maximumAttendeeCapacity"
 SubwayStation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-SubwayStation ||--}o Boolean : "publicAccess"
 SubwayStation ||--}o Review : "review"
 SubwayStation ||--}o Review : "reviews"
-SubwayStation ||--}o Text : "slogan"
-SubwayStation ||--}o Boolean : "smokingAllowed"
 SubwayStation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-SubwayStation ||--}o Text : "telephone"
-SubwayStation ||--}o URL : "tourBookingPage"
-SubwayStation ||--}o Text : "alternateName"
-SubwayStation ||--}o Text : "disambiguatingDescription"
-SubwayStation ||--}o Text : "name"
-SubwayStation ||--}o URL : "sameAs"
 SubwayStation ||--}o Action : "potentialAction"
-SubwayStation ||--}o URL : "url"
 

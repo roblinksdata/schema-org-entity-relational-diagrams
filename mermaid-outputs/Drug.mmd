@@ -1,79 +1,92 @@
 erDiagram
 Drug {
+    TextList activeIngredient  
+    TextList administrationRoute  
+    TextList alcoholWarning  
+    TextList breastfeedingWarning  
+    TextList clincalPharmacology  
+    TextList clinicalPharmacology  
+    TextList dosageForm  
+    TextList drugUnit  
+    TextList foodWarning  
+    BooleanList isAvailableGenerically  
+    BooleanList isProprietary  
+    URLList labelDetails  
     stringList legalStatus  
+    TextList mechanismOfAction  
+    TextList nonProprietaryName  
+    TextList overdosage  
+    TextList pregnancyWarning  
+    URLList prescribingInfo  
     stringList prescriptionStatus  
+    TextList proprietaryName  
+    TextList rxcui  
     stringList warning  
     stringList asin  
     stringList category  
     stringList colorSwatch  
     stringList gtin  
+    TextList gtin12  
+    TextList gtin13  
+    TextList gtin14  
+    TextList gtin8  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList material  
+    TextList nsn  
+    TextList productID  
+    TextList sku  
+    TextList award  
+    TextList awards  
     stringList brand  
+    TextList color  
+    TextList countryOfAssembly  
+    TextList countryOfLastProcessing  
     stringList depth  
     stringList height  
+    TextList inProductGroupWithID  
+    BooleanList isFamilyFriendly  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList isVariantOf  
     stringList keywords  
+    TextList mobileUrl  
     stringList model  
+    TextList mpn  
     stringList negativeNotes  
     stringList offers  
     stringList pattern  
     stringList positiveNotes  
+    DateList productionDate  
+    DateList purchaseDate  
+    DateList releaseDate  
     stringList size  
+    TextList slogan  
     stringList width  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Drug ||--}o Text : "activeIngredient"
-Drug ||--}o Text : "administrationRoute"
-Drug ||--}o Text : "alcoholWarning"
 Drug ||--}o DrugStrength : "availableStrength"
-Drug ||--}o Text : "breastfeedingWarning"
-Drug ||--}o Text : "clincalPharmacology"
-Drug ||--}o Text : "clinicalPharmacology"
-Drug ||--}o Text : "dosageForm"
 Drug ||--}o DoseSchedule : "doseSchedule"
 Drug ||--}o DrugClass : "drugClass"
-Drug ||--}o Text : "drugUnit"
-Drug ||--}o Text : "foodWarning"
 Drug ||--}o HealthInsurancePlan : "includedInHealthInsurancePlan"
 Drug ||--}o Drug : "interactingDrug"
-Drug ||--}o Boolean : "isAvailableGenerically"
-Drug ||--}o Boolean : "isProprietary"
-Drug ||--}o URL : "labelDetails"
 Drug ||--}o MaximumDoseSchedule : "maximumIntake"
-Drug ||--}o Text : "mechanismOfAction"
-Drug ||--}o Text : "nonProprietaryName"
-Drug ||--}o Text : "overdosage"
 Drug ||--}o DrugPregnancyCategory : "pregnancyCategory"
-Drug ||--}o Text : "pregnancyWarning"
-Drug ||--}o URL : "prescribingInfo"
-Drug ||--}o Text : "proprietaryName"
 Drug ||--}o Drug : "relatedDrug"
-Drug ||--}o Text : "rxcui"
-Drug ||--}o Text : "gtin12"
-Drug ||--}o Text : "gtin13"
-Drug ||--}o Text : "gtin14"
-Drug ||--}o Text : "gtin8"
-Drug ||--}o URL : "hasGS1DigitalLink"
-Drug ||--}o Text : "nsn"
-Drug ||--}o Text : "productID"
-Drug ||--}o Text : "sku"
 Drug ||--}o PropertyValue : "additionalProperty"
 Drug ||--}o AggregateRating : "aggregateRating"
 Drug ||--}o Audience : "audience"
-Drug ||--}o Text : "award"
-Drug ||--}o Text : "awards"
-Drug ||--}o Text : "color"
-Drug ||--}o Text : "countryOfAssembly"
-Drug ||--}o Text : "countryOfLastProcessing"
 Drug ||--}o Country : "countryOfOrigin"
 Drug ||--}o Grant : "funding"
 Drug ||--}o AdultOrientedEnumeration : "hasAdultConsideration"
@@ -81,27 +94,14 @@ Drug ||--}o Certification : "hasCertification"
 Drug ||--}o EnergyConsumptionDetails : "hasEnergyConsumptionDetails"
 Drug ||--}o QuantitativeValue : "hasMeasurement"
 Drug ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
-Drug ||--}o Text : "inProductGroupWithID"
 Drug ||--}o Product : "isAccessoryOrSparePartFor"
 Drug ||--}o Product : "isConsumableFor"
-Drug ||--}o Boolean : "isFamilyFriendly"
 Drug ||--}o OfferItemCondition : "itemCondition"
 Drug ||--}o Organization : "manufacturer"
-Drug ||--}o Text : "mobileUrl"
-Drug ||--}o Text : "mpn"
-Drug ||--}o Date : "productionDate"
-Drug ||--}o Date : "purchaseDate"
-Drug ||--}o Date : "releaseDate"
 Drug ||--}o Review : "review"
 Drug ||--}o Review : "reviews"
-Drug ||--}o Text : "slogan"
 Drug ||--}o QuantitativeValue : "weight"
-Drug ||--}o Text : "alternateName"
-Drug ||--}o Text : "disambiguatingDescription"
-Drug ||--}o Text : "name"
-Drug ||--}o URL : "sameAs"
 Drug ||--}o Action : "potentialAction"
-Drug ||--}o URL : "url"
 Drug ||--}o MedicalCode : "code"
 Drug ||--}o MedicalGuideline : "guideline"
 Drug ||--}o MedicineSystem : "medicineSystem"

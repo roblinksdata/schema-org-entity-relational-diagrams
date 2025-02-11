@@ -8,11 +8,16 @@ DownloadAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DownloadAction ||--}o Place : "fromLocation"
@@ -23,10 +28,5 @@ DownloadAction ||--}o Thing : "result"
 DownloadAction ||--}o HowTo : "actionProcess"
 DownloadAction ||--}o ActionStatusType : "actionStatus"
 DownloadAction ||--}o Thing : "error"
-DownloadAction ||--}o Text : "alternateName"
-DownloadAction ||--}o Text : "disambiguatingDescription"
-DownloadAction ||--}o Text : "name"
-DownloadAction ||--}o URL : "sameAs"
 DownloadAction ||--}o Action : "potentialAction"
-DownloadAction ||--}o URL : "url"
 

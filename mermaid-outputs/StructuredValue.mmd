@@ -1,17 +1,17 @@
 erDiagram
 StructuredValue {
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-StructuredValue ||--}o Text : "alternateName"
-StructuredValue ||--}o Text : "disambiguatingDescription"
-StructuredValue ||--}o Text : "name"
-StructuredValue ||--}o URL : "sameAs"
 StructuredValue ||--}o Action : "potentialAction"
-StructuredValue ||--}o URL : "url"
 

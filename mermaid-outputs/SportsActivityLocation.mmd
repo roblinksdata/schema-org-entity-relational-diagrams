@@ -1,8 +1,16 @@
 erDiagram
 SportsActivityLocation {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ SportsActivityLocation {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 SportsActivityLocation ||--}o Organization : "branchOf"
-SportsActivityLocation ||--}o Text : "currenciesAccepted"
-SportsActivityLocation ||--}o Text : "openingHours"
-SportsActivityLocation ||--}o Text : "paymentAccepted"
-SportsActivityLocation ||--}o Text : "priceRange"
-SportsActivityLocation ||--}o Text : "globalLocationNumber"
-SportsActivityLocation ||--}o URL : "hasGS1DigitalLink"
 SportsActivityLocation ||--}o PropertyValue : "additionalProperty"
 SportsActivityLocation ||--}o AggregateRating : "aggregateRating"
 SportsActivityLocation ||--}o LocationFeatureSpecification : "amenityFeature"
-SportsActivityLocation ||--}o Text : "branchCode"
 SportsActivityLocation ||--}o Place : "containedIn"
 SportsActivityLocation ||--}o Place : "containedInPlace"
 SportsActivityLocation ||--}o Place : "containsPlace"
 SportsActivityLocation ||--}o Event : "event"
 SportsActivityLocation ||--}o Event : "events"
-SportsActivityLocation ||--}o Text : "faxNumber"
 SportsActivityLocation ||--}o Certification : "hasCertification"
-SportsActivityLocation ||--}o Boolean : "hasDriveThroughService"
-SportsActivityLocation ||--}o Boolean : "isAccessibleForFree"
-SportsActivityLocation ||--}o Text : "isicV4"
-SportsActivityLocation ||--}o URL : "map"
-SportsActivityLocation ||--}o URL : "maps"
-SportsActivityLocation ||--}o Integer : "maximumAttendeeCapacity"
 SportsActivityLocation ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-SportsActivityLocation ||--}o Boolean : "publicAccess"
 SportsActivityLocation ||--}o Review : "review"
 SportsActivityLocation ||--}o Review : "reviews"
-SportsActivityLocation ||--}o Text : "slogan"
-SportsActivityLocation ||--}o Boolean : "smokingAllowed"
 SportsActivityLocation ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-SportsActivityLocation ||--}o Text : "telephone"
-SportsActivityLocation ||--}o URL : "tourBookingPage"
-SportsActivityLocation ||--}o Text : "duns"
-SportsActivityLocation ||--}o Text : "leiCode"
-SportsActivityLocation ||--}o Text : "taxID"
 SportsActivityLocation ||--}o InteractionCounter : "agentInteractionStatistic"
 SportsActivityLocation ||--}o Person : "alumni"
-SportsActivityLocation ||--}o Text : "award"
-SportsActivityLocation ||--}o Text : "awards"
 SportsActivityLocation ||--}o ContactPoint : "contactPoint"
 SportsActivityLocation ||--}o ContactPoint : "contactPoints"
 SportsActivityLocation ||--}o Organization : "department"
-SportsActivityLocation ||--}o Date : "dissolutionDate"
-SportsActivityLocation ||--}o Text : "email"
 SportsActivityLocation ||--}o Person : "employee"
 SportsActivityLocation ||--}o Person : "employees"
 SportsActivityLocation ||--}o Person : "founders"
-SportsActivityLocation ||--}o Date : "foundingDate"
 SportsActivityLocation ||--}o Place : "foundingLocation"
 SportsActivityLocation ||--}o Grant : "funding"
 SportsActivityLocation ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ SportsActivityLocation ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 SportsActivityLocation ||--}o OfferCatalog : "hasOfferCatalog"
 SportsActivityLocation ||--}o Place : "hasPOS"
 SportsActivityLocation ||--}o InteractionCounter : "interactionStatistic"
-SportsActivityLocation ||--}o Text : "iso6523Code"
-SportsActivityLocation ||--}o Text : "legalName"
 SportsActivityLocation ||--}o Offer : "makesOffer"
-SportsActivityLocation ||--}o Text : "naics"
 SportsActivityLocation ||--}o NonprofitType : "nonprofitStatus"
 SportsActivityLocation ||--}o QuantitativeValue : "numberOfEmployees"
 SportsActivityLocation ||--}o Organization : "parentOrganization"
 SportsActivityLocation ||--}o Demand : "seeks"
 SportsActivityLocation ||--}o Organization : "subOrganization"
-SportsActivityLocation ||--}o Text : "vatID"
-SportsActivityLocation ||--}o Text : "alternateName"
-SportsActivityLocation ||--}o Text : "disambiguatingDescription"
-SportsActivityLocation ||--}o Text : "name"
-SportsActivityLocation ||--}o URL : "sameAs"
 SportsActivityLocation ||--}o Action : "potentialAction"
-SportsActivityLocation ||--}o URL : "url"
 

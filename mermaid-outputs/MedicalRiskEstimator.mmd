@@ -2,11 +2,16 @@ erDiagram
 MedicalRiskEstimator {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalRiskEstimator ||--}o MedicalEntity : "estimatesRiskOf"
@@ -18,10 +23,5 @@ MedicalRiskEstimator ||--}o MedicineSystem : "medicineSystem"
 MedicalRiskEstimator ||--}o Organization : "recognizingAuthority"
 MedicalRiskEstimator ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalRiskEstimator ||--}o MedicalStudy : "study"
-MedicalRiskEstimator ||--}o Text : "alternateName"
-MedicalRiskEstimator ||--}o Text : "disambiguatingDescription"
-MedicalRiskEstimator ||--}o Text : "name"
-MedicalRiskEstimator ||--}o URL : "sameAs"
 MedicalRiskEstimator ||--}o Action : "potentialAction"
-MedicalRiskEstimator ||--}o URL : "url"
 

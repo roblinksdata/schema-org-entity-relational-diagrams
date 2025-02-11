@@ -8,11 +8,16 @@ ControlAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ControlAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ ControlAction ||--}o Thing : "result"
 ControlAction ||--}o HowTo : "actionProcess"
 ControlAction ||--}o ActionStatusType : "actionStatus"
 ControlAction ||--}o Thing : "error"
-ControlAction ||--}o Text : "alternateName"
-ControlAction ||--}o Text : "disambiguatingDescription"
-ControlAction ||--}o Text : "name"
-ControlAction ||--}o URL : "sameAs"
 ControlAction ||--}o Action : "potentialAction"
-ControlAction ||--}o URL : "url"
 

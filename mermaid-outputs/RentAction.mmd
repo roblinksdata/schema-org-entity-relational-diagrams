@@ -2,6 +2,7 @@ erDiagram
 RentAction {
     stringList landlord  
     stringList price  
+    TextList priceCurrency  
     stringList location  
     stringList participant  
     stringList agent  
@@ -10,15 +11,19 @@ RentAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 RentAction ||--}o RealEstateAgent : "realEstateAgent"
-RentAction ||--}o Text : "priceCurrency"
 RentAction ||--}o PriceSpecification : "priceSpecification"
 RentAction ||--}o Thing : "instrument"
 RentAction ||--}o Thing : "object"
@@ -26,10 +31,5 @@ RentAction ||--}o Thing : "result"
 RentAction ||--}o HowTo : "actionProcess"
 RentAction ||--}o ActionStatusType : "actionStatus"
 RentAction ||--}o Thing : "error"
-RentAction ||--}o Text : "alternateName"
-RentAction ||--}o Text : "disambiguatingDescription"
-RentAction ||--}o Text : "name"
-RentAction ||--}o URL : "sameAs"
 RentAction ||--}o Action : "potentialAction"
-RentAction ||--}o URL : "url"
 

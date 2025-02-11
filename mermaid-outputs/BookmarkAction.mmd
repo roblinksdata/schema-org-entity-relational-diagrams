@@ -8,11 +8,16 @@ BookmarkAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BookmarkAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ BookmarkAction ||--}o Thing : "result"
 BookmarkAction ||--}o HowTo : "actionProcess"
 BookmarkAction ||--}o ActionStatusType : "actionStatus"
 BookmarkAction ||--}o Thing : "error"
-BookmarkAction ||--}o Text : "alternateName"
-BookmarkAction ||--}o Text : "disambiguatingDescription"
-BookmarkAction ||--}o Text : "name"
-BookmarkAction ||--}o URL : "sameAs"
 BookmarkAction ||--}o Action : "potentialAction"
-BookmarkAction ||--}o URL : "url"
 

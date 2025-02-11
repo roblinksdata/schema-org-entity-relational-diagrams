@@ -3,6 +3,7 @@ CreativeWorkSeason {
     stringList actor  
     stringList seasonNumber  
     stringList endDate  
+    IntegerList numberOfEpisodes  
     stringList startDate  
     stringList acquireLicensePage  
     stringList contributor  
@@ -17,25 +18,46 @@ CreativeWorkSeason {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,28 +69,36 @@ CreativeWorkSeason {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CreativeWorkSeason ||--}o Episode : "episode"
 CreativeWorkSeason ||--}o CreativeWorkSeries : "partOfSeries"
 CreativeWorkSeason ||--}o Person : "director"
 CreativeWorkSeason ||--}o Episode : "episodes"
-CreativeWorkSeason ||--}o Integer : "numberOfEpisodes"
 CreativeWorkSeason ||--}o Organization : "productionCompany"
 CreativeWorkSeason ||--}o VideoObject : "trailer"
 CreativeWorkSeason ||--}o Thing : "about"
@@ -78,43 +108,22 @@ CreativeWorkSeason ||--}o Claim : "interpretedAsClaim"
 CreativeWorkSeason ||--}o Thing : "mainEntity"
 CreativeWorkSeason ||--}o Place : "spatialCoverage"
 CreativeWorkSeason ||--}o CreativeWork : "workExample"
-CreativeWorkSeason ||--}o Text : "abstract"
-CreativeWorkSeason ||--}o Text : "accessMode"
 CreativeWorkSeason ||--}o ItemList : "accessModeSufficient"
-CreativeWorkSeason ||--}o Text : "accessibilityAPI"
-CreativeWorkSeason ||--}o Text : "accessibilityControl"
-CreativeWorkSeason ||--}o Text : "accessibilityFeature"
-CreativeWorkSeason ||--}o Text : "accessibilityHazard"
-CreativeWorkSeason ||--}o Text : "accessibilitySummary"
 CreativeWorkSeason ||--}o Person : "accountablePerson"
 CreativeWorkSeason ||--}o AggregateRating : "aggregateRating"
-CreativeWorkSeason ||--}o Text : "alternativeHeadline"
 CreativeWorkSeason ||--}o MediaObject : "associatedMedia"
 CreativeWorkSeason ||--}o Audience : "audience"
-CreativeWorkSeason ||--}o Text : "award"
-CreativeWorkSeason ||--}o Text : "awards"
 CreativeWorkSeason ||--}o Person : "character"
 CreativeWorkSeason ||--}o Comment : "comment"
-CreativeWorkSeason ||--}o Integer : "commentCount"
-CreativeWorkSeason ||--}o Text : "conditionsOfAccess"
-CreativeWorkSeason ||--}o DateTime : "contentReferenceTime"
-CreativeWorkSeason ||--}o Text : "copyrightNotice"
-CreativeWorkSeason ||--}o Number : "copyrightYear"
 CreativeWorkSeason ||--}o Country : "countryOfOrigin"
-CreativeWorkSeason ||--}o Text : "creditText"
 CreativeWorkSeason ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-CreativeWorkSeason ||--}o URL : "discussionUrl"
 CreativeWorkSeason ||--}o Person : "editor"
 CreativeWorkSeason ||--}o AlignmentObject : "educationalAlignment"
 CreativeWorkSeason ||--}o MediaObject : "encoding"
 CreativeWorkSeason ||--}o MediaObject : "encodings"
 CreativeWorkSeason ||--}o CreativeWork : "exampleOfWork"
 CreativeWorkSeason ||--}o Grant : "funding"
-CreativeWorkSeason ||--}o Text : "headline"
 CreativeWorkSeason ||--}o InteractionCounter : "interactionStatistic"
-CreativeWorkSeason ||--}o Text : "interactivityType"
-CreativeWorkSeason ||--}o Boolean : "isAccessibleForFree"
-CreativeWorkSeason ||--}o Boolean : "isFamilyFriendly"
 CreativeWorkSeason ||--}o Place : "locationCreated"
 CreativeWorkSeason ||--}o Thing : "mentions"
 CreativeWorkSeason ||--}o PublicationEvent : "publication"
@@ -123,20 +132,11 @@ CreativeWorkSeason ||--}o Event : "recordedAt"
 CreativeWorkSeason ||--}o PublicationEvent : "releasedEvent"
 CreativeWorkSeason ||--}o Review : "review"
 CreativeWorkSeason ||--}o Review : "reviews"
-CreativeWorkSeason ||--}o Date : "sdDatePublished"
 CreativeWorkSeason ||--}o Organization : "sourceOrganization"
 CreativeWorkSeason ||--}o Place : "spatial"
-CreativeWorkSeason ||--}o Text : "text"
 CreativeWorkSeason ||--}o ImageObject : "thumbnail"
-CreativeWorkSeason ||--}o URL : "thumbnailUrl"
 CreativeWorkSeason ||--}o Duration : "timeRequired"
 CreativeWorkSeason ||--}o CreativeWork : "translationOfWork"
-CreativeWorkSeason ||--}o Text : "typicalAgeRange"
 CreativeWorkSeason ||--}o CreativeWork : "workTranslation"
-CreativeWorkSeason ||--}o Text : "alternateName"
-CreativeWorkSeason ||--}o Text : "disambiguatingDescription"
-CreativeWorkSeason ||--}o Text : "name"
-CreativeWorkSeason ||--}o URL : "sameAs"
 CreativeWorkSeason ||--}o Action : "potentialAction"
-CreativeWorkSeason ||--}o URL : "url"
 

@@ -1,18 +1,23 @@
 erDiagram
 MedicalGuidelineRecommendation {
+    TextList recommendationStrength  
+    TextList evidenceOrigin  
+    DateList guidelineDate  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicalGuidelineRecommendation ||--}o Text : "recommendationStrength"
 MedicalGuidelineRecommendation ||--}o MedicalEvidenceLevel : "evidenceLevel"
-MedicalGuidelineRecommendation ||--}o Text : "evidenceOrigin"
-MedicalGuidelineRecommendation ||--}o Date : "guidelineDate"
 MedicalGuidelineRecommendation ||--}o MedicalEntity : "guidelineSubject"
 MedicalGuidelineRecommendation ||--}o MedicalCode : "code"
 MedicalGuidelineRecommendation ||--}o Grant : "funding"
@@ -21,10 +26,5 @@ MedicalGuidelineRecommendation ||--}o MedicineSystem : "medicineSystem"
 MedicalGuidelineRecommendation ||--}o Organization : "recognizingAuthority"
 MedicalGuidelineRecommendation ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalGuidelineRecommendation ||--}o MedicalStudy : "study"
-MedicalGuidelineRecommendation ||--}o Text : "alternateName"
-MedicalGuidelineRecommendation ||--}o Text : "disambiguatingDescription"
-MedicalGuidelineRecommendation ||--}o Text : "name"
-MedicalGuidelineRecommendation ||--}o URL : "sameAs"
 MedicalGuidelineRecommendation ||--}o Action : "potentialAction"
-MedicalGuidelineRecommendation ||--}o URL : "url"
 

@@ -3,6 +3,7 @@ PublicationIssue {
     stringList issueNumber  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -16,25 +17,46 @@ PublicationIssue {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -46,24 +68,32 @@ PublicationIssue {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PublicationIssue ||--}o Text : "pagination"
 PublicationIssue ||--}o Thing : "about"
 PublicationIssue ||--}o Place : "contentLocation"
 PublicationIssue ||--}o CreativeWork : "hasPart"
@@ -71,43 +101,22 @@ PublicationIssue ||--}o Claim : "interpretedAsClaim"
 PublicationIssue ||--}o Thing : "mainEntity"
 PublicationIssue ||--}o Place : "spatialCoverage"
 PublicationIssue ||--}o CreativeWork : "workExample"
-PublicationIssue ||--}o Text : "abstract"
-PublicationIssue ||--}o Text : "accessMode"
 PublicationIssue ||--}o ItemList : "accessModeSufficient"
-PublicationIssue ||--}o Text : "accessibilityAPI"
-PublicationIssue ||--}o Text : "accessibilityControl"
-PublicationIssue ||--}o Text : "accessibilityFeature"
-PublicationIssue ||--}o Text : "accessibilityHazard"
-PublicationIssue ||--}o Text : "accessibilitySummary"
 PublicationIssue ||--}o Person : "accountablePerson"
 PublicationIssue ||--}o AggregateRating : "aggregateRating"
-PublicationIssue ||--}o Text : "alternativeHeadline"
 PublicationIssue ||--}o MediaObject : "associatedMedia"
 PublicationIssue ||--}o Audience : "audience"
-PublicationIssue ||--}o Text : "award"
-PublicationIssue ||--}o Text : "awards"
 PublicationIssue ||--}o Person : "character"
 PublicationIssue ||--}o Comment : "comment"
-PublicationIssue ||--}o Integer : "commentCount"
-PublicationIssue ||--}o Text : "conditionsOfAccess"
-PublicationIssue ||--}o DateTime : "contentReferenceTime"
-PublicationIssue ||--}o Text : "copyrightNotice"
-PublicationIssue ||--}o Number : "copyrightYear"
 PublicationIssue ||--}o Country : "countryOfOrigin"
-PublicationIssue ||--}o Text : "creditText"
 PublicationIssue ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-PublicationIssue ||--}o URL : "discussionUrl"
 PublicationIssue ||--}o Person : "editor"
 PublicationIssue ||--}o AlignmentObject : "educationalAlignment"
 PublicationIssue ||--}o MediaObject : "encoding"
 PublicationIssue ||--}o MediaObject : "encodings"
 PublicationIssue ||--}o CreativeWork : "exampleOfWork"
 PublicationIssue ||--}o Grant : "funding"
-PublicationIssue ||--}o Text : "headline"
 PublicationIssue ||--}o InteractionCounter : "interactionStatistic"
-PublicationIssue ||--}o Text : "interactivityType"
-PublicationIssue ||--}o Boolean : "isAccessibleForFree"
-PublicationIssue ||--}o Boolean : "isFamilyFriendly"
 PublicationIssue ||--}o Place : "locationCreated"
 PublicationIssue ||--}o Thing : "mentions"
 PublicationIssue ||--}o PublicationEvent : "publication"
@@ -116,20 +125,11 @@ PublicationIssue ||--}o Event : "recordedAt"
 PublicationIssue ||--}o PublicationEvent : "releasedEvent"
 PublicationIssue ||--}o Review : "review"
 PublicationIssue ||--}o Review : "reviews"
-PublicationIssue ||--}o Date : "sdDatePublished"
 PublicationIssue ||--}o Organization : "sourceOrganization"
 PublicationIssue ||--}o Place : "spatial"
-PublicationIssue ||--}o Text : "text"
 PublicationIssue ||--}o ImageObject : "thumbnail"
-PublicationIssue ||--}o URL : "thumbnailUrl"
 PublicationIssue ||--}o Duration : "timeRequired"
 PublicationIssue ||--}o CreativeWork : "translationOfWork"
-PublicationIssue ||--}o Text : "typicalAgeRange"
 PublicationIssue ||--}o CreativeWork : "workTranslation"
-PublicationIssue ||--}o Text : "alternateName"
-PublicationIssue ||--}o Text : "disambiguatingDescription"
-PublicationIssue ||--}o Text : "name"
-PublicationIssue ||--}o URL : "sameAs"
 PublicationIssue ||--}o Action : "potentialAction"
-PublicationIssue ||--}o URL : "url"
 

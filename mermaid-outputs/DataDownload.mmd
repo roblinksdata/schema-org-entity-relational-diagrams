@@ -2,10 +2,16 @@ erDiagram
 DataDownload {
     stringList measurementMethod  
     stringList measurementTechnique  
+    TextList sha256  
+    TextList bitrate  
+    TextList contentSize  
+    URLList contentUrl  
+    URLList embedUrl  
     stringList encodingFormat  
     stringList endTime  
     stringList height  
     stringList ineligibleRegion  
+    TextList playerType  
     stringList requiresSubscription  
     stringList startTime  
     stringList uploadDate  
@@ -23,24 +29,45 @@ DataDownload {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -52,33 +79,36 @@ DataDownload {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 DataDownload ||--}o Duration : "duration"
 DataDownload ||--}o Claim : "interpretedAsClaim"
-DataDownload ||--}o Text : "sha256"
 DataDownload ||--}o NewsArticle : "associatedArticle"
-DataDownload ||--}o Text : "bitrate"
-DataDownload ||--}o Text : "contentSize"
-DataDownload ||--}o URL : "contentUrl"
-DataDownload ||--}o URL : "embedUrl"
 DataDownload ||--}o CreativeWork : "encodesCreativeWork"
-DataDownload ||--}o Text : "playerType"
 DataDownload ||--}o Organization : "productionCompany"
 DataDownload ||--}o Place : "regionsAllowed"
 DataDownload ||--}o Thing : "about"
@@ -87,43 +117,22 @@ DataDownload ||--}o CreativeWork : "hasPart"
 DataDownload ||--}o Thing : "mainEntity"
 DataDownload ||--}o Place : "spatialCoverage"
 DataDownload ||--}o CreativeWork : "workExample"
-DataDownload ||--}o Text : "abstract"
-DataDownload ||--}o Text : "accessMode"
 DataDownload ||--}o ItemList : "accessModeSufficient"
-DataDownload ||--}o Text : "accessibilityAPI"
-DataDownload ||--}o Text : "accessibilityControl"
-DataDownload ||--}o Text : "accessibilityFeature"
-DataDownload ||--}o Text : "accessibilityHazard"
-DataDownload ||--}o Text : "accessibilitySummary"
 DataDownload ||--}o Person : "accountablePerson"
 DataDownload ||--}o AggregateRating : "aggregateRating"
-DataDownload ||--}o Text : "alternativeHeadline"
 DataDownload ||--}o MediaObject : "associatedMedia"
 DataDownload ||--}o Audience : "audience"
-DataDownload ||--}o Text : "award"
-DataDownload ||--}o Text : "awards"
 DataDownload ||--}o Person : "character"
 DataDownload ||--}o Comment : "comment"
-DataDownload ||--}o Integer : "commentCount"
-DataDownload ||--}o Text : "conditionsOfAccess"
-DataDownload ||--}o DateTime : "contentReferenceTime"
-DataDownload ||--}o Text : "copyrightNotice"
-DataDownload ||--}o Number : "copyrightYear"
 DataDownload ||--}o Country : "countryOfOrigin"
-DataDownload ||--}o Text : "creditText"
 DataDownload ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-DataDownload ||--}o URL : "discussionUrl"
 DataDownload ||--}o Person : "editor"
 DataDownload ||--}o AlignmentObject : "educationalAlignment"
 DataDownload ||--}o MediaObject : "encoding"
 DataDownload ||--}o MediaObject : "encodings"
 DataDownload ||--}o CreativeWork : "exampleOfWork"
 DataDownload ||--}o Grant : "funding"
-DataDownload ||--}o Text : "headline"
 DataDownload ||--}o InteractionCounter : "interactionStatistic"
-DataDownload ||--}o Text : "interactivityType"
-DataDownload ||--}o Boolean : "isAccessibleForFree"
-DataDownload ||--}o Boolean : "isFamilyFriendly"
 DataDownload ||--}o Place : "locationCreated"
 DataDownload ||--}o Thing : "mentions"
 DataDownload ||--}o PublicationEvent : "publication"
@@ -132,20 +141,11 @@ DataDownload ||--}o Event : "recordedAt"
 DataDownload ||--}o PublicationEvent : "releasedEvent"
 DataDownload ||--}o Review : "review"
 DataDownload ||--}o Review : "reviews"
-DataDownload ||--}o Date : "sdDatePublished"
 DataDownload ||--}o Organization : "sourceOrganization"
 DataDownload ||--}o Place : "spatial"
-DataDownload ||--}o Text : "text"
 DataDownload ||--}o ImageObject : "thumbnail"
-DataDownload ||--}o URL : "thumbnailUrl"
 DataDownload ||--}o Duration : "timeRequired"
 DataDownload ||--}o CreativeWork : "translationOfWork"
-DataDownload ||--}o Text : "typicalAgeRange"
 DataDownload ||--}o CreativeWork : "workTranslation"
-DataDownload ||--}o Text : "alternateName"
-DataDownload ||--}o Text : "disambiguatingDescription"
-DataDownload ||--}o Text : "name"
-DataDownload ||--}o URL : "sameAs"
 DataDownload ||--}o Action : "potentialAction"
-DataDownload ||--}o URL : "url"
 

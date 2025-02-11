@@ -2,17 +2,17 @@ erDiagram
 Specialty {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-Specialty ||--}o Text : "alternateName"
-Specialty ||--}o Text : "disambiguatingDescription"
-Specialty ||--}o Text : "name"
-Specialty ||--}o URL : "sameAs"
 Specialty ||--}o Action : "potentialAction"
-Specialty ||--}o URL : "url"
 

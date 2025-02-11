@@ -1,8 +1,13 @@
 erDiagram
 CityHall {
+    TextList openingHours  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,52 +19,47 @@ CityHall {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-CityHall ||--}o Text : "openingHours"
-CityHall ||--}o Text : "globalLocationNumber"
-CityHall ||--}o URL : "hasGS1DigitalLink"
 CityHall ||--}o PropertyValue : "additionalProperty"
 CityHall ||--}o AggregateRating : "aggregateRating"
 CityHall ||--}o LocationFeatureSpecification : "amenityFeature"
-CityHall ||--}o Text : "branchCode"
 CityHall ||--}o Place : "containedIn"
 CityHall ||--}o Place : "containedInPlace"
 CityHall ||--}o Place : "containsPlace"
 CityHall ||--}o Event : "event"
 CityHall ||--}o Event : "events"
-CityHall ||--}o Text : "faxNumber"
 CityHall ||--}o Certification : "hasCertification"
-CityHall ||--}o Boolean : "hasDriveThroughService"
-CityHall ||--}o Boolean : "isAccessibleForFree"
-CityHall ||--}o Text : "isicV4"
-CityHall ||--}o URL : "map"
-CityHall ||--}o URL : "maps"
-CityHall ||--}o Integer : "maximumAttendeeCapacity"
 CityHall ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-CityHall ||--}o Boolean : "publicAccess"
 CityHall ||--}o Review : "review"
 CityHall ||--}o Review : "reviews"
-CityHall ||--}o Text : "slogan"
-CityHall ||--}o Boolean : "smokingAllowed"
 CityHall ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-CityHall ||--}o Text : "telephone"
-CityHall ||--}o URL : "tourBookingPage"
-CityHall ||--}o Text : "alternateName"
-CityHall ||--}o Text : "disambiguatingDescription"
-CityHall ||--}o Text : "name"
-CityHall ||--}o URL : "sameAs"
 CityHall ||--}o Action : "potentialAction"
-CityHall ||--}o URL : "url"
 

@@ -8,11 +8,16 @@ IgnoreAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 IgnoreAction ||--}o Thing : "instrument"
@@ -21,10 +26,5 @@ IgnoreAction ||--}o Thing : "result"
 IgnoreAction ||--}o HowTo : "actionProcess"
 IgnoreAction ||--}o ActionStatusType : "actionStatus"
 IgnoreAction ||--}o Thing : "error"
-IgnoreAction ||--}o Text : "alternateName"
-IgnoreAction ||--}o Text : "disambiguatingDescription"
-IgnoreAction ||--}o Text : "name"
-IgnoreAction ||--}o URL : "sameAs"
 IgnoreAction ||--}o Action : "potentialAction"
-IgnoreAction ||--}o URL : "url"
 

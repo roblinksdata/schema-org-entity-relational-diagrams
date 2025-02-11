@@ -2,17 +2,17 @@ erDiagram
 RestrictedDiet {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-RestrictedDiet ||--}o Text : "alternateName"
-RestrictedDiet ||--}o Text : "disambiguatingDescription"
-RestrictedDiet ||--}o Text : "name"
-RestrictedDiet ||--}o URL : "sameAs"
 RestrictedDiet ||--}o Action : "potentialAction"
-RestrictedDiet ||--}o URL : "url"
 

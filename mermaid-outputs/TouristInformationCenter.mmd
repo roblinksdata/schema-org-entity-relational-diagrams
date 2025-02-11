@@ -1,8 +1,16 @@
 erDiagram
 TouristInformationCenter {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ TouristInformationCenter {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 TouristInformationCenter ||--}o Organization : "branchOf"
-TouristInformationCenter ||--}o Text : "currenciesAccepted"
-TouristInformationCenter ||--}o Text : "openingHours"
-TouristInformationCenter ||--}o Text : "paymentAccepted"
-TouristInformationCenter ||--}o Text : "priceRange"
-TouristInformationCenter ||--}o Text : "globalLocationNumber"
-TouristInformationCenter ||--}o URL : "hasGS1DigitalLink"
 TouristInformationCenter ||--}o PropertyValue : "additionalProperty"
 TouristInformationCenter ||--}o AggregateRating : "aggregateRating"
 TouristInformationCenter ||--}o LocationFeatureSpecification : "amenityFeature"
-TouristInformationCenter ||--}o Text : "branchCode"
 TouristInformationCenter ||--}o Place : "containedIn"
 TouristInformationCenter ||--}o Place : "containedInPlace"
 TouristInformationCenter ||--}o Place : "containsPlace"
 TouristInformationCenter ||--}o Event : "event"
 TouristInformationCenter ||--}o Event : "events"
-TouristInformationCenter ||--}o Text : "faxNumber"
 TouristInformationCenter ||--}o Certification : "hasCertification"
-TouristInformationCenter ||--}o Boolean : "hasDriveThroughService"
-TouristInformationCenter ||--}o Boolean : "isAccessibleForFree"
-TouristInformationCenter ||--}o Text : "isicV4"
-TouristInformationCenter ||--}o URL : "map"
-TouristInformationCenter ||--}o URL : "maps"
-TouristInformationCenter ||--}o Integer : "maximumAttendeeCapacity"
 TouristInformationCenter ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-TouristInformationCenter ||--}o Boolean : "publicAccess"
 TouristInformationCenter ||--}o Review : "review"
 TouristInformationCenter ||--}o Review : "reviews"
-TouristInformationCenter ||--}o Text : "slogan"
-TouristInformationCenter ||--}o Boolean : "smokingAllowed"
 TouristInformationCenter ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-TouristInformationCenter ||--}o Text : "telephone"
-TouristInformationCenter ||--}o URL : "tourBookingPage"
-TouristInformationCenter ||--}o Text : "duns"
-TouristInformationCenter ||--}o Text : "leiCode"
-TouristInformationCenter ||--}o Text : "taxID"
 TouristInformationCenter ||--}o InteractionCounter : "agentInteractionStatistic"
 TouristInformationCenter ||--}o Person : "alumni"
-TouristInformationCenter ||--}o Text : "award"
-TouristInformationCenter ||--}o Text : "awards"
 TouristInformationCenter ||--}o ContactPoint : "contactPoint"
 TouristInformationCenter ||--}o ContactPoint : "contactPoints"
 TouristInformationCenter ||--}o Organization : "department"
-TouristInformationCenter ||--}o Date : "dissolutionDate"
-TouristInformationCenter ||--}o Text : "email"
 TouristInformationCenter ||--}o Person : "employee"
 TouristInformationCenter ||--}o Person : "employees"
 TouristInformationCenter ||--}o Person : "founders"
-TouristInformationCenter ||--}o Date : "foundingDate"
 TouristInformationCenter ||--}o Place : "foundingLocation"
 TouristInformationCenter ||--}o Grant : "funding"
 TouristInformationCenter ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ TouristInformationCenter ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 TouristInformationCenter ||--}o OfferCatalog : "hasOfferCatalog"
 TouristInformationCenter ||--}o Place : "hasPOS"
 TouristInformationCenter ||--}o InteractionCounter : "interactionStatistic"
-TouristInformationCenter ||--}o Text : "iso6523Code"
-TouristInformationCenter ||--}o Text : "legalName"
 TouristInformationCenter ||--}o Offer : "makesOffer"
-TouristInformationCenter ||--}o Text : "naics"
 TouristInformationCenter ||--}o NonprofitType : "nonprofitStatus"
 TouristInformationCenter ||--}o QuantitativeValue : "numberOfEmployees"
 TouristInformationCenter ||--}o Organization : "parentOrganization"
 TouristInformationCenter ||--}o Demand : "seeks"
 TouristInformationCenter ||--}o Organization : "subOrganization"
-TouristInformationCenter ||--}o Text : "vatID"
-TouristInformationCenter ||--}o Text : "alternateName"
-TouristInformationCenter ||--}o Text : "disambiguatingDescription"
-TouristInformationCenter ||--}o Text : "name"
-TouristInformationCenter ||--}o URL : "sameAs"
 TouristInformationCenter ||--}o Action : "potentialAction"
-TouristInformationCenter ||--}o URL : "url"
 

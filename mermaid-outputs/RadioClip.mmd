@@ -18,25 +18,46 @@ RadioClip {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -48,21 +69,30 @@ RadioClip {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 RadioClip ||--}o Episode : "partOfEpisode"
@@ -78,43 +108,22 @@ RadioClip ||--}o Claim : "interpretedAsClaim"
 RadioClip ||--}o Thing : "mainEntity"
 RadioClip ||--}o Place : "spatialCoverage"
 RadioClip ||--}o CreativeWork : "workExample"
-RadioClip ||--}o Text : "abstract"
-RadioClip ||--}o Text : "accessMode"
 RadioClip ||--}o ItemList : "accessModeSufficient"
-RadioClip ||--}o Text : "accessibilityAPI"
-RadioClip ||--}o Text : "accessibilityControl"
-RadioClip ||--}o Text : "accessibilityFeature"
-RadioClip ||--}o Text : "accessibilityHazard"
-RadioClip ||--}o Text : "accessibilitySummary"
 RadioClip ||--}o Person : "accountablePerson"
 RadioClip ||--}o AggregateRating : "aggregateRating"
-RadioClip ||--}o Text : "alternativeHeadline"
 RadioClip ||--}o MediaObject : "associatedMedia"
 RadioClip ||--}o Audience : "audience"
-RadioClip ||--}o Text : "award"
-RadioClip ||--}o Text : "awards"
 RadioClip ||--}o Person : "character"
 RadioClip ||--}o Comment : "comment"
-RadioClip ||--}o Integer : "commentCount"
-RadioClip ||--}o Text : "conditionsOfAccess"
-RadioClip ||--}o DateTime : "contentReferenceTime"
-RadioClip ||--}o Text : "copyrightNotice"
-RadioClip ||--}o Number : "copyrightYear"
 RadioClip ||--}o Country : "countryOfOrigin"
-RadioClip ||--}o Text : "creditText"
 RadioClip ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-RadioClip ||--}o URL : "discussionUrl"
 RadioClip ||--}o Person : "editor"
 RadioClip ||--}o AlignmentObject : "educationalAlignment"
 RadioClip ||--}o MediaObject : "encoding"
 RadioClip ||--}o MediaObject : "encodings"
 RadioClip ||--}o CreativeWork : "exampleOfWork"
 RadioClip ||--}o Grant : "funding"
-RadioClip ||--}o Text : "headline"
 RadioClip ||--}o InteractionCounter : "interactionStatistic"
-RadioClip ||--}o Text : "interactivityType"
-RadioClip ||--}o Boolean : "isAccessibleForFree"
-RadioClip ||--}o Boolean : "isFamilyFriendly"
 RadioClip ||--}o Place : "locationCreated"
 RadioClip ||--}o Thing : "mentions"
 RadioClip ||--}o PublicationEvent : "publication"
@@ -123,20 +132,11 @@ RadioClip ||--}o Event : "recordedAt"
 RadioClip ||--}o PublicationEvent : "releasedEvent"
 RadioClip ||--}o Review : "review"
 RadioClip ||--}o Review : "reviews"
-RadioClip ||--}o Date : "sdDatePublished"
 RadioClip ||--}o Organization : "sourceOrganization"
 RadioClip ||--}o Place : "spatial"
-RadioClip ||--}o Text : "text"
 RadioClip ||--}o ImageObject : "thumbnail"
-RadioClip ||--}o URL : "thumbnailUrl"
 RadioClip ||--}o Duration : "timeRequired"
 RadioClip ||--}o CreativeWork : "translationOfWork"
-RadioClip ||--}o Text : "typicalAgeRange"
 RadioClip ||--}o CreativeWork : "workTranslation"
-RadioClip ||--}o Text : "alternateName"
-RadioClip ||--}o Text : "disambiguatingDescription"
-RadioClip ||--}o Text : "name"
-RadioClip ||--}o URL : "sameAs"
 RadioClip ||--}o Action : "potentialAction"
-RadioClip ||--}o URL : "url"
 

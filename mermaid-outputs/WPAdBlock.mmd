@@ -1,5 +1,7 @@
 erDiagram
 WPAdBlock {
+    CssSelectorTypeList cssSelector  
+    XPathTypeList xpath  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -13,25 +15,46 @@ WPAdBlock {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,25 +66,32 @@ WPAdBlock {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-WPAdBlock ||--}o CssSelectorType : "cssSelector"
-WPAdBlock ||--}o XPathType : "xpath"
 WPAdBlock ||--}o Thing : "about"
 WPAdBlock ||--}o Place : "contentLocation"
 WPAdBlock ||--}o CreativeWork : "hasPart"
@@ -69,43 +99,22 @@ WPAdBlock ||--}o Claim : "interpretedAsClaim"
 WPAdBlock ||--}o Thing : "mainEntity"
 WPAdBlock ||--}o Place : "spatialCoverage"
 WPAdBlock ||--}o CreativeWork : "workExample"
-WPAdBlock ||--}o Text : "abstract"
-WPAdBlock ||--}o Text : "accessMode"
 WPAdBlock ||--}o ItemList : "accessModeSufficient"
-WPAdBlock ||--}o Text : "accessibilityAPI"
-WPAdBlock ||--}o Text : "accessibilityControl"
-WPAdBlock ||--}o Text : "accessibilityFeature"
-WPAdBlock ||--}o Text : "accessibilityHazard"
-WPAdBlock ||--}o Text : "accessibilitySummary"
 WPAdBlock ||--}o Person : "accountablePerson"
 WPAdBlock ||--}o AggregateRating : "aggregateRating"
-WPAdBlock ||--}o Text : "alternativeHeadline"
 WPAdBlock ||--}o MediaObject : "associatedMedia"
 WPAdBlock ||--}o Audience : "audience"
-WPAdBlock ||--}o Text : "award"
-WPAdBlock ||--}o Text : "awards"
 WPAdBlock ||--}o Person : "character"
 WPAdBlock ||--}o Comment : "comment"
-WPAdBlock ||--}o Integer : "commentCount"
-WPAdBlock ||--}o Text : "conditionsOfAccess"
-WPAdBlock ||--}o DateTime : "contentReferenceTime"
-WPAdBlock ||--}o Text : "copyrightNotice"
-WPAdBlock ||--}o Number : "copyrightYear"
 WPAdBlock ||--}o Country : "countryOfOrigin"
-WPAdBlock ||--}o Text : "creditText"
 WPAdBlock ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-WPAdBlock ||--}o URL : "discussionUrl"
 WPAdBlock ||--}o Person : "editor"
 WPAdBlock ||--}o AlignmentObject : "educationalAlignment"
 WPAdBlock ||--}o MediaObject : "encoding"
 WPAdBlock ||--}o MediaObject : "encodings"
 WPAdBlock ||--}o CreativeWork : "exampleOfWork"
 WPAdBlock ||--}o Grant : "funding"
-WPAdBlock ||--}o Text : "headline"
 WPAdBlock ||--}o InteractionCounter : "interactionStatistic"
-WPAdBlock ||--}o Text : "interactivityType"
-WPAdBlock ||--}o Boolean : "isAccessibleForFree"
-WPAdBlock ||--}o Boolean : "isFamilyFriendly"
 WPAdBlock ||--}o Place : "locationCreated"
 WPAdBlock ||--}o Thing : "mentions"
 WPAdBlock ||--}o PublicationEvent : "publication"
@@ -114,20 +123,11 @@ WPAdBlock ||--}o Event : "recordedAt"
 WPAdBlock ||--}o PublicationEvent : "releasedEvent"
 WPAdBlock ||--}o Review : "review"
 WPAdBlock ||--}o Review : "reviews"
-WPAdBlock ||--}o Date : "sdDatePublished"
 WPAdBlock ||--}o Organization : "sourceOrganization"
 WPAdBlock ||--}o Place : "spatial"
-WPAdBlock ||--}o Text : "text"
 WPAdBlock ||--}o ImageObject : "thumbnail"
-WPAdBlock ||--}o URL : "thumbnailUrl"
 WPAdBlock ||--}o Duration : "timeRequired"
 WPAdBlock ||--}o CreativeWork : "translationOfWork"
-WPAdBlock ||--}o Text : "typicalAgeRange"
 WPAdBlock ||--}o CreativeWork : "workTranslation"
-WPAdBlock ||--}o Text : "alternateName"
-WPAdBlock ||--}o Text : "disambiguatingDescription"
-WPAdBlock ||--}o Text : "name"
-WPAdBlock ||--}o URL : "sameAs"
 WPAdBlock ||--}o Action : "potentialAction"
-WPAdBlock ||--}o URL : "url"
 

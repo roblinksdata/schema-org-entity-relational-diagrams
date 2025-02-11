@@ -1,64 +1,76 @@
 erDiagram
 MedicalOrganization {
+    TextList healthPlanNetworkId  
+    BooleanList isAcceptingNewPatients  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicalOrganization ||--}o Text : "healthPlanNetworkId"
-MedicalOrganization ||--}o Boolean : "isAcceptingNewPatients"
 MedicalOrganization ||--}o MedicalSpecialty : "medicalSpecialty"
-MedicalOrganization ||--}o Text : "duns"
-MedicalOrganization ||--}o Text : "globalLocationNumber"
-MedicalOrganization ||--}o URL : "hasGS1DigitalLink"
-MedicalOrganization ||--}o Text : "leiCode"
-MedicalOrganization ||--}o Text : "taxID"
 MedicalOrganization ||--}o InteractionCounter : "agentInteractionStatistic"
 MedicalOrganization ||--}o AggregateRating : "aggregateRating"
 MedicalOrganization ||--}o Person : "alumni"
-MedicalOrganization ||--}o Text : "award"
-MedicalOrganization ||--}o Text : "awards"
 MedicalOrganization ||--}o ContactPoint : "contactPoint"
 MedicalOrganization ||--}o ContactPoint : "contactPoints"
 MedicalOrganization ||--}o Organization : "department"
-MedicalOrganization ||--}o Date : "dissolutionDate"
-MedicalOrganization ||--}o Text : "email"
 MedicalOrganization ||--}o Person : "employee"
 MedicalOrganization ||--}o Person : "employees"
 MedicalOrganization ||--}o Event : "event"
 MedicalOrganization ||--}o Event : "events"
-MedicalOrganization ||--}o Text : "faxNumber"
 MedicalOrganization ||--}o Person : "founders"
-MedicalOrganization ||--}o Date : "foundingDate"
 MedicalOrganization ||--}o Place : "foundingLocation"
 MedicalOrganization ||--}o Grant : "funding"
 MedicalOrganization ||--}o Certification : "hasCertification"
@@ -68,25 +80,13 @@ MedicalOrganization ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 MedicalOrganization ||--}o OfferCatalog : "hasOfferCatalog"
 MedicalOrganization ||--}o Place : "hasPOS"
 MedicalOrganization ||--}o InteractionCounter : "interactionStatistic"
-MedicalOrganization ||--}o Text : "isicV4"
-MedicalOrganization ||--}o Text : "iso6523Code"
-MedicalOrganization ||--}o Text : "legalName"
 MedicalOrganization ||--}o Offer : "makesOffer"
-MedicalOrganization ||--}o Text : "naics"
 MedicalOrganization ||--}o NonprofitType : "nonprofitStatus"
 MedicalOrganization ||--}o QuantitativeValue : "numberOfEmployees"
 MedicalOrganization ||--}o Organization : "parentOrganization"
 MedicalOrganization ||--}o Review : "review"
 MedicalOrganization ||--}o Review : "reviews"
 MedicalOrganization ||--}o Demand : "seeks"
-MedicalOrganization ||--}o Text : "slogan"
 MedicalOrganization ||--}o Organization : "subOrganization"
-MedicalOrganization ||--}o Text : "telephone"
-MedicalOrganization ||--}o Text : "vatID"
-MedicalOrganization ||--}o Text : "alternateName"
-MedicalOrganization ||--}o Text : "disambiguatingDescription"
-MedicalOrganization ||--}o Text : "name"
-MedicalOrganization ||--}o URL : "sameAs"
 MedicalOrganization ||--}o Action : "potentialAction"
-MedicalOrganization ||--}o URL : "url"
 

@@ -1,8 +1,16 @@
 erDiagram
 MobilePhoneStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ MobilePhoneStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MobilePhoneStore ||--}o Organization : "branchOf"
-MobilePhoneStore ||--}o Text : "currenciesAccepted"
-MobilePhoneStore ||--}o Text : "openingHours"
-MobilePhoneStore ||--}o Text : "paymentAccepted"
-MobilePhoneStore ||--}o Text : "priceRange"
-MobilePhoneStore ||--}o Text : "globalLocationNumber"
-MobilePhoneStore ||--}o URL : "hasGS1DigitalLink"
 MobilePhoneStore ||--}o PropertyValue : "additionalProperty"
 MobilePhoneStore ||--}o AggregateRating : "aggregateRating"
 MobilePhoneStore ||--}o LocationFeatureSpecification : "amenityFeature"
-MobilePhoneStore ||--}o Text : "branchCode"
 MobilePhoneStore ||--}o Place : "containedIn"
 MobilePhoneStore ||--}o Place : "containedInPlace"
 MobilePhoneStore ||--}o Place : "containsPlace"
 MobilePhoneStore ||--}o Event : "event"
 MobilePhoneStore ||--}o Event : "events"
-MobilePhoneStore ||--}o Text : "faxNumber"
 MobilePhoneStore ||--}o Certification : "hasCertification"
-MobilePhoneStore ||--}o Boolean : "hasDriveThroughService"
-MobilePhoneStore ||--}o Boolean : "isAccessibleForFree"
-MobilePhoneStore ||--}o Text : "isicV4"
-MobilePhoneStore ||--}o URL : "map"
-MobilePhoneStore ||--}o URL : "maps"
-MobilePhoneStore ||--}o Integer : "maximumAttendeeCapacity"
 MobilePhoneStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-MobilePhoneStore ||--}o Boolean : "publicAccess"
 MobilePhoneStore ||--}o Review : "review"
 MobilePhoneStore ||--}o Review : "reviews"
-MobilePhoneStore ||--}o Text : "slogan"
-MobilePhoneStore ||--}o Boolean : "smokingAllowed"
 MobilePhoneStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-MobilePhoneStore ||--}o Text : "telephone"
-MobilePhoneStore ||--}o URL : "tourBookingPage"
-MobilePhoneStore ||--}o Text : "duns"
-MobilePhoneStore ||--}o Text : "leiCode"
-MobilePhoneStore ||--}o Text : "taxID"
 MobilePhoneStore ||--}o InteractionCounter : "agentInteractionStatistic"
 MobilePhoneStore ||--}o Person : "alumni"
-MobilePhoneStore ||--}o Text : "award"
-MobilePhoneStore ||--}o Text : "awards"
 MobilePhoneStore ||--}o ContactPoint : "contactPoint"
 MobilePhoneStore ||--}o ContactPoint : "contactPoints"
 MobilePhoneStore ||--}o Organization : "department"
-MobilePhoneStore ||--}o Date : "dissolutionDate"
-MobilePhoneStore ||--}o Text : "email"
 MobilePhoneStore ||--}o Person : "employee"
 MobilePhoneStore ||--}o Person : "employees"
 MobilePhoneStore ||--}o Person : "founders"
-MobilePhoneStore ||--}o Date : "foundingDate"
 MobilePhoneStore ||--}o Place : "foundingLocation"
 MobilePhoneStore ||--}o Grant : "funding"
 MobilePhoneStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ MobilePhoneStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 MobilePhoneStore ||--}o OfferCatalog : "hasOfferCatalog"
 MobilePhoneStore ||--}o Place : "hasPOS"
 MobilePhoneStore ||--}o InteractionCounter : "interactionStatistic"
-MobilePhoneStore ||--}o Text : "iso6523Code"
-MobilePhoneStore ||--}o Text : "legalName"
 MobilePhoneStore ||--}o Offer : "makesOffer"
-MobilePhoneStore ||--}o Text : "naics"
 MobilePhoneStore ||--}o NonprofitType : "nonprofitStatus"
 MobilePhoneStore ||--}o QuantitativeValue : "numberOfEmployees"
 MobilePhoneStore ||--}o Organization : "parentOrganization"
 MobilePhoneStore ||--}o Demand : "seeks"
 MobilePhoneStore ||--}o Organization : "subOrganization"
-MobilePhoneStore ||--}o Text : "vatID"
-MobilePhoneStore ||--}o Text : "alternateName"
-MobilePhoneStore ||--}o Text : "disambiguatingDescription"
-MobilePhoneStore ||--}o Text : "name"
-MobilePhoneStore ||--}o URL : "sameAs"
 MobilePhoneStore ||--}o Action : "potentialAction"
-MobilePhoneStore ||--}o URL : "url"
 

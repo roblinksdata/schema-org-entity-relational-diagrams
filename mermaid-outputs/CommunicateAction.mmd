@@ -10,11 +10,16 @@ CommunicateAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 CommunicateAction ||--}o Thing : "about"
@@ -25,10 +30,5 @@ CommunicateAction ||--}o Thing : "result"
 CommunicateAction ||--}o HowTo : "actionProcess"
 CommunicateAction ||--}o ActionStatusType : "actionStatus"
 CommunicateAction ||--}o Thing : "error"
-CommunicateAction ||--}o Text : "alternateName"
-CommunicateAction ||--}o Text : "disambiguatingDescription"
-CommunicateAction ||--}o Text : "name"
-CommunicateAction ||--}o URL : "sameAs"
 CommunicateAction ||--}o Action : "potentialAction"
-CommunicateAction ||--}o URL : "url"
 

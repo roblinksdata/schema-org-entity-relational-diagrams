@@ -4,18 +4,18 @@ Taxon {
     stringList parentTaxon  
     stringList taxonRank  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Taxon ||--}o DefinedTerm : "hasDefinedTerm"
-Taxon ||--}o Text : "alternateName"
-Taxon ||--}o Text : "disambiguatingDescription"
-Taxon ||--}o Text : "name"
-Taxon ||--}o URL : "sameAs"
 Taxon ||--}o Action : "potentialAction"
-Taxon ||--}o URL : "url"
 

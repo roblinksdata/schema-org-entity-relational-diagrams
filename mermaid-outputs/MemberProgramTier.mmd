@@ -3,19 +3,19 @@ MemberProgramTier {
     stringList hasTierRequirement  
     stringList membershipPointsEarned  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MemberProgramTier ||--}o TierBenefitEnumeration : "hasTierBenefit"
 MemberProgramTier ||--}o MemberProgram : "isTierOf"
-MemberProgramTier ||--}o Text : "alternateName"
-MemberProgramTier ||--}o Text : "disambiguatingDescription"
-MemberProgramTier ||--}o Text : "name"
-MemberProgramTier ||--}o URL : "sameAs"
 MemberProgramTier ||--}o Action : "potentialAction"
-MemberProgramTier ||--}o URL : "url"
 

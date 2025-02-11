@@ -1,10 +1,18 @@
 erDiagram
 AudioObjectSnapshot {
     stringList caption  
+    TextList embeddedTextCaption  
+    TextList transcript  
+    TextList sha256  
+    TextList bitrate  
+    TextList contentSize  
+    URLList contentUrl  
+    URLList embedUrl  
     stringList encodingFormat  
     stringList endTime  
     stringList height  
     stringList ineligibleRegion  
+    TextList playerType  
     stringList requiresSubscription  
     stringList startTime  
     stringList uploadDate  
@@ -22,24 +30,45 @@ AudioObjectSnapshot {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -51,35 +80,36 @@ AudioObjectSnapshot {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-AudioObjectSnapshot ||--}o Text : "embeddedTextCaption"
-AudioObjectSnapshot ||--}o Text : "transcript"
 AudioObjectSnapshot ||--}o Duration : "duration"
 AudioObjectSnapshot ||--}o Claim : "interpretedAsClaim"
-AudioObjectSnapshot ||--}o Text : "sha256"
 AudioObjectSnapshot ||--}o NewsArticle : "associatedArticle"
-AudioObjectSnapshot ||--}o Text : "bitrate"
-AudioObjectSnapshot ||--}o Text : "contentSize"
-AudioObjectSnapshot ||--}o URL : "contentUrl"
-AudioObjectSnapshot ||--}o URL : "embedUrl"
 AudioObjectSnapshot ||--}o CreativeWork : "encodesCreativeWork"
-AudioObjectSnapshot ||--}o Text : "playerType"
 AudioObjectSnapshot ||--}o Organization : "productionCompany"
 AudioObjectSnapshot ||--}o Place : "regionsAllowed"
 AudioObjectSnapshot ||--}o Thing : "about"
@@ -88,43 +118,22 @@ AudioObjectSnapshot ||--}o CreativeWork : "hasPart"
 AudioObjectSnapshot ||--}o Thing : "mainEntity"
 AudioObjectSnapshot ||--}o Place : "spatialCoverage"
 AudioObjectSnapshot ||--}o CreativeWork : "workExample"
-AudioObjectSnapshot ||--}o Text : "abstract"
-AudioObjectSnapshot ||--}o Text : "accessMode"
 AudioObjectSnapshot ||--}o ItemList : "accessModeSufficient"
-AudioObjectSnapshot ||--}o Text : "accessibilityAPI"
-AudioObjectSnapshot ||--}o Text : "accessibilityControl"
-AudioObjectSnapshot ||--}o Text : "accessibilityFeature"
-AudioObjectSnapshot ||--}o Text : "accessibilityHazard"
-AudioObjectSnapshot ||--}o Text : "accessibilitySummary"
 AudioObjectSnapshot ||--}o Person : "accountablePerson"
 AudioObjectSnapshot ||--}o AggregateRating : "aggregateRating"
-AudioObjectSnapshot ||--}o Text : "alternativeHeadline"
 AudioObjectSnapshot ||--}o MediaObject : "associatedMedia"
 AudioObjectSnapshot ||--}o Audience : "audience"
-AudioObjectSnapshot ||--}o Text : "award"
-AudioObjectSnapshot ||--}o Text : "awards"
 AudioObjectSnapshot ||--}o Person : "character"
 AudioObjectSnapshot ||--}o Comment : "comment"
-AudioObjectSnapshot ||--}o Integer : "commentCount"
-AudioObjectSnapshot ||--}o Text : "conditionsOfAccess"
-AudioObjectSnapshot ||--}o DateTime : "contentReferenceTime"
-AudioObjectSnapshot ||--}o Text : "copyrightNotice"
-AudioObjectSnapshot ||--}o Number : "copyrightYear"
 AudioObjectSnapshot ||--}o Country : "countryOfOrigin"
-AudioObjectSnapshot ||--}o Text : "creditText"
 AudioObjectSnapshot ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-AudioObjectSnapshot ||--}o URL : "discussionUrl"
 AudioObjectSnapshot ||--}o Person : "editor"
 AudioObjectSnapshot ||--}o AlignmentObject : "educationalAlignment"
 AudioObjectSnapshot ||--}o MediaObject : "encoding"
 AudioObjectSnapshot ||--}o MediaObject : "encodings"
 AudioObjectSnapshot ||--}o CreativeWork : "exampleOfWork"
 AudioObjectSnapshot ||--}o Grant : "funding"
-AudioObjectSnapshot ||--}o Text : "headline"
 AudioObjectSnapshot ||--}o InteractionCounter : "interactionStatistic"
-AudioObjectSnapshot ||--}o Text : "interactivityType"
-AudioObjectSnapshot ||--}o Boolean : "isAccessibleForFree"
-AudioObjectSnapshot ||--}o Boolean : "isFamilyFriendly"
 AudioObjectSnapshot ||--}o Place : "locationCreated"
 AudioObjectSnapshot ||--}o Thing : "mentions"
 AudioObjectSnapshot ||--}o PublicationEvent : "publication"
@@ -133,20 +142,11 @@ AudioObjectSnapshot ||--}o Event : "recordedAt"
 AudioObjectSnapshot ||--}o PublicationEvent : "releasedEvent"
 AudioObjectSnapshot ||--}o Review : "review"
 AudioObjectSnapshot ||--}o Review : "reviews"
-AudioObjectSnapshot ||--}o Date : "sdDatePublished"
 AudioObjectSnapshot ||--}o Organization : "sourceOrganization"
 AudioObjectSnapshot ||--}o Place : "spatial"
-AudioObjectSnapshot ||--}o Text : "text"
 AudioObjectSnapshot ||--}o ImageObject : "thumbnail"
-AudioObjectSnapshot ||--}o URL : "thumbnailUrl"
 AudioObjectSnapshot ||--}o Duration : "timeRequired"
 AudioObjectSnapshot ||--}o CreativeWork : "translationOfWork"
-AudioObjectSnapshot ||--}o Text : "typicalAgeRange"
 AudioObjectSnapshot ||--}o CreativeWork : "workTranslation"
-AudioObjectSnapshot ||--}o Text : "alternateName"
-AudioObjectSnapshot ||--}o Text : "disambiguatingDescription"
-AudioObjectSnapshot ||--}o Text : "name"
-AudioObjectSnapshot ||--}o URL : "sameAs"
 AudioObjectSnapshot ||--}o Action : "potentialAction"
-AudioObjectSnapshot ||--}o URL : "url"
 

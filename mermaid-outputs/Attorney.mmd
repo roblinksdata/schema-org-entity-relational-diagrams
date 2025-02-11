@@ -1,8 +1,16 @@
 erDiagram
 Attorney {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ Attorney {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Attorney ||--}o Organization : "branchOf"
-Attorney ||--}o Text : "currenciesAccepted"
-Attorney ||--}o Text : "openingHours"
-Attorney ||--}o Text : "paymentAccepted"
-Attorney ||--}o Text : "priceRange"
-Attorney ||--}o Text : "globalLocationNumber"
-Attorney ||--}o URL : "hasGS1DigitalLink"
 Attorney ||--}o PropertyValue : "additionalProperty"
 Attorney ||--}o AggregateRating : "aggregateRating"
 Attorney ||--}o LocationFeatureSpecification : "amenityFeature"
-Attorney ||--}o Text : "branchCode"
 Attorney ||--}o Place : "containedIn"
 Attorney ||--}o Place : "containedInPlace"
 Attorney ||--}o Place : "containsPlace"
 Attorney ||--}o Event : "event"
 Attorney ||--}o Event : "events"
-Attorney ||--}o Text : "faxNumber"
 Attorney ||--}o Certification : "hasCertification"
-Attorney ||--}o Boolean : "hasDriveThroughService"
-Attorney ||--}o Boolean : "isAccessibleForFree"
-Attorney ||--}o Text : "isicV4"
-Attorney ||--}o URL : "map"
-Attorney ||--}o URL : "maps"
-Attorney ||--}o Integer : "maximumAttendeeCapacity"
 Attorney ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-Attorney ||--}o Boolean : "publicAccess"
 Attorney ||--}o Review : "review"
 Attorney ||--}o Review : "reviews"
-Attorney ||--}o Text : "slogan"
-Attorney ||--}o Boolean : "smokingAllowed"
 Attorney ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-Attorney ||--}o Text : "telephone"
-Attorney ||--}o URL : "tourBookingPage"
-Attorney ||--}o Text : "duns"
-Attorney ||--}o Text : "leiCode"
-Attorney ||--}o Text : "taxID"
 Attorney ||--}o InteractionCounter : "agentInteractionStatistic"
 Attorney ||--}o Person : "alumni"
-Attorney ||--}o Text : "award"
-Attorney ||--}o Text : "awards"
 Attorney ||--}o ContactPoint : "contactPoint"
 Attorney ||--}o ContactPoint : "contactPoints"
 Attorney ||--}o Organization : "department"
-Attorney ||--}o Date : "dissolutionDate"
-Attorney ||--}o Text : "email"
 Attorney ||--}o Person : "employee"
 Attorney ||--}o Person : "employees"
 Attorney ||--}o Person : "founders"
-Attorney ||--}o Date : "foundingDate"
 Attorney ||--}o Place : "foundingLocation"
 Attorney ||--}o Grant : "funding"
 Attorney ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ Attorney ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 Attorney ||--}o OfferCatalog : "hasOfferCatalog"
 Attorney ||--}o Place : "hasPOS"
 Attorney ||--}o InteractionCounter : "interactionStatistic"
-Attorney ||--}o Text : "iso6523Code"
-Attorney ||--}o Text : "legalName"
 Attorney ||--}o Offer : "makesOffer"
-Attorney ||--}o Text : "naics"
 Attorney ||--}o NonprofitType : "nonprofitStatus"
 Attorney ||--}o QuantitativeValue : "numberOfEmployees"
 Attorney ||--}o Organization : "parentOrganization"
 Attorney ||--}o Demand : "seeks"
 Attorney ||--}o Organization : "subOrganization"
-Attorney ||--}o Text : "vatID"
-Attorney ||--}o Text : "alternateName"
-Attorney ||--}o Text : "disambiguatingDescription"
-Attorney ||--}o Text : "name"
-Attorney ||--}o URL : "sameAs"
 Attorney ||--}o Action : "potentialAction"
-Attorney ||--}o URL : "url"
 

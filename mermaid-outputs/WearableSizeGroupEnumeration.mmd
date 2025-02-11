@@ -2,17 +2,17 @@ erDiagram
 WearableSizeGroupEnumeration {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-WearableSizeGroupEnumeration ||--}o Text : "alternateName"
-WearableSizeGroupEnumeration ||--}o Text : "disambiguatingDescription"
-WearableSizeGroupEnumeration ||--}o Text : "name"
-WearableSizeGroupEnumeration ||--}o URL : "sameAs"
 WearableSizeGroupEnumeration ||--}o Action : "potentialAction"
-WearableSizeGroupEnumeration ||--}o URL : "url"
 

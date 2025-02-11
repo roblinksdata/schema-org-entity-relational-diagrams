@@ -1,9 +1,20 @@
 erDiagram
 APIReference {
+    TextList assembly  
+    TextList assemblyVersion  
+    TextList executableLibraryName  
+    TextList programmingModel  
+    TextList targetPlatform  
+    TextList dependencies  
+    TextList proficiencyLevel  
+    TextList articleBody  
+    TextList articleSection  
     stringList backstory  
     stringList pageEnd  
     stringList pageStart  
+    TextList pagination  
     stringList speakable  
+    IntegerList wordCount  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -17,25 +28,46 @@ APIReference {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -47,34 +79,32 @@ APIReference {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-APIReference ||--}o Text : "assembly"
-APIReference ||--}o Text : "assemblyVersion"
-APIReference ||--}o Text : "executableLibraryName"
-APIReference ||--}o Text : "programmingModel"
-APIReference ||--}o Text : "targetPlatform"
-APIReference ||--}o Text : "dependencies"
-APIReference ||--}o Text : "proficiencyLevel"
-APIReference ||--}o Text : "articleBody"
-APIReference ||--}o Text : "articleSection"
-APIReference ||--}o Text : "pagination"
-APIReference ||--}o Integer : "wordCount"
 APIReference ||--}o Thing : "about"
 APIReference ||--}o Place : "contentLocation"
 APIReference ||--}o CreativeWork : "hasPart"
@@ -82,43 +112,22 @@ APIReference ||--}o Claim : "interpretedAsClaim"
 APIReference ||--}o Thing : "mainEntity"
 APIReference ||--}o Place : "spatialCoverage"
 APIReference ||--}o CreativeWork : "workExample"
-APIReference ||--}o Text : "abstract"
-APIReference ||--}o Text : "accessMode"
 APIReference ||--}o ItemList : "accessModeSufficient"
-APIReference ||--}o Text : "accessibilityAPI"
-APIReference ||--}o Text : "accessibilityControl"
-APIReference ||--}o Text : "accessibilityFeature"
-APIReference ||--}o Text : "accessibilityHazard"
-APIReference ||--}o Text : "accessibilitySummary"
 APIReference ||--}o Person : "accountablePerson"
 APIReference ||--}o AggregateRating : "aggregateRating"
-APIReference ||--}o Text : "alternativeHeadline"
 APIReference ||--}o MediaObject : "associatedMedia"
 APIReference ||--}o Audience : "audience"
-APIReference ||--}o Text : "award"
-APIReference ||--}o Text : "awards"
 APIReference ||--}o Person : "character"
 APIReference ||--}o Comment : "comment"
-APIReference ||--}o Integer : "commentCount"
-APIReference ||--}o Text : "conditionsOfAccess"
-APIReference ||--}o DateTime : "contentReferenceTime"
-APIReference ||--}o Text : "copyrightNotice"
-APIReference ||--}o Number : "copyrightYear"
 APIReference ||--}o Country : "countryOfOrigin"
-APIReference ||--}o Text : "creditText"
 APIReference ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-APIReference ||--}o URL : "discussionUrl"
 APIReference ||--}o Person : "editor"
 APIReference ||--}o AlignmentObject : "educationalAlignment"
 APIReference ||--}o MediaObject : "encoding"
 APIReference ||--}o MediaObject : "encodings"
 APIReference ||--}o CreativeWork : "exampleOfWork"
 APIReference ||--}o Grant : "funding"
-APIReference ||--}o Text : "headline"
 APIReference ||--}o InteractionCounter : "interactionStatistic"
-APIReference ||--}o Text : "interactivityType"
-APIReference ||--}o Boolean : "isAccessibleForFree"
-APIReference ||--}o Boolean : "isFamilyFriendly"
 APIReference ||--}o Place : "locationCreated"
 APIReference ||--}o Thing : "mentions"
 APIReference ||--}o PublicationEvent : "publication"
@@ -127,20 +136,11 @@ APIReference ||--}o Event : "recordedAt"
 APIReference ||--}o PublicationEvent : "releasedEvent"
 APIReference ||--}o Review : "review"
 APIReference ||--}o Review : "reviews"
-APIReference ||--}o Date : "sdDatePublished"
 APIReference ||--}o Organization : "sourceOrganization"
 APIReference ||--}o Place : "spatial"
-APIReference ||--}o Text : "text"
 APIReference ||--}o ImageObject : "thumbnail"
-APIReference ||--}o URL : "thumbnailUrl"
 APIReference ||--}o Duration : "timeRequired"
 APIReference ||--}o CreativeWork : "translationOfWork"
-APIReference ||--}o Text : "typicalAgeRange"
 APIReference ||--}o CreativeWork : "workTranslation"
-APIReference ||--}o Text : "alternateName"
-APIReference ||--}o Text : "disambiguatingDescription"
-APIReference ||--}o Text : "name"
-APIReference ||--}o URL : "sameAs"
 APIReference ||--}o Action : "potentialAction"
-APIReference ||--}o URL : "url"
 

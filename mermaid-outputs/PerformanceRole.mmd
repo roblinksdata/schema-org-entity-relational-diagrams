@@ -1,22 +1,22 @@
 erDiagram
 PerformanceRole {
+    TextList characterName  
     stringList endDate  
     stringList namedPosition  
     stringList roleName  
     stringList startDate  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PerformanceRole ||--}o Text : "characterName"
-PerformanceRole ||--}o Text : "alternateName"
-PerformanceRole ||--}o Text : "disambiguatingDescription"
-PerformanceRole ||--}o Text : "name"
-PerformanceRole ||--}o URL : "sameAs"
 PerformanceRole ||--}o Action : "potentialAction"
-PerformanceRole ||--}o URL : "url"
 

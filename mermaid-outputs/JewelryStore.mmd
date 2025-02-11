@@ -1,8 +1,16 @@
 erDiagram
 JewelryStore {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,91 +22,92 @@ JewelryStore {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 JewelryStore ||--}o Organization : "branchOf"
-JewelryStore ||--}o Text : "currenciesAccepted"
-JewelryStore ||--}o Text : "openingHours"
-JewelryStore ||--}o Text : "paymentAccepted"
-JewelryStore ||--}o Text : "priceRange"
-JewelryStore ||--}o Text : "globalLocationNumber"
-JewelryStore ||--}o URL : "hasGS1DigitalLink"
 JewelryStore ||--}o PropertyValue : "additionalProperty"
 JewelryStore ||--}o AggregateRating : "aggregateRating"
 JewelryStore ||--}o LocationFeatureSpecification : "amenityFeature"
-JewelryStore ||--}o Text : "branchCode"
 JewelryStore ||--}o Place : "containedIn"
 JewelryStore ||--}o Place : "containedInPlace"
 JewelryStore ||--}o Place : "containsPlace"
 JewelryStore ||--}o Event : "event"
 JewelryStore ||--}o Event : "events"
-JewelryStore ||--}o Text : "faxNumber"
 JewelryStore ||--}o Certification : "hasCertification"
-JewelryStore ||--}o Boolean : "hasDriveThroughService"
-JewelryStore ||--}o Boolean : "isAccessibleForFree"
-JewelryStore ||--}o Text : "isicV4"
-JewelryStore ||--}o URL : "map"
-JewelryStore ||--}o URL : "maps"
-JewelryStore ||--}o Integer : "maximumAttendeeCapacity"
 JewelryStore ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-JewelryStore ||--}o Boolean : "publicAccess"
 JewelryStore ||--}o Review : "review"
 JewelryStore ||--}o Review : "reviews"
-JewelryStore ||--}o Text : "slogan"
-JewelryStore ||--}o Boolean : "smokingAllowed"
 JewelryStore ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-JewelryStore ||--}o Text : "telephone"
-JewelryStore ||--}o URL : "tourBookingPage"
-JewelryStore ||--}o Text : "duns"
-JewelryStore ||--}o Text : "leiCode"
-JewelryStore ||--}o Text : "taxID"
 JewelryStore ||--}o InteractionCounter : "agentInteractionStatistic"
 JewelryStore ||--}o Person : "alumni"
-JewelryStore ||--}o Text : "award"
-JewelryStore ||--}o Text : "awards"
 JewelryStore ||--}o ContactPoint : "contactPoint"
 JewelryStore ||--}o ContactPoint : "contactPoints"
 JewelryStore ||--}o Organization : "department"
-JewelryStore ||--}o Date : "dissolutionDate"
-JewelryStore ||--}o Text : "email"
 JewelryStore ||--}o Person : "employee"
 JewelryStore ||--}o Person : "employees"
 JewelryStore ||--}o Person : "founders"
-JewelryStore ||--}o Date : "foundingDate"
 JewelryStore ||--}o Place : "foundingLocation"
 JewelryStore ||--}o Grant : "funding"
 JewelryStore ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -107,20 +116,11 @@ JewelryStore ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 JewelryStore ||--}o OfferCatalog : "hasOfferCatalog"
 JewelryStore ||--}o Place : "hasPOS"
 JewelryStore ||--}o InteractionCounter : "interactionStatistic"
-JewelryStore ||--}o Text : "iso6523Code"
-JewelryStore ||--}o Text : "legalName"
 JewelryStore ||--}o Offer : "makesOffer"
-JewelryStore ||--}o Text : "naics"
 JewelryStore ||--}o NonprofitType : "nonprofitStatus"
 JewelryStore ||--}o QuantitativeValue : "numberOfEmployees"
 JewelryStore ||--}o Organization : "parentOrganization"
 JewelryStore ||--}o Demand : "seeks"
 JewelryStore ||--}o Organization : "subOrganization"
-JewelryStore ||--}o Text : "vatID"
-JewelryStore ||--}o Text : "alternateName"
-JewelryStore ||--}o Text : "disambiguatingDescription"
-JewelryStore ||--}o Text : "name"
-JewelryStore ||--}o URL : "sameAs"
 JewelryStore ||--}o Action : "potentialAction"
-JewelryStore ||--}o URL : "url"
 

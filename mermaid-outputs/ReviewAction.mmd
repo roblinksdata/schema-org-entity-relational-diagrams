@@ -8,11 +8,16 @@ ReviewAction {
     stringList startTime  
     stringList target  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ReviewAction ||--}o Review : "resultReview"
@@ -22,10 +27,5 @@ ReviewAction ||--}o Thing : "result"
 ReviewAction ||--}o HowTo : "actionProcess"
 ReviewAction ||--}o ActionStatusType : "actionStatus"
 ReviewAction ||--}o Thing : "error"
-ReviewAction ||--}o Text : "alternateName"
-ReviewAction ||--}o Text : "disambiguatingDescription"
-ReviewAction ||--}o Text : "name"
-ReviewAction ||--}o URL : "sameAs"
 ReviewAction ||--}o Action : "potentialAction"
-ReviewAction ||--}o URL : "url"
 

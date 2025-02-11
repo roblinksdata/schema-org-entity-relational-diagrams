@@ -1,6 +1,9 @@
 erDiagram
 BroadcastEvent {
+    BooleanList isLiveBroadcast  
     stringList subtitleLanguage  
+    TextList videoFormat  
+    BooleanList free  
     stringList publishedBy  
     stringList actor  
     stringList contributor  
@@ -13,25 +16,34 @@ BroadcastEvent {
     stringList doorTime  
     stringList endDate  
     stringList inLanguage  
+    BooleanList isAccessibleForFree  
     stringList keywords  
+    IntegerList maximumAttendeeCapacity  
+    IntegerList maximumPhysicalAttendeeCapacity  
+    IntegerList maximumVirtualAttendeeCapacity  
     stringList offers  
     stringList organizer  
     stringList performer  
     stringList performers  
+    DateList previousStartDate  
+    IntegerList remainingAttendeeCapacity  
     stringList startDate  
     stringList translator  
+    TextList typicalAgeRange  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 BroadcastEvent ||--}o Event : "broadcastOfEvent"
-BroadcastEvent ||--}o Boolean : "isLiveBroadcast"
-BroadcastEvent ||--}o Text : "videoFormat"
-BroadcastEvent ||--}o Boolean : "free"
 BroadcastEvent ||--}o BroadcastService : "publishedOn"
 BroadcastEvent ||--}o Thing : "about"
 BroadcastEvent ||--}o Duration : "duration"
@@ -44,22 +56,10 @@ BroadcastEvent ||--}o EventAttendanceModeEnumeration : "eventAttendanceMode"
 BroadcastEvent ||--}o Schedule : "eventSchedule"
 BroadcastEvent ||--}o EventStatusType : "eventStatus"
 BroadcastEvent ||--}o Grant : "funding"
-BroadcastEvent ||--}o Boolean : "isAccessibleForFree"
-BroadcastEvent ||--}o Integer : "maximumAttendeeCapacity"
-BroadcastEvent ||--}o Integer : "maximumPhysicalAttendeeCapacity"
-BroadcastEvent ||--}o Integer : "maximumVirtualAttendeeCapacity"
-BroadcastEvent ||--}o Date : "previousStartDate"
 BroadcastEvent ||--}o CreativeWork : "recordedIn"
-BroadcastEvent ||--}o Integer : "remainingAttendeeCapacity"
 BroadcastEvent ||--}o Review : "review"
 BroadcastEvent ||--}o Event : "subEvent"
 BroadcastEvent ||--}o Event : "subEvents"
 BroadcastEvent ||--}o Event : "superEvent"
-BroadcastEvent ||--}o Text : "typicalAgeRange"
-BroadcastEvent ||--}o Text : "alternateName"
-BroadcastEvent ||--}o Text : "disambiguatingDescription"
-BroadcastEvent ||--}o Text : "name"
-BroadcastEvent ||--}o URL : "sameAs"
 BroadcastEvent ||--}o Action : "potentialAction"
-BroadcastEvent ||--}o URL : "url"
 

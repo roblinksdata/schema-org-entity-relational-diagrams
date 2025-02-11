@@ -2,11 +2,16 @@ erDiagram
 LifestyleModification {
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LifestyleModification ||--}o MedicalCode : "code"
@@ -16,10 +21,5 @@ LifestyleModification ||--}o MedicineSystem : "medicineSystem"
 LifestyleModification ||--}o Organization : "recognizingAuthority"
 LifestyleModification ||--}o MedicalSpecialty : "relevantSpecialty"
 LifestyleModification ||--}o MedicalStudy : "study"
-LifestyleModification ||--}o Text : "alternateName"
-LifestyleModification ||--}o Text : "disambiguatingDescription"
-LifestyleModification ||--}o Text : "name"
-LifestyleModification ||--}o URL : "sameAs"
 LifestyleModification ||--}o Action : "potentialAction"
-LifestyleModification ||--}o URL : "url"
 

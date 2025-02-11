@@ -1,38 +1,63 @@
 erDiagram
 MiddleSchool {
+    TextList openingHours  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
+    TextList leiCode  
     stringList location  
     stringList logo  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
     stringList address  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
+    TextList faxNumber  
     stringList founder  
+    DateList foundingDate  
+    TextList isicV4  
+    TextList iso6523Code  
     stringList keywords  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList slogan  
+    TextList telephone  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
     stringList photo  
+    TextList branchCode  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -44,35 +69,31 @@ MiddleSchool {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    BooleanList smokingAllowed  
+    URLList tourBookingPage  
 }
 
 MiddleSchool ||--}o Person : "alumni"
-MiddleSchool ||--}o Text : "openingHours"
-MiddleSchool ||--}o Text : "duns"
-MiddleSchool ||--}o Text : "globalLocationNumber"
-MiddleSchool ||--}o URL : "hasGS1DigitalLink"
-MiddleSchool ||--}o Text : "leiCode"
-MiddleSchool ||--}o Text : "taxID"
 MiddleSchool ||--}o InteractionCounter : "agentInteractionStatistic"
 MiddleSchool ||--}o AggregateRating : "aggregateRating"
-MiddleSchool ||--}o Text : "award"
-MiddleSchool ||--}o Text : "awards"
 MiddleSchool ||--}o ContactPoint : "contactPoint"
 MiddleSchool ||--}o ContactPoint : "contactPoints"
 MiddleSchool ||--}o Organization : "department"
-MiddleSchool ||--}o Date : "dissolutionDate"
-MiddleSchool ||--}o Text : "email"
 MiddleSchool ||--}o Person : "employee"
 MiddleSchool ||--}o Person : "employees"
 MiddleSchool ||--}o Event : "event"
 MiddleSchool ||--}o Event : "events"
-MiddleSchool ||--}o Text : "faxNumber"
 MiddleSchool ||--}o Person : "founders"
-MiddleSchool ||--}o Date : "foundingDate"
 MiddleSchool ||--}o Place : "foundingLocation"
 MiddleSchool ||--}o Grant : "funding"
 MiddleSchool ||--}o Certification : "hasCertification"
@@ -82,41 +103,20 @@ MiddleSchool ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 MiddleSchool ||--}o OfferCatalog : "hasOfferCatalog"
 MiddleSchool ||--}o Place : "hasPOS"
 MiddleSchool ||--}o InteractionCounter : "interactionStatistic"
-MiddleSchool ||--}o Text : "isicV4"
-MiddleSchool ||--}o Text : "iso6523Code"
-MiddleSchool ||--}o Text : "legalName"
 MiddleSchool ||--}o Offer : "makesOffer"
-MiddleSchool ||--}o Text : "naics"
 MiddleSchool ||--}o NonprofitType : "nonprofitStatus"
 MiddleSchool ||--}o QuantitativeValue : "numberOfEmployees"
 MiddleSchool ||--}o Organization : "parentOrganization"
 MiddleSchool ||--}o Review : "review"
 MiddleSchool ||--}o Review : "reviews"
 MiddleSchool ||--}o Demand : "seeks"
-MiddleSchool ||--}o Text : "slogan"
 MiddleSchool ||--}o Organization : "subOrganization"
-MiddleSchool ||--}o Text : "telephone"
-MiddleSchool ||--}o Text : "vatID"
-MiddleSchool ||--}o Text : "alternateName"
-MiddleSchool ||--}o Text : "disambiguatingDescription"
-MiddleSchool ||--}o Text : "name"
-MiddleSchool ||--}o URL : "sameAs"
 MiddleSchool ||--}o Action : "potentialAction"
-MiddleSchool ||--}o URL : "url"
 MiddleSchool ||--}o PropertyValue : "additionalProperty"
 MiddleSchool ||--}o LocationFeatureSpecification : "amenityFeature"
-MiddleSchool ||--}o Text : "branchCode"
 MiddleSchool ||--}o Place : "containedIn"
 MiddleSchool ||--}o Place : "containedInPlace"
 MiddleSchool ||--}o Place : "containsPlace"
-MiddleSchool ||--}o Boolean : "hasDriveThroughService"
-MiddleSchool ||--}o Boolean : "isAccessibleForFree"
-MiddleSchool ||--}o URL : "map"
-MiddleSchool ||--}o URL : "maps"
-MiddleSchool ||--}o Integer : "maximumAttendeeCapacity"
 MiddleSchool ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-MiddleSchool ||--}o Boolean : "publicAccess"
-MiddleSchool ||--}o Boolean : "smokingAllowed"
 MiddleSchool ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-MiddleSchool ||--}o URL : "tourBookingPage"
 

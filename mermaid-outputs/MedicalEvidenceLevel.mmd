@@ -2,17 +2,17 @@ erDiagram
 MedicalEvidenceLevel {
     stringList supersededBy  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-MedicalEvidenceLevel ||--}o Text : "alternateName"
-MedicalEvidenceLevel ||--}o Text : "disambiguatingDescription"
-MedicalEvidenceLevel ||--}o Text : "name"
-MedicalEvidenceLevel ||--}o URL : "sameAs"
 MedicalEvidenceLevel ||--}o Action : "potentialAction"
-MedicalEvidenceLevel ||--}o URL : "url"
 

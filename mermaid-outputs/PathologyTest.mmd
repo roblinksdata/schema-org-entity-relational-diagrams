@@ -1,16 +1,21 @@
 erDiagram
 PathologyTest {
+    TextList tissueSample  
     stringList normalRange  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-PathologyTest ||--}o Text : "tissueSample"
 PathologyTest ||--}o Drug : "affectedBy"
 PathologyTest ||--}o MedicalSign : "signDetected"
 PathologyTest ||--}o MedicalCondition : "usedToDiagnose"
@@ -22,10 +27,5 @@ PathologyTest ||--}o MedicineSystem : "medicineSystem"
 PathologyTest ||--}o Organization : "recognizingAuthority"
 PathologyTest ||--}o MedicalSpecialty : "relevantSpecialty"
 PathologyTest ||--}o MedicalStudy : "study"
-PathologyTest ||--}o Text : "alternateName"
-PathologyTest ||--}o Text : "disambiguatingDescription"
-PathologyTest ||--}o Text : "name"
-PathologyTest ||--}o URL : "sameAs"
 PathologyTest ||--}o Action : "potentialAction"
-PathologyTest ||--}o URL : "url"
 

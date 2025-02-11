@@ -1,36 +1,36 @@
 erDiagram
 UnitPriceSpecification {
     stringList billingDuration  
+    NumberList billingIncrement  
+    NumberList billingStart  
     stringList priceType  
     stringList unitCode  
+    TextList unitText  
+    NumberList maxPrice  
     stringList membershipPointsEarned  
+    NumberList minPrice  
     stringList price  
+    TextList priceCurrency  
     stringList validFrom  
     stringList validThrough  
+    BooleanList valueAddedTaxIncluded  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-UnitPriceSpecification ||--}o Number : "billingIncrement"
-UnitPriceSpecification ||--}o Number : "billingStart"
 UnitPriceSpecification ||--}o PriceComponentTypeEnumeration : "priceComponentType"
 UnitPriceSpecification ||--}o QuantitativeValue : "referenceQuantity"
-UnitPriceSpecification ||--}o Text : "unitText"
 UnitPriceSpecification ||--}o QuantitativeValue : "eligibleQuantity"
 UnitPriceSpecification ||--}o PriceSpecification : "eligibleTransactionVolume"
-UnitPriceSpecification ||--}o Number : "maxPrice"
-UnitPriceSpecification ||--}o Number : "minPrice"
-UnitPriceSpecification ||--}o Text : "priceCurrency"
 UnitPriceSpecification ||--}o MemberProgramTier : "validForMemberTier"
-UnitPriceSpecification ||--}o Boolean : "valueAddedTaxIncluded"
-UnitPriceSpecification ||--}o Text : "alternateName"
-UnitPriceSpecification ||--}o Text : "disambiguatingDescription"
-UnitPriceSpecification ||--}o Text : "name"
-UnitPriceSpecification ||--}o URL : "sameAs"
 UnitPriceSpecification ||--}o Action : "potentialAction"
-UnitPriceSpecification ||--}o URL : "url"
 

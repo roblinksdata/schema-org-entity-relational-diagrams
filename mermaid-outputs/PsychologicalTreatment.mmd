@@ -1,22 +1,27 @@
 erDiagram
 PsychologicalTreatment {
+    TextList bodyLocation  
+    TextList followup  
+    TextList howPerformed  
     stringList preparation  
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 PsychologicalTreatment ||--}o MedicalEntity : "adverseOutcome"
 PsychologicalTreatment ||--}o DoseSchedule : "doseSchedule"
 PsychologicalTreatment ||--}o Drug : "drug"
-PsychologicalTreatment ||--}o Text : "bodyLocation"
-PsychologicalTreatment ||--}o Text : "followup"
-PsychologicalTreatment ||--}o Text : "howPerformed"
 PsychologicalTreatment ||--}o MedicalProcedureType : "procedureType"
 PsychologicalTreatment ||--}o MedicalCode : "code"
 PsychologicalTreatment ||--}o Grant : "funding"
@@ -25,10 +30,5 @@ PsychologicalTreatment ||--}o MedicineSystem : "medicineSystem"
 PsychologicalTreatment ||--}o Organization : "recognizingAuthority"
 PsychologicalTreatment ||--}o MedicalSpecialty : "relevantSpecialty"
 PsychologicalTreatment ||--}o MedicalStudy : "study"
-PsychologicalTreatment ||--}o Text : "alternateName"
-PsychologicalTreatment ||--}o Text : "disambiguatingDescription"
-PsychologicalTreatment ||--}o Text : "name"
-PsychologicalTreatment ||--}o URL : "sameAs"
 PsychologicalTreatment ||--}o Action : "potentialAction"
-PsychologicalTreatment ||--}o URL : "url"
 

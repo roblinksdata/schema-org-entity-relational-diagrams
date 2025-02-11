@@ -1,7 +1,10 @@
 erDiagram
 ClaimReview {
+    TextList claimReviewed  
     stringList negativeNotes  
     stringList positiveNotes  
+    TextList reviewAspect  
+    TextList reviewBody  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -15,25 +18,46 @@ ClaimReview {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -45,30 +69,36 @@ ClaimReview {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-ClaimReview ||--}o Text : "claimReviewed"
 ClaimReview ||--}o Review : "associatedClaimReview"
 ClaimReview ||--}o Review : "associatedMediaReview"
 ClaimReview ||--}o Review : "associatedReview"
 ClaimReview ||--}o Thing : "itemReviewed"
-ClaimReview ||--}o Text : "reviewAspect"
-ClaimReview ||--}o Text : "reviewBody"
 ClaimReview ||--}o Rating : "reviewRating"
 ClaimReview ||--}o Thing : "about"
 ClaimReview ||--}o Place : "contentLocation"
@@ -77,43 +107,22 @@ ClaimReview ||--}o Claim : "interpretedAsClaim"
 ClaimReview ||--}o Thing : "mainEntity"
 ClaimReview ||--}o Place : "spatialCoverage"
 ClaimReview ||--}o CreativeWork : "workExample"
-ClaimReview ||--}o Text : "abstract"
-ClaimReview ||--}o Text : "accessMode"
 ClaimReview ||--}o ItemList : "accessModeSufficient"
-ClaimReview ||--}o Text : "accessibilityAPI"
-ClaimReview ||--}o Text : "accessibilityControl"
-ClaimReview ||--}o Text : "accessibilityFeature"
-ClaimReview ||--}o Text : "accessibilityHazard"
-ClaimReview ||--}o Text : "accessibilitySummary"
 ClaimReview ||--}o Person : "accountablePerson"
 ClaimReview ||--}o AggregateRating : "aggregateRating"
-ClaimReview ||--}o Text : "alternativeHeadline"
 ClaimReview ||--}o MediaObject : "associatedMedia"
 ClaimReview ||--}o Audience : "audience"
-ClaimReview ||--}o Text : "award"
-ClaimReview ||--}o Text : "awards"
 ClaimReview ||--}o Person : "character"
 ClaimReview ||--}o Comment : "comment"
-ClaimReview ||--}o Integer : "commentCount"
-ClaimReview ||--}o Text : "conditionsOfAccess"
-ClaimReview ||--}o DateTime : "contentReferenceTime"
-ClaimReview ||--}o Text : "copyrightNotice"
-ClaimReview ||--}o Number : "copyrightYear"
 ClaimReview ||--}o Country : "countryOfOrigin"
-ClaimReview ||--}o Text : "creditText"
 ClaimReview ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-ClaimReview ||--}o URL : "discussionUrl"
 ClaimReview ||--}o Person : "editor"
 ClaimReview ||--}o AlignmentObject : "educationalAlignment"
 ClaimReview ||--}o MediaObject : "encoding"
 ClaimReview ||--}o MediaObject : "encodings"
 ClaimReview ||--}o CreativeWork : "exampleOfWork"
 ClaimReview ||--}o Grant : "funding"
-ClaimReview ||--}o Text : "headline"
 ClaimReview ||--}o InteractionCounter : "interactionStatistic"
-ClaimReview ||--}o Text : "interactivityType"
-ClaimReview ||--}o Boolean : "isAccessibleForFree"
-ClaimReview ||--}o Boolean : "isFamilyFriendly"
 ClaimReview ||--}o Place : "locationCreated"
 ClaimReview ||--}o Thing : "mentions"
 ClaimReview ||--}o PublicationEvent : "publication"
@@ -122,20 +131,11 @@ ClaimReview ||--}o Event : "recordedAt"
 ClaimReview ||--}o PublicationEvent : "releasedEvent"
 ClaimReview ||--}o Review : "review"
 ClaimReview ||--}o Review : "reviews"
-ClaimReview ||--}o Date : "sdDatePublished"
 ClaimReview ||--}o Organization : "sourceOrganization"
 ClaimReview ||--}o Place : "spatial"
-ClaimReview ||--}o Text : "text"
 ClaimReview ||--}o ImageObject : "thumbnail"
-ClaimReview ||--}o URL : "thumbnailUrl"
 ClaimReview ||--}o Duration : "timeRequired"
 ClaimReview ||--}o CreativeWork : "translationOfWork"
-ClaimReview ||--}o Text : "typicalAgeRange"
 ClaimReview ||--}o CreativeWork : "workTranslation"
-ClaimReview ||--}o Text : "alternateName"
-ClaimReview ||--}o Text : "disambiguatingDescription"
-ClaimReview ||--}o Text : "name"
-ClaimReview ||--}o URL : "sameAs"
 ClaimReview ||--}o Action : "potentialAction"
-ClaimReview ||--}o URL : "url"
 

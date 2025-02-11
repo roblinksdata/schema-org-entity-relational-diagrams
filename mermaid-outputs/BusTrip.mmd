@@ -1,6 +1,8 @@
 erDiagram
 BusTrip {
     stringList arrivalBusStop  
+    TextList busName  
+    TextList busNumber  
     stringList departureBusStop  
     stringList arrivalTime  
     stringList departureTime  
@@ -8,22 +10,20 @@ BusTrip {
     stringList offers  
     stringList provider  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-BusTrip ||--}o Text : "busName"
-BusTrip ||--}o Text : "busNumber"
 BusTrip ||--}o Trip : "partOfTrip"
 BusTrip ||--}o Trip : "subTrip"
 BusTrip ||--}o Place : "tripOrigin"
-BusTrip ||--}o Text : "alternateName"
-BusTrip ||--}o Text : "disambiguatingDescription"
-BusTrip ||--}o Text : "name"
-BusTrip ||--}o URL : "sameAs"
 BusTrip ||--}o Action : "potentialAction"
-BusTrip ||--}o URL : "url"
 

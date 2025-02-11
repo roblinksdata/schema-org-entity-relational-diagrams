@@ -1,7 +1,10 @@
 erDiagram
 LoanOrCredit {
     stringList amount  
+    TextList currency  
     stringList loanType  
+    BooleanList recourseLoan  
+    BooleanList renegotiableLoan  
     stringList requiredCollateral  
     stringList annualPercentageRate  
     stringList feesAndCommissionsSpecification  
@@ -9,46 +12,43 @@ LoanOrCredit {
     stringList areaServed  
     stringList category  
     stringList logo  
+    TextList award  
     stringList brand  
     stringList broker  
     stringList isRelatedTo  
     stringList isSimilarTo  
     stringList offers  
     stringList provider  
+    TextList providerMobility  
     stringList serviceArea  
     stringList serviceType  
+    TextList slogan  
     stringList termsOfService  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 LoanOrCredit ||--}o QuantitativeValue : "loanTerm"
-LoanOrCredit ||--}o Text : "currency"
 LoanOrCredit ||--}o Duration : "gracePeriod"
 LoanOrCredit ||--}o RepaymentSpecification : "loanRepaymentForm"
-LoanOrCredit ||--}o Boolean : "recourseLoan"
-LoanOrCredit ||--}o Boolean : "renegotiableLoan"
 LoanOrCredit ||--}o AggregateRating : "aggregateRating"
 LoanOrCredit ||--}o Audience : "audience"
 LoanOrCredit ||--}o ServiceChannel : "availableChannel"
-LoanOrCredit ||--}o Text : "award"
 LoanOrCredit ||--}o Certification : "hasCertification"
 LoanOrCredit ||--}o OfferCatalog : "hasOfferCatalog"
 LoanOrCredit ||--}o OpeningHoursSpecification : "hoursAvailable"
 LoanOrCredit ||--}o Thing : "produces"
-LoanOrCredit ||--}o Text : "providerMobility"
 LoanOrCredit ||--}o Review : "review"
 LoanOrCredit ||--}o Audience : "serviceAudience"
 LoanOrCredit ||--}o Thing : "serviceOutput"
-LoanOrCredit ||--}o Text : "slogan"
-LoanOrCredit ||--}o Text : "alternateName"
-LoanOrCredit ||--}o Text : "disambiguatingDescription"
-LoanOrCredit ||--}o Text : "name"
-LoanOrCredit ||--}o URL : "sameAs"
 LoanOrCredit ||--}o Action : "potentialAction"
-LoanOrCredit ||--}o URL : "url"
 

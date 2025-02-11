@@ -1,34 +1,34 @@
 erDiagram
 RentalCarReservation {
+    DateTimeList dropoffTime  
+    DateTimeList pickupTime  
     stringList bookingAgent  
+    DateTimeList bookingTime  
     stringList broker  
+    DateTimeList modifiedTime  
+    TextList priceCurrency  
     stringList provider  
+    TextList reservationId  
     stringList totalPrice  
     stringList underName  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 RentalCarReservation ||--}o Place : "dropoffLocation"
-RentalCarReservation ||--}o DateTime : "dropoffTime"
 RentalCarReservation ||--}o Place : "pickupLocation"
-RentalCarReservation ||--}o DateTime : "pickupTime"
-RentalCarReservation ||--}o DateTime : "bookingTime"
-RentalCarReservation ||--}o DateTime : "modifiedTime"
-RentalCarReservation ||--}o Text : "priceCurrency"
 RentalCarReservation ||--}o ProgramMembership : "programMembershipUsed"
 RentalCarReservation ||--}o Thing : "reservationFor"
-RentalCarReservation ||--}o Text : "reservationId"
 RentalCarReservation ||--}o ReservationStatusType : "reservationStatus"
 RentalCarReservation ||--}o Ticket : "reservedTicket"
-RentalCarReservation ||--}o Text : "alternateName"
-RentalCarReservation ||--}o Text : "disambiguatingDescription"
-RentalCarReservation ||--}o Text : "name"
-RentalCarReservation ||--}o URL : "sameAs"
 RentalCarReservation ||--}o Action : "potentialAction"
-RentalCarReservation ||--}o URL : "url"
 

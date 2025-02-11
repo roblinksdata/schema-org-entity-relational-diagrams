@@ -1,5 +1,6 @@
 erDiagram
 HyperTocEntry {
+    TextList utterances  
     stringList acquireLicensePage  
     stringList contributor  
     stringList creator  
@@ -13,25 +14,46 @@ HyperTocEntry {
     stringList publishingPrinciples  
     stringList sponsor  
     stringList usageInfo  
+    TextList abstract  
+    TextList accessMode  
+    TextList accessibilityAPI  
+    TextList accessibilityControl  
+    TextList accessibilityFeature  
+    TextList accessibilityHazard  
+    TextList accessibilitySummary  
+    TextList alternativeHeadline  
     stringList archivedAt  
     stringList assesses  
     stringList audio  
     stringList author  
+    TextList award  
+    TextList awards  
     stringList citation  
+    IntegerList commentCount  
+    TextList conditionsOfAccess  
     stringList contentRating  
+    DateTimeList contentReferenceTime  
     stringList copyrightHolder  
+    TextList copyrightNotice  
+    NumberList copyrightYear  
     stringList correction  
     stringList creativeWorkStatus  
+    TextList creditText  
     stringList dateModified  
     stringList datePublished  
+    URLList discussionUrl  
     stringList educationalLevel  
     stringList educationalUse  
     stringList encodingFormat  
     stringList expires  
     stringList fileFormat  
+    TextList headline  
     stringList inLanguage  
+    TextList interactivityType  
+    BooleanList isAccessibleForFree  
     stringList isBasedOn  
     stringList isBasedOnUrl  
+    BooleanList isFamilyFriendly  
     stringList keywords  
     stringList learningResourceType  
     stringList license  
@@ -43,26 +65,34 @@ HyperTocEntry {
     stringList provider  
     stringList publisher  
     stringList schemaVersion  
+    DateList sdDatePublished  
     stringList sdLicense  
     stringList sdPublisher  
     stringList size  
     stringList teaches  
     stringList temporal  
     stringList temporalCoverage  
+    TextList text  
+    URLList thumbnailUrl  
     stringList translator  
+    TextList typicalAgeRange  
     stringList version  
     stringList video  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 HyperTocEntry ||--}o MediaObject : "associatedMedia"
 HyperTocEntry ||--}o HyperTocEntry : "tocContinuation"
-HyperTocEntry ||--}o Text : "utterances"
 HyperTocEntry ||--}o Thing : "about"
 HyperTocEntry ||--}o Place : "contentLocation"
 HyperTocEntry ||--}o CreativeWork : "hasPart"
@@ -70,42 +100,21 @@ HyperTocEntry ||--}o Claim : "interpretedAsClaim"
 HyperTocEntry ||--}o Thing : "mainEntity"
 HyperTocEntry ||--}o Place : "spatialCoverage"
 HyperTocEntry ||--}o CreativeWork : "workExample"
-HyperTocEntry ||--}o Text : "abstract"
-HyperTocEntry ||--}o Text : "accessMode"
 HyperTocEntry ||--}o ItemList : "accessModeSufficient"
-HyperTocEntry ||--}o Text : "accessibilityAPI"
-HyperTocEntry ||--}o Text : "accessibilityControl"
-HyperTocEntry ||--}o Text : "accessibilityFeature"
-HyperTocEntry ||--}o Text : "accessibilityHazard"
-HyperTocEntry ||--}o Text : "accessibilitySummary"
 HyperTocEntry ||--}o Person : "accountablePerson"
 HyperTocEntry ||--}o AggregateRating : "aggregateRating"
-HyperTocEntry ||--}o Text : "alternativeHeadline"
 HyperTocEntry ||--}o Audience : "audience"
-HyperTocEntry ||--}o Text : "award"
-HyperTocEntry ||--}o Text : "awards"
 HyperTocEntry ||--}o Person : "character"
 HyperTocEntry ||--}o Comment : "comment"
-HyperTocEntry ||--}o Integer : "commentCount"
-HyperTocEntry ||--}o Text : "conditionsOfAccess"
-HyperTocEntry ||--}o DateTime : "contentReferenceTime"
-HyperTocEntry ||--}o Text : "copyrightNotice"
-HyperTocEntry ||--}o Number : "copyrightYear"
 HyperTocEntry ||--}o Country : "countryOfOrigin"
-HyperTocEntry ||--}o Text : "creditText"
 HyperTocEntry ||--}o IPTCDigitalSourceEnumeration : "digitalSourceType"
-HyperTocEntry ||--}o URL : "discussionUrl"
 HyperTocEntry ||--}o Person : "editor"
 HyperTocEntry ||--}o AlignmentObject : "educationalAlignment"
 HyperTocEntry ||--}o MediaObject : "encoding"
 HyperTocEntry ||--}o MediaObject : "encodings"
 HyperTocEntry ||--}o CreativeWork : "exampleOfWork"
 HyperTocEntry ||--}o Grant : "funding"
-HyperTocEntry ||--}o Text : "headline"
 HyperTocEntry ||--}o InteractionCounter : "interactionStatistic"
-HyperTocEntry ||--}o Text : "interactivityType"
-HyperTocEntry ||--}o Boolean : "isAccessibleForFree"
-HyperTocEntry ||--}o Boolean : "isFamilyFriendly"
 HyperTocEntry ||--}o Place : "locationCreated"
 HyperTocEntry ||--}o Thing : "mentions"
 HyperTocEntry ||--}o PublicationEvent : "publication"
@@ -114,20 +123,11 @@ HyperTocEntry ||--}o Event : "recordedAt"
 HyperTocEntry ||--}o PublicationEvent : "releasedEvent"
 HyperTocEntry ||--}o Review : "review"
 HyperTocEntry ||--}o Review : "reviews"
-HyperTocEntry ||--}o Date : "sdDatePublished"
 HyperTocEntry ||--}o Organization : "sourceOrganization"
 HyperTocEntry ||--}o Place : "spatial"
-HyperTocEntry ||--}o Text : "text"
 HyperTocEntry ||--}o ImageObject : "thumbnail"
-HyperTocEntry ||--}o URL : "thumbnailUrl"
 HyperTocEntry ||--}o Duration : "timeRequired"
 HyperTocEntry ||--}o CreativeWork : "translationOfWork"
-HyperTocEntry ||--}o Text : "typicalAgeRange"
 HyperTocEntry ||--}o CreativeWork : "workTranslation"
-HyperTocEntry ||--}o Text : "alternateName"
-HyperTocEntry ||--}o Text : "disambiguatingDescription"
-HyperTocEntry ||--}o Text : "name"
-HyperTocEntry ||--}o URL : "sameAs"
 HyperTocEntry ||--}o Action : "potentialAction"
-HyperTocEntry ||--}o URL : "url"
 

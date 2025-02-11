@@ -1,8 +1,16 @@
 erDiagram
 ArchiveOrganization {
+    TextList currenciesAccepted  
+    TextList openingHours  
+    TextList paymentAccepted  
+    TextList priceRange  
+    TextList globalLocationNumber  
+    URLList hasGS1DigitalLink  
     stringList logo  
     stringList photo  
     stringList address  
+    TextList branchCode  
+    TextList faxNumber  
     stringList geo  
     stringList geoContains  
     stringList geoCoveredBy  
@@ -14,92 +22,93 @@ ArchiveOrganization {
     stringList geoOverlaps  
     stringList geoTouches  
     stringList geoWithin  
+    BooleanList hasDriveThroughService  
     stringList hasMap  
+    BooleanList isAccessibleForFree  
+    TextList isicV4  
     stringList keywords  
     stringList latitude  
     stringList longitude  
+    URLList map  
+    URLList maps  
+    IntegerList maximumAttendeeCapacity  
     stringList photos  
+    BooleanList publicAccess  
+    TextList slogan  
+    BooleanList smokingAllowed  
+    TextList telephone  
+    URLList tourBookingPage  
     stringList actionableFeedbackPolicy  
     stringList areaServed  
     stringList correctionsPolicy  
     stringList diversityStaffingReport  
+    TextList duns  
     stringList funder  
+    TextList leiCode  
     stringList location  
     stringList memberOf  
     stringList ownershipFundingInfo  
     stringList publishingPrinciples  
     stringList sponsor  
+    TextList taxID  
     stringList unnamedSourcesPolicy  
     stringList acceptedPaymentMethod  
+    TextList award  
+    TextList awards  
     stringList brand  
+    DateList dissolutionDate  
     stringList diversityPolicy  
+    TextList email  
     stringList ethicsPolicy  
     stringList founder  
+    DateList foundingDate  
+    TextList iso6523Code  
     stringList knowsAbout  
     stringList knowsLanguage  
+    TextList legalName  
     stringList member  
     stringList members  
+    TextList naics  
     stringList owns  
     stringList serviceArea  
     stringList skills  
+    TextList vatID  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 ArchiveOrganization ||--}o ArchiveComponent : "archiveHeld"
 ArchiveOrganization ||--}o Organization : "branchOf"
-ArchiveOrganization ||--}o Text : "currenciesAccepted"
-ArchiveOrganization ||--}o Text : "openingHours"
-ArchiveOrganization ||--}o Text : "paymentAccepted"
-ArchiveOrganization ||--}o Text : "priceRange"
-ArchiveOrganization ||--}o Text : "globalLocationNumber"
-ArchiveOrganization ||--}o URL : "hasGS1DigitalLink"
 ArchiveOrganization ||--}o PropertyValue : "additionalProperty"
 ArchiveOrganization ||--}o AggregateRating : "aggregateRating"
 ArchiveOrganization ||--}o LocationFeatureSpecification : "amenityFeature"
-ArchiveOrganization ||--}o Text : "branchCode"
 ArchiveOrganization ||--}o Place : "containedIn"
 ArchiveOrganization ||--}o Place : "containedInPlace"
 ArchiveOrganization ||--}o Place : "containsPlace"
 ArchiveOrganization ||--}o Event : "event"
 ArchiveOrganization ||--}o Event : "events"
-ArchiveOrganization ||--}o Text : "faxNumber"
 ArchiveOrganization ||--}o Certification : "hasCertification"
-ArchiveOrganization ||--}o Boolean : "hasDriveThroughService"
-ArchiveOrganization ||--}o Boolean : "isAccessibleForFree"
-ArchiveOrganization ||--}o Text : "isicV4"
-ArchiveOrganization ||--}o URL : "map"
-ArchiveOrganization ||--}o URL : "maps"
-ArchiveOrganization ||--}o Integer : "maximumAttendeeCapacity"
 ArchiveOrganization ||--}o OpeningHoursSpecification : "openingHoursSpecification"
-ArchiveOrganization ||--}o Boolean : "publicAccess"
 ArchiveOrganization ||--}o Review : "review"
 ArchiveOrganization ||--}o Review : "reviews"
-ArchiveOrganization ||--}o Text : "slogan"
-ArchiveOrganization ||--}o Boolean : "smokingAllowed"
 ArchiveOrganization ||--}o OpeningHoursSpecification : "specialOpeningHoursSpecification"
-ArchiveOrganization ||--}o Text : "telephone"
-ArchiveOrganization ||--}o URL : "tourBookingPage"
-ArchiveOrganization ||--}o Text : "duns"
-ArchiveOrganization ||--}o Text : "leiCode"
-ArchiveOrganization ||--}o Text : "taxID"
 ArchiveOrganization ||--}o InteractionCounter : "agentInteractionStatistic"
 ArchiveOrganization ||--}o Person : "alumni"
-ArchiveOrganization ||--}o Text : "award"
-ArchiveOrganization ||--}o Text : "awards"
 ArchiveOrganization ||--}o ContactPoint : "contactPoint"
 ArchiveOrganization ||--}o ContactPoint : "contactPoints"
 ArchiveOrganization ||--}o Organization : "department"
-ArchiveOrganization ||--}o Date : "dissolutionDate"
-ArchiveOrganization ||--}o Text : "email"
 ArchiveOrganization ||--}o Person : "employee"
 ArchiveOrganization ||--}o Person : "employees"
 ArchiveOrganization ||--}o Person : "founders"
-ArchiveOrganization ||--}o Date : "foundingDate"
 ArchiveOrganization ||--}o Place : "foundingLocation"
 ArchiveOrganization ||--}o Grant : "funding"
 ArchiveOrganization ||--}o EducationalOccupationalCredential : "hasCredential"
@@ -108,20 +117,11 @@ ArchiveOrganization ||--}o MerchantReturnPolicy : "hasMerchantReturnPolicy"
 ArchiveOrganization ||--}o OfferCatalog : "hasOfferCatalog"
 ArchiveOrganization ||--}o Place : "hasPOS"
 ArchiveOrganization ||--}o InteractionCounter : "interactionStatistic"
-ArchiveOrganization ||--}o Text : "iso6523Code"
-ArchiveOrganization ||--}o Text : "legalName"
 ArchiveOrganization ||--}o Offer : "makesOffer"
-ArchiveOrganization ||--}o Text : "naics"
 ArchiveOrganization ||--}o NonprofitType : "nonprofitStatus"
 ArchiveOrganization ||--}o QuantitativeValue : "numberOfEmployees"
 ArchiveOrganization ||--}o Organization : "parentOrganization"
 ArchiveOrganization ||--}o Demand : "seeks"
 ArchiveOrganization ||--}o Organization : "subOrganization"
-ArchiveOrganization ||--}o Text : "vatID"
-ArchiveOrganization ||--}o Text : "alternateName"
-ArchiveOrganization ||--}o Text : "disambiguatingDescription"
-ArchiveOrganization ||--}o Text : "name"
-ArchiveOrganization ||--}o URL : "sameAs"
 ArchiveOrganization ||--}o Action : "potentialAction"
-ArchiveOrganization ||--}o URL : "url"
 

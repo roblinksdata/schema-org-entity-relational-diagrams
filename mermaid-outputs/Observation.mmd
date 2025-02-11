@@ -3,32 +3,32 @@ Observation {
     stringList measurementMethod  
     stringList measurementTechnique  
     stringList observationAbout  
+    DateTimeList observationDate  
+    TextList observationPeriod  
     stringList variableMeasured  
+    NumberList maxValue  
+    NumberList minValue  
     stringList unitCode  
+    TextList unitText  
     stringList value  
     stringList valueReference  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 Observation ||--}o QuantitativeValue : "marginOfError"
 Observation ||--}o Property : "measuredProperty"
 Observation ||--}o StatisticalVariable : "measurementDenominator"
 Observation ||--}o Enumeration : "measurementQualifier"
-Observation ||--}o DateTime : "observationDate"
-Observation ||--}o Text : "observationPeriod"
 Observation ||--}o PropertyValue : "additionalProperty"
-Observation ||--}o Number : "maxValue"
-Observation ||--}o Number : "minValue"
-Observation ||--}o Text : "unitText"
-Observation ||--}o Text : "alternateName"
-Observation ||--}o Text : "disambiguatingDescription"
-Observation ||--}o Text : "name"
-Observation ||--}o URL : "sameAs"
 Observation ||--}o Action : "potentialAction"
-Observation ||--}o URL : "url"
 

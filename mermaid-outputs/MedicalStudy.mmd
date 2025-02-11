@@ -4,11 +4,16 @@ MedicalStudy {
     stringList status  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalStudy ||--}o MedicalCondition : "healthCondition"
@@ -21,10 +26,5 @@ MedicalStudy ||--}o MedicineSystem : "medicineSystem"
 MedicalStudy ||--}o Organization : "recognizingAuthority"
 MedicalStudy ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalStudy ||--}o MedicalStudy : "study"
-MedicalStudy ||--}o Text : "alternateName"
-MedicalStudy ||--}o Text : "disambiguatingDescription"
-MedicalStudy ||--}o Text : "name"
-MedicalStudy ||--}o URL : "sameAs"
 MedicalStudy ||--}o Action : "potentialAction"
-MedicalStudy ||--}o URL : "url"
 

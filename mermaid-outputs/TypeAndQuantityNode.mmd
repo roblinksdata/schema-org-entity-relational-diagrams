@@ -1,22 +1,22 @@
 erDiagram
 TypeAndQuantityNode {
+    NumberList amountOfThisGood  
     stringList typeOfGood  
     stringList unitCode  
+    TextList unitText  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
-TypeAndQuantityNode ||--}o Number : "amountOfThisGood"
 TypeAndQuantityNode ||--}o BusinessFunction : "businessFunction"
-TypeAndQuantityNode ||--}o Text : "unitText"
-TypeAndQuantityNode ||--}o Text : "alternateName"
-TypeAndQuantityNode ||--}o Text : "disambiguatingDescription"
-TypeAndQuantityNode ||--}o Text : "name"
-TypeAndQuantityNode ||--}o URL : "sameAs"
 TypeAndQuantityNode ||--}o Action : "potentialAction"
-TypeAndQuantityNode ||--}o URL : "url"
 

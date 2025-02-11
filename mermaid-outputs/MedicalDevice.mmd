@@ -1,19 +1,24 @@
 erDiagram
 MedicalDevice {
     stringList contraindication  
+    TextList postOp  
+    TextList preOp  
+    TextList procedure  
     stringList legalStatus  
     stringList additionalType  
+    TextList alternateName  
     stringList description  
+    TextList disambiguatingDescription  
     stringList identifier  
     stringList image  
+    TextList name  
+    URLList sameAs  
     stringList mainEntityOfPage  
     stringList subjectOf  
+    URLList url  
 }
 
 MedicalDevice ||--}o MedicalEntity : "adverseOutcome"
-MedicalDevice ||--}o Text : "postOp"
-MedicalDevice ||--}o Text : "preOp"
-MedicalDevice ||--}o Text : "procedure"
 MedicalDevice ||--}o MedicalEntity : "seriousAdverseOutcome"
 MedicalDevice ||--}o MedicalCode : "code"
 MedicalDevice ||--}o Grant : "funding"
@@ -22,10 +27,5 @@ MedicalDevice ||--}o MedicineSystem : "medicineSystem"
 MedicalDevice ||--}o Organization : "recognizingAuthority"
 MedicalDevice ||--}o MedicalSpecialty : "relevantSpecialty"
 MedicalDevice ||--}o MedicalStudy : "study"
-MedicalDevice ||--}o Text : "alternateName"
-MedicalDevice ||--}o Text : "disambiguatingDescription"
-MedicalDevice ||--}o Text : "name"
-MedicalDevice ||--}o URL : "sameAs"
 MedicalDevice ||--}o Action : "potentialAction"
-MedicalDevice ||--}o URL : "url"
 
